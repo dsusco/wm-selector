@@ -1,7 +1,16 @@
 {
   "name": "wm-selector",
-  "version": "0.1.0",
-  "private": true,
+  "version": "3.0.0",
+  "description": "An army builder for Games Workshop's Warmaster.",
+  "homepage": "https://github.com/dsusco/wm-selector",
+  "bugs": "https://github.com/dsusco/wm-selector/issues",
+  "license": "ISC",
+  "author": "David Susco <dsusco@gmail.com> (https://github.com/dsusco)",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dsusco/wm-selector.git"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -30,5 +39,6 @@
     "node-sass": "^4.9.0",
     "sass-loader": "^7.1.0",
     "vue-template-compiler": "^2.6.10"
-  }
+  },
+  "private": true
 }

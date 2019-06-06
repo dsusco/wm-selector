@@ -1,15 +1,14 @@
 <template>
-  <main id="main" class="home-view">
-    <h1>Warmaster Army Selector</h1>
+  <main id="main" class="text-view">
+    Text
   </main>
 </template>
 
 <script>
 export default {
-  name: 'HomeView'
+  name: 'TextView'
 };
 </script>
 
 <style lang="scss">
 </style>
-
