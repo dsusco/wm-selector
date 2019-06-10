@@ -1,34 +1,7 @@
 import Vue from 'vue';
-import Router from 'vue-router';
+import VueRouter from 'vue-router';
+import routes from "@/router/routes.js"
 
-Vue.use(Router);
+Vue.use(VueRouter);
 
-export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'Home',
-      component: () => import('./views/Home.vue')
-    },
-    {
-      path: '/selector',
-      name: 'Selector',
-      component: () => import('./views/Selector.vue')
-    },
-    {
-      path: '/text',
-      name: 'Text',
-      component: () => import('./views/Text.vue')
-    },
-    {
-      path: '/save',
-      name: 'Save',
-      component: () => import('./views/Save.vue')
-    },
-    {
-      path: '/print',
-      name: 'Print',
-      component: () => import('./views/Print.vue')
-    }
-  ]
-});
+export default new VueRouter({ routes });
