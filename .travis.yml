@@ -3,9 +3,6 @@ os:
   - linux
 node_js: 10
 
-install:
-  - npm i
-
 script:
   - npm run test
 

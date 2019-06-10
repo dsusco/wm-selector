@@ -23,5 +23,3 @@ yarn-error.log*
 *.sln
 *.sw?
 
-# generated army lists json
-src/json/army-lists.json
