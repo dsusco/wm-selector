@@ -12,6 +12,17 @@ export default new Vuex.Store({
   getters,
   mutations,
   state: {
-    jsonPath: ''
+    armyList: '',
+    armyRules: undefined,
+    errors: [],
+    jsonPath: '',
+    label: '',
+    magic: undefined,
+    specialRules: {},
+    spells: [],
+    units: {},
+    upgradeConstraints: [],
+    upgrades: {},
+    version: ''
   }
 });
