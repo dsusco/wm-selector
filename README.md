@@ -1,4 +1,5 @@
-# wm-selector
+# Warmaster Army Selector [![Build Status](https://travis-ci.org/dsusco/wm-selector.svg?branch=master)](https://travis-ci.org/dsusco/wm-selector)
+
 
 ## Project setup
 ```
