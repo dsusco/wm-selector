@@ -1,4 +1,4 @@
-import { createLocalVue, mount, shallowMount } from "@vue/test-utils"
+import { createLocalVue, mount } from "@vue/test-utils"
 import VueRouter from "vue-router"
 
 import App from "@/App.vue"

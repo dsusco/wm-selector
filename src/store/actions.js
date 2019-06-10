@@ -5,7 +5,7 @@ export default {
   setArmy (context, jsonPath) {
     axios
       .get(process.env.BASE_URL + jsonPath)
-      .then((response) => {
+      .then(() => {
         context.commit('SET_JSON_PATH', jsonPath);
 
         router.push({ name: 'Selector' });
