@@ -41,4 +41,42 @@ export default {
 </script>
 
 <style lang="scss">
+  #nav {
+    button {
+      background: $_color_lighter;
+      border-color: $_color_black;
+      border-radius: 0;
+      margin: 0 .25em -.1rem;
+
+      &.router-link-exact-active {
+        background: $_color_white;
+        border-bottom-color: $_color_white;
+      }
+
+      .fa {
+        margin: 0 .5rem;
+        width: $_font_size;
+      }
+    }
+
+    @include grid-media($md-neat-grid) {
+      button {
+        @include padding(0 null);
+
+        .fa {
+          @include sr-only(false);
+        }
+
+        .sr-only {
+          clip: auto;
+          height: auto;
+          overflow: visible;
+          position: static;
+          white-space: normal;
+          width: auto;
+        }
+      }
+    }
+  }
 </style>
+

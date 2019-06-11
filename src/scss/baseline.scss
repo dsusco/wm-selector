@@ -1,0 +1,9 @@
+@import '~bourbon/core/bourbon';
+@import '~bourbon-neat/core/neat';
+@import '~normalize-scss/sass/_normalize';
+
+@import '~baseline-scss/src/scss/variables';
+@import '~baseline-scss/src/scss/mixins';
+
+$_color_primary: #369;
+$_color_light: #ddd;

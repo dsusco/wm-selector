@@ -1,0 +1,42 @@
+@import 'baseline';
+
+@include normalize();
+
+@import '~baseline-scss/src/scss/regularize';
+@import '~baseline-scss/src/scss/components';
+@import '~baseline-scss/src/scss/content';
+
+.container {
+  @include grid-container();
+
+  margin: 0 auto;
+  max-width: 72rem + 2 * map-get($neat-grid, gutter);
+
+  @include grid-media($md-neat-grid) {
+    max-width: 96rem + 2 * map-get($md-neat-grid, gutter);
+  }
+
+  @include grid-media($lg-neat-grid) {
+    max-width: 120rem + 2 * map-get($lg-neat-grid, gutter);
+  }
+
+  @include grid-media($xl-neat-grid) {
+    max-width: 144rem + 2 * map-get($xl-neat-grid, gutter);
+  }
+}
+
+.margin-bottom {
+  margin-bottom: $_;
+}
+
+body {
+  background: $_color_primary;
+  padding: ($_ / 2) 0;
+}
+
+#main {
+  background: $_color_white;
+  border: .1rem solid $_color_black;
+  @include border-width(null 0);
+  padding: ($_ / 2);
+}
