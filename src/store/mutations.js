@@ -11,10 +11,10 @@ export default {
   SET_SPECIAL_RULES: (state, specialRules) => state.specialRules = specialRules,
   SET_SPELLS: (state, spells) => state.spells = spells,
   SET_UNIT_NUMBER: (state, payload) => state.units[payload.unitID].number = payload.number,
-  SET_UNIT_POINTS_COST: (state, unitID) => {
+  SET_UNIT_POINTS_COST: (state, payload) => {
     var
-      unit = state.units[unitID],
-      unitPointsCost = unit.number * +unit.points;
+      unit = state.units[payload.unitID],
+      unitPointsCost = payload.number * +unit.points;
 
     try {
       unit.pointsCost = Object.values(unit.upgrades)

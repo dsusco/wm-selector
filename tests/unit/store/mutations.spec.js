@@ -103,7 +103,7 @@ describe('store.js mutations', () => {
     mutations.SET_UNITS(state, expected.units);
     mutations.SET_UNIT_UPGRADE_NUMBER_AND_POINTS_COST(state, { unitID: 'a unit', upgradeID: 'an upgrade', number: 1 });
     mutations.SET_UNIT_NUMBER(state, { unitID: 'a unit', number: 1 });
-    mutations.SET_UNIT_POINTS_COST(state, 'a unit');
+    mutations.SET_UNIT_POINTS_COST(state, { unitID: 'a unit', number: 1 });
     expect(state.units).toEqual({
       'a unit': {
         number: 1,
@@ -124,7 +124,7 @@ describe('store.js mutations', () => {
   it('SET_UNIT_POINTS_COST sets state.units[].pointsCost with no unit upgrades', () => {
     mutations.SET_UNITS(state, { 'a unit': { type: 'another type', order: 0, points: 50 } });
     mutations.SET_UNIT_NUMBER(state, { unitID: 'a unit', number: 1 });
-    mutations.SET_UNIT_POINTS_COST(state, 'a unit');
+    mutations.SET_UNIT_POINTS_COST(state, { unitID: 'a unit', number: 1 });
     expect(state.units).toEqual({
       'a unit': {
         number: 1,
