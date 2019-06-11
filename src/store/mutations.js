@@ -14,7 +14,7 @@ export default {
   SET_UNIT_POINTS_COST: (state, payload) => {
     var
       unit = state.units[payload.unitID],
-      unitPointsCost = payload.number * +unit.points;
+      unitPointsCost = unit.number * +unit.points;
 
     try {
       unit.pointsCost = Object.values(unit.upgrades)
