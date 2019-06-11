@@ -83,5 +83,15 @@ export default {
         @include grid-column(4);
       }
     }
+
+    @include grid-media($xl-neat-grid) {
+      ul {
+        @include grid-container;
+      }
+
+      li {
+        @include grid-column(3);
+      }
+    }
   }
 </style>
