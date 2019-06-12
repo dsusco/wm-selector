@@ -1,8 +1,8 @@
-import { createLocalVue, mount } from "@vue/test-utils"
-import VueRouter from "vue-router"
+import { createLocalVue, mount } from '@vue/test-utils';
+import VueRouter from 'vue-router';
 
-import App from "@/App.vue"
-import routes from "@/router/routes.js"
+import App from '@/App';
+import routes from '@/router/routes';
 
 const
   localVue = createLocalVue(),

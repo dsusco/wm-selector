@@ -1,6 +1,6 @@
 import { shallowMount } from '@vue/test-utils'
 
-import Print from '@/views/Print.vue';
+import Print from '@/views/Print';
 
 var wrapper;
 

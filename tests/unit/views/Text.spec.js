@@ -1,6 +1,6 @@
 import { shallowMount } from '@vue/test-utils'
 
-import Text from '@/views/Text.vue';
+import Text from '@/views/Text';
 
 var wrapper;
 

@@ -1,6 +1,6 @@
 import { shallowMount } from '@vue/test-utils'
 
-import Selector from '@/views/Selector.vue';
+import Selector from '@/views/Selector';
 
 var wrapper;
 

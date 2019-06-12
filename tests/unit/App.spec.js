@@ -1,7 +1,7 @@
-import { createLocalVue, shallowMount } from '@vue/test-utils'
-import Vuex from 'vuex'
+import { createLocalVue, shallowMount } from '@vue/test-utils';
+import Vuex from 'vuex';
 
-import App from '@/App.vue';
+import App from '@/App';
 
 const
   localVue = createLocalVue(),

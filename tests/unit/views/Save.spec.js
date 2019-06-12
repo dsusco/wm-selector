@@ -1,6 +1,6 @@
 import { shallowMount } from '@vue/test-utils'
 
-import Save from '@/views/Save.vue';
+import Save from '@/views/Save';
 
 var wrapper;
 
