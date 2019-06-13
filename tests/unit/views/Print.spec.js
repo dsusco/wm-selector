@@ -10,6 +10,6 @@ describe('Print.vue', () => {
   });
 
   it('renders', () => {
-    expect(wrapper.text()).toEqual('Print');
+    expect(wrapper.find('.print-view').attributes('id')).toEqual('main');
   });
 });
