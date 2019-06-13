@@ -45,7 +45,7 @@ export default {
   computed: Object.assign({
       label: {
         get: () => store.getters.label,
-        set: (label) => store.dispatch('setLabel', label)
+        set (label) { store.dispatch('setLabel', label) }
       }
     },
     mapGetters(['armyList', 'errors', 'pointsCost', 'unitCount', 'units', 'version'])

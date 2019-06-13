@@ -22,10 +22,10 @@ export default {
   computed: {
     jsonPath: {
       get: () => store.getters.jsonPath,
-      set: (jsonPath) => store.dispatch('setArmy', jsonPath)
+      set (jsonPath) { store.dispatch('setArmy', jsonPath) }
     }
   },
-  data: () => {
+  data () {
     return { armyLists: armyLists };
   },
   methods: {

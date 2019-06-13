@@ -10,7 +10,7 @@ export default [
     path: '/selector',
     name: 'Selector',
     component: () => import('@/views/Selector.vue'),
-    beforeEnter: (to, from, next) => {
+    beforeEnter (to, from, next) {
       if (store.getters.jsonPath === '') {
         next({ name: 'Home' });
       } else {
@@ -22,7 +22,7 @@ export default [
     path: '/text',
     name: 'Text',
     component: () => import('@/views/Text.vue'),
-    beforeEnter: (to, from, next) => {
+    beforeEnter (to, from, next) {
       if (store.getters.jsonPath === '') {
         next({ name: 'Home' });
       } else {
@@ -34,7 +34,7 @@ export default [
     path: '/save',
     name: 'Save',
     component: () => import('@/views/Save.vue'),
-    beforeEnter: (to, from, next) => {
+    beforeEnter (to, from, next) {
       if (store.getters.jsonPath === '') {
         next({ name: 'Home' });
       } else {
@@ -46,7 +46,7 @@ export default [
     path: '/print',
     name: 'Print',
     component: () => import('@/views/Print.vue'),
-    beforeEnter: (to, from, next) => {
+    beforeEnter (to, from, next) {
       if (store.getters.jsonPath === '') {
         next({ name: 'Home' });
       } else {
