@@ -16,12 +16,11 @@ import ArmyListGroupTab from '@/views/home/ArmyListGroupTab.vue';
 
 export default {
   name: 'HomeView',
-  components: {
-    ArmyListGroupTab
-  }
+  components: { ArmyListGroupTab }
 };
 </script>
 
 <style lang="scss">
+  .home-view {
+  }
 </style>
-

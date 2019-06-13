@@ -11,4 +11,6 @@ export default {
 </script>
 
 <style lang="scss">
+  .save-view {
+  }
 </style>

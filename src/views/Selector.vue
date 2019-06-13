@@ -41,9 +41,7 @@ import Unit from '@/views/selector/Unit';
 
 export default {
   name: 'SelectorView',
-  components: {
-    Unit
-  },
+  components: { Unit },
   computed: Object.assign({
       label: {
         get: () => store.getters.label,
