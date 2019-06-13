@@ -18,9 +18,6 @@ export default {
   removePrintItem (context, index) {
     context.commit('REMOVE_PRINT_ITEM', index);
   },
-  reorderPrintItems (context, printItems) {
-    context.commit('REORDER_PRINT_ITEMS', printItems);
-  },
   setArmy (context, jsonPath) {
     axios
       .get(process.env.BASE_URL + jsonPath)
@@ -60,6 +57,7 @@ export default {
         context.commit('SET_UNITS', response.data.units);
         context.commit('SET_VERSION', response.data.version);
 
+        context.commit('SET_PRINT_ITEMS', []);
         context.commit('SET_PRINTABLE_ITEMS', printableItems);
 
         context.dispatch('validate');
@@ -69,6 +67,9 @@ export default {
   },
   setLabel (context, label) {
     context.commit('SET_LABEL', label);
+  },
+  setPrintItems (context, printItems) {
+    context.commit('SET_PRINT_ITEMS', printItems);
   },
   setUnitNumber (context, payload) {
     // don't let the number go negative

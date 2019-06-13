@@ -64,9 +64,9 @@ describe('store.js actions', () => {
     expect(commit).toHaveBeenCalledWith('REMOVE_PRINT_ITEM', 0);
   });
 
-  it('reorderPrintItems commits REORDER_PRINT_ITEMS', () => {
-    actions.reorderPrintItems(context, expected.printItems);
-    expect(commit).toHaveBeenCalledWith('REORDER_PRINT_ITEMS', expected.printItems);
+  it('setPrintItems commits SET_PRINT_ITEMS', () => {
+    actions.setPrintItems(context, expected.printItems);
+    expect(commit).toHaveBeenCalledWith('SET_PRINT_ITEMS', expected.printItems);
   });
 
   describe('setArmy', () => {
@@ -93,6 +93,11 @@ describe('store.js actions', () => {
     it('dispatches validate', async () => {
       await actions.setArmy(context, expected.jsonPath);
       expect(dispatch).toHaveBeenCalledWith('validate');
+    });
+
+    it('commits SET_PRINT_ITEMS', async () => {
+      await actions.setArmy(context, expected.jsonPath);
+      expect(commit).toHaveBeenCalledWith('SET_PRINT_ITEMS', []);
     });
 
     it('commits SET_PRINTABLE_ITEMS', async () => {

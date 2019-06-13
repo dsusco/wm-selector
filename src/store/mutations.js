@@ -11,12 +11,12 @@ export default {
     state.printableItems.push(state.printItems[index]);
     state.printItems.splice(index, 1);
   },
-  REORDER_PRINT_ITEMS: (state, printItems) => state.printItems = printItems,
   SET_ARMY_LIST: (state, armyList) => state.armyList = armyList,
   SET_ARMY_RULES: (state, armyRules) => state.armyRules = armyRules,
   SET_JSON_PATH: (state, jsonPath) => state.jsonPath = jsonPath,
   SET_LABEL: (state, label) => state.label = label,
   SET_MAGIC: (state, magic) => state.magic = magic,
+  SET_PRINT_ITEMS: (state, printItems) => state.printItems = printItems,
   SET_PRINTABLE_ITEMS: (state, printableItems) => state.printableItems = printableItems,
   SET_SPECIAL_RULES: (state, specialRules) => state.specialRules = specialRules,
   SET_SPELLS: (state, spells) => state.spells = spells,

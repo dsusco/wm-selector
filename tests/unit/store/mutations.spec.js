@@ -69,11 +69,6 @@ describe('store.js mutations', () => {
     expect(state.printableItems).toEqual(['a second print item']);
   });
 
-  it('REORDER_PRINT_ITEMS sets state.printItems', () => {
-    mutations.REORDER_PRINT_ITEMS(state, expected.printItems);
-    expect(state.printItems).toEqual(expected.printItems);
-  });
-
   it('SET_ARMY_LIST sets state.armyList', () => {
     mutations.SET_ARMY_LIST(state, expected.armyList);
     expect(state.armyList).toEqual(expected.armyList);
@@ -97,6 +92,11 @@ describe('store.js mutations', () => {
   it('SET_MAGIC sets state.magic', () => {
     mutations.SET_MAGIC(state, expected.magic);
     expect(state.magic).toEqual(expected.magic);
+  });
+
+  it('SET_PRINT_ITEMS sets state.printItems', () => {
+    mutations.SET_PRINT_ITEMS(state, expected.printItems);
+    expect(state.printItems).toEqual(expected.printItems);
   });
 
   it('SET_PRINTABLE_ITEMS sets state.printableItems', () => {
