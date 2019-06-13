@@ -11,6 +11,8 @@ export default {
     Object.values(state.units).reduce((pointsCost, unit) => {
       return pointsCost + +unit.pointsCost;
     }, 0),
+  printItems: (state) => state.printItems,
+  printableItems: (state) => state.printableItems,
   size: (state, getters) => Math.max(1, Math.floor(getters.pointsCost / 1000)),
   specialRules: (state) => state.specialRules,
   spells: (state) => state.spells,

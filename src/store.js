@@ -18,6 +18,8 @@ export default new Vuex.Store({
     jsonPath: '',
     label: '',
     magic: undefined,
+    printItems: [],
+    printableItems: [],
     specialRules: {},
     spells: [],
     units: {},

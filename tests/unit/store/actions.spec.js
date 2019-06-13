@@ -53,6 +53,16 @@ describe('store.js actions', () => {
     };
   });
 
+  it('addPrintItem commits ADD_PRINT_ITEM', () => {
+    actions.addPrintItem(context, 0);
+    expect(commit).toHaveBeenCalledWith('ADD_PRINT_ITEM', 0);
+  });
+
+  it('removePrintItem commits REMOVE_PRINT_ITEM', () => {
+    actions.removePrintItem(context, 0);
+    expect(commit).toHaveBeenCalledWith('REMOVE_PRINT_ITEM', 0);
+  });
+
   describe('setArmy', () => {
     it('commits SET_JSON_PATH and the response data', async () => {
       await actions.setArmy(context, expected.jsonPath);
@@ -77,6 +87,11 @@ describe('store.js actions', () => {
     it('dispatches validate', async () => {
       await actions.setArmy(context, expected.jsonPath);
       expect(dispatch).toHaveBeenCalledWith('validate');
+    });
+
+    it('commits SET_PRINTABLE_ITEMS', async () => {
+      await actions.setArmy(context, expected.jsonPath);
+      expect(commit).toHaveBeenCalledWith('SET_PRINTABLE_ITEMS', ['Text List', 'Stats', 'Stats Used', 'Army Rules', 'Special Rules', 'Special Rules Used', 'Magic Items', 'Magic Items Used', 'Spells']);
     });
   });
 

@@ -8,6 +8,7 @@ const
     jsonPath: 'a jsonPath',
     label: 'a label',
     magic: true,
+    printableItems: ['a print item'],
     specialRules: { 'a specialRule': { text: [] } },
     spells: [{ roll: 0 }],
     units: { 'a unit': { type: 'a type', order: 0, points: 50 } },
@@ -28,12 +29,23 @@ describe('store.js mutations', () => {
     jsonPath: '',
     label: '',
     magic: undefined,
+    printItems: [],
+    printableItems: ['a print item', 'a second print item'],
     specialRules: {},
     spells: [],
     units: {},
     upgradeConstraints: [],
     upgrades: {},
     version: ''
+  });
+
+  it('ADD_PRINT_ITEM moves a print item from state.printableItems to state.printItems', () => {
+    mutations.ADD_PRINT_ITEM(state, 1);
+    expect(state.printItems).toEqual(['a second print item']);
+    expect(state.printableItems).toEqual(['a print item']);
+    mutations.ADD_PRINT_ITEM(state, 0);
+    expect(state.printItems).toEqual(['a second print item', 'a print item']);
+    expect(state.printableItems).toEqual([]);
   });
 
   it('CLEAR_ERRORS empties state.errors', () => {
@@ -46,6 +58,14 @@ describe('store.js mutations', () => {
   it('PUSH_ERROR pushes an error on to state.errors', () => {
     mutations.PUSH_ERROR(state, 'an error');
     expect(state.errors).toEqual(['an error']);
+  });
+
+  it('REMOVE_PRINT_ITEM moves a print item from state.printItems to state.printableItems', () => {
+    mutations.ADD_PRINT_ITEM(state, 0);
+    mutations.ADD_PRINT_ITEM(state, 0);
+    mutations.REMOVE_PRINT_ITEM(state, 1);
+    expect(state.printItems).toEqual(['a print item']);
+    expect(state.printableItems).toEqual(['a second print item']);
   });
 
   it('SET_ARMY_LIST sets state.armyList', () => {
@@ -71,6 +91,11 @@ describe('store.js mutations', () => {
   it('SET_MAGIC sets state.magic', () => {
     mutations.SET_MAGIC(state, expected.magic);
     expect(state.magic).toEqual(expected.magic);
+  });
+
+  it('SET_PRINTABLE_ITEMS sets state.printableItems', () => {
+    mutations.SET_PRINTABLE_ITEMS(state, expected.printableItems);
+    expect(state.printableItems).toEqual(expected.printableItems);
   });
 
   it('SET_SPECIAL_RULES sets state.specialRules', () => {

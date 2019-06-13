@@ -1,13 +1,22 @@
 import Vue from 'vue';
 
 export default {
+  ADD_PRINT_ITEM: (state, index) => {
+    state.printItems.push(state.printableItems[index]);
+    state.printableItems.splice(index, 1);
+  },
   CLEAR_ERRORS: (state) => state.errors.length = 0,
   PUSH_ERROR: (state, error) => state.errors.push(error),
+  REMOVE_PRINT_ITEM: (state, index) => {
+    state.printableItems.push(state.printItems[index]);
+    state.printItems.splice(index, 1);
+  },
   SET_ARMY_LIST: (state, armyList) => state.armyList = armyList,
   SET_ARMY_RULES: (state, armyRules) => state.armyRules = armyRules,
   SET_JSON_PATH: (state, jsonPath) => state.jsonPath = jsonPath,
   SET_LABEL: (state, label) => state.label = label,
   SET_MAGIC: (state, magic) => state.magic = magic,
+  SET_PRINTABLE_ITEMS: (state, printableItems) => state.printableItems = printableItems,
   SET_SPECIAL_RULES: (state, specialRules) => state.specialRules = specialRules,
   SET_SPELLS: (state, spells) => state.spells = spells,
   SET_UNIT_NUMBER: (state, payload) => state.units[payload.unitID].number = payload.number,

@@ -8,6 +8,8 @@ const
     jsonPath: 'a jsonPath',
     label: 'a label',
     magic: true,
+    printItems: ['a print item'],
+    printableItems: ['a second print item'],
     specialRules: { 'a specialRule': { text: [] } },
     spells: [{ roll: 0 }],
     units: { 'a unit': { type: 'a type', order: 0, points: 50 } },
@@ -28,6 +30,8 @@ describe('store.js getters', () => {
     jsonPath: '',
     label: '',
     magic: undefined,
+    printItems: [],
+    printableItems: [],
     specialRules: {},
     spells: [],
     units: {},
@@ -69,6 +73,16 @@ describe('store.js getters', () => {
   it('pointsCost returns a reduction of all the unit value pointCosts', () => {
     state.units = { a: { pointsCost: '+1' }, b: { pointsCost: 1 } };
     expect(getters.pointsCost(state)).toEqual(2);
+  });
+
+  it('printItems returns state.printItems', () => {
+    state.printItems = expected.printItems;
+    expect(getters.printItems(state)).toEqual(expected.printItems);
+  });
+
+  it('printableItems returns state.printableItems', () => {
+    state.printableItems = expected.printableItems;
+    expect(getters.printableItems(state)).toEqual(expected.printableItems);
   });
 
   it('size returns the max of the remainder of pointsCost / 1000 and 1', () => {

@@ -12,23 +12,43 @@ Array.prototype.toSentence = function (connector = ', ', lastConnector = ' or ')
 };
 
 export default {
+  addPrintItem (context, index) {
+    context.commit('ADD_PRINT_ITEM', index);
+  },
+  removePrintItem (context, index) {
+    context.commit('REMOVE_PRINT_ITEM', index);
+  },
   setArmy (context, jsonPath) {
     axios
       .get(process.env.BASE_URL + jsonPath)
       .then((response) => {
-        var upgradeConstraints = response.data.upgradeConstraints || [];
+        var
+          printableItems = ['Text List', 'Stats', 'Stats Used'],
+          upgradeConstraints = response.data.upgradeConstraints || [];
 
         context.commit('SET_ARMY_LIST', response.data.name);
         context.commit('SET_ARMY_RULES', response.data.armyRules);
+
+        if (response.data.armyRules) {
+          printableItems.push('Army Rules');
+        }
+
         context.commit('SET_JSON_PATH', jsonPath);
         context.commit('SET_MAGIC', response.data.magic);
         context.commit('SET_SPECIAL_RULES', response.data.specialRules);
+
+        if (response.data.specialRules) {
+          printableItems.push('Special Rules', 'Special Rules Used');
+        }
+
         context.commit('SET_SPELLS', response.data.spells);
 
         if (response.data.magic) {
           Object.assign(response.data.upgrades, magicItems.upgrades);
 
           upgradeConstraints = upgradeConstraints.concat(magicItems.upgradeConstraints);
+
+          printableItems.push('Magic Items', 'Magic Items Used', 'Spells');
         }
 
         context.commit('SET_UPGRADE_CONSTRAINTS', upgradeConstraints);
@@ -36,6 +56,8 @@ export default {
         context.commit('SET_UPGRADES', response.data.upgrades);
         context.commit('SET_UNITS', response.data.units);
         context.commit('SET_VERSION', response.data.version);
+
+        context.commit('SET_PRINTABLE_ITEMS', printableItems);
 
         context.dispatch('validate');
 
