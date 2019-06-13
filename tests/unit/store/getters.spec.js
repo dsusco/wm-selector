@@ -127,6 +127,30 @@ describe('store.js getters', () => {
     expect(getters.upgrades(state)).toEqual(expected.upgrades);
   });
 
+  it('usedUnits returns state.units[] with number > 0', () => {
+    state.units = {
+      a: { number: 0, upgrades: { a1: { number: 1 } } },
+      b: { number: 1, upgrades: { b1: { number: 0 } } },
+      c: { number: 1, upgrades: { c1: { number: 1 } } }
+    };
+    expect(getters.usedUnits(state)).toEqual({
+      b: { number: 1, upgrades: { } },
+      c: { number: 1, upgrades: { c1: { number: 1 } } }
+    });
+  });
+
+  it('usedUpgrades returns state.upgrades[] with number > 0', () => {
+    state.upgrades = {
+      a: { number: 0 },
+      b: { number: 1 },
+      c: { number: 1 }
+    };
+    expect(getters.usedUpgrades(state)).toEqual({
+      b: { number: 1 },
+      c: { number: 1 }
+    });
+  });
+
   it('version returns state.version', () => {
     state.version = expected.version;
     expect(getters.version(state)).toEqual(expected.version);
