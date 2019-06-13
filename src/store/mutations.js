@@ -53,7 +53,7 @@ export default {
     try {
       unit.pointsCost = Object.values(unit.upgrades)
         .reduce((pointsCost, upgrade) => pointsCost + upgrade.pointsCost, unitPointsCost);
-    } catch (e) {
+    } catch {
       unit.pointsCost = unitPointsCost;
     }
   },
@@ -80,7 +80,7 @@ export default {
         if (upgradeConstraint.unitType.includes(unit.type) && !unit.noUpgrades) {
           try {
             Vue.set(unit, 'upgrades', unit.upgrades.concat(upgradeConstraint.upgrades));
-          } catch (e) {
+          } catch {
             Vue.set(unit, 'upgrades', upgradeConstraint.upgrades);
           }
         }

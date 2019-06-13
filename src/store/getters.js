@@ -26,24 +26,28 @@ export default {
   upgradeConstraints: (state) => state.upgradeConstraints,
   upgrades: (state) => state.upgrades,
   usedUnits: (state) => Object.keys(state.units)
-    .filter((unitID) => state.units[unitID].number > 0)
     .reduce((usedUnits, unitID) => {
-      usedUnits[unitID] = state.units[unitID];
+      if (state.units[unitID].number > 0) {
+        usedUnits[unitID] = Object.assign({}, state.units[unitID]);
 
-      usedUnits[unitID].upgrades = Object.keys(usedUnits[unitID].upgrades)
-        .filter((upgradeID) => usedUnits[unitID].upgrades[upgradeID].number > 0)
-        .reduce((usedUpgrades, upgradeID) => {
-          usedUpgrades[upgradeID] = usedUnits[unitID].upgrades[upgradeID];
+        if (usedUnits[unitID].upgrades) {
+          usedUnits[unitID].upgrades = Object.keys(usedUnits[unitID].upgrades)
+            .filter((upgradeID) => usedUnits[unitID].upgrades[upgradeID].number > 0)
+            .reduce((usedUpgrades, upgradeID) => {
+              usedUpgrades[upgradeID] = usedUnits[unitID].upgrades[upgradeID];
 
-          return usedUpgrades;
-        }, {});
+              return usedUpgrades;
+            }, {});
+        }
+      }
 
       return usedUnits;
     }, {}),
   usedUpgrades: (state) => Object.keys(state.upgrades)
-    .filter((upgradeID) => state.upgrades[upgradeID].number > 0)
     .reduce((usedUpgrades, upgradeID) => {
-      usedUpgrades[upgradeID] = state.upgrades[upgradeID];
+      if (state.upgrades[upgradeID].number > 0) {
+        usedUpgrades[upgradeID] = Object.assign({}, state.upgrades[upgradeID]);
+      }
 
       return usedUpgrades;
     }, {}),
