@@ -34,7 +34,7 @@ export default {
 
         // add special rules from the specialRules
         if (store.getters.units[specialRuleID] && store.getters.units[specialRuleID].specialRules) {
-          (store.getters.units[specialRuleID])
+          (store.getters.units[specialRuleID].specialRules)
             .forEach((specialRule) => usedSpecialRules[specialRule] = store.getters.specialRules[specialRule]);
         }
 
@@ -52,17 +52,7 @@ export default {
     }
   },
   methods: {
-    marked (name) {
-      var text;
-
-      try {
-        text = store.getters.specialRules[name].text;
-      } catch {
-        text = specialRules[name].text;
-      }
-
-      return Marked(text.join('\n'));
-    }
+    marked: (name) => Marked((store.getters.specialRules[name].text || specialRules[name].text).join('\n'))
   },
   props: ['used']
 };
