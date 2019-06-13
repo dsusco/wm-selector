@@ -30,6 +30,7 @@ describe('store.js actions', () => {
       jsonPath: 'a jsonPath',
       label: 'a label',
       magic: true,
+      printItems: ['a print item'],
       specialRules: { 'a specialRule': { text: [] } },
       spells: [{ roll: 0 }],
       units: { 'a unit': { type: 'a type', order: 0, points: 50 } },
@@ -61,6 +62,11 @@ describe('store.js actions', () => {
   it('removePrintItem commits REMOVE_PRINT_ITEM', () => {
     actions.removePrintItem(context, 0);
     expect(commit).toHaveBeenCalledWith('REMOVE_PRINT_ITEM', 0);
+  });
+
+  it('reorderPrintItems commits REORDER_PRINT_ITEMS', () => {
+    actions.reorderPrintItems(context, expected.printItems);
+    expect(commit).toHaveBeenCalledWith('REORDER_PRINT_ITEMS', expected.printItems);
   });
 
   describe('setArmy', () => {

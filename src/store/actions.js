@@ -18,6 +18,9 @@ export default {
   removePrintItem (context, index) {
     context.commit('REMOVE_PRINT_ITEM', index);
   },
+  reorderPrintItems (context, printItems) {
+    context.commit('REORDER_PRINT_ITEMS', printItems);
+  },
   setArmy (context, jsonPath) {
     axios
       .get(process.env.BASE_URL + jsonPath)

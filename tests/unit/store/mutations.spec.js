@@ -8,7 +8,8 @@ const
     jsonPath: 'a jsonPath',
     label: 'a label',
     magic: true,
-    printableItems: ['a print item'],
+    printItems: ['a print item'],
+    printableItems: ['a second print item'],
     specialRules: { 'a specialRule': { text: [] } },
     spells: [{ roll: 0 }],
     units: { 'a unit': { type: 'a type', order: 0, points: 50 } },
@@ -66,6 +67,11 @@ describe('store.js mutations', () => {
     mutations.REMOVE_PRINT_ITEM(state, 1);
     expect(state.printItems).toEqual(['a print item']);
     expect(state.printableItems).toEqual(['a second print item']);
+  });
+
+  it('REORDER_PRINT_ITEMS sets state.printItems', () => {
+    mutations.REORDER_PRINT_ITEMS(state, expected.printItems);
+    expect(state.printItems).toEqual(expected.printItems);
   });
 
   it('SET_ARMY_LIST sets state.armyList', () => {
