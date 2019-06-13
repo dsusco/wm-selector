@@ -7,33 +7,6 @@ const localVue = createLocalVue();
 
 var store, wrapper;
 
-jest.mock('@/store', () => {
-  return {
-    getters: {
-      units: {
-        a: {
-          number: 1,
-          pointsCost: 50,
-          upgrades: {
-            c: {
-              number: 1,
-              pointsCost: '+5'
-            },
-            d: {
-              number: 0,
-              pointsCost: '+10'
-            }
-          }
-        },
-        b: {
-          number: 0,
-          pointsCost: 0
-        },
-      }
-    }
-  }
-});
-
 localVue.use(Vuex);
 
 describe('TextList.vue', () => {
@@ -44,6 +17,38 @@ describe('TextList.vue', () => {
         label: () => 'a label',
         pointsCost: () => 50,
         unitCount: () => 1,
+        units: () => ({
+          a: {
+            number: 1,
+            pointsCost: 50,
+            upgrades: {
+              c: {
+                number: 1,
+                pointsCost: '+5'
+              },
+              d: {
+                number: 0,
+                pointsCost: '+10'
+              }
+            }
+          },
+          b: {
+            number: 0,
+            pointsCost: 0
+          }
+        }),
+        usedUnits: () => ({
+          a: {
+            number: 1,
+            pointsCost: 50,
+            upgrades: {
+              c: {
+                number: 1,
+                pointsCost: '+5'
+              }
+            }
+          }
+        }),
         version: () => 'a version'
       }
     });
