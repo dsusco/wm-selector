@@ -26,6 +26,8 @@ export default {
           printableItems = ['Text List', 'Stats', 'Stats Used'],
           upgradeConstraints = response.data.upgradeConstraints || [];
 
+        response.data.upgrades = response.data.upgrades || {};
+
         context.commit('SET_ARMY_LIST', response.data.name);
         context.commit('SET_ARMY_RULES', response.data.armyRules);
 
