@@ -11,6 +11,36 @@ Array.prototype.toSentence = function (connector = ', ', lastConnector = ' or ')
   }
 };
 
+function checkValidations (context, id, item) {
+  // army min/max
+  if (item.number < item.armyMin) {
+    context.commit('PUSH_ERROR', 'Minimum of ' + item.armyMin + ' ' + id + ' per army.');
+  }
+  if (item.number > item.armyMax) {
+    context.commit('PUSH_ERROR', 'Maximum of ' + item.armyMax + ' ' + id + ' per army.');
+  }
+
+  // min/max
+  if (item.number < item.min * context.getters.size) {
+    context.commit('PUSH_ERROR', 'Minimum of ' + (item.min * context.getters.size) + ' ' + id + ' per ' + context.getters.size + ',000 points.');
+  }
+  if (item.number > item.max * context.getters.size) {
+    context.commit('PUSH_ERROR', 'Maximum of ' + (item.max * context.getters.size) + ' ' + id + ' per ' + context.getters.size + ',000 points.');
+  }
+
+  // Skirmishers, et al.
+  if (item.augendUnits &&
+      item.number > item.augendUnits.reduce((count, unitID) => count + context.state.units[unitID].number, 0)
+  ) {
+    context.commit('PUSH_ERROR', 'Minimum of ' + item.number + ' ' + item.augendUnits.toSentence() + ' required for ' + item.number + ' ' + id + '.');
+  }
+
+  // Warmaster Trial Armies Compendium 2009
+  if (item.elite && item.number > context.getters.size - 1) {
+    context.commit('PUSH_ERROR', 'Maximum of ' + (context.getters.size - 1) + ' ' + id + ' per ' + context.getters.size + ',000 points.');
+  }
+}
+
 export default {
   addPrintItem (context, index) {
     context.commit('ADD_PRINT_ITEM', index);
@@ -120,42 +150,12 @@ export default {
   validate (context) {
     context.commit('CLEAR_ERRORS');
 
-    function checkValidations (id, item) {
-      // army min/max
-      if (item.number < item.armyMin) {
-        context.commit('PUSH_ERROR', 'Minimum of ' + item.armyMin + ' ' + id + ' per army.');
-      }
-      if (item.number > item.armyMax) {
-        context.commit('PUSH_ERROR', 'Maximum of ' + item.armyMax + ' ' + id + ' per army.');
-      }
-
-      // min/max
-      if (item.number < item.min * context.getters.size) {
-        context.commit('PUSH_ERROR', 'Minimum of ' + (item.min * context.getters.size) + ' ' + id + ' per ' + context.getters.size + ',000 points.');
-      }
-      if (item.number > item.max * context.getters.size) {
-        context.commit('PUSH_ERROR', 'Maximum of ' + (item.max * context.getters.size) + ' ' + id + ' per ' + context.getters.size + ',000 points.');
-      }
-
-      // Skirmishers, et al.
-      if (item.augendUnits &&
-          item.number > item.augendUnits.reduce((count, unitID) => count + context.state.units[unitID].number, 0)
-      ) {
-        context.commit('PUSH_ERROR', 'Minimum of ' + item.number + ' ' + item.augendUnits.toSentence() + ' required for ' + item.number + ' ' + id + '.');
-      }
-
-      // Warmaster Trial Armies Compendium 2009
-      if (item.elite && item.number > context.getters.size - 1) {
-        context.commit('PUSH_ERROR', 'Maximum of ' + (context.getters.size - 1) + ' ' + id + ' per ' + context.getters.size + ',000 points.');
-      }
-    }
-
     for (var unit in context.state.units) {
-      checkValidations(unit, context.state.units[unit]);
+      checkValidations(context, unit, context.state.units[unit]);
     }
 
     for (var upgrade in context.state.upgrades) {
-      checkValidations(upgrade, context.state.upgrades[upgrade]);
+      checkValidations(context, upgrade, context.state.upgrades[upgrade]);
     }
   }
 };
