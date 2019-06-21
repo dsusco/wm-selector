@@ -1,5 +1,13 @@
 import store from '@/store';
 
+function checkJSONPathBeforeEnter (to, from, next) {
+  if (store.getters.jsonPath === '') {
+    next({ name: 'Home' });
+  } else {
+    next();
+  }
+}
+
 export default [
   {
     path: '/',
@@ -10,48 +18,24 @@ export default [
     path: '/selector',
     name: 'Selector',
     component: () => import('@/views/Selector.vue'),
-    beforeEnter (to, from, next) {
-      if (store.getters.jsonPath === '') {
-        next({ name: 'Home' });
-      } else {
-        next();
-      }
-    }
+    beforeEnter: checkJSONPathBeforeEnter
   },
   {
     path: '/text',
     name: 'Text',
     component: () => import('@/views/Text.vue'),
-    beforeEnter (to, from, next) {
-      if (store.getters.jsonPath === '') {
-        next({ name: 'Home' });
-      } else {
-        next();
-      }
-    }
+    beforeEnter: checkJSONPathBeforeEnter
   },
   {
     path: '/save',
     name: 'Save',
     component: () => import('@/views/Save.vue'),
-    beforeEnter (to, from, next) {
-      if (store.getters.jsonPath === '') {
-        next({ name: 'Home' });
-      } else {
-        next();
-      }
-    }
+    beforeEnter: checkJSONPathBeforeEnter
   },
   {
     path: '/print',
     name: 'Print',
     component: () => import('@/views/Print.vue'),
-    beforeEnter (to, from, next) {
-      if (store.getters.jsonPath === '') {
-        next({ name: 'Home' });
-      } else {
-        next();
-      }
-    }
+    beforeEnter: checkJSONPathBeforeEnter
   }
 ];
