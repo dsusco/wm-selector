@@ -61,7 +61,10 @@ export default {
 
     @include grid-media($md-neat-grid) {
       button {
+        @include _(1.2rem);
         @include padding(0 null);
+
+        line-height: $_ - .2rem;
 
         .fa {
           @include sr-only(false);
