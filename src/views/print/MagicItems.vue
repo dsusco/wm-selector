@@ -1,11 +1,11 @@
 <template>
-  <div class="print-item magic-items">
-    <h3>Magic Items{{ used ? " Used" : "" }}</h3>
+  <div class="magic-items">
+    <h3>Magic Items{{used ? ' Used' : ''}}</h3>
 
     <dl>
       <template v-for="(magicItem, name) in magicItems">
-        <dt :key="'magic_item_' + name">{{ name }}</dt>
-        <dd :key="'magic_item_' + name + '_text'" v-html="marked(magicItem.text)"></dd>
+        <dt :key="name">{{ name }}</dt>
+        <dd :key="name + '_text'" v-html="marked(magicItem.text)"></dd>
       </template>
     </dl>
   </div>
@@ -39,6 +39,6 @@ export default {
 </script>
 
 <style lang="scss">
-  .print-item.magic-items {
+  .magic-items {
   }
 </style>

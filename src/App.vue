@@ -28,15 +28,20 @@
     </nav>
 
     <router-view />
+
+    <PrintItems id="print_view" />
   </div>
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import { mapGetters } from 'vuex';
+
+import PrintItems from '@/views/print/PrintItems';
 
 export default {
   name: 'wm-selector',
-  computed: mapGetters(['jsonPath'])
+  components: { PrintItems },
+  computed: mapGetters(['jsonPath', 'printItems'])
 };
 </script>
 
@@ -80,5 +85,9 @@ export default {
         }
       }
     }
+  }
+
+  #print_view {
+    display: none;
   }
 </style>

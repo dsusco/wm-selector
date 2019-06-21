@@ -40,3 +40,29 @@ body {
   @include border-width(null 0);
   padding: ($_ / 2);
 }
+
+@media print {
+  body {
+    background-color: $_color_white;
+    color: $_color_black;
+    font-family: $_font_family_serif;
+    font-size: 10pt;
+  }
+
+  #nav, #main { display: none !important; }
+
+  #print_view {
+    display: block !important;
+
+    .print-item > div {
+      &.army-rules,
+      &.magic-items,
+      &.special-rules,
+      &.spells {
+        @include prefixer(column-count, 2, ('webkit', 'moz'));
+        @include prefixer(column-gap, 2em, ('webkit', 'moz'));
+        @include prefixer(orphans, 3, ('webkit', 'moz'));
+      }
+    }
+  }
+}

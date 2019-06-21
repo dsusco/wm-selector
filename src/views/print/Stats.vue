@@ -1,13 +1,14 @@
 <template>
-  <div class="print-item stats">
+  <div class="stats">
     <table>
       <caption>{{caption}}</caption>
+
       <thead>
         <tr>
           <th v-if="used">Cost</th>
-          <th v-if="used">#</th>
-          <th>Troop</th>
-          <th>Type</th>
+          <th class="number" v-if="used">#</th>
+          <th class="troop">Troop</th>
+          <th class="type">Type</th>
           <th>Attack</th>
           <th>Range</th>
           <th>Hits</th>
@@ -19,72 +20,23 @@
           <th>Special</th>
         </tr>
       </thead>
+
       <tbody v-if="!used">
-        <tr v-for="(unit, unitID) in units" :key="unitID + '_unit'">
-          <td>{{unitID}}</td>
-          <td>{{unit.type}}</td>
-          <td>{{unit.attack}}</td>
-          <td>{{unit.range || '-'}}</td>
-          <td>{{unit.hits || '-'}}</td>
-          <td>{{unit.armour || '-'}}</td>
-          <td>{{unit.command || '-'}}</td>
-          <td>{{unit.size}}</td>
-          <td>{{unit.points}}</td>
-          <td>{{minMax(unit)}}</td>
-          <td>{{special(unitID, unit.specialRules)}}</td>
-        </tr>
-        <tr v-for="(upgrade, upgradeID) in upgrades" :key="upgradeID + '_upgrade'">
-          <td>{{upgradeID}}</td>
-          <td>{{upgrade.type}}</td>
-          <td>{{upgrade.attack}}</td>
-          <td>{{upgrade.range || '-'}}</td>
-          <td>{{upgrade.hits || '-'}}</td>
-          <td>{{upgrade.armour || '-'}}</td>
-          <td>{{upgrade.command || '-'}}</td>
-          <td>{{upgrade.size}}</td>
-          <td>{{upgrade.points}}</td>
-          <td>{{minMax(upgrade)}}</td>
-          <td>{{special(upgradeID, upgrade.specialRules)}}</td>
-        </tr>
+        <StatLine v-for="(unit, unitID) in units" :key="unitID" :name="unitID" :troop="unit" :used="used" />
+        <StatLine v-for="(upgrade, upgradeID) in upgrades" :key="upgradeID" :name="upgradeID" :troop="upgrade" :used="used" />
       </tbody>
+
       <tbody v-if="used">
         <template v-for="(unit, unitID) in usedUnits">
-          <tr :key="unitID + '_unit'">
-            <td>{{unit.pointsCost}}</td>
-            <td>{{unit.number}}</td>
-            <td>{{unitID}}</td>
-            <td>{{unit.type}}</td>
-            <td>{{unit.attack || '-'}}</td>
-            <td>{{unit.range || '-'}}</td>
-            <td>{{unit.hits || '-'}}</td>
-            <td>{{unit.armour || '-'}}</td>
-            <td>{{unit.command || '-'}}</td>
-            <td>{{unit.size}}</td>
-            <td>{{unit.points}}</td>
-            <td>{{minMax(unit)}}</td>
-            <td>{{special(unitID, unit.specialRules)}}</td>
-          </tr>
-          <tr v-for="(upgrade, upgradeID) in unit.upgrades"  :key="unitID + '_unit_' + upgradeID + '_upgrade'">
-            <td></td>
-            <td>{{upgrade.number}}</td>
-            <td>{{upgradeID}}</td>
-            <td>{{upgrade.type}}</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>{{upgrade.points}}</td>
-            <td>{{minMax(upgrade)}}</td>
-            <td>{{special(upgradeID, upgrade.specialRules)}}</td>
-          </tr>
+          <StatLine :key="unitID" :name="unitID" :troop="unit" :used="used" />
+          <StatLine v-for="(upgrade, upgradeID) in unit.upgrades"  :key="upgradeID" :name="upgradeID" :troop="upgrade" :used="used" />
         </template>
       </tbody>
+
       <tfoot v-if="used">
         <tr>
-          <td>{{pointsCost}}</td>
-          <td>{{unitCount}}/{{Math.ceil(unitCount / 2)}}</td>
+          <td class="cost">{{pointsCost}}</td>
+          <td class="number">{{unitCount}}/{{Math.ceil(unitCount / 2)}}</td>
           <td colspan="11"></td>
         </tr>
       </tfoot>
@@ -95,12 +47,14 @@
 <script>
 import { mapGetters } from 'vuex';
 
+import StatLine from '@/views/print/stats/StatLine';
 import store from '@/store';
 
 const MAGIC_ITEM_TYPES = ['Magic Standard', 'Magic Weapon', 'Device of Power'];
 
 export default {
   name: 'Stats',
+  components: { StatLine },
   computed: Object.assign({
       caption () {
         return this.used ? 'Stats Used' : store.getters.armyList + ' Army Selector'
@@ -114,45 +68,61 @@ export default {
           return usedUpgrades;
         }, {})
     },
-    mapGetters(['armyList', 'pointsCost', 'unitCount', 'units', 'usedUnits'])
+    mapGetters(['pointsCost', 'unitCount', 'units', 'usedUnits'])
   ),
-  methods: {
-    minMax: (unit) => {
-      var minMax;
-
-      if (unit.elite) {
-        minMax = 'elite'
-      } else if (unit.armyMin || unit.armyMax) {
-        if (unit.armyMin) {
-          minMax = unit.armyMin;
-
-          if (unit.armyMax && unit.armyMin !== unit.armyMax) {
-            minMax += '–' + unit.armyMax;
-          }
-        } else {
-          minMax = unit.armyMax;
-        }
-      } else {
-        minMax = (unit.min || '-') + '/' + (unit.max || '-');
-      }
-
-      return minMax;
-    },
-    special: (name, specialRules) => {
-      return [name].concat(specialRules).reduce((special, name) => {
-        if (store.getters.specialRules[name]) {
-          special.push('*' + store.getters.specialRules[name].order);
-        }
-
-        return special;
-      }, []).join(', ') || '-';
-    }
-  },
   props: ['used']
 };
 </script>
 
 <style lang="scss">
-  .print-item.stats {
+  .stats {
+    @include _(1.2rem);
+
+    text-align: center;
+    overflow-x: auto;
+
+    table {
+      width: 100%;
+    }
+
+    caption {
+      @include _(1.6rem);
+
+      font-weight: bold;
+    }
+
+    thead {
+      border-bottom: .1rem solid $_color_black;
+    }
+
+    tbody tr:first-child td {
+      line-height: $_ - .1rem;
+    }
+
+    tfoot {
+      border-top: .1rem solid $_color_black;
+
+      tr:first-child td {
+        line-height: $_ - .1rem;
+      }
+    }
+
+    th,
+    td {
+      @include padding(0 .25em);
+
+      white-space: nowrap;
+    }
+
+    .number {
+      border-right: .1rem solid $_color_black;
+    }
+
+    .troop,
+    .type {
+      @include padding(null .5em);
+
+      text-align: left;
+    }
   }
 </style>

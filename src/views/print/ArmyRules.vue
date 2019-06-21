@@ -1,9 +1,9 @@
 <template>
-  <div class="print-item army-rules">
+  <div class="army-rules">
     <h3>Army Rules</h3>
 
-    <div v-for="(armyRule, index) in armyRules" :key="'army_rule_' + index">
-      <h4 v-if="armyRule.id">{{ armyRule.id }}</h4>
+    <div v-for="(armyRule, index) in armyRules" :key="index">
+      <h4 v-if="armyRule.id">{{armyRule.id}}</h4>
       <div v-html="marked(armyRule.text)"></div>
     </div>
   </div>
@@ -23,6 +23,16 @@ export default {
 </script>
 
 <style lang="scss">
-  .print-item.army-rules {
+  .army-rules {
+    h4 {
+      @include _(1.6rem);
+
+      float: left;
+      margin: 0;
+
+      &::after {
+        content: ':\00a0';
+      }
+    }
   }
 </style>

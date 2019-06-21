@@ -1,5 +1,5 @@
 <template>
-  <pre class="print-item text-list"><template v-if="label">{{label}}
+  <pre class="text-list"><template v-if="label">{{label}}
 </template>{{armyList}}, {{pointsCost}} points
 {{version}}
 --------------------------------
@@ -32,7 +32,7 @@ export default {
 </script>
 
 <style lang="scss">
-  .print-item.text-list {
+  .text-list {
     margin: 0;
   }
 </style>
