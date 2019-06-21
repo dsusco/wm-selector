@@ -4,7 +4,7 @@
        <button v-for="(item, index) in printableItems" :key="index" @click="addPrintItem(index)">{{item}}</button>
     </div>
 
-    <p>Click what you would like printed in the list above to add it to the preview below, then <a href="javascript:window.print()">print</a>.</p>
+    <p>Click what you would like to print in the box above to add it to the preview below, then <a href="javascript:window.print()">print</a>.</p>
 
     <PrintItems />
   </main>
@@ -34,6 +34,7 @@ export default {
     .print-items {
       border: .1rem dotted $_color_dark;
       margin: 0 0 $_;
+      min-height: 2 * $_;
       padding: (($_ / 4) - .1rem) 1em;
     }
 
