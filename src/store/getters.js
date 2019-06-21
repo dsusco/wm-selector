@@ -34,7 +34,7 @@ export default {
           usedUnits[unitID].upgrades = Object.keys(usedUnits[unitID].upgrades)
             .filter((upgradeID) => usedUnits[unitID].upgrades[upgradeID].number > 0)
             .reduce((usedUpgrades, upgradeID) => {
-              usedUpgrades[upgradeID] = usedUnits[unitID].upgrades[upgradeID];
+              usedUpgrades[upgradeID] = Object.assign({}, state.upgrades[upgradeID], usedUnits[unitID].upgrades[upgradeID]);
 
               return usedUpgrades;
             }, {});

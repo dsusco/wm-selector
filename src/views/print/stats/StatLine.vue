@@ -4,12 +4,12 @@
     <td class="number" v-if="used">{{troop.number}}</td>
     <td class="troop">{{name}}</td>
     <td class="type">{{troop.type}}</td>
-    <td class="attack">{{troop.attack}}</td>
+    <td class="attack">{{troop.attack || '-' }}</td>
     <td class="range">{{troop.range || '-'}}</td>
     <td class="hits">{{troop.hits || '-'}}</td>
     <td class="armour">{{troop.armour || '-'}}</td>
     <td class="command">{{troop.command || '-'}}</td>
-    <td class="size">{{troop.size}}</td>
+    <td class="size">{{troop.size || '-' }}</td>
     <td class="points">{{troop.points}}</td>
     <td class="min-max">{{minMax(troop)}}</td>
     <td class="special">{{special(name, troop.specialRules)}}</td>
