@@ -267,7 +267,7 @@ function lookupOldList (oldList) {
     case 'beastmen':
       return 'warmaster-trial-armies-compendium-2009/beastmen';
     case 'beastmenrev':
-      return 'warmaster-trial-armies-compendium-2009/beastmen';
+      return 'warmaster-revolution/beastmen';
     case 'bretonnian':
       return 'warmaster-armies/bretonnian';
     case 'bretonnianrev':
@@ -373,7 +373,7 @@ function lookupOldList (oldList) {
     case 'norse':
       return 'warmaster-trial-armies-compendium-2009/norse';
     case 'norserev':
-      return 'warmaster-trial-armies-compendium-2009/norse';
+      return 'warmaster-revolution/norse';
     case 'norsewma':
       return 'warmaster-ancients/norse';
     case 'ogrekingdoms':
@@ -421,6 +421,6 @@ function lookupOldList (oldList) {
     case 'woodelf':
       return 'warmaster-trial-armies-compendium-2009/wood-elf';
     case 'woodelfrev':
-      return 'warmaster-trial-armies-compendium-2009/wood-elf';
+      return 'warmaster-revolution/wood-elf';
   }
 }
