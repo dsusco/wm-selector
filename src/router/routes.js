@@ -1,3 +1,5 @@
+import Querystring from 'querystring';
+
 import store from '@/store';
 
 function checkJSONPathBeforeEnter (to, from, next) {
@@ -12,7 +14,16 @@ export default [
   {
     path: '/',
     name: 'Home',
-    component: () => import('@/views/Home.vue')
+    component: () => import('@/views/Home.vue'),
+    beforeEnter (to, from, next) {
+      var params = Querystring.parse(to.fullPath.replace(/^\/\?/, ''));
+
+      if (params.jsonPath || params.list) {
+        store.dispatch('loadSaveURL', params);
+      } else {
+        next();
+      }
+    }
   },
   {
     path: '/selector',

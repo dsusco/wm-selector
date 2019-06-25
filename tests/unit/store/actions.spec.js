@@ -9,6 +9,9 @@ jest.mock('axios');
 describe('store.js actions', () => {
   const
     axiosResponse = {
+      config: {
+        url: '/a jsonPath'
+      },
       data: {
         armyRules: 'some armyRules',
         magic: 'magic flag',
@@ -59,14 +62,84 @@ describe('store.js actions', () => {
     expect(commit).toHaveBeenCalledWith('ADD_PRINT_ITEM', 0);
   });
 
+  describe('loadSaveURL', () => {
+    var params;
+
+    beforeEach(() => {
+      context = {
+        commit,
+        dispatch,
+        getters: {
+          printableItems: ['pi1', 'pi2', 'pi3'],
+          units: {
+            'a unit': {
+              order: 0
+            }
+          },
+          upgrades: {
+            'an upgrade': {
+              order: 'au'
+            }
+          }
+        }
+      };
+
+      params = {
+        label: 'a label',
+        printItems: 'pi1,pi2',
+        '0': 2,
+        '0-au': 1
+      };
+    });
+
+    it('dispatches setLabel', async () => {
+      await Promise.all([actions.loadSaveURL(context, params)]);
+      expect(dispatch).toHaveBeenCalledWith('setLabel', 'a label');
+    });
+
+    it('commits SET_PRINTABLE_ITEMS', async () => {
+      await Promise.all([actions.loadSaveURL(context, params)]);
+      expect(commit).toHaveBeenCalledWith('SET_PRINTABLE_ITEMS', ['pi3']);
+    });
+
+    it('dispatches setPrintItems', async () => {
+      await Promise.all([actions.loadSaveURL(context, params)]);
+      expect(dispatch).toHaveBeenCalledWith('setPrintItems', ['pi1', 'pi2']);
+    });
+
+    it('dispatches setUnitNumber', async () => {
+      await Promise.all([actions.loadSaveURL(context, params)]);
+      expect(dispatch).toHaveBeenCalledWith('setUnitNumber', {
+        unitID: 'a unit',
+        number: 2,
+        skipValidation: true
+      });
+    });
+
+    it('dispatches setUnitUpgradeNumber', async () => {
+      await Promise.all([actions.loadSaveURL(context, params)]);
+      expect(dispatch).toHaveBeenCalledWith('setUnitUpgradeNumber', {
+        unitID: 'a unit',
+        upgradeID: 'an upgrade',
+        number: 1,
+        skipValidation: true
+      });
+    });
+
+    it('dispatches validate', async () => {
+      await Promise.all([actions.loadSaveURL(context, params)]);
+      expect(dispatch).toHaveBeenCalledWith('validate');
+    });
+
+    it('pushes Selector location to router', async () => {
+      await Promise.all([actions.loadSaveURL(context, params)]);
+      expect(routerPushSpy).toHaveBeenCalledWith({ name: 'Selector' });
+    });
+  });
+
   it('removePrintItem commits REMOVE_PRINT_ITEM', () => {
     actions.removePrintItem(context, 0);
     expect(commit).toHaveBeenCalledWith('REMOVE_PRINT_ITEM', 0);
-  });
-
-  it('setPrintItems commits SET_PRINT_ITEMS', () => {
-    actions.setPrintItems(context, expected.printItems);
-    expect(commit).toHaveBeenCalledWith('SET_PRINT_ITEMS', expected.printItems);
   });
 
   describe('setArmy', () => {
@@ -91,7 +164,7 @@ describe('store.js actions', () => {
     });
 
     it('dispatches validate', async () => {
-      await actions.setArmy(context, expected.jsonPath);
+      await Promise.all([actions.setArmy(context, expected.jsonPath)]);
       expect(dispatch).toHaveBeenCalledWith('validate');
     });
 
@@ -109,6 +182,11 @@ describe('store.js actions', () => {
   it('setLabel commits SET_LABEL', () => {
     actions.setLabel(context, expected.label);
     expect(commit).toHaveBeenCalledWith('SET_LABEL', expected.label);
+  });
+
+  it('setPrintItems commits SET_PRINT_ITEMS', () => {
+    actions.setPrintItems(context, expected.printItems);
+    expect(commit).toHaveBeenCalledWith('SET_PRINT_ITEMS', expected.printItems);
   });
 
   describe('setUnitNumber', () => {
@@ -159,6 +237,7 @@ describe('store.js actions', () => {
       expect(dispatch).toHaveBeenCalledWith('setUnitUpgradeNumber', {
         unitID: 'a unit',
         number: 0,
+        skipSettingUnitPointsCost: true,
         skipValidation: true,
         upgradeID: 'an upgrade'
       });
