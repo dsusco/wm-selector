@@ -9,7 +9,7 @@ export default {
     context.commit('ADD_PRINT_ITEM', index);
   },
   loadSaveURL (context, params) {
-    if (params.list) {
+    if (params.hasOwnProperty('list')) {
       params.jsonPath = 'json/' + lookupOldList(params.list) + '.json';
     }
 
