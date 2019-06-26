@@ -33,7 +33,7 @@ describe('store.js actions', () => {
       jsonPath: 'a jsonPath',
       label: 'a label',
       magic: true,
-      printItems: ['a print item'],
+      printItems: [{ abbr: 'a', title: 'a print item' }],
       specialRules: { 'a specialRule': { text: [] } },
       spells: [{ roll: 0 }],
       units: { 'a unit': { type: 'a type', order: 0, points: 50 } },
@@ -70,7 +70,11 @@ describe('store.js actions', () => {
         commit,
         dispatch,
         getters: {
-          printableItems: ['pi1', 'pi2', 'pi3'],
+          printableItems: [
+            { abbr: 'pi1', title: 'printable item 1' },
+            { abbr: 'pi2', title: 'printable item 2' },
+            { abbr: 'pi3', title: 'printable item 3' }
+          ],
           units: {
             'a unit': {
               order: 0
@@ -86,7 +90,7 @@ describe('store.js actions', () => {
 
       params = {
         label: 'a label',
-        printItems: 'pi1,pi2',
+        printItems: 'pi2,pi1',
         '0': 2,
         '0-au': 1
       };
@@ -97,14 +101,10 @@ describe('store.js actions', () => {
       expect(dispatch).toHaveBeenCalledWith('setLabel', 'a label');
     });
 
-    it('commits SET_PRINTABLE_ITEMS', async () => {
+    it('dispatches addPrintItem', async () => {
       await Promise.all([actions.loadSaveURL(context, params)]);
-      expect(commit).toHaveBeenCalledWith('SET_PRINTABLE_ITEMS', ['pi3']);
-    });
-
-    it('dispatches setPrintItems', async () => {
-      await Promise.all([actions.loadSaveURL(context, params)]);
-      expect(dispatch).toHaveBeenCalledWith('setPrintItems', ['pi1', 'pi2']);
+      expect(dispatch).toHaveBeenCalledWith('addPrintItem', 1);
+      expect(dispatch).toHaveBeenCalledWith('addPrintItem', 0);
     });
 
     it('dispatches setUnitNumber', async () => {
@@ -175,7 +175,17 @@ describe('store.js actions', () => {
 
     it('commits SET_PRINTABLE_ITEMS', async () => {
       await actions.setArmy(context, expected.jsonPath);
-      expect(commit).toHaveBeenCalledWith('SET_PRINTABLE_ITEMS', ['Text List', 'Stats', 'Stats Used', 'Army Rules', 'Special Rules', 'Special Rules Used', 'Magic Items', 'Magic Items Used', 'Spells']);
+      expect(commit).toHaveBeenCalledWith('SET_PRINTABLE_ITEMS', [
+        { abbr: 'l', title: 'Text List' },
+        { abbr: 's', title: 'Stats' },
+        { abbr: 'sl', title: 'Stats Used' },
+        { abbr: 'ar', title: 'Army Rules' },
+        { abbr: 'sr', title: 'Special Rules' },
+        { abbr: 'sru', title: 'Special Rules Used' },
+        { abbr: 'mi', title: 'Magic Items' },
+        { abbr: 'miu', title: 'Magic Items Used' },
+        { abbr: 'sp', title: 'Spells' }
+      ]);
     });
   });
 

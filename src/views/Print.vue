@@ -1,7 +1,7 @@
 <template>
   <main id="main" class="print-view">
     <div class="printable-items">
-       <button v-for="(item, index) in printableItems" :key="index" @click="addPrintItem(index)">{{item}}</button>
+       <button v-for="(item, index) in printableItems" :key="index" @click="addPrintItem(index)">{{item.title}}</button>
     </div>
 
     <p>Click what you would like to print in the box above to add it to the preview below, then <a href="javascript:window.print()">print</a>.</p>

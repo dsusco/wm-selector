@@ -21,26 +21,19 @@ export default {
           unitIDs = Object.keys(context.getters.units),
           upgradeIDs = Object.keys(context.getters.upgrades);
 
+        context.dispatch('setLabel', params.label);
+
         // backwards compatability for old print param
         if (params.hasOwnProperty('print')) {
-          params.printItems = (',' + (params.print || ''))
-            .replace(',sp', ',Spells')
-            .replace(',miu', ',Magic Items Used')
-            .replace(',mi', ',Magic Items')
-            .replace(',sru', ',Special Rules Used')
-            .replace(',sr', ',Special Rules')
-            .replace(',ar', ',Army Rules')
-            .replace(',sl', ',Stats Used')
-            .replace(',s', ',Stats')
-            .replace(',l', ',Text List')
-            .replace(/^,/, '');
+          params.printItems = params.print;
         }
 
-        params.printItems = params.printItems.split(',');
-
-        context.dispatch('setLabel', params.label);
-        context.commit('SET_PRINTABLE_ITEMS', _.difference(context.getters.printableItems, params.printItems));
-        context.dispatch('setPrintItems', params.printItems);
+        params.printItems = params.printItems.split(',').map((printItem) => {
+          context.dispatch('addPrintItem', _.findIndex(
+              context.getters.printableItems,
+              (printableItem) => printableItem.abbr === printItem
+            ));
+        });
 
         // sort to ensure units get added before their upgrades
         Object.keys(params).sort()
@@ -201,7 +194,11 @@ function checkValidations (context, id, item) {
 
 function initializeState (context, response) {
   var
-    printableItems = ['Text List', 'Stats', 'Stats Used'],
+    printableItems = [
+      { abbr: 'l', title: 'Text List' },
+      { abbr: 's', title: 'Stats' },
+      { abbr: 'sl', title: 'Stats Used' }
+    ],
     upgradeConstraints = response.data.upgradeConstraints || [];
 
   response.data.upgrades = response.data.upgrades || {};
@@ -210,7 +207,7 @@ function initializeState (context, response) {
   context.commit('SET_ARMY_RULES', response.data.armyRules);
 
   if (response.data.armyRules) {
-    printableItems.push('Army Rules');
+    printableItems.push({ abbr: 'ar', title: 'Army Rules' });
   }
 
   context.commit('SET_JSON_PATH', response.config.url.slice(1));
@@ -219,7 +216,8 @@ function initializeState (context, response) {
   context.commit('SET_SPECIAL_RULES', response.data.specialRules);
 
   if (response.data.specialRules) {
-    printableItems.push('Special Rules', 'Special Rules Used');
+    printableItems.push({ abbr: 'sr', title: 'Special Rules' });
+    printableItems.push({ abbr: 'sru', title: 'Special Rules Used' });
   }
 
   context.commit('SET_SPELLS', response.data.spells);
@@ -229,7 +227,9 @@ function initializeState (context, response) {
 
     upgradeConstraints = upgradeConstraints.concat(magicItems.upgradeConstraints);
 
-    printableItems.push('Magic Items', 'Magic Items Used', 'Spells');
+    printableItems.push({ abbr: 'mi', title: 'Magic Items' });
+    printableItems.push({ abbr: 'miu', title: 'Magic Items Used' });
+    printableItems.push({ abbr: 'sp', title: 'Spells' });
   }
 
   context.commit('SET_UPGRADE_CONSTRAINTS', upgradeConstraints);

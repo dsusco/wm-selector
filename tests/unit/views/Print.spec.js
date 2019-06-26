@@ -13,7 +13,7 @@ jest.mock('@/store', () => {
   return {
     dispatch: mockDispatch,
     getters: {
-      printableItems: ['a printable item']
+      printableItems: [{ abbr: 'pi1', title: 'printable item 1' }]
     }
   }
 });
@@ -31,7 +31,7 @@ describe('Print.vue', () => {
   });
 
   it('renders', () => {
-    expect(wrapper.find('.printable-items').text()).toContain('a printable item');
+    expect(wrapper.find('.printable-items').text()).toContain('printable item 1');
   });
 
   it('dispatches addPrintItem when a printable item is clicked', () => {

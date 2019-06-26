@@ -1,15 +1,15 @@
 <template>
   <VueDraggable class="print-items" v-model="printItems">
      <div class="print-item" v-for="(item, index) in printItems" :key="index" @click="removePrintItem(index)">
-       <TextList v-if="item === 'Text List'" />
-       <Stats v-if="item === 'Stats'" />
-       <Stats :used="true" v-if="item === 'Stats Used'" />
-       <ArmyRules v-if="item === 'Army Rules'" />
-       <SpecialRules v-if="item === 'Special Rules'" />
-       <SpecialRules :used="true" v-if="item === 'Special Rules Used'" />
-       <MagicItems v-if="item === 'Magic Items'" />
-       <MagicItems :used="true" v-if="item === 'Magic Items Used'" />
-       <Spells v-if="item === 'Spells'" />
+       <TextList v-if="item.abbr === 'l'" />
+       <Stats v-if="item.abbr === 's'" />
+       <Stats :used="true" v-if="item.abbr === 'sl'" />
+       <ArmyRules v-if="item.abbr === 'ar'" />
+       <SpecialRules v-if="item.abbr === 'sr'" />
+       <SpecialRules :used="true" v-if="item.abbr === 'sru'" />
+       <MagicItems v-if="item.abbr === 'mi'" />
+       <MagicItems :used="true" v-if="item.abbr === 'miu'" />
+       <Spells v-if="item.abbr === 'sp'" />
     </div>
   </VueDraggable>
 </template>

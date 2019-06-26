@@ -28,7 +28,7 @@ export default {
       }, {
         jsonPath: store.getters.jsonPath,
         label: store.getters.label,
-        printItems: store.getters.printItems.join(',')
+        printItems: store.getters.printItems.map((printItem) => printItem.abbr).join(',')
       }))
   }
 };

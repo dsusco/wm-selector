@@ -8,7 +8,7 @@ jest.mock('@/store', () => ({
     getters: {
       jsonPath: 'a jsonPath',
       label: 'a label',
-      printItems: ['pi1', 'pi2'],
+      printItems: [{ abbr: 'pi1', title: 'print item 1' }, { abbr: 'pi2', title: 'print item 2' }],
       upgrades: {
         'an upgrade': {
           order: 'au'
