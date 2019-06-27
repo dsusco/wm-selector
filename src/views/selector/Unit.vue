@@ -90,40 +90,12 @@ export default {
       background: $_color_lighter;
     }
 
-    .id {
-      margin: 0 (6 * $_) 0 (2 * $_);
-      padding: ($_ / 2) .5em;
-    }
-
     .subtract-button {
       right: $_ * 4;
     }
 
-    .number {
-      @include position(absolute, 0 (2 * $_) null null);
-
-      line-height: 2 * $_;
-      text-align: center;
-      width: 2 * $_;
-    }
-
     .add-button {
       right: 0;
-    }
-
-    .uupgrades {
-      display: none;
-    }
-
-    button {
-      @include position(absolute, 0 null null);
-
-      margin: .2rem;
-      padding: ((4.4rem - .2rem - $_) / 2);
-
-      .fa {
-        width: $_;
-      }
     }
   }
 </style>

@@ -76,41 +76,19 @@ export default {
 
     .units {
       border-top: .1rem dotted $_color_black;
-      margin: 0 ($_ / -2);
+      margin: 0 -1em;
     }
 
     .summary {
       background: $_color_dark;
       color: $_color_white;
-      margin: 0 ($_ / -2) ($_ / -2);
+      margin: 0 -1em ($_ / -2);
       position: relative;
 
-      .pointsCost {
-        margin: 0 (6 * $_) 0 (2 * $_);
-        padding: ($_ / 2) .5em;
-      }
-
-      .unitCount {
-        @include position(absolute, 0 (2 * $_) null null);
-
-        line-height: 2 * $_;
-        text-align: center;
-        width: 2 * $_;
-      }
-
       .errors-toggle-button {
-        @include position(absolute, 0 null null);
-
         background: $_color_danger;
         border-color: darken($_color_danger, 31.25%);
         color: $_color_white;
-
-        margin: .2rem;
-        padding: ((4.4rem - .2rem - $_) / 2);
-
-        .fa {
-          width: $_;
-        }
 
         &[disabled] {
           background: $_color_success;
@@ -126,7 +104,38 @@ export default {
         color: $_color_black;
         list-style: none;
         margin: 0;
-        padding: 1em;
+        padding: ($_ / 2) 1em;
+      }
+    }
+
+    .number,
+    .unitCount {
+      @include position(absolute, 0 (2 * $_) null null);
+
+      line-height: 2 * $_;
+      text-align: center;
+      width: 2 * $_;
+    }
+
+    .id,
+    .pointsCost {
+      margin: 0 (6 * $_) 0 (2 * $_);
+      padding: ($_ / 2) .5em;
+    }
+
+    button {
+      @include position(absolute, 0 null null);
+
+      line-height: 2 * $_ - .6rem;
+      margin: .2rem;
+      padding: 0;
+      width: 2 * $_ - .4rem;
+    }
+
+    @include grid-media($md-neat-grid) {
+      .units,
+      .summary {
+        margin: 0;
       }
     }
   }

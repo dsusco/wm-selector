@@ -33,13 +33,14 @@ export default {
     .printable-items,
     .print-items {
       border: .1rem dotted $_color_dark;
-      margin: 0 0 $_;
+      margin: 0 0 ($_ / 2);
       min-height: 2 * $_;
       padding: (($_ / 4) - .1rem) 1em;
     }
 
     .print-items {
       margin: 0;
+      padding: (($_ / 2) - .1rem) 1em;
     }
 
     button {

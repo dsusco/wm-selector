@@ -60,5 +60,9 @@ export default {
 <style lang="scss">
   .upgrade {
     position: relative;
+
+    &:nth-child(odd) {
+      background: $_color_light;
+    }
   }
 </style>

@@ -86,10 +86,6 @@ export default {
       }
     }
 
-    p {
-      margin: 0 0 $_ / 2;
-    }
-
     @include grid-media($md-neat-grid) {
       > div {
         &.army-rules,

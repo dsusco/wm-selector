@@ -46,6 +46,16 @@ export default {
 </script>
 
 <style lang="scss">
+  #wm-selector {
+    @include grid-media($lg-neat-grid) {
+      #nav,
+      #main {
+        margin: 0 auto;
+        max-width: 96rem + 2 * map-get($lg-neat-grid, gutter);
+      }
+    }
+  }
+
   #nav {
     button {
       background: $_color_lighter;
@@ -66,7 +76,7 @@ export default {
     }
 
     @include grid-media($md-neat-grid) {
-      margin: 0 1.5em;
+      margin: 0 1em;
 
       button {
         @include _(1.2rem);

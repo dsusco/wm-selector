@@ -120,8 +120,7 @@ export default {
 
     .troop,
     .type {
-      @include padding(null .5em);
-
+      padding: 0 .5em;
       text-align: left;
     }
   }
