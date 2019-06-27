@@ -1,6 +1,6 @@
 <template>
   <tr>
-    <td class="points-cost" v-if="used">{{troop.pointsCost}}</td>
+    <td class="points-cost" v-if="used">{{pointsCost()}}</td>
     <td class="number" v-if="used">{{troop.number}}</td>
     <td class="troop">{{name}}</td>
     <td class="type">{{troop.type}}</td>
@@ -42,6 +42,16 @@ export default {
       }
 
       return minMax;
+    },
+    pointsCost () {
+      var pointsCost = this.troop.pointsCost;
+
+      // check if this is an upgrade who's price is included in a preceding line
+      if (this.troop.size === undefined) {
+        pointsCost = '(' + pointsCost + ')';
+      }
+
+      return pointsCost;
     },
     special: (name, specialRules) => {
       return [name].concat(specialRules).reduce((special, name) => {
