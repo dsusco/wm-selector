@@ -82,7 +82,7 @@ export default {
       border-color: $_color_black;
       border-radius: 0;
       padding: 0;
-      margin: 0 .25em -.1rem;
+      margin: 0 .25em;
 
       &.router-link-exact-active {
         background: $_color_white;
@@ -124,6 +124,7 @@ export default {
     background: $_color_white;
     border: .1rem solid $_color_black;
     @include border-width(null 0);
+    margin-top: -.1rem;
     padding: ($_ / 2) 1em;
 
     @include grid-media($md-neat-grid) {
