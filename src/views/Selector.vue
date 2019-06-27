@@ -37,7 +37,7 @@
 import { mapGetters } from 'vuex';
 
 import store from '@/store';
-import Unit from '@/views/selector/Unit';
+import Unit from '@/components/Unit';
 
 export default {
   name: 'SelectorView',

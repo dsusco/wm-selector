@@ -1,6 +1,6 @@
 import { shallowMount } from '@vue/test-utils';
 
-import MagicItems from '@/views/print/MagicItems';
+import MagicItems from '@/components/MagicItems';
 
 var wrapper;
 

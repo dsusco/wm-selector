@@ -1,7 +1,7 @@
 import { createLocalVue, shallowMount } from '@vue/test-utils';
 import Vuex from 'vuex';
 
-import PrintItems from '@/views/print/PrintItems';
+import PrintItems from '@/components/PrintItems';
 
 const localVue = createLocalVue();
 

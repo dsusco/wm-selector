@@ -1,6 +1,6 @@
 import { shallowMount } from '@vue/test-utils'
 
-import ArmyListGroupTab from '@/views/home/ArmyListGroupTab';
+import ArmyListGroupTab from '@/components/ArmyListGroupTab';
 
 const
   propsData = {

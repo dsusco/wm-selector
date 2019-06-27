@@ -31,7 +31,7 @@
 <script>
 import store from '@/store';
 
-import Upgrade from '@/views/selector/Upgrade';
+import Upgrade from '@/components/Upgrade';
 
 export default {
   name: 'Unit',

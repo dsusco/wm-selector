@@ -1,6 +1,6 @@
 import { shallowMount } from '@vue/test-utils';
 
-import StatLine from '@/views/print/stats/StatLine';
+import StatLine from '@/components/StatLine';
 
 const
   propsData = {

@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import ArmyListGroupTab from '@/views/home/ArmyListGroupTab.vue';
+import ArmyListGroupTab from '@/components/ArmyListGroupTab.vue';
 
 export default {
   name: 'HomeView',

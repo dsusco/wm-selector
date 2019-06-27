@@ -1,7 +1,7 @@
 import { createLocalVue, shallowMount } from '@vue/test-utils';
 import Vuex from 'vuex';
 
-import TextList from '@/views/print/TextList';
+import TextList from '@/components/TextList';
 
 const localVue = createLocalVue();
 

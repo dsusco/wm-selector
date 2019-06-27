@@ -1,6 +1,6 @@
 import { shallowMount } from '@vue/test-utils'
 
-import Upgrade from '@/views/selector/Upgrade';
+import Upgrade from '@/components/Upgrade';
 
 const
   propsData = {

@@ -17,12 +17,12 @@
 <script>
 import VueDraggable from 'vuedraggable';
 
-import ArmyRules from '@/views/print/ArmyRules';
-import MagicItems from '@/views/print/MagicItems';
-import SpecialRules from '@/views/print/SpecialRules';
-import Spells from '@/views/print/Spells';
-import Stats from '@/views/print/Stats';
-import TextList from '@/views/print/TextList';
+import ArmyRules from '@/components/ArmyRules';
+import MagicItems from '@/components/MagicItems';
+import SpecialRules from '@/components/SpecialRules';
+import Spells from '@/components/Spells';
+import Stats from '@/components/Stats';
+import TextList from '@/components/TextList';
 import store from '@/store';
 
 export default {

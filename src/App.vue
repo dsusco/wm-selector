@@ -36,7 +36,7 @@
 <script>
 import { mapGetters } from 'vuex';
 
-import PrintItems from '@/views/print/PrintItems';
+import PrintItems from '@/components/PrintItems';
 
 export default {
   name: 'wm-selector',
