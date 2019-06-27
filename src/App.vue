@@ -27,7 +27,7 @@
       </router-link>
     </nav>
 
-    <router-view />
+    <router-view id="main" />
 
     <PrintItems id="print_view" />
   </div>
@@ -51,6 +51,7 @@ export default {
       background: $_color_lighter;
       border-color: $_color_black;
       border-radius: 0;
+      padding: 0;
       margin: 0 .25em -.1rem;
 
       &.router-link-exact-active {
@@ -59,17 +60,19 @@ export default {
       }
 
       .fa {
-        margin: 0 .5rem;
-        width: $_font_size;
+        line-height: 2 * $_;
+        width: 2 * $_;
       }
     }
 
     @include grid-media($md-neat-grid) {
+      margin: 0 1.5em;
+
       button {
         @include _(1.2rem);
-        @include padding(0 null);
 
         line-height: $_ - .2rem;
+        padding: 0 .5em;
 
         .fa {
           @include sr-only(false);
@@ -84,6 +87,18 @@ export default {
           width: auto;
         }
       }
+    }
+  }
+
+  #main {
+    background: $_color_white;
+    border: .1rem solid $_color_black;
+    @include border-width(null 0);
+    padding: ($_ / 2) 1em;
+
+    @include grid-media($md-neat-grid) {
+      @include border-width(.1rem);
+      margin: 0 1em;
     }
   }
 

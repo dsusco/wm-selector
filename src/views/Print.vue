@@ -1,5 +1,5 @@
 <template>
-  <main id="main" class="print-view">
+  <main class="print-view">
     <div class="printable-items">
        <button v-for="(item, index) in printableItems" :key="index" @click="addPrintItem(index)">{{item.title}}</button>
     </div>

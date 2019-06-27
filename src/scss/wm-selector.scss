@@ -34,13 +34,6 @@ body {
   padding: ($_ / 2) 0;
 }
 
-#main {
-  background: $_color_white;
-  border: .1rem solid $_color_black;
-  @include border-width(null 0);
-  padding: ($_ / 2);
-}
-
 @media print {
   body {
     background-color: $_color_white;
@@ -63,6 +56,12 @@ body {
         @include prefixer(column-gap, 2em, ('webkit', 'moz'));
         @include prefixer(orphans, 3, ('webkit', 'moz'));
       }
+    }
+
+    &:empty::before {
+      content: 'Please select something to print from the Print tab.';
+      display: block;
+      text-align: center;
     }
   }
 }

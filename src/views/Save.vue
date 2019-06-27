@@ -1,5 +1,5 @@
 <template>
-  <main id="main" class="save-view">
+  <main class="save-view">
     <p>The following URL can be used to restore the current list:</p>
 
     <textarea readonly v-html="url()" @focus="$event.target.select()"></textarea>

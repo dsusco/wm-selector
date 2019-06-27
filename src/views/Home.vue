@@ -1,5 +1,5 @@
 <template>
-  <main id="main" class="home-view">
+  <main class="home-view">
     <h1>Warmaster Army Selector</h1>
 
     <ArmyListGroupTab :group="'Warmaster Armies'" />

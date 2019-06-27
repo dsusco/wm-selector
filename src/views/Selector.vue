@@ -1,5 +1,5 @@
 <template>
-  <main id="main" class="selector-view">
+  <main class="selector-view">
     <input class="label" type="text" placeholder="Please enter a label for this list…" v-model="label" />
 
     <div class="armyList">

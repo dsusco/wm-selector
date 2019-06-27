@@ -1,5 +1,5 @@
 <template>
-  <main id="main" class="text-view">
+  <main class="text-view">
     <TextList />
   </main>
 </template>
