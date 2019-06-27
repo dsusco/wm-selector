@@ -2,6 +2,8 @@
   <main class="home-view">
     <h1>Warmaster Army Selector</h1>
 
+    <p>Choose an army from the lists below, select your units and print what you want!</p>
+
     <ArmyListGroupTab :group="'Warmaster Armies'" />
     <ArmyListGroupTab :group="'Warmaster Trial Armies Compendium 2009'" />
     <ArmyListGroupTab :group="'Warmaster Revolution'" />

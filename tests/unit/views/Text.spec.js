@@ -10,6 +10,6 @@ describe('Text.vue', () => {
   });
 
   it('renders', () => {
-    expect(wrapper.find('.text-view').attributes('id')).toEqual('main');
+    expect(wrapper.find('.text-view').html()).toContain('<textlist-stub></textlist-stub>');
   });
 });

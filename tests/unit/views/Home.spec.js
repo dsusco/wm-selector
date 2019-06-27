@@ -10,6 +10,6 @@ describe('Home.vue', () => {
   });
 
   it('renders', () => {
-    expect(wrapper.text()).toEqual('Warmaster Army Selector');
+    expect(wrapper.find('h1').text()).toEqual('Warmaster Army Selector');
   });
 });
