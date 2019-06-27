@@ -29,6 +29,18 @@
 
     <router-view id="main" />
 
+    <footer id="footer">
+      <p>This website is completely unofficial and in no way endorsed by Games Workshop Limited.</p>
+
+      <p>This Warmaster army selector is open source and maintained on <a href="https://github.com/dsusco/wm-selector" target="_blank">GitHub</a>.</p>
+
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+        <input type="hidden" name="cmd" value="_s-xclick" />
+        <input type="hidden" name="hosted_button_id" value="ADMR9VQE2JRTE" />
+        <button type="submit">Donate</button>
+      </form>
+    </footer>
+
     <PrintItems id="print_view" />
   </div>
 </template>
@@ -109,6 +121,43 @@ export default {
     @include grid-media($md-neat-grid) {
       @include border-width(.1rem);
       margin: 0 1em;
+    }
+  }
+
+  #footer {
+    @include _(1.2rem);
+
+    color: $_color_white;
+    text-align: center;
+    padding: ($_ / 2) 1em;
+
+    p,
+    form {
+      margin: 0;
+    }
+
+    button {
+      background: 0;
+      border: 0;
+      border-radius: 0;
+      line-height: 1;
+      padding: 0;
+      vertical-align: baseline;
+
+      &:focus,
+      &:hover {
+        background: 0;
+      }
+    }
+
+    a,
+    button {
+      color: inherit;
+      text-decoration: underline;
+      &:focus,
+      &:hover {
+        border-bottom: .1rem solid $_color_white;
+      }
     }
   }
 
