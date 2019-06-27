@@ -1,6 +1,7 @@
 const COUNTABLE_UNITS = ['Artillery', 'Cavalry', 'Chariot', 'Chariots', 'Elephant', 'Infantry', 'Machine', 'Monster'];
 
 export default {
+  activeArmyListGroupTab: (state) => state.activeArmyListGroupTab,
   armyList: (state) => state.armyList,
   armyRules: (state) => state.armyRules,
   errors: (state) => state.errors,

@@ -30,12 +30,17 @@ describe('ArmyListGroupTab.vue', () => {
   });
 
   it('renders', () => {
-    expect(wrapper.find('.army-list-group-tab .h3').text()).toEqual(propsData.group);
-    expect(wrapper.find('button').text()).toEqual('a list');
+    expect(wrapper.find('#a_group_tab_toggle_button').text()).toEqual(propsData.group);
+    expect(wrapper.find('button.selected').text()).toEqual('a list');
   });
 
-  it('dispatches setArmy on input change', () => {
-    wrapper.find('button').trigger('click');
+  it('dispatches setActiveArmyListGroupTab on tab button click', () => {
+    wrapper.find('#a_group_tab_toggle_button').trigger('click');
+    expect(mockDispatch).toHaveBeenCalledWith('setActiveArmyListGroupTab', 'a group');
+  });
+
+  it('dispatches setArmy on army button click', () => {
+    wrapper.find('button.selected').trigger('click');
     expect(mockDispatch).toHaveBeenCalledWith('setArmy', 'a jsonPath');
   });
 });

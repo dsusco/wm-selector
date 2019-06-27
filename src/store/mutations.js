@@ -15,6 +15,9 @@ export default {
     state.printableItems.push(state.printItems[index]);
     state.printItems.splice(index, 1);
   },
+  SET_ACTIVE_ARMY_LIST_GROUP_TAB (state, activeArmyListGroupTab) {
+    state.activeArmyListGroupTab = activeArmyListGroupTab;
+  },
   SET_ARMY_LIST (state, armyList) {
     state.armyList = armyList;
   },

@@ -2,6 +2,7 @@ import mutations from '@/store/mutations';
 
 const
   expected = {
+    activeArmyListGroupTab: 'another tab',
     armyList: 'an armyList',
     armyRules: [{ text: [] }],
     errors: [],
@@ -24,6 +25,7 @@ jest.mock('axios');
 
 describe('store.js mutations', () => {
   beforeEach(() => state = {
+    activeArmyListGroupTab: 'a tab',
     armyList: '',
     armyRules: undefined,
     errors: [],
@@ -67,6 +69,11 @@ describe('store.js mutations', () => {
     mutations.REMOVE_PRINT_ITEM(state, 1);
     expect(state.printItems).toEqual(['a print item']);
     expect(state.printableItems).toEqual(['a second print item']);
+  });
+
+  it('SET_ACTIVE_ARMY_LIST_GROUP_TAB sets state.activeArmyListGroupTab', () => {
+    mutations.SET_ACTIVE_ARMY_LIST_GROUP_TAB(state, expected.activeArmyListGroupTab);
+    expect(state.activeArmyListGroupTab).toEqual(expected.activeArmyListGroupTab);
   });
 
   it('SET_ARMY_LIST sets state.armyList', () => {

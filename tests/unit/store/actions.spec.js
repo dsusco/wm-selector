@@ -142,6 +142,11 @@ describe('store.js actions', () => {
     expect(commit).toHaveBeenCalledWith('REMOVE_PRINT_ITEM', 0);
   });
 
+  it('setActiveArmyListGroupTab commits SET_ACTIVE_ARMY_LIST_GROUP_TAB', () => {
+    actions.setActiveArmyListGroupTab(context, 'a tab');
+    expect(commit).toHaveBeenCalledWith('SET_ACTIVE_ARMY_LIST_GROUP_TAB', 'a tab');
+  });
+
   describe('setArmy', () => {
     it('commits SET_JSON_PATH and the response data', async () => {
       await actions.setArmy(context, expected.jsonPath);

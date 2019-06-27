@@ -75,6 +75,9 @@ export default {
   removePrintItem (context, index) {
     context.commit('REMOVE_PRINT_ITEM', index);
   },
+  setActiveArmyListGroupTab (context, activeArmyListGroupTab) {
+    context.commit('SET_ACTIVE_ARMY_LIST_GROUP_TAB', activeArmyListGroupTab);
+  },
   setArmy (context, jsonPath) {
     axios
       .get(process.env.BASE_URL + jsonPath)
