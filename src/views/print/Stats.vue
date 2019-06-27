@@ -95,8 +95,14 @@ export default {
       border-bottom: .1rem solid $_color_black;
     }
 
-    tbody tr:first-child td {
-      line-height: $_ - .1rem;
+    tbody {
+      tr:first-child td {
+        line-height: $_ - .1rem;
+      }
+
+      tr:nth-child(even) {
+        background-color: $_color_lighter;
+      }
     }
 
     tfoot {
