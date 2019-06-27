@@ -29,6 +29,7 @@ describe('router.js', () => {
 
       expect(wrapper.find('.home-view-button').attributes('disabled')).toBeUndefined;
       expect(wrapper.find('.selector-view-button').attributes('disabled')).toEqual('disabled');
+      expect(wrapper.find('.mobile-selector-view-button').attributes('disabled')).toEqual('disabled');
       expect(wrapper.find('.text-view-button').attributes('disabled')).toEqual('disabled');
       expect(wrapper.find('.save-view-button').attributes('disabled')).toEqual('disabled');
       expect(wrapper.find('.print-view-button').attributes('disabled')).toEqual('disabled');
@@ -39,6 +40,7 @@ describe('router.js', () => {
 
       expect(wrapper.find('.home-view-button').attributes('disabled')).toBeUndefined;
       expect(wrapper.find('.selector-view-button').attributes('disabled')).toEqual('disabled');
+      expect(wrapper.find('.mobile-selector-view-button').attributes('disabled')).toEqual('disabled');
       expect(wrapper.find('.text-view-button').attributes('disabled')).toEqual('disabled');
       expect(wrapper.find('.save-view-button').attributes('disabled')).toEqual('disabled');
       expect(wrapper.find('.print-view-button').attributes('disabled')).toEqual('disabled');
@@ -61,6 +63,7 @@ describe('router.js', () => {
 
       expect(wrapper.find('.home-view-button').attributes('disabled')).toBeUndefined;
       expect(wrapper.find('.selector-view-button').attributes('disabled')).toBeUndefined;
+      expect(wrapper.find('.mobile-selector-view-button').attributes('disabled')).toBeUndefined;
       expect(wrapper.find('.text-view-button').attributes('disabled')).toBeUndefined;
       expect(wrapper.find('.save-view-button').attributes('disabled')).toBeUndefined;
       expect(wrapper.find('.print-view-button').attributes('disabled')).toBeUndefined;

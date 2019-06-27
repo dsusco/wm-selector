@@ -7,8 +7,13 @@
       </router-link>
 
       <router-link tag="button" class="selector-view-button" :to="{ name: 'Selector' }" :disabled="!jsonPath">
-        <span class="fa fa-hand-pointer-o"></span>
+        <span class="fa fa-mouse-pointer"></span>
         <span class="sr-only">Selector</span>
+      </router-link>
+
+      <router-link tag="button" class="mobile-selector-view-button" :to="{ name: 'Mobile Selector' }" :disabled="!jsonPath">
+        <span class="fa fa-hand-pointer-o"></span>
+        <span class="sr-only">Mobile Selector</span>
       </router-link>
 
       <router-link tag="button" class="text-view-button" :to="{ name: 'Text' }" :disabled="!jsonPath">
@@ -69,6 +74,9 @@ export default {
   }
 
   #nav {
+    overflow: hidden;
+    white-space: nowrap;
+
     button {
       background: $_color_lighter;
       border-color: $_color_black;

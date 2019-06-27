@@ -32,6 +32,12 @@ export default [
     beforeEnter: checkJSONPathBeforeEnter
   },
   {
+    path: '/mobile-selector',
+    name: 'Mobile Selector',
+    component: () => import('@/views/MobileSelector.vue'),
+    beforeEnter: checkJSONPathBeforeEnter
+  },
+  {
     path: '/text',
     name: 'Text',
     component: () => import('@/views/Text.vue'),

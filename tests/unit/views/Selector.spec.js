@@ -37,22 +37,5 @@ describe('Selector.vue', () => {
   });
 
   it('renders', () => {
-    expect(wrapper.find('.armyList').text()).toContain('an army list');
-    expect(wrapper.find('.version').text()).toEqual('a version');
-    expect(wrapper.find('.pointsCost').text()).toEqual('50 points');
-    expect(wrapper.find('.unitCount').text()).toEqual('1/1');
-    expect(wrapper.find('.errors').text()).toEqual('an error');
-  });
-
-  it('toggles errorsHidden on .errors-toggle-button click', () => {
-    expect(wrapper.vm.errorsHidden).toBeTruthy();
-    wrapper.find('.errors-toggle-button').trigger('click');
-    expect(wrapper.vm.errorsHidden).toBeFalsy();
-  });
-
-  it('dispatches setLabel when label changes', () => {
-    wrapper.vm.label = 'a new label';
-
-    expect(mockDispatch).toHaveBeenCalledWith('setLabel', 'a new label');
   });
 });
