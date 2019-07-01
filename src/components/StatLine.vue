@@ -11,7 +11,7 @@
     <td class="command">{{troop.command || '-'}}</td>
     <td class="size">{{troop.size || '-' }}</td>
     <td class="points">{{troop.points}}</td>
-    <td class="min-max">{{minMax(troop)}}</td>
+    <td class="min-max">{{troop.minMax}}</td>
     <td class="special">{{special(name, troop.specialRules)}}</td>
   </tr>
 </template>
@@ -22,27 +22,6 @@ import store from '@/store';
 export default {
   name: 'StatLines',
   methods: {
-    minMax: (troop) => {
-      var minMax;
-
-      if (troop.elite) {
-        minMax = 'elite'
-      } else if (troop.armyMin || troop.armyMax) {
-        if (troop.armyMin) {
-          minMax = troop.armyMin;
-
-          if (troop.armyMax && troop.armyMin !== troop.armyMax) {
-            minMax += '–' + troop.armyMax;
-          }
-        } else {
-          minMax = troop.armyMax;
-        }
-      } else {
-        minMax = (troop.min || '-') + '/' + (troop.max || '-');
-      }
-
-      return minMax;
-    },
     pointsCost () {
       var pointsCost = this.troop.pointsCost;
 

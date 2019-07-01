@@ -13,7 +13,7 @@ const
       hits: 3,
       armour: '6+',
       size: 3,
-      min: 2,
+      minMax: '2/-',
       points: 50
     },
     used: true

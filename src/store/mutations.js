@@ -74,9 +74,9 @@ export default {
     for (var unitID in units) {
       unit = state.units[unitID];
 
-      // set the unit's number and pointsCost
       Vue.set(unit, 'number', 0);
       Vue.set(unit, 'pointsCost', 0);
+      Vue.set(unit, 'minMax', minMax(unit));
 
       // add any upgrades as defined by the army's upgrade constraints
       state.upgradeConstraints.forEach((upgradeConstraint) => {
@@ -112,11 +112,35 @@ export default {
     state.upgrades = upgrades;
 
     for (var upgradeID in upgrades) {
-      // set the upgrade's number
-      Vue.set(state.upgrades[upgradeID], 'number', 0);
+      var upgrade = state.upgrades[upgradeID];
+
+      Vue.set(upgrade, 'number', 0);
+      Vue.set(upgrade, 'minMax', minMax(upgrade));
     }
   },
   SET_VERSION (state, version) {
     state.version = version;
   }
 };
+
+function minMax(troop) {
+  var minMax;
+
+  if (troop.elite) {
+    minMax = 'elite'
+  } else if (troop.armyMin || troop.armyMax) {
+    if (troop.armyMin) {
+      minMax = troop.armyMin;
+
+      if (troop.armyMax && troop.armyMin !== troop.armyMax) {
+        minMax += '–' + troop.armyMax;
+      }
+    } else {
+      minMax = '0–' + troop.armyMax;
+    }
+  } else {
+    minMax = (troop.min || '-') + '/' + (troop.max || '-');
+  }
+
+  return minMax;
+}

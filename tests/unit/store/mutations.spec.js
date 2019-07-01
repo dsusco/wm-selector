@@ -13,9 +13,9 @@ const
     printableItems: ['a second print item'],
     specialRules: { 'a specialRule': { text: [] } },
     spells: [{ roll: 0 }],
-    units: { 'a unit': { type: 'a type', order: 0, points: 50 } },
+    units: { 'a unit': { type: 'a type', order: 0, points: 50, min: 2 } },
     upgradeConstraints: [{ unitType: ['a type'], upgrades: ['an upgrade'] }],
-    upgrades: { 'an upgrade': { order: 0, points: 5 } },
+    upgrades: { 'an upgrade': { order: 0, points: 5, armyMax: 1 } },
     version: 'a version'
   };
 
@@ -126,6 +126,8 @@ describe('store.js mutations', () => {
     mutations.SET_UNIT_NUMBER(state, { unitID: 'a unit', number: 1 });
     expect(state.units).toEqual({
       'a unit': {
+        min: 2,
+        minMax: '2/-',
         number: 1,
         order: 0,
         points: 50,
@@ -144,6 +146,8 @@ describe('store.js mutations', () => {
     mutations.SET_UNIT_POINTS_COST(state, { unitID: 'a unit', number: 1 });
     expect(state.units).toEqual({
       'a unit': {
+        min: 2,
+        minMax: '2/-',
         number: 1,
         order: 0,
         points: 50,
@@ -165,6 +169,7 @@ describe('store.js mutations', () => {
     mutations.SET_UNIT_POINTS_COST(state, { unitID: 'a unit', number: 1 });
     expect(state.units).toEqual({
       'a unit': {
+        minMax: '-/-',
         number: 1,
         order: 0,
         points: 50,
@@ -181,6 +186,8 @@ describe('store.js mutations', () => {
     mutations.SET_UNIT_UPGRADE_NUMBER_AND_POINTS_COST(state, { unitID: 'a unit', upgradeID: 'an upgrade', number: 1 });
     expect(state.units).toEqual({
       'a unit': {
+        min: 2,
+        minMax: '2/-',
         number: 0,
         order: 0,
         points: 50,
@@ -196,11 +203,13 @@ describe('store.js mutations', () => {
     });
   });
 
-  it('SET_UNITS sets state.units and adds number & pointsCost properties', () => {
+  it('SET_UNITS sets state.units and adds number, pointsCost and minMax properties', () => {
     mutations.SET_UPGRADE_CONSTRAINTS(state, expected.upgradeConstraints);
     mutations.SET_UNITS(state, expected.units);
     expect(state.units).toEqual({
       'a unit': {
+        min: 2,
+        minMax: '2/-',
         number: 0,
         order: 0,
         points: 50,
@@ -226,6 +235,8 @@ describe('store.js mutations', () => {
     mutations.SET_UPGRADE_NUMBER(state, { upgradeID: 'an upgrade', number: 1 });
     expect(state.upgrades).toEqual({
       'an upgrade': {
+        armyMax: 1,
+        minMax: '0–1',
         order: 0,
         number: 1,
         points: 5
@@ -233,10 +244,12 @@ describe('store.js mutations', () => {
     });
   });
 
-  it('SET_UPGRADES sets state.upgrades and adds number property', () => {
+  it('SET_UPGRADES sets state.upgrades and adds number and minMax property', () => {
     mutations.SET_UPGRADES(state, expected.upgrades);
     expect(state.upgrades).toEqual({
       'an upgrade': {
+        armyMax: 1,
+        minMax: '0–1',
         order: 0,
         number: 0,
         points: 5
