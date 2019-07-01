@@ -53,26 +53,30 @@ export default {
       &:focus,
       &:hover {
         background: darken($_color_primary, 6.25%);
+        color: $_color_white;
         outline: none;
+        text-decoration: none;
       }
     }
 
     ul {
       border-top: .1rem solid $_color_black;
-      list-style: none;
       margin: 0;
-      padding: ($_ / 2) 1em;
+      padding: ($_ / 2) 0 ($_ / 2) 2em;
     }
 
 
     button {
       background: 0;
       border: 0;
+      color: $_link_color;
       padding: 0;
 
       &:focus,
       &:hover {
         background: 0;
+        color: darken($_link_color, 12.5%);
+        text-decoration: underline;
       }
 
       &.selected {

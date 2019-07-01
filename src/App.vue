@@ -67,7 +67,7 @@ export default {
     @include grid-media($lg-neat-grid) {
       #nav,
       #main {
-        margin: 0 auto;
+        @include margin(null auto);
         max-width: 96rem + 2 * map-get($lg-neat-grid, gutter);
       }
     }
@@ -124,12 +124,12 @@ export default {
     background: $_color_white;
     border: .1rem solid $_color_black;
     @include border-width(null 0);
-    margin-top: -.1rem;
+    margin: -.1rem 0 0;
     padding: ($_ / 2) 1em;
 
     @include grid-media($md-neat-grid) {
       @include border-width(.1rem);
-      margin: 0 1em;
+      margin: -.1rem 1em 0;
     }
   }
 
