@@ -68,6 +68,7 @@ export default {
       #nav,
       #main {
         @include margin(null auto);
+
         max-width: 96rem + 2 * map-get($lg-neat-grid, gutter);
       }
     }
@@ -84,6 +85,13 @@ export default {
       padding: 0;
       margin: 0 .25em;
 
+      &:focus,
+      &:hover {
+        background: $_color_light;
+        outline: none;
+        text-decoration: underline;
+      }
+
       &.router-link-exact-active {
         background: $_color_white;
         border-bottom-color: $_color_white;
@@ -96,7 +104,7 @@ export default {
     }
 
     @include grid-media($md-neat-grid) {
-      margin: 0 1em;
+      margin: 0 1.6rem;
 
       button {
         @include _(1.2rem);
@@ -125,11 +133,11 @@ export default {
     border: .1rem solid $_color_black;
     @include border-width(null 0);
     margin: -.1rem 0 0;
-    padding: ($_ / 2) 1em;
+    padding: ($_ / 2);
 
     @include grid-media($md-neat-grid) {
       @include border-width(.1rem);
-      margin: -.1rem 1em 0;
+      @include margin(null 1.6rem);
     }
   }
 
@@ -138,11 +146,22 @@ export default {
 
     color: $_color_white;
     text-align: center;
-    padding: ($_ / 2) 1em;
+    padding: ($_ / 2) 1.6rem;
 
     p,
     form {
       margin: 0;
+    }
+
+    a,
+    button {
+      color: inherit;
+      text-decoration: underline;
+
+      &:focus,
+      &:hover {
+        border-bottom: .1rem solid $_color_white;
+      }
     }
 
     button {
@@ -156,16 +175,6 @@ export default {
       &:focus,
       &:hover {
         background: 0;
-      }
-    }
-
-    a,
-    button {
-      color: inherit;
-      text-decoration: underline;
-      &:focus,
-      &:hover {
-        border-bottom: .1rem solid $_color_white;
       }
     }
   }

@@ -35,12 +35,13 @@ export default {
       border: .1rem dotted $_color_dark;
       margin: 0 0 ($_ / 2);
       min-height: 2 * $_;
-      padding: (($_ / 4) - .1rem) 1em;
+      padding: (($_ / 4) - .1rem) ($_ / 2);
     }
 
     .print-items {
+      @include padding((($_ / 2) - .1rem) null);
+
       margin: 0;
-      padding: (($_ / 2) - .1rem) 1em;
     }
 
     button {

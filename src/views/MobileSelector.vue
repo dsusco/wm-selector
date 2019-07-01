@@ -76,13 +76,13 @@ export default {
 
     .units {
       border-top: .1rem dotted $_color_black;
-      margin: 0 -1em;
+      margin: 0 ($_ / -2);
     }
 
     .summary {
       background: $_color_dark;
       color: $_color_white;
-      margin: 0 -1em ($_ / -2);
+      margin: 0 ($_ / -2) ($_ / -2);
       position: relative;
 
       .errors-toggle-button {
@@ -104,7 +104,7 @@ export default {
         color: $_color_black;
         list-style: none;
         margin: 0;
-        padding: ($_ / 2) 1em;
+        padding: ($_ / 2);
       }
     }
 
