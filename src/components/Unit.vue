@@ -2,7 +2,7 @@
   <div :id="tagID" class="unit">
     <div class="id">{{unitID}} ({{points}})</div>
 
-    <button class="subtract-button" @click="subtract" :disabled="number < 1">
+    <button class="remove-button" @click="remove" :disabled="number < 1">
       <span class="fa fa-minus">
         <span class="sr-only">Remove one {{unitID}}</span>
       </span>
@@ -64,7 +64,7 @@ export default {
         number: this.number + 1
       });
     },
-    subtract () {
+    remove () {
       if (this.number - 1 === 0) {
         this.upgradesHidden = true;
       }
@@ -90,7 +90,7 @@ export default {
       background: $_color_lighter;
     }
 
-    .subtract-button {
+    .remove-button {
       right: $_ * 4;
     }
 

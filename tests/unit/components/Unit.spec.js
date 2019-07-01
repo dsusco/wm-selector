@@ -42,14 +42,14 @@ describe('Unit.vue', () => {
     expect(wrapper.find('.upgrades').attributes('hidden')).toBeTruthy();
   });
 
-  it('sets upgradesHidden to true when subtract reduces number to 0', () => {
+  it('sets upgradesHidden to true when remove reduces number to 0', () => {
     wrapper.find('.upgrades-toggle-button').trigger('click');
-    wrapper.find('.subtract-button').trigger('click');
+    wrapper.find('.remove-button').trigger('click');
     expect(wrapper.vm.upgradesHidden).toBeTruthy();
   });
 
-  it('dispatches setUnitUnitNumber on .subtract-button click', () => {
-    wrapper.find('.subtract-button').trigger('click');
+  it('dispatches setUnitUnitNumber on .remove-button click', () => {
+    wrapper.find('.remove-button').trigger('click');
     expect(mockDispatch).toHaveBeenCalledWith('setUnitNumber', {
       unitID: 'a unit',
       number: 0

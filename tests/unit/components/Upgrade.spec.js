@@ -47,8 +47,8 @@ describe('Upgrade.vue', () => {
     expect(wrapper.find('.add-button').attributes('disabled')).toBeUndefined;
   });
 
-  it('dispatches setUnitUpgradeNumber on .subtract-button click', () => {
-    wrapper.find('.subtract-button').trigger('click');
+  it('dispatches setUnitUpgradeNumber on .remove-button click', () => {
+    wrapper.find('.remove-button').trigger('click');
     expect(mockDispatch).toHaveBeenCalledWith('setUnitUpgradeNumber', {
       upgradeID: 'an upgrade',
       unitID: 'a unit',

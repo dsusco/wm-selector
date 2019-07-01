@@ -1,32 +1,32 @@
 <template>
   <main class="mobile-selector-view">
-    <input class="label" type="text" placeholder="Please enter a label for this list…" v-model="label" />
+    <input id="label" type="text" placeholder="Please enter a label for this list…" v-model="label" />
 
-    <div class="armyList">
+    <div id="armyList">
       {{armyList}}
-      <small class="version">{{version}}</small>
+      <small id="version">{{version}}</small>
     </div>
 
-    <div class="units">
+    <div id="units">
       <Unit v-for="(unit, id) in units" :key="id" :unitID="id" />
     </div>
 
-    <div class="summary">
-      <div class="pointsCost">
+    <div id="summary">
+      <div id="pointsCost">
         {{pointsCost}} points
       </div>
 
-      <span class="unitCount" title="Units/Half">
+      <span id="unitCount" title="Units/Half">
         {{unitCount}}/{{Math.ceil(unitCount / 2)}}
       </span>
 
-      <button id="errors_toggle_button" class="errors-toggle-button" aria-controls="errors" :aria-expanded="errors.length < 1 || errorsHidden ? 'false' : 'true'" :disabled="errors.length < 1" @click="toggleErrors">
+      <button id="errors_toggle_button" aria-controls="errors" :aria-expanded="errors.length < 1 || errorsHidden ? 'false' : 'true'" :disabled="errors.length < 1" @click="toggleErrors">
         <span class="fa" :class="{ 'fa-check': errors.length < 1, 'fa-times': errors.length > 0 }">
           <span class="sr-only">Toggle Errors</span>
         </span>
       </button>
 
-      <ul id="errors" class="errors" aria-labelledby="errors_toggle_button" :hidden="errors.length < 1 || errorsHidden" v-if="errors.length > 0">
+      <ul id="errors" aria-labelledby="errors_toggle_button" :hidden="errors.length < 1 || errorsHidden" v-if="errors.length > 0">
         <li v-for="error in errors" :key="error">{{error}}</li>
       </ul>
     </div>
@@ -65,27 +65,27 @@ export default {
 
 <style lang="scss">
   .mobile-selector-view {
-    .label {
+    #label {
       border: 0;
       padding: 0;
     }
 
-    .version {
+    #version {
       display: block;
     }
 
-    .units {
+    #units {
       border-top: .1rem dotted $_color_black;
       margin: 0 ($_ / -2);
     }
 
-    .summary {
+    #summary {
       background: $_color_dark;
       color: $_color_white;
       margin: 0 ($_ / -2) ($_ / -2);
       position: relative;
 
-      .errors-toggle-button {
+      #errors_toggle_button {
         background: $_color_danger;
         border-color: darken($_color_danger, 31.25%);
         color: $_color_white;
@@ -96,7 +96,7 @@ export default {
         }
       }
 
-      .errors {
+      #errors {
         @include position(absolute, null 0 (2 * $_));
 
         background: lighten($_color_danger, 32.5%);
@@ -108,8 +108,8 @@ export default {
       }
     }
 
-    .number,
-    .unitCount {
+    #unitCount,
+    .number {
       @include position(absolute, 0 (2 * $_) null null);
 
       line-height: 2 * $_;
@@ -117,8 +117,8 @@ export default {
       width: 2 * $_;
     }
 
-    .id,
-    .pointsCost {
+    #pointsCost,
+    .id {
       margin: 0 (6 * $_) 0 (2 * $_);
       padding: ($_ / 2) .5em;
     }

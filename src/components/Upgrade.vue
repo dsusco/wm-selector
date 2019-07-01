@@ -2,7 +2,7 @@
   <div :id="tagID" class="upgrade">
     <div class="id">{{upgradeID}} ({{points}})</div>
 
-    <button class="subtract-button" @click="subtract" :disabled="number < 1">
+    <button class="remove-button" @click="remove" :disabled="number < 1">
       <span class="fa fa-minus">
         <span class="sr-only">Remove one {{upgradeID}} from {{unitID}}</span>
       </span>
@@ -45,7 +45,7 @@ export default {
         number: this.number + 1
       });
     },
-    subtract () {
+    remove () {
       store.dispatch('setUnitUpgradeNumber', {
         upgradeID: this.upgradeID,
         unitID: this.unitID,

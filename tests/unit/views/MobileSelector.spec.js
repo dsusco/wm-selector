@@ -37,16 +37,16 @@ describe('MobileSelector.vue', () => {
   });
 
   it('renders', () => {
-    expect(wrapper.find('.armyList').text()).toContain('an army list');
-    expect(wrapper.find('.version').text()).toEqual('a version');
-    expect(wrapper.find('.pointsCost').text()).toEqual('50 points');
-    expect(wrapper.find('.unitCount').text()).toEqual('1/1');
-    expect(wrapper.find('.errors').text()).toEqual('an error');
+    expect(wrapper.find('#armyList').text()).toContain('an army list');
+    expect(wrapper.find('#version').text()).toEqual('a version');
+    expect(wrapper.find('#pointsCost').text()).toEqual('50 points');
+    expect(wrapper.find('#unitCount').text()).toEqual('1/1');
+    expect(wrapper.find('#errors').text()).toEqual('an error');
   });
 
-  it('toggles errorsHidden on .errors-toggle-button click', () => {
+  it('toggles errorsHidden on #errors-toggle-button click', () => {
     expect(wrapper.vm.errorsHidden).toBeTruthy();
-    wrapper.find('.errors-toggle-button').trigger('click');
+    wrapper.find('#errors_toggle_button').trigger('click');
     expect(wrapper.vm.errorsHidden).toBeFalsy();
   });
 
