@@ -46,7 +46,7 @@ describe('StatLine.vue', () => {
     expect(wrapper.find('.command').text()).toEqual('-');
     expect(wrapper.find('.size').text()).toEqual('3');
     expect(wrapper.find('.points').text()).toEqual('50');
-    expect(wrapper.find('.min-max').text()).toEqual('2/-');
+    expect(wrapper.find('.minMax').text()).toEqual('2/-');
     expect(wrapper.find('.special').text()).toEqual('*1');
   });
 });
