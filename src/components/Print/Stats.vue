@@ -81,34 +81,17 @@ export default {
     text-align: center;
     overflow-x: auto;
 
-    table {
-      width: 100%;
-    }
-
     caption {
       @include _(1.6rem);
 
       font-weight: bold;
     }
 
-    thead {
-      border-bottom: .1rem solid $_color_black;
-    }
-
-    tbody {
-      tr:first-child td {
-        line-height: $_ - .1rem;
-      }
-
-      tr:nth-child(even) {
-        background-color: $_color_lighter;
-      }
-    }
-
+    tbody,
     tfoot {
       border-top: .1rem solid $_color_black;
 
-      tr:first-child td {
+      > tr:first-child td {
         line-height: $_ - .1rem;
       }
     }
@@ -126,7 +109,6 @@ export default {
 
     .troop,
     .type {
-      padding: 0 .5em;
       text-align: left;
     }
   }

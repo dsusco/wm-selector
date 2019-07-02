@@ -43,6 +43,26 @@ p {
   margin: 0 0 ($_ / 2);
 }
 
+table {
+  background: $_body_background;
+  width: 100%;
+}
+
+tbody {
+  > tr:nth-child(even) {
+    background-color: $_color_lighter;
+  }
+}
+
+th,
+td {
+  padding: 0 .5em;
+}
+
+[tabindex] {
+  cursor: pointer;
+}
+
 @media print {
   body {
     background-color: $_color_white;

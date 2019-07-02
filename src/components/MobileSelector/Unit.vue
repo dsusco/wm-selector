@@ -83,7 +83,7 @@ export default {
 </script>
 
 <style lang="scss">
-  .unit {
+  div.unit {
     position: relative;
 
     &:nth-child(even) {

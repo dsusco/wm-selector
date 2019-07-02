@@ -53,12 +53,12 @@ export default {
       });
     }
   },
-  props: ['upgradeID', 'unitID']
+  props: ['unitID', 'upgradeID']
 };
 </script>
 
 <style lang="scss">
-  .upgrade {
+  div.upgrade {
     position: relative;
 
     &:nth-child(odd) {
