@@ -327,6 +327,7 @@ describe('store.js actions', () => {
   describe('validate', () => {
     var
       getters = {
+        pointsCost: 1000,
         size: 1
       },
       state = {

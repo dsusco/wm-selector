@@ -175,7 +175,7 @@ function checkValidations (context, id, item) {
   }
 
   // min/max
-  if (item.number < item.min * context.getters.size) {
+  if (context.getters.pointsCost >= 1000 && item.number < item.min * context.getters.size) {
     context.commit('PUSH_ERROR', 'Minimum of ' + (item.min * context.getters.size) + ' ' + id + ' per ' + context.getters.size + ',000 points.');
   }
   if (item.number > item.max * context.getters.size) {
