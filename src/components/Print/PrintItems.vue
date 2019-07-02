@@ -86,23 +86,26 @@ export default {
       }
     }
 
-    th,
-    td {
-      &:first-child {
-        vertical-align: top;
-        white-space: nowrap;
-      }
-    }
-
-    tbody > tr {
-      border-top: ($_ / 2) solid $_body_background;
-
-      &:first-child {
-        border-top: 0;
+    .army-rules,
+    .special-rules {
+      th,
+      td {
+        &:first-child {
+          vertical-align: top;
+          white-space: nowrap;
+        }
       }
 
-      &:nth-child(even) {
-        background: none;
+      tbody > tr {
+        border-top: ($_ / 2) solid $_body_background;
+
+        &:first-child {
+          border-top: 0;
+        }
+
+        &:nth-child(even) {
+          background: none;
+        }
       }
     }
 
