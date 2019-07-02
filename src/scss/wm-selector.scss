@@ -45,13 +45,12 @@ p {
 
 table {
   background: $_body_background;
+  margin: 0 0 ($_ / 2);
   width: 100%;
 }
 
-tbody {
-  > tr:nth-child(even) {
-    background-color: $_color_lighter;
-  }
+tbody > tr:nth-child(even) {
+  background-color: $_color_lighter;
 }
 
 th,

@@ -81,6 +81,10 @@ export default {
     text-align: center;
     overflow-x: auto;
 
+    table {
+      margin: 0;
+    }
+
     caption {
       @include _(1.6rem);
 
