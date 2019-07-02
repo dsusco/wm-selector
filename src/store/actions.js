@@ -21,6 +21,8 @@ export default {
           unitIDs = Object.keys(context.getters.units),
           upgradeIDs = Object.keys(context.getters.upgrades);
 
+        context.dispatch('setActiveArmyListGroupTab', context.getters.version);
+
         context.dispatch('setLabel', params.label);
 
         // backwards compatability for old print param

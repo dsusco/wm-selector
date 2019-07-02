@@ -84,7 +84,8 @@ describe('store.js actions', () => {
             'an upgrade': {
               order: 'au'
             }
-          }
+          },
+          version: 'a version'
         }
       };
 
@@ -94,6 +95,11 @@ describe('store.js actions', () => {
         '0': 2,
         '0-au': 1
       };
+    });
+
+    it('dispatches setActiveArmyListGroupTab', async () => {
+      await Promise.all([actions.loadSaveURL(context, params)]);
+      expect(dispatch).toHaveBeenCalledWith('setActiveArmyListGroupTab', 'a version');
     });
 
     it('dispatches setLabel', async () => {
