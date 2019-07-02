@@ -1,6 +1,6 @@
 import { shallowMount } from '@vue/test-utils';
 
-import SpecialRules from '@/components/SpecialRules';
+import SpecialRules from '@/components/Print/SpecialRules';
 
 var wrapper;
 

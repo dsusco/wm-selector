@@ -1,7 +1,7 @@
 import { createLocalVue, shallowMount } from '@vue/test-utils';
 import Vuex from 'vuex';
 
-import ArmyRules from '@/components/ArmyRules';
+import ArmyRules from '@/components/Print/ArmyRules';
 
 const localVue = createLocalVue();
 

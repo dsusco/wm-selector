@@ -1,7 +1,7 @@
 import { createLocalVue, shallowMount } from '@vue/test-utils';
 import Vuex from 'vuex';
 
-import Spells from '@/components/Spells';
+import Spells from '@/components/Print/Spells';
 
 const localVue = createLocalVue();
 

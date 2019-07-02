@@ -47,7 +47,7 @@
 <script>
 import { mapGetters } from 'vuex';
 
-import StatLine from '@/components/StatLine';
+import StatLine from '@/components/Print/StatLine';
 import store from '@/store';
 
 const MAGIC_ITEM_TYPES = ['Magic Standard', 'Magic Weapon', 'Device of Power'];

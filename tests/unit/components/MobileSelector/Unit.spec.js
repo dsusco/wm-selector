@@ -1,6 +1,6 @@
 import { shallowMount } from '@vue/test-utils'
 
-import Unit from '@/components/Unit';
+import Unit from '@/components/MobileSelector/Unit';
 
 const
   propsData = {

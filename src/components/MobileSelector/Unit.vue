@@ -31,7 +31,7 @@
 <script>
 import store from '@/store';
 
-import Upgrade from '@/components/Upgrade';
+import Upgrade from '@/components/MobileSelector/Upgrade';
 
 export default {
   name: 'Unit',

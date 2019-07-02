@@ -37,7 +37,7 @@
 import { mapGetters } from 'vuex';
 
 import store from '@/store';
-import Unit from '@/components/Unit';
+import Unit from '@/components/MobileSelector/Unit';
 
 export default {
   name: 'MobileSelectorView',
@@ -133,8 +133,8 @@ export default {
     }
 
     @include grid-media($md-neat-grid) {
-      .units,
-      .summary {
+      #units,
+      #summary {
         margin: 0;
       }
     }

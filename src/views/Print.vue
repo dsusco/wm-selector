@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import PrintItems from '@/components/PrintItems';
+import PrintItems from '@/components/Print/PrintItems';
 import store from '@/store';
 
 export default {

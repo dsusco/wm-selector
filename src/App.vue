@@ -53,7 +53,7 @@
 <script>
 import { mapGetters } from 'vuex';
 
-import PrintItems from '@/components/PrintItems';
+import PrintItems from '@/components/Print/PrintItems';
 
 export default {
   name: 'wm-selector',
@@ -69,7 +69,7 @@ export default {
       #main {
         @include margin(null auto);
 
-        max-width: 96rem + 2 * map-get($lg-neat-grid, gutter);
+        max-width: 96rem + 2 * ($_ / 2 + .1rem);
       }
     }
   }

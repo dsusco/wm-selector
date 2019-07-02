@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import TextList from '@/components/TextList';
+import TextList from '@/components/Print/TextList';
 
 export default {
   name: 'TextView',
