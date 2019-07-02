@@ -336,7 +336,7 @@ function lookupOldList (oldList) {
     case 'greek':
       return 'warmaster-ancients/greek';
     case 'grimgorsardboyz':
-      return 'warmaster-trial-armies-compendium-2009/grimgor-s-ardboyz';
+      return 'warmaster-trial-armies-compendium-2009/grimgors-ardboyz';
     case 'highelf':
       return 'warmaster-armies/high-elf';
     case 'highelfrev':
@@ -400,7 +400,7 @@ function lookupOldList (oldList) {
     case 'skavenrev':
       return 'warmaster-revolution/skaven';
     case 'slayerkings':
-      return 'warmaster-trial-armies-compendium-2009/slayer-king-s';
+      return 'warmaster-trial-armies-compendium-2009/slayer-kings';
     case 'spartan':
       return 'warmaster-ancient-armies/spartan';
     case 'successors':
