@@ -131,6 +131,24 @@ export default {
       payload.number = context.state.units[payload.unitID].number;
     }
 
+    if (context.state.upgrades[payload.upgradeID].addOnUpgrades) {
+      if (payload.number <= 0) {
+        context.state.upgrades[payload.upgradeID].addOnUpgrades.forEach((upgradeID) => {
+          context.commit('REMOVE_UNIT_UPGRADE', {
+            unitID: payload.unitID,
+            upgradeID: upgradeID
+          });
+        });
+      } else if (context.state.upgrades[payload.upgradeID].number === 0) {
+        context.state.upgrades[payload.upgradeID].addOnUpgrades.forEach((upgradeID) => {
+          context.commit('ADD_UNIT_UPGRADE', {
+            unitID: payload.unitID,
+            upgradeID: upgradeID
+          });
+        });
+      }
+    }
+
     // set the upgrade's number first, as we need to calculate the difference of the change
     context.commit('SET_UPGRADE_NUMBER', {
       upgradeID: payload.upgradeID,

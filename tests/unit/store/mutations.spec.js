@@ -36,7 +36,12 @@ describe('store.js mutations', () => {
     printableItems: ['a print item', 'a second print item'],
     specialRules: {},
     spells: [],
-    units: {},
+    units: {
+      'a unit': {
+        upgrades: {
+        }
+      }
+    },
     upgradeConstraints: [],
     upgrades: {},
     version: ''
@@ -49,6 +54,11 @@ describe('store.js mutations', () => {
     mutations.ADD_PRINT_ITEM(state, 0);
     expect(state.printItems).toEqual(['a second print item', 'a print item']);
     expect(state.printableItems).toEqual([]);
+  });
+
+  it('ADD_UNIT_UPGRADE adds an upgrade to a unit', () => {
+    mutations.ADD_UNIT_UPGRADE(state, { unitID: 'a unit', upgradeID: 'an upgrade' });
+    expect(state.units['a unit'].upgrades).toEqual({ 'an upgrade': { number: 0, pointsCost: 0 }});
   });
 
   it('CLEAR_ERRORS empties state.errors', () => {
@@ -69,6 +79,13 @@ describe('store.js mutations', () => {
     mutations.REMOVE_PRINT_ITEM(state, 1);
     expect(state.printItems).toEqual(['a print item']);
     expect(state.printableItems).toEqual(['a second print item']);
+  });
+
+  it('REMOVE_UNIT_UPGRADE adds an upgrade to a unit', () => {
+    mutations.ADD_UNIT_UPGRADE(state, { unitID: 'a unit', upgradeID: 'an upgrade' });
+    mutations.ADD_UNIT_UPGRADE(state, { unitID: 'a unit', upgradeID: 'another upgrade' });
+    mutations.REMOVE_UNIT_UPGRADE(state, { unitID: 'a unit', upgradeID: 'an upgrade' });
+    expect(state.units['a unit'].upgrades).toEqual({ 'another upgrade': { number: 0, pointsCost: 0 }});
   });
 
   it('SET_ACTIVE_ARMY_LIST_GROUP_TAB sets state.activeArmyListGroupTab', () => {

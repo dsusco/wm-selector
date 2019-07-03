@@ -300,6 +300,24 @@ describe('store.js actions', () => {
       };
     });
 
+    it('commits ADD_UNIT_UPGRADE when addOnUpgrades are present and the upgrade.number is being set to a positive number', () => {
+      context.state.upgrades['an upgrade'] = {
+        number: 0,
+        addOnUpgrades: ['another upgrade']
+      };
+
+      actions.setUnitUpgradeNumber(context, payload);
+      expect(commit).toHaveBeenCalledWith('ADD_UNIT_UPGRADE', { unitID: 'a unit', upgradeID: 'another upgrade' });
+    });
+
+    it('commits REMOVE_UNIT_UPGRADE when addOnUpgrades are present and the upgrade.number is being set to 0', () => {
+      context.state.upgrades['an upgrade'].addOnUpgrades = ['another upgrade'];
+      payload.number = 0;
+
+      actions.setUnitUpgradeNumber(context, payload);
+      expect(commit).toHaveBeenCalledWith('REMOVE_UNIT_UPGRADE', { unitID: 'a unit', upgradeID: 'another upgrade' });
+    });
+
     it('commits SET_UPGRADE_NUMBER and SET_UNIT_UPGRADE_NUMBER_AND_POINTS_COST', () => {
       actions.setUnitUpgradeNumber(context, payload);
       expect(commit).toHaveBeenCalledWith('SET_UPGRADE_NUMBER', { upgradeID: 'an upgrade', number: 2 });

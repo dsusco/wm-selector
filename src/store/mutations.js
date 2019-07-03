@@ -5,6 +5,12 @@ export default {
     state.printItems.push(state.printableItems[index]);
     state.printableItems.splice(index, 1);
   },
+  ADD_UNIT_UPGRADE (state, payload) {
+    Vue.set(state.units[payload.unitID].upgrades, payload.upgradeID, {
+      number: 0,
+      pointsCost: 0
+    });
+  },
   CLEAR_ERRORS (state) {
     state.errors.length = 0;
   },
@@ -14,6 +20,9 @@ export default {
   REMOVE_PRINT_ITEM (state, index) {
     state.printableItems.push(state.printItems[index]);
     state.printItems.splice(index, 1);
+  },
+  REMOVE_UNIT_UPGRADE (state, payload) {
+    Vue.delete(state.units[payload.unitID].upgrades, payload.upgradeID);
   },
   SET_ACTIVE_ARMY_LIST_GROUP_TAB (state, activeArmyListGroupTab) {
     state.activeArmyListGroupTab = activeArmyListGroupTab;
