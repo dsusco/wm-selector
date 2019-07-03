@@ -206,6 +206,20 @@ function checkValidations (context, id, item) {
     context.commit('PUSH_ERROR', id + ' requires at least 1 ' + item.requiredUpgrades.toSentence() + '.');
   }
 
+  // units prohibited by a unit/upgrade
+  if (item.prohibitedUnits &&
+      item.number > 0 &&
+      0 < item.prohibitedUnits.reduce((count, unitID) => count + context.state.units[unitID].number, 0)) {
+    context.commit('PUSH_ERROR', id + ' cannot be taken with ' + item.prohibitedUnits.toSentence() + '.');
+  }
+
+  // upgrades prohibited by a unit/upgrade
+  if (item.prohibitedUpgrades &&
+      item.number > 0 &&
+      0 < item.prohibitedUpgrades.reduce((count, upgradeID) => count + context.state.upgrades[upgradeID].number, 0)) {
+    context.commit('PUSH_ERROR', id + ' cannot be taken with ' + item.prohibitedUpgrades.toSentence() + '.');
+  }
+
   // elite
   if (item.elite &&
       item.number > context.getters.size - 1) {

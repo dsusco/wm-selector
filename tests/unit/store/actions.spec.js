@@ -398,6 +398,20 @@ describe('store.js actions', () => {
       expect(commit).toHaveBeenCalledWith('PUSH_ERROR', 'unit requires at least 1 required upgrade.');
     });
 
+    it('prohibitedUnits violation commits PUSH_ERROR', () => {
+      state.units['unit'] = { number: 1, prohibitedUnits: ['prohibited unit'] }
+      state.units['prohibited unit'] = { number: 1 }
+      actions.validate(context);
+      expect(commit).toHaveBeenCalledWith('PUSH_ERROR', 'unit cannot be taken with prohibited unit.');
+    });
+
+    it('prohibitedUpgrades violation commits PUSH_ERROR', () => {
+      state.units['unit'] = { number: 1, prohibitedUpgrades: ['prohibited upgrade'] }
+      state.upgrades['prohibited upgrade'] = { number: 1 }
+      actions.validate(context);
+      expect(commit).toHaveBeenCalledWith('PUSH_ERROR', 'unit cannot be taken with prohibited upgrade.');
+    });
+
     it('elite violation commits PUSH_ERROR', () => {
       state.units['unit'] = { number: 1, elite: true }
       actions.validate(context);
