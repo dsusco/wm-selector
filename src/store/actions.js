@@ -177,22 +177,38 @@ function checkValidations (context, id, item) {
   }
 
   // min/max
-  if (context.getters.pointsCost >= 1000 && item.number < item.min * context.getters.size) {
+  if (context.getters.pointsCost >= 1000 &&
+      item.number < item.min * context.getters.size) {
     context.commit('PUSH_ERROR', 'Minimum of ' + (item.min * context.getters.size) + ' ' + id + ' per ' + context.getters.size + ',000 points.');
   }
   if (item.number > item.max * context.getters.size) {
     context.commit('PUSH_ERROR', 'Maximum of ' + (item.max * context.getters.size) + ' ' + id + ' per ' + context.getters.size + ',000 points.');
   }
 
-  // Skirmishers, et al.
+  // units added to other units/upgrades
   if (item.augendUnits &&
       item.number > item.augendUnits.reduce((count, unitID) => count + context.state.units[unitID].number, 0)
   ) {
     context.commit('PUSH_ERROR', 'Minimum of ' + item.number + ' ' + item.augendUnits.toSentence() + ' required for ' + item.number + ' ' + id + '.');
   }
 
-  // Warmaster Trial Armies Compendium 2009
-  if (item.elite && item.number > context.getters.size - 1) {
+  // units required by a unit/upgrade
+  if (item.requiredUnits &&
+      item.number > 0 &&
+      1 > item.requiredUnits.reduce((count, unitID) => count + context.state.units[unitID].number, 0)) {
+    context.commit('PUSH_ERROR', id + ' requires at least 1 ' + item.requiredUnits.toSentence() + '.');
+  }
+
+  // upgrades required by a unit/upgrade
+  if (item.requiredUpgrades &&
+      item.number > 0 &&
+      1 > item.requiredUpgrades.reduce((count, upgradeID) => count + context.state.upgrades[upgradeID].number, 0)) {
+    context.commit('PUSH_ERROR', id + ' requires at least 1 ' + item.requiredUpgrades.toSentence() + '.');
+  }
+
+  // elite
+  if (item.elite &&
+      item.number > context.getters.size - 1) {
     context.commit('PUSH_ERROR', 'Maximum of ' + (context.getters.size - 1) + ' ' + id + ' per ' + context.getters.size + ',000 points.');
   }
 }

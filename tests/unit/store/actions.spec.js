@@ -377,11 +377,25 @@ describe('store.js actions', () => {
       expect(commit).toHaveBeenCalledWith('PUSH_ERROR', 'Maximum of 1 unit per 1,000 points.');
     });
 
-    it('max violation commits PUSH_ERROR', () => {
+    it('augendUnits violation commits PUSH_ERROR', () => {
       state.units['unit'] = { number: 1, augendUnits: ['augend'] }
       state.units['augend'] = { number: 0 }
       actions.validate(context);
       expect(commit).toHaveBeenCalledWith('PUSH_ERROR', 'Minimum of 1 augend required for 1 unit.');
+    });
+
+    it('requiredUnits violation commits PUSH_ERROR', () => {
+      state.units['unit'] = { number: 1, requiredUnits: ['required unit'] }
+      state.units['required unit'] = { number: 0 }
+      actions.validate(context);
+      expect(commit).toHaveBeenCalledWith('PUSH_ERROR', 'unit requires at least 1 required unit.');
+    });
+
+    it('requiredUpgrades violation commits PUSH_ERROR', () => {
+      state.units['unit'] = { number: 1, requiredUpgrades: ['required upgrade'] }
+      state.upgrades['required upgrade'] = { number: 0 }
+      actions.validate(context);
+      expect(commit).toHaveBeenCalledWith('PUSH_ERROR', 'unit requires at least 1 required upgrade.');
     });
 
     it('elite violation commits PUSH_ERROR', () => {
