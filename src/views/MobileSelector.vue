@@ -61,9 +61,9 @@ export default {
     }
   },
   mounted () {
-    try {
+    if (document.getElementsByClassName('mobile-selector-view-button')[0]) {
       document.getElementsByClassName('mobile-selector-view-button')[0].focus();
-    } catch {}
+    }
   }
 };
 </script>

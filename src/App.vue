@@ -13,7 +13,7 @@
 
       <router-link tag="button" class="mobile-selector-view-button" :to="{ name: 'Mobile Selector' }" :disabled="!jsonPath">
         <span class="fa fa-hand-pointer-o"></span>
-        <span class="sr-only">Mobile Selector</span>
+        <span class="sr-only">Mobile&nbsp;Selector</span>
       </router-link>
 
       <router-link tag="button" class="text-view-button" :to="{ name: 'Text' }" :disabled="!jsonPath">
@@ -55,10 +55,27 @@ import { mapGetters } from 'vuex';
 
 import PrintItems from '@/components/Print/PrintItems';
 
+function removeHasFocusClass(element) {
+  Array.prototype.forEach.call(element.querySelectorAll('.hasFocus'), (element) => {
+    element.classList.remove('hasFocus');
+  });
+}
+
 export default {
   name: 'wm-selector',
   components: { PrintItems },
-  computed: mapGetters(['jsonPath', 'printItems'])
+  computed: mapGetters(['jsonPath', 'printItems']),
+  mounted () {
+    document.addEventListener('focusin', (event) => {
+      if (event.target.closest('.hasFocus')) {
+        removeHasFocusClass(event.target.closest('.hasFocus'));
+      } else {
+        removeHasFocusClass(document);
+      }
+
+      event.target.classList.add('hasFocus');
+    });
+  }
 };
 </script>
 

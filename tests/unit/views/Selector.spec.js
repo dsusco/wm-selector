@@ -28,7 +28,12 @@ describe('Selector.vue', () => {
         errors: () => ['an error'],
         pointsCost: () => 50,
         unitCount: () => 1,
-        units: () => ({}),
+        units: () => ({
+          'a unit': {}
+        }),
+        usedUnits: () => ({
+          'a unit': {}
+        }),
         version: () => 'a version'
       }
     });
@@ -37,5 +42,18 @@ describe('Selector.vue', () => {
   });
 
   it('renders', () => {
+    expect(wrapper.find('#armyList').text()).toContain('an army list');
+    expect(wrapper.find('#version').text()).toEqual('a version');
+    expect(wrapper.find('#pointsCost').text()).toEqual('50');
+    expect(wrapper.find('#unitCount').text()).toEqual('1/1');
+    expect(wrapper.find('#errors').text()).toEqual('an error');
+    expect(wrapper.html()).toContain('usedunit-stub');
+    expect(wrapper.html()).toContain('unit-stub');
+  });
+
+  it('dispatches setLabel when label changes', () => {
+    wrapper.vm.label = 'a new label';
+
+    expect(mockDispatch).toHaveBeenCalledWith('setLabel', 'a new label');
   });
 });
