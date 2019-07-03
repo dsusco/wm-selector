@@ -80,7 +80,9 @@ export default {
 
       // add any upgrades as defined by the army's upgrade constraints
       state.upgradeConstraints.forEach((upgradeConstraint) => {
-        if (upgradeConstraint.unitType.includes(unit.type) && !unit.noUpgrades) {
+        if (upgradeConstraint.unitType.includes(unit.type) &&
+            !unit.noUpgrades &&
+            !(unit.noMagic && upgradeConstraint.magic)) {
           try {
             Vue.set(unit, 'upgrades', unit.upgrades.concat(upgradeConstraint.upgrades));
           } catch {
