@@ -59,6 +59,11 @@ export default {
     toggleErrors () {
       this.errorsHidden = !this.errorsHidden;
     }
+  },
+  mounted () {
+    try {
+      document.getElementsByClassName('mobile-selector-view-button')[0].focus();
+    } catch {}
   }
 };
 </script>
