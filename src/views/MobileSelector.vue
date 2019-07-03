@@ -113,6 +113,10 @@ export default {
       }
     }
 
+    #unitCount {
+      cursor: help;
+    }
+
     #unitCount,
     .number {
       @include position(absolute, 0 (2 * $_) null null);
