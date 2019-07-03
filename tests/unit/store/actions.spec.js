@@ -389,6 +389,12 @@ describe('store.js actions', () => {
       expect(commit).toHaveBeenCalledWith('PUSH_ERROR', 'Minimum of 1 unit per 1,000 points.');
     });
 
+    it('max elite violation commits PUSH_ERROR', () => {
+      state.units['unit'] = { number: 1, max: 'elite' }
+      actions.validate(context);
+      expect(commit).toHaveBeenCalledWith('PUSH_ERROR', 'Maximum of 0 unit per 1,000 points.');
+    });
+
     it('max violation commits PUSH_ERROR', () => {
       state.units['unit'] = { max: 1, number: 2 }
       actions.validate(context);
@@ -428,12 +434,6 @@ describe('store.js actions', () => {
       state.upgrades['prohibited upgrade'] = { number: 1 }
       actions.validate(context);
       expect(commit).toHaveBeenCalledWith('PUSH_ERROR', 'unit cannot be taken with prohibited upgrade.');
-    });
-
-    it('elite violation commits PUSH_ERROR', () => {
-      state.units['unit'] = { number: 1, elite: true }
-      actions.validate(context);
-      expect(commit).toHaveBeenCalledWith('PUSH_ERROR', 'Maximum of 0 unit per 1,000 points.');
     });
   });
 });

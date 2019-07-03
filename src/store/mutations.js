@@ -137,7 +137,7 @@ export default {
 function minMax(troop) {
   var minMax;
 
-  if (troop.elite) {
+  if (troop.max === 'elite') {
     minMax = 'elite'
   } else if (troop.armyMin || troop.armyMax) {
     if (troop.armyMin) {

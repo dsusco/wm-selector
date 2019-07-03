@@ -199,7 +199,10 @@ function checkValidations (context, id, item) {
       item.number < item.min * context.getters.size) {
     context.commit('PUSH_ERROR', 'Minimum of ' + (item.min * context.getters.size) + ' ' + id + ' per ' + context.getters.size + ',000 points.');
   }
-  if (item.number > item.max * context.getters.size) {
+  if (item.max === 'elite' &&
+      item.number > context.getters.size - 1) {
+    context.commit('PUSH_ERROR', 'Maximum of ' + (context.getters.size - 1) + ' ' + id + ' per ' + context.getters.size + ',000 points.');
+  } else if (item.number > item.max * context.getters.size) {
     context.commit('PUSH_ERROR', 'Maximum of ' + (item.max * context.getters.size) + ' ' + id + ' per ' + context.getters.size + ',000 points.');
   }
 
@@ -236,12 +239,6 @@ function checkValidations (context, id, item) {
       item.number > 0 &&
       0 < item.prohibitedUpgrades.reduce((count, upgradeID) => count + context.state.upgrades[upgradeID].number, 0)) {
     context.commit('PUSH_ERROR', id + ' cannot be taken with ' + item.prohibitedUpgrades.toSentence() + '.');
-  }
-
-  // elite
-  if (item.elite &&
-      item.number > context.getters.size - 1) {
-    context.commit('PUSH_ERROR', 'Maximum of ' + (context.getters.size - 1) + ' ' + id + ' per ' + context.getters.size + ',000 points.');
   }
 }
 
