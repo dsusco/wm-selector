@@ -14,6 +14,7 @@
   "scripts": {
     "build": "vue-cli-service build",
     "prebuild": "node scripts/build-army-list-json.js",
+    "deploy": "npm run build && appcfg.py update .",
     "lint": "vue-cli-service lint",
     "serve": "vue-cli-service serve",
     "preserve": "node scripts/build-army-list-json.js",
