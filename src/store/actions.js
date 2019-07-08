@@ -109,8 +109,8 @@ export default {
     context.commit('SET_UNIT_NUMBER', payload);
 
     // remove all unit upgrades greater than the new unit number
-    for (var upgradeID in context.state.units[payload.unitID].upgrades) {
-      if (context.state.units[payload.unitID].upgrades[upgradeID].number > payload.number) {
+    for (var upgradeID in context.getters.units[payload.unitID].upgrades) {
+      if (context.getters.units[payload.unitID].upgrades[upgradeID].number > payload.number) {
         // ensure setUnitUpgradeNumber doesn't validate, this action will do it
         context.dispatch('setUnitUpgradeNumber', Object.assign({}, payload, { skipSettingUnitPointsCost: true, skipValidation: true, upgradeID }));
       }
@@ -131,20 +131,20 @@ export default {
     }
 
     // don't let the number exceed the unit number
-    if (payload.number > context.state.units[payload.unitID].number) {
-      payload.number = context.state.units[payload.unitID].number;
+    if (payload.number > context.getters.units[payload.unitID].number) {
+      payload.number = context.getters.units[payload.unitID].number;
     }
 
-    if (context.state.upgrades[payload.upgradeID].addOnUpgrades) {
+    if (context.getters.upgrades[payload.upgradeID].addOnUpgrades) {
       if (payload.number <= 0) {
-        context.state.upgrades[payload.upgradeID].addOnUpgrades.forEach((upgradeID) => {
+        context.getters.upgrades[payload.upgradeID].addOnUpgrades.forEach((upgradeID) => {
           context.commit('REMOVE_UNIT_UPGRADE', {
             unitID: payload.unitID,
             upgradeID: upgradeID
           });
         });
-      } else if (context.state.upgrades[payload.upgradeID].number === 0) {
-        context.state.upgrades[payload.upgradeID].addOnUpgrades.forEach((upgradeID) => {
+      } else if (context.getters.upgrades[payload.upgradeID].number === 0) {
+        context.getters.upgrades[payload.upgradeID].addOnUpgrades.forEach((upgradeID) => {
           context.commit('ADD_UNIT_UPGRADE', {
             unitID: payload.unitID,
             upgradeID: upgradeID
@@ -156,7 +156,7 @@ export default {
     // set the upgrade's number first, as we need to calculate the difference of the change
     context.commit('SET_UPGRADE_NUMBER', {
       upgradeID: payload.upgradeID,
-      number: context.state.upgrades[payload.upgradeID].number - context.state.units[payload.unitID].upgrades[payload.upgradeID].number + payload.number
+      number: context.getters.upgrades[payload.upgradeID].number - context.getters.units[payload.unitID].upgrades[payload.upgradeID].number + payload.number
     });
     context.commit('SET_UNIT_UPGRADE_NUMBER_AND_POINTS_COST', payload);
 
@@ -171,12 +171,12 @@ export default {
   validate (context) {
     context.commit('CLEAR_ERRORS');
 
-    for (var unit in context.state.units) {
-      checkValidations(context, unit, context.state.units[unit]);
+    for (var unit in context.getters.units) {
+      checkValidations(context, unit, context.getters.units[unit]);
     }
 
-    for (var upgrade in context.state.upgrades) {
-      checkValidations(context, upgrade, context.state.upgrades[upgrade]);
+    for (var upgrade in context.getters.upgrades) {
+      checkValidations(context, upgrade, context.getters.upgrades[upgrade]);
     }
   }
 };
@@ -190,22 +190,53 @@ Array.prototype.toSentence = function (connector = ', ', lastConnector = ' or ')
 };
 
 function checkValidations (context, id, item) {
-  // army min/max
+  var requiredCount, requiredSentence;
+
+  // army min
   if (item.number < item.armyMin) {
     context.commit('PUSH_ERROR', 'Minimum of ' + item.armyMin + ' ' + id + ' per army.');
   }
+
+  // army max
   if (item.number > item.armyMax) {
     context.commit('PUSH_ERROR', 'Maximum of ' + item.armyMax + ' ' + id + ' per army.');
   }
 
-  // min/max
-  if (context.getters.pointsCost >= 1000 &&
+  // min
+  if (/^As /.test(item.min)) {
+    if (item.requiredUnits) {
+      requiredCount = item.requiredUnits.reduce((count, unitID) => count + context.getters.units[unitID].number, 0);
+      requiredSentence = item.requiredUnits.toSentence();
+    } else {
+      requiredCount = item.requiredUpgrades.reduce((count, upgradeID) => count + context.getters.upgrades[upgradeID].number, 0);
+      requiredSentence = item.requiredUpgrades.toSentence();
+    }
+
+    if (item.number < requiredCount) {
+      context.commit('PUSH_ERROR', 'Minimum of ' + requiredCount + ' ' + id + ' per ' + requiredCount + ' ' + requiredSentence + '.');
+    }
+  } else if (context.getters.pointsCost >= 1000 &&
       item.number < item.min * context.getters.size) {
     context.commit('PUSH_ERROR', 'Minimum of ' + (item.min * context.getters.size) + ' ' + id + ' per ' + context.getters.size + ',000 points.');
   }
+
+  // max
   if (item.max === 'elite' &&
       item.number > context.getters.size - 1) {
     context.commit('PUSH_ERROR', 'Maximum of ' + (context.getters.size - 1) + ' ' + id + ' per ' + context.getters.size + ',000 points.');
+  } else if (item.max === 'Up to Half') {
+    if (item.requiredUnits) {
+      requiredCount = item.requiredUnits.reduce((count, unitID) => count + context.getters.units[unitID].number, 0);
+      requiredSentence = item.requiredUnits.toSentence();
+    } else {
+      requiredCount = item.requiredUpgrades.reduce((count, upgradeID) => count + context.getters.upgrades[upgradeID].number, 0);
+      requiredSentence = item.requiredUpgrades.toSentence();
+    }
+
+    if (item.number > 0 &&
+        item.number > Math.floor(requiredCount / 2)) {
+      context.commit('PUSH_ERROR', 'Maximum of ' + Math.floor(requiredCount / 2) + ' ' + id + ' per ' + requiredCount + ' ' + requiredSentence + '.');
+    }
   } else if (item.number > item.max * context.getters.size) {
     context.commit('PUSH_ERROR', 'Maximum of ' + (item.max * context.getters.size) + ' ' + id + ' per ' + context.getters.size + ',000 points.');
   }
@@ -213,7 +244,7 @@ function checkValidations (context, id, item) {
   // magic items can't exceed number
   if (item.upgrades &&
       item.number < Object.keys(item.upgrades).reduce((count, upgradeID) => {
-        if (MAGIC_ITEM_TYPES.includes(context.state.upgrades[upgradeID].type)) {
+        if (MAGIC_ITEM_TYPES.includes(context.getters.upgrades[upgradeID].type)) {
           count += item.upgrades[upgradeID].number;
         }
 
@@ -225,7 +256,7 @@ function checkValidations (context, id, item) {
   // mounts can't exceed number
   if (item.upgrades &&
       item.number < Object.keys(item.upgrades).reduce((count, upgradeID) => {
-        if (/Mount$/.test(context.state.upgrades[upgradeID].type)) {
+        if (/Mount$/.test(context.getters.upgrades[upgradeID].type)) {
           count += item.upgrades[upgradeID].number;
         }
 
@@ -236,7 +267,7 @@ function checkValidations (context, id, item) {
 
   // units added to other units/upgrades
   if (item.augendUnits &&
-      item.number > item.augendUnits.reduce((count, unitID) => count + context.state.units[unitID].number, 0)
+      item.number > item.augendUnits.reduce((count, unitID) => count + context.getters.units[unitID].number, 0)
   ) {
     context.commit('PUSH_ERROR', item.number + ' ' + id + ' requires at least ' + item.number + ' ' + item.augendUnits.toSentence() + '.');
   }
@@ -244,28 +275,28 @@ function checkValidations (context, id, item) {
   // units required by a unit/upgrade
   if (item.requiredUnits &&
       item.number > 0 &&
-      1 > item.requiredUnits.reduce((count, unitID) => count + context.state.units[unitID].number, 0)) {
+      1 > item.requiredUnits.reduce((count, unitID) => count + context.getters.units[unitID].number, 0)) {
     context.commit('PUSH_ERROR', id + ' must be taken with ' + item.requiredUnits.toSentence() + '.');
   }
 
   // upgrades required by a unit/upgrade
   if (item.requiredUpgrades &&
       item.number > 0 &&
-      1 > item.requiredUpgrades.reduce((count, upgradeID) => count + context.state.upgrades[upgradeID].number, 0)) {
+      1 > item.requiredUpgrades.reduce((count, upgradeID) => count + context.getters.upgrades[upgradeID].number, 0)) {
     context.commit('PUSH_ERROR', id + ' must be taken with ' + item.requiredUpgrades.toSentence() + '.');
   }
 
   // units prohibited by a unit/upgrade
   if (item.prohibitedUnits &&
       item.number > 0 &&
-      0 < item.prohibitedUnits.reduce((count, unitID) => count + context.state.units[unitID].number, 0)) {
+      0 < item.prohibitedUnits.reduce((count, unitID) => count + context.getters.units[unitID].number, 0)) {
     context.commit('PUSH_ERROR', id + ' cannot be taken with ' + item.prohibitedUnits.toSentence() + '.');
   }
 
   // upgrades prohibited by a unit/upgrade
   if (item.prohibitedUpgrades &&
       item.number > 0 &&
-      0 < item.prohibitedUpgrades.reduce((count, upgradeID) => count + context.state.upgrades[upgradeID].number, 0)) {
+      0 < item.prohibitedUpgrades.reduce((count, upgradeID) => count + context.getters.upgrades[upgradeID].number, 0)) {
     context.commit('PUSH_ERROR', id + ' cannot be taken with ' + item.prohibitedUpgrades.toSentence() + '.');
   }
 }

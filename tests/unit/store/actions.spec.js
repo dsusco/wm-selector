@@ -219,7 +219,7 @@ describe('store.js actions', () => {
       context = {
         commit,
         dispatch,
-        state: {
+        getters: {
           units: {
             'a unit': {
               upgrades: {
@@ -274,7 +274,7 @@ describe('store.js actions', () => {
     var payload;
 
     beforeEach(() => {
-      context.state = {
+      context.getters = {
         units: {
           'a unit': {
             number: 1,
@@ -301,7 +301,7 @@ describe('store.js actions', () => {
     });
 
     it('commits ADD_UNIT_UPGRADE when addOnUpgrades are present and the upgrade.number is being set to a positive number', () => {
-      context.state.upgrades['an upgrade'] = {
+      context.getters.upgrades['an upgrade'] = {
         number: 0,
         addOnUpgrades: ['another upgrade']
       };
@@ -311,7 +311,7 @@ describe('store.js actions', () => {
     });
 
     it('commits REMOVE_UNIT_UPGRADE when addOnUpgrades are present and the upgrade.number is being set to 0', () => {
-      context.state.upgrades['an upgrade'].addOnUpgrades = ['another upgrade'];
+      context.getters.upgrades['an upgrade'].addOnUpgrades = ['another upgrade'];
       payload.number = 0;
 
       actions.setUnitUpgradeNumber(context, payload);
@@ -352,18 +352,13 @@ describe('store.js actions', () => {
     var
       getters = {
         pointsCost: 1000,
-        size: 1
-      },
-      state = {
-        units: {
-        },
-        upgrades: {
-        }
+        size: 1,
+        units: {},
+        upgrades: {}
       };
 
     beforeEach(() => {
       context.getters = getters;
-      context.state = state;
     });
 
     it('commits CLEAR_ERRORS', () => {
@@ -372,80 +367,94 @@ describe('store.js actions', () => {
     });
 
     it('armyMin violation commits PUSH_ERROR', () => {
-      state.units['unit'] = { armyMin: 1, number: 0 };
+      context.getters.units['unit'] = { armyMin: 1, number: 0 };
       actions.validate(context);
       expect(commit).toHaveBeenCalledWith('PUSH_ERROR', 'Minimum of 1 unit per army.');
     });
 
     it('armyMax violation commits PUSH_ERROR', () => {
-      state.units['unit'] = { armyMax: 1, number: 2 };
+      context.getters.units['unit'] = { armyMax: 1, number: 2 };
       actions.validate(context);
       expect(commit).toHaveBeenCalledWith('PUSH_ERROR', 'Maximum of 1 unit per army.');
     });
 
+    it('min "As *" violation commits PUSH_ERROR', () => {
+      context.getters.units['unit'] = { min: 'As some unit', number: 0, requiredUnits: ['another unit'] };
+      context.getters.units['another unit'] = { number: 1 };
+      actions.validate(context);
+      expect(commit).toHaveBeenCalledWith('PUSH_ERROR', 'Minimum of 1 unit per 1 another unit.');
+    });
+
     it('min violation commits PUSH_ERROR', () => {
-      state.units['unit'] = { min: 1, number: 0 };
+      context.getters.units['unit'] = { min: 1, number: 0 };
       actions.validate(context);
       expect(commit).toHaveBeenCalledWith('PUSH_ERROR', 'Minimum of 1 unit per 1,000 points.');
     });
 
     it('max elite violation commits PUSH_ERROR', () => {
-      state.units['unit'] = { number: 1, max: 'elite' };
+      context.getters.units['unit'] = { number: 1, max: 'elite' };
       actions.validate(context);
       expect(commit).toHaveBeenCalledWith('PUSH_ERROR', 'Maximum of 0 unit per 1,000 points.');
     });
 
+    it('nax "Up to Half" violation commits PUSH_ERROR', () => {
+      context.getters.units['unit'] = { max: 'Up to Half', number: 1, requiredUnits: ['another unit'] };
+      context.getters.units['another unit'] = { number: 1 };
+      actions.validate(context);
+      expect(commit).toHaveBeenCalledWith('PUSH_ERROR', 'Maximum of 0 unit per 1 another unit.');
+    });
+
     it('max violation commits PUSH_ERROR', () => {
-      state.units['unit'] = { max: 1, number: 2 };
+      context.getters.units['unit'] = { max: 1, number: 2 };
       actions.validate(context);
       expect(commit).toHaveBeenCalledWith('PUSH_ERROR', 'Maximum of 1 unit per 1,000 points.');
     });
 
     it('magic item count violation commits PUSH_ERROR', () => {
-      state.units['unit'] = { number: 1, upgrades: { upgrade: { number: 2 } } };
-      state.upgrades['upgrade'] = { type: 'Device of Power' };
+      context.getters.units['unit'] = { number: 1, upgrades: { upgrade: { number: 2 } } };
+      context.getters.upgrades['upgrade'] = { type: 'Device of Power' };
             actions.validate(context);
       expect(commit).toHaveBeenCalledWith('PUSH_ERROR', 'unit may only have 1 magic item.');
     });
 
     it('mount count violation commits PUSH_ERROR', () => {
-      state.units['unit'] = { number: 1, upgrades: { upgrade: { number: 2 } } };
-      state.upgrades['upgrade'] = { type: 'Mount' };
+      context.getters.units['unit'] = { number: 1, upgrades: { upgrade: { number: 2 } } };
+      context.getters.upgrades['upgrade'] = { type: 'Mount' };
             actions.validate(context);
       expect(commit).toHaveBeenCalledWith('PUSH_ERROR', 'unit may only have 1 mount.');
     });
 
     it('augendUnits violation commits PUSH_ERROR', () => {
-      state.units['unit'] = { number: 1, augendUnits: ['augend'] };
-      state.units['augend'] = { number: 0 };
+      context.getters.units['unit'] = { number: 1, augendUnits: ['augend'] };
+      context.getters.units['augend'] = { number: 0 };
       actions.validate(context);
       expect(commit).toHaveBeenCalledWith('PUSH_ERROR', '1 unit requires at least 1 augend.');
     });
 
     it('requiredUnits violation commits PUSH_ERROR', () => {
-      state.units['unit'] = { number: 1, requiredUnits: ['required unit'] };
-      state.units['required unit'] = { number: 0 };
+      context.getters.units['unit'] = { number: 1, requiredUnits: ['required unit'] };
+      context.getters.units['required unit'] = { number: 0 };
       actions.validate(context);
       expect(commit).toHaveBeenCalledWith('PUSH_ERROR', 'unit must be taken with required unit.');
     });
 
     it('requiredUpgrades violation commits PUSH_ERROR', () => {
-      state.units['unit'] = { number: 1, requiredUpgrades: ['required upgrade'] };
-      state.upgrades['required upgrade'] = { number: 0 };
+      context.getters.units['unit'] = { number: 1, requiredUpgrades: ['required upgrade'] };
+      context.getters.upgrades['required upgrade'] = { number: 0 };
       actions.validate(context);
       expect(commit).toHaveBeenCalledWith('PUSH_ERROR', 'unit must be taken with required upgrade.');
     });
 
     it('prohibitedUnits violation commits PUSH_ERROR', () => {
-      state.units['unit'] = { number: 1, prohibitedUnits: ['prohibited unit'] };
-      state.units['prohibited unit'] = { number: 1 };
+      context.getters.units['unit'] = { number: 1, prohibitedUnits: ['prohibited unit'] };
+      context.getters.units['prohibited unit'] = { number: 1 };
       actions.validate(context);
       expect(commit).toHaveBeenCalledWith('PUSH_ERROR', 'unit cannot be taken with prohibited unit.');
     });
 
     it('prohibitedUpgrades violation commits PUSH_ERROR', () => {
-      state.units['unit'] = { number: 1, prohibitedUpgrades: ['prohibited upgrade'] };
-      state.upgrades['prohibited upgrade'] = { number: 1 };
+      context.getters.units['unit'] = { number: 1, prohibitedUpgrades: ['prohibited upgrade'] };
+      context.getters.upgrades['prohibited upgrade'] = { number: 1 };
       actions.validate(context);
       expect(commit).toHaveBeenCalledWith('PUSH_ERROR', 'unit cannot be taken with prohibited upgrade.');
     });
