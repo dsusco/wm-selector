@@ -4,6 +4,8 @@ import axios from 'axios';
 import magicItems from '@/json/magic-items.json';
 import router from '@/router';
 
+const MAGIC_ITEM_TYPES = ['Device of Power', 'Magic Standard', 'Magic Weapon', 'Holy Item', 'Other Item'];
+
 export default {
   addPrintItem (context, index) {
     context.commit('ADD_PRINT_ITEM', index);
@@ -208,25 +210,37 @@ function checkValidations (context, id, item) {
     context.commit('PUSH_ERROR', 'Maximum of ' + (item.max * context.getters.size) + ' ' + id + ' per ' + context.getters.size + ',000 points.');
   }
 
+  // magic items can't exceed number
+  if (item.upgrades &&
+      item.number < Object.keys(item.upgrades).reduce((count, upgradeID) => {
+        if (MAGIC_ITEM_TYPES.includes(context.state.upgrades[upgradeID].type)) {
+          count += item.upgrades[upgradeID].number;
+        }
+
+        return count;
+      }, 0)) {
+    context.commit('PUSH_ERROR', id + ' may only have ' + item.number + ' magic item' + (item.number > 1 ? 's.' : '.'));
+  }
+
   // units added to other units/upgrades
   if (item.augendUnits &&
       item.number > item.augendUnits.reduce((count, unitID) => count + context.state.units[unitID].number, 0)
   ) {
-    context.commit('PUSH_ERROR', 'Minimum of ' + item.number + ' ' + item.augendUnits.toSentence() + ' required for ' + item.number + ' ' + id + '.');
+    context.commit('PUSH_ERROR', item.number + ' ' + id + ' requires at least ' + item.number + ' ' + item.augendUnits.toSentence() + '.');
   }
 
   // units required by a unit/upgrade
   if (item.requiredUnits &&
       item.number > 0 &&
       1 > item.requiredUnits.reduce((count, unitID) => count + context.state.units[unitID].number, 0)) {
-    context.commit('PUSH_ERROR', id + ' requires at least 1 ' + item.requiredUnits.toSentence() + '.');
+    context.commit('PUSH_ERROR', id + ' must be taken with ' + item.requiredUnits.toSentence() + '.');
   }
 
   // upgrades required by a unit/upgrade
   if (item.requiredUpgrades &&
       item.number > 0 &&
       1 > item.requiredUpgrades.reduce((count, upgradeID) => count + context.state.upgrades[upgradeID].number, 0)) {
-    context.commit('PUSH_ERROR', id + ' requires at least 1 ' + item.requiredUpgrades.toSentence() + '.');
+    context.commit('PUSH_ERROR', id + ' must be taken with ' + item.requiredUpgrades.toSentence() + '.');
   }
 
   // units prohibited by a unit/upgrade

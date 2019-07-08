@@ -6,7 +6,7 @@
       <table class="upgrades" v-if="upgrades">
         <thead>
           <tr>
-            <th class="id">Upgrade</th>
+            <th class="id">{{unitID}} Upgrades</th>
             <th class="minMax">Min/Max</th>
             <th class="points">Points</th>
           </tr>

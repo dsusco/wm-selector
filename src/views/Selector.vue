@@ -15,7 +15,7 @@
       <table id="units">
         <thead>
           <tr>
-            <th class="id">Unit</th>
+            <th class="id">Troop</th>
             <th class="minMax">Min/Max</th>
             <th class="points">Points</th>
           </tr>
