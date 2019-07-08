@@ -30,12 +30,14 @@ export default {
           params.printItems = params.print;
         }
 
-        params.printItems = params.printItems.split(',').map((printItem) => {
-          context.dispatch('addPrintItem', _.findIndex(
-              context.getters.printableItems,
-              (printableItem) => printableItem.abbr === printItem
-            ));
-        });
+        if (params.printItems) {
+          params.printItems.split(',').map((printItem) => {
+            context.dispatch('addPrintItem', _.findIndex(
+                context.getters.printableItems,
+                (printableItem) => printableItem.abbr === printItem
+              ));
+          });
+        }
 
         // sort to ensure units get added before their upgrades
         Object.keys(params).sort()

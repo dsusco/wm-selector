@@ -18,7 +18,15 @@ export default [
     beforeEnter (to, from, next) {
       var params = Querystring.parse(to.fullPath.replace(/^\/\?/, ''));
 
-      if (params.jsonPath || params.list) {
+      if (window.location.pathname === '/army_selector.html') {
+        next(false)
+
+        window.location.replace(
+          window.location.href
+            .replace('army_selector.html', '#/')
+            .replace(/#\/$/, '')
+        );
+      } else if (params.jsonPath || params.list) {
         store.dispatch('loadSaveURL', params);
       } else {
         next();
