@@ -408,6 +408,13 @@ describe('store.js actions', () => {
       expect(commit).toHaveBeenCalledWith('PUSH_ERROR', 'unit may only have 1 magic item.');
     });
 
+    it('mount count violation commits PUSH_ERROR', () => {
+      state.units['unit'] = { number: 1, upgrades: { upgrade: { number: 2 } } };
+      state.upgrades['upgrade'] = { type: 'Mount' };
+            actions.validate(context);
+      expect(commit).toHaveBeenCalledWith('PUSH_ERROR', 'unit may only have 1 mount.');
+    });
+
     it('augendUnits violation commits PUSH_ERROR', () => {
       state.units['unit'] = { number: 1, augendUnits: ['augend'] };
       state.units['augend'] = { number: 0 };

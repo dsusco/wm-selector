@@ -222,6 +222,18 @@ function checkValidations (context, id, item) {
     context.commit('PUSH_ERROR', id + ' may only have ' + item.number + ' magic item' + (item.number > 1 ? 's.' : '.'));
   }
 
+  // mounts can't exceed number
+  if (item.upgrades &&
+      item.number < Object.keys(item.upgrades).reduce((count, upgradeID) => {
+        if (/Mount$/.test(context.state.upgrades[upgradeID].type)) {
+          count += item.upgrades[upgradeID].number;
+        }
+
+        return count;
+      }, 0)) {
+    context.commit('PUSH_ERROR', id + ' may only have ' + item.number + ' mount' + (item.number > 1 ? 's.' : '.'));
+  }
+
   // units added to other units/upgrades
   if (item.augendUnits &&
       item.number > item.augendUnits.reduce((count, unitID) => count + context.state.units[unitID].number, 0)
