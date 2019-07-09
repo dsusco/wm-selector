@@ -23,14 +23,8 @@ export default {
   name: 'StatLines',
   methods: {
     pointsCost () {
-      var pointsCost = this.troop.pointsCost;
-
       // check if this is an upgrade who's price is included in a preceding line
-      if (/^(\+|-)/.test('' + this.troop.points)) {
-        pointsCost = '(' + pointsCost + ')';
-      }
-
-      return pointsCost;
+      return /^(\+|-)/.test('' + this.troop.points) ? '(' + this.troop.pointsCost + ')' : this.troop.pointsCost;
     },
     special: (name, specialRules) => {
       return [name].concat(specialRules).reduce((special, name) => {
