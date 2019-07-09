@@ -149,6 +149,11 @@ export default {
           outline: none;
         }
       }
+
+      th,
+      td {
+        @include padding(($_ / 2) null);
+      }
     }
 
     @include grid-media($md-neat-grid) {
@@ -162,6 +167,13 @@ export default {
         @include position(absolute, 0 0 null null);
 
         width: 40%;
+      }
+
+      table {
+        th,
+        td {
+          @include padding(0 null);
+        }
       }
     }
   }
