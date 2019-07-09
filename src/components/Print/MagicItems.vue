@@ -1,6 +1,6 @@
 <template>
   <div class="magic-items">
-    <h3>Magic Items{{used ? ' Used' : ''}}</h3>
+    <h3 class="handle">Magic Items{{used ? ' Used' : ''}}</h3>
 
     <dl>
       <template v-for="(magicItem, name) in magicItems">

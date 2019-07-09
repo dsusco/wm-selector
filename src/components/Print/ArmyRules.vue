@@ -1,6 +1,6 @@
 <template>
   <div class="army-rules">
-    <h3>Army Rules</h3>
+    <h3 class="handle">Army Rules</h3>
 
     <div v-for="(armyRule, index) in armyRules" :key="index">
       <h4 v-if="armyRule.id">{{armyRule.id}}</h4>

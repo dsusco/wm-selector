@@ -1,5 +1,5 @@
 <template>
-  <pre class="text-list"><template v-if="label">{{label}}
+  <pre class="text-list handle"><template v-if="label">{{label}}
 </template>{{armyList}}, {{pointsCost}} points
 {{version}}
 --------------------------------

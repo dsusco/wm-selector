@@ -1,7 +1,7 @@
 <template>
   <div class="stats">
     <table>
-      <caption>{{caption}}</caption>
+      <caption class="handle">{{caption}}</caption>
 
       <thead>
         <tr>

@@ -15,6 +15,9 @@ handlers:
 - url: /army_selector\.html(.*)
   static_files: dist/index.html
   upload: dist/index.html
+- url: /favicon.ico
+  static_files: dist/favicon.ico
+  upload: dist/favicon.ico
 - url: /(.*)
   static_files: dist/\1
   upload: dist/(.*)

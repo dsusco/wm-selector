@@ -1,6 +1,6 @@
 <template>
   <div class="special-rules">
-    <h3>Special Rules{{used ? ' Used' : ''}}</h3>
+    <h3 class="handle">Special Rules{{used ? ' Used' : ''}}</h3>
 
     <dl>
       <template v-for="(specialRule, name) in specialRules">

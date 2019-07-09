@@ -1,6 +1,6 @@
 <template>
   <div class="spells">
-    <h3>Spells</h3>
+    <h3 class="handle">Spells</h3>
 
     <dl>
       <template v-for="(spell, index) in spells">

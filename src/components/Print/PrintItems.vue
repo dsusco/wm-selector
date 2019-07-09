@@ -1,5 +1,5 @@
 <template>
-  <VueDraggable class="print-items" v-model="printItems">
+  <VueDraggable class="print-items" handle="h3,caption,pre" v-model="printItems">
      <div class="print-item" v-for="(item, index) in printItems" :key="index" @click="removePrintItem(index)">
        <TextList v-if="item.abbr === 'l'" />
        <Stats v-if="item.abbr === 's'" />
@@ -53,7 +53,6 @@ export default {
 <style lang="scss">
   .print-item {
     border-bottom: .1rem dotted $_color_dark;
-    cursor: move;
     margin-bottom: $_ / 2;
     padding-bottom: ($_ / 2) - .1rem;
 
@@ -106,6 +105,22 @@ export default {
         &:nth-child(even) {
           background: none;
         }
+      }
+    }
+
+    .handle {
+      cursor: move;
+      position: relative;
+
+      &::after {
+        @include position(absolute, 0 .5em null null);
+        @include font-awesome('\f0c9');
+
+        color: $_color_gray;
+      }
+
+      &:hover {
+        background: $_color_lighter;
       }
     }
 
