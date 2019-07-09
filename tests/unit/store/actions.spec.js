@@ -414,14 +414,14 @@ describe('store.js actions', () => {
       context.getters.units['unit'] = { number: 1, upgrades: { upgrade: { number: 2 } } };
       context.getters.upgrades['upgrade'] = { type: 'Device of Power' };
             actions.validate(context);
-      expect(commit).toHaveBeenCalledWith('PUSH_ERROR', 'unit may only have 1 magic item.');
+      expect(commit).toHaveBeenCalledWith('PUSH_ERROR', '1 unit may only have 1 magic item.');
     });
 
     it('mount count violation commits PUSH_ERROR', () => {
       context.getters.units['unit'] = { number: 1, upgrades: { upgrade: { number: 2 } } };
       context.getters.upgrades['upgrade'] = { type: 'Mount' };
             actions.validate(context);
-      expect(commit).toHaveBeenCalledWith('PUSH_ERROR', 'unit may only have 1 mount.');
+      expect(commit).toHaveBeenCalledWith('PUSH_ERROR', '1 unit may only have 1 mount.');
     });
 
     it('augendUnits violation commits PUSH_ERROR', () => {

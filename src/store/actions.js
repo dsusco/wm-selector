@@ -250,7 +250,7 @@ function checkValidations (context, id, item) {
 
         return count;
       }, 0)) {
-    context.commit('PUSH_ERROR', id + ' may only have ' + item.number + ' magic item' + (item.number > 1 ? 's.' : '.'));
+    context.commit('PUSH_ERROR', item.number + ' ' + id + ' may only have ' + item.number + ' magic item' + (item.number > 1 ? 's.' : '.'));
   }
 
   // mounts can't exceed number
@@ -262,7 +262,7 @@ function checkValidations (context, id, item) {
 
         return count;
       }, 0)) {
-    context.commit('PUSH_ERROR', id + ' may only have ' + item.number + ' mount' + (item.number > 1 ? 's.' : '.'));
+    context.commit('PUSH_ERROR', item.number + ' ' + id + ' may only have ' + item.number + ' mount' + (item.number > 1 ? 's.' : '.'));
   }
 
   // units added to other units/upgrades
