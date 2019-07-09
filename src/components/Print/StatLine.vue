@@ -26,7 +26,7 @@ export default {
       var pointsCost = this.troop.pointsCost;
 
       // check if this is an upgrade who's price is included in a preceding line
-      if (this.troop.size === undefined) {
+      if (/^(\+|-)/.test('' + this.troop.points)) {
         pointsCost = '(' + pointsCost + ')';
       }
 
