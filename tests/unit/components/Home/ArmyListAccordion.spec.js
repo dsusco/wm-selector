@@ -10,11 +10,9 @@ const
 var mockDispatch, wrapper;
 
 jest.mock('@/json/army-lists.json', () => ({
-  'a title': {
-    'a group': {
-      'a list': 'a jsonPath'
-    }
-  }
+  'a title': [
+    { name: 'a group name', lists: [ { name: 'a list name', path: 'a jsonPath' } ] }
+  ]
 }));
 
 jest.mock('@/store', () => {
@@ -33,8 +31,8 @@ describe('ArmyListAccordion.vue', () => {
 
   it('renders', () => {
     expect(wrapper.find('#a_title_accordion_toggle_button').text()).toEqual(propsData.title);
-    expect(wrapper.find('.h5').text()).toEqual('a group');
-    expect(wrapper.find('button.selected').text()).toEqual('a list');
+    expect(wrapper.find('.h5').text()).toEqual('a group name');
+    expect(wrapper.find('button.selected').text()).toEqual('a list name');
   });
 
   it('dispatches setActiveArmyListAccordion on tab button click', () => {

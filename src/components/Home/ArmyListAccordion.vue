@@ -7,12 +7,12 @@
         <slot/>
       </span>
 
-      <div :class="groupClass" v-for="(lists, group) in armyLists[title]" :key="group">
-        <div class="h5" v-if="!/^\d+$/.test(group)">{{group}}</div>
+      <div :class="groupClass" v-for="(group, groupIndex) in armyLists[title]" :key="groupIndex">
+        <div class="h5" v-if="!/^\d+$/.test(group.name)">{{group.name}}</div>
 
         <ul>
-          <li v-for="(path, name) in lists" :key="name">
-            <button :class="{ selected: path === jsonPath }" @click="jsonPath = path">{{name}}</button>
+          <li v-for="(list, listIndex) in group.lists" :key="listIndex">
+            <button :class="{ selected: list.path === jsonPath }" @click="jsonPath = list.path">{{list.name}}</button>
           </li>
         </ul>
       </div>
