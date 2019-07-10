@@ -4,21 +4,21 @@
 
     <p>Choose an army from the lists below, select your units and print what you want!</p>
 
-    <ArmyListGroupTab :group="'Warmaster Armies'" />
-    <ArmyListGroupTab :group="'Warmaster Trial Armies Compendium 2009'" />
-    <ArmyListGroupTab :group="'Warmaster Revolution'" />
-    <ArmyListGroupTab :group="'Warmaster Ancients'" />
-    <ArmyListGroupTab :group="'Warmaster Ancient Armies'" />
-    <ArmyListGroupTab :group="'Warmaster Medieval Armies'" />
+    <ArmyListAccordion :title="'Warmaster Armies'" />
+    <ArmyListAccordion :title="'Warmaster Trial Armies Compendium 2009'" />
+    <ArmyListAccordion :title="'Warmaster Revolution'" />
+    <ArmyListAccordion :title="'Warmaster Ancients'" />
+    <ArmyListAccordion :title="'Warmaster Ancient Armies'" />
+    <ArmyListAccordion :title="'Warmaster Medieval Armies'" />
   </main>
 </template>
 
 <script>
-import ArmyListGroupTab from '@/components/Home/ArmyListGroupTab.vue';
+import ArmyListAccordion from '@/components/Home/ArmyListAccordion';
 
 export default {
   name: 'HomeView',
-  components: { ArmyListGroupTab }
+  components: { ArmyListAccordion }
 };
 </script>
 

@@ -2,7 +2,7 @@ import mutations from '@/store/mutations';
 
 const
   expected = {
-    activeArmyListGroupTab: 'another tab',
+    activeArmyListAccordion: 'another accordion',
     armyList: 'an armyList',
     armyRules: [{ text: [] }],
     errors: [],
@@ -25,7 +25,7 @@ jest.mock('axios');
 
 describe('store.js mutations', () => {
   beforeEach(() => state = {
-    activeArmyListGroupTab: 'a tab',
+    activeArmyListAccordion: 'a accordion',
     armyList: '',
     armyRules: undefined,
     errors: [],
@@ -88,9 +88,9 @@ describe('store.js mutations', () => {
     expect(state.units['a unit'].upgrades).toEqual({ 'another upgrade': { number: 0, pointsCost: 0 }});
   });
 
-  it('SET_ACTIVE_ARMY_LIST_GROUP_TAB sets state.activeArmyListGroupTab', () => {
-    mutations.SET_ACTIVE_ARMY_LIST_GROUP_TAB(state, expected.activeArmyListGroupTab);
-    expect(state.activeArmyListGroupTab).toEqual(expected.activeArmyListGroupTab);
+  it('SET_ACTIVE_ARMY_LIST_ACCORDION sets state.activeArmyListAccordion', () => {
+    mutations.SET_ACTIVE_ARMY_LIST_ACCORDION(state, expected.activeArmyListAccordion);
+    expect(state.activeArmyListAccordion).toEqual(expected.activeArmyListAccordion);
   });
 
   it('SET_ARMY_LIST sets state.armyList', () => {

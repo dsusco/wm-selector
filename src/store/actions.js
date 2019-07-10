@@ -23,7 +23,7 @@ export default {
           unitIDs = Object.keys(context.getters.units),
           upgradeIDs = Object.keys(context.getters.upgrades);
 
-        context.dispatch('setActiveArmyListGroupTab', context.getters.version);
+        context.dispatch('setActiveArmyListAccordion', context.getters.version);
 
         context.dispatch('setLabel', params.label);
 
@@ -81,8 +81,8 @@ export default {
   removePrintItem (context, index) {
     context.commit('REMOVE_PRINT_ITEM', index);
   },
-  setActiveArmyListGroupTab (context, activeArmyListGroupTab) {
-    context.commit('SET_ACTIVE_ARMY_LIST_GROUP_TAB', activeArmyListGroupTab);
+  setActiveArmyListAccordion (context, activeArmyListAccordion) {
+    context.commit('SET_ACTIVE_ARMY_LIST_ACCORDION', activeArmyListAccordion);
   },
   setArmy (context, jsonPath) {
     axios

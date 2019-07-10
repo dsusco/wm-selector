@@ -2,7 +2,7 @@ import getters from '@/store/getters';
 
 const
   expected = {
-    activeArmyListGroupTab: 'another tab',
+    activeArmyListAccordion: 'another accordion',
     armyList: 'an armyList',
     armyRules: [{ text: [] }],
     errors: [],
@@ -25,7 +25,7 @@ jest.mock('axios');
 
 describe('store.js getters', () => {
   beforeEach(() => state = {
-    activeArmyListGroupTab: 'a tab',
+    activeArmyListAccordion: 'an accordion',
     armyList: '',
     armyRules: undefined,
     errors: [],
@@ -42,9 +42,9 @@ describe('store.js getters', () => {
     version: ''
   });
 
-  it('activeArmyListGroupTab returns state.activeArmyListGroupTab', () => {
-    state.activeArmyListGroupTab = expected.activeArmyListGroupTab;
-    expect(getters.activeArmyListGroupTab(state)).toEqual(expected.activeArmyListGroupTab);
+  it('activeArmyListAccordion returns state.activeArmyListAccordion', () => {
+    state.activeArmyListAccordion = expected.activeArmyListAccordion;
+    expect(getters.activeArmyListAccordion(state)).toEqual(expected.activeArmyListAccordion);
   });
 
   it('armyList returns state.armyList', () => {

@@ -1,16 +1,16 @@
 import { shallowMount } from '@vue/test-utils'
 
-import ArmyListGroupTab from '@/components/Home/ArmyListGroupTab';
+import ArmyListAccordion from '@/components/Home/ArmyListAccordion';
 
 const
   propsData = {
-    group: 'a group'
+    title: 'a title'
   };
 
 var mockDispatch, wrapper;
 
 jest.mock('@/json/army-lists.json', () => ({
-  'a group': {
+  'a title': {
     'a list': 'a jsonPath'
   }
 }));
@@ -24,19 +24,19 @@ jest.mock('@/store', () => {
   }
 });
 
-describe('ArmyListGroupTab.vue', () => {
+describe('ArmyListAccordion.vue', () => {
   beforeEach(() => {
-    wrapper = shallowMount(ArmyListGroupTab, { propsData });
+    wrapper = shallowMount(ArmyListAccordion, { propsData });
   });
 
   it('renders', () => {
-    expect(wrapper.find('#a_group_tab_toggle_button').text()).toEqual(propsData.group);
+    expect(wrapper.find('#a_title_accordion_toggle_button').text()).toEqual(propsData.title);
     expect(wrapper.find('button.selected').text()).toEqual('a list');
   });
 
-  it('dispatches setActiveArmyListGroupTab on tab button click', () => {
-    wrapper.find('#a_group_tab_toggle_button').trigger('click');
-    expect(mockDispatch).toHaveBeenCalledWith('setActiveArmyListGroupTab', 'a group');
+  it('dispatches setActiveArmyListAccordion on tab button click', () => {
+    wrapper.find('#a_title_accordion_toggle_button').trigger('click');
+    expect(mockDispatch).toHaveBeenCalledWith('setActiveArmyListAccordion', 'a title');
   });
 
   it('dispatches setArmy on army button click', () => {

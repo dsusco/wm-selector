@@ -1,9 +1,9 @@
 <template>
-  <div :id="tabID" class="army-list-group-tab">
-    <button :id="tabID + '_toggle_button'" class="h3" :aria-controls="tabID + '_lists'" :aria-expanded="activeArmyListGroupTab === group" @click="activeArmyListGroupTab = group">{{group}}</button>
+  <div :id="accordionID" class="army-list-accordion">
+    <button :id="accordionID + '_toggle_button'" class="h3" :aria-controls="accordionID + '_lists'" :aria-expanded="activeArmyListAccordion === title" @click="activeArmyListAccordion = title">{{title}}</button>
 
-    <ul :id="tabID + '_lists'" aria-labelledby="tabID + '_toggle_button'" :hidden="activeArmyListGroupTab !== group">
-      <li v-for="(path, name) in armyLists[group]" :key="name">
+    <ul :id="accordionID + '_lists'" aria-labelledby="accordionID + '_toggle_button'" :hidden="activeArmyListAccordion !== title">
+      <li v-for="(path, name) in armyLists[title]" :key="name">
         <button :class="{ selected: path === jsonPath }" @click="jsonPath = path">{{name}}</button>
       </li>
     </ul>
@@ -15,18 +15,18 @@ import armyLists from '@/json/army-lists.json';
 import store from '@/store';
 
 export default {
-  name: 'ArmyListGroupTab',
+  name: 'ArmyListAccordion',
   computed: {
-    activeArmyListGroupTab: {
-      get: () => store.getters.activeArmyListGroupTab,
-      set (activeArmyListGroupTab) { store.dispatch('setActiveArmyListGroupTab', activeArmyListGroupTab) }
+    accordionID () {
+      return (this.title + '_accordion').toLowerCase().replace(/\W+/g, '_');
+    },
+    activeArmyListAccordion: {
+      get: () => store.getters.activeArmyListAccordion,
+      set (activeArmyListAccordion) { store.dispatch('setActiveArmyListAccordion', activeArmyListAccordion) }
     },
     jsonPath: {
       get: () => store.getters.jsonPath,
       set (jsonPath) { store.dispatch('setArmy', jsonPath) }
-    },
-    tabID () {
-      return (this.group + '_tab').toLowerCase().replace(/\W+/g, '_');
     }
   },
   data () {
@@ -34,12 +34,12 @@ export default {
   },
   methods: {
   },
-  props: ['group']
+  props: ['title']
 };
 </script>
 
 <style lang="scss">
-  .army-list-group-tab {
+  .army-list-accordion {
     border: .1rem solid $_color_black;
 
     .h3 {

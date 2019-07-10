@@ -24,8 +24,8 @@ export default {
   REMOVE_UNIT_UPGRADE (state, payload) {
     Vue.delete(state.units[payload.unitID].upgrades, payload.upgradeID);
   },
-  SET_ACTIVE_ARMY_LIST_GROUP_TAB (state, activeArmyListGroupTab) {
-    state.activeArmyListGroupTab = activeArmyListGroupTab;
+  SET_ACTIVE_ARMY_LIST_ACCORDION (state, activeArmyListAccordion) {
+    state.activeArmyListAccordion = activeArmyListAccordion;
   },
   SET_ARMY_LIST (state, armyList) {
     state.armyList = armyList;
