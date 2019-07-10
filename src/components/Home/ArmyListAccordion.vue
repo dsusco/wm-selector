@@ -1,12 +1,18 @@
 <template>
   <div :id="accordionID" class="army-list-accordion">
-    <button :id="accordionID + '_toggle_button'" class="h3" :aria-controls="accordionID + '_lists'" :aria-expanded="activeArmyListAccordion === title" @click="activeArmyListAccordion = title">{{title}}</button>
+    <button :id="accordionID + '_toggle_button'" class="h3" :aria-controls="accordionID + '_content'" :aria-expanded="activeArmyListAccordion === title" @click="activeArmyListAccordion = title">{{title}}</button>
 
-    <ul :id="accordionID + '_lists'" aria-labelledby="accordionID + '_toggle_button'" :hidden="activeArmyListAccordion !== title">
-      <li v-for="(path, name) in armyLists[title]" :key="name">
-        <button :class="{ selected: path === jsonPath }" @click="jsonPath = path">{{name}}</button>
-      </li>
-    </ul>
+    <div :id="accordionID + '_content'" aria-labelledby="accordionID + '_toggle_button'" :hidden="activeArmyListAccordion !== title">
+      <div :class="groupClass" v-for="(lists, group) in armyLists[title]" :key="group">
+        <div class="h5" v-if="!/^\d+$/.test(group)">{{group}}</div>
+
+        <ul>
+          <li v-for="(path, name) in lists" :key="name">
+            <button :class="{ selected: path === jsonPath }" @click="jsonPath = path">{{name}}</button>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -24,6 +30,18 @@ export default {
       get: () => store.getters.activeArmyListAccordion,
       set (activeArmyListAccordion) { store.dispatch('setActiveArmyListAccordion', activeArmyListAccordion) }
     },
+    groupClass () {
+      switch (Object.keys(armyLists[this.title]).length) {
+        case 2:
+          return 'half';
+        case 3:
+          return 'third';
+        case 4:
+          return 'quarter';
+        default:
+          return '';
+      }
+    },
     jsonPath: {
       get: () => store.getters.jsonPath,
       set (jsonPath) { store.dispatch('setArmy', jsonPath) }
@@ -31,8 +49,6 @@ export default {
   },
   data () {
     return { armyLists: armyLists };
-  },
-  methods: {
   },
   props: ['title']
 };
@@ -42,7 +58,7 @@ export default {
   .army-list-accordion {
     border: .1rem solid $_color_black;
 
-    .h3 {
+    > .h3 {
       background: $_color_primary;
       border-radius: 0;
       color: $_color_white;
@@ -59,18 +75,29 @@ export default {
       }
     }
 
-    ul {
+    > div {
       border-top: .1rem solid $_color_black;
-      margin: 0;
-      padding: ($_ / 2) 0 ($_ / 2) 2em;
+      padding: ($_ / 2) 1em;
+
+      > div {
+        + div > div {
+          margin-top: ($_ / 2);
+        }
+      }
     }
 
+    ul {
+      margin: 0 0 0 1em;
+      padding: 0 0 0 1em;
+    }
 
     button {
       background: 0;
       border: 0;
       color: $_link_color;
       padding: 0;
+      text-align: left;
+      vertical-align: baseline;
 
       &:focus,
       &:hover {
@@ -85,7 +112,62 @@ export default {
     }
 
     & + & {
-      border-top: 0;
+      border-top-width: 0;
+    }
+
+    @include grid-media($md-neat-grid) {
+      > div {
+        @include grid-container();
+        @include padding(null 0);
+
+        > div {
+          &.half {
+            @include grid-column(6);
+          }
+          &.third {
+            @include grid-column(4);
+          }
+          &.quarter {
+            @include grid-column(3);
+          }
+
+          + div > div {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+
+    @include grid-media($lg-neat-grid) {
+      > div {
+        > div {
+          &.half {
+            @include grid-column(6);
+          }
+          &.third {
+            @include grid-column(4);
+          }
+          &.quarter {
+            @include grid-column(3);
+          }
+        }
+      }
+    }
+
+    @include grid-media($xl-neat-grid) {
+      > div {
+        > div {
+          &.half {
+            @include grid-column(6);
+          }
+          &.third {
+            @include grid-column(4);
+          }
+          &.quarter {
+            @include grid-column(3);
+          }
+        }
+      }
     }
   }
 </style>

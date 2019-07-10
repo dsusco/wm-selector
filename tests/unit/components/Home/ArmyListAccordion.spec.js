@@ -11,7 +11,9 @@ var mockDispatch, wrapper;
 
 jest.mock('@/json/army-lists.json', () => ({
   'a title': {
-    'a list': 'a jsonPath'
+    'a group': {
+      'a list': 'a jsonPath'
+    }
   }
 }));
 
@@ -31,6 +33,7 @@ describe('ArmyListAccordion.vue', () => {
 
   it('renders', () => {
     expect(wrapper.find('#a_title_accordion_toggle_button').text()).toEqual(propsData.title);
+    expect(wrapper.find('.h5').text()).toEqual('a group');
     expect(wrapper.find('button.selected').text()).toEqual('a list');
   });
 
