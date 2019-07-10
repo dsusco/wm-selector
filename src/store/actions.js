@@ -382,7 +382,7 @@ function lookupOldList (oldList) {
     case 'bretonnian':
       return 'warmaster-armies/bretonnian';
     case 'bretonnianrev':
-      return 'warmaster-revolution/bretonnian';
+      return 'warmaster-revolution/bretonnia';
     case 'bretonniantournament':
       return 'warmaster-trial-armies-compendium-2009/bretonnian-tournament';
     case 'britons':
@@ -396,7 +396,7 @@ function lookupOldList (oldList) {
     case 'chaosdwarf':
       return 'warmaster-trial-armies-compendium-2009/chaos-dwarf';
     case 'chaosdwarfrev':
-      return 'warmaster-revolution/chaos-dwarf';
+      return 'warmaster-revolution/chaos-dwarfs';
     case 'chaosrev':
       return 'warmaster-revolution/chaos';
     case 'dacian':
@@ -404,13 +404,13 @@ function lookupOldList (oldList) {
     case 'daemon':
       return 'warmaster-armies/daemon';
     case 'daemonrev':
-      return 'warmaster-revolution/daemon';
+      return 'warmaster-revolution/daemons';
     case 'daemontournament':
       return 'warmaster-trial-armies-compendium-2009/daemon-tournament';
     case 'darkelf':
       return 'warmaster-armies/dark-elf';
     case 'darkelfrev':
-      return 'warmaster-revolution/dark-elf';
+      return 'warmaster-revolution/dark-elves';
     case 'dogsofwar':
       return 'warmaster-trial-armies-compendium-2009/dogs-of-war';
     case 'dogsofwarrev':
@@ -420,7 +420,7 @@ function lookupOldList (oldList) {
     case 'dwarfengineeringguild':
       return 'warmaster-trial-armies-compendium-2009/dwarf-engineering-guild';
     case 'dwarfrev':
-      return 'warmaster-revolution/dwarf';
+      return 'warmaster-revolution/dwarfs';
     case 'dwarfyoungerholds':
       return 'warmaster-trial-armies-compendium-2009/dwarf-younger-holds';
     case 'earlybyzantine':
@@ -448,7 +448,7 @@ function lookupOldList (oldList) {
     case 'highelf':
       return 'warmaster-armies/high-elf';
     case 'highelfrev':
-      return 'warmaster-revolution/high-elf';
+      return 'warmaster-revolution/high-elves';
     case 'highelftournament':
       return 'warmaster-trial-armies-compendium-2009/high-elf-tournament';
     case 'hittite':
@@ -494,7 +494,7 @@ function lookupOldList (oldList) {
     case 'orc':
       return 'warmaster-armies/orc';
     case 'orcrev':
-      return 'warmaster-revolution/orc';
+      return 'warmaster-revolution/orcs';
     case 'parthian':
       return 'warmaster-ancients/parthian';
     case 'peloponnesian':
@@ -526,12 +526,12 @@ function lookupOldList (oldList) {
     case 'vampirecountsrev':
       return 'warmaster-revolution/vampire-counts';
     case 'witchhunters':
-      return 'warmaster-trial-armies-compendium-2009/witch-hunters';
+      return 'warmaster-trial-armies-compendium-2009/witch-hunter';
     case 'witchhuntersrev':
-      return 'warmaster-revolution/witch-hunters';
+      return 'warmaster-revolution/witch-hunter';
     case 'woodelf':
       return 'warmaster-trial-armies-compendium-2009/wood-elf';
     case 'woodelfrev':
-      return 'warmaster-revolution/wood-elf';
+      return 'warmaster-revolution/wood-elves';
   }
 }
