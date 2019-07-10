@@ -1,5 +1,5 @@
 <template>
-  <VueDraggable class="print-items" handle="h3,caption,pre" v-model="printItems">
+  <VueDraggable class="print-items" handle=".handle" v-model="printItems">
      <div class="print-item" v-for="(item, index) in printItems" :key="index" @click="removePrintItem(index)">
        <TextList v-if="item.abbr === 'l'" />
        <Stats v-if="item.abbr === 's'" />
@@ -111,6 +111,17 @@ export default {
           background: none;
         }
       }
+
+      dl,
+      ol,
+      ul {
+        dl,
+        ol,
+        ul {
+          margin-bottom: ($_ / 2);
+        }
+      }
+
     }
 
     .handle {
