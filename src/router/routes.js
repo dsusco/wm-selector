@@ -14,7 +14,7 @@ export default [
   {
     path: '/',
     name: 'Home',
-    component: () => import('@/views/Home.vue'),
+    component: () => import('@/views/Home'),
     beforeEnter (to, from, next) {
       var params = Querystring.parse(to.fullPath.replace(/^\/\?/, ''));
 
@@ -36,31 +36,31 @@ export default [
   {
     path: '/selector',
     name: 'Selector',
-    component: () => import('@/views/Selector.vue'),
+    component: () => import('@/views/Selector'),
     beforeEnter: checkJSONPathBeforeEnter
   },
   {
     path: '/mobile-selector',
     name: 'Mobile Selector',
-    component: () => import('@/views/MobileSelector.vue'),
+    component: () => import('@/views/MobileSelector'),
     beforeEnter: checkJSONPathBeforeEnter
   },
   {
     path: '/text',
     name: 'Text',
-    component: () => import('@/views/Text.vue'),
+    component: () => import('@/views/Text'),
     beforeEnter: checkJSONPathBeforeEnter
   },
   {
     path: '/save',
     name: 'Save',
-    component: () => import('@/views/Save.vue'),
+    component: () => import('@/views/Save'),
     beforeEnter: checkJSONPathBeforeEnter
   },
   {
     path: '/print',
     name: 'Print',
-    component: () => import('@/views/Print.vue'),
+    component: () => import('@/views/Print'),
     beforeEnter: checkJSONPathBeforeEnter
   }
 ];
