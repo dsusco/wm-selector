@@ -28,6 +28,7 @@
     "core-js": "^2.6.5",
     "lodash": "^4.17.11",
     "marked": "^0.6.2",
+    "qrcode.vue": "^1.6.2",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3",
     "vuedraggable": "^2.21.0",

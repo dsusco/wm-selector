@@ -10,15 +10,18 @@
        <MagicItems v-if="item.abbr === 'mi'" />
        <MagicItems :used="true" v-if="item.abbr === 'miu'" />
        <Spells v-if="item.abbr === 'sp'" />
+       <QRCode class="handle" v-if="item.abbr === 'qr'" :value="qrCodeValue()" />
     </div>
   </VueDraggable>
 </template>
 
 <script>
+import QRCode from 'qrcode.vue';
 import VueDraggable from 'vuedraggable';
 
 import ArmyRules from '@/components/Print/ArmyRules';
 import MagicItems from '@/components/Print/MagicItems';
+import Save from '@/views/Save';
 import SpecialRules from '@/components/Print/SpecialRules';
 import Spells from '@/components/Print/Spells';
 import Stats from '@/components/Print/Stats';
@@ -30,6 +33,7 @@ export default {
   components: {
     ArmyRules,
     MagicItems,
+    QRCode,
     SpecialRules,
     Spells,
     Stats,
@@ -43,6 +47,7 @@ export default {
     }
   },
   methods: {
+    qrCodeValue: () => Save.methods.url(),
     removePrintItem (index) {
       store.dispatch('removePrintItem', index);
     }

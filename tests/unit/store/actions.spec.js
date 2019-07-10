@@ -195,7 +195,8 @@ describe('store.js actions', () => {
         { abbr: 'sru', title: 'Special Rules Used' },
         { abbr: 'mi', title: 'Magic Items' },
         { abbr: 'miu', title: 'Magic Items Used' },
-        { abbr: 'sp', title: 'Spells' }
+        { abbr: 'sp', title: 'Spells' },
+        { abbr: 'qr', title: 'QR Code' }
       ]);
     });
   });

@@ -347,6 +347,8 @@ function initializeState (context, response) {
   context.commit('SET_UNITS', response.data.units);
   context.commit('SET_VERSION', response.data.version);
 
+  printableItems.push({ abbr: 'qr', title: 'QR Code' });
+
   context.commit('SET_PRINT_ITEMS', []);
   context.commit('SET_PRINTABLE_ITEMS', printableItems);
 }
