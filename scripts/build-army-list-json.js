@@ -12,7 +12,11 @@ glob('public/json/**/*.json', (error, fileNames) => {
       armyLists[armyList.version] = {};
     }
 
-    armyLists[armyList.version][armyList.name] = fileName.replace('public/', '');
+    if (armyLists[armyList.version][armyList.group] == undefined) {
+      armyLists[armyList.version][armyList.group] = {};
+    }
+
+    armyLists[armyList.version][armyList.group][armyList.name] = fileName.replace('public/', '');
 
     return armyLists;
   }, {})));
