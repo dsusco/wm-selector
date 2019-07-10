@@ -3,6 +3,10 @@
     <button :id="accordionID + '_toggle_button'" class="h3" :aria-controls="accordionID + '_content'" :aria-expanded="activeArmyListAccordion === title" @click="activeArmyListAccordion = title">{{title}}</button>
 
     <div :id="accordionID + '_content'" aria-labelledby="accordionID + '_toggle_button'" :hidden="activeArmyListAccordion !== title">
+      <span class="downloads">
+        <slot/>
+      </span>
+
       <div :class="groupClass" v-for="(lists, group) in armyLists[title]" :key="group">
         <div class="h5" v-if="!/^\d+$/.test(group)">{{group}}</div>
 
@@ -78,6 +82,8 @@ export default {
     > div {
       border-top: .1rem solid $_color_black;
       padding: ($_ / 2) 1em;
+      position: relative;
+      min-height: 2 * $_;
 
       > div {
         + div > div {
