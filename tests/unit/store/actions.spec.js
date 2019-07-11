@@ -10,7 +10,7 @@ describe('store.js actions', () => {
   const
     axiosResponse = {
       config: {
-        url: '/a jsonPath'
+        url: '/json/a jsonPath.json'
       },
       data: {
         armyRules: 'some armyRules',
