@@ -54,7 +54,7 @@ export default {
     position: relative;
 
     h1 {
-      margin-right: 2em;
+      margin-right: 3em;
     }
 
     .downloads {
