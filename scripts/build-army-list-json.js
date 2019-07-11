@@ -45,7 +45,7 @@ glob('public/json/**/*.json', (error, fileNames) => {
 
         armyLists[armyList.version][groupOrder(armyList.group)].lists[armyList.order] = {
           name: armyList.name,
-          path: fileName.replace('public/', '')
+          path: fileName.replace(/(^public\/json\/|\.json$)/g, '')
         };
 
         return armyLists;

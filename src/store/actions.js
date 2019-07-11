@@ -12,11 +12,11 @@ export default {
   },
   loadSaveURL (context, params) {
     if (params.hasOwnProperty('list')) {
-      params.jsonPath = 'json/' + lookupOldList(params.list) + '.json';
+      params.jsonPath = lookupOldList(params.list);
     }
 
     axios
-      .get(process.env.BASE_URL + params.jsonPath)
+      .get(process.env.BASE_URL + 'json/' + params.jsonPath + '.json')
       .then((response) => initializeState(context, response))
       .then(() => {
         var
@@ -86,7 +86,7 @@ export default {
   },
   setArmy (context, jsonPath) {
     axios
-      .get(process.env.BASE_URL + jsonPath)
+      .get(process.env.BASE_URL + 'json/' + jsonPath + '.json')
       .then((response) => initializeState(context, response))
       .then(() => context.dispatch('validate'))
       .then(() => router.push({ name: 'Selector' }))
@@ -319,7 +319,7 @@ function initializeState (context, response) {
     printableItems.push({ abbr: 'ar', title: 'Army Rules' });
   }
 
-  context.commit('SET_JSON_PATH', response.config.url.slice(1));
+  context.commit('SET_JSON_PATH', response.config.url.replace(/(^\/json\/|\.json$)/g, ''));
   context.commit('SET_LABEL', '');
   context.commit('SET_MAGIC', response.data.magic);
   context.commit('SET_SPECIAL_RULES', response.data.specialRules);
