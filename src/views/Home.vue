@@ -5,9 +5,10 @@
     <p>Choose an army from the lists below, select your units and print what you want!</p>
 
     <span class="downloads">
-      <a target="_blank" title="Warmaster Rulebook – Part 1" href="/pdfs/Warmaster_Rulebook_-_part_1.pdf"><span>Warmaster Rulebook – Part 1</span></a>
-      <a target="_blank" title="Warmaster Rulebook – Part 2" href="/pdfs/Warmaster_Rulebook_-_part_2.pdf"><span>Warmaster Rulebook – Part 2</span></a>
-      <a target="_blank" title="Warmaster Errata" href="/pdfs/Warmaster_LRB_Errata_2009.pdf"><span>Warmaster Errata</span></a>
+      <a target="_blank" title="Warmaster Rulebook – Part 1" href="/pdfs/Warmaster-RuleBook.pdf"><span>Warmaster Rulebook – Part 1</span></a>
+      <a target="_blank" title="Warmaster Rulebook – Part 2" href="/pdfs/WarmasterRulebookPart2.pdf"><span>Warmaster Rulebook – Part 2</span></a>
+      <a target="_blank" title="Warmaster Errata" href="/pdfs/Warmaster_LRB_Errata.pdf"><span>Warmaster Errata</span></a>
+      <a target="_blank" title="Rules Update (included in the PDFs but not the printed rulebook)" href="/pdfs/Warmaster_Rules_Update.pdf"><span>Rules Update (included in the PDFs but not the printed rulebook)</span></a>
     </span>
 
     <ArmyListAccordion :title="'Warmaster Armies'">
