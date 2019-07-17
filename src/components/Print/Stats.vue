@@ -87,17 +87,6 @@ export default {
 
     caption {
       @include _(1.6rem);
-
-      font-weight: bold;
-    }
-
-    tbody,
-    tfoot {
-      border-top: .1rem solid $_color_black;
-
-      > tr:first-child td {
-        line-height: $_ - .1rem;
-      }
     }
 
     th,

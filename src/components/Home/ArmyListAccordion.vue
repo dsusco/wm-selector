@@ -66,7 +66,7 @@ export default {
       background: $_color_primary;
       border-radius: 0;
       color: $_color_white;
-      padding: ($_ / 4) 1.6rem ($_ / 4 - .1rem);
+      padding: (($_ / 2) - .1rem) 1.6rem;
       text-align: left;
       width: 100%;
 
@@ -81,28 +81,20 @@ export default {
 
     > div {
       border-top: .1rem solid $_color_black;
-      padding: ($_ / 2) 1em;
+      padding: (($_ / 2) - .1rem) 1em ($_ / 2);
       position: relative;
       min-height: 2 * $_;
-
-      > div {
-        + div > div {
-          margin-top: ($_ / 2);
-        }
-      }
     }
 
     ul {
-      margin: 0 0 0 1em;
-      padding: 0 0 0 1em;
+      margin: 0;
     }
 
     button {
-      background: 0;
       border: 0;
       color: $_link_color;
-      padding: 0;
-      text-align: left;
+      padding: ($_ / 2) 0;
+      margin: 0;
       vertical-align: baseline;
 
       &:focus,
@@ -119,9 +111,17 @@ export default {
 
     & + & {
       border-top-width: 0;
+
+      > .h3 {
+        padding-top: ($_ / 2);
+      }
     }
 
     @include grid-media($md-neat-grid) {
+      button {
+        padding: 0;
+      }
+
       > div {
         @include grid-container();
         @include padding(null 0);

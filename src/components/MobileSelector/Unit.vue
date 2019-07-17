@@ -83,7 +83,7 @@ export default {
 </script>
 
 <style lang="scss">
-  div.unit {
+  .mobile-selector-view .unit {
     position: relative;
 
     &:nth-child(even) {

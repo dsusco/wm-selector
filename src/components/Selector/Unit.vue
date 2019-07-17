@@ -32,6 +32,6 @@ export default {
 </script>
 
 <style lang="scss">
-  tr.unit {
+  .selector-view .unit {
   }
 </style>

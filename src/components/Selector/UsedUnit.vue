@@ -51,7 +51,7 @@ export default {
 </script>
 
 <style lang="scss">
-  tr.used.unit {
+  .selector-view .used.unit {
     &.hasFocus,
     &:hover {
       .upgrades {

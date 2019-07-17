@@ -33,7 +33,7 @@ export default {
 </script>
 
 <style lang="scss">
-  tr.used.unit.upgrade {
+  .selector-view .used.unit.upgrade {
     @include _(1.2rem);
   }
 </style>

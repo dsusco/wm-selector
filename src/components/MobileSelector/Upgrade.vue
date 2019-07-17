@@ -58,7 +58,7 @@ export default {
 </script>
 
 <style lang="scss">
-  div.upgrade {
+  .mobile-selector-view .upgrade {
     position: relative;
 
     &:nth-child(odd) {

@@ -33,6 +33,6 @@ export default {
 </script>
 
 <style lang="scss">
-  tr.upgrade {
+  .selector-view .upgrade {
   }
 </style>

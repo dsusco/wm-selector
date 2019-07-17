@@ -1,10 +1,10 @@
 <template>
   <main class="mobile-selector-view">
-    <input id="label" type="text" placeholder="Please enter a label for this list…" v-model="label" />
+    <input id="label" class="small" type="text" placeholder="Please enter a label for this list…" v-model="label" />
 
     <div id="armyList">
       {{armyList}}
-      <small id="version">{{version}}</small>
+      <div id="version" class="small">{{version}}</div>
     </div>
 
     <div id="units">
@@ -70,18 +70,16 @@ export default {
 
 <style lang="scss">
   .mobile-selector-view {
-    #label {
-      border: 0;
-      padding: 0;
-    }
-
-    #version {
-      display: block;
-    }
-
     #units {
-      border-top: .1rem dotted $_color_black;
       margin: 0 ($_ / -2);
+      position: relative;
+
+      &::before {
+        @include position(absolute, null 0);
+
+        border-top: .1rem dotted $_color_black;
+        content: '';
+      }
     }
 
     #summary {
@@ -109,7 +107,7 @@ export default {
         color: $_color_black;
         list-style: none;
         margin: 0;
-        padding: ($_ / 2);
+        padding: (($_ / 2) - .1rem) ($_ / 2);
       }
     }
 

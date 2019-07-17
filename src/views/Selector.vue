@@ -1,11 +1,11 @@
 <template>
   <main class="selector-view">
     <div id="selector_container">
-      <input id="label" type="text" placeholder="Please enter a label for this list…" v-model="label" />
+      <input id="label" class="small" type="text" placeholder="Please enter a label for this list…" v-model="label" />
 
       <div id="armyList">
         {{armyList}}
-        <small id="version">{{version}}</small>
+        <div id="version" class="small">{{version}}</div>
       </div>
 
       <ul id="errors" v-if="errors.length > 0">
@@ -73,22 +73,12 @@ export default {
 
 <style lang="scss">
   .selector-view {
-    #label {
-      border: 0;
-      padding: 0;
-    }
-
-    #version {
-      display: block;
-    }
-
     #errors {
       @include _(1.4rem);
 
       color: red;
       list-style: none;
       margin: 0 0 ($_ / 2);
-      padding: 0 0 0 .5em;
     }
 
     #unitCount {
@@ -98,9 +88,7 @@ export default {
     #unitCount,
     #pointsCost,
     .number,
-    .pointsCost,
-    .minMax,
-    .points {
+    .pointsCost {
       width: 4em;
       text-align: center;
     }
@@ -108,38 +96,30 @@ export default {
     .minMax,
     .points {
       width: 5em;
+      text-align: center;
     }
 
     #units,
     .upgrades {
-      border: .1rem solid $_color_black;
+      &::before {
+        @include position(absolute, 0);
+
+        border: .1rem solid $_color_black;
+        content: '';
+        pointer-events: none;
+      }
 
       thead {
         background: $_color_primary;
-        border-bottom: .1rem solid $_color_black;
         color: $_color_white;
-      }
-
-      thead th,
-      tbody tr:last-child td {
-        line-height: $_ - .1rem;
-      }
-    }
-
-    #usedUnits {
-      thead {
-        border-bottom: .1rem dotted $_color_black;
-
-        th {
-          line-height: $_ - .1rem;
-        }
       }
     }
 
     table {
       @include _(1.4rem);
 
-      color: $_color_black;
+      background: $_body_background;
+      color: $_body_color;
 
       [tabindex] {
         &:focus,
@@ -153,6 +133,16 @@ export default {
       th,
       td {
         @include padding(($_ / 2) null);
+      }
+
+      thead + tbody,
+      tbody + tbody,
+      tbody + tfoot {
+        &::before {
+          @include position(absolute, null 0);
+          border-top-color: $_color_black;
+          width: auto;
+        }
       }
     }
 

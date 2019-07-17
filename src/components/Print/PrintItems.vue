@@ -92,6 +92,20 @@ export default {
 
     .army-rules,
     .special-rules {
+      thead + tbody,
+      tbody + tbody,
+      tbody + tfoot {
+        &::before {
+          content: none;
+        }
+      }
+
+      tbody {
+        > tr:nth-child(even) {
+          background: none;
+        }
+      }
+
       th,
       td {
         &:first-child {
@@ -100,28 +114,9 @@ export default {
         }
       }
 
-      tbody > tr {
-        border-top: ($_ / 2) solid $_body_background;
-
-        &:first-child {
-          border-top: 0;
-        }
-
-        &:nth-child(even) {
-          background: none;
-        }
+      dd:last-child > :last-child {
+        margin-bottom: 0;
       }
-
-      dl,
-      ol,
-      ul {
-        dl,
-        ol,
-        ul {
-          margin-bottom: ($_ / 2);
-        }
-      }
-
     }
 
     .handle {
