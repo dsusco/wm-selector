@@ -266,6 +266,7 @@ export default {
     jsonString () {
       return JSON.stringify(this.json)
         .replace(/":"(\d+)"/g, '":$1')
+        .replace(/ +"/g, '"')
         .replace(/,?"[^"]+":(""|\[\]|false)/g, '')
         .replace(/{,/g, '{');
     },
