@@ -73,7 +73,7 @@ export default {
   },
   data () {
     return {
-      armyMinMax: false
+      armyMinMax: this.troop.armyMin !== undefined || this.troop.armyMax !== undefined
     };
   },
   methods: {
