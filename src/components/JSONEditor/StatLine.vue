@@ -47,7 +47,7 @@
       <input type="text" placeholder="-" v-model="troop.max" v-if="!armyMinMax" />
     </td>
     <td class="special">
-      <select type="text" multiple size="3" v-model="special">
+      <select type="text" multiple size="3" v-model="specialRules">
         <option v-for="specialRuleID in specialRuleIDs()" :disabled="id === specialRuleID" :key="specialRuleID" :value="specialRuleID">{{specialRuleID}}</option>
       </select>
     </td>
@@ -62,12 +62,12 @@ import store from '@/store';
 export default {
   name: 'StatLine',
   computed: {
-    special: {
+    specialRules: {
       get () {
-        return this.troop.special || [];
+        return this.troop.specialRules || [];
       },
-      set (special) {
-        Vue.set(this.troop, 'special', special);
+      set (specialRules) {
+        Vue.set(this.troop, 'specialRules', specialRules);
       }
     }
   },
