@@ -16,6 +16,13 @@ export default new Vuex.Store({
     armyList: '',
     armyRules: undefined,
     errors: [],
+    json: {
+      magic: false,
+      specialRules: {},
+      spells: [],
+      units: {},
+      upgrades: {}
+    },
     jsonPath: '',
     label: '',
     magic: undefined,

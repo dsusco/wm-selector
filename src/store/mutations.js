@@ -33,6 +33,9 @@ export default {
   SET_ARMY_RULES (state, armyRules) {
     state.armyRules = armyRules;
   },
+  SET_JSON (state, json) {
+    state.json = json;
+  },
   SET_JSON_PATH (state, jsonPath) {
     state.jsonPath = jsonPath;
   },

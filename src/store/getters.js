@@ -1,10 +1,11 @@
-const COUNTABLE_UNITS = ['Artillery', 'Cavalry', 'Chariot', 'Chariots', 'Elephant', 'Infantry', 'Machine', 'Monster'];
+const COUNTABLE_UNITS = ['Artillery', 'Cavalry', 'Chariot', 'Elephant', 'Infantry', 'Machine', 'Monster'];
 
 export default {
   activeArmyListAccordion: (state) => state.activeArmyListAccordion,
   armyList: (state) => state.armyList,
   armyRules: (state) => state.armyRules,
   errors: (state) => state.errors,
+  json: (state) => state.json,
   jsonPath: (state) => state.jsonPath,
   label: (state) => state.label,
   magic: (state) => state.magic,

@@ -62,5 +62,10 @@ export default [
     name: 'Print',
     component: () => import('@/views/Print'),
     beforeEnter: checkJSONPathBeforeEnter
+  },
+  {
+    path: '/json-editor',
+    name: 'JSON Editor',
+    component: () => import('@/views/JSONEditor')
   }
 ];

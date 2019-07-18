@@ -30,6 +30,11 @@
         <span class="fa fa-print"></span>
         <span class="sr-only">Print</span>
       </router-link>
+
+      <router-link tag="button" class="json-editor-view-button" :to="{ name: 'JSON Editor' }" v-if="local">
+        <span class="fa fa-edit"></span>
+        <span class="sr-only">JSON Editor</span>
+      </router-link>
     </nav>
 
     <router-view id="main" />
@@ -65,6 +70,7 @@ export default {
   name: 'wm-selector',
   components: { PrintItems },
   computed: mapGetters(['jsonPath', 'printItems']),
+  data: () => ({ local: window.location.hostname === 'localhost' }),
   mounted () {
     document.addEventListener('focusin', (event) => {
       if (event.target.closest('.hasFocus')) {

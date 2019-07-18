@@ -312,6 +312,8 @@ function initializeState (context, response) {
 
   response.data.upgrades = response.data.upgrades || {};
 
+  context.commit('SET_JSON', _.cloneDeep(response.data));
+
   context.commit('SET_ARMY_LIST', response.data.name);
   context.commit('SET_ARMY_RULES', response.data.armyRules);
 
