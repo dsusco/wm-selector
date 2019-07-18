@@ -21,7 +21,6 @@ describe('ArmyRules.vue', () => {
   });
 
   it('renders', () => {
-    console.log(wrapper.html());
     expect(wrapper.html()).toContain('<p>some army rule text</p>');
   });
 });

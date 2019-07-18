@@ -210,8 +210,11 @@ export default {
     unitIDs: {
       get: () => Object.keys(store.getters.json.units),
       set (unitIDs) {
+        var order = 0;
+
         Vue.set(this.json, 'units', unitIDs.reduce((units, unitID) => {
           units[unitID] = store.getters.json.units[unitID];
+          units[unitID].order = order++;
 
           return units;
         }, {}));
@@ -220,8 +223,11 @@ export default {
     upgradeIDs: {
       get: () => Object.keys(store.getters.json.upgrades),
       set (upgradeIDs) {
+        var order = 0;
+
         Vue.set(this.json, 'upgrades', upgradeIDs.reduce((upgrades, upgradeID) => {
           upgrades[upgradeID] = store.getters.json.upgrades[upgradeID];
+          upgrades[upgradeID].order = order++;
 
           return upgrades;
         }, {}));
@@ -243,13 +249,17 @@ export default {
     },
     addUnit () {
       if (this.$refs.newUnit.value) {
-        Vue.set(this.json.units, this.$refs.newUnit.value, {});
+        Vue.set(this.json.units, this.$refs.newUnit.value, {
+          order: Object.keys(store.getters.json.units).length,
+        });
         this.$refs.newUnit.value = '';
       }
     },
     addUpgrade () {
       if (this.$refs.newUpgrade.value) {
-        Vue.set(this.json.upgrades, this.$refs.newUpgrade.value, {});
+        Vue.set(this.json.upgrades, this.$refs.newUpgrade.value, {
+          order: Object.keys(store.getters.json.upgrades).length,
+        });
         this.$refs.newUpgrade.value = '';
       }
     },
