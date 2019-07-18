@@ -13,15 +13,7 @@ describe('ArmyRules.vue', () => {
   beforeEach(() => {
     store = new Vuex.Store({
       getters: {
-        armyRules: () => [
-          {
-            id: 'an ID',
-            text: ['text 1']
-          },
-          {
-            text: ['text 2']
-          }
-        ]
+        armyRules: () => ['some army rule text']
       }
     });
 
@@ -29,8 +21,7 @@ describe('ArmyRules.vue', () => {
   });
 
   it('renders', () => {
-    expect(wrapper.text()).toContain('an ID');
-    expect(wrapper.text()).toContain('text 1');
-    expect(wrapper.text()).toContain('text 2');
+    console.log(wrapper.html());
+    expect(wrapper.html()).toContain('<p>some army rule text</p>');
   });
 });

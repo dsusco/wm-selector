@@ -2,10 +2,7 @@
   <div class="army-rules">
     <h3 class="handle">Army Rules</h3>
 
-    <div v-for="(armyRule, index) in armyRules" :key="index">
-      <h4 v-if="armyRule.id">{{armyRule.id}}</h4>
-      <div v-html="marked(armyRule.text)"></div>
-    </div>
+    <div v-html="marked(armyRules)"></div>
   </div>
 </template>
 
