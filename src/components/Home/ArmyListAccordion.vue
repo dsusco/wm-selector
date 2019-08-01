@@ -95,6 +95,7 @@ export default {
       color: $_link_color;
       padding: ($_ / 2) 0;
       margin: 0;
+      text-align:left;
       vertical-align: baseline;
 
       &:focus,
