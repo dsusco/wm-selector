@@ -33,7 +33,7 @@ export default {
         }
 
         return special;
-      }, []).join(', ') || '-';
+      }, []).sort().join(', ') || '-';
     }
   },
   props: ['name', 'troop', 'used']
