@@ -203,6 +203,14 @@ function checkValidations (context, id, item) {
     id = [id].concat(item.homologousUpgrades).toSentence();
   }
 
+  if (item.requiredUnits) {
+    requiredCount = item.requiredUnits.reduce((count, unitID) => count + context.getters.units[unitID].number, 0);
+    requiredSentence = item.requiredUnits.toSentence();
+  } else if (item.requiredUpgrades) {
+    requiredCount = item.requiredUpgrades.reduce((count, upgradeID) => count + context.getters.upgrades[upgradeID].number, 0);
+    requiredSentence = item.requiredUpgrades.toSentence();
+  }
+
   // army min
   if (item.number + homologousCount < item.armyMin) {
     context.commit('PUSH_ERROR', 'Minimum of ' + item.armyMin + ' ' + id + ' per army.');
@@ -214,18 +222,9 @@ function checkValidations (context, id, item) {
   }
 
   // min
-  if (/^As /.test(item.min)) {
-    if (item.requiredUnits) {
-      requiredCount = item.requiredUnits.reduce((count, unitID) => count + context.getters.units[unitID].number, 0);
-      requiredSentence = item.requiredUnits.toSentence();
-    } else {
-      requiredCount = item.requiredUpgrades.reduce((count, upgradeID) => count + context.getters.upgrades[upgradeID].number, 0);
-      requiredSentence = item.requiredUpgrades.toSentence();
-    }
-
-    if (item.number < requiredCount) {
-      context.commit('PUSH_ERROR', 'Minimum of ' + requiredCount + ' ' + id + ' per ' + requiredCount + ' ' + requiredSentence + '.');
-    }
+  if (/^As /.test(item.min) &&
+      item.number < requiredCount) {
+    context.commit('PUSH_ERROR', 'Minimum of ' + requiredCount + ' ' + id + ' per ' + requiredCount + ' ' + requiredSentence + '.');
   } else if (context.getters.pointsCost >= 1000 &&
       item.number + homologousCount < item.min * context.getters.size) {
     context.commit('PUSH_ERROR', 'Minimum of ' + (item.min * context.getters.size) + ' ' + id + ' per ' + context.getters.size + ',000 points.');
@@ -235,19 +234,13 @@ function checkValidations (context, id, item) {
   if (item.max === 'elite' &&
       item.number + homologousCount > context.getters.size - 1) {
     context.commit('PUSH_ERROR', 'Maximum of ' + (context.getters.size - 1) + ' ' + id + ' per ' + context.getters.size + ',000 points.');
-  } else if (item.max === 'Up to Half') {
-    if (item.requiredUnits) {
-      requiredCount = item.requiredUnits.reduce((count, unitID) => count + context.getters.units[unitID].number, 0);
-      requiredSentence = item.requiredUnits.toSentence();
-    } else {
-      requiredCount = item.requiredUpgrades.reduce((count, upgradeID) => count + context.getters.upgrades[upgradeID].number, 0);
-      requiredSentence = item.requiredUpgrades.toSentence();
-    }
-
-    if (item.number > 0 &&
-        item.number > Math.floor(requiredCount / 2)) {
-      context.commit('PUSH_ERROR', 'Maximum of ' + Math.floor(requiredCount / 2) + ' ' + id + ' per ' + requiredCount + ' ' + requiredSentence + '.');
-    }
+  } else if (item.max === 'Up to Half' &&
+             item.number > 0 &&
+             item.number > Math.floor(requiredCount / 2)) {
+    context.commit('PUSH_ERROR', 'Maximum of ' + Math.floor(requiredCount / 2) + ' ' + id + ' per ' + requiredCount + ' ' + requiredSentence + '.');
+  } else if (/^As /.test(item.max) &&
+             item.number > requiredCount) {
+    context.commit('PUSH_ERROR', 'Maximum of ' + requiredCount + ' ' + id + ' per ' + requiredCount + ' ' + requiredSentence + '.');
   } else if (item.number + homologousCount > item.max * context.getters.size) {
     context.commit('PUSH_ERROR', 'Maximum of ' + (item.max * context.getters.size) + ' ' + id + ' per ' + context.getters.size + ',000 points.');
   }
