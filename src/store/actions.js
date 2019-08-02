@@ -190,15 +190,26 @@ Array.prototype.toSentence = function (connector = ', ', lastConnector = ' or ')
 };
 
 function checkValidations (context, id, item) {
-  var requiredCount, requiredSentence;
+  var
+    homologousCount = 0,
+    requiredCount,
+    requiredSentence;
+
+  if (item.homologousUnits) {
+    homologousCount = item.homologousUnits.reduce((count, unitID) => count + context.getters.units[unitID].number, homologousCount);
+    id = [id].concat(item.homologousUnits).toSentence();
+  } else if (item.homologousUpgrades) {
+    homologousCount = item.homologousUpgrades.reduce((count, upgradeID) => count + context.getters.upgrades[upgradeID].number, homologousCount);
+    id = [id].concat(item.homologousUpgrades).toSentence();
+  }
 
   // army min
-  if (item.number < item.armyMin) {
+  if (item.number + homologousCount < item.armyMin) {
     context.commit('PUSH_ERROR', 'Minimum of ' + item.armyMin + ' ' + id + ' per army.');
   }
 
   // army max
-  if (item.number > item.armyMax) {
+  if (item.number + homologousCount > item.armyMax) {
     context.commit('PUSH_ERROR', 'Maximum of ' + item.armyMax + ' ' + id + ' per army.');
   }
 
@@ -216,13 +227,13 @@ function checkValidations (context, id, item) {
       context.commit('PUSH_ERROR', 'Minimum of ' + requiredCount + ' ' + id + ' per ' + requiredCount + ' ' + requiredSentence + '.');
     }
   } else if (context.getters.pointsCost >= 1000 &&
-      item.number < item.min * context.getters.size) {
+      item.number + homologousCount < item.min * context.getters.size) {
     context.commit('PUSH_ERROR', 'Minimum of ' + (item.min * context.getters.size) + ' ' + id + ' per ' + context.getters.size + ',000 points.');
   }
 
   // max
   if (item.max === 'elite' &&
-      item.number > context.getters.size - 1) {
+      item.number + homologousCount > context.getters.size - 1) {
     context.commit('PUSH_ERROR', 'Maximum of ' + (context.getters.size - 1) + ' ' + id + ' per ' + context.getters.size + ',000 points.');
   } else if (item.max === 'Up to Half') {
     if (item.requiredUnits) {
@@ -237,7 +248,7 @@ function checkValidations (context, id, item) {
         item.number > Math.floor(requiredCount / 2)) {
       context.commit('PUSH_ERROR', 'Maximum of ' + Math.floor(requiredCount / 2) + ' ' + id + ' per ' + requiredCount + ' ' + requiredSentence + '.');
     }
-  } else if (item.number > item.max * context.getters.size) {
+  } else if (item.number + homologousCount > item.max * context.getters.size) {
     context.commit('PUSH_ERROR', 'Maximum of ' + (item.max * context.getters.size) + ' ' + id + ' per ' + context.getters.size + ',000 points.');
   }
 
