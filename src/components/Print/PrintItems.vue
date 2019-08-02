@@ -58,6 +58,7 @@ export default {
 <style lang="scss">
   .print-item {
     border-bottom: .1rem dotted $_color_dark;
+    cursor: pointer;
     margin-bottom: $_ / 2;
     padding-bottom: ($_ / 2) - .1rem;
 
