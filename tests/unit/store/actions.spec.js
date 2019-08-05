@@ -501,6 +501,13 @@ describe('store.js actions', () => {
       expect(commit).toHaveBeenCalledWith('PUSH_ERROR', 'Maximum of 0 unit per 1 another unit.');
     });
 
+    it('max "As *" violation commits PUSH_ERROR', () => {
+      context.getters.units['unit'] = { max: 'As some unit', number: 2, requiredUnits: ['another unit'] };
+      context.getters.units['another unit'] = { number: 1 };
+      actions.validate(context);
+      expect(commit).toHaveBeenCalledWith('PUSH_ERROR', 'Maximum of 1 unit per 1 another unit.');
+    });
+
     it('max violation commits PUSH_ERROR', () => {
       context.getters.units['unit'] = { max: 1, number: 2 };
       actions.validate(context);

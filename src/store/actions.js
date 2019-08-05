@@ -4,6 +4,7 @@ import axios from 'axios';
 import magicItems from '@/json/magic-items.json';
 import router from '@/router';
 
+const UNIT_TYPES = ['Artillery', 'Cavalry', 'Chariot', 'Elephant', 'Infantry', 'Machine', 'Monster'];
 const MAGIC_ITEM_TYPES = ['Device of Power', 'Magic Standard', 'Magic Weapon', 'Holy Item', 'Other Item'];
 
 export default {
@@ -222,11 +223,25 @@ function checkValidations (context, id, item) {
   }
 
   // min
-  if (/^As /.test(item.min) &&
+  if (item.min === 'All or None' &&
+      item.number > 0 &&
       item.number < requiredCount) {
     context.commit('PUSH_ERROR', 'Minimum of ' + requiredCount + ' ' + id + ' per ' + requiredCount + ' ' + requiredSentence + '.');
+  } else if (item.min === 'Half or All' &&
+             (item.number > 0 &&
+              item.number < Math.floor(requiredCount / 2) ||
+              item.number > Math.ceil(requiredCount / 2) &&
+              item.number < requiredCount)) {
+    context.commit('PUSH_ERROR', 'Half or all ' + requiredSentence + ' must be upgraded to ' + id + '.');
+  } else if (item.min === 'Half or None' &&
+      item.number > 0 &&
+      item.number < Math.floor(requiredCount / 2)) {
+    context.commit('PUSH_ERROR', 'Minimum of ' + Math.floor(requiredCount / 2) + ' ' + id + ' per ' + requiredCount + ' ' + requiredSentence + '.');
+  } else if (/^As /.test(item.min) &&
+             item.number < requiredCount) {
+    context.commit('PUSH_ERROR', 'Minimum of ' + requiredCount + ' ' + id + ' per ' + requiredCount + ' ' + requiredSentence + '.');
   } else if (context.getters.pointsCost >= 1000 &&
-      item.number + homologousCount < item.min * context.getters.size) {
+             item.number + homologousCount < item.min * context.getters.size) {
     context.commit('PUSH_ERROR', 'Minimum of ' + (item.min * context.getters.size) + ' ' + id + ' per ' + context.getters.size + ',000 points.');
   }
 
@@ -234,6 +249,9 @@ function checkValidations (context, id, item) {
   if (item.max === 'elite' &&
       item.number + homologousCount > context.getters.size - 1) {
     context.commit('PUSH_ERROR', 'Maximum of ' + (context.getters.size - 1) + ' ' + id + ' per ' + context.getters.size + ',000 points.');
+  } else  if (item.max === 'Half or None' &&
+              item.number > Math.ceil(requiredCount / 2)) {
+    context.commit('PUSH_ERROR', 'Maximum of ' + Math.ceil(requiredCount / 2) + ' ' + id + ' per ' + requiredCount + ' ' + requiredSentence + '.');
   } else if (item.max === 'Up to Half' &&
              item.number > 0 &&
              item.number > Math.floor(requiredCount / 2)) {
@@ -245,7 +263,7 @@ function checkValidations (context, id, item) {
     context.commit('PUSH_ERROR', 'Maximum of ' + (item.max * context.getters.size) + ' ' + id + ' per ' + context.getters.size + ',000 points.');
   }
 
-  // magic items can't exceed number
+  // magic items upgrades can't exceed number
   if (item.upgrades &&
       item.number < Object.keys(item.upgrades).reduce((count, upgradeID) => {
         if (MAGIC_ITEM_TYPES.includes(context.getters.upgrades[upgradeID].type)) {
@@ -257,7 +275,7 @@ function checkValidations (context, id, item) {
     context.commit('PUSH_ERROR', item.number + ' ' + id + ' may only have ' + item.number + ' magic item' + (item.number > 1 ? 's.' : '.'));
   }
 
-  // mounts can't exceed number
+  // mounts upgrades can't exceed number
   if (item.upgrades &&
       item.number < Object.keys(item.upgrades).reduce((count, upgradeID) => {
         if (/Mount$/.test(context.getters.upgrades[upgradeID].type)) {
@@ -267,6 +285,18 @@ function checkValidations (context, id, item) {
         return count;
       }, 0)) {
     context.commit('PUSH_ERROR', item.number + ' ' + id + ' may only have ' + item.number + ' mount' + (item.number > 1 ? 's.' : '.'));
+  }
+
+  // unit upgrades can't exceed number
+  if (item.upgrades &&
+      item.number < Object.keys(item.upgrades).reduce((count, upgradeID) => {
+        if (UNIT_TYPES.includes(context.getters.upgrades[upgradeID].type)) {
+          count += item.upgrades[upgradeID].number;
+        }
+
+        return count;
+      }, 0)) {
+    context.commit('PUSH_ERROR', item.number + ' ' + id + ' may only have ' + item.number + ' upgrades' + (item.number > 1 ? 's.' : '.'));
   }
 
   // units added to other units/upgrades
