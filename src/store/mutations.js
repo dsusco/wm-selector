@@ -140,9 +140,7 @@ export default {
 function minMax(troop) {
   var minMax;
 
-  if (troop.max === 'elite') {
-    minMax = 'elite'
-  } else if (troop.armyMin || troop.armyMax) {
+  if (troop.armyMin || troop.armyMax) {
     if (troop.armyMin) {
       minMax = troop.armyMin;
 
@@ -152,6 +150,11 @@ function minMax(troop) {
     } else {
       minMax = '0–' + troop.armyMax;
     }
+  } else if (troop.min !== undefined &&
+             troop.min === troop.max) {
+    minMax = troop.min;
+  } else if (troop.max === 'elite') {
+    minMax = 'elite'
   } else {
     minMax = (troop.min || '-') + '/' + (troop.max || '-');
   }
