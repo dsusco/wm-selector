@@ -233,6 +233,9 @@ function checkValidations (context, id, item) {
               item.number > Math.ceil(requiredCount / 2) &&
               item.number < requiredCount)) {
     context.commit('PUSH_ERROR', 'Half or all ' + requiredSentence + ' must be upgraded to ' + id + '.');
+  } else if (item.min === 'Half or More' &&
+             item.number < Math.floor(requiredCount / 2)) {
+    context.commit('PUSH_ERROR', 'Minimum of ' + Math.floor(requiredCount / 2) + ' ' + id + ' per ' + requiredCount + ' ' + requiredSentence + '.');
   } else if (item.min === 'Half or None' &&
       item.number > 0 &&
       item.number < Math.floor(requiredCount / 2)) {
