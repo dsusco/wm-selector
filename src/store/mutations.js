@@ -144,17 +144,16 @@ function minMax(troop) {
     if (troop.armyMin) {
       minMax = troop.armyMin;
 
-      if (troop.armyMax && troop.armyMin !== troop.armyMax) {
+      if (troop.armyMax &&
+          troop.armyMin !== troop.armyMax) {
         minMax += '–' + troop.armyMax;
       }
     } else {
       minMax = '0–' + troop.armyMax;
     }
-  } else if (troop.min !== undefined &&
-             troop.min === troop.max) {
-    minMax = troop.min;
-  } else if (troop.max === 'elite') {
-    minMax = 'elite'
+  } else if (typeof troop.min === 'string' ||
+             typeof troop.max === 'string') {
+    minMax = troop.min || troop.max;
   } else {
     minMax = (troop.min || '-') + '/' + (troop.max || '-');
   }
