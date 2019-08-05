@@ -60,10 +60,10 @@
 
         <tfoot>
           <tr>
-            <td class="add"><button class="fa fa-plus" title="Add Unit" @click="addUnit">
+            <td class="add"><button class="fa fa-plus" title="Add Unit" @click="addUnit()">
               <span class="sr-only">Add Unit</span>
             </button></td>
-            <td class="id"><input id="newUnit" type="text" placeholder="Enter a unit name…" ref="newUnit" /></td>
+            <td class="id"><input id="newUnit" type="text" placeholder="Enter a unit name…" ref="newUnit" @keyup.enter="addUnit()" /></td>
             <td colspan="10"></td>
           </tr>
         </tfoot>
@@ -101,10 +101,10 @@
 
         <tfoot>
           <tr>
-            <td class="add"><button class="fa fa-plus" title="Add Upgrade" @click="addUpgrade">
+            <td class="add"><button class="fa fa-plus" title="Add Upgrade" @click="addUpgrade()">
               <span class="sr-only">Add Upgrade</span>
             </button></td>
-            <td class="id"><input id="newUpgrade" type="text" placeholder="Enter an upgrade name…" ref="newUpgrade" /></td>
+            <td class="id"><input id="newUpgrade" type="text" placeholder="Enter an upgrade name…" ref="newUpgrade" @keyup.enter="addUpgrade()" /></td>
             <td colspan="10"></td>
           </tr>
         </tfoot>
@@ -132,7 +132,7 @@
         <button class="fa fa-plus" title="Add Special Rule" @click="addSpecialRule()">
           <span class="sr-only">Add Special Rule</span>
         </button>
-        <input id="newSpecialRule" type="text" placeholder="Enter a special rule name…" ref="newSpecialRule" />
+        <input id="newSpecialRule" type="text" placeholder="Enter a special rule name…" ref="newSpecialRule" @keyup.enter="addSpecialRule()" />
       </div>
     </fieldset>
 
