@@ -51,6 +51,11 @@
         <option v-for="specialRuleID in specialRuleIDs()" :disabled="id === specialRuleID" :key="specialRuleID" :value="specialRuleID">{{specialRuleID}}</option>
       </select>
     </td>
+    <td class="upgrades">
+      <select type="text" multiple size="3" v-model="upgrades">
+        <option v-for="upgradeID in upgradeIDs()" :key="upgradeID" :value="upgradeID">{{upgradeID}}</option>
+      </select>
+    </td>
   </tr>
 </template>
 
@@ -68,6 +73,14 @@ export default {
       },
       set (specialRules) {
         Vue.set(this.troop, 'specialRules', specialRules);
+      }
+    },
+    upgrades: {
+      get () {
+        return this.troop.upgrades || [];
+      },
+      set (upgrades) {
+        Vue.set(this.troop, 'upgrades', upgrades);
       }
     }
   },
@@ -92,7 +105,8 @@ export default {
         Vue.delete(this.troop, 'armyMin');
         Vue.delete(this.troop, 'armyMax');
       }
-    }
+    },
+    upgradeIDs: () => Object.keys(store.getters.json.upgrades)
   },
   props: ['id', 'troop']
 };
@@ -130,9 +144,12 @@ export default {
       }
     }
 
-    .special select {
-      padding: .1rem .4rem 0;
-      width: 8em;
+    .special,
+    .upgrades {
+      select {
+        padding: .1rem .4rem 0;
+        width: 8em;
+      }
     }
 
   }
