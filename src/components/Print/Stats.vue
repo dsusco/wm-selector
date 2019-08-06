@@ -23,6 +23,9 @@
 
       <tbody v-if="!used">
         <StatLine v-for="(unit, unitID) in units" :key="'unit_' + unitID" :name="unitID" :troop="unit" :used="used" />
+      </tbody>
+
+      <tbody v-if="!used">
         <StatLine v-for="(upgrade, upgradeID) in upgrades" :key="'upgrade_' + upgradeID" :name="upgradeID" :troop="upgrade" :used="used" />
       </tbody>
 
