@@ -43,9 +43,9 @@ describe('Stats.vue', () => {
 
   it('renders', () => {
     expect(wrapper.find('caption').text()).toEqual('an army list Army Selector');
-    expect(wrapper.find('statline-stub:nth-child(1)').attributes('name')).toEqual('a unit');
-    expect(wrapper.find('statline-stub:nth-child(2)').attributes('name')).toEqual('another unit');
-    expect(wrapper.find('statline-stub:nth-child(3)').attributes('name')).toEqual('an upgrade');
+    expect(wrapper.html()).toContain('<statline-stub troop="[object Object]" name="a unit"></statline-stub>');
+    expect(wrapper.html()).toContain('<statline-stub troop="[object Object]" name="another unit"></statline-stub>');
+    expect(wrapper.html()).toContain('<statline-stub troop="[object Object]" name="an upgrade"></statline-stub>');
   });
 
   it('renders used', () => {
