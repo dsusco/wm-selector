@@ -25,6 +25,7 @@
         <optgroup label="Upgrades">
           <option>Chariot Mount</option>
           <option>Monstrous Mount</option>
+          <option>Mount</option>
           <option>Special</option>
           <option>Special Mount</option>
         </optgroup>
