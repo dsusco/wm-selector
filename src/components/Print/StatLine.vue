@@ -1,5 +1,5 @@
 <template>
-  <tr>
+  <tr :class="{ 'upgrade': /^(\+|-)/.test('' + this.troop.points) }">
     <td class="points-cost" v-if="used">{{pointsCost()}}</td>
     <td class="number" v-if="used">{{troop.number}}</td>
     <td class="troop">{{name}}</td>

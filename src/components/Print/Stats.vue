@@ -23,9 +23,6 @@
 
       <tbody v-if="!used">
         <StatLine v-for="(unit, unitID) in units" :key="'unit_' + unitID" :name="unitID" :troop="unit" :used="used" />
-      </tbody>
-
-      <tbody v-if="!used">
         <StatLine v-for="(upgrade, upgradeID) in upgrades" :key="'upgrade_' + upgradeID" :name="upgradeID" :troop="upgrade" :used="used" />
       </tbody>
 
@@ -90,6 +87,19 @@ export default {
 
     caption {
       @include _(1.6rem);
+    }
+
+    tr.upgrade {
+      &::after {
+        @include position(absolute, null 0);
+
+        border-top: .1rem solid $_color_gray;
+        content: '';
+      }
+
+      + .upgrade::after {
+        content: none;
+      }
     }
 
     th,

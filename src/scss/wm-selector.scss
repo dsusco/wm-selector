@@ -44,6 +44,14 @@ table {
   margin: 0 0 ($_ / 2);
 }
 
+thead + tbody,
+tbody + tbody,
+tbody + tfoot {
+  &::before {
+    border-color: $_color_gray;
+  }
+}
+
 th,
 td {
   padding: 0 .5em;
