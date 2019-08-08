@@ -21,7 +21,7 @@
         </tr>
       </thead>
 
-      <tbody v-if="!used">
+      <tbody class="all-units-and-upgrades" v-if="!used">
         <StatLine v-for="(unit, unitID) in units" :key="'unit_' + unitID" :name="unitID" :troop="unit" :used="used" />
         <StatLine v-for="(upgrade, upgradeID) in upgrades" :key="'upgrade_' + upgradeID" :name="upgradeID" :troop="upgrade" :used="used" />
       </tbody>
@@ -89,7 +89,7 @@ export default {
       @include _(1.6rem);
     }
 
-    tr.upgrade {
+    .all-units-and-upgrades tr.upgrade {
       &::after {
         @include position(absolute, null 0);
 
