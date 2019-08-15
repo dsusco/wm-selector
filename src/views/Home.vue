@@ -31,7 +31,7 @@
     </ArmyListAccordion>
 
     <ArmyListAccordion :title="'Warmaster Ancient Armies'">
-      <a target="_blank" title="Warmaster Ancient Armies ErrataArmies" href="/pdfs/WAAerr.pdf"><span>Warmaster Ancient Armies Errata</span></a>
+      <a target="_blank" title="Warmaster Ancient Armies Errata" href="/pdfs/WAAerr.pdf"><span>Warmaster Ancient Armies Errata</span></a>
     </ArmyListAccordion>
 
     <ArmyListAccordion :title="'Warmaster Medieval Armies'">
