@@ -42,6 +42,8 @@ export default {
           return 'third';
         case 4:
           return 'quarter';
+        case 5:
+          return 'quarter';
         default:
           return '';
       }
@@ -136,6 +138,10 @@ export default {
           }
           &.quarter {
             @include grid-column(3);
+
+            &:nth-child(5n + 1) {
+              clear: left;
+            }
           }
 
           + div > div {
