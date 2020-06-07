@@ -16,14 +16,31 @@ export default {
   size: (state, getters) => Math.max(1, Math.floor(getters.pointsCost / 1000)),
   specialRules: (state) => state.specialRules,
   spells: (state) => state.spells,
-  unitCount: (state) => Object.values(state.units)
-    .reduce((unitCount, unit) => {
-      if (!unit.noCount && COUNTABLE_UNITS.includes(unit.type)) {
-        unitCount += unit.number;
-      }
+  unitCount (state) {
+    var
+      skirmishCount = 0,
+      unarmouredSkirmishCount = 0,
+      unitCount = Object.values(state.units)
+        .reduce((unitCount, unit) => {
+          if (COUNTABLE_UNITS.includes(unit.type)) {
+            if (!unit.noCount) {
+              unitCount += unit.number;
+            }
+            
+            if (unit.specialRules && unit.specialRules.includes('Skirmish')) {
+              skirmishCount += unit.number;
+              
+              if (!unit.armour) {
+                unarmouredSkirmishCount += unit.number;
+              }
+            }
+          }
 
-      return unitCount;
-    }, 0),
+          return unitCount;
+        }, 0);
+
+    return skirmishCount > (unitCount - skirmishCount) ? unitCount : unitCount - unarmouredSkirmishCount;
+  },
   units: (state) => state.units,
   upgradeConstraints: (state) => state.upgradeConstraints,
   upgrades: (state) => state.upgrades,
