@@ -27,7 +27,7 @@
     "baseline-scss": "github:dsusco/baseline-scss",
     "core-js": "^2.6.11",
     "lodash": "^4.17.20",
-    "marked": "^0.6.3",
+    "marked": "^0.7.0",
     "qrcode.vue": "^1.7.0",
     "vue": "^2.6.12",
     "vue-router": "^3.4.7",
