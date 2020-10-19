@@ -1,6 +1,6 @@
 {
   "name": "wm-selector",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "description": "An army builder for Games Workshop's Warmaster.",
   "homepage": "https://github.com/dsusco/wm-selector",
   "bugs": "https://github.com/dsusco/wm-selector/issues",
@@ -26,13 +26,13 @@
     "axios": "^0.19.2",
     "baseline-scss": "github:dsusco/baseline-scss",
     "core-js": "^2.6.11",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.20",
     "marked": "^0.6.3",
     "qrcode.vue": "^1.7.0",
-    "vue": "^2.6.11",
-    "vue-router": "^3.1.6",
-    "vuedraggable": "^2.23.2",
-    "vuex": "^3.3.0"
+    "vue": "^2.6.12",
+    "vue-router": "^3.4.7",
+    "vuedraggable": "^2.24.2",
+    "vuex": "^3.5.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.12.1",
@@ -48,7 +48,7 @@
     "eslint-plugin-vue": "^5.2.3",
     "node-sass": "^4.14.1",
     "sass-loader": "^7.3.1",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.12"
   },
   "private": true
 }
