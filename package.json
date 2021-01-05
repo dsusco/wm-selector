@@ -23,7 +23,7 @@
     "test:unit": "vue-cli-service test:unit --watch"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "baseline-scss": "github:dsusco/baseline-scss",
     "core-js": "^2.6.11",
     "lodash": "^4.17.20",
