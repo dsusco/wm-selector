@@ -20,15 +20,18 @@ import magicItems from '@/json/magic-items.json';
 export default {
   name: 'MagicItems',
   computed: {
-    magicItems () {
-      return this.used ? Object.keys(magicItems.upgrades)
-        .reduce((usedMagicItems, upgradeID) => {
-          if (store.getters.upgrades[upgradeID].number > 0) {
-            usedMagicItems[upgradeID] = Object.assign({}, store.getters.upgrades[upgradeID]);
-          }
-
-          return usedMagicItems;
-        }, {}) : magicItems.upgrades;
+    magicItems () {  
+	// List of items by version of the army
+	const versionMagicItems = Object.keys(magicItems.upgrades)
+          .filter( key => magicItems.upgrades[key].version.includes(store.getters.version)) 
+          .reduce( (res, key) => (res[key] = magicItems.upgrades[key], res), {} );
+	return this.used ? Object.keys(versionMagicItems)
+	.reduce((usedMagicItems, upgradeID) => {
+		if (store.getters.upgrades[upgradeID].number > 0) {
+			usedMagicItems[upgradeID] = Object.assign({}, store.getters.upgrades[upgradeID]);
+		}
+		return usedMagicItems;
+	}, {}) : versionMagicItems;
     }
   },
   methods: {

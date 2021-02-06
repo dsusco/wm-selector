@@ -29,6 +29,27 @@
           <option>Special</option>
           <option>Special Mount</option>
         </optgroup>
+        <optgroup label="Unités">
+          <option>Artillerie</option>
+          <option>Cavalerie</option>
+          <option>Char</option>
+          <option>Eléphant</option>
+          <option>Infantrie</option>
+          <option>Machine</option>
+          <option>Monstre</option>
+        </optgroup>
+        <optgroup label="Personnages">
+          <option>Général</option>
+          <option>Héros</option>
+          <option>Sorcier</option>
+        </optgroup>
+        <optgroup label="Améliorations">
+          <option>Char monté</option>
+          <option>Monture Monstrueuse</option>
+          <option>Monture</option>
+          <option>Spécial</option>
+          <option>Monture Spéciale</option>
+        </optgroup>
       </select>
     </td>
     <td class="attack"><input type="text" placeholder="-" v-model="troop.attack" /></td>
