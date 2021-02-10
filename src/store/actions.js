@@ -12,7 +12,7 @@ export default {
     context.commit('ADD_PRINT_ITEM', index);
   },
   loadSaveURL (context, params) {
-    if (params.hasOwnProperty('list')) {
+    if (Object.prototype.hasOwnProperty.call(params, 'list')) {
       params.jsonPath = lookupOldList(params.list);
     }
 
@@ -29,7 +29,7 @@ export default {
         context.dispatch('setLabel', params.label);
 
         // backwards compatability for old print param
-        if (params.hasOwnProperty('print')) {
+        if (Object.prototype.hasOwnProperty.call(params, 'print')) {
           params.printItems = params.print;
         }
 
