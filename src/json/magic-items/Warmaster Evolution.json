@@ -1,0 +1,226 @@
+{
+    "upgradeConstraints": [
+        {
+            "magic": true,
+            "unitType": [
+                "Infantrie",
+                "Cavalerie",
+                "Char"
+            ],
+            "upgrades": [
+                "Banni\u00e8re de Bataille",
+                "Banni\u00e8re de Protection",
+                "Banni\u00e8re de Robustesse",
+                "Banni\u00e8re de T\u00e9nacit\u00e9",
+                "Banni\u00e8re de Chance",
+                "Ep\u00e9e de Destruction",
+                "Ep\u00e9e du Destin",
+                "\u00c9p\u00e9e de Mutilation",
+                "Ep\u00e9e de Puissance"
+            ]
+        },
+        {
+            "magic": true,
+            "unitType": [
+                "G\u00e9n\u00e9ral",
+                "H\u00e9ros",
+                "Sorcier"
+            ],
+            "upgrades": [
+                "Ep\u00e9e de Destruction",
+                "Ep\u00e9e du Destin",
+                "\u00c9p\u00e9e de Mutilation",
+                "Ep\u00e9e de Puissance"
+            ]
+        },
+        {
+            "magic": true,
+            "unitType": [
+                "G\u00e9n\u00e9ral"
+            ],
+            "upgrades": [
+                "Couronne de Commandement",
+                "Heaume de Domination",
+                "Orbe de Majest\u00e9",
+                "Sceptre de Souverainet\u00e9"
+            ]
+        },
+        {
+            "magic": true,
+            "unitType": [
+                "Sorcier"
+            ],
+            "upgrades": [
+                "Anneau de Sorcellerie",
+                "B\u00e2ton d\u2019Envoutement",
+                "Parchemin d\u2019Anti-Magie",
+                "Baguette de Pouvoir",
+                "B\u00e2ton de R\u00e9p\u00e9tition"
+            ]
+        }
+    ],
+    "upgrades": {
+        "Anneau de Sorcellerie": {
+            "armyMax": 1,
+            "order": "AdS",
+            "points": "+30",
+            "text": [
+                "Un Sorcier poss\u00e9dant cet anneau peut lancer un sort sans faire le test habituel. Cet objet ne fonctionne qu\u2019une fois par partie."
+            ],
+            "type": "Objet Enchant\u00e9"
+        },
+        "Baguette de Pouvoir": {
+            "armyMax": 1,
+            "order": "BdP",
+            "points": "+10",
+            "text": [
+                "Un Sorcier portant une Baguette de Pouvoir peut ajouter +1 \u00e0 son jet pour lancer un sort avec succ\u00e8s une fois par partie. Le joueur doit sp\u00e9cifier s\u2019il utilise la Baguette de Pouvoir avant de lancer le d\u00e9. Un jet de 1 reste toujours un \u00e9chec pour lancer un sort, m\u00eame en utilisant la Baguette de Pouvoir."
+            ],
+            "type": "Objet Enchant\u00e9"
+        },
+        "Banni\u00e8re de Bataille": {
+            "armyMax": 1,
+            "order": "BdB",
+            "points": "+50",
+            "text": [
+                "Une unit\u00e9 dot\u00e9e de cette banni\u00e8re accro\u00eet la valeur d\u2019Attaque de chacun de ses socles de +1 durant la premi\u00e8re phase de Combat o\u00f9 elle est impliqu\u00e9e dans un engagement. Les effets ne durent que le temps du premier engagement de la bataille, y compris les rounds de combat de poursuite du m\u00eame engagement et de tout engagement cons\u00e9cutif r\u00e9sultant d\u2019une Avance lors de la m\u00eame phase."
+            ],
+            "type": "Banni\u00e8re Magique"
+        },
+        "Banni\u00e8re de Chance": {
+            "armyMax": 1,
+            "order": "BdC",
+            "points": "+50",
+            "text": [
+                "Une seule fois par partie, le joueur peut choisir de relancer imm\u00e9diatement tous les jets d\u2019Attaque de l\u2019unit\u00e9 lors d\u2019une phase de Tir ou d\u2019une phase de Combat. Cela comprend toutes les attaques suppl\u00e9mentaires dues \u00e0 des objets magiques ou \u00e0 des commandants. Le joueur d\u00e9clare qu\u2019il n\u2019est pas satisfait des r\u00e9sultats de ses jets, reprend tous les d\u00e9s et les relance tous \u00e0 nouveau. Le joueur doit relancer tous les d\u00e9s, y compris ceux qui avaient touch\u00e9, si bien qu\u2019il est possible d\u2019obtenir un r\u00e9sultat encore moins bon!"
+            ],
+            "type": "Banni\u00e8re Magique"
+        },
+        "Banni\u00e8re de Protection": {
+            "armyMax": 1,
+            "order": "BdP",
+            "points": "+50",
+            "text": [
+                "Une unit\u00e9 dot\u00e9e de cette banni\u00e8re re\u00e7oit un bonus de +1 en Armure. Si sa valeur d\u2019Armure \u00e9tait de 5+, alors la banni\u00e8re fait passer celle-ci \u00e0 4+ et ainsi de suite.La valeur d\u2019Armure d\u2019une unit\u00e9 ne peut jamais \u00eatre meilleure que 3+. Si une unit\u00e9 poss\u00e8de d\u00e9j\u00e0 une valeur d\u2019Armure de 3+, alors cette banni\u00e8re ne fonctionne pas sur elle. Le bonus dure jusqu\u2019\u00e0 ce que l\u2019unit\u00e9 perde un socle, apr\u00e8s quoi la banni\u00e8re n\u2019a plus aucun effet."
+            ],
+            "type": "Banni\u00e8re Magique"
+        },
+        "Banni\u00e8re de Robustesse": {
+            "armyMax": 1,
+            "order": "BdR",
+            "points": "+50",
+            "text": [
+                "Une unit\u00e9 dot\u00e9e de cette banni\u00e8re accro\u00eet la valeur de PV de chacun de ses socles de +1 durant la premi\u00e8re phase de Combat o\u00f9 elle est impliqu\u00e9e dans un engagement. Les effets ne durent que le temps du premier engagement de la bataille, y compris les rounds de combat de poursuite du m\u00eame engagement et de tout engagement cons\u00e9cutif r\u00e9sultant d\u2019une Avance lors de la m\u00eame phase. Annulez les blessures exc\u00e9dentaires \u00e0 la fin de la phase de combat avant de dissiper les effets de la Banni\u00e8re de Robustesse."
+            ],
+            "type": "Banni\u00e8re Magique"
+        },
+        "Banni\u00e8re de T\u00e9nacit\u00e9": {
+            "armyMax": 1,
+            "order": "BdT",
+            "points": "+50",
+            "text": [
+                "A chaque tour, une blessure de tir subie par l\u2019unit\u00e9 est annul\u00e9e apr\u00e8s les jets d\u2019Armure, car les projectiles sont d\u00e9vi\u00e9s par la Banni\u00e8re de T\u00e9nacit\u00e9. Cela comprend les blessures inflig\u00e9es par des sorts lors de la phase de Tir. Les effets durent jusqu\u2019\u00e0 ce que l\u2019unit\u00e9 perde un socle, apr\u00e8s quoi la banni\u00e8re n\u2019a plus aucun effet."
+            ],
+            "type": "Banni\u00e8re Magique"
+        },
+        "B\u00e2ton de R\u00e9p\u00e9tition": {
+            "armyMax": 1,
+            "order": "BdR",
+            "points": "+10",
+            "text": [
+                "Une fois par partie, un Sorcier poss\u00e9dant un B\u00e2ton de R\u00e9p\u00e9tition peut lancer un deuxi\u00e8me sort si le premier a \u00e9t\u00e9 un succ\u00e8s (et m\u00eame s\u2019il a \u00e9t\u00e9 contr\u00e9 par un antimagie, parchemin ou autre). Une fois que les effets du premier sort ont \u00e9t\u00e9 r\u00e9solus, le sorcier peut d\u00e9cider d\u2019utiliser le b\u00e2ton pour en lancer un deuxi\u00e8me. Il peut s\u2019agir du m\u00eame sort ou d\u2019un sort diff\u00e9rent, au choix du joueur. Notez que le m\u00eame sort peut-\u00eatre lanc\u00e9 sur la m\u00eame cible (et l\u2019affecter) du moment que la premi\u00e8re tentative du sort ait \u00e9t\u00e9 contr\u00e9 par un parchemin antimagie ou un Ma\u00eetre des Runes. Le Sorcier doit r\u00e9ussir un test pour lancer le second sort, toutes les r\u00e8gles habituelles s\u2019appliquent."
+            ],
+            "type": "Objet Enchant\u00e9"
+        },
+        "B\u00e2ton d\u2019Envoutement": {
+            "armyMax": 1,
+            "order": "BdE",
+            "points": "+30",
+            "text": [
+                "Si un Sorcier ennemi ne parvient pas \u00e0 atteindre le r\u00e9sultat requis pour lancer un sort, il peut \u00eatre envo\u00fbt\u00e9 sur un 4+ sur 1D6. Un Sorcier envo\u00fbt\u00e9 subit un malus de -1 \u00e0 chaque fois qu\u2019il tente de lancer un sort, pour le restant de la partie. Le B\u00e2ton d\u2019Envo\u00fbtement cesse de fonctionner d\u00e8s qu\u2019il a \u00e9t\u00e9 utilis\u00e9 avec succ\u00e8s, si bien qu\u2019un seul Sorcier ennemi peut \u00eatre envo\u00fbt\u00e9."
+            ],
+            "type": "Objet Enchant\u00e9"
+        },
+        "Couronne de Commandement": {
+            "armyMax": 1,
+            "order": "CdC",
+            "points": "+100",
+            "text": [
+                "Un G\u00e9n\u00e9ral poss\u00e9dant cet objet peut choisir de donner son premier ordre de chaque tour avec un Commandement invariable de 10. Aucun malus de commandement ne s\u2019applique lorsque la couronne est utilis\u00e9e. Seul le premier ordre de chaque tour est affect\u00e9, les autres ordres doivent \u00eatre donn\u00e9s normalement. Si le g\u00e9n\u00e9ral ne parvient pas \u00e0 donner son premier ordre avec la couronne, elle cesse de fonctionner."
+            ],
+            "type": "Objet Enchant\u00e9"
+        },
+        "Ep\u00e9e de Destruction": {
+            "armyMax": 1,
+            "order": "EdDn",
+            "points": "+10",
+            "text": [
+                "Si une unit\u00e9 poss\u00e8de cette arme, alors une unit\u00e9 ennemie au contact est affect\u00e9e et doit relancer un jet d\u2019Armure r\u00e9ussi \u00e0 chaque round de combat. Par exemple, si trois blessures sont inflig\u00e9es dont une est annul\u00e9e par l\u2019armure, le jet r\u00e9ussi doit \u00eatre relanc\u00e9. Une seule unit\u00e9 ennemie peut \u00eatre affect\u00e9e."
+            ],
+            "type": "Arme Magique"
+        },
+        "Ep\u00e9e de Puissance": {
+            "armyMax": 1,
+            "order": "EdP",
+            "points": "+10",
+            "text": [
+                "Une unit\u00e9 poss\u00e9dant cette \u00e9p\u00e9e ajoute un bonus de +1 \u00e0 la valeur d\u2019Attaque de l\u2019un de ses socles, comme pour un bonus octroy\u00e9 par un commandant. Le bonus est de +1 Attaque au total et pas pour chaque socle!"
+            ],
+            "type": "Arme Magique"
+        },
+        "Ep\u00e9e du Destin": {
+            "armyMax": 1,
+            "order": "EdD",
+            "points": "+5",
+            "text": [
+                "Lors de son premier combat de la partie, une unit\u00e9 poss\u00e9dant cette \u00e9p\u00e9e ajoute un bonus de +1 \u00e0 la valeur d\u2019Attaque de l\u2019un de ses socles, comme pour un bonus octroy\u00e9 par un commandant. L\u2019\u00c9p\u00e9e du Destin ne fonctionne qu\u2019une fois par partie. Le bonus est de +1 Attaque au total et pas pour chaque socle"
+            ],
+            "type": "Arme Magique"
+        },
+        "Heaume de Domination": {
+            "armyMax": 1,
+            "order": "HdD",
+            "points": "+50",
+            "text": [
+                "Seul le G\u00e9n\u00e9ral peut porter ce heaume (lui seul a une t\u00eate assez grosse!) Sa valeur de Commandement est accrue de +1 jusqu\u2019\u00e0 une valeur maximum de 10. Le Heaume de Domination ne fonctionne que le temps d\u2019un tour par bataille. Le joueur doit sp\u00e9cifier au d\u00e9but du tour s\u2019il d\u00e9sire l\u2019utiliser"
+            ],
+            "type": "Objet Enchant\u00e9"
+        },
+        "Orbe de Majest\u00e9": {
+            "armyMax": 1,
+            "order": "OdM",
+            "points": "+30",
+            "text": [
+                "Si le G\u00e9n\u00e9ral poss\u00e8de cet objet magique, il peut ignorer un test de commandement rat\u00e9 en donnant un ordre et le relancer en comptant comme ayant un Cd de 8. Les modificateurs habituels s\u2019appliquent \u00e0 ce test mais notez que le jet pr\u00e9c\u00e9dent est annul\u00e9 et n\u2019entra\u00eene donc pas de malus. Si ce nouveau jet d\u2019ordre est r\u00e9ussi, l\u2019ordre est transmis et le G\u00e9n\u00e9ral peut continuer de donner d\u2019autres ordres de la mani\u00e8re habituelle, en utilisant son propre Cd. L\u2019orbe ne fonctionne qu\u2019une fois par partie et n\u2019affecte qu\u2019un ordre donn\u00e9 par le G\u00e9n\u00e9ral."
+            ],
+            "type": "Objet Enchant\u00e9"
+        },
+        "Parchemin d\u2019Anti-Magie": {
+            "armyMax": 1,
+            "order": "SdS",
+            "points": "+20",
+            "text": [
+                "Un Sorcier ou un Ma\u00eetre des Runes nain qui poss\u00e8de un Parchemin d\u2019Anti-Magie peut automatiquement annuler un sort ennemi qui vient d\u2019\u00eatre lanc\u00e9 avec succ\u00e8s. Le parchemin ne peut \u00eatre utilis\u00e9 qu\u2019une seule fois pour annuler les effets d\u2019un sort lanc\u00e9 par un sorcier ennemi. Dans le cas d\u2019un Ma\u00eetre des Runes, le parchemin peut \u00eatre utilis\u00e9 apr\u00e8s l\u2019\u00e9chec d\u2019un jet d\u2019anti-magie normal des nains."
+            ],
+            "type": "Objet Enchant\u00e9"
+        },
+        "Sceptre de Souverainet\u00e9": {
+            "armyMax": 1,
+            "order": "SdS",
+            "points": "+30",
+            "text": [
+                "Un G\u00e9n\u00e9ral poss\u00e9dant un Sceptre de Souverainet\u00e9 peut ignorer une gaffe commise par l\u2019un de ses subordonn\u00e9s durant la bataille. D\u00e9terminez la nature de la gaffe avant de d\u00e9cider de l\u2019ignorer ou non. Si elle est ignor\u00e9e, le test de commandement est consid\u00e9r\u00e9 comme r\u00e9ussi et le commandant peut continuer \u00e0 donner des ordres normalement. La volont\u00e9 d\u2019acier du Sceptre de Souverainet\u00e9 prend le contr\u00f4le de l\u2019esprit du sous-fifre incomp\u00e9tent avant qu\u2019il ne commette son impair."
+            ],
+            "type": "Objet Enchant\u00e9"
+        },
+        "\u00c9p\u00e9e de Mutilation": {
+            "armyMax": 1,
+            "order": "EdM",
+            "points": "+10",
+            "text": [
+                "Une unit\u00e9 poss\u00e9dant cette \u00e9p\u00e9e peut relancer une attaque rat\u00e9e \u00e0 chaque round de combat."
+            ],
+            "type": "Arme Magique"
+        }
+    }
+}
