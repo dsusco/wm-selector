@@ -349,6 +349,111 @@
       ]
     }
   ],
+  "Warmaster Evolution": [
+    {
+      "name": 0,
+      "lists": [
+        {
+          "name": "Arabie",
+          "path": "warmaster-evolution/arabie"
+        },
+        {
+          "name": "Bretonnie",
+          "path": "warmaster-evolution/bretonnie"
+        },
+        {
+          "name": "Chaos",
+          "path": "warmaster-evolution/chaos"
+        },
+        {
+          "name": "Démons",
+          "path": "warmaster-evolution/demons"
+        },
+        {
+          "name": "Elfes noirs",
+          "path": "warmaster-evolution/elfes-noirs"
+        },
+        {
+          "name": "Empire",
+          "path": "warmaster-evolution/empire"
+        },
+        {
+          "name": "Hauts Elfes",
+          "path": "warmaster-evolution/hauts-elfes"
+        }
+      ]
+    },
+    {
+      "name": 1,
+      "lists": [
+        {
+          "name": "Hommes-Lézards",
+          "path": "warmaster-evolution/hommes-lezards"
+        },
+        {
+          "name": "Kislev",
+          "path": "warmaster-evolution/kislev"
+        },
+        {
+          "name": "Nains",
+          "path": "warmaster-evolution/nains"
+        },
+        {
+          "name": "Orques & Gobelins",
+          "path": "warmaster-evolution/orques"
+        },
+        {
+          "name": "Rois des tombes",
+          "path": "warmaster-evolution/rois-tombes"
+        },
+        {
+          "name": "Skaven",
+          "path": "warmaster-evolution/skavens"
+        },
+        {
+          "name": "Comptes Vampires",
+          "path": "warmaster-evolution/vampire"
+        }
+      ]
+    },
+    {
+      "name": 2,
+      "lists": [
+        {
+          "name": "Arabie (Optionnel)",
+          "path": "warmaster-evolution/arabie2"
+        },
+        {
+          "name": "Empire (Optionnel)",
+          "path": "warmaster-evolution/empire2"
+        },
+        {
+          "name": "Hauts Elfes (Optionnel)",
+          "path": "warmaster-evolution/hauts-elfes2"
+        },
+        {
+          "name": "Hommes-Lézards (Optionnel)",
+          "path": "warmaster-evolution/hommes-lezards2"
+        },
+        {
+          "name": "Kislev (Optionnel)",
+          "path": "warmaster-evolution/kislev2"
+        },
+        {
+          "name": "Orques & Gobelins (Optionnel)",
+          "path": "warmaster-evolution/orques2"
+        },
+        {
+          "name": "Comptes Vampires (Optionnel)",
+          "path": "warmaster-evolution/vampire2"
+        },
+        {
+          "name": "Skaven (Optionnel)",
+          "path": "warmaster-evolution/skavens2"
+        }
+      ]
+    }
+  ],
   "Warmaster Revolution": [
     {
       "name": 0,

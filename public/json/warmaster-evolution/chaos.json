@@ -1,0 +1,332 @@
+{
+  "name": "Chaos",
+  "version": "Warmaster Evolution",
+  "group": 0,
+  "order": 2,
+  "units": {
+    "Guerrier du Chaos": {
+      "type": "Infantrie",
+      "attack": 4,
+      "hits": 4,
+      "armour": "4+",
+      "size": 3,
+      "points": 150,
+      "min": 1,
+      "order": 0
+    },
+    "Mauraudeurs du Chaos": {
+      "type": "Infantrie",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 60,
+      "min": 1,
+      "order": 1
+    },
+    "Ogres": {
+      "type": "Infantrie",
+      "attack": 4,
+      "hits": 4,
+      "armour": "5+",
+      "size": 3,
+      "points": 105,
+      "max": 1,
+      "order": 2
+    },
+    "Trolls": {
+      "type": "Infantrie",
+      "attack": 5,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 110,
+      "max": 3,
+      "order": 3
+    },
+    "Marauder Horsemen": {
+      "type": "Cavalerie",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 90,
+      "max": 4,
+      "order": 4
+    },
+    "Chevaliers du chaos": {
+      "type": "Cavalerie",
+      "attack": 4,
+      "hits": 4,
+      "armour": "4+",
+      "size": 3,
+      "points": 200,
+      "max": 4,
+      "order": 5
+    },
+    "Chiens du Chaos": {
+      "type": "Cavalerie",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "points": 30,
+      "max": 2,
+      "order": 6
+    },
+    "Chars du Chaos": {
+      "type": "Char",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 95,
+      "max": 3,
+      "order": 7
+    },
+    "Harpies": {
+      "type": "Monstre",
+      "attack": 2,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 65,
+      "max": 1,
+      "order": 8
+    },
+    "Dragon Ogres": {
+      "type": "Monstre",
+      "attack": 5,
+      "hits": 4,
+      "armour": "5+",
+      "size": 3,
+      "points": 200,
+      "max": 1,
+      "order": 9,
+      "specialRules": [
+        "Dragons Ogres"
+      ]
+    },
+    "Enfant du Chaos": {
+      "type": "Monstre",
+      "attack": "d3+2",
+      "range": "d3x15cm",
+      "hits": 4,
+      "armour": "4+",
+      "size": 1,
+      "points": 80,
+      "max": 2,
+      "order": 10
+    },
+    "Général": {
+      "type": "Général",
+      "attack": "+2",
+      "command": 9,
+      "size": 1,
+      "points": 125,
+      "armyMin": 1,
+      "armyMax": 1,
+      "upgrades": [
+        "Dragon du Chaos"
+      ],
+      "order": 11
+    },
+    "Héros": {
+      "type": "Héros",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 80,
+      "max": 1,
+      "upgrades": [
+        "Dragon du Chaos"
+      ],
+      "order": 12
+    },
+    "Sorcier": {
+      "type": "Sorcier",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 90,
+      "max": 1,
+      "upgrades": [
+        "Dragon du Chaos"
+      ],
+      "order": 13
+    }
+  },
+  "upgrades": {
+    "Dragon du Chaos": {
+      "type": "Monture Monstrueuse",
+      "attack": "+3",
+      "points": "+100",
+      "max": 1,
+      "order": 0,
+      "range": "+3x20cm"
+    }
+  },
+  "magic": true,
+  "specialRules": {
+    "Ogres": {
+      "text": [
+        "Si une unité d’ogres peut utiliser son initiative pour",
+        "charger une unité d’humains (littéralement humains... ce qui",
+        "inclut les Guerriers et Maraudeurs du Chaos, mais pas les",
+        "Nains, les Elfes et autres humanoïdes) au début de la phase",
+        "d’ordres, elle doit le faire, quels que soient les désirs de leur",
+        "commandant."
+      ],
+      "order": 1
+    },
+    "Trolls": {
+      "text": [
+        "Les Trolls sont « Lent ». En revanche, les Trolls peuvent se",
+        "régénérer et récupérer de la plupart des blessures. Pour",
+        "représenter cela, à chaque round de combat, avant que les",
+        "socles aient été retirés, les Trolls peuvent récupérer 1 Point",
+        "de Vie sur les blessures restantes. Les blessures régénérées",
+        "comptent tout de même dans les résultats de combats."
+      ],
+      "order": 2
+    },
+    "Harpies": {
+      "text": [
+        "Les Harpies sont placées sur leurs socles comme de",
+        "l’infanterie, dans le sens de la longueur plutôt qu’en largeur",
+        "comme les autres monstres. Elles peuvent voler. Une unité",
+        "de Harpies ne peut pas être rejointe par un personnage."
+      ],
+      "order": 3
+    },
+    "Enfant du Chaos": {
+      "text": [
+        "Les Enfants du Chaos sont « Lent ». Les Enfants du Chaos",
+        "causent la Terreur, et l’ennemi subit donc un malus de -1",
+        "Attaque pour combattre des ennemis terrifiants.",
+        "",
+        "Les attaques des Enfants du Chaos sont déterminées",
+        "aléatoirement avant chaque round de combat par un D3+3.",
+        "Leurs tirs sont déterminés aléatoirement avant chaque tir par",
+        "un D3.",
+        "Les Enfants du Chaos peuvent tirer seulement jusqu’à 15cm,",
+        "mais ils peuvent tirer à 360° (voir la règle associée pour plus",
+        "de détails)."
+      ],
+      "order": 4
+    },
+    "Dragon du Chaos": {
+      "text": [
+        "Les Généraux, les Sorciers et les Héros",
+        "peuvent chevaucher un Dragon du Chaos. Celui-ci pouvant",
+        "voler, le mouvement du cavalier passe de 60 cm à 100 cm, et",
+        "ce dernier gagne +3 Attaques. En outre, le Dragon possède",
+        "une attaque de tir Speciale. Il peut cracher du feu! Cette",
+        "attaque Speciale ne peut être utilisée par un personnage",
+        "montant un Dragon que si ce dernier a rejoint une unité et",
+        "qu’il n’est pas engagé en combat. Un personnage n’ayant pas",
+        "rejoint d’unité ne peut pas utiliser le souffle du Dragon.",
+        "L’attaque de souffle fonctionne de la façon suivante. Le souffle",
+        "peut être dirigé normalement contre une cible dans une",
+        "portée de 20 cm et donne 3 Attaques.",
+        "Le Dragon du Chaos est une créature terrifiante. Une unité",
+        "rejointe par un Dragon du Chaos provoque la terreur et",
+        "impose les pénalités de combat habituelles."
+      ],
+      "order": 5
+    },
+    "Dragons Ogres": {
+      "order": 6,
+      "text": [
+        "Causent la Terreur."
+      ]
+    }
+  },
+  "spells": [
+    {
+      "roll": 4,
+      "text": [
+        "Une sombre puissance émane du Sorcier et emplit ses",
+        "troupes d’une force destructrice et chaotique.",
+        "Ce sort peut être lancé si le Sorcier a rejoint une unité au",
+        "combat. Le sort affecte l’unité qu’il a rejointe. Ses effets",
+        "durent jusqu’à la fin de la prochaine phase de combat.",
+        "Chacun des socles de l’unité, y compris les socles de",
+        "personnages qui l’ont rejointe, ajoute +1 à sa valeur",
+        "d’Attaques. Vu que le Sorcier doit avoir rejoint l’unité pour",
+        "lancer le sort, celui-ci reçoit aussi ce bonus, mais il est",
+        "possible que d’autres personnages l’accompagnent",
+        "également, auquel cas tous bénéficient de +1 Attaque"
+      ],
+      "name": "Bienfait du Chaos",
+      "range": "Affecte l’unité rejointe"
+    },
+    {
+      "roll": 4,
+      "range": "Tout ennemi à moins de 30 cm.",
+      "text": [
+        "La fureur des dieux masque le soleil et de sombres nuées",
+        "s’amoncellent autour du Sorcier.",
+        "Le sort est lancé sur le Sorcier lui-même, et affecte toutes",
+        "les unités ennemies dans un rayon de 30 cm autour de son",
+        "socle. Le sort dure jusqu’à la fin du prochain tour ennemi.",
+        "Il affecte la capacité de l’adversaire à donner des ordres.",
+        "Toutes les unités ennemies se trouvant dans un rayon de",
+        "30cm autour du Sorcier subissent un malus de -1 à tous",
+        "leurs jets d’ordres. Cette pénalité s’applique à chaque",
+        "tentative d’ordre: ainsi, une unité peut recevoir son premier",
+        "ordre hors de portée du sort, mais s’y trouver avant de",
+        "recevoir le deuxième."
+      ],
+      "name": "Fureur des Dieux"
+    },
+    {
+      "roll": 5,
+      "range": "30cm",
+      "text": [
+        "Le Sorcier vocifère une litanie blasphématoire à ses dieux.",
+        "Des restes sanglants qui jonchent le champ de bataille",
+        "s’élève une ombre hurlante qui attaque avec une férocité",
+        "sans pareille.",
+        "Ce sort peut être lancé sur une unité amie engagée au combat",
+        "et à portée. Le Sorcier n’est pas obligé de voir sa cible.",
+        "Les effets du sort durent jusqu’à la fin de la prochaine phase",
+        "de combat, et le bonus d’Attaque indiqué est ajouté au",
+        "nombre total d’Attaques de l’unité à chaque round.",
+        "L’unité reçoit un certain nombre d’Attaques en plus pour la",
+        "durée de la phase de combat suivante.",
+        "Pour déterminer le nombre d’Attaques supplémentaires, jetez",
+        "1D6 à la fois et ajoutez les résultats. Le joueur peut jeter",
+        "autant de dés qu’il le souhaite, jusqu’à un maximum d’un dé",
+        "par socles de l’unité. Le joueur jette ses dés un par un, et peut",
+        "décider d’arrêter à tout moment. Cependant, s’il obtient sur le",
+        "dé qu’il vient de lancer un résultat similaire à celui d’un dé",
+        "qu’il a précédemment jeté, le nombre total d’Attaques",
+        "supplémentaires est dirigé contre l’unité bénéficiant du sort",
+        "plutôt que contre l’ennemi. Dans ce cas, ces Attaques ne sont",
+        "résolues que lors du premier round de combat, pas lors des",
+        "suivants.",
+        "Par exemple: 1+4+6=11 Attaques supplémentaires pour l’unité",
+        "du Chaos à chaque round. 1+4+1=6 Attaques infligées à l’unité",
+        "du Chaos durant le premier round de combat."
+      ],
+      "name": "Rage du Chaos"
+    },
+    {
+      "roll": 5,
+      "range": "30cm, ligne de vue.",
+      "text": [
+        "Un éclair d’énergie pure frappe l’ennemi, déformant et",
+        "fusionnant les chairs et le métal d’une manière atroce.",
+        "Ce sort peut être lancé sur une unité ennemie, visible par le",
+        "Sorcier. Il ne peut pas être lancé sur une unité engagée au",
+        "corps à corps.",
+        "Le sort a les mêmes effets que 3 attaques de tir si ce n’est que",
+        "toute Armure dont la cible peut éventuellement bénéficier est",
+        "ignorée (l’unité compte comme n’ayant aucune valeur",
+        "d’Armure). L’unité visée peut être repoussée de la même",
+        "manière que par des tirs ordinaires"
+      ],
+      "name": "Malédiction du Chaos"
+    }
+  ]
+}

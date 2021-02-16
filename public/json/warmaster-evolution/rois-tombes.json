@@ -1,0 +1,374 @@
+{
+  "name": "Rois des tombes",
+  "version": "Warmaster Evolution",
+  "group": 1,
+  "order": 4,
+  "units": {
+    "Squelettes": {
+      "type": "Infantrie",
+      "attack": 2,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 30,
+      "min": 2,
+      "order": 0
+    },
+    "Archers Squelettes": {
+      "type": "Infantrie",
+      "attack": "2/1",
+      "range": "30cm",
+      "hits": 3,
+      "size": 3,
+      "points": 40,
+      "min": 2,
+      "order": 1
+    },
+    "Cavaliers Squelettes": {
+      "type": "Cavalerie",
+      "attack": 2,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 60,
+      "order": 2
+    },
+    "Chars Squelettes": {
+      "type": "Char",
+      "attack": "3/1",
+      "range": "30cm",
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 110,
+      "max": 3,
+      "order": 3
+    },
+    "Charognards": {
+      "type": "Monstre",
+      "attack": 2,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 65,
+      "max": 1,
+      "order": 4
+    },
+    "Géant Squelette": {
+      "type": "Monstre",
+      "attack": 6,
+      "hits": 4,
+      "armour": "4+",
+      "size": 1,
+      "points": 95,
+      "max": 1,
+      "order": 5
+    },
+    "Sphinx": {
+      "type": "Monstre",
+      "attack": 4,
+      "hits": 6,
+      "armour": "3+",
+      "size": 1,
+      "points": 100,
+      "max": 1,
+      "order": 6
+    },
+    "Catapulte à Crânes": {
+      "type": "Artillerie",
+      "attack": "1/3",
+      "range": "60cm",
+      "hits": 3,
+      "size": 1,
+      "points": 85,
+      "max": 1,
+      "specialRules": [
+        "Bolt Thrower"
+      ],
+      "order": 7
+    },
+    "Balistes à Ossements": {
+      "type": "Artillerie",
+      "attack": "1/1 par socle",
+      "range": "40cm",
+      "hits": 2,
+      "size": 2,
+      "points": 65,
+      "max": 1,
+      "order": 8
+    },
+    "Roi des Tombes": {
+      "type": "Général",
+      "attack": "+2",
+      "command": 9,
+      "size": 1,
+      "points": 130,
+      "armyMin": 1,
+      "armyMax": 1,
+      "upgrades": [
+        "Dragon Zombie",
+        "Char Liche"
+      ],
+      "order": 9
+    },
+    "Liche Priest": {
+      "type": "Sorcier",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 90,
+      "max": 2,
+      "upgrades": [
+        "Dragon Zombie",
+        "Char Liche"
+      ],
+      "order": 10
+    }
+  },
+  "upgrades": {
+    "Dragon Zombie": {
+      "type": "Monture Monstrueuse",
+      "attack": "+3/3",
+      "points": "+100",
+      "max": 1,
+      "order": 0,
+      "range": "20cm"
+    },
+    "Char Liche": {
+      "type": "Char monté",
+      "attack": "+1",
+      "points": "+10",
+      "max": 1,
+      "order": 1
+    }
+  },
+  "magic": true,
+  "armyRules": [
+    "Les morts-vivants sont incapables d’éprouver des",
+    "sentiments tels que la peur, l’excitation ou autre. Après",
+    "tout, ils sont morts et n’ont plus grand-chose à redouter. Les",
+    "sortilèges qui les animent ne leur autorisent qu’un semblant",
+    "d’intelligence et de sentiments. C’est pourquoi les règles",
+    "suivantes s’appliquent à toutes leurs unités.",
+    "Les morts-vivants n’agissent jamais par initiative. Une unité",
+    "de morts-vivants ne peut se déplacer durant la phase",
+    "d’ordre qu’après en avoir reçu l’ordre (sauf les Charognards,",
+    "qui peuvent toujours revenir comme indiqué ci-dessous).",
+    "Les morts-vivants sont immunisés au malus de",
+    "Commandement de -1 pour une présence ennemie à",
+    "proximité ainsi qu’au malus de commandement de -1 pour",
+    "un flanc ou un arrière exposé.",
+    "Ils sont aussi immunisés contre le malus de -1 pour affronter",
+    "des troupes provoquant la terreur.",
+    "Toutes les unités de morts-vivants sont immunisées aux",
+    "effets de la règle de confusion. Ils ne peuvent jamais devenir",
+    "confus."
+  ],
+  "specialRules": {
+    "Charognards": {
+      "text": [
+        "Ils peuvent voler. Notez qu’ils peuvent",
+        "toujours revenir vers un personnage au début de la phase",
+        "d’ordres : pas besoin d’ordre pour ce mouvement."
+      ],
+      "order": 1
+    },
+    "Géant Squelette": {
+      "text": [
+        "Ils causent la terreur."
+      ],
+      "order": 2
+    },
+    "Sphinx": {
+      "text": [
+        "Vu le nombre de PV élevé du Sphinx (6), nous",
+        "devons considérer la possibilité que les blessures subies",
+        "réduisent son efficacité au combat. Si un Sphinx a accumulé",
+        "entre 3 et 5 blessures à la fin d’une phase de tir ou de combat,",
+        "il est Blessé. Une fois qu’un Sphinx est Blessé, toutes les",
+        "blessures sont annulées mais ses Attaques et ses Points de Vie",
+        "sont réduits de moitié pour le reste de la partie (2 Attaques et",
+        "3 PV)."
+      ],
+      "order": 3
+    },
+    "Balistes à Ossements": {
+      "text": [
+        " Cette baliste est une grosse arbalète",
+        "en os... une très grosse même ! Ses projectiles longs comme",
+        "des lances peuvent embrocher toute une ligne de fantassins.",
+        "L’Armure des cibles de la baliste à ossements est toujours",
+        "annulée.",
+        "Lors d’un tir, une baliste à ossements traverse jusqu’à trois",
+        "socles en contact les uns avec les autres, et dans la trajectoire",
+        "du projectile, comme indiqué sur le diagramme ci-dessous. Il",
+        "peut s’agir de socles appartenant à la même unité ou à des",
+        "unités différentes : le tir traversera automatiquement jusqu’à",
+        "trois socles du moment qu’ils sont au contact les uns des",
+        "autres.",
+        "Chaque unité touchée subira 1 attaque pour chacun de ses",
+        "socles ayant été traversé. Toutes les attaques contre une",
+        "même unité sont résolues en même temps. Par exemple, une",
+        "unité d’infanterie en colonne affectée jettera trois dés pour",
+        "trois attaques.",
+        "Du fait qu’une baliste peut toucher différentes unités en",
+        "raison du fait que ses tirs traversent les socles, il peut arriver",
+        "que son projectile touche un ennemi faisant partie d’un",
+        "combat (au contact ou en soutien). Normalement, il est",
+        "impossible de tirer sur ce genre de cibles, mais elles peuvent",
+        "subir des touches si un tir est dirigé sur une unité proche par",
+        "exemple. Les unités engagées des deux camps qui subissent",
+        "des blessures les conservent pendant la phase de combat, et",
+        "elles compteront durant ce round pour déterminer qui",
+        "remporte le combat. Les unités faisant partie d’un combat ne",
+        "sont jamais repoussées par ce genre de blessures ; leurs effets",
+        "sont comptabilisés durant le corps à corps. Les unités ne",
+        "faisant pas partie d’un combat sont repoussées de la manière",
+        "habituelle. Si une unité amie est repoussée, résolvez son",
+        "mouvement après le repoussement des unités ennemies.",
+        "Les balistes à ossements peuvent tirer en contre-charge à",
+        "n’importe quel moment, y compris lorsque l’assaillant a",
+        "atteint sa position finale."
+      ],
+      "order": 4
+    },
+    "Catapulte à Crânes": {
+      "text": [
+        " Elle peut tirer à 45° et sa portée est de",
+        "60cm. Elle ignore les sauvegardes mais ne peut effectuer de tir",
+        "de contre-charge. Lorsqu’une unité est repoussée en raison de",
+        "blessures infligées par une Catapulte à Crânes, tous les jets de",
+        "dés de repoussement entraînés par ces blessures rendront la",
+        "cible confuse sur un résultat de 4+ au lieu de 6+. Notez que si",
+        "l’unité a subi des blessures d’un autre type, les jets de dés",
+        "infligés par la Catapulte doivent être effectués séparément."
+      ],
+      "order": 5
+    },
+    "Roi des Tombes": {
+      "text": [
+        " Il est doté de pouvoirs magiques par le",
+        "sort qui lui a été jeté lors de son inhumation. Il peut utiliser ce",
+        "pouvoir pour augmenter de +1 les Attaques de tous les socles",
+        "d’une unité située à moins de 20cm de lui pendant toute la",
+        "phase de combat. Ce pouvoir n’est utilisable qu’une seule fois",
+        "par partie et ne s’applique pas aux Attaques de tir."
+      ],
+      "order": 6
+    },
+    "Liche Priest": {
+      "text": [
+        "Ils lancent des sorts comme les autres sorciers"
+      ],
+      "order": 7
+    },
+    "Dragon Zombie": {
+      "text": [
+        "Un Roi des Tombes ou un Prêtre Liche",
+        "peut monter un Dragon Zombie. Un Dragon Zombie vole, ce",
+        "qui fait passer le mouvement du cavalier de 60cm à 100cm et",
+        "lui ajoute +3 Attaques. Les Dragons Zombie peuvent utiliser",
+        "leur souffle corrosif pour faire une attaque de tir Speciale, qui",
+        "ne peut se faire que si le cavalier a rejoint une unité et qu’il",
+        "n’est pas engagé en combat. Un personnage qui n’a pas rejoint",
+        "d’unité ne peut pas utiliser l’attaque de souffle. Le souffle a",
+        "une portée de 20cm, il peut viser une cible normalement et",
+        "inflige trois Attaques résolues normalement. Une unité",
+        "rejointe par un Dragon Zombie provoque la terreur."
+      ],
+      "order": 8
+    },
+    "Char Liche": {
+      "text": [
+        "Un Roi des Tombes ou un Prêtre Liche peut",
+        "embarquer sur un char. Un personnage monté sur un char",
+        "gagne +1 Attaque."
+      ],
+      "order": 9
+    }
+  },
+  "spells": [
+    {
+      "roll": 5,
+      "range": "30cm, pas de ligne de vue.",
+      "text": [
+        "Sur l’ordre du Sorcier, les corps mutilés qui jonchent le",
+        "champ de bataille se relèvent pour continuer à tuer par-delà",
+        "la mort.",
+        "Ce sort peut être lancé sur un combat à moins de 30cm du",
+        "Sorcier (les pertes fournissent la matière première). Il n’est",
+        "pas nécessaire que le sorcier puisse voir une unité engagée",
+        "dans le combat. Un même combat ne peut être affecté",
+        "qu’une seule fois par ce sort lors d’un même tour, quel que",
+        "soit le nombre d’unités impliquées. Pour ce faire, on",
+        "considère les combats tels qu’ils sont durant la phase de tir,",
+        "où le sort est lancé, il est donc possible que deux unités de",
+        "morts invoqués se retrouvent dans un même combat selon",
+        "le jeu des avances et des poursuites.",
+        "En cas de succès, une nouvelle unité de trois socles",
+        "d’infanterie squelette apparaît. Elle doit être placée de",
+        "façon à pouvoir combattre ou soutenir une unité amie déjà",
+        "engagée. Elle peut être placée sur l’avant, les flancs, l’arrière",
+        "ou autour de l’ennemi. Si la place manque, l’unité doit être",
+        "placée au contact d’au moins une des unités amies en",
+        "combat, de manière à pouvoir la soutenir si possible. S’il est",
+        "impossible de placer l’unité en contact avec des amis ou des",
+        "ennemis, le sort ne peut pas être lancé. Les morts invoqués",
+        "ne comptent pas comme ayant chargé lorsqu’ils",
+        "apparaissent et sont ignorés lors du calcul des points de",
+        "victoire."
+      ],
+      "name": "Invoquer les Morts"
+    },
+    {
+      "roll": 4,
+      "range": "- Touching",
+      "text": [
+        "Les ennemis du Sorcier tombent en poussière tandis qu’il les",
+        "frappe de son Toucher Mortel.",
+        "Ce sort ne peut être lancé que si le Sorcier a rejoint une",
+        "unité amie engagée au combat, et affecte une seule unité",
+        "ennemie au contact de celle-ci.",
+        "L’unité visée subit trois attaques résolues de la manière",
+        "habituelle. Toute blessure infligée est reportée dans le",
+        "premier round de combat et compte comme ayant été",
+        "infligée au combat.",
+        ""
+      ],
+      "name": "Toucher Mortel"
+    },
+    {
+      "roll": 4,
+      "range": "60cm, ligne de vue",
+      "text": [
+        "Un sombre nuage de désespoir tombe sur l’ennemi, sapant",
+        "son courage et refroidissant son ardeur guerrière.",
+        "Ce sort peut être lancé sur toute unité ennemie à portée et",
+        "dans la ligne de vue du Sorcier.",
+        "Ses effets durent jusqu’à la fin du tour suivant de l’ennemi.",
+        "Tant que le sort dure, sa cible ne peut pas charger ou éviter",
+        "par initiative. Elle considère toute unité ennemie comme",
+        "Terrifiante. Même les morts-vivants et les unités normalement",
+        "obligées de charger, avancer ou poursuivre sont affectés!",
+        ""
+      ],
+      "name": "Doom and Despair"
+    },
+    {
+      "roll": 5,
+      "range": "30cm, ligne de vue.",
+      "text": [
+        "Un terrifiant éclair d’énergie magique jaillit des doigts du",
+        "Sorcier et frappe une unité ennemie.",
+        "Le Sorcier peut lancer ce sort sur une unité ennemie en vue. Il",
+        "ne peut pas être lancé sur une unité engagée en combat.",
+        "L’unité victime de l’Éclair de Mort subit trois attaques résolues",
+        "comme des attaques de tir ordinaires, mais son Armure est",
+        "ignorée (quelle que soit la cible de ce sort, elle compte comme",
+        "n’ayant aucune armure). Une unité peut être repoussée par un",
+        "Éclair de Mort de la même manière que par des tirs ordinaires."
+      ],
+      "name": "Éclair de Mort"
+    }
+  ]
+}

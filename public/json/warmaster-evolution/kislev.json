@@ -1,0 +1,260 @@
+{
+  "name": "Kislev",
+  "version": "Warmaster Evolution",
+  "group": 1,
+  "order": 1,
+  "units": {
+    "Guerrier": {
+      "type": "Infantrie",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 45,
+      "min": 2,
+      "order": 0
+    },
+    "Archer": {
+      "type": "Infantrie",
+      "attack": "3/1",
+      "range": "30cm",
+      "hits": 3,
+      "size": 3,
+      "points": 55,
+      "order": 1,
+      "armour": "6+"
+    },
+    "Ours": {
+      "type": "Infantrie",
+      "attack": 5,
+      "hits": 3,
+      "size": 3,
+      "points": 85,
+      "max": 1,
+      "order": 2
+    },
+    "Chevaliers": {
+      "type": "Cavalerie",
+      "attack": 3,
+      "hits": 3,
+      "armour": "4+",
+      "size": 3,
+      "points": 110,
+      "max": 4,
+      "order": 3
+    },
+    "Archers à Cheval": {
+      "type": "Cavalerie",
+      "attack": "3/1",
+      "range": "15cm à 360°",
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 80,
+      "min": 2,
+      "order": 4
+    },
+    "Char de Guerre": {
+      "type": "Artillerie",
+      "attack": "3/3",
+      "range": "30cm",
+      "hits": 4,
+      "armour": "4+",
+      "size": 1,
+      "points": 50,
+      "max": 1,
+      "order": 6
+    },
+    "Général": {
+      "type": "Général",
+      "attack": "+2",
+      "command": 9,
+      "size": 1,
+      "points": 125,
+      "armyMin": 1,
+      "armyMax": 1,
+      "upgrades": [
+        "Ours (monture)",
+        "Tzarina"
+      ],
+      "order": 7
+    },
+    "Héros": {
+      "type": "Héros",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 80,
+      "max": 2,
+      "upgrades": [
+        "Ours (monture)"
+      ],
+      "order": 8
+    },
+    "Chaman": {
+      "type": "Sorcier",
+      "attack": "+0",
+      "command": 7,
+      "size": 1,
+      "points": 45,
+      "max": 1,
+      "upgrades": [
+        "Ours (monture)"
+      ],
+      "order": 9
+    }
+  },
+  "upgrades": {
+    "Ours (monture)": {
+      "type": "Monture Spéciale",
+      "attack": "+1",
+      "points": "+10",
+      "max": 1,
+      "order": 0
+    },
+    "Tzarina": {
+      "type": "Spécial",
+      "points": "+25",
+      "armyMax": 1,
+      "addOnUpgrades": [
+        "Ring of Magic",
+        "Staff of Spellbinding",
+        "Scroll of Dispelling",
+        "Wand of Power",
+        "Rod of Repetition"
+      ],
+      "order": 2
+    }
+  },
+  "magic": true,
+  "specialRules": {
+    "Ours": {
+      "text": [
+        " Les Ours ne peuvent être mis en brigade qu’avec",
+        "d’autres unités d’ours.",
+        "Ils sont considérés comme de l’infanterie pour ce qui est des",
+        "règles, car cela reflète leur mobilité, mais ils bénéficient de",
+        "+1 Attaque lorsqu’ils chargent un ennemi à découvert,",
+        "comme les chars et les monstres.",
+        "Une unité d’Ours qui inflige plus de blessures que l’ennemi",
+        "lors d’un premier round de combat peut immédiatement",
+        "effectuer une Attaque de plus par socle avant que les",
+        "résultats du combat ne soient calculés. Résolvez",
+        "normalement ces Attaques puis calculez le résultat du",
+        "combat. Les Ours doivent toujours poursuivre les ennemis",
+        "en repli ou avancer, s’ils le peuvent.",
+        "Notez que ces règles ne s’appliquent qu’aux unités d’Ours,",
+        "pas aux personnages montés sur Ours ou aux Chamans",
+        "transformés en Ours par le sort Forme d’Ours."
+      ],
+      "order": 1
+    },
+    "Char de Guerre": {
+      "text": [
+        "Le Char de Guerre est Lent. Tous",
+        "les bords du socle du Char de Guerre sont considérés",
+        "comme étant son front (il n’a pas de flanc ni d’arrière).",
+        "Le Char de Guerre et jusqu’à 4 unités d’infanterie au",
+        "contact sont toujours considérés comme en Défense, ils ne",
+        "reculent jamais face aux tirs mais peuvent toujours être",
+        "dispersés. Pour être éligibles à cette règle les unités",
+        "d’infanterie doivent être en formation régulière (ligne ou",
+        "colonne) et alignées sur les flancs du Char.",
+        "Le socle de chevaux accompagnant la figurine de Char de",
+        "Guerre n’a qu’un rôle esthétique et n’est jamais pris en",
+        "compte, il doit être retiré s’il gène.",
+        "Voici les deux formations permettant de profiter du bonus du",
+        "Char de Guerre :"
+      ],
+      "order": 2
+    },
+    "Ours (monture)": {
+      "text": [
+        "Les Généraux, les Héros et les Chamans peuvent être",
+        "montés sur un ours. L’ours ajoute +1 aux Attaques de son",
+        "cavalier."
+      ],
+      "order": 3
+    },
+    "Tzarina": {
+      "text": [
+        "Le Général peut être une Tzarine de sang royal,",
+        "voire la Tzarine Katarina en personne, juchée sur un traîneau",
+        "tiré par des chevaux (notez qu’il ne s’agit pas d’un char !). Elle",
+        "peut jeter des sorts comme un sorcier et peut porter un objet",
+        "magique de sorcier si vous le désirez. Une fois par partie, la",
+        "Tzarine peut ajouter +1 au résultat du dé lorsqu’elle jette un",
+        "sort. Le joueur doit déclarer qu’il utilise cette capacité avant",
+        "de jeter le dé."
+      ],
+      "order": 4
+    }
+  },
+  "spells": [
+    {
+      "roll": 5,
+      "text": [
+        "Le Chaman se transforme en un gigantesque ours et se jette",
+        "sur l’ennemi, griffes et crocs dehors.",
+        "Le Sorcier peut jeter ce sort sur lui-même s’il se trouve dans",
+        "une unité engagée au corps à corps. Les effets du sort durent",
+        "jusqu’à la fin de la prochaine phase de combat.",
+        "Le Sorcier gagne +2 Attaques qu’il ajoute au total de l’unité, et",
+        "celle-ci cause la terreur en raison de l’apparence surnaturelle",
+        "et effroyable du jeteur du sort. Notez que si la Tzarine utilise",
+        "ce sort, elle ajoute au total +4 Attaques à l’unité (+2 parce",
+        "qu’elle est le Général, +2 pour sa Forme d’Ours).",
+        ""
+      ],
+      "name": "Forme d’Ours"
+    },
+    {
+      "roll": 5,
+      "range": "30cm, ligne de vue",
+      "text": [
+        "Une bourrasque de cristaux de glace jaillit de la main du",
+        "sorcier et va frapper ses ennemis.",
+        "Ce sort peut être lancé sur une unité ennemie. Le sorcier",
+        "doit pouvoir voir sa cible pour utiliser ce sort, et ne peut pas",
+        "viser une unité engagée au combat.",
+        "Les Flèches de Glace comptent comme trois attaques de tir",
+        "ordinaires, mais les armures n’apportent aucune protection",
+        "(la cible compte comme n’ayant aucune Armure). L’ennemi",
+        "peut être repoussé comme d’habitude par ces tirs."
+      ],
+      "name": "Flèches de Glace"
+    },
+    {
+      "roll": 4,
+      "range": "30cm, pas de ligne de vue.",
+      "text": [
+        "Un froid terrifiant enveloppe l’unité, glaçant ses guerriers et",
+        "les empêchant de combattre.",
+        "Le sort peut être lancé sur une unité ennemie engagée au",
+        "combat et à portée, même si le sorcier ne peut pas la voir.",
+        "Ses effets durent jusqu’à la fin de la prochaine phase de",
+        "combat.",
+        "Chaque socle de l’unité (y compris les personnages qui l’ont",
+        "rejointe) voit son nombre d’Attaques réduit de -1."
+      ],
+      "name": "Gel"
+    },
+    {
+      "roll": 6,
+      "range": "60cm, pas de ligne de vue",
+      "text": [
+        "Un vent glacial pétrifie les ennemis du sorcier, les gelant au",
+        "point que bois, chair et acier éclatent en mille morceaux.",
+        "Ce sort peut être lancé sur une unité ennemie à portée, que le",
+        "sorcier puisse la voir ou non. Il ne peut pas être lancé sur une",
+        "unité engagée au corps à corps.",
+        "Jetez 1D6. Si le résultat est supérieur au nombre de Points de",
+        "Vie du type de troupe de sa cible, un socle est détruit. Si le",
+        "résultat est inférieur ou égal, le sort n’a aucun effet. Si le socle",
+        "est détruit, il est retiré du jeu. Une unité ne peut pas être",
+        "repoussée par un Vent Glacial."
+      ],
+      "name": "Vent Glacial"
+    }
+  ]
+}

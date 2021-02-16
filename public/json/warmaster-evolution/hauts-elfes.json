@@ -1,0 +1,335 @@
+{
+  "name": "Hauts Elfes",
+  "version": "Warmaster Evolution",
+  "group": 0,
+  "order": 6,
+  "units": {
+    "Lanciers": {
+      "type": "Infantrie",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 60,
+      "min": 2,
+      "order": 0
+    },
+    "Archers": {
+      "type": "Infantrie",
+      "attack": "3/1",
+      "range": "30cm",
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 75,
+      "min": 1,
+      "specialRules": [
+        "Arc Long"
+      ],
+      "order": 1
+    },
+    "Heaumes d’Argent": {
+      "type": "Cavalerie",
+      "attack": 3,
+      "hits": 3,
+      "armour": "4+",
+      "size": 3,
+      "points": 110,
+      "order": 2,
+      "specialRules": [
+        "Nobles"
+      ]
+    },
+    "Patrouilleurs Ellyriens": {
+      "type": "Cavalerie",
+      "attack": "3/1",
+      "range": "30cm",
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 90,
+      "max": 3,
+      "specialRules": [
+        "Arc Long"
+      ],
+      "order": 3
+    },
+    "Chars": {
+      "type": "Char",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 95,
+      "max": 3,
+      "order": 4,
+      "specialRules": [
+        "Nobles"
+      ]
+    },
+    "Aigles Géants": {
+      "type": "Monstre",
+      "attack": 2,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 70,
+      "max": 1,
+      "order": 5
+    },
+    "Balistes à Répétition": {
+      "type": "Artillerie",
+      "attack": "1/3",
+      "range": "40cm",
+      "hits": 2,
+      "size": 2,
+      "points": 65,
+      "max": 1,
+      "order": 7
+    },
+    "Général": {
+      "type": "Général",
+      "attack": "+2",
+      "command": 9,
+      "size": 1,
+      "points": 125,
+      "armyMin": 1,
+      "armyMax": 1,
+      "upgrades": [
+        "Seigneur",
+        "Aigles Géants(monture)",
+        "Dragon",
+        "Char"
+      ],
+      "order": 8
+    },
+    "Héros": {
+      "type": "Héros",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 80,
+      "max": 1,
+      "upgrades": [
+        "Aigles Géants(monture)",
+        "Dragon",
+        "Char"
+      ],
+      "order": 9
+    },
+    "Sorcier": {
+      "type": "Sorcier",
+      "attack": "+0",
+      "command": 8,
+      "size": 1,
+      "points": 90,
+      "max": 1,
+      "upgrades": [
+        "Aigles Géants(monture)",
+        "Dragon",
+        "Char"
+      ],
+      "order": 10
+    }
+  },
+  "upgrades": {
+    "Aigles Géants(monture)": {
+      "type": "Monture Monstrueuse",
+      "attack": "+1",
+      "points": "+30",
+      "max": 1,
+      "order": 0
+    },
+    "Dragon": {
+      "type": "Monture Monstrueuse",
+      "attack": "+3/+3",
+      "range": "20cm",
+      "points": "+100",
+      "max": 1,
+      "specialRules": [
+        "Dragons"
+      ],
+      "order": 1
+    },
+    "Char": {
+      "type": "Char monté",
+      "attack": "+1",
+      "points": "+10",
+      "max": 1,
+      "order": 2
+    },
+    "Seigneur": {
+      "type": "Spécial",
+      "points": "+30",
+      "max": 1,
+      "order": 3
+    }
+  },
+  "magic": true,
+  "specialRules": {
+    "Arc Long": {
+      "text": [
+        ": Une unité de trois socles déployés en ligne et",
+        "possédant «Arc Long» ajoute +1 tir à son total de tirs; une",
+        "telle unité a donc 4 tirs au lieu de 3. Le tir bonus est affecté",
+        "à n’importe quel socle, au choix du joueur."
+      ],
+      "order": 1
+    },
+    "Nobles": {
+      "order": 2,
+      "text": [
+        "Le nombre total d’unités « Nobles » ne doit pas",
+        "excéder le nombre total d’unités de type « Infanterie »."
+      ]
+    },
+    "Aigles Géants": {
+      "text": [
+        "Les Aigles Géants volent."
+      ],
+      "order": 3
+    },
+    "Dragons": {
+      "text": [
+        "Les Dragons sont des créatures volantes et ils",
+        "peuvent cracher des flammes. Les Chevaucheurs de Dragons",
+        "et les unités rejointes par un personnage monté sur un",
+        "Dragon provoquent la terreur.",
+        "Un Dragon possède beaucoup de Points de Vie (6). Il serait",
+        "donc très difficile d’en venir à bout en un tour et, pour",
+        "compenser cette apparente invulnérabilité, la règle suivante",
+        "s’applique: si un Chevaucheur de Dragon accumule entre 3",
+        "et 5 blessures à la fin d’une phase de tir ou de combat, il est",
+        "grièvement blessé. Une fois qu’un Chevaucheur de Dragon",
+        "est grièvement blessé, toutes les blessures sont annulées",
+        "mais ses Attaques et ses Points de Vie sont réduits de moitié",
+        "pour le reste de la partie (3 Attaques, 2 Tirs et 3 PV).",
+        "Les Généraux, Sorciers et Héros peuvent chevaucher des",
+        "dragons. Un Dragon vole, le mouvement du cavalier passe",
+        "ainsi à 100 cm, et il ajoute +3 Attaques à son cavalier. Un",
+        "dragon peut cracher du feu si son cavalier a rejoint une unité",
+        "qui n’est pas engagée en combat. Un dragon chevauché par un",
+        "personnage ne pas peut cracher de feu s’il n’a pas rejoint une",
+        "unité."
+      ],
+      "order": 4
+    },
+    "Balistes à Répétition": {
+      "text": [
+        "La Baliste a un angle de tir 45° et une",
+        "portée de 40cm. Elle peut tirer en contre-charge. Ses tirs",
+        "n’annulent pas la sauvegarde."
+      ],
+      "order": 5
+    },
+    "Seigneur": {
+      "order": 6,
+      "text": [
+        "Le Général peut être transformé en Seigneur",
+        "Haut Elfe. Le premier ordre du tour d’un Seigneur bénéficie",
+        "d’un Commandement de 10, le reste de ses ordres d’un",
+        "commandement de 9."
+      ]
+    },
+    "Sorcier": {
+      "text": [
+        ": Les mages Hauts Elfes sont de puissants sorciers.",
+        "Pour représenter cela, en cas d’échec, ils peuvent relancer le",
+        "dé pour jeter un sort, à moins d’avoir obtenu un 1. Si le sort",
+        "est raté sur un 1, le dé ne peut pas être relancé."
+      ],
+      "order": 7
+    },
+    "Aigles Géants(monture)": {
+      "text": [
+        "Les Généraux, Sorciers et Héros",
+        "peuvent monter des Aigles Géants. Les Aigles Géants volent;",
+        "ils font donc passer le mouvement de leur cavalier de 60 à",
+        "100cm, et lui ajoutent +2 Attaques."
+      ],
+      "order": 8
+    },
+    "Char": {
+      "text": [
+        "Un Général, un Sorcier ou un Héros peut combattre",
+        "sur un Char. Le personnage gagne alors +1 Attaque."
+      ],
+      "order": 9
+    }
+  },
+  "spells": [
+    {
+      "roll": 6,
+      "range": "30cm",
+      "text": [
+        "Le sol se soulève autour du mage et une pluie de pierres et",
+        "de terre s’abat sur ses ennemis.",
+        "Ce sort affecte toutes les unités ennemies à portée.",
+        "Chaque unité ennemie dans un rayon de 30 cm autour du",
+        "mage est affectée et subit 1D3 attaques de tir résolues de la",
+        "manière habituelle. Jetez le dé séparément pour chaque",
+        "unité ennemie. La Tempête de Pierres ne repousse pas ses",
+        "victimes non engagées (le sol se soulève sous leurs pieds).",
+        "Les unités engagées reportent les blessures infligées par ce",
+        "sort dans le premier round de combat, et ces dernières",
+        "comptent comme ayant été infligées lors du combat luimême."
+      ],
+      "name": "Tempête de Pierres"
+    },
+    {
+      "roll": 5,
+      "range": "30m, ligne de vue.",
+      "text": [
+        "Une pluie de flèches s’élance des doigts tendus du mage",
+        "pour aller frapper une unité ennemie.",
+        "Ce sort peut être lancé sur une unité ennemie visible et à",
+        "portée. Le mage doit pouvoir voir sa cible pour utiliser ce",
+        "sort. Il ne peut pas le lancer sur un ennemi engagé au",
+        "combat.",
+        "L’unité victime de la Pluie de Destruction subit trois attaques",
+        "résolues comme des attaques de tir ordinaires (4+ pour",
+        "toucher) mais son Armure est ignorée (quelle que soit la",
+        "cible de ce sort, elle compte comme n’ayant aucune",
+        "armure). Une unité peut être repoussée par une Pluie de",
+        "Destruction comme par des tirs ordinaires."
+      ],
+      "name": "Pluie de Destruction"
+    },
+    {
+      "roll": 4,
+      "range": "30cm, pas de ligne de vue.",
+      "text": [
+        "Le mage dote les archers elfes d’une rapidité surnaturelle qui",
+        "leur permet de faire pleuvoir la mort sur l’ennemi.",
+        "Le Mage peut lancer ce sort sur n’importe quelle unité amie",
+        "d’infanterie ou de cavalerie disposant d’armes de tir, non",
+        "engagée, à portée. Il ne peut pas le lancer sur de l’artillerie. Il",
+        "n’est pas nécessaire qu’il puisse voir l’unité en question ou sa",
+        "cible.",
+        "Lorsque le Feu Céleste est lancé sur une unité, elle peut tirer",
+        "deux fois lors de ce tour au lieu d’une seule. Si elle a déjà tiré",
+        "ce tour-ci, elle peut immédiatement tirer une deuxième fois. Si",
+        "ce n’est pas encore le cas, elle pourra tirer deux fois.",
+        "Lorsqu’une unité tire deux fois grâce à Feu Céleste, son",
+        "deuxième tir se fait toujours sans le bonus Arc Long."
+      ],
+      "name": "Feu Céleste"
+    },
+    {
+      "roll": 5,
+      "range": "30cm",
+      "text": [
+        "Une lumière chaude irradie du mage et emplit ses",
+        "compagnons d’une force surnaturelle.",
+        "Ce sort affecte toutes les unités amies à portée.",
+        "Il dure le temps de la phase de Combat suivante et ajoute +1",
+        "Attaque à toute unité amie dans un rayon de 30 cm, y compris",
+        "les personnages qui leur sont rattachés. Cette Attaque",
+        "supplémentaire peut être allouée à n’importe quel socle, et",
+        "peut être allouée à un socle différent d’un round de combat à",
+        "l’autre."
+      ],
+      "name": "Aura de Bataille"
+    }
+  ]
+}

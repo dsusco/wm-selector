@@ -1,0 +1,359 @@
+{
+  "name": "Elfes noirs",
+  "version": "Warmaster Evolution",
+  "group": 0,
+  "order": 4,
+  "units": {
+    "Lanciers": {
+      "type": "Infantrie",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 60,
+      "min": 2,
+      "order": 0
+    },
+    "Arbalétriers": {
+      "type": "Infantrie",
+      "attack": "3/2-1",
+      "range": "15mm/30cm",
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 75,
+      "min": 1,
+      "specialRules": [
+        "Arbalètes à répétition"
+      ],
+      "order": 1
+    },
+    "Furies": {
+      "type": "Infantrie",
+      "attack": 5,
+      "hits": 3,
+      "size": 3,
+      "points": 70,
+      "max": 2,
+      "order": 2
+    },
+    "Chevaliers Noirs": {
+      "type": "Cavalerie",
+      "attack": "3/2-1",
+      "range": "15mm/30cm",
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 95,
+      "max": 3,
+      "specialRules": [
+        "Arbalètes à répétition"
+      ],
+      "order": 3
+    },
+    "Chevaliers sur Sang-Froid": {
+      "type": "Cavalerie",
+      "attack": 3,
+      "hits": 3,
+      "armour": "4+",
+      "size": 3,
+      "points": 130,
+      "max": 3,
+      "specialRules": [
+        "Cold Ones Knights"
+      ],
+      "order": 4
+    },
+    "Harpies": {
+      "type": "Monstre",
+      "attack": 2,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 65,
+      "max": 1,
+      "order": 5
+    },
+    "Hydre de Guerre": {
+      "type": "Monstre",
+      "attack": "6/2",
+      "range": "15cm",
+      "hits": 4,
+      "armour": "3+",
+      "size": 1,
+      "points": 100,
+      "max": 1,
+      "order": 6
+    },
+    "Baliste": {
+      "type": "Artillerie",
+      "attack": "1/3",
+      "range": "40cm",
+      "hits": 2,
+      "size": 2,
+      "points": 55,
+      "max": 1,
+      "order": 7
+    },
+    "Général": {
+      "type": "Général",
+      "attack": "+2",
+      "command": 10,
+      "size": 1,
+      "points": 155,
+      "armyMin": 1,
+      "armyMax": 1,
+      "upgrades": [
+        "Manticore",
+        "Char"
+      ],
+      "order": 8
+    },
+    "Héros": {
+      "type": "Héros",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 80,
+      "max": 1,
+      "upgrades": [
+        "Manticore",
+        "Char"
+      ],
+      "order": 9
+    },
+    "Sorcière": {
+      "type": "Sorcier",
+      "attack": "+0",
+      "command": 8,
+      "size": 1,
+      "points": 80,
+      "max": 1,
+      "upgrades": [
+        "Manticore",
+        "Char",
+        "Chaudron de Sang"
+      ],
+      "order": 10
+    }
+  },
+  "upgrades": {
+    "Manticore": {
+      "type": "Monture Monstrueuse",
+      "attack": "+2",
+      "points": "+80",
+      "max": 1,
+      "order": 0
+    },
+    "Char": {
+      "type": "Char monté",
+      "attack": "+1",
+      "points": "+10",
+      "max": 1,
+      "order": 1
+    },
+    "Chaudron de Sang": {
+      "type": "Monture Spéciale",
+      "attack": "+2",
+      "points": "+15",
+      "armyMax": 1,
+      "requiredUnits": [
+        "Furies"
+      ],
+      "order": 2
+    }
+  },
+  "magic": true,
+  "specialRules": {
+    "Arbalètes à répétition": {
+      "order": 1,
+      "text": [
+        " Ces unités sont équipées",
+        "d’arbalètes à répétition. Elles peuvent tirer une fois à une",
+        "portée de 30 cm ou deux fois à une portée de 15 cm. Une",
+        "unité de trois socles peut donc effectuer 6 attaques sur une",
+        "cible située à 15 cm ou moins et 3 attaques sur une cible",
+        "située plus loin. Ces unités peuvent tirer sur un ennemi qui",
+        "les charge, mais elles n’effectuent dans ce cas qu’une seule",
+        "attaque par socle, quelle que soit la portée."
+      ]
+    },
+    "Furies": {
+      "text": [
+        " Les Furies sont Fanatiques."
+      ],
+      "order": 2
+    },
+    "Cold Ones Knights": {
+      "text": [
+        "Les sang-froid sont si féroces",
+        "que les Chevaliers sur sang-froid bénéficient de +1 Attaque",
+        "lors du premier round de chaque combat où ils affrontent",
+        "un ennemi situé sur leur front. Pour la même raison, les",
+        "Chevaliers sur Sang-froid ne peuvent pas former de",
+        "brigades, hormis avec d’autres unités de Chevaliers sur",
+        "Sang-froid."
+      ],
+      "order": 3
+    },
+    "Harpies": {
+      "text": [
+        "Elles sont disposées sur leur socle de sorte à faire",
+        "face à une de ses longueurs, comme l’infanterie, et non face à",
+        "l’une de ses largeurs comme les autres monstres. Les Harpies",
+        "peuvent voler. Une unité de Harpies ne peut pas être rejointe",
+        "par un personnage."
+      ],
+      "order": 4
+    },
+    "Hydre de Guerre": {
+      "text": [
+        "Les Hydres de Guerre sont si agressives",
+        "qu’elles ne peuvent être mises en brigade qu’avec de",
+        "l’Infanterie ; cela implique qu’il n’est possible d’avoir deux",
+        "Hydres dans une même brigade. Elles causent la terreur à",
+        "l’ennemi et lorsqu’elle est engagée dans un combat, une",
+        "Hydre doit toujours poursuive si possible."
+      ],
+      "order": 5
+    },
+    "Baliste": {
+      "order": 6,
+      "text": [
+        "La Baliste a un angle de tir 45° et une portée de",
+        "40cm. Elle peut tirer en contre-charge. Ses tirs n’annulent pas",
+        "la sauvegarde."
+      ]
+    },
+    "Général": {
+      "text": [
+        " Les Généraux elfes noirs sont les maîtres de la",
+        "manipulation et du chantage, et ils ne s’embarrassent pas de",
+        "morale lorsqu’ils traitent avec leurs officiers. Si un Héros ou",
+        "une Sorcière elfe noir obtient une gaffe lorsqu’il donne un",
+        "ordre, le Général elfe noir a le choix entre perdre 1 point de",
+        "Cdt (il passe de 10 à 9 p.ex.) ou exécuter le fautif - auquel",
+        "cas, le personnage ayant obtenu la gaffe est immédiatement",
+        "retiré du jeu, mais il n’accorde aucun point de victoire à",
+        "l’ennemi. En outre, si le Général obtient un 12 lorsqu’il fait",
+        "un test de commandement il perd 1 point de",
+        "Commandement et la phase d’Ordre s’achève. Un Général",
+        "peut perdre un maximum de 2 point de Commandement",
+        "(jusqu’à un minimum de 8) : une fois ces 2 points perdus,",
+        "tous les subordonnés qui commettent des gaffes seront",
+        "automatiquement exécutés, et les résultats de 12 aux ordres",
+        "du Général mettront simplement fin à la phase d’ordres sans",
+        "autre effet néfaste.",
+        ""
+      ],
+      "order": 7
+    },
+    "Manticore": {
+      "text": [
+        ": Le Général, les Sorciers et les Héros peuvent",
+        "chevaucher une Manticore. La Manticore peut voler, ce qui",
+        "donne à son cavalier un mouvement de 100 cm. Elle lui",
+        "confère également +2 Attaques. Une unité rejointe par un",
+        "personnage sur Manticore cause la terreur."
+      ],
+      "order": 8
+    },
+    "Chaudron de Sang": {
+      "text": [
+        " Une Sorcière peut être accompagnée",
+        "d’un Chaudron de Sang. Il est classé comme “monture",
+        "Speciale” car il est traité comme une monture et empêche la",
+        "Sorcière d’avoir une autre monture. Une Sorcière avec",
+        "Chaudron de Sang ne peut plus se déplacer que de 30 cm. Une",
+        "armée ne peut jamais inclure qu’un seul Chaudron de Sang, et",
+        "elle doit pour ce faire comprendre au moins une unité de",
+        "Furies. Le Chaudron de Sang ajoute +2 Attaques à celles de la",
+        "Sorcière et peut être utilisé pour ajouter +1 au jet de",
+        "lancement d’un sort de celle-ci, une fois par bataille. Le joueur",
+        "doit annoncer qu’il utilise le bonus du Chaudron avant de jeter",
+        "le dé pour déterminer si le sort est lancé avec succès.",
+        ""
+      ],
+      "order": 9
+    }
+  },
+  "spells": [
+    {
+      "roll": 5,
+      "range": "30cm, pas de ligne de vue.",
+      "text": [
+        "Un éclair d’énergie noire jaillit des doigts de la sorcière.",
+        "Tracez une droite imaginaire de 30 cm de long, à partir du",
+        "socle de la Sorcière et dans n’importe quelle direction. La",
+        "ligne peut traverser n’importe quelle unité, mais pas les",
+        "terrains qui arrêteraient normalement un tir ordinaire,",
+        "comme une colline, plus de 2 cm de forêt, etc.",
+        "Toute unité traversée par la ligne subit 3 attaques de tir",
+        "résolues de la façon habituelle. Notez que ce sort peut",
+        "affecter plusieurs unités, et affectera automatiquement",
+        "toutes celles qui se trouvent sous la ligne, même les vôtres.",
+        "Les unités non engagées au corps à corps peuvent être",
+        "repoussées par un Éclair Noir comme par des tirs ordinaires,",
+        "y compris vos propres troupes. Les unités engagées au corps",
+        "à corps ne peuvent pas être repoussées par l’éclair, mais les",
+        "blessures qu’il inflige sont reportées au premier round de",
+        "combat et comptent comme ayant été infligées durant le",
+        "corps à corps."
+      ],
+      "name": "Éclair Noir"
+    },
+    {
+      "roll": 6,
+      "range": "50cm, ligne de vue",
+      "text": [
+        "Un vortex tourbillonnant entoure les ennemis de la sorcière",
+        "et les entraîne dans le royaume infernal du Seigneur du",
+        "Meurtre.",
+        "Ce sort peut être lancé sur une unité ennemie en vue de la",
+        "Sorcière et n’étant pas engagée au corps à corps. L’unité",
+        "subit 4 attaques sans sauvegarde d’armure. Une unité",
+        "subissant des pertes à cause de l’Horreur Noire ne peut pas",
+        "être repoussée en conséquence : le vortex aspire ses",
+        "victimes sans qu’elles aient la moindre chance d’en",
+        "réchapper"
+      ],
+      "name": "Horreur Noire"
+    },
+    {
+      "roll": 4,
+      "range": "60cm, ligne de vue",
+      "text": [
+        "La sorcière invoque la malédiction de Khaine et inflige une",
+        "douleur insupportable à ses victimes.",
+        "Ce sort peut être lancé sur toute unité ennemie à portée et",
+        "dans la ligne de vue du Sorcier.",
+        "Ses effets durent jusqu’à la fin du tour suivant de l’ennemi.",
+        "Tant que le sort dure, sa cible ne peut pas charger ou éviter",
+        "par initiative. Elle considère toute unité ennemie comme",
+        "Terrifiante. Même les morts-vivants et les unités normalement",
+        "obligées de charger, avancer ou poursuivre sont affectés !",
+        ""
+      ],
+      "name": "Dominion"
+    },
+    {
+      "roll": 5,
+      "range": "Touching",
+      "text": [
+        "En appelant aux démons des abysses, la sorcière lacère l’âme",
+        "de ses victimes.",
+        "La Sorcière peut lancer ce sort si elle a rejoint une unité",
+        "engagée au corps à corps. Ce sort peut être lancé sur une",
+        "seule unité ennemie en contact avec l’unité que la Sorcière a",
+        "rejointe.",
+        "La cible subit trois attaques résolues normalement, contre",
+        "lesquelles aucune sauvegarde d’armure n’est autorisée : la",
+        "valeur d’Armure de la cible compte comme étant de 0. Les",
+        "blessures subies sont reportées au premier round de combat",
+        "et compteront comme ayant été infligées pendant le corps à",
+        "corps pour ce qui est de sa résolution."
+      ],
+      "name": "Soul Stealer"
+    }
+  ]
+}

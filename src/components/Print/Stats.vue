@@ -50,7 +50,7 @@ import { mapGetters } from 'vuex';
 import StatLine from '@/components/Print/StatLine';
 import store from '@/store';
 
-const MAGIC_ITEM_TYPES = ['Magic Standard', 'Magic Weapon', 'Device of Power'];
+const MAGIC_ITEM_TYPES = ['Magic Standard', 'Magic Weapon', 'Device of Power', 'Bannière Magique', 'Arme Magique', 'Objet Enchanté'];
 
 export default {
   name: 'Stats',
