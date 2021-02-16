@@ -21,14 +21,16 @@ export default {
   name: 'MagicItems',
   computed: {
     magicItems () {
-      return this.used ? Object.keys(magicItems.upgrades)
+      var magicItemsKey = magicItems[store.getters.version] ? store.getters.version : 'Warmaster';
+
+      return this.used ? Object.keys(magicItems[magicItemsKey].upgrades)
         .reduce((usedMagicItems, upgradeID) => {
           if (store.getters.upgrades[upgradeID].number > 0) {
             usedMagicItems[upgradeID] = Object.assign({}, store.getters.upgrades[upgradeID]);
           }
 
           return usedMagicItems;
-        }, {}) : magicItems.upgrades;
+        }, {}) : magicItems[magicItemsKey].upgrades;
     }
   },
   methods: {

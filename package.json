@@ -13,12 +13,12 @@
   },
   "scripts": {
     "build": "vue-cli-service build",
-    "prebuild": "node scripts/build-army-list-json.js",
+    "prebuild": "node scripts/build-src-json.js",
     "postbuild": "minify-json dist/json/",
     "deploy": "npm run build && gcloud app deploy --project=wm-selector --quiet",
     "lint": "vue-cli-service lint",
     "serve": "vue-cli-service serve",
-    "preserve": "node scripts/build-army-list-json.js",
+    "preserve": "node scripts/build-src-json.js",
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {

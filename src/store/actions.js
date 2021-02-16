@@ -345,7 +345,8 @@ function initializeState (context, response) {
       { abbr: 's', title: 'Stats' },
       { abbr: 'sl', title: 'Stats Used' }
     ],
-    upgradeConstraints = response.data.upgradeConstraints || [];
+    upgradeConstraints = response.data.upgradeConstraints || [],
+    magicItemsKey = magicItems[response.data.version] ? response.data.version : 'Warmaster';
 
   response.data.upgrades = response.data.upgrades || {};
 
@@ -371,9 +372,9 @@ function initializeState (context, response) {
   context.commit('SET_SPELLS', response.data.spells);
 
   if (response.data.magic) {
-    Object.assign(response.data.upgrades, magicItems.upgrades);
+    Object.assign(response.data.upgrades, magicItems[magicItemsKey].upgrades);
 
-    upgradeConstraints = upgradeConstraints.concat(magicItems.upgradeConstraints);
+    upgradeConstraints = upgradeConstraints.concat(magicItems[magicItemsKey].upgradeConstraints);
 
     printableItems.push({ abbr: 'mi', title: 'Magic Items' });
     printableItems.push({ abbr: 'miu', title: 'Magic Items Used' });
