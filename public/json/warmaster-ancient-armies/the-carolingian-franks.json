@@ -1,1 +1,150 @@
-{"specialRules":{"Shieldwall":{"order":1},"Skirmish":{"order":2},"Shock":{"order":3},"Charlemagne":{"order":4,"text":["Charlemagne has a Command value of 9. Charlemagne can re-roll one failed Command roll once during the battle. Take the Command test again – if successful, the order is issued and Charlemagne can continue giving futher orders if you wish. Note – this is Command 9 cobined with the standard 'Portent' rule."]}},"units":{"Spearmen":{"order":0,"type":"Infantry","attack":3,"hits":3,"armour":"6+","size":3,"points":50,"min":2,"specialRules":["Shieldwall"]},"Archers":{"order":1,"type":"Infantry","attack":"2/1","range":"30cm","hits":3,"size":3,"points":40,"max":2},"Skirmishers":{"order":2,"type":"Infantry","attack":"1/1","range":"15cm","hits":3,"size":3,"points":30,"max":1,"specialRules":["Skirmish"]},"Caballari":{"order":3,"type":"Cavalry","attack":3,"hits":3,"armour":"5+","size":3,"points":110,"min":2,"specialRules":["Shock"],"upgrades":["Guard Cavalry","Dismounted Cavalry"]},"Light Cavalry":{"order":4,"type":"Cavalry","attack":"2/1","range":"15cm","hits":3,"armour":"6+","size":3,"points":60,"max":1,"specialRules":["Skirmish"]},"General":{"order":5,"type":"General","attack":"+2","command":8,"size":1,"points":100,"armyMin":1,"armyMax":1,"upgrades":["Charlemagne"]},"Leader":{"order":6,"type":"Leader","attack":"+1","command":8,"size":1,"points":80,"max":2}},"upgrades":{"Guard Cavalry":{"order":0,"specialRules":["Shock"],"type":"Cavalry","attack":4,"hits":4,"armour":"5+","size":3,"points":"+20","armyMax":1},"Dismounted Cavalry":{"order":1,"specialRules":["Shieldwall"],"type":"Infantry","attack":3,"hits":3,"armour":"5+","size":3,"points":"-45"},"Charlemagne":{"order":2,"type":"General","attack":"+2","command":9,"size":1,"points":"+35","armyMax":1}},"name":"The Carolingian Franks","version":"Warmaster Ancient Armies","group":"The Dark Ages","order":3}
+{
+  "specialRules": {
+    "Shieldwall": {
+      "order": 1
+    },
+    "Skirmish": {
+      "order": 2
+    },
+    "Shock": {
+      "order": 3
+    },
+    "Charlemagne": {
+      "order": 4,
+      "text": [
+        "Charlemagne has a Command value of 9. Charlemagne can re-roll one failed Command roll once during the battle. Take the Command test again – if successful, the order is issued and Charlemagne can continue giving futher orders if you wish. Note – this is Command 9 cobined with the standard 'Portent' rule."
+      ]
+    }
+  },
+  "units": {
+    "Spearmen": {
+      "order": 0,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 50,
+      "min": 2,
+      "specialRules": [
+        "Shieldwall"
+      ]
+    },
+    "Archers": {
+      "order": 1,
+      "type": "Infantry",
+      "attack": "2/1",
+      "range": "30cm",
+      "hits": 3,
+      "size": 3,
+      "points": 40,
+      "max": 2
+    },
+    "Skirmishers": {
+      "order": 2,
+      "type": "Infantry",
+      "attack": "1/1",
+      "range": "15cm",
+      "hits": 3,
+      "size": 3,
+      "points": 30,
+      "max": 1,
+      "specialRules": [
+        "Skirmish"
+      ]
+    },
+    "Caballari": {
+      "order": 3,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 110,
+      "min": 2,
+      "specialRules": [
+        "Shock"
+      ],
+      "upgrades": [
+        "Guard Cavalry",
+        "Dismounted Cavalry"
+      ]
+    },
+    "Light Cavalry": {
+      "order": 4,
+      "type": "Cavalry",
+      "attack": "2/1",
+      "range": "15cm",
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 60,
+      "max": 1,
+      "specialRules": [
+        "Skirmish"
+      ]
+    },
+    "General": {
+      "order": 5,
+      "type": "General",
+      "attack": "+2",
+      "command": 8,
+      "size": 1,
+      "points": 100,
+      "armyMin": 1,
+      "armyMax": 1,
+      "upgrades": [
+        "Charlemagne"
+      ]
+    },
+    "Leader": {
+      "order": 6,
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 80,
+      "max": 2
+    }
+  },
+  "upgrades": {
+    "Guard Cavalry": {
+      "order": 0,
+      "specialRules": [
+        "Shock"
+      ],
+      "type": "Cavalry",
+      "attack": 4,
+      "hits": 4,
+      "armour": "5+",
+      "size": 3,
+      "points": "+20",
+      "armyMax": 1
+    },
+    "Dismounted Cavalry": {
+      "order": 1,
+      "specialRules": [
+        "Shieldwall"
+      ],
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": "-45"
+    },
+    "Charlemagne": {
+      "order": 2,
+      "type": "General",
+      "attack": "+2",
+      "command": 9,
+      "size": 1,
+      "points": "+35",
+      "armyMax": 1
+    }
+  },
+  "name": "The Carolingian Franks",
+  "version": "Warmaster Ancient Armies",
+  "group": "The Dark Ages",
+  "order": 3
+}

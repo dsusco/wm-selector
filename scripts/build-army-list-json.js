@@ -53,6 +53,6 @@ glob('public/json/**/*.json', (error, fileNames) => {
 
     Object.keys(json).forEach((version) => json[version] = json[version].filter((group) => group !== null));
 
-    return JSON.stringify(json);
+    return JSON.stringify(json, null, 2);
   }()));
 });

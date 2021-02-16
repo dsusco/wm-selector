@@ -1,1 +1,165 @@
-{"name":"Carthaginian","version":"Warmaster Ancients","group":"The Rise of Rome","order":2,"units":{"Veterans":{"type":"Infantry","attack":3,"hits":3,"armour":"5+","size":3,"max":2,"points":60,"order":0},"Infantry":{"type":"Infantry","attack":3,"hits":3,"armour":"6+","size":3,"min":2,"max":8,"points":45,"order":1},"Gallic Allies":{"type":"Infantry","attack":3,"hits":3,"size":3,"points":25,"specialRules":["Warband","Unreliable"],"order":2},"Skirmishers":{"type":"Infantry","attack":1,"range":15,"hits":3,"size":3,"min":2,"max":8,"points":30,"specialRules":["Skirmish"],"order":3},"Heavy Cavalry":{"type":"Cavalry","attack":3,"hits":3,"armour":"5+","size":3,"max":2,"points":110,"specialRules":["Shock"],"order":4},"Light Cavalry":{"type":"Cavalry","attack":2,"range":15,"hits":3,"armour":"6+","size":3,"max":4,"points":60,"specialRules":["Skirmish"],"order":5},"Numidians":{"type":"Cavalry","attack":1,"range":15,"hits":3,"size":3,"min":2,"max":8,"points":40,"specialRules":["Skirmish"],"order":6},"Elephant":{"type":"Elephant","attack":4,"range":15,"hits":3,"armour":"5+","size":3,"max":1,"points":150,"specialRules":["Elephants"],"order":7},"General":{"type":"General","attack":"+2","command":9,"size":1,"armyMin":1,"armyMax":1,"points":125,"upgrades":["Hannibal"],"order":8},"Leader":{"type":"Leader","attack":"+1","command":8,"size":1,"max":2,"points":80,"order":9}},"upgrades":{"Hannibal":{"type":"General","attack":"+2","command":"9/10","armyMax":1,"points":"+25","order":0}},"specialRules":{"Warband":{"order":1},"Unreliable":{"order":2},"Skirmish":{"order":3},"Shock":{"order":4},"Elephants":{"order":5},"Hannibal":{"text":["Upgrade General to Hannibal. Hannibal's Command value is 10 but falls to 9 if the General rolls either 11 or 12 when giving an order."],"order":6}}}
+{
+  "name": "Carthaginian",
+  "version": "Warmaster Ancients",
+  "group": "The Rise of Rome",
+  "order": 2,
+  "units": {
+    "Veterans": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "max": 2,
+      "points": 60,
+      "order": 0
+    },
+    "Infantry": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "min": 2,
+      "max": 8,
+      "points": 45,
+      "order": 1
+    },
+    "Gallic Allies": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "points": 25,
+      "specialRules": [
+        "Warband",
+        "Unreliable"
+      ],
+      "order": 2
+    },
+    "Skirmishers": {
+      "type": "Infantry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "min": 2,
+      "max": 8,
+      "points": 30,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "order": 3
+    },
+    "Heavy Cavalry": {
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "max": 2,
+      "points": 110,
+      "specialRules": [
+        "Shock"
+      ],
+      "order": 4
+    },
+    "Light Cavalry": {
+      "type": "Cavalry",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "max": 4,
+      "points": 60,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "order": 5
+    },
+    "Numidians": {
+      "type": "Cavalry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "min": 2,
+      "max": 8,
+      "points": 40,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "order": 6
+    },
+    "Elephant": {
+      "type": "Elephant",
+      "attack": 4,
+      "range": 15,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "max": 1,
+      "points": 150,
+      "specialRules": [
+        "Elephants"
+      ],
+      "order": 7
+    },
+    "General": {
+      "type": "General",
+      "attack": "+2",
+      "command": 9,
+      "size": 1,
+      "armyMin": 1,
+      "armyMax": 1,
+      "points": 125,
+      "upgrades": [
+        "Hannibal"
+      ],
+      "order": 8
+    },
+    "Leader": {
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "max": 2,
+      "points": 80,
+      "order": 9
+    }
+  },
+  "upgrades": {
+    "Hannibal": {
+      "type": "General",
+      "attack": "+2",
+      "command": "9/10",
+      "armyMax": 1,
+      "points": "+25",
+      "order": 0
+    }
+  },
+  "specialRules": {
+    "Warband": {
+      "order": 1
+    },
+    "Unreliable": {
+      "order": 2
+    },
+    "Skirmish": {
+      "order": 3
+    },
+    "Shock": {
+      "order": 4
+    },
+    "Elephants": {
+      "order": 5
+    },
+    "Hannibal": {
+      "text": [
+        "Upgrade General to Hannibal. Hannibal's Command value is 10 but falls to 9 if the General rolls either 11 or 12 when giving an order."
+      ],
+      "order": 6
+    }
+  }
+}

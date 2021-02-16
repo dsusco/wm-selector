@@ -1,1 +1,159 @@
-{"specialRules":{"Warband":{"order":1},"Unreliable":{"order":2},"Skirmish":{"order":3},"Shock":{"order":4},"Arthur":{"order":5,"text":["The General represents an heroic warlord such as Arthur or Ambrosius Aurelianus. If the army is led by an 'Arthur' then a further +1 is added to the result of all combat engagements where either the General or any Leader are included in the engagement. Note that this bonus adds to the total result for the engagement in the same way as, for example, a single supporting stand."]}},"units":{"Spearmen":{"order":0,"type":"Infantry","attack":3,"hits":3,"size":3,"points":35,"min":4,"upgrades":["Armoured Spearmen"]},"Archers":{"order":1,"type":"Infantry","attack":"2/1","range":"30cm","hits":3,"size":3,"points":40,"max":1},"Saxons":{"order":2,"type":"Infantry","attack":3,"hits":3,"armour":"6+","size":3,"points":35,"max":4,"specialRules":["Warband","Unreliable"]},"Skirmishers":{"order":3,"type":"Infantry","attack":"1/1","range":"15cm","hits":3,"size":3,"points":30,"max":2,"specialRules":["Skirmish"]},"Cavalry":{"order":4,"type":"Cavalry","attack":3,"hits":3,"armour":"5+","size":3,"points":80,"min":2,"max":4,"upgrades":["Shock Cavalry"]},"Mounted Skirmishers":{"order":5,"type":"Cavalry","attack":"1/1","range":"15cm","hits":3,"size":3,"points":40,"max":2,"specialRules":["Skirmish"]},"General":{"order":6,"type":"General","attack":"+2","size":1,"points":125,"armyMin":1,"armyMax":1,"command":9,"upgrades":["Arthur"]},"Leader":{"order":7,"type":"Leader","attack":"+1","size":1,"points":80,"max":2,"command":8}},"upgrades":{"Shock Cavalry":{"order":0,"type":"Cavalry","attack":3,"hits":3,"armour":"5+","size":3,"points":"+30","specialRules":["Shock"]},"Armoured Spearmen":{"order":1,"type":"Infantry","attack":3,"hits":3,"armour":"6+","size":3,"points":"+10","max":4},"Arthur":{"order":2,"type":"General","attack":"+3","command":9,"size":1,"points":"+20","armyMax":1}},"name":"Arthurian British","version":"Warmaster Ancient Armies","group":"The Dark Ages","order":1}
+{
+  "specialRules": {
+    "Warband": {
+      "order": 1
+    },
+    "Unreliable": {
+      "order": 2
+    },
+    "Skirmish": {
+      "order": 3
+    },
+    "Shock": {
+      "order": 4
+    },
+    "Arthur": {
+      "order": 5,
+      "text": [
+        "The General represents an heroic warlord such as Arthur or Ambrosius Aurelianus. If the army is led by an 'Arthur' then a further +1 is added to the result of all combat engagements where either the General or any Leader are included in the engagement. Note that this bonus adds to the total result for the engagement in the same way as, for example, a single supporting stand."
+      ]
+    }
+  },
+  "units": {
+    "Spearmen": {
+      "order": 0,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "points": 35,
+      "min": 4,
+      "upgrades": [
+        "Armoured Spearmen"
+      ]
+    },
+    "Archers": {
+      "order": 1,
+      "type": "Infantry",
+      "attack": "2/1",
+      "range": "30cm",
+      "hits": 3,
+      "size": 3,
+      "points": 40,
+      "max": 1
+    },
+    "Saxons": {
+      "order": 2,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 35,
+      "max": 4,
+      "specialRules": [
+        "Warband",
+        "Unreliable"
+      ]
+    },
+    "Skirmishers": {
+      "order": 3,
+      "type": "Infantry",
+      "attack": "1/1",
+      "range": "15cm",
+      "hits": 3,
+      "size": 3,
+      "points": 30,
+      "max": 2,
+      "specialRules": [
+        "Skirmish"
+      ]
+    },
+    "Cavalry": {
+      "order": 4,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 80,
+      "min": 2,
+      "max": 4,
+      "upgrades": [
+        "Shock Cavalry"
+      ]
+    },
+    "Mounted Skirmishers": {
+      "order": 5,
+      "type": "Cavalry",
+      "attack": "1/1",
+      "range": "15cm",
+      "hits": 3,
+      "size": 3,
+      "points": 40,
+      "max": 2,
+      "specialRules": [
+        "Skirmish"
+      ]
+    },
+    "General": {
+      "order": 6,
+      "type": "General",
+      "attack": "+2",
+      "size": 1,
+      "points": 125,
+      "armyMin": 1,
+      "armyMax": 1,
+      "command": 9,
+      "upgrades": [
+        "Arthur"
+      ]
+    },
+    "Leader": {
+      "order": 7,
+      "type": "Leader",
+      "attack": "+1",
+      "size": 1,
+      "points": 80,
+      "max": 2,
+      "command": 8
+    }
+  },
+  "upgrades": {
+    "Shock Cavalry": {
+      "order": 0,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": "+30",
+      "specialRules": [
+        "Shock"
+      ]
+    },
+    "Armoured Spearmen": {
+      "order": 1,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": "+10",
+      "max": 4
+    },
+    "Arthur": {
+      "order": 2,
+      "type": "General",
+      "attack": "+3",
+      "command": 9,
+      "size": 1,
+      "points": "+20",
+      "armyMax": 1
+    }
+  },
+  "name": "Arthurian British",
+  "version": "Warmaster Ancient Armies",
+  "group": "The Dark Ages",
+  "order": 1
+}

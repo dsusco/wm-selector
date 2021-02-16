@@ -1,1 +1,150 @@
-{"specialRules":{"Skirmish":{"order":1},"Shock":{"order":2},"Warband":{"order":3},"Encampment":{"order":4},"Portents":{"order":5}},"units":{"Archers":{"order":0,"attack":"2/1","range":"30cm","hits":3,"size":3,"points":40,"max":4,"type":"Infantry"},"Skirmishers":{"order":1,"attack":"1.1","range":"15cm","hits":3,"size":3,"points":30,"max":4,"specialRules":["Skirmish"],"type":"Infantry"},"Light Cavalry":{"order":2,"attack":"2/1","range":"15cm","hits":3,"armour":"6+","size":3,"points":60,"max":4,"specialRules":["Skirmish"],"type":"Cavalry","upgrades":["Gardingi"]},"Warband":{"order":3,"type":"Infantry","attack":3,"hits":3,"armour":"6+","size":3,"points":45,"min":8},"Warband Cavalry":{"order":4,"type":"Cavalry","attack":3,"hits":3,"armour":"5+","size":3,"points":110,"max":4,"min":1,"specialRules":["Shock","Warband"]},"Encampment":{"order":5,"type":"Infantry","points":50,"armyMax":1,"upgrades":["Womenfolk"]},"General":{"order":7,"attack":"+2","command":8,"size":1,"points":100,"armyMin":1,"armyMax":1,"upgrades":["Portents"],"type":"General"},"Chieftain":{"order":8,"attack":"+1","command":7,"size":1,"points":30,"max":4,"type":"Subordinate"}},"upgrades":{"Gardingi":{"order":1,"type":"Cavalry","attack":3,"hits":3,"armour":"6+","points":"+10"},"Womenfolk":{"order":2,"type":"Infantry","attack":2,"hits":4,"size":3,"points":"+0","requiredUnits":["Encampment"],"armyMax":1},"Portents":{"order":1,"type":"Special","attack":"+0","points":"+10","armyMax":1}},"name":"Visigoths (Early Visigoths)","version":"Warmaster Ancient Armies","group":"The Dark Ages","order":10}
+{
+  "specialRules": {
+    "Skirmish": {
+      "order": 1
+    },
+    "Shock": {
+      "order": 2
+    },
+    "Warband": {
+      "order": 3
+    },
+    "Encampment": {
+      "order": 4
+    },
+    "Portents": {
+      "order": 5
+    }
+  },
+  "units": {
+    "Archers": {
+      "order": 0,
+      "attack": "2/1",
+      "range": "30cm",
+      "hits": 3,
+      "size": 3,
+      "points": 40,
+      "max": 4,
+      "type": "Infantry"
+    },
+    "Skirmishers": {
+      "order": 1,
+      "attack": "1.1",
+      "range": "15cm",
+      "hits": 3,
+      "size": 3,
+      "points": 30,
+      "max": 4,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "type": "Infantry"
+    },
+    "Light Cavalry": {
+      "order": 2,
+      "attack": "2/1",
+      "range": "15cm",
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 60,
+      "max": 4,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "type": "Cavalry",
+      "upgrades": [
+        "Gardingi"
+      ]
+    },
+    "Warband": {
+      "order": 3,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 45,
+      "min": 8
+    },
+    "Warband Cavalry": {
+      "order": 4,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 110,
+      "max": 4,
+      "min": 1,
+      "specialRules": [
+        "Shock",
+        "Warband"
+      ]
+    },
+    "Encampment": {
+      "order": 5,
+      "type": "Infantry",
+      "points": 50,
+      "armyMax": 1,
+      "upgrades": [
+        "Womenfolk"
+      ]
+    },
+    "General": {
+      "order": 7,
+      "attack": "+2",
+      "command": 8,
+      "size": 1,
+      "points": 100,
+      "armyMin": 1,
+      "armyMax": 1,
+      "upgrades": [
+        "Portents"
+      ],
+      "type": "General"
+    },
+    "Chieftain": {
+      "order": 8,
+      "attack": "+1",
+      "command": 7,
+      "size": 1,
+      "points": 30,
+      "max": 4,
+      "type": "Subordinate"
+    }
+  },
+  "upgrades": {
+    "Gardingi": {
+      "order": 1,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "points": "+10"
+    },
+    "Womenfolk": {
+      "order": 2,
+      "type": "Infantry",
+      "attack": 2,
+      "hits": 4,
+      "size": 3,
+      "points": "+0",
+      "requiredUnits": [
+        "Encampment"
+      ],
+      "armyMax": 1
+    },
+    "Portents": {
+      "order": 1,
+      "type": "Special",
+      "attack": "+0",
+      "points": "+10",
+      "armyMax": 1
+    }
+  },
+  "name": "Visigoths (Early Visigoths)",
+  "version": "Warmaster Ancient Armies",
+  "group": "The Dark Ages",
+  "order": 10
+}

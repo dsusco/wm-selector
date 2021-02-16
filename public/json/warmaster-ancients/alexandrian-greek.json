@@ -1,1 +1,183 @@
-{"name":"Alexandrian Greek","version":"Warmaster Ancients","group":"Ancient Greece and the East","order":2,"units":{"Guard Phalanx":{"type":"Infantry","attack":3,"hits":3,"armour":"5+","size":3,"max":1,"points":70,"specialRules":["Phalanx"],"order":0},"Phalanx":{"type":"Infantry","attack":3,"hits":3,"armour":"6+","size":3,"min":4,"points":60,"specialRules":["Phalanx"],"order":1},"Greek Hoplite":{"type":"Infantry","attack":3,"hits":3,"armour":"5+","size":3,"points":50,"specialRules":["Unreliable"],"order":2},"Light Infantry":{"type":"Infantry","attack":2,"range":15,"hits":3,"size":3,"max":4,"points":40,"specialRules":["Skirmish"],"order":3},"Archers":{"type":"Infantry","attack":2,"range":30,"hits":3,"size":3,"max":2,"points":40,"order":4},"Skirmishers":{"type":"Infantry","attack":1,"range":15,"hits":3,"size":3,"max":4,"points":30,"specialRules":["Skirmish"],"order":5},"Cavalry":{"type":"Cavalry","attack":3,"hits":3,"armour":"5+","size":3,"min":1,"max":2,"points":110,"specialRules":["Shock"],"upgrades":["Companions"],"order":6},"Mounted Skirmishers":{"type":"Cavalry","attack":1,"range":15,"hits":3,"size":3,"max":2,"points":40,"specialRules":["Skirmish"],"order":7},"General":{"type":"General","attack":"+2","command":9,"size":1,"armyMin":1,"armyMax":1,"points":125,"upgrades":["Alexander"],"order":8},"Leader":{"type":"Leader","attack":"+1","command":8,"size":1,"max":2,"points":80,"order":9}},"upgrades":{"Alexander":{"type":"General","attack":"+2","command":9,"armyMax":1,"points":"+25","order":0},"Companions":{"type":"Cavalry","attack":4,"hits":3,"armour":"5+","size":3,"max":1,"points":"+10","specialRules":["Shock"],"order":1}},"specialRules":{"Phalanx":{"order":1},"Unreliable":{"order":2},"Skirmish":{"order":3},"Shock":{"order":4},"Alexander":{"text":["Upgrade to play General as Alexander. If Alexander joins a unit it causes *terror* in the enemy."],"order":5},"Companions":{"text":["Upgrade one unit of Cavalry to Companion Cavalry&mdash;the best of the Macedonian cavalry&mdash;itself the best of the army. Companions have stats as shown. Only one unit can be upgraded to Companions regardless of the size of the army."],"order":6}}}
+{
+  "name": "Alexandrian Greek",
+  "version": "Warmaster Ancients",
+  "group": "Ancient Greece and the East",
+  "order": 2,
+  "units": {
+    "Guard Phalanx": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "max": 1,
+      "points": 70,
+      "specialRules": [
+        "Phalanx"
+      ],
+      "order": 0
+    },
+    "Phalanx": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "min": 4,
+      "points": 60,
+      "specialRules": [
+        "Phalanx"
+      ],
+      "order": 1
+    },
+    "Greek Hoplite": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 50,
+      "specialRules": [
+        "Unreliable"
+      ],
+      "order": 2
+    },
+    "Light Infantry": {
+      "type": "Infantry",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "max": 4,
+      "points": 40,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "order": 3
+    },
+    "Archers": {
+      "type": "Infantry",
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "max": 2,
+      "points": 40,
+      "order": 4
+    },
+    "Skirmishers": {
+      "type": "Infantry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "max": 4,
+      "points": 30,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "order": 5
+    },
+    "Cavalry": {
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "min": 1,
+      "max": 2,
+      "points": 110,
+      "specialRules": [
+        "Shock"
+      ],
+      "upgrades": [
+        "Companions"
+      ],
+      "order": 6
+    },
+    "Mounted Skirmishers": {
+      "type": "Cavalry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "max": 2,
+      "points": 40,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "order": 7
+    },
+    "General": {
+      "type": "General",
+      "attack": "+2",
+      "command": 9,
+      "size": 1,
+      "armyMin": 1,
+      "armyMax": 1,
+      "points": 125,
+      "upgrades": [
+        "Alexander"
+      ],
+      "order": 8
+    },
+    "Leader": {
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "max": 2,
+      "points": 80,
+      "order": 9
+    }
+  },
+  "upgrades": {
+    "Alexander": {
+      "type": "General",
+      "attack": "+2",
+      "command": 9,
+      "armyMax": 1,
+      "points": "+25",
+      "order": 0
+    },
+    "Companions": {
+      "type": "Cavalry",
+      "attack": 4,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "max": 1,
+      "points": "+10",
+      "specialRules": [
+        "Shock"
+      ],
+      "order": 1
+    }
+  },
+  "specialRules": {
+    "Phalanx": {
+      "order": 1
+    },
+    "Unreliable": {
+      "order": 2
+    },
+    "Skirmish": {
+      "order": 3
+    },
+    "Shock": {
+      "order": 4
+    },
+    "Alexander": {
+      "text": [
+        "Upgrade to play General as Alexander. If Alexander joins a unit it causes *terror* in the enemy."
+      ],
+      "order": 5
+    },
+    "Companions": {
+      "text": [
+        "Upgrade one unit of Cavalry to Companion Cavalry&mdash;the best of the Macedonian cavalry&mdash;itself the best of the army. Companions have stats as shown. Only one unit can be upgraded to Companions regardless of the size of the army."
+      ],
+      "order": 6
+    }
+  }
+}

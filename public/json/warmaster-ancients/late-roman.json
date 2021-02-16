@@ -1,1 +1,156 @@
-{"name":"Late Roman","version":"Warmaster Ancients","group":"The Dark Ages","order":1,"units":{"Veterans":{"type":"Infantry","attack":4,"hits":3,"armour":"5+","size":3,"max":1,"points":70,"order":0},"Spearmen":{"type":"Infantry","attack":3,"hits":3,"armour":"5+","size":3,"min":4,"points":60,"order":1},"Archers":{"type":"Infantry","attack":2,"range":30,"hits":3,"size":3,"max":4,"points":40,"order":2},"Militia":{"type":"Infantry","attack":3,"hits":3,"armour":"6+","size":3,"max":4,"points":45,"specialRules":["Warband"],"order":3},"Skirmishers":{"type":"Infantry","attack":1,"range":15,"hits":3,"size":3,"max":4,"points":30,"specialRules":["Skirmish"],"order":4},"Cataphracts":{"type":"Cavalry","attack":3,"hits":3,"armour":"4+","size":3,"max":4,"points":125,"specialRules":["Shock","Slow"],"order":5},"Heavy Cavalry":{"type":"Cavalry","attack":3,"hits":3,"armour":"5+","size":3,"min":1,"max":4,"points":110,"specialRules":["Shock","Slow"],"order":6},"Mounted Skirmishers":{"type":"Cavalry","attack":1,"range":15,"hits":3,"size":3,"max":2,"points":40,"specialRules":["Skirmish"],"order":7},"General":{"type":"General","attack":"+2","command":9,"size":1,"armyMin":1,"armyMax":1,"points":125,"upgrades":["Portents"],"order":8},"Leader":{"type":"Leader","attack":"+1","command":8,"size":1,"max":2,"points":80,"order":9}},"upgrades":{"Portents":{"type":"Special","armyMax":1,"points":"+10","order":0}},"specialRules":{"Warband":{"order":1},"Skirmish":{"order":2},"Shock":{"order":3},"Slow":{"order":4},"Portents":{"text":["The General can take the portents before the battle. This allows the Genral to re-roll one failed Command roll once during the battle. Take the Command test again—if successful the order is issued and the General can continue giving further orders if you wish."],"order":5}}}
+{
+  "name": "Late Roman",
+  "version": "Warmaster Ancients",
+  "group": "The Dark Ages",
+  "order": 1,
+  "units": {
+    "Veterans": {
+      "type": "Infantry",
+      "attack": 4,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "max": 1,
+      "points": 70,
+      "order": 0
+    },
+    "Spearmen": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "min": 4,
+      "points": 60,
+      "order": 1
+    },
+    "Archers": {
+      "type": "Infantry",
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "max": 4,
+      "points": 40,
+      "order": 2
+    },
+    "Militia": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "max": 4,
+      "points": 45,
+      "specialRules": [
+        "Warband"
+      ],
+      "order": 3
+    },
+    "Skirmishers": {
+      "type": "Infantry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "max": 4,
+      "points": 30,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "order": 4
+    },
+    "Cataphracts": {
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "4+",
+      "size": 3,
+      "max": 4,
+      "points": 125,
+      "specialRules": [
+        "Shock",
+        "Slow"
+      ],
+      "order": 5
+    },
+    "Heavy Cavalry": {
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "min": 1,
+      "max": 4,
+      "points": 110,
+      "specialRules": [
+        "Shock",
+        "Slow"
+      ],
+      "order": 6
+    },
+    "Mounted Skirmishers": {
+      "type": "Cavalry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "max": 2,
+      "points": 40,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "order": 7
+    },
+    "General": {
+      "type": "General",
+      "attack": "+2",
+      "command": 9,
+      "size": 1,
+      "armyMin": 1,
+      "armyMax": 1,
+      "points": 125,
+      "upgrades": [
+        "Portents"
+      ],
+      "order": 8
+    },
+    "Leader": {
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "max": 2,
+      "points": 80,
+      "order": 9
+    }
+  },
+  "upgrades": {
+    "Portents": {
+      "type": "Special",
+      "armyMax": 1,
+      "points": "+10",
+      "order": 0
+    }
+  },
+  "specialRules": {
+    "Warband": {
+      "order": 1
+    },
+    "Skirmish": {
+      "order": 2
+    },
+    "Shock": {
+      "order": 3
+    },
+    "Slow": {
+      "order": 4
+    },
+    "Portents": {
+      "text": [
+        "The General can take the portents before the battle. This allows the Genral to re-roll one failed Command roll once during the battle. Take the Command test again—if successful the order is issued and the General can continue giving further orders if you wish."
+      ],
+      "order": 5
+    }
+  }
+}

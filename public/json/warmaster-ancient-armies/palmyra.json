@@ -1,1 +1,172 @@
-{"specialRules":{"Shock":{"order":1},"Slow":{"order":2},"Skirmish":{"order":3},"Camels":{"order":4},"Odenathus":{"order":5,"text":["The General can be upgrades to represent Odenathus. Odenathus has a standard Command value of 8, but counts as having a value of 9 for the first order he issues each turn. This bonus apples each turn but only to Odenathus' first order – subsequent orders are issued with a Command value of 8."]}},"units":{"Cataphracts":{"order":0,"type":"Cavalry","attack":3,"hits":3,"armour":"4+","size":3,"points":125,"min":3,"specialRules":["Shock","Slow"],"upgrades":["Guard Cavalry"]},"Light Cavalry":{"order":1,"type":"Cavalry","attack":"2/1","hits":3,"armour":"6+","size":3,"points":60,"max":4,"range":"15cm","specialRules":["Skirmish"]},"Mounted Skirmishers":{"order":2,"type":"Cavalry","attack":"1/1","range":"15cm","hits":3,"size":3,"points":40,"specialRules":["Skirmish"]},"Arab Camels":{"order":3,"type":"Cavalry","attack":"1/1","range":"15cm","hits":3,"armour":"6+","size":3,"points":60,"max":1,"specialRules":["Skirmish","Camels"]},"Infantry":{"order":4,"type":"Infantry","attack":3,"hits":3,"size":3,"points":45,"armour":"6+"},"Legionaries":{"order":5,"type":"Infantry","attack":3,"hits":3,"armour":"5+","size":3,"points":60,"max":4},"Archers":{"order":6,"type":"Infantry","attack":"2/1","range":"30cm","hits":3,"size":3,"points":40,"max":4,"min":2},"Skirmishers":{"order":7,"type":"Infantry","attack":"1/1","range":"15cm","hits":3,"size":3,"points":30,"specialRules":["Skirmish"],"max":4},"General":{"order":8,"type":"General","attack":"+2","size":1,"points":100,"armyMin":1,"armyMax":1,"upgrades":["Odenathus"],"command":8},"Leader":{"order":9,"type":"Leader","attack":"+1","command":8,"size":1,"points":80,"max":2}},"upgrades":{"Guard Cavalry":{"order":0,"type":"Cavalry","attack":4,"hits":3,"armour":"4+","size":3,"points":"+10","armyMax":1},"Odenathus":{"order":1,"type":"General","attack":"+2","command":"8/9","size":1,"points":"+15","armyMax":1}},"version":"Warmaster Ancient Armies","group":"The Rise of Rome","order":10,"name":"Palmyra"}
+{
+  "specialRules": {
+    "Shock": {
+      "order": 1
+    },
+    "Slow": {
+      "order": 2
+    },
+    "Skirmish": {
+      "order": 3
+    },
+    "Camels": {
+      "order": 4
+    },
+    "Odenathus": {
+      "order": 5,
+      "text": [
+        "The General can be upgrades to represent Odenathus. Odenathus has a standard Command value of 8, but counts as having a value of 9 for the first order he issues each turn. This bonus apples each turn but only to Odenathus' first order – subsequent orders are issued with a Command value of 8."
+      ]
+    }
+  },
+  "units": {
+    "Cataphracts": {
+      "order": 0,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "4+",
+      "size": 3,
+      "points": 125,
+      "min": 3,
+      "specialRules": [
+        "Shock",
+        "Slow"
+      ],
+      "upgrades": [
+        "Guard Cavalry"
+      ]
+    },
+    "Light Cavalry": {
+      "order": 1,
+      "type": "Cavalry",
+      "attack": "2/1",
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 60,
+      "max": 4,
+      "range": "15cm",
+      "specialRules": [
+        "Skirmish"
+      ]
+    },
+    "Mounted Skirmishers": {
+      "order": 2,
+      "type": "Cavalry",
+      "attack": "1/1",
+      "range": "15cm",
+      "hits": 3,
+      "size": 3,
+      "points": 40,
+      "specialRules": [
+        "Skirmish"
+      ]
+    },
+    "Arab Camels": {
+      "order": 3,
+      "type": "Cavalry",
+      "attack": "1/1",
+      "range": "15cm",
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 60,
+      "max": 1,
+      "specialRules": [
+        "Skirmish",
+        "Camels"
+      ]
+    },
+    "Infantry": {
+      "order": 4,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "points": 45,
+      "armour": "6+"
+    },
+    "Legionaries": {
+      "order": 5,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 60,
+      "max": 4
+    },
+    "Archers": {
+      "order": 6,
+      "type": "Infantry",
+      "attack": "2/1",
+      "range": "30cm",
+      "hits": 3,
+      "size": 3,
+      "points": 40,
+      "max": 4,
+      "min": 2
+    },
+    "Skirmishers": {
+      "order": 7,
+      "type": "Infantry",
+      "attack": "1/1",
+      "range": "15cm",
+      "hits": 3,
+      "size": 3,
+      "points": 30,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "max": 4
+    },
+    "General": {
+      "order": 8,
+      "type": "General",
+      "attack": "+2",
+      "size": 1,
+      "points": 100,
+      "armyMin": 1,
+      "armyMax": 1,
+      "upgrades": [
+        "Odenathus"
+      ],
+      "command": 8
+    },
+    "Leader": {
+      "order": 9,
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 80,
+      "max": 2
+    }
+  },
+  "upgrades": {
+    "Guard Cavalry": {
+      "order": 0,
+      "type": "Cavalry",
+      "attack": 4,
+      "hits": 3,
+      "armour": "4+",
+      "size": 3,
+      "points": "+10",
+      "armyMax": 1
+    },
+    "Odenathus": {
+      "order": 1,
+      "type": "General",
+      "attack": "+2",
+      "command": "8/9",
+      "size": 1,
+      "points": "+15",
+      "armyMax": 1
+    }
+  },
+  "version": "Warmaster Ancient Armies",
+  "group": "The Rise of Rome",
+  "order": 10,
+  "name": "Palmyra"
+}

@@ -14,6 +14,7 @@
   "scripts": {
     "build": "vue-cli-service build",
     "prebuild": "node scripts/build-army-list-json.js",
+    "postbuild": "minify-json dist/json/",
     "deploy": "npm run build && gcloud app deploy --project=wm-selector --quiet",
     "lint": "vue-cli-service lint",
     "serve": "vue-cli-service serve",
@@ -48,6 +49,7 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^6.2.2",
+    "minify-json": "^1.0.0",
     "node-sass": "^4.12.0",
     "sass-loader": "^8.0.2",
     "vue-template-compiler": "^2.6.11"

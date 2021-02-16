@@ -1,1 +1,162 @@
-{"name":"Egyptian","version":"Warmaster Ancients","group":"Chariot Era","order":0,"units":{"Infantry":{"type":"Infantry","attack":3,"hits":3,"size":3,"min":2,"points":35,"order":0},"Archers":{"type":"Infantry","attack":2,"range":30,"hits":3,"size":3,"min":4,"points":40,"order":1},"Marines":{"type":"Infantry","attack":4,"range":15,"hits":3,"size":3,"max":1,"points":50,"order":2},"Mercenaries":{"type":"Infantry","attack":3,"hits":3,"size":3,"max":4,"points":25,"specialRules":["Warband","Unreliable"],"order":3},"Skirmishers":{"type":"Infantry","attack":1,"range":15,"hits":3,"size":3,"max":4,"points":20,"specialRules":["Warband","Unreliable","Skirmish"],"order":4},"Chariot Runners":{"type":"Infantry","attack":2,"range":15,"hits":3,"size":3,"max":2,"points":40,"specialRules":["Skirmish","Chariot Runners"],"order":5},"Chariots":{"type":"Chariot","attack":2,"range":15,"hits":3,"armour":"6+","size":3,"min":1,"points":80,"specialRules":["Skirmish"],"order":6},"General":{"type":"General","attack":"+2","command":9,"size":1,"armyMin":1,"armyMax":1,"points":125,"upgrades":["Chariot","Rameses"],"order":7},"Leader":{"type":"Leader","attack":"+1","command":8,"size":1,"max":2,"points":80,"upgrades":["Chariot"],"order":8}},"upgrades":{"Chariot":{"type":"Mount","attack":"+1","max":2,"points":"+10","order":0},"Rameses":{"type":"Special","attack":"+2","command":9,"armyMax":1,"points":"+10","order":1}},"specialRules":{"Warband":{"order":1},"Unreliable":{"order":2},"Skirmish":{"order":3},"Chariot Runners":{"order":4},"Chariot":{"text":["Upgrade Chariot Mount for Command stands."],"order":5},"Rameses":{"text":["Upgrade General to Rameses. If the General is Rameses, ignore the -1 Command penalty for unreliable troops when Rameses is within 20cm if the unit."],"order":6}}}
+{
+  "name": "Egyptian",
+  "version": "Warmaster Ancients",
+  "group": "Chariot Era",
+  "order": 0,
+  "units": {
+    "Infantry": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "min": 2,
+      "points": 35,
+      "order": 0
+    },
+    "Archers": {
+      "type": "Infantry",
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "min": 4,
+      "points": 40,
+      "order": 1
+    },
+    "Marines": {
+      "type": "Infantry",
+      "attack": 4,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "max": 1,
+      "points": 50,
+      "order": 2
+    },
+    "Mercenaries": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "max": 4,
+      "points": 25,
+      "specialRules": [
+        "Warband",
+        "Unreliable"
+      ],
+      "order": 3
+    },
+    "Skirmishers": {
+      "type": "Infantry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "max": 4,
+      "points": 20,
+      "specialRules": [
+        "Warband",
+        "Unreliable",
+        "Skirmish"
+      ],
+      "order": 4
+    },
+    "Chariot Runners": {
+      "type": "Infantry",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "max": 2,
+      "points": 40,
+      "specialRules": [
+        "Skirmish",
+        "Chariot Runners"
+      ],
+      "order": 5
+    },
+    "Chariots": {
+      "type": "Chariot",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "min": 1,
+      "points": 80,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "order": 6
+    },
+    "General": {
+      "type": "General",
+      "attack": "+2",
+      "command": 9,
+      "size": 1,
+      "armyMin": 1,
+      "armyMax": 1,
+      "points": 125,
+      "upgrades": [
+        "Chariot",
+        "Rameses"
+      ],
+      "order": 7
+    },
+    "Leader": {
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "max": 2,
+      "points": 80,
+      "upgrades": [
+        "Chariot"
+      ],
+      "order": 8
+    }
+  },
+  "upgrades": {
+    "Chariot": {
+      "type": "Mount",
+      "attack": "+1",
+      "max": 2,
+      "points": "+10",
+      "order": 0
+    },
+    "Rameses": {
+      "type": "Special",
+      "attack": "+2",
+      "command": 9,
+      "armyMax": 1,
+      "points": "+10",
+      "order": 1
+    }
+  },
+  "specialRules": {
+    "Warband": {
+      "order": 1
+    },
+    "Unreliable": {
+      "order": 2
+    },
+    "Skirmish": {
+      "order": 3
+    },
+    "Chariot Runners": {
+      "order": 4
+    },
+    "Chariot": {
+      "text": [
+        "Upgrade Chariot Mount for Command stands."
+      ],
+      "order": 5
+    },
+    "Rameses": {
+      "text": [
+        "Upgrade General to Rameses. If the General is Rameses, ignore the -1 Command penalty for unreliable troops when Rameses is within 20cm if the unit."
+      ],
+      "order": 6
+    }
+  }
+}

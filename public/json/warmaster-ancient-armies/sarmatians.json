@@ -1,1 +1,156 @@
-{"specialRules":{"Shock":{"order":1},"Warband":{"order":2},"Skirmish":{"order":3},"Unreliable":{"order":4},"Slow":{"order":5},"Portents":{"order":6}},"units":{"Heavy Cavalry":{"order":0,"type":"Cavalry","attack":"3/1","range":"15cm","hits":3,"armour":"5+","size":3,"points":115,"min":4,"specialRules":["Shock","Warband"],"upgrades":["Noble Cavalry"]},"Light Cavalry":{"order":1,"type":"Cavalry","attack":"2/1","hits":3,"armour":"6+","size":3,"points":60,"max":4,"range":"15cm","specialRules":["Skirmish"]},"Mounted Skirmishers":{"order":2,"type":"Cavalry","attack":"1/1","range":"15cm","hits":3,"size":3,"points":40,"specialRules":["Skirmish"]},"Subject Archers":{"order":3,"type":"Infantry","attack":"1/1","range":"30cm","hits":3,"size":3,"points":15,"max":2,"specialRules":["Unreliable"]},"Subject Infantry":{"order":4,"type":"Infantry","attack":2,"hits":3,"size":3,"points":15,"max":4,"specialRules":["Unreliable"]},"General":{"order":5,"type":"General","attack":"+2","size":1,"points":100,"armyMin":1,"armyMax":1,"upgrades":["Portents"],"command":8},"Chieftain":{"order":7,"type":"Subordinate","attack":"+1","command":7,"size":1,"points":30,"max":3,"upgrades":["Chieftain"]}},"upgrades":{"Noble Cavalry":{"order":2,"type":"Cavalry","attack":"4/1","range":"15cm","hits":3,"armour":"4+","size":3,"points":"+20","armyMax":1,"specialRules":["Shock","Warband","Slow"]},"Chieftain":{"order":3,"type":"Subordinate","attack":"+1","size":1,"command":8,"points":"+10","max":1},"Portents":{"order":4,"type":"Special","attack":"+0","points":"+10","armyMax":1}},"version":"Warmaster Ancient Armies","group":"The Rise of Rome","order":11,"name":"Sarmatians"}
+{
+  "specialRules": {
+    "Shock": {
+      "order": 1
+    },
+    "Warband": {
+      "order": 2
+    },
+    "Skirmish": {
+      "order": 3
+    },
+    "Unreliable": {
+      "order": 4
+    },
+    "Slow": {
+      "order": 5
+    },
+    "Portents": {
+      "order": 6
+    }
+  },
+  "units": {
+    "Heavy Cavalry": {
+      "order": 0,
+      "type": "Cavalry",
+      "attack": "3/1",
+      "range": "15cm",
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 115,
+      "min": 4,
+      "specialRules": [
+        "Shock",
+        "Warband"
+      ],
+      "upgrades": [
+        "Noble Cavalry"
+      ]
+    },
+    "Light Cavalry": {
+      "order": 1,
+      "type": "Cavalry",
+      "attack": "2/1",
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 60,
+      "max": 4,
+      "range": "15cm",
+      "specialRules": [
+        "Skirmish"
+      ]
+    },
+    "Mounted Skirmishers": {
+      "order": 2,
+      "type": "Cavalry",
+      "attack": "1/1",
+      "range": "15cm",
+      "hits": 3,
+      "size": 3,
+      "points": 40,
+      "specialRules": [
+        "Skirmish"
+      ]
+    },
+    "Subject Archers": {
+      "order": 3,
+      "type": "Infantry",
+      "attack": "1/1",
+      "range": "30cm",
+      "hits": 3,
+      "size": 3,
+      "points": 15,
+      "max": 2,
+      "specialRules": [
+        "Unreliable"
+      ]
+    },
+    "Subject Infantry": {
+      "order": 4,
+      "type": "Infantry",
+      "attack": 2,
+      "hits": 3,
+      "size": 3,
+      "points": 15,
+      "max": 4,
+      "specialRules": [
+        "Unreliable"
+      ]
+    },
+    "General": {
+      "order": 5,
+      "type": "General",
+      "attack": "+2",
+      "size": 1,
+      "points": 100,
+      "armyMin": 1,
+      "armyMax": 1,
+      "upgrades": [
+        "Portents"
+      ],
+      "command": 8
+    },
+    "Chieftain": {
+      "order": 7,
+      "type": "Subordinate",
+      "attack": "+1",
+      "command": 7,
+      "size": 1,
+      "points": 30,
+      "max": 3,
+      "upgrades": [
+        "Chieftain"
+      ]
+    }
+  },
+  "upgrades": {
+    "Noble Cavalry": {
+      "order": 2,
+      "type": "Cavalry",
+      "attack": "4/1",
+      "range": "15cm",
+      "hits": 3,
+      "armour": "4+",
+      "size": 3,
+      "points": "+20",
+      "armyMax": 1,
+      "specialRules": [
+        "Shock",
+        "Warband",
+        "Slow"
+      ]
+    },
+    "Chieftain": {
+      "order": 3,
+      "type": "Subordinate",
+      "attack": "+1",
+      "size": 1,
+      "command": 8,
+      "points": "+10",
+      "max": 1
+    },
+    "Portents": {
+      "order": 4,
+      "type": "Special",
+      "attack": "+0",
+      "points": "+10",
+      "armyMax": 1
+    }
+  },
+  "version": "Warmaster Ancient Armies",
+  "group": "The Rise of Rome",
+  "order": 11,
+  "name": "Sarmatians"
+}

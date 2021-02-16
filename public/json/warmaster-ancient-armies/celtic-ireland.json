@@ -1,1 +1,136 @@
-{"specialRules":{"Warband":{"order":1},"Skirmish":{"order":2},"Portents":{"order":3}},"units":{"Fianna":{"order":0,"type":"Infantry","attack":4,"hits":3,"armour":"6+","size":3,"points":55,"max":2,"specialRules":["Warband"]},"Warriors":{"order":1,"type":"Infantry","attack":3,"hits":3,"size":3,"points":35,"min":4,"specialRules":["Warband"]},"Skirmishers":{"order":2,"type":"Infantry","attack":"1/1","range":"15cm","hits":3,"size":3,"points":30,"max":8,"specialRules":["Warband","Skirmish"]},"Elite Chariots":{"order":3,"type":"Chariot","attack":"3/1","range":"15cm","hits":3,"armour":"6+","size":3,"points":90,"max":1,"specialRules":["Warband"]},"Chariots":{"order":4,"type":"Chariot","attack":"2/1","range":"15cm","hits":3,"armour":"6+","size":3,"points":80,"max":4,"specialRules":["Warband"]},"General":{"order":5,"type":"General","attack":"+2","command":8,"size":1,"points":100,"armyMin":1,"armyMax":1,"upgrades":["Chariot Mount","Portents"]},"Chieftain":{"order":6,"type":"Subordinate","attack":"+1","command":7,"size":1,"points":30,"max":4,"upgrades":["Chariot Mount","Warlord"]}},"upgrades":{"Chariot Mount":{"order":0,"type":"Chariot Mount","attack":"+1","points":"+10"},"Warlord":{"order":1,"type":"Subordinate","attack":"+2","command":7,"size":1,"points":"+10"},"Portents":{"order":2,"type":"Special","attack":"+0","points":"+10","armyMax":1}},"name":"Celtic Ireland","version":"Warmaster Ancient Armies","group":"The Dark Ages","order":5}
+{
+  "specialRules": {
+    "Warband": {
+      "order": 1
+    },
+    "Skirmish": {
+      "order": 2
+    },
+    "Portents": {
+      "order": 3
+    }
+  },
+  "units": {
+    "Fianna": {
+      "order": 0,
+      "type": "Infantry",
+      "attack": 4,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 55,
+      "max": 2,
+      "specialRules": [
+        "Warband"
+      ]
+    },
+    "Warriors": {
+      "order": 1,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "points": 35,
+      "min": 4,
+      "specialRules": [
+        "Warband"
+      ]
+    },
+    "Skirmishers": {
+      "order": 2,
+      "type": "Infantry",
+      "attack": "1/1",
+      "range": "15cm",
+      "hits": 3,
+      "size": 3,
+      "points": 30,
+      "max": 8,
+      "specialRules": [
+        "Warband",
+        "Skirmish"
+      ]
+    },
+    "Elite Chariots": {
+      "order": 3,
+      "type": "Chariot",
+      "attack": "3/1",
+      "range": "15cm",
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 90,
+      "max": 1,
+      "specialRules": [
+        "Warband"
+      ]
+    },
+    "Chariots": {
+      "order": 4,
+      "type": "Chariot",
+      "attack": "2/1",
+      "range": "15cm",
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 80,
+      "max": 4,
+      "specialRules": [
+        "Warband"
+      ]
+    },
+    "General": {
+      "order": 5,
+      "type": "General",
+      "attack": "+2",
+      "command": 8,
+      "size": 1,
+      "points": 100,
+      "armyMin": 1,
+      "armyMax": 1,
+      "upgrades": [
+        "Chariot Mount",
+        "Portents"
+      ]
+    },
+    "Chieftain": {
+      "order": 6,
+      "type": "Subordinate",
+      "attack": "+1",
+      "command": 7,
+      "size": 1,
+      "points": 30,
+      "max": 4,
+      "upgrades": [
+        "Chariot Mount",
+        "Warlord"
+      ]
+    }
+  },
+  "upgrades": {
+    "Chariot Mount": {
+      "order": 0,
+      "type": "Chariot Mount",
+      "attack": "+1",
+      "points": "+10"
+    },
+    "Warlord": {
+      "order": 1,
+      "type": "Subordinate",
+      "attack": "+2",
+      "command": 7,
+      "size": 1,
+      "points": "+10"
+    },
+    "Portents": {
+      "order": 2,
+      "type": "Special",
+      "attack": "+0",
+      "points": "+10",
+      "armyMax": 1
+    }
+  },
+  "name": "Celtic Ireland",
+  "version": "Warmaster Ancient Armies",
+  "group": "The Dark Ages",
+  "order": 5
+}
