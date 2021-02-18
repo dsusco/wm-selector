@@ -53,9 +53,6 @@
       "size": 2,
       "points": 90,
       "max": 1,
-      "specialRules": [
-        "Cannons, Flame Cannons, Gyrocopters"
-      ],
       "order": 4
     },
     "Flame Cannon": {
@@ -67,9 +64,6 @@
       "size": 1,
       "points": 50,
       "max": 1,
-      "specialRules": [
-        "Cannons, Flame Cannons, Gyrocopters"
-      ],
       "order": 5
     },
     "Gyrocopter": {
@@ -81,9 +75,6 @@
       "size": 1,
       "points": 75,
       "max": 1,
-      "specialRules": [
-        "Cannons, Flame Cannons, Gyrocopters"
-      ],
       "order": 6
     },
     "General": {
@@ -157,32 +148,26 @@
       ],
       "order": 3
     },
-    "Cannons, Flame Cannons, Gyrocopters": {
-      "text": [
-        "Full rules for Cannons, Flame Cannons and Gyrocopters are in the Artillery and Machines section of the rulebook. Use this misfire chart for the Flame Cannon.",
-        "",
-        "|||",
-        "-|-",
-        "1.|The Flame Cannon explodes and is destroyed. No attacks are caused.",
-        "2.|The Flame Cannon emits an enormous belch of fire inflicting a total of 4+2D6 attacks on the target before it explodes and destroys itself.",
-        "3.|The Flame Cannon makes a worrying wheezing noise before spewing out an unusually smoky flame. Six attacks are inflicted this turn but the number of attacks caused by all further shooting is reduced from 2D6 to 1D6.",
-        "4.|The Flame Cannon splutters and its boiler goes out. The crew scramble around to re-light it. The Flame Cannon does not shoot this turn but is otherwise unaffected.",
-        "5.|The Flame Cannon chuffs out a great gout of soot, covering the target in black smoke and hot coals. Ten attacks are inflicted this turn - otherwise the Flame Cannon is unaffected.",
-        "6.|The Flame Cannon lurches in its mountings and heaves forth an especially huge flame inflicting 12 + D6 attacks on the target. The Flame Cannon is otherwise unaffected."
-      ],
+    "Cannon": {
       "order": 4
+    },
+    "Flame Cannon": {
+      "order": 5
+    },
+    "Gyrocopter": {
+      "order": 6
     },
     "Runesmith": {
       "text": [
         "Although they are not wizards and cannot therefore cast spells, Dwarf Runesmiths can combat the magic of their enemies. If an enemy Wizard who is within 50cm of the Runesmith casts a spell the Runesmith can attempt to 'anti-magic' it. Note that it does not matter what the spell is or where it is cast, the Runesmith can 'anti-magic' it so long as the caster is with 50cm. To determine if this works roll a D6 - on the score of 4, 5 or 6 the Runesmith has succeeded and the spell doesn't work, it is dispelled by the Runesmith's defiant efforts. If he fails then the Runesmith's efforts come to nothing and the spell works as normal. A Runesmith can attempt to anti-magic any number of spells in a turn, but only one attempt can be made to anti-magic any individual spell - even if the army includes more than one Runesmith and several are in range of the enemy Wizard."
       ],
-      "order": 5
+      "order": 7
     },
     "Anvil": {
       "text": [
         "The army can only include a single Anvil and it is incorporated onto the stand of a Runesmith. If a Runesmith stand includes the Anvil, once per battle he can add +1 to his dice roll when he attempts to dispel enemy magic spells using the Dwarf anti-magic ability (see Runesmith). In addition the Runesmith can strike the Anvil during the Shooting phase of his own turn. The Anvil's plangent rune-song fills the Dwarfs with even greater resolve! Roll a D6. On the score of a 4, 5 or 6 all Dwarf units within 20cm of the Runesmith are unaffected by Terror till the start of the next Dwarf player's turn. On a roll of less than 4 there is no effect."
       ],
-      "order": 6
+      "order": 8
     }
   }
 }
