@@ -181,10 +181,7 @@
       ],
       "order": 4
     },
-    "Bone Thrower": {
-      "text": [
-        "The Bone Thrower is a Bolt Thrower as described in the Artillery and Machines section of the rulebook."
-      ],
+    "Bolt Thrower": {
       "order": 5
     },
     "Tomb King": {
@@ -213,9 +210,6 @@
     },
     "Stone Thrower": {
       "order": 10
-    },
-    "Bolt Thrower": {
-      "order": 11
     }
   },
   "spells": [

@@ -93,7 +93,10 @@
       "size": 2,
       "points": 55,
       "max": 1,
-      "order": 7
+      "order": 7,
+      "specialRules": [
+        "Elven Bolt Thrower"
+      ]
     },
     "General": {
       "type": "General",
@@ -218,6 +221,9 @@
         "A Sorceress can have a Cauldron of Blood - this is categorised as a 'special' mount because it is treated as a mount and a Sorceress with a cauldron of Blood cannot have another mount. A Sorceress with a Cauldron of Blood suffers a movement reduction to 30cm. The army can only ever include one Cauldron of Blood and it can only be included if there is at least 1 unit of Witch Elves in the army. The Cauldron of Blood adds +2 Attacks to the Sorceress and can be used to add +1 to the Sorceress' dice roll to cast a spell once per battle. The player must announce that the Cauldron of Blood's spell bonus is being used before rolling the dice to determine if the spell is cast."
       ],
       "order": 9
+    },
+    "Elven Bolt Thrower": {
+      "order": 10
     }
   },
   "spells": [
