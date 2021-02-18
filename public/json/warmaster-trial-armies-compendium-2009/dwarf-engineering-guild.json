@@ -36,7 +36,7 @@
       "max": "elite",
       "order": 2
     },
-    "Cannons": {
+    "Cannon": {
       "type": "Artillery",
       "attack": "1/2+b",
       "range": "60cm ",
@@ -45,10 +45,10 @@
       "size": 2,
       "points": 90,
       "max": 2,
-      "specialRules": [
-        "Cannons/Mortar"
-      ],
-      "order": 3
+      "order": 3,
+      "homologousUnits": [
+        "Mortar"
+      ]
     },
     "Mortar": {
       "type": "Artillery",
@@ -60,9 +60,12 @@
       "points": 80,
       "max": 2,
       "specialRules": [
-        "Cannons/Mortar"
+        "Rock Lobber"
       ],
-      "order": 4
+      "order": 4,
+      "homologousUnits": [
+        "Cannon"
+      ]
     },
     "Flame Cannon": {
       "type": "Artillery",
@@ -73,10 +76,10 @@
       "size": 1,
       "points": 50,
       "max": 3,
-      "specialRules": [
-        "Flame Cannon/Organ Gun"
-      ],
-      "order": 5
+      "order": 5,
+      "homologousUnits": [
+        "Organ Gun"
+      ]
     },
     "Organ Gun": {
       "type": "Artillery",
@@ -88,9 +91,12 @@
       "points": 55,
       "max": 3,
       "specialRules": [
-        "Flame Cannon/Organ Gun"
+        "Helblaster"
       ],
-      "order": 6
+      "order": 6,
+      "homologousUnits": [
+        "Flame Cannon"
+      ]
     },
     "Gyrocopter": {
       "type": "Machine",
@@ -170,35 +176,32 @@
       ],
       "order": 2
     },
-    "Cannons/Mortar": {
-      "text": [
-        "The full rules for cannons can be found in the Artillery &amp; Machines section of the Warmaster rulebook. Mortars follow the same rules as Orс Rock Lobbers. As far as the maximum number of these units is concerned, the army may include up to 2 units of mortars or 2 units of cannons or a combination of cannons and mortars so long as the total never exceeds 2 units of cannon and mortars per 1,000 points."
-      ],
+    "Cannon": {
       "order": 3
     },
-    "Flame Cannon/Organ Gun": {
-      "text": [
-        "The full rules for Flame Cannons are presented in Dwarf army list in Warmaster Armies book. Organ Guns follow the same rules as Empire Helblasters. As far as the maximum number of these units is concerned, the army may include up to 3 units of Flame cannon or 3 units of Organ guns or a combination of Flame cannon and Organ gun so long as the total never exceeds 3 units of Flame cannon and Organ guns per 1,000 points."
-      ],
+    "Rock Lobber": {
       "order": 4
     },
-    "Gyrocopter": {
-      "text": [
-        "The full rules for the Gyrocopter can be found in the Artillery &amp; Machines section of the Warmaster rulebook."
-      ],
+    "Flame Cannon": {
       "order": 5
+    },
+    "Helblaster": {
+      "order": 6
+    },
+    "Gyrocopter": {
+      "order": 7
     },
     "Anvil": {
       "text": [
         "The army can only include a single Anvil and it is incorporated onto the stand of a Runesmith. If a Runesmith stand includes the Anvil, once per battle he can add +1 to his dice roll when he attempts to dispel enemy magic spells using the Dwarf anti-magic ability (see Runesmith). In addition the Runesmith can strike the Anvil during the Shooting phase of his own turn. The Anvil's plangent rune-song fills the Dwarfs with even greater resolve! Roll a D6. On the score of a 4, 5 or 6 all Dwarf units within 20cm of the Runesmith are unaffected by Terror till the start of the next Dwarf player's turn. On a roll of less than 4 there is no effect."
       ],
-      "order": 6
+      "order": 8
     },
     "Airship": {
       "text": [
         "The Dwarf Airship is used as an observation balloon. All artillery within 10cm of the balloon, or shooting a target within 10cm of the balloon, adds one to hit when shooting, so will normally hit on a 3 instead of a 4 and so on. The airship is treated the same as other flyers but has no Attacks and as such cannot be attacked. This represents the fact that the airship is flying at a high altitude. The airship is classed as a chariot mount and a hero or Runesmith must be placed in it (this means that if you field the airship, you lose a hero!). The use of the airship is more that it is a cracking model! You may field only one airship, no matter how large your army is&hellip;"
       ],
-      "order": 7
+      "order": 9
     }
   }
 }
