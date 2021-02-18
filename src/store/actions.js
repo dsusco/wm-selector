@@ -3,6 +3,7 @@ import axios from 'axios';
 
 import magicItems from '@/json/magic-items.json';
 import router from '@/router';
+import versionKey from '@/utils/version-key';
 
 const UNIT_TYPES = ['Artillery', 'Cavalry', 'Chariot', 'Elephant', 'Infantry', 'Machine', 'Monster'];
 const MAGIC_ITEM_TYPES = ['Device of Power', 'Magic Standard', 'Magic Weapon', 'Holy Item', 'Other Item'];
@@ -345,8 +346,7 @@ function initializeState (context, response) {
       { abbr: 's', title: 'Stats' },
       { abbr: 'sl', title: 'Stats Used' }
     ],
-    upgradeConstraints = response.data.upgradeConstraints || [],
-    magicItemsKey = magicItems[response.data.version] ? response.data.version : 'Warmaster';
+    upgradeConstraints = response.data.upgradeConstraints || [];
 
   response.data.upgrades = response.data.upgrades || {};
 
@@ -372,9 +372,9 @@ function initializeState (context, response) {
   context.commit('SET_SPELLS', response.data.spells);
 
   if (response.data.magic) {
-    Object.assign(response.data.upgrades, magicItems[magicItemsKey].upgrades);
+    Object.assign(response.data.upgrades, magicItems[versionKey[response.data.version]].upgrades);
 
-    upgradeConstraints = upgradeConstraints.concat(magicItems[magicItemsKey].upgradeConstraints);
+    upgradeConstraints = upgradeConstraints.concat(magicItems[versionKey[response.data.version]].upgradeConstraints);
 
     printableItems.push({ abbr: 'mi', title: 'Magic Items' });
     printableItems.push({ abbr: 'miu', title: 'Magic Items Used' });

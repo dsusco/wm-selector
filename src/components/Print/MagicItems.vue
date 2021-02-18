@@ -16,21 +16,20 @@ import Marked from 'marked';
 
 import store from '@/store';
 import magicItems from '@/json/magic-items.json';
+import versionKey from '@/utils/version-key';
 
 export default {
   name: 'MagicItems',
   computed: {
     magicItems () {
-      var magicItemsKey = magicItems[store.getters.version] ? store.getters.version : 'Warmaster';
-
-      return this.used ? Object.keys(magicItems[magicItemsKey].upgrades)
+      return this.used ? Object.keys(magicItems[versionKey[store.getters.version]].upgrades)
         .reduce((usedMagicItems, upgradeID) => {
           if (store.getters.upgrades[upgradeID].number > 0) {
             usedMagicItems[upgradeID] = Object.assign({}, store.getters.upgrades[upgradeID]);
           }
 
           return usedMagicItems;
-        }, {}) : magicItems[magicItemsKey].upgrades;
+        }, {}) : magicItems[versionKey[store.getters.version]].upgrades;
     }
   },
   methods: {
