@@ -29,11 +29,11 @@ export default {
     special: (name, specialRules) => {
       return [name].concat(specialRules).reduce((special, name) => {
         if (store.getters.specialRules[name]) {
-          special.push('*' + store.getters.specialRules[name].order);
+          special.push(store.getters.specialRules[name].order);
         }
 
         return special;
-      }, []).sort().join(', ') || '-';
+      }, []).sort((a, b) => a - b).map((order) => '*' + order).join(', ') || '-';
     }
   },
   props: ['name', 'troop', 'used']

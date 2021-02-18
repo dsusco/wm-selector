@@ -12,10 +12,12 @@
 </template>
 
 <script>
+import _ from 'lodash';
 import Marked from 'marked';
 
 import specialRules from '@/json/special-rules.json';
 import store from '@/store';
+import versionKey from '@/utils/version-key';
 
 function usedSpecialRules (usedSpecialRules, name) {
   // add the special rule with the same name as the unit/upgrade
@@ -23,12 +25,13 @@ function usedSpecialRules (usedSpecialRules, name) {
     usedSpecialRules[name] = store.getters.specialRules[name];
   }
 
-  // add special rules from specialRules
+  // add special rules from unit specialRules
   if (store.getters.units[name] && store.getters.units[name].specialRules) {
     store.getters.units[name].specialRules
       .forEach((specialRule) => usedSpecialRules[specialRule] = store.getters.specialRules[specialRule]);
   }
 
+  // add special rules from upgrade specialRules
   if (store.getters.upgrades[name] && store.getters.upgrades[name].specialRules) {
     store.getters.upgrades[name].specialRules
       .forEach((specialRule) => usedSpecialRules[specialRule] = store.getters.specialRules[specialRule]);
@@ -41,18 +44,24 @@ export default {
   name: 'SpecialRules',
   computed: {
     specialRules () {
-      return this.used ?
-        Object.keys(store.getters.upgrades)
+      var specialRules = store.getters.specialRules;
+
+      if (this.used) {
+        specialRules = Object.keys(store.getters.upgrades)
           .filter((upgradeID) => store.getters.upgrades[upgradeID].number > 0)
           .reduce(usedSpecialRules,
             Object.keys(store.getters.units)
               .filter((unitID) => store.getters.units[unitID].number > 0)
               .reduce(usedSpecialRules, {})
-          ) : store.getters.specialRules;
+          );
+      }
+
+      // return object sorted by order
+      return _(specialRules).toPairs().sortBy((array) => _.last(array).order).fromPairs().value();
     }
   },
   methods: {
-    marked: (name) => Marked((store.getters.specialRules[name].text || specialRules[name].text).join('\n'))
+    marked: (name) => Marked((store.getters.specialRules[name].text || specialRules[versionKey[store.getters.version]][name].text).join('\n'))
   },
   props: ['used']
 };

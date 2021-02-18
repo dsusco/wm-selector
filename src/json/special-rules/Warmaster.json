@@ -1,0 +1,141 @@
+{
+  "Bolt Thrower": {
+    "text": [
+      "Targets always ignore their armour when shot at by a Bolt Thrower. No Armour roll is made. The Bolt Thrower’s heavy dart can pierce even the thickest armour.",
+      "",
+      "When you shoot with a Bolt Thrower it will strike up to two touching stands within the missile’s line of flight. These can be stands from the same or a different unit – the missile will automatically pass through and strike up to two stands so long as they are touching along the missile's path.",
+      "",
+      "The target unit suffers two attacks plus +1 for additional stand from the same unit within the missile's path. A shot that skewer into a different unit inflicts one attack on that unit. All attacks against the same unit are rolled at once - for example, an infantry unit in column takes three attacks so roll three dice.",
+      "",
+      "Because a bolt thrower can cause hits on different units by skewering shots, it is possible to inflict hits upon enemy units that are engaged in combat or even upon friendly units in some situations. These are normally ineligible targets, but in the case of skewering shots they can suffer hits as a result of fire directed at supporting enemy. Any engaged units from either side taking hits from Bolt Throwers will carry hits forward into the combat round and hits count as having been struck during that round for purposes of working out which side wins. Units engaged in combat are not driven back by any hits taken – carrying hits forward takes this into account. Units that are not engaged are driven back in the usual way. If friends are driven back then work out all enemy drive backs first.",
+      "",
+      "Bolt Throwers can shoot at charging enemy and can do so at any point as the enemy charges, including the start of the move or when the charger has reached its final position."
+    ]
+  },
+  "Cannon": {
+    "text": [
+      "Cannons ignore a target’s Armour because no armour can nullify a hit caused by a cannon ball. No Armour roll is made. In addition, fortified targets only count as being defended (5+ to hit) and defended targets count as being in the open (4+ to hit).",
+      "",
+      "Cannon balls can bounce through densely packed ranks causing immense destruction. To represent this, a shot is deemed to strike the closest point of the target stand, pass all the way through it and bounce a further 5cm in the same direction. If more than one cannon from the same unit is shooting then both cannon balls are assumed to bounce the same distance through the path between the closest cannon and closest target stand. The target unit suffers two attacks plus +1 for each additional stand from the same unit that is bounced through.",
+      "",
+      "A shot that bounces into a different unit inflicts one attack on that unit for each stand bounced through. This can result in units normally ineligible as targets being hit, such as friendly units or units in combat. Total up the number of attacks struck and roll for all the attacks against each unit at a time.",
+      "",
+      "If a cannon is charged it can shoot at the enemy by firing ‘grapeshot’. Like cannon balls, grapeshot has an Attack value of 2 but it doesn’t bounce and targets shot at by grapeshot count their full Armour value – armour is not discounted as it is with a cannon ball.",
+      "",
+      "Although grapeshot is pretty effective compared to, say, a shot from a single archer stand, it is actually less effective than ordinary cannon fire. At first glance this may seem wrong. After all, shouldn’t grapeshot be devastating compared to normal cannon fire? The reason for this is not that we’ve made grapeshot weak but that normal cannon fire represents not a single shot but a continuous bombardment in which dozens of balls are fired by each cannon. Grapeshot, on the other hand, represents just one hurried blast at close quarters, far more deadly than a single cannon ball which could easily sail over the enemy formation or pass between the ranks but not as deadly as a rain of well aimed cannon balls over a longer period.",
+      "",
+      "Because cannons can cause additional damage by bouncing shots, it is possible to inflict hits upon friends or upon units from either side that are engaged in combat. Both of these are normally ineligible targets, but in the case of bouncing cannon shots they can suffer hits as a result of fire directed nearby. Any friendly unengaged units that take hits from cannons are driven back as if taking enemy fire. Where friendly units are driven back in this way wait until all drive backs for enemy units have been completed, and then work out drive backs for friendly units. Any engaged units taking hits from cannons will carry hits forward into the combat round and hits count as having been struck during that round for purposes of working out which side wins. Units engaged in combat are not driven back by any hits taken – carrying hits forward takes this into account."
+    ]
+  },
+  "Elven Bolt Thrower": {
+    "text": [
+      "The Elven Bolt Thrower can shoot at a charging enemy in the same way as a missile-armed infantry or cavalry unit.",
+      "",
+      "Unlike many artillery pieces, the Elven Bolt Thrower does not automatically pierce its target’s armour. Enemies take their Armour rolls as normal."
+    ]
+  },
+  "Flame Cannon": {
+    "text": [
+      "The Flame Cannon is an infernal device that shoots a gout of flame. The techniques of the weapon’s manufacture are a closely guarded secret of the Dwarf Engineers Guild. This is a hide-bound and deeply secretive organisation, bitterly opposed to further progress or innovation. Only Dwarf weapon masters of the highest rank know how to make these potent devices and even they have their off days.",
+      "",
+      "The Flame Cannon’s shooting attacks are slightly unusual. Rather than having a fixed number of attacks it has 2D6 Attacks instead  roll 2 dice and add the scores together. But if the Flame Cannon rolls a double then it does not shoot as expected! Depending on the double rolled something has gone horribly wrong.",
+      "",
+      "|||",
+      "-|-",
+      "1.|The Flame Cannon explodes and is destroyed. No attacks are caused.",
+      "2.|The Flame Cannon emits an enormous belch of fire inflicting a total of 4+2D6 attacks on the target before it explodes and destroys itself.",
+      "3.|The Flame Cannon makes a worrying wheezing noise before spewing out an unusually smoky flame. Six attacks are inflicted this turn but the number of attacks caused by all further shooting is reduced from 2D6 to 1D6.",
+      "4.|The Flame Cannon splutters and its boiler goes out. The crew scramble around to re-light it. The Flame Cannon does not shoot this turn but is otherwise unaffected.",
+      "5.|The Flame Cannon chuffs out a great gout of soot, covering the target in black smoke and hot coals. Ten attacks are inflicted this turn - otherwise the Flame Cannon is unaffected.",
+      "6.|The Flame Cannon lurches in its mountings and heaves forth an especially huge flame inflicting 12 + D6 attacks on the target. The Flame Cannon is otherwise unaffected.",
+      "",
+      "A Flame Cannon can shoot at charging enemy in the usual way."
+    ]
+  },
+  "Giant": {
+    "text": [
+      "Giants must always be given a separate order. They cannot be brigaded with other troops, although several Giants can be brigaded together if you so wish. If you attempt to give an order to a Giant and fail then you must take a test to see what it does. Ignore potential blunders - these are taken into account by the following rules. Roll a dice and consult the Giant Goes Wild chart. Where Giants are brigaded together roll for each separately.",
+      "",
+      "Giants have a great many hits, 8 in fact, which are almost impossible to inflict during even a fairly lengthy combat engagement. Because Giants have so many hits we must consider the possibility of hurting the Giant and reducing its effectiveness in subsequent turns. Therefore, if a Giant has accumulated 4-7 hits by the end of the Shooting phase or Combat phase it is deemed to have been badly hurt. Once a Giant is badly hurt all accumulated hits are discounted and its maximum Hits value and Attacks are halved for the rest of the battle (to 4 Hits and 4 Attacks). A Giant causes terror in its enemies.",
+      "",
+      "__Giant Goes Wild Chart__",
+      "",
+      "|||",
+      "-|-",
+      "_D6_|_On no! What's he doing now!_",
+      "1|The Giant will neither move nor fight this turn but simply stands rooted to the spot looking dopey.",
+      "2|Move the Giant directly towards the nearest table edge. If he moves into another unit he will attack it regardless of which side it is on. If victorious in combat the Giant will hold his ground.",
+      "3|The Giant picks up a rock, tree, abandoned cart, outhouse or whatever comes to hand and throws it at the closest unit - friend or foe - that he can see. The object travels 5xD6cm and, if it travels far enough to hit its target, strikes with 3 Attacks worked out in the usual way.",
+      "4|The Giant moves straight forward at full pace in the direction he is facing in. If he reaches an enemy unit he will attack as normal. If he reaches a friendly unit he will walk straight through and out the other side if there is room and he has sufficient move. If he reaches a friendly unit and does not have sufficient move or enough room to walk all the way through then he halts on contact. A friendly unit that is walked through or contacted in this way instantly becomes confused for the remainder of the Command phase. Such a unit ceases to be confused at the end of the Command phase along with other confused units.",
+      "5|The Giant moves towards the nearest enemy unit that he can see as fast as he can. If he reaches the foe he will attack as normal. If friends are in the way he will walk through them causing confusion as described above.",
+      "6|The Giant gives a mighty bellow and rushes straight at the nearest enemy unit that he can see. Move the Giant at double his normal full pace move. If he reaches an enemy unit, he fights by jumping up and down on the foe, furiously doubling his Attack value in the first round of combat."
+    ]
+  },
+  "Gyrocopter": {
+    "text": [
+      "Dwarfs are short, burly creatures who spend much of their lives in mines and other subterranean places. Your average Dwarf likes to keep both feet firmly planted on the ground or, preferably, below it. However, the Dwarf Engineers Guild numbers amongst its select membership some of the most eccentric and foolhardy of Dwarf kind. These are individuals whose obsessions verge on, and quite clearly beyond, the insane. Only the most determined and talented members of the Guild know the secrets of heavier-than-air flying machines. This curious and occasionally devastating machine represents the pinnacle of the Dwarf Engineer’s art.",
+      "",
+      "The Gyrocopter is a flying machine, so all the usual flying rules apply (see Flying Units p.59-61). The model always forms a single unit on its own, must be given orders individually, cannot be brigaded with other units and cannot be joined by a character in combat.",
+      "",
+      "The Gyrocopter is armed with a small, short range, crank-driven, piston activated gun which is powered by the motion of the rotor shaft. The engine is fuelled by alcohol (as is the pilot!). ",
+      "",
+      "The Gyrocopter’s fast-firing gun is light in weight and fires a small calibre shot. It counts Armour values as one worse than normal, so an Armour value of 3+ counts as 4+, 4+ counts as 5+, 5+ counts as 6+ and 6+ does not count at all.",
+      "",
+      "Gyrocopters can fly over any obstructive terrain in the same way as flying creatures. Like all flying units they cannot end their movement in a wood."
+    ]
+  },
+  "Helblaster": {
+    "text": [
+      "The Helblaster is a primitive type of crank-driven machine gun. It has a maximum range of 30cm. It's Attack value varies according to range: the closer the range the more deadly it becomes.",
+      "",
+      "|||||",
+      "-|-|-|-",
+      "__Range__|1–10|10–20cm|20–30cm",
+      "__Attacks__|8|4|2",
+      "",
+      "Targets struck by a Helblaster count their Armour value as one worse than normal - so 3+ counts as 4+, 4+ as 5+, whilst 6+ is ignored.",
+      "",
+      "When shooting with a Helblaster roll to hit as normal but if any 1s are rolled count them up and resolve the effect before continuing.",
+      "",
+      "No of 1s|Result",
+      "-|-",
+      "__1, 2__|__Dud Ammunition.__ Deduct any 1s from the successful hits. For instance; if 4 hits are scored but 2 x 1s have also been rolled, succesful hits are reduced from 4 to 2.",
+      "__3__|__Misfire.__ The gun fails to go off - no shots at all hit this turn. Disregard all hits this turn.",
+      "__4+__|__Ka-boom!__ The weapon explodes destroying itself and mortally surprising its crew. The Helblaster stand is removed as a casualty. No hits are struck against the enemy unless the exploding Helblaster is shooting at a charging foe, in which case 6 hits are automatically inflicted. Make armour saves as for ordinary Helblaster hits.",
+      "",
+      "A Helblaster can shoot at charging enemies in the usual manner (see Shooting). In this case the crew will fire at the shortest possible range to maximise the number of shots against the target. Note: in the event of the Helblaster exploding 6 hits are inflicted on the charging enemy unit as described above - Helblasters are extremely dangerous to charge… for everyone concerned."
+    ]
+  },
+  "Rock Lobber": {
+    "text": [
+      "Because Rock Lobbers lob rocks of such immense size no armour can protect against them. Even the most heavily armoured knight would be instantly pulped if a boulder the size of a horse were to land on him. To represent this, targets always ignore their armour when shot at by a Rock Lobber. No Armour roll is made.",
+      "",
+      "Rock Lobbers shoot with such a high trajectory that they cannot shoot at charging enemies."
+    ]
+  },
+  "Steam Tank": {
+    "text": [
+      "The Steam Tank forms a unit on its own, it moves up to 20cm, and must be given its own orders. The Steam Tank cannot be given a brigade order with other units, not even with other Steams Tanks. A character cannot join with a Steam Tank.",
+      "",
+      "A Steam Tank can shoot from any edge of a stand: side or rear as well as the front like other units. Steam Tanks weapons have a range of 30cm. A Steam Tank therefore shoots to its front, side or rear against the closest enemy target. Targets suffering hits from a Steam Tank count their Armour value as one worse than normal - so 3+ counts as 4+, 4+ as 5+, whilst 6+ is ignored. A Steam Tank can shoot at charging enemy.",
+      "",
+      "Because of its exceptionally heavy armour plating, a Steam Tank always counts as defended - so a 5 or 6 is normally required to inflict a hit from shooting or in combat. The Steam Tank fights combat like any other unit, except that if it retreats it is automatically destroyed in the same way as artillery (it is overwhelmed and hence abandoned by its crew).",
+      "",
+      "Steam Tanks cannot be driven back or routed by shooting. However - it is still deemed necessary to roll drive backs to determine if the Steam Tank becomes Confused on a roll of a 6.",
+      "",
+      "If the player attempts to issue an order to a Steam Tank and rolls double six then the order is failed as usual and the machine does not move. Ignore the usual Blunder chart for heroes and wizards (rulebook p55). Roll on the following Malfunction chart. Note that although a General cannot blunder he must still roll for malfunctions.",
+      "",
+      "__Steam Tank Malfunction Chart__",
+      "",
+      "|||",
+      "-|-",
+      "__D6__|__Result__",
+      "__1.__|__Destroyed.__ The Steam Tank grinds to a halt rupturing steam and noxious gasses. Remove the Steam Tank as a casualty.",
+      "__2.__|__Broken Down.__ The Steam Tank's drive has broken. It does not move further this turn and cannot move in future turns. Should it be obliged to move for any reason it is destroyed. Otherwise, the Steam Tank can continue to shoot and fight as normal.",
+      "__3.__|__Stuck.__ The Steam tank does not move further this turn. It cannot shoot this turn. Otherwise it is unaffected and can move in future turns as normal.",
+      "__4.__|__Commander Slain.__ The Steam Tank does not move further this turn. It can move in future turns but suffers a command penalty of -1 for the remainder of the game. The Steam Tank can shoot as normal.",
+      "__5.__|__Momentary Halt.__ The Steam Tank cannot move further this turn but is otherwise unaffected.",
+      "__6.__|__Steam Overload.__ The Steam Tank cannot move further this turn but can shoot with double the usual number of Attacks (6) to represent steam being uncontrollably diverted into weaponry."
+    ]
+  }
+}

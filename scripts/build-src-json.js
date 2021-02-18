@@ -71,3 +71,16 @@ glob('src/json/magic-items/*.json', (error, fileNames) => {
     return JSON.stringify(json, null, 2);
   }()));
 });
+
+// generate special-rules.json
+glob('src/json/special-rules/*.json', (error, fileNames) => {
+  fs.writeFileSync('src/json/special-rules.json', (function () {
+    var json = fileNames.reduce((specialRules, fileName) => {
+      specialRules[path.basename(fileName, '.json')] = JSON.parse(fs.readFileSync(fileName));
+
+      return specialRules;
+    }, {});
+
+    return JSON.stringify(json, null, 2);
+  }()));
+});
