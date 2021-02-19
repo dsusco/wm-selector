@@ -5,9 +5,11 @@ import MagicItems from '@/components/Print/MagicItems';
 var wrapper;
 
 jest.mock('@/json/magic-items.json', () => ({
-  upgrades: {
-    'Item 1': { text: ['text 1'] },
-    'Item 2': { text: ['text 2'] }
+  Version: {
+    upgrades: {
+      'Item 1': { text: ['text 1'] },
+      'Item 2': { text: ['text 2'] }
+    }
   }
 }));
 
@@ -22,8 +24,13 @@ jest.mock('@/store', () => ({
         number: 1,
         text: ['text 2']
       }
-    }
+    },
+    version: 'a version'
   }
+}));
+
+jest.mock('@/utils/version-key', () => ({
+  'a version': 'Version'
 }));
 
 describe('MagicItems.vue', () => {

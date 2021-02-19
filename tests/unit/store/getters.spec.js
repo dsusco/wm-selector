@@ -119,6 +119,53 @@ describe('store.js getters', () => {
     expect(getters.unitCount(state)).toEqual(2);
   });
 
+  it('unitCount ignores unarmoured skirmishes if they are half or less of the army', () => {
+    state.units = {
+      a: { number: 1, type: 'Infantry' },
+      b: { number: 1, type: 'Infantry', specialRules: ['Skirmish'] }
+    }
+
+    expect(getters.unitCount(state)).toEqual(1);
+  });
+
+  it("unitCount counts unarmoured skirmishes if they are more than half of the army", () => {
+    state.units = {
+      a: { number: 1, type: 'Infantry' },
+      b: { number: 2, type: 'Infantry', specialRules: ['Skirmish'] }
+    }
+
+    expect(getters.unitCount(state)).toEqual(3);
+  });
+
+  it("unitCount counts armoured skirmishes if they are half or less of the army", () => {
+    state.units = {
+      a: { number: 1, type: 'Infantry' },
+      b: { number: 1, type: 'Infantry', specialRules: ['Skirmish'], armour: '6+' }
+    }
+
+    expect(getters.unitCount(state)).toEqual(2);
+  });
+
+  it("unitCount counts all skirmishes if they are more than half of the army", () => {
+    state.units = {
+      a: { number: 1, type: 'Infantry' },
+      b: { number: 1, type: 'Infantry', specialRules: ['Skirmish'] },
+      c: { number: 1, type: 'Infantry', specialRules: ['Skirmish'], armour: '6+' }
+    }
+
+    expect(getters.unitCount(state)).toEqual(3);
+  });
+
+  it("unitCount ignores unarmoured skirmishes but counts armoured skirmishes if they are half or less of the army", () => {
+    state.units = {
+      a: { number: 2, type: 'Infantry' },
+      b: { number: 1, type: 'Infantry', specialRules: ['Skirmish'] },
+      c: { number: 1, type: 'Infantry', specialRules: ['Skirmish'], armour: '6+' }
+    }
+
+    expect(getters.unitCount(state)).toEqual(3);
+  });
+
   it('units returns state.units', () => {
     state.units = expected.units;
     expect(getters.units(state)).toEqual(expected.units);

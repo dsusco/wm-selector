@@ -3,6 +3,11 @@ import axios from 'axios';
 import actions from '@/store/actions';
 import magicItems from '@/json/magic-items.json';
 import router from '@/router';
+import versionKey from '@/utils/version-key';
+
+jest.mock('@/utils/version-key', () => ({
+  'a version': 'Warmaster'
+}));
 
 jest.mock('axios');
 
@@ -163,8 +168,8 @@ describe('store.js actions', () => {
       expect(commit).toHaveBeenCalledWith('SET_MAGIC', axiosResponse.data.magic);
       expect(commit).toHaveBeenCalledWith('SET_SPECIAL_RULES', axiosResponse.data.specialRules);
       expect(commit).toHaveBeenCalledWith('SET_SPELLS', axiosResponse.data.spells);
-      expect(commit).toHaveBeenCalledWith('SET_UPGRADE_CONSTRAINTS', axiosResponse.data.upgradeConstraints.concat(magicItems.upgradeConstraints));
-      expect(commit).toHaveBeenCalledWith('SET_UPGRADES', Object.assign({}, axiosResponse.data.upgrades, magicItems.upgrades));
+      expect(commit).toHaveBeenCalledWith('SET_UPGRADE_CONSTRAINTS', axiosResponse.data.upgradeConstraints.concat(magicItems[versionKey[axiosResponse.data.version]].upgradeConstraints));
+      expect(commit).toHaveBeenCalledWith('SET_UPGRADES', Object.assign({}, axiosResponse.data.upgrades, magicItems[versionKey[axiosResponse.data.version]].upgrades));
       expect(commit).toHaveBeenCalledWith('SET_UNITS', axiosResponse.data.units);
       expect(commit).toHaveBeenCalledWith('SET_VERSION', axiosResponse.data.version);
     });

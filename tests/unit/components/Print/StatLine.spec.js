@@ -19,7 +19,7 @@ const
     used: true
   };
 
-var mockDispatch, wrapper;
+var wrapper;
 
 jest.mock('@/store', () => ({
   getters: {
