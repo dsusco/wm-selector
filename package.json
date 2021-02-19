@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "axios": "^0.21.1",
-    "baseline-scss": "github:dsusco/baseline-scss",
+    "baseline-scss": "dsusco/baseline-scss",
     "core-js": "^3.6.5",
     "lodash": "^4.17.20",
     "marked": "^2.0.0",

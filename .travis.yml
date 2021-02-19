@@ -4,6 +4,6 @@ os:
 node_js: 10
 
 script:
-  - npm run test
+  - npm run test:unit
 
 cache: node_modules
