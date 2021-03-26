@@ -54,7 +54,7 @@
       "points": 60,
       "min": 1,
       "specialRules": [
-        "Forrest Spirits"
+        "Forest Spirits"
       ],
       "order": 4
     },
@@ -78,7 +78,7 @@
       "points": 110,
       "max": 2,
       "specialRules": [
-        "Forrest Spirits"
+        "Forest Spirits"
       ],
       "order": 6
     },
@@ -102,7 +102,7 @@
       "points": 105,
       "max": 2,
       "specialRules": [
-        "Forrest Spirits"
+        "Forest Spirits"
       ],
       "order": 8
     },
@@ -115,7 +115,7 @@
       "points": 130,
       "max": 1,
       "specialRules": [
-        "Forrest Spirits"
+        "Forest Spirits"
       ],
       "order": 9
     },
@@ -216,7 +216,7 @@
   },
   "magic": true,
   "armyRules": [
-    "Before deploying armies the Wood Elf player may decide to place additional piece of wooded terrain instead of fielding one of his Wardancer units (assuming he has one in his list). The additional wood must be placed so that at least part of it lies within the Wood Elf deployment zone. It cannot be placed closer than 12cm to any other terrain feature except for road or hill. The size of any single additional wooded piece cannot have any dimension larger than 16cm. In this way the player can field one additional wood per full 1000 points, however the wood cannot be placed if that would bring the totall number of the woods on the Wood Elf player's half of the table over four.",
+    "Before deploying armies the Wood Elf player may decide to place additional piece of wooded terrain instead of fielding one of his Wardancer units (assuming he has one in his list). The additional wood must be placed so that at least part of it lies within the Wood Elf deployment zone. It cannot be placed closer than 12cm to any other terrain feature except for road or hill. The size of any single additional wooded piece cannot have any dimension larger than 16cm. In this way the player can field one additional wood per full 1000 points, however the wood cannot be placed if that would bring the total number of the woods on the Wood Elf player's half of the table over four.",
     "",
     "**Woodland Folk.** Due to living amongst the forests of Loren all Wood Elf infantry does not suffer the usual -1 Command penalty when within woodland."
   ],
@@ -230,27 +230,27 @@
     "Wardancers": {
       "order": 2,
       "text": [
-        "Wardancer stands never fight as indipendent unit. Instead, you may add one stand of Wardancers to Glade Guard or Ethernal Guard unit. This brings the size of the unit to 4 stands. Wardancers always have the same Armour value as the rest of their unit, either 5+ or 0. They fight as part of their unit and can be removed as a unit causality if player wishes. Wardancer causality never count as causality for purposes of issuing orders, which means there is no -1 Command penalty as there normally would be for units that have lost a stand. Wardancer stand never count as part of the unit's formation when determining whether they move at full of half pace, so no movement penalty is incurred if they are arranged out of the unit's regular formation."
+        "Wardancer stands never fight as a independent unit. Instead, you may add one stand of Wardancers to a Glade Guard or Eternal Guard unit. This brings the size of the unit to 4 stands. Wardancers always have the same Armour value as the rest of their unit, either 5+ or 0. They fight as part of their unit and can be removed as a unit casualty if a player wishes. Wardancer casualty never count as casualty for purposes of issuing orders, which means there is no -1 Command penalty as there normally would be for units that have lost a stand. Wardancer stands never count as part of the unit's formation when determining whether they move at full of half pace, so no movement penalty is incurred if they are arranged out of the unit's regular formation."
       ]
     },
     "Waywatchers": {
       "order": 3,
       "text": [
-        "Famous for their bow skills even by a Wood Elf standards, Waywatchers shoot the enemy with terrifying accuracy. The add +1 to their dice roll when making shooting attacks and these attacks are resolved at -1 Armor value of the enemy.",
+        "Famous for their bow skills even by a Wood Elf standards, Waywatchers shoot the enemy with terrifying accuracy. They add +1 to their dice roll when making shooting attacks and these attacks are resolved at -1 Armor value for the enemy.",
         "",
-        "Waywatchers can also ambush. Individual units can be infiltrated onto the battlefield once the game has begun. To infiltrate a unit, the Wood Elf player nominates the point where he wants the Waywathchers to appear and issues an 'infiltration' order from any character. The character does not have to be within his normal command range to issue an iniltration order - the character's command range is considered to extend over the entire tabletop when issuing an infiltration order. Treat the order as issued to the nominated point, and apply any modifiers for distance and proximity of enemy, but ignore penalties of dense terrain. The nominated point must lie either on the table within dense terrain or on any base edge other than the enemy player's own table edge. If successful, place one stand on the nominated spot and arrange the rest of the unit around it. The infiltrated unit cannot be placed so that it touches an enemy unit. Once deployed, orders can be given to the unit by the same character that gave the infiltration order if he is within his normal command range, the infiltrating unit is considered to have used its first order to deploy. If the infiltration order is failed the unit is not deployed and cannot infiltrate that turn, it can attempt to infiltrate in a subsequent turn at the same of a different place."
+        "Waywatchers can also ambush. Individual units can be infiltrated onto the battlefield once the game has begun. To infiltrate a unit, the Wood Elf player nominates the point where he wants the Waywatchers to appear and issues an 'infiltration' order from any character. The character does not have to be within his normal command range to issue an infiltration order - the character's command range is considered to extend over the entire tabletop when issuing an infiltration order. Treat the order as issued to the nominated point, and apply any modifiers for distance and proximity of enemy, but ignore penalties of dense terrain. The nominated point must lie either on the table within dense terrain or on any base edge other than the enemy player's own table edge. If successful, place one stand on the nominated spot and arrange the rest of the unit around it. The infiltrated unit cannot be placed so that it touches an enemy unit. Once deployed, orders can be given to the unit by the same character that gave the infiltration order if he is within his normal command range, the infiltrating unit is considered to have used its first order to deploy. If the infiltration order is failed the unit is not deployed and cannot infiltrate that turn, it can attempt to infiltrate in a subsequent turn at the same or a different place."
       ]
     },
-    "Forrest Spirits": {
+    "Forest Spirits": {
       "order": 4,
       "text": [
-        "Forrest Spirits are woodland creatures. They are immune to terror and suffer -1 Command penalty when being ordered by General or Noble."
+        "Forest Spirits are woodland creatures. They are immune to terror and suffer -1 Command penalty when being ordered by a General or Noble."
       ]
     },
     "Wild Riders": {
       "order": 5,
       "text": [
-        "Wild Riders recieve +1 Attack in the first round of every combat when fighting to the front."
+        "Wild Riders receive +1 Attack in the first round of every combat when fighting to the front."
       ]
     },
     "Warhawk Riders": {
