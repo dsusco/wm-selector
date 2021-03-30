@@ -16,7 +16,7 @@
       "",
       "A shot that bounces into a different unit inflicts one attack on that unit for each stand bounced through. This can result in units normally ineligible as targets being hit, such as friendly units or units in combat. Total up the number of attacks struck and roll for all the attacks against each unit at a time.",
       "",
-      "If a cannon is charged it can shoot at the enemy by firing ‘grapeshot’. Like cannon balls, grapeshot has an Attack value of 2 but it doesn’t bounce and targets shot at by grapeshot count their full Armour value armour is not discounted as it is with a cannon ball.",
+      "If a cannon is charged it can shoot at the enemy by firing ‘grapeshot’. Like cannon balls, grapeshot has an Attack value of 2 but it doesn’t bounce and targets shot at by grapeshot count their full Armour value. Armour is not discounted as it is with a cannon ball.",
       "",
       "Although grapeshot is pretty effective compared to, say, a shot from a single archer stand, it is actually less effective than ordinary cannon fire. At first glance this may seem wrong. After all, shouldn’t grapeshot be devastating compared to normal cannon fire? The reason for this is not that we’ve made grapeshot weak but that normal cannon fire represents not a single shot but a continuous bombardment in which dozens of balls are fired by each cannon. Grapeshot, on the other hand, represents just one hurried blast at close quarters, far more deadly than a single cannon ball which could easily sail over the enemy formation or pass between the ranks but not as deadly as a rain of well aimed cannon balls over a longer period.",
       "",
