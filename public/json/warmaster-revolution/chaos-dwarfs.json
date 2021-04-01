@@ -113,7 +113,7 @@
     },
     "Bolt Thrower": {
       "type": "Artillery",
-      "attack": "1/1 per stand",
+      "attack": "1/2 per stand",
       "range": "40cm",
       "hits": 2,
       "size": 2,
