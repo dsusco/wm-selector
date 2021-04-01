@@ -22,7 +22,7 @@
 
     <ArmyListAccordion :title="'Warmaster Revolution'">
       <a target="_blank" title="Warmaster Revolution Compendium" href="/pdfs/WMR1.1compendium.pdf"><span>Warmaster Revolution Compendium</span></a>
-      <a target="_blank" title="Warmaster Revolution Armies" href="/pdfs/WMR armies1.0.pdf"><span>Warmaster Revolution Armies</span></a>
+      <a target="_blank" title="Warmaster Revolution Armies" href="/pdfs/WMR armies1.1.pdf"><span>Warmaster Revolution Armies</span></a>
     </ArmyListAccordion>
 
     <ArmyListAccordion :title="'Warmaster Ancients'">
