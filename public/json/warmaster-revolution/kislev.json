@@ -143,7 +143,7 @@
     "Yozhin": {
       "type": "Special Mount",
       "attack": "+1",
-      "points": "+65",
+      "points": "+40",
       "armyMax": 1,
       "order": 1
     },
