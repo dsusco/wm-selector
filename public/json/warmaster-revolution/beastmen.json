@@ -170,7 +170,7 @@
       "text": [
         "Up to half of the total number of Beastherd/Herdkin units (rounded down) may be deployed as ambushers rather than be deployed at the start of the game. The ambushers must be deployed in groups up to 4 units. The number of Herdkin units in thees groups may not exceed the number of Beastherd units.",
         "",
-        "During the order movement sequence the Beastmen player nominates a point within a terrain feature or on any base edge other than the enemy player's own table edge for every group of ambushing units he wants to deploy this turn. If the nominated point is in dense terrain it must be chosen that every stand of every unit within the group must be at least partially within the terrain.",
+        "During the order movement sequence the Beastmen player nominates a point within dense terrain or on any base edge other than the enemy player's own table edge for every group of ambushing units he wants to deploy this turn. If the nominated point is in dense terrain it must be chosen that every stand of every unit within the group must be at least partially within the terrain.",
         "",
         "Each group of ambushing units is ordered with a brigade order and apply any order modifiers but ignore the penalties for dense terrain and command range. The character's command range is considered to extend over the entire tabletop when issuing an ambush order. If successful, place one stand, of one unit on the nominated spot and arrange the rest of the unit around it. Then place the remaining units of the ambushing group next to each other. Every unit must touch at least one stand of another unit form that ambushing group. Once deployed, orders can be given to the unit by the same character that gave the infiltration order if he is within his normal command range, the infiltrating unit is considered to have used its first order to deploy.",
         "",
@@ -218,7 +218,7 @@
     "Doombull": {
       "order": 7,
       "text": [
-        "Beastherd, Herdkin and Bestigors joined by a Doombull will become subject to Bloodlust in the same way as Minotaurs and can only receive orders from the Doombull as long as it is part of the unit."
+        "Beastherd, Herdkin and Bestigors joined by a Doombull will become subject to Bloodlust in the same way as Minotaurs."
       ]
     },
     "Tuskgor Chariot": {
