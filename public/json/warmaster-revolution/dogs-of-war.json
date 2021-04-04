@@ -211,7 +211,8 @@
     },
     "Handgunners": {
       "text": [
-        "Handguns are rare but powerful weapons. A handgun shot can pierce armour far easier than an arrow or a crossbow bolt. Therefore, count enemy Armour values as one worse (-1) than normal."
+        "Handguns are rare but powerful weapons. A handgun shot can pierce armour far easier than an arrow or a crossbow bolt. Therefore, count enemy Armour values as one worse (-1) than normal.
+		Count enemy Armour values as one worse than normal when shot by handgun. One unit of Crossbowmen per full 1000 points can be replaced by Handgunners (including the 10 points extra in price) while still counting for the Crossbowmen min/max value. Note that this unit still counts for min/max value of Handgunners."
       ],
       "order": 2
     },
