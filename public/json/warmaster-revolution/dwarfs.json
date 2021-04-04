@@ -115,7 +115,7 @@
     "Anvil": {
       "type": "Special",
       "attack": "+1",
-      "points": "+50",
+      "points": "+30",
       "armyMax": 1,
       "order": 0
     }
@@ -136,7 +136,7 @@
     },
     "Troll Slayers": {
       "text": [
-        "A Troll Slayer unit will always use its initiative to charge an enemy if possible and cannot be given orders instead. They will never use their initiative to evade. Two or more Troll Slayer units cannot be given the same brigade order - only a single Troll Slayer unit can ever be included in a brigade. Troll Slayers cannot be driven back by shooting and never roll for drive backs. Troll Slayers must pursue or advance if victorious in combat where they are permitted to do so. Troll Slayers are unaffected by enemy that cause terror in combat - they don't suffer the -1 Attack modifier. Troll Slayers positively enjoy fighting monsters - the bigger the better in fact! Slayers add +1 Attack when fighting against a Monster stand.",
+        "A Troll Slayer unit will always use its initiative to charge an enemy if possible and cannot be given orders instead. They will never use their initiative to evade. Troll Slayers cannot be driven back by shooting and never roll for drive backs. Troll Slayers must pursue or advance if victorious in combat where they are permitted to do so. Troll Slayers are unaffected by enemy that cause terror in combat - they don't suffer the -1 Attack modifier. Troll Slayers positively enjoy fighting monsters - the bigger the better in fact! Slayers add +1 Attack when fighting against a Monster stand.",
         "",
         "Troll Slayer units earn victory points differently to other units as follows:",
         "",
