@@ -12,6 +12,7 @@
       "armour": 6,
       "size": 3,
       "points": 45,
+	  "noCount": true,
       "min": 1
     },
     "Ashigaru Bowmen": {
@@ -22,6 +23,7 @@
       "hits": 3,
       "armour": 0,
       "size": 3,
+	  "noCount": true,
       "points": 55
     },
     "Ashigaru Teppo": {
@@ -33,6 +35,7 @@
       "armour": 0,
       "size": 3,
       "points": 65,
+	  "noCount": true,
       "max": 2,
       "specialRules": [
         "Handgunners"
@@ -72,6 +75,7 @@
       "armour": 6,
       "size": 3,
       "points": 60,
+	  "noCount": true,
       "max": 2
     },
     "Ninja": {
@@ -82,7 +86,8 @@
       "hits": 3,
       "armour": 6,
       "size": 3,
-      "points": 70,
+      "points": 70,	  
+	  "noCount": true,
       "max": 2
     },
     "Komainu": {
@@ -93,6 +98,7 @@
       "armour": 5,
       "size": 3,
       "points": 90,
+	  "noCount": true,
       "max": 2,
       "specialRules": [
         "Temple Demons"
@@ -108,7 +114,8 @@
       "hits": 4,
       "armour": 5,
       "size": 3,
-      "points": 105,
+      "points": 110,
+	  "noCount": true,
       "max": 1
     },
     "Tengu": {
@@ -122,6 +129,7 @@
       "armour": 5,
       "size": 3,
       "points": 60,
+	  "noCount": true,
       "max": 1
     },
     "Shogun": {
@@ -144,22 +152,25 @@
     "Shugenja": {
       "order": 12,
       "type": "Hero",
-      "attack": 1,
+      "attack": "+0",
       "points": 90,
       "command": 8,
-      "max": 1
+      "max": 1,
+      "upgrades": [
+        "Scroll of Dispelling"
+      ],	  
     },
     "Tatsu": {
       "order": 13,
       "type": "Monstrous Mount",
       "attack": 2,
-      "points": 80,
+      "points": "+80",
       "max": 1
     },
     "Shrine": {
       "order": 14,
       "type": "Special Mount",
-      "points": 50,
+      "points": "+30",
       "armyMax": 1
     }
   },
@@ -188,7 +199,7 @@
       "text": [
         "The Samurai Bushido (Code of Honour) prevents them from serving a new master without permission from their previous Master. Ronin are former samurai whose master was killed or disgraced, so they could not be released from their oath to their previous Master and often work as mercenaries for Daimyo who needed to bolster their armies.",
         "They have not forgotten their martial arts training, but their armour is not as good as their former samurai days.",
-        "They are resentful of the Code of Honour that prevents them living a normal life, so are not concerned about losing face like their Samurai counterparts and tend to act as they see fit on the battlefield. This is represented with a -1 command penalty when receiving orders.",
+        "They are resentful of the Code of Honour that prevents them living a normal life, so are not concerned about losing face like their Samurai counterparts and tend to act as they see fit on the battlefield. Because of this, Nippon commanders need to stay very close to any Ronin they have hired to ensure that they will follow orders. Ronin (or brigades containing Ronin) may only receive orders from a character within 20cm.",
         ""
       ]
     },
@@ -196,6 +207,7 @@
       "order": 4,
       "text": [
         "Ninja are armed with throwing stars and darts, and are therefore allowed to shoot as if they had bows, but their range is reduced to 15cm. However, they may shoot from any edge without turning stands to face their target.",
+		"Ninja do not count towards the breakpoint of the army.",
         "Infiltrate: Ninja do not have to be deployed before the game if the player does not wish to do so. Instead individual units can be infiltrated onto the battlefield once the game has begun. To infiltrate a unit, the Nippon player nominates the point where he wants the Ninja to appear and issues an 'infiltration' order from any character. The character does not have to be within his normal command range to issue an infiltration order - the character's command range is considered to extend over the entire tabletop when issuing an infiltration order. Treat the order as issued to the nominated point, and apply any modifiers for distance and proximity of enemy, but ignore penalties for dense terrain. The nominated point must lie either on the table within dense terrain or on any base edge other than the enemy player's own table edge. If successful, place one stand on the nominated spot and arrange the rest of the unit into formation around it. The infiltrated unit cannot be placed so that it touches an enemy unit. Once deployed, orders can be given to the unit by the same character that gave the infiltration order if he is within his normal command range, the infiltrating unit is considered to have used its first order to deploy. If the infiltration order is failed the unit is not deployed and cannot infiltrate that turn, it can attempt to infiltrate in a subsequent turn at the same or a different place.",
         ""
       ]
@@ -231,8 +243,9 @@
     "Shugenja": {
       "order": 8,
       "text": [
-        "Although they are not wizards and cannot therefore cast spells, Nippon Shugenja can combat the magic of their enemies. If an enemy Wizard who is within 50cm of the Shugenja casts a spell the Shugenja can attempt to 'anti-magic' it. Note that it does not matter what the spell is or where it is cast, the Shugenja can 'anti-magic' it so long as the caster is with 50cm. To determine if this works roll a D6 - on the score of 4, 5 or 6 the Shugenja has succeeded and the spell doesn't work, it is dispelled by the Shugenja’s defiant efforts. If he fails, then the Shugenja’s efforts come to nothing and the spell works as normal. A Shugenja can attempt to anti-magic any number of spells in a turn, but only one attempt can be made to anti-magic any individual spell - even if the army includes more than one Shugenja and several are in range of the enemy Wizard.",
-        "The Shugenja adds +1 to any rolls on the Daemonic Instability table if he is within 20cm of the affected Daemon unit.",
+	    "Shugenjas may take a Scroll of Dispelling.",
+        "Although they are not wizards and cannot therefore cast spells, Nippon Shugenja can combat the magic of their enemies. If an enemy Wizard who is within 50cm of the Shugenja casts a spell the Shugenja can attempt to 'anti-magic' it. Note that it does not matter what the spell is or where it is cast, the Shugenja can 'anti-magic' it so long as the caster is with 50cm. To determine if this works roll a D6 - on the score of 4, 5 or 6 the Shugenja has succeeded and the spell doesn't work, it is dispelled by the Shugenja’s defiant efforts. If he fails, then the Shugenja’s efforts come to nothing and the spell works as normal. A Shugenja can attempt to anti-magic any number of spells in a turn, but only one attempt can be made to anti-magic any individual spell - even if the army includes more than one Shugenja and several are in range of the enemy Wizard.",		
+        "The Shugenja adds +1 to any rolls on the Daemonic Instability table if he is within 20cm of the affected Daemon unit. This benefit only applies when rolling on the Daemonic Instability table for friendly units.",
         ""
       ]
     },
@@ -253,7 +266,7 @@
   },
   "armyRules": [
     "Feudal rule: Nippon armies are based on feudal rule  Nippon overlords tend to be as arrogant as their Bretonnian counterparts towards those they consider to be inferior classes. They have a limited but grudging respect for the Ninja Clanmasters, partly so they can call on them for troops, but mainly because Ninja Clanmasters are better as friends than enemies.",
-    "To represent this, the Nippon army calculates when it must withdraw from the battle in a different way to other armies. Instead of counting all of its units at the start of the game, count only the number of units of Samurai, Samurai cavalry and Ninjas. Once the army has lost a half or more of its units of Samurai / Samurai cavalry / Ninjas, it must withdraw.",
+    "To represent this, the Nippon army calculates when it must withdraw from the battle in a different way to other armies. Instead of counting all of its units at the start of the game, count only the number of units of Samurai and Samurai cavalry. Once the army has lost a half or more of its units of Samurai or Samurai cavalry, it must withdraw.",
     ""
   ]
 }
