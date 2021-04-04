@@ -190,26 +190,20 @@
       ],
       "order": 6
     },
-    "Liche Priest": {
-      "text": [
-        "Liche Priests cast spells like other wizards."
-      ],
-      "order": 7
-    },
     "Zombie Dragon": {
       "text": [
         "A Tomb King or Liche Priest can ride a Zombie Dragon. A Dragon can fly increasing its rider's move from 60 to 100cm and it adds +3 Attacks to those of its rider. Zombie Dragons have a special shooting attack - they can belch corrosive breath! This attack can only be used if the Dragon riding character has joined a unit but is not engaged in combat. A character that has not joined a unit cannot use the Breath attack. The corrosive breath has a range of 20cm. It can be directed against one target as normal and has 3 Attacks worked out in the usual way. The Zombie Dragon is a terrifying creature - a unit that has been joined by a Dragon riding character causes terror in its enemies."
       ],
-      "order": 8
+      "order": 7
     },
     "Liche Chariot": {
       "text": [
         "A Tomb King or Liche priest can ride a chariot. A character riding a chariot adds +1 to his Attacks."
       ],
-      "order": 9
+      "order": 8
     },
     "Stone Thrower": {
-      "order": 10
+      "order": 9
     }
   },
   "spells": [
