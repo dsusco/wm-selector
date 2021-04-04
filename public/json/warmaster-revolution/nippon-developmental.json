@@ -18,8 +18,8 @@
     "Ashigaru Bowmen": {
       "order": 1,
       "type": "Infantry",
-      "attack": 3,
-      "range": 30,
+      "attack": "3/1",
+      "range": "30cm",
       "hits": 3,
       "armour": 0,
       "size": 3,
@@ -29,8 +29,8 @@
     "Ashigaru Teppo": {
       "order": 2,
       "type": "Infantry",
-      "attack": 3,
-      "range": 30,
+      "attack": "3/1",
+      "range": "30cm",
       "hits": 3,
       "armour": 0,
       "size": 3,
@@ -48,7 +48,7 @@
       "hits": 3,
       "armour": 5,
       "size": 3,
-      "points": 75,
+      "points": 80,
       "min": 3,
       "specialRules": [
         "Bushido"
@@ -76,19 +76,25 @@
       "size": 3,
       "points": 60,
 	  "noCount": true,
-      "max": 2
+      "max": 2,
+      "specialRules": [
+        "Ronin"
+      ]
     },
     "Ninja": {
       "order": 6,
       "type": "Infantry",
-      "attack": 3,
-      "range": 15,
+      "attack": "3/1",
+      "range": "15cm",
       "hits": 3,
       "armour": 6,
       "size": 3,
       "points": 70,	  
 	  "noCount": true,
       "max": 2
+      "specialRules": [
+        "Ninja"
+      ]
     },
     "Komainu": {
       "order": 7,
@@ -122,13 +128,14 @@
       "order": 9,
       "type": "Monster",
       "specialRules": [
-        "Temple Demons"
+        "Temple Demons",
+		"Tengu"
       ],
       "attack": 2,
       "hits": 3,
       "armour": 5,
       "size": 3,
-      "points": 60,
+      "points": 80,
 	  "noCount": true,
       "max": 1
     },
