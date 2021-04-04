@@ -177,7 +177,7 @@
     },
     "Vampire Lord": {
       "text": [
-        "These are powerful sorcerers as well as the army's general. They can cast spells in the same way as a wizard."
+		"These are powerful sorcerers as well as the army's general. They can cast spells in the same way as a wizard and can be given a magic item restricted to either a General or a Wizard. Note that the Vampire Lord is still a General and his command range extends over the whole battlefield as for other Generals."
       ],
       "order": 4
     },
