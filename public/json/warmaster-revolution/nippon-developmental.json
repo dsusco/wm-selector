@@ -76,10 +76,7 @@
       "size": 3,
       "points": 60,
 	  "noCount": true,
-      "max": 2,
-      "specialRules": [
-        "Ronin"
-      ]
+      "max": 2
     },
     "Ninja": {
       "order": 6,
@@ -92,9 +89,6 @@
       "points": 70,	  
 	  "noCount": true,
       "max": 2
-      "specialRules": [
-        "Ninja"
-      ]
     },
     "Komainu": {
       "order": 7,
@@ -128,8 +122,7 @@
       "order": 9,
       "type": "Monster",
       "specialRules": [
-        "Temple Demons",
-		"Tengu"
+        "Temple Demons"
       ],
       "attack": 2,
       "hits": 3,
@@ -214,7 +207,6 @@
       "order": 4,
       "text": [
         "Ninja are armed with throwing stars and darts, and are therefore allowed to shoot as if they had bows, but their range is reduced to 15cm. However, they may shoot from any edge without turning stands to face their target.",
-		"Ninja do not count towards the breakpoint of the army.",
         "Infiltrate: Ninja do not have to be deployed before the game if the player does not wish to do so. Instead individual units can be infiltrated onto the battlefield once the game has begun. To infiltrate a unit, the Nippon player nominates the point where he wants the Ninja to appear and issues an 'infiltration' order from any character. The character does not have to be within his normal command range to issue an infiltration order - the character's command range is considered to extend over the entire tabletop when issuing an infiltration order. Treat the order as issued to the nominated point, and apply any modifiers for distance and proximity of enemy, but ignore penalties for dense terrain. The nominated point must lie either on the table within dense terrain or on any base edge other than the enemy player's own table edge. If successful, place one stand on the nominated spot and arrange the rest of the unit into formation around it. The infiltrated unit cannot be placed so that it touches an enemy unit. Once deployed, orders can be given to the unit by the same character that gave the infiltration order if he is within his normal command range, the infiltrating unit is considered to have used its first order to deploy. If the infiltration order is failed the unit is not deployed and cannot infiltrate that turn, it can attempt to infiltrate in a subsequent turn at the same or a different place.",
         ""
       ]
