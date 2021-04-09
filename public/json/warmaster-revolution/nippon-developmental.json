@@ -12,7 +12,7 @@
       "armour": 6,
       "size": 3,
       "points": 45,
-	  "noCount": true,
+      "noCount": true,
       "min": 1
     },
     "Ashigaru Bowmen": {
@@ -23,7 +23,7 @@
       "hits": 3,
       "armour": 0,
       "size": 3,
-	  "noCount": true,
+      "noCount": true,
       "points": 55
     },
     "Ashigaru Teppo": {
@@ -35,7 +35,7 @@
       "armour": 0,
       "size": 3,
       "points": 65,
-	  "noCount": true,
+      "noCount": true,
       "max": 2,
       "specialRules": [
         "Handgunners"
@@ -75,7 +75,7 @@
       "armour": 6,
       "size": 3,
       "points": 60,
-	  "noCount": true,
+      "noCount": true,
       "max": 2
     },
     "Ninja": {
@@ -97,7 +97,7 @@
       "armour": 5,
       "size": 3,
       "points": 90,
-	  "noCount": true,
+      "noCount": true,
       "max": 2,
       "specialRules": [
         "Temple Demons"
@@ -114,7 +114,7 @@
       "armour": 5,
       "size": 3,
       "points": 110,
-	  "noCount": true,
+      "noCount": true,
       "max": 1
     },
     "Tengu": {
@@ -128,7 +128,7 @@
       "armour": 5,
       "size": 3,
       "points": 80,
-	  "noCount": true,
+      "noCount": true,
       "max": 1
     },
     "Shogun": {
@@ -183,20 +183,22 @@
       "order": 2,
       "text": [
         "Samurai live their lives by a strict code of honour and ideals. The troops do not like losing face, so:",
-        "a, they cannot use Initiative to evade;",
-        "b. they roll 1 less drive back dice;",
-        "c. they must pursue if winning a combat.",
-        "They are not obliged to Advance if the enemy is destroyed nor must they Pursue if fortified.",
-        ""
+        "",
+        "a) they cannot use Initiative to evade;",
+        "b) they roll 1 less drive back dice;",
+        "c) they must pursue if winning a combat.",
+        "",
+        "They are not obliged to Advance if the enemy is destroyed nor must they Pursue if fortified."
       ]
     },
     "Ronin": {
       "order": 3,
       "text": [
         "The Samurai Bushido (Code of Honour) prevents them from serving a new master without permission from their previous Master. Ronin are former samurai whose master was killed or disgraced, so they could not be released from their oath to their previous Master and often work as mercenaries for Daimyo who needed to bolster their armies.",
+        "",
         "They have not forgotten their martial arts training, but their armour is not as good as their former samurai days.",
-        "They are resentful of the Code of Honour that prevents them living a normal life, so are not concerned about losing face like their Samurai counterparts and tend to act as they see fit on the battlefield. This is represented with a -1 command penalty when receiving orders.",
-        ""
+        "",
+        "They are resentful of the Code of Honour that prevents them living a normal life, so are not concerned about losing face like their Samurai counterparts and tend to act as they see fit on the battlefield. This is represented with a -1 command penalty when receiving orders."
       ]
     },
     "Ninja": {
