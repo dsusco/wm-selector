@@ -11,6 +11,7 @@
        <MagicItems :used="true" v-if="item.abbr === 'miu'" />
        <Spells v-if="item.abbr === 'sp'" />
        <QRCode class="handle" v-if="item.abbr === 'qr'" :value="qrCodeValue()" />
+       <URL v-if="item.abbr === 'url'" />
     </div>
   </VueDraggable>
 </template>
@@ -26,6 +27,7 @@ import SpecialRules from '@/components/Print/SpecialRules';
 import Spells from '@/components/Print/Spells';
 import Stats from '@/components/Print/Stats';
 import TextList from '@/components/Print/TextList';
+import URL from '@/components/Print/URL';
 import store from '@/store';
 
 export default {
@@ -38,6 +40,7 @@ export default {
     Spells,
     Stats,
     TextList,
+    URL,
     VueDraggable
   },
   computed: {
