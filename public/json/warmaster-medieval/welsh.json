@@ -1,0 +1,159 @@
+{
+  "name": "Welsh Army, 1297",
+  "version": "Warmaster Medieval",
+  "group": "The rebellious borders",
+  "order": 0,
+  "units": {
+    "Welsh Knights": {
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "min": 1,
+      "max": 2,
+      "points": 110,
+      "specialRules": [
+        "Knights"
+      ],
+      "order": 0
+    },
+    "Welsh Foot": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "min": 6,
+      "points": 35,
+      "specialRules": [
+        "Warband"
+      ],
+      "order": 1
+    },
+    "Irish Mercenaries": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "armour": "6+",
+      "max": 4,
+      "points": 45,
+      "specialRules": [
+        "Warband"
+      ],
+      "order": 2
+    },
+    "Archers": {
+      "type": "Infantry",
+      "attack": 2,
+      "range": "30",
+      "hits": 3,
+      "size": 3,
+      "min": 2,
+      "max": 8,
+      "points": 40,
+      "upgrades": [
+        "Skirmishers"
+      ],
+      "order": 3
+    },
+    "Border Horse": {
+      "type": "Cavalry",
+      "attack": 2,
+      "range": "15",
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "max": 1,
+      "points": 60,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "order": 4
+    },
+    "Prince": {
+      "type": "General",
+      "attack": "+2",
+      "command": 8,
+      "size": 1,
+      "armyMin": 1,
+      "armyMax": 1,
+      "points": 100,
+      "upgrades": [
+        "Llywelyn ap Gruffudd"
+      ],
+      "order": 5
+    },
+    "Lord": {
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+	  "max":2,
+      "points": 80,
+      "order": 6
+    },
+    "Irish Chieftain": {
+      "type": "Subordinate",
+      "attack": "+2",
+      "command": 8,
+      "size": 1,
+	  "max":1,
+      "points": 50,
+      "order": 7
+    }
+  },
+  "upgrades": {
+    "Skirmishers": {
+      "type": "Infantry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": -10,
+      "order": 0,
+      "specialRules": [
+        "Skirmish"
+      ]
+    },
+    "Llywelyn ap Gruffudd": {
+      "attack": "+2",
+      "command": 8,
+      "order": 1,
+      "armyMax": 1,
+      "points": 25
+    }
+  },
+  "specialRules": {
+    "Knights": {
+      "order": 1
+    },
+    "Skirmish": {
+      "order": 2
+    },
+    "Warband": {
+      "order": 3
+    },
+    "Llywelyn ap Gruffudd": {
+      "text": [
+        "If Llywelyn is taken, the army benefits from the 'Ambush' rule. In the opposing player's turn, in his Command phase, Llywelyn can spring an 'ambush' after any successful Command roll made by the enemy General. The opposing player can't make any more Command rolls that turn after the ambush has been spring - even if the opposing General would otherwise be entitled to re-rolls. The Ambush rule can only be used once in the game."
+      ],
+      "order": 4
+    },
+    "Irish Mercenaries": {
+      "text": [
+        "If you include Irish Mercenaries then you can also include an Irish Chieftain in the army if you wish."
+      ],
+      "order": 5
+    },
+    "Irish Chieftain": {
+      "text": [
+        "You must include Irish Mercenaries if you want to include an Irish Chieftain."
+      ],
+      "order": 6
+    },
+    "Skirmishers": {
+      "order": 7
+    }
+  }
+}

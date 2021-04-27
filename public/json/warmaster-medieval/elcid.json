@@ -1,0 +1,169 @@
+{
+  "name": "Army of El Cid, 1094",
+  "version": "Warmaster Medieval",
+  "group": "Reconquista",
+  "order": 1,
+  "units": {
+    "Knights": {
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "min": 2,
+      "max": 4,
+      "points": 110,
+      "order": 0
+    },
+    "Andalusian Nobles": {
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "min": 1,
+      "max": 2,
+      "points": 100,
+      "order": 1,
+      "specialRules": [
+        "Shock"
+      ]
+    },
+    "Andalusian Jinetes": {
+      "type": "Cavalry",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "armour": "6+",
+      "size": 2,
+      "max": 4,
+      "points": 60,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "order": 2
+    },
+    "Andalusian Infantry": {
+      "type": "Infantry",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": 40,
+      "order": 3,
+      "specialRules": [
+        "Skirmish"
+      ]
+    },
+    "Infantry": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 45,
+      "order": 4
+    },
+    "Archers": {
+      "type": "Infantry",
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "max": 2,
+      "points": 40,
+      "order": 5,
+      "upgrades": [
+        "Skirmishers"
+      ],
+      "specialRules": [
+        "Skirmishers"
+      ]
+    },
+    "Guard Spearmen": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 60,
+      "order": 6
+    },
+    "General": {
+      "type": "General",
+      "attack": "+2",
+      "command": 9,
+      "size": 1,
+      "armyMin": 1,
+      "armyMax": 1,
+      "points": 125,
+      "upgrades": [
+        "El Cid"
+      ],
+      "order": 7
+    },
+    "Lord": {
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "max": 1,
+      "points": 80,
+      "order": 8
+    },
+    "Andalusian Lord": {
+      "type": "Subordinate",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 40,
+      "order": 9
+    }
+  },
+  "upgrades": {
+    "El Cid": {
+      "type": "General",
+      "points": "+25",
+      "armyMax": 1,
+      "order": 0
+    },
+    "Skirmishers": {
+      "type": "Infantry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": -10,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "order": 1
+    }
+  },
+  "specialRules": {
+    "Skirmish": {
+      "order": 1
+    },
+    "Shock": {
+      "order": 2
+    },
+    "Knights": {
+      "order": 3
+    },
+    "El Cid": {
+	  "text":[
+	    "If the General is El Cid, then any unit he joins becomes 'terrifying'."
+	  ],
+      "order": 4
+    },
+    "Archers": {
+      "text": [
+        "The following options are available to the army of El Cid. Any Archers can be regraded as Skirmishers with the stats and costs reduction shown."
+      ],
+      "order": 5
+    },
+    "Skirmishers": {
+      "order": 6
+    }
+  }
+}

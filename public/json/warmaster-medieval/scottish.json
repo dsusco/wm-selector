@@ -1,0 +1,137 @@
+{
+  "name": "The Scottish Army, 1297",
+  "version": "Warmaster Medieval",
+  "group": "The rebellious borders",
+  "order": 1,
+  "units": {
+    "Scottish Knights": {
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "max": 1,
+      "points": 100,
+      "order": 0,
+      "specialRules": [
+        "Shock"
+      ]
+    },
+    "Lowland Infantry": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "min": 8,
+      "points": 50,
+      "specialRules": [
+        "Schiltron"
+      ],
+      "order": 1
+    },
+    "Highlanders": {
+      "type": "Infantry",
+      "attack": 4,
+      "hits": 3,
+      "size": 3,
+      "min": 1,
+      "max": 2,
+      "points": 45,
+      "order": 2
+    },
+    "Archers": {
+      "type": "Infantry",
+      "attack": 2,
+      "range": "30",
+      "hits": 3,
+      "size": 3,
+      "max": 1,
+      "points": 40,
+      "upgrades": [
+        "Skirmishers"
+      ],
+      "order": 3
+    },
+    "Light Horse": {
+      "type": "Cavalry",
+      "attack": 2,
+      "range": "15",
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "max": 1,
+      "points": 60,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "order": 4
+    },
+    "King": {
+      "type": "General",
+      "attack": "+2",
+      "command": 8,
+      "size": 1,
+      "armyMin": 1,
+      "armyMax": 1,
+      "points": 100,
+      "upgrades": [
+        "William Wallace"
+      ],
+      "order": 5
+    },
+    "Lord": {
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+	  "max":2,
+      "points": 80,
+      "order": 6
+    },
+    "Clan Lord": {
+      "type": "Subordinate",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+	  "max":2,
+      "points": 40,
+      "order": 7
+    }
+  },
+  "upgrades": {
+    "Skirmishers": {
+      "type": "Infantry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": -10,
+      "order": 0,
+      "specialRules": [
+        "Skirmish"
+      ]
+    },
+    "William Wallace": {
+      "attack": "+2",
+      "command": 9,
+      "order": 1,
+      "armyMax": 1,
+      "points": 25
+    }
+  },
+  "specialRules": {
+    "Knights": {
+      "order": 1
+    },
+    "Skirmish": {
+      "order": 2
+    },
+    "Shiltron": {
+      "order": 3
+    },
+    "Skirmishers": {
+      "order": 7
+    }
+  }
+}

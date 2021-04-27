@@ -1,0 +1,176 @@
+{
+  "Crossbow": {
+    "text": [
+      "Troops hit by crossbows during their Shooting phase take any armour saving throws with a -1 penality if the Crossbowmen did not move during their Command phase. Note that this does not apply to shooting that takes place when crossbowmen shoot at chargers - which occurs in the enemy's Command phase."
+    ]
+  },
+  "Pavisse": {
+    "text": [
+      "Stands shot at by enemy to their front count as defended against all attackers apart from artillery, ie, 5+ is required to score a hit from missile fire rather than 4+. A unit that retreats or pursue in combat, that charges or advance into combat, which falls back following combat, which is driven back by shooting, or which makes any move outside the Command phase for whatever reason, will immediately avandon its pavisse. Once a unit abandons its pavisse, the above rules cease to apply."
+    ]
+  },
+  "Portents": {
+    "text": [
+      "The General can take the portents before the battle. This allows the Genral to re-roll one failed Command roll once during the battle. Take the Command test again—if successful the order is issued and the General can continue giving further orders if you wish."
+    ]
+  },  
+  "Skirmishers": {
+    "text": [
+  	  "Can be regraded as Skirmisher with the stats and price reduction shown."
+    ]
+  },
+  "Handgunners": {
+    "text": [
+      "When rolling for drive backs as a resulst of casualties inflicted by Handgunners, add +1 additional dice. For example, if three casualties are inflicted roll four dice. This rule is common to all gunpowder weapons. Note it is +1 dice regardless of the number of gunpowder units shooting."
+    ]
+  },
+  "Shieldwall": {
+    "text": [
+      "Some close fighting infantry are accustomed to form a line of closely locked shields&mdash;this is typical of troops that fight best at a stand still&mdash;tending to lose cohesion and discipline once they start to manoeuvre.",
+      "",
+      "1. A shieldwall unit counts its armour save as 1 better in the first round of combat when charged. For example, troops with no armour count as 6+, 6+ as 5+ and so on. This only counts when the shieldwall is charged, not when it charges, and it does not count in subsequent rounds of pursuit combat. The bonus does not apply if the unit is fortified or occupying dense terrain (broken/marshy ground, steep hills/slopes, woods/tall scrub. villages/built-up areas&mdash;see Terrain and Movement p31)."
+    ]
+  },
+  "Terror": {
+    "text": [
+      "Grant penalty of -1 hit to all individual stands which are touching at least one stand of terrifying enemy.This penalty doesn't apply to units which are terrifying themselves."
+    ]
+  },
+  "Light Artillery": {
+    "text": [
+      "Light artillery describes fully portable artillery pieces such as a Roman scorpion. These are mostly bolt throwing machines in type but might also include small ballistae throwing a stone or cast shot. These weapons are effective both ar piercing armour and penetrating deep formations and have a longer range than ordinary shooting.",
+      "",
+      "1. A unit taking a hit from a light artillery piece is disallowed any Armour roll it normally has. Armour is of no value against light artillery.",
+      "2. A light artillery stand can shoot in the zone directly forward of its front edge&mdash;see p37.",
+      "3. A light artillery shot can strike up to three touching stands within the missile's line of sight as shown on the diagram on p125. These can be stands from the same or different units&mdash;the only consideration is that the stands are touching so the shot passes over an unbroken area of bases.",
+      "",
+      "Roll one dice against each unit for each stand that lies beneath the missile's flight. The missile automatically follows the shortest route between the artillery stand and the closest target. For example, if a unit is in a column and three stands lie beneath the missile's flight, roll three dice. If two units are in line one behind the other, roll one dice against each unit.",
+      "",
+      "Because it is possible to shoot at one enemy unit and inflict hits on a unit next to it, it can sometimes happen that units engaged in combat suffer one or more hits from artillery. An engaged friendly unit call also suffer hits if a player is careless enough to place his units in the line of fire. Any engaged units taking hits from light artillery first remove casualties and then carry remaining hits forward into the following combat round. All such hits count as struck in the following round for purposes of working out the combat result. Note that no drive backs apply to units engaged in combat."
+    ]
+  },
+  "Shiltron": {
+    "text": [
+	  "This formation consisting of a round hedgehog of pikes or long spears, sometimes strenghened by the placing of stakes. In the game this is not represented by a specific arrengement of stands as that would not be pratical. The following rules apply to such units:",
+      "1) If a unit does not move in its own Command phase then it is automatically in Shiltron formation.",
+	  "2) If a unit in Shiltron formation moves in its Command phase or subsequently in any part of either player's turn for any reason, it loses its Shcultron formation",
+	  "3) The stands of a unit in Schiltron formation are considered to have no flanks or rear and hence no flank/rear penalities apply in respect of commands or combat. All edges count as separate 'fronts'.",
+	  "4) The stands of a unit in Schiltron formation count as defended to charging cavalry in combat regardless of whether they charge the stand's front, side or rear edges (because all edges count as 'fronts' as explained above)",
+	  "5) A unit in Schiltron formation can always choose to ignore drive backs by missile fire from enemy shooting and become Confused instead. Note that this is up to the player, the unit can be driven back if preferred, in wich case it loses Schiltron status as it moves."
+    ]
+  },
+  "Mounted Infantry": {
+    "text": [
+      "Mounted infantry have a 30cm move rate and trat terrain as if they were cavalry - eg, they are unable to enter woods and comparable dense terrain. In all other respects Mounted Infantry are treated as infantry; ie, they are based as infantry, they fight as infantry, cannot pursue retreating cavalry..."
+    ]
+  },
+  "Stakes": {
+    "text": [
+	  "Prepared defenses were commonly used",
+      "1) We represent prepared defences in the game by lengths of model stake fastened to card bases. Each stand carries sufficient stakes to cover its own frontage. The line of stakes is modelled to face 'forward' so that troops can be arranged behind with the sharpened points of the stakes facing their enemy. The depth of the stake base is not all that important - 10mm looks about right.",
+	  "2) Deploying stakes requires an order and takes an entire move to complete",
+	  "3) Deployed stakes remain where they are placed for the rest of the battle.They are effectively part of the 'terrain' in the same way as fences or low hedges. Stakes offer protection to any infantry stands positioned directly behind. Stakes present no obstacle to movement.",
+	  "4) Any infantry stand protected by stakes count as defended in hand-to-hand combait against charging enemy cavalry stands striking acress the stakes(5+ to hit, no bonus due to charge). Place the chargers touching the stake line and resolve combat as if they were touching the stands behind."
+	  
+    ]
+  },
+  "Longbow": {
+    "text": [
+      "A non-skirmishing Longbow unit of three stands deployed in either a regular line formation or a combined arms formations adds +1 shooting attack to its total, ie, such a unit has four shots rather than three."
+    ]
+  },
+  "Combined Arms": {
+    "text": [
+      "This rule represent troops who habitually fought as part of a mixed formation of heavy and missile armed infantry.",
+      "1. Troops wit the combined arms rule can adopt a formation with the heavy infantry(even 2 infantry with shock) in the front and missile troops aranged into a supporting position behind.",
+	  "2. In a combined arms formation, the missile stands add their shots to the corresponding stands at the front of the formation. Range and line of sight is calculated from the stand in front. In the case of Pike units, the shots can be allocated to any of the Pike stands at the front of the formation so long as no more than one shot is allocated to any stand.",
+	  "3. If a stand from the front of the combined arms formation falls casualty, the missile armed stand behind simply becomes the shooting stand.",
+	  "4. In the case of a combined arms formation of Pikes and Longobws, the rear rank of Archers can only shoot if the unit did not move during the Command part of the turn.",
+	  "5. If a combined arms formations is charged, it can shoot at the charging enemy even though the missile armed stands are not the target of the charge. Calculate the shooting fdrom the front rank as for other combined arms shooting.",
+	  "6. When a combined arms Pike and Longbow formation is engaged in combat, both ranks of troops count as engaged even though the archers cannot support and are not normally considered part of the combat. Although the rear rank does not contribute to the fighting, it is obliged to retrat if defeated, can pursue if victorious, and so on."
+    ]
+  },
+  "Camels": {
+    "text": [
+      "Some cavalry units were mounted on camels rather than horses. This was usually a matter of convenience or necessity rather than preference. Camels have a useful characteristic that the ancients recognized and often exploited: namely. horses don't like 'em! It's the smell.",
+      "",
+      "1. If an army does not include camel units then its horses find the scent of camels unsettling. Consequently, if a unit of horsed cavalry or chariots is within 20cm of enemy camels when an order is given, any failure, regardless of the dice roll, is considered to be a Blunder (see p68). Even if the order is given by the General, a failure counts as a blunder in this situation. This penalty applies to armies even if their list allows camels but where they have not been included in the army.",
+      "2. In a doubles game where armies are fighting as allies, if one army has camels and the other does not, camels will also unsettle allied cavalry or chariot units within 20cm as described above."
+    ]
+  },
+  "Knights": {
+	"text":[
+	  "Knights are mounted to the short '20mm' edge of the base ine the same way as 'shock' cavalry and all the normal 'shock' rules apply where required (see Warmaster Ancients p127)",
+	  "",
+	  "Knights stands fighting to their front add a further +1 to their Attack value in their first round of combat in the game. They receive this bonus regardless of wether they charge or are charged, and regardless of whether they are fighting enemy who are in open, defended or fortified. Bear in mind this bonus applies only in the unit's first round of combat (ie, the first round of their first turn of combat) and only if the Knights fight to their front. This assumes the Knights either charge in an especially determined manner or vigorously respond to a charging enemy, followed by horses and riders quickly tiring after the initial clash"
+	]
+  },
+  "Fanatics": {
+    "text": [
+      "Some troops are deemed to fight with unreasoning ferocity hurling themselves upon the enemy with almost complete disregard for their own lives. This includes religious zealots and frenzied warrior berserkers.",
+      "",
+      "1. Fanatics ignore the usual Combat penalty for fighting terrifying enemies&mdash;nothing terrifies a Fanatic!",
+      "",
+      "2. If a Fanatic unit is able to charge in the Initiative sub-phase of the Command phase then it must do so&mdash;the player has no choice in the matter. Fanatic units charge before other units move in the sub-phase. If several Fanatic units arc charging in this way, the player can decide the order in which they charge.",
+      "",
+      "3. If a Fanatic unit wins a combat round then it must pursue if it is permitted to do so. Fanatic units that can see retreating enemy will always pursue before non-Fanatic units in the same engagement. If a Fanatic unit wins a combat and has the opportunity to advance then it must do so. Fanatic units will advance before other units advance, pursue, or fall back from the combat."
+    ]
+  },
+  "Heavy Artillery": {
+    "text": [
+      "Although large, these are still field pieces that can be transported fairly easily, perhaps with the assistance of pack animals or carts. Siege artillery is larger again and is not considered in Warmaster Ancients. Heavy artillery therefore includes such things as large ballistae and onagers&mdash;machines that throw a stone or a load of smaller stones.",
+      "",
+      "1. A unit taking a hit from a heavy artillery piece is disallowed any Armour roll it normally has. Armour is of no value against heavy artillery.",
+      "2. A single heavy artillery stand has not one but three shots and therefore rolls three dice against its target&mdash;this is shown on the Range stat as 3x60. This means it has a range of 60cm and three shots.",
+      "3. A heavy artillery unit cannot shoot at enemies charging it. The weapon is slow to operate and has a high trajectory making it unsuitable for engaging enemies who are charging it.",
+      "4. A heavy artillery stand can shoot in the zone directly forward of its front edge&mdash;see p37.",
+      "5. Heavy artillery is relatively cumbersome and difficult to move and is therefore affected by the 'Slow' rule. See Slow p128."
+    ]
+  },
+  "Shock": {
+    "text": [
+      "The 'shock' rule applies to hard hitting and often heavily armoured cavalry units. They are likely to be armed with long spears or lances, and charge at a good pace to deliver a decisive blow or punch through the enemy lines. These units are indicated in the army lists.",
+      "",
+      "1. Shock cavalry units can be based facing the short (20mm) edge of the stand. Their narrow frontage and increased depth can be thought of as representing successive co-ordinated waves of attack against a narrow point.",
+      "2. Alternatively to the above, shock cavalry can be based facing the long (40mm) edge of the stand in which case, each stand adds + 1 Combat Attack when charging or pursuing.",
+      "3. If shock cavalry units are armed with bows, their shooting zone is always straight ahead of their frontage. See Shooting Zone p37.",
+      "",
+      "**Note:** Two base sizes are given because it is recognised that players using larger scale models will find it impractical to base stands to the short edge. In addition, some players may have pre-existing armies based to a 40mm frontage. The long edge basing is not an exact equivalent, but it is comparable overall and is presented as a reasonable compromise. See the Appendices for more on alternative basing for different units."
+    ]
+  },
+  "Skirmish": {
+    "text": [
+      "In the Warmaster Ancients game, most skirmishers represent troops whose role is exclusively skirmishing. Whilst other troops may skirmish to a degree, they do so on the tactical level subsumed within close combat. The exceptions are some light cavalry and chariot units which are adjudged to have a duel role and which usually carry a mixture of weapons, eg, Huns.",
+      "",
+      "Because skirmishers are such a fundamental part of the armies, the skirmish rules are described throughout the book in the appropriate sections. These are summarised below together with references to the full descriptions.",
+      "",
+      "Skirmishers carry suitable weapons&mdash;sometimes bows but more likely s lings or javelins&mdash;and fight in loose, informal formations taking advantage of local terrain to avoid contact with more powerful but less mobile enemies. In general, skirmishing units represent fewer men than close fighting units. It is assumed they will usually disperse or flee if attacked.",
+      "",
+      "1. Skirmishers always move at up to full pace for their type regardless of format ion or circumstances (see p22).",
+      "2. Skirmishing units can see all round&mdash;they can draw a line of sight from any stand's edge. Their shooting zone extends all round to their front, side and rear. Because they can see enemies to their side or rear they can charge, evade or otherwise react to such units (see p10 Visibility) and (p37 Shooting).",
+      "3. Unless confused, skirmishers are allowed to evade from an enemy charge in the opposing Command phase (see p24).",
+      "4. Unless confused, skirmishers arc allowed to evade instead of being driven back by shooting in the opposing Shooting phase (see p25).",
+      "5. Skirmishers can evade through other units. If these other units are not skirmishers, or if they are a second or subsequent unit evaded through regardless of whether they are skirmishers or not, then both units must test for confusion once the move is complete. Units become confused on the roll of a 6 (see p24).",
+      "6. Skirmishing infantry can support from the side only: they cannot support from behind (see p50).",
+      "7. Skirmishing infantry can move through some types of terrain that is otherwise impassable&mdash;notably rivers/deep water, forests, and cliffs. This is described in the section on Terrain &amp; Movement (see p31).",
+      "",
+      "**Note:** For the avoidance of doubt, skirmishing infantry are able to evade from charging cavalry, or other non-skirmishing units, even if these units have a greater move distance than they do. In this case, skirmishers are assumed to have already seen, reacted to, and taken steps to avoid their attackers well before they reach their position."
+    ]
+  },
+  "Slow": {
+    "text": [
+      "The 'Slow' special rule applies to units that are exceptionally heavily armoured or encumbered for their basic type. In our game, they do not move at a slower rate than other units of the same type, but they are less likely to move repeatedly. This makes them less flexible tactically and represents the exhausting effort of wearing a great deal of armour or carrying a heavy burden. The rule is most commonly applied to Cataphract cavalry&mdash;heavily armoured riders mounted upon armoured horses.",
+      "",
+      "1. Slow units suffer an extra -1 Command penalty for second and subsequent orders. Ie, first order no penalty exactly as other units. second order -2 rather than -1, and third order -3 rather than -2."
+    ]
+  },
+  "Warband": {
+    "text": [
+      "Warbands represent close fighting but oftren poorly organised infantry or cavalry, generally tribal troops, barbarians, levy, or militia, that lack training or experience. These troops become confident in large numbers or when flushed with victory, but timid if few in number or once they have been beaten.",
+      "",
+      "1. If three or four units of warband are given a brigade order, the player can add 1 to the commander's Command value up to a maximum of 10. The entire brigade has to comprise warband units, and there must be at least three units in the brigade.",
+      "2. If a warband unit is driven back by shooting bur has not yet lost a stand then it rolls one less dice for the drive back than usual. If a warband is driven back by shooting and has lost one or more stands for whatever reason then it rolls one more dice than usual.",
+      "3. If a warband unit pursues in combat then it receives a further +1 Attack bonus per stand in the following pursuit round. If a warband retreats from combat then it receives a -1 Attack penalty per stand in the following pursuit round."
+    ]
+  }
+}

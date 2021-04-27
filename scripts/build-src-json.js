@@ -23,6 +23,38 @@ function groupOrder(group) {
       return 3;
     case 'The Far East':
       return 4;
+    case 'Reconquista':
+      return 0;
+    case 'Crusades':
+      return 1;
+	case 'The Anarchy':
+	  return 2;
+	case 'Guelphs and Ghibellines':
+	  return 3;
+	case 'Mongol invasion':
+	  return 4;
+	case 'Second Barons\' War':
+	  return 5;
+	case 'The rebellious borders':
+	  return 6;
+	case 'Hundred Years War':
+	  return 7;
+	case 'The Polish-Lithuanian union':
+	  return 8;
+	case 'Polish–Lithuanian–Teutonic War':
+	  return 9;
+	case 'Hussite Wars':
+	  return 10;
+	case 'Ottoman–Hungarian wars':
+	  return 11;
+	case 'Burgundian Wars':
+	  return 12;
+	case 'Wars of the Roses':
+	  return 13;
+	case 'Italian Wars':
+	  return 14;
+	case 'Japanese invasions of Korea':
+	  return 15;
     default:
       return +group;
   }
