@@ -1,0 +1,262 @@
+{
+  "specialRules": {
+    "Skirmish": {
+      "order": 1,
+      "text": [
+        "In the Warmaster Ancients game, most skirmishers represent troops whose role is exclusively skirmishing. Whilst other troops may skirmish to a degree, they do so on the tactical level subsumed within close combat. The exceptions are some light cavalry and chariot units which are adjudged to have a duel role and which usually carry a mixture of weapons, eg, Huns.",
+        "Because skirmishers are such a fundamental part of the armies, the skirmish rules are described throughout the book in the appropriate sections. These are summarised below together with references to the full descriptions.",
+        "Skirmishers carry suitable weapons—sometimes bows but more likely slings or javelins—and fight in loose, informal formations taking advantage of local terrain to avoid contact with more powerful but less mobile enemies. In general, skirmishing units represent fewer men than close fighting units. It is assumed they will usually disperse or flee if attacked.",
+        "",
+        "1. Skirmishers always move at up to full pace for their type regardless of formation or circumstances (see p22).",
+        "2. Skirmishing units can see all round—they can draw a line of sight from any stand's edge. Their shooting zone extends all round to their front, side and rear. Because they can see enemies to their side or rear they can charge, evade or otherwise react to such units (see p10 Visibility) and (p37 Shooting).",
+        "3. Unless confused, skirmishers are allowed to evade from an enemy charge in the opposing Command phase (see p24).",
+        "4. Unless confused, skirmishers arc allowed to evade instead of being driven back by shooting in the opposing Shooting phase (see p25).",
+        "5. Skirmishers can evade through other units. If these other units are not skirmishers, or if they are a second or subsequent unit evaded through regardless of whether they are skirmishers or not, then both units must test for confusion once the move is complete. Units become confused on the roll of a 6 (see p24).",
+        "6. Skirmishing infantry can support from the side only: they cannot support from behind (see p50).",
+        "7. Skirmishing infantry can move through some types of terrain that is otherwise impassable—notably rivers/deep water, forests, and cliffs. This is described in the section on Terrain & Movement (see p31).",
+        "Note: For the avoidance of doubt, skirmishing infantry are able to evade from charging cavalry, or other non-skirmishing units, even if these units have a greater move distance than they do. In this case, skirmishers are assumed to have already seen, reacted to, and taken steps to avoid their attackers well before they reach their position."
+      ]
+    },
+    "Camels": {
+      "order": 2,
+      "text": [
+        "Some cavalry units were mounted on camels rather than horses. This was usually a matter of convenience or necessity rather than preference. Camels have a useful characteristic that the ancients recognized and often exploited: namely. horses don't like 'em! It's the smell.",
+        "",
+        "1. If an army does not include camel units then its horses find the scent of camels unsettling. Consequently, if a unit of horsed cavalry or chariots is within 20cm of enemy camels when an order is given, any failure, regardless of the dice roll, is considered to be a Blunder (see p68). Even if the order is given by the General, a failure counts as a blunder in this situation. This penalty applies to armies even if their list allows camels but where they have not been included in the army.",
+        "2. In a doubles game where armies are fighting as allies, if one army has camels and the other does not, camels will also unsettle allied cavalry or chariot units within 20cm as described above."
+      ]
+    },
+    "Chariot Runners": {
+      "order": 3,
+      "text": [
+        "One unit of Light Infantry per 1000 points can be upgraded to Chariot Runners at no cost.",
+        "",
+        "Chariot runners are infantry units that accompany chariots either on-foot or by hitching a ride and dismounting once combat begins.",
+        "1. If a chariot runner unit is touching a friendly chariot unit and both are included in a brigade order, the chariot runners unit's movement is increased to that of the chariot unit. Each chariot unit can 'carry' one chariot runner unit in this way. The chariot runners and chariots must end the move touching—even if one or the other charges during the move."
+      ]
+    },
+    "Portents": {
+      "order": 4,
+      "text": [
+        "The General can take the portents before the battle. This allows the Genral to re-roll one failed Command roll once during the battle. Take the Command test again—if successful the order is issued and the General can continue giving further orders if you wish."
+      ]
+    },
+    "King David": {
+      "order": 5,
+      "text": [
+        "If you take King David the general is divinely inspired—the player can re-roll any one failed attack dice in any one combat per turn."
+      ]
+    }
+  },
+  "units": {
+    "Bowmen": {
+      "order": 0,
+      "type": "Infantry",
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "min": 4,
+      "max": 8,
+      "points": 40
+    },
+    "Spearmen": {
+      "order": 1,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "min": 4,
+      "points": 35
+    },
+    "Gibborim": {
+      "order": 2,
+      "type": "Infantry",
+      "attack": 4,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "max": 2,
+      "points": 55
+    },
+    "Philistine": {
+      "order": 3,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "max": 8,
+      "points": 45
+    },
+    "Light Infantry": {
+      "order": 4,
+      "type": "Infantry",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "max": 3,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "upgrades": [
+        "Chariot Runners"
+      ],
+      "points": 40
+    },
+    "Skirmishers": {
+      "order": 5,
+      "type": "Infantry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "points": 30
+    },
+    "Bedouin": {
+      "order": 6,
+      "type": "Cavalry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "max": 1,
+      "specialRules": [
+        "Skirmish",
+        "Camels"
+      ],
+      "points": 60
+    },
+    "Scouts": {
+      "order": 7,
+      "type": "Cavalry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "max": 1,
+      "points": 40
+    },
+    "Light Chariots": {
+      "order": 8,
+      "type": "Chariot",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 80,
+      "max": 3,
+      "specialRules": [
+        "Skirmish"
+      ]
+    },
+    "General": {
+      "order": 9,
+      "type": "General",
+      "attack": "+3",
+      "size": 1,
+      "command": 9,
+      "upgrades": [
+        "Portents",
+        "King David"
+      ],
+      "points": 135,
+      "armyMax": 1,
+	  "armyMin": 1
+    },
+    "Tribal Chieftain": {
+      "order": 10,
+      "type": "Subordinate",
+      "attack": "+1",
+      "size": 1,
+      "command": 7,
+      "upgrades": [
+        "Sub-General",
+        "Chariot Mount"
+      ],
+      "max": 4,
+      "points": 30
+    }
+  },
+  "upgrades": {
+    "Portents": {
+      "order": 0,
+      "points": "+10",
+      "size": 1,
+      "specialRules": [
+        "Portents"
+      ]
+    },
+    "King David": {
+      "order": 1,
+      "points": "+15",
+      "type": "General",
+      "attack": "+3",
+      "command": 9,
+      "size": 1,
+      "specialRules": [
+        "Portents"
+      ]
+    },
+    "Sub-General": {
+      "order": 2,
+      "max": 2,
+      "points": "+10",
+      "type": "Subordinate",
+      "attack": "+1",
+      "command": 8,
+      "size": 1
+    },
+    "Chariot Mount": {
+      "order": 3,
+      "max": 4,
+      "points": "+10",
+      "type": "Chariot Mount",
+      "attack": "+1"
+    },
+    "Chariot Runners": {
+      "order": 5,
+      "specialRules": [
+        "Skirmish",
+        "Chariot Runners"
+      ],
+      "max": 1,
+      "points": "+0",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "type": "Chariot"
+    }
+  },
+  "order": 1,
+  "name": "Later Hebrews (David)",
+  "version": "Warmaster Ancients Ricks lists",
+  "group": "Chariot Era",
+  "armyRules": [
+    "Bowmen. Troops carrying a bow and rarely anything else.",
+    "",
+    "Spearmen. Troops armed with short spears, a khopesh-like sword and a light shield.",
+    "",
+    "Gibborim. The elite troops of the army who acted as the king’s bodyguard.",
+    "",
+    "Philistine. Heavily equipped infantry carrying spears, swords and shields. They wore body armour. The category can also represent Chehertis or Aegean mercenaries.",
+    "",
+    "Light Infantry. These represent the better quality of lightly armed skirmishing troops.",
+    "",
+    "Skirmishers. Generally these were armed with javelins, but could also include units of slingers.",
+    "",
+    "Bedouins. Lightly armed camel riders.",
+    "",
+    "Light Chariots. Usually captured chariots. They were destroyed at the beginning of the conquest of Israel in part because the Hebrews preferred to fight from hill tops and amongst terrain where their enemy’s chariots couldn’t operate."
+  ]
+}

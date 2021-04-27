@@ -1,0 +1,192 @@
+{
+  "name": "English Chevauchee Army, 1415",
+  "version": "Warmaster Medieval",
+  "group": "Hundred Years War",
+  "order": 1,
+  "units": {
+    "Sergeants": {
+      "order": 0,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 110,
+      "max": 6,
+      "specialRules": [
+        "Shock"
+      ]
+    },
+    "Men-at-Arms": {
+      "order": 1,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "4+",
+      "size": 3,
+      "points": 85,
+      "min": 2,
+      "max": 4,
+      "upgrades": [
+        "Mounted Men-at-Arms"
+      ],
+      "specialRules": [
+        "Combined Arms"
+      ]
+    },
+    "Longbowmen": {
+      "order": 2,
+      "type": "Infantry",
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "points": 45,
+      "min": 4,
+      "upgrades": [
+        "Skirmisher Longbowmen",
+        "Mounted Longbowmen"
+      ],
+      "specialRules": [
+        "Combined Arms"
+      ]
+    },
+    "Peasants": {
+      "order": 3,
+      "type": "Infantry",
+      "attack": 2,
+      "hits": 2,
+      "size": 3,
+      "points": 20,
+      "max": 8
+    },
+    "Hobilars": {
+      "order": 4,
+      "type": "Cavalry",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": 60,
+      "max": 4,
+      "specialRules": [
+        "Skirmish"
+      ]
+    },
+    "General": {
+      "order": 5,
+      "type": "General",
+      "attack": "+2",
+      "size": 1,
+      "points": 100,
+      "command": 8,
+      "armyMin": 1,
+      "armyMax": 1,
+      "upgrades": [
+        "Henry V"
+      ]
+    },
+    "Lord": {
+      "order": 6,
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 80,
+      "max": 2
+    }
+  },
+  "upgrades": {
+    "Mounted Men-at-Arms": {
+      "order": 0,
+      "type": "Cavalry",
+      "points": "+50",
+      "attack": 3,
+      "hits": 3,
+      "armour": "4+",
+      "size": 3,
+      "specialRules": [
+        "Knights"
+      ]
+    },
+    "Skirmisher Longbowmen": {
+      "order": 1,
+      "type": "Infantry",
+      "attack": 1,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "points": "-10",
+      "specialRules": [
+        "Longbow",
+        "Slow"
+      ],
+      "max": "Up to Half"
+    },
+    "Mounted Longbowmen": {
+      "order": 2,
+      "type": "Cavalry",
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "points": "+10",
+      "specialRules": [
+        "Longbow",
+        "Slow"
+      ],
+      "max": 2
+    },
+    "Henry V": {
+      "order": 3,
+      "type": "General",
+      "command": 9,
+      "max": 1,
+      "points": "+15"
+    }
+  },
+  "specialRules": {
+    "Knights": {
+      "order": 1
+    },
+    "Skirmish": {
+      "order": 2
+    },
+    "Warband": {
+      "order": 8
+    },
+    "Skirmishers": {
+      "order": 7
+    },
+    "Shock": {
+      "order": 5
+    },
+    "Combined Arms": {
+      "order": 6
+    },
+    "Cannon": {
+      "order": 7,
+      "text": [
+        "Cannon must be regarded as immobile and treated as Heavy Cannon for purposes of drive backs from shooting"
+      ]
+    },
+    "Slow": {
+      "order": 8
+    },
+    "Mounted Infantry": {
+      "order": 9
+    },
+    "Skirmisher Longbowmen": {
+      "order": 10,
+      "text": [
+        "Longbow units in the army can be regraded as Skirmishers. Note that Skirmishing Longbowmen retain range of longbows but lose the longbow special rule (+1 shoot from 'massed' bowfire)"
+      ]
+    },
+    "Henry V": {
+      "order": 11,
+      "text": [
+        "If you field the English King and victor of Agincourt you can re-roll one failed shooting attack from any one of your Longbow units during each Shooting phase."
+      ]
+    }
+  }
+}

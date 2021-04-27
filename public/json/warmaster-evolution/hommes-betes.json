@@ -1,0 +1,237 @@
+{
+	"name":"Hommes-bêtes",
+	"version":"Warmaster Evolution",
+	"group": 0,
+	"order": 6,
+	"units": {
+		"Ungors": {
+			"type":"Infanterie",
+			"attack":"2/1",
+			"hits": 3,
+			"size": 3,
+			"points": 45,
+			"min": 2,
+			"max": 2,
+			"order": 0,
+			"specialRules": [
+				"Eclaireurs"
+			]
+		},
+		"Gors": {
+			"type":"Infanterie",
+			"attack": 3,
+			"hits": 3,
+			"armour":"6+",
+			"size": 3,
+			"points": 45,
+			"min": 2,
+			"order": 1
+		},
+		"Bestigors": {
+			"type":"Infanterie",
+			"attack":"4",
+			"hits": 3,
+			"size": 3,
+			"armour":"5+",
+			"points": 70,
+			"max": 2,
+			"order": 2
+		},
+		"Minotaures": {
+			"type":"Infanterie",
+			"attack": 5,
+			"hits": 4,
+			"armour":"5+",
+			"size": 3,
+			"points": 135,
+			"max": 1,
+			"order": 3
+		},
+		"Centigors": {
+			"type":"Cavalerie",
+			"attack":"3/1",
+			"range":"15cm à 360°",
+			"hits": 3,
+			"size": 3,
+			"points": 95,
+			"armour":"6+",
+			"max": 4,
+			"order": 4
+		},
+		"Chars": {
+			"type":"Char",
+			"attack":"4",
+			"hits":"4",
+			"armour":"5+",
+			"size":"3",
+			"points": 150,
+			"order": 5,
+			"max": 3
+		},
+		"Dragons Ogres": {
+			"type":"Monstre",
+			"attack": 5,
+			"hits": 4,
+			"armour":"5+",
+			"size": 3,
+			"points": 200,
+			"order": 6,
+			"max": 1
+		},
+		"Créature Géante": {
+			"type":"Monstre",
+			"attack":"6/3",
+			"range":"30cm",
+			"hits": 6,
+			"armour":"5+",
+			"size": 1,
+			"points": 150,
+			"max": 1,
+			"order": 8
+		},
+		"Horreur ailée": {
+			"type":"Monstre",
+			"attack":"6",
+			"hits": 6,
+			"armour":"5+",
+			"size": 1,
+			"points": 150,
+			"max": 1,
+			"order": 7
+		},
+		"Seigneur": {
+			"type":"Général",
+			"attack":"+2",
+			"command": 8,
+			"size": 1,
+			"points": 95,
+			"armyMin": 1,
+			"armyMax": 1,
+			"upgrades": [
+				"Char"
+			],
+			"order": 9
+		},
+		"Héros": {
+			"type":"Héros",
+			"attack":"+1",
+			"command": 8,
+			"size": 1,
+			"points": 80,
+			"max": 1,
+			"upgrades": [
+				"Char"
+			],
+			"order": 10,
+			"specialRules": [
+				"Eclaireurs"
+			]
+		},
+		"Doombull": {
+			"type":"Héros",
+			"attack":"+3",
+			"command": 6,
+			"size": 1,
+			"points": 90,
+			"order": 11,
+			"armyMax": 1
+		},
+		"Chaman": {
+			"type":"Sorcier",
+			"attack":"+1",
+			"command": 7,
+			"size": 1,
+			"points": 45,
+			"max": 1,
+			"order": 12,
+			"upgrades": [
+				"Char"
+			]
+		}
+	},
+	"upgrades": {
+		"Char": {
+			"type":"Char",
+			"attack":"+1",
+			"points":"+10",
+			"max": 1,
+			"order": 0
+		}
+	},
+	"specialRules": {
+		"Eclaireurs": {
+			"order": 1,
+			"text": [
+				"Après le déploiement des deux joueurs, dans l'ordre du tour, les joueurs hommes bête peuvent effectuer 2 mouvements sans lancer d'ordres aux unités d'éclaireurs et 1 mouvement héros éclaireur. Cependant, les éclaireurs ne peuvent pas charger et doivent finir leur mouvement hors de ligne de vue de toutes unités ennemies (hors autres éclaireurs). Pour rappel, les lignes de vue s'arrêtent normalement à 60cm sur un terrain dégagé et sont stoppées par tout obstacle de 2 cm de hauteur."
+			]
+		},
+		"Minotaures": {
+			"order": 2,
+			"text": [
+				"Les minotaures sont sont Fanatiques."
+			]
+		},
+		"Dragons Ogres": {
+			"order": 3,
+			"text": [
+				"Causent la Terreur."
+			]
+		},
+		"Créature Géante": {
+			"order": 4,
+			"text": [
+				"Les hommes bêtes sont souvent accompagnés par des créatures impressionnantes et terrifiantes comme les Shaggots, Cygors, Ghorgon ou des Géants du chaos. Les créatures géantes doivent toujours recevoir des ordres séparés. Elles ne peuvent pas rejoindre de brigades. Une bête monstrueuse possède beaucoup de Points de Vie ( Il serait donc très difficile d’en venir à bout en un tour et, pour compenser cette apparente invulnérabilité, la règle suivante s’applique: si une bête monstrueuse a accumulée entre 3 et 5 blessures à la fin d’une phase de tir ou de combat, elle est Blessée. Une fois qu’une bête monstrueuse est Blessée, toutes les blessures accumulées jusque-là sont annulées mais ses Attaques et ses Points de Vie sont réduits de moitié pour le reste de la partie (3 Attaques et 3 PV). Les créatures géantes provoquent la terreur"
+			]
+		},
+		"Horreur ailée": {
+			"order": 5,
+			"text": [
+				"Certaines créatures ailées telle que les Jabberslythe, Cockatrices, Chimères ou Manticores sauvages assombrissent souvent les champ de batailles hommes bêtes. Les horreurs ailées volent. De plus, elles bénéficient des mêmes règles qu'une Bête monstrueuse"
+			]
+		},
+		"Doombull": {
+			"order": 6,
+			"text": [
+				"Un doombull ne peut pas avoir de monture. L'unité qu'il rejoint devient Fanatique"
+			]
+		}
+	},
+	"spells": [
+		{
+			"roll": 4,
+			"range":"30cm, ligne de vue",
+			"text": [
+				"Ce sort peut être lancé sur une unité amie d'ungors, de centigors ou de créature géante. Les tirs de l'unité ciblé rendent confus sur un 4+ à la place du 6+ habituel."
+			],
+			"name":"Projectiles hurlants"
+		},
+		{
+			"roll": 5,
+			"range":"30cm, pas de ligne de vue.",
+			"text": [
+				"Ce sort peut être lancé sur une unité amie non engagée au corps à corps à moins de 30 cm, que le Chaman puisse la voir ou non. Le sort n’affecte jamais qu’une seule unité, en aucun cas une brigade. En cas de succès, l’unité peut être déplacée comme si elle venait de recevoir un ordre lors de la phase d’ordres. Seule l’unité visée sera affectée, pas les personnages qui se trouvent avec elle (ceux-ci restent sur place)."
+			],
+			"name":"En chasse pour Gore"
+		},
+		{
+			"roll": 5,
+			"range":"30cm, ligne de vue",
+			"text": [
+				"Un éclair d’énergie pure frappe l’ennemi, déformant et fusionnant les chairs et le métal d’une manière atroce. Ce sort peut être lancé sur une unité ennemie, visible par le Sorcier. Il ne peut pas être lancé sur une unité engagée au corps à corps. Le sort a les mêmes effets que 3 attaques de tir si ce n’est que toute Armure dont la cible peut éventuellement bénéficier est ignorée (l’unité compte comme n’ayant aucune valeur d’Armure). L’unité visée peut être repoussée de la même manière que par des tirs ordinaires"
+			],
+			"name":"Malédiction du chaos"
+		},
+		{
+			"roll": 6,
+			"text": [
+				"Toutes les unités amies d'ungors, de gors et de centigors engagées au corps a corps bénéficient de +1 Attaque par socle (en incluant les personnages) pour la durée du  prochain combat. Ce bonus ne s'applique donc pas dans l'éventualité d'un second combat effectué suite à une avancé"
+			],
+			"name":"Pouvoir de la horde",
+			"range":"30cm, ligne de vue"
+		}
+	],
+	"magic": true,
+	"armyRules": [
+		"Les personnages n'ont pas de malus de commandement lié aux terrains difficiles"
+	]
+}

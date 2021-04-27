@@ -1,0 +1,186 @@
+{
+  "name": "The Kingdom Of Poland, 1410",
+  "version": "Warmaster Medieval",
+  "group": "Polish–Lithuanian–Teutonic War",
+  "order": 1,
+  "units": {
+    "Faris": {
+      "type": "Nobles",
+      "attack": 3,
+      "hits": 3,
+      "armour": "4+",
+      "size": 3,
+      "min": 1,
+      "points": 135,
+      "order": 0,
+      "specialRules": [
+        "Knights"
+      ]
+    },
+    "Retainers": {
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "min": 1,
+      "points": 110,
+      "order": 1,
+      "specialRules": [
+        "Shock"
+      ]
+    },
+    "Light cavalry": {
+      "type": "Cavalry",
+      "attack": 2,
+      "hits": 3,
+      "range": 15,
+      "armour": "6+",
+      "size": 3,
+      "min": 1,
+      "points": 60,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "order": 2
+    },
+    "Militia Crossbows": {
+      "type": "Infantry",
+      "attack": 2,
+      "range": "30",
+      "armour": "6+",
+      "hits": 3,
+      "size": 3,
+      "max": 2,
+      "points": 55,
+      "specialRules": [
+        "Crossbow",
+        "Combined Arms"
+      ],
+      "order": 3
+    },
+    "Militia Spearmen Infantry": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "max": 2,
+      "points": 50,
+      "specialRules": [
+        "Pavisse",
+        "Combined Arms"
+      ],
+      "order": 4
+    },
+    "Peasants": {
+      "type": "Infantry",
+      "attack": 2,
+      "hits": 2,
+      "size": 3,
+      "max": 4,
+      "points": 20,
+      "order": 5
+    },
+    "Handgunners": {
+      "type": "Infantry",
+      "attack": 2,
+      "range": "20",
+      "armour": "6+",
+      "hits": 3,
+      "size": 3,
+      "max": 1,
+      "points": 60,
+      "specialRules": [
+        "Pavisse"
+      ],
+      "order": 6
+    },
+    "Cannon": {
+      "type": "Artillery",
+      "attack": 1,
+      "range": "2x40",
+      "hits": 2,
+      "size": 2,
+      "max": 1,
+      "points": 50,
+      "specialRules": [
+        "Slow"
+      ],
+      "order": 7
+    },
+    "General": {
+      "type": "General",
+      "attack": "+2",
+      "command": 9,
+      "size": 1,
+      "armyMin": 1,
+      "armyMax": 1,
+      "points": 125,
+      "order": 8,
+      "upgrades": [
+        "Prayer"
+      ]
+    },
+    "Leader": {
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "max": 2,
+      "points": 80,
+      "order": 9,
+      "specialRules": [
+        "Noble attributes"
+      ]
+    }
+  },
+  "upgrades": {
+    "Prayer": {
+      "type": "Special",
+      "points": "+10",
+      "armyMax": 1,
+      "order": 0,
+      "specialRules": [
+        "Portents"
+      ]
+    }    
+  },
+  "specialRules": {
+    "Skirmish": {
+      "order": 1
+    },
+    "Shock": {
+      "order": 2
+    },
+    "Knights": {
+      "order": 3
+    },
+    "Portents": {
+      "order": 4
+    },
+    "Slow": {
+      "order": 5
+    },
+    "Cannon": {
+      "order": 6
+    },
+    "Pavisse": {
+      "order": 7
+    },
+    "Combined Arms": {
+      "order": 8
+    },
+    "Noble attributes": {
+      "text": [
+        "Roll a dice for each Leader in the army at the start of the game. D6 result :",
+		"1) Potential Usurper : The commander can only give orders to units within 20cm - effectively he becomes a 'Subordinate'",
+		"2) Reluctant Leader : Units given orders by this commander can move no more than twice in a turn rather than up to three times as normal.",
+		"3) Reliable Commander : No special rules apply to this leader.",
+		"4) Headstrong commander : Add +1 to the commander's attacks, up to +2 in total. If the commander rolls a blunder, all ordered units must advance as far as possible towards the nearest visible enemy and charge if able to do so",
+		"5) Charismatic Leader : This commander may re-roll one failed command per game",
+		"6) Venerable Leader : Increase the commander's command value by +1 to 9"
+      ],
+      "order": 9
+    }
+  }
+}

@@ -1,0 +1,419 @@
+{
+   "name":"Gobelins",
+   "version":"Warmaster Evolution",
+   "group":1,
+   "order":5,
+   "units":{
+      "Gobelins":{
+         "type":"Infanterie",
+         "attack":"2/1",
+         "range":"15cm",
+         "hits":3,
+         "size":3,
+         "points":30,
+         "min":4,
+         "order":0,
+         "upgrades":[
+            "Fanatiques gobelins"
+         ]
+      },
+      "Squigs":{
+         "order":1,
+         "type":"Infanterie",
+         "attack":5,
+         "hits":3,
+         "points":75,
+         "size":3,
+         "max":3
+      },
+      "Trolls":{
+         "type":"Infanterie",
+         "attack":5,
+         "hits":3,
+         "armour":"5+",
+         "size":3,
+         "points":110,
+         "max":3,
+         "order":2
+      },
+      "Gobelins sur Loup":{
+         "type":"Cavalerie",
+         "attack":"2/1",
+         "range":"15cm à 360° à 360°",
+         "hits":3,
+         "armour":"6+",
+         "size":3,
+         "points":60,
+         "order":3,
+         "min":2
+      },
+      "Gobelins sur Araignée":{
+         "order":4,
+         "type":"Cavalerie",
+         "attack":2,
+         "hits":3,
+         "size":3,
+         "points":60,
+         "armour":"6+",
+         "max":2
+      },
+      "Chars à Loup":{
+         "type":"Char",
+         "attack":3,
+         "hits":3,
+         "armour":"6+",
+         "size":3,
+         "points":80,
+         "max":3,
+         "order":5
+      },
+      "Chariot a pompe":{
+         "type":"Char",
+         "attack":"1d6",
+         "hits":4,
+         "size":1,
+         "points":50,
+         "max":2,
+         "order":6,
+         "armour":"5+",
+		 "noCount": true
+      },
+      "Géant":{
+         "type":"Monstre",
+         "attack":8,
+         "hits":8,
+         "armour":"5+",
+         "size":1,
+         "points":150,
+         "max":1,
+         "order":7
+      },
+      "Arachnarok":{
+         "order":8,
+         "type":"Monstre",
+         "attack":"4/2",
+         "range":"15cm à 360°",
+         "hits":4,
+         "armour":"4+",
+         "size":1,
+         "points":120,
+         "max":1
+      },
+      "Plongeur de la mort":{
+         "type":"Artillerie",
+         "attack":"1/3",
+         "range":"60cm",
+         "hits":3,
+         "size":1,
+         "points":80,
+         "max":1,
+         "order":9
+      },
+      "Balistes":{
+         "type":"Artillerie",
+         "attack":"1/1 par tuile",
+         "range":"40cm",
+         "hits":2,
+         "size":2,
+         "points":75,
+         "max":2,
+         "order":10
+      },
+      "Chef de guerre Gobelin":{
+         "type":"Général",
+         "attack":"+2",
+         "command":8,
+         "size":1,
+         "points":80,
+         "armyMin":1,
+         "armyMax":1,
+         "upgrades":[
+            "Wyvern",
+            "Char"
+         ],
+         "order":11
+      },
+      "Grand chef Gobelin":{
+         "type":"Héros",
+         "attack":"+1",
+         "command":7,
+         "size":1,
+         "points":45,
+         "max":3,
+         "upgrades":[
+            "Wyvern",
+            "Char"
+         ],
+         "order":12
+      },
+      "Chaman Gobelin":{
+         "type":"Sorcier",
+         "attack":"+0",
+         "command":6,
+         "size":1,
+         "points":30,
+         "max":2,
+         "upgrades":[
+            "Wyvern",
+            "Char"
+         ],
+         "order":13
+      }
+   },
+   "upgrades":{
+      "Wyvern":{
+         "type":"Monture Monstrueuse",
+         "attack":"+2",
+         "points":"+60",
+         "max":1,
+         "order":0
+      },
+      "Char":{
+         "type":"Char monté",
+         "attack":"+1",
+         "points":"+10",
+         "max":1,
+         "order":1
+      },
+      "Fanatiques gobelins":{
+         "order":3,
+         "type":"Special",
+         "attack":"D6",
+         "points":"+15",
+         "max":4
+      }
+   },
+   "magic":true,
+   "specialRules":{
+      "Trolls":{
+         "text":[
+            "Les Trolls sont Lents. En revanche, les Trolls",
+            "peuvent se régénérer et récupérer de la plupart des",
+            "blessures. Pour représenter cela, à chaque round de",
+            "combat, avant que les socles aient été retirés, les Trolls",
+            "peuvent récupérer 1 Point de Vie sur les blessures restantes.",
+            "Les blessures régénérées comptent tout de même dans les",
+            "résultats de combats."
+         ],
+         "order":1
+      },
+      "Gobelins sur Loup":{
+         "text":[
+            "Ils peuvent tirer sur les côtés et derrière eux sans réorienter leur socle. Ils peuvent donc tirer sur un ennemi qui les charge de n’importe quelle direction."
+         ],
+         "order":2
+      },
+      "Géant":{
+         "text":[
+            " Les Géants doivent toujours recevoir des ordres",
+            "séparés. Ils ne peuvent pas rejoindre des brigades d’autres",
+            "troupes mais peuvent constituer des brigades de Géants. Si",
+            "vous tentez de donner un ordre à un Géant et que vous",
+            "échouez, vous devez effectuer un test pour voir ce qui se",
+            "passe. Ne vous inquiétez pas des éventuelles gaffes, elles",
+            "sont prises en compte dans le tableau ci-contre. Lancez un",
+            "dé et consultez le Tableau de Démence du Géant. Lorsque",
+            "les Géants sont regroupés en brigades, faites un jet par",
+            "Géant.",
+            "Un géant possède beaucoup de Points de Vie (8). Il serait",
+            "donc très difficile d’en venir à bout en un tour et, pour",
+            "compenser cette apparente invulnérabilité, la règle suivante",
+            "s’applique: si un géant a accumulé entre 4 et 7 blessures à la",
+            "fin d’une phase de tir ou de combat, il est Blessé. Une fois",
+            "qu’un Géant est Blessé, toutes les blessures accumulées",
+            "jusque-là sont annulées mais ses Attaques et ses Points de",
+            "Vie sont réduits de moitié pour le reste de la partie (4",
+            "Attaques et 4 PV).",
+            "Un Géant provoque la terreur.",
+            "",
+            "",
+            "Tableau de Démence du Géant",
+            "Résultat du D6",
+            "",
+            "1 )",
+            "Le Géant ne se déplace pas et ne combat pas durant",
+            "ce tour. Il reste là, à bayer aux corneilles !",
+            "",
+            "2 )",
+            "Déplacez le Géant vers le bord de table le plus",
+            "proche. S’il entre en contact avec une autre unité, il",
+            "l’attaque quel que soit son camp d’origine. S’il gagne",
+            "le combat, le Géant reste sur place.",
+            "",
+            "3 )",
+            "Le Géant ramasse un rocher, une épave de Char,",
+            "un arbre, voire une masure, enfin tout ce qui lui",
+            "tombe sous la main, et l’envoie sur l’unité la plus",
+            "proche se trouvant dans sa ligne de vue, qu’elle soit",
+            "amie ou ennemie. La portée du projectile est de",
+            "5D6cm et si cela suffit à atteindre sa cible, il",
+            "provoque 3 Attaques résolues normalement.",
+            "",
+            "4 )",
+            "Le Géant se déplace droit devant à pleine vitesse. S’il",
+            "atteint une unité ennemie, il combat tout à fait",
+            "normalement. Si une unité amie se trouve sur son",
+            "chemin, il la traverse s’il en a la place et s’il a assez",
+            "de mouvement. Dans le cas contraire, il s’arrête au",
+            "contact de l’unité. L’unité amie est alors",
+            "automatiquement confuse pour tout le reste de la",
+            "phase d’ordres, que le Géant l’ait traversée ou qu’il",
+            "se soit seulement arrêté à son contact. L’unité",
+            "récupère de sa confusion en même temps que les",
+            "autres unités, c’est-à-dire à la fin de la phase",
+            "d’ordres.",
+            "",
+            "5 )",
+            "Le Géant se déplace le plus vite possible vers l’unité",
+            "ennemie la plus proche qu’il voit. S’il atteint",
+            "l’ennemi, il combat normalement. Si des unités",
+            "amies sont sur le chemin, il les traversera en semant",
+            "la confusion, voir ci-dessus.",
+            "",
+            "6 )",
+            "Le Géant pousse un terrible beuglement et se",
+            "précipite sur l’unité ennemie visible la plus proche.",
+            "Déplacez le géant au double de sa pleine vitesse. S’il",
+            "atteint une unité ennemie, il combat en la piétinant",
+            "joyeusement et en doublant son nombre d’Attaques",
+            "lors du premier round de corps à corps."
+         ],
+         "order":3
+      },
+      "Vouivre":{
+         "text":[
+            "Un Général, un Chaman ou un Héros peut",
+            "chevaucher une Vouivre. Une Vouivre vole, augmentant",
+            "ainsi le mouvement de son cavalier de 60 cm à 100 cm, et",
+            "elle lui ajoute +2 Attaques. Une unité rejointe par une",
+            "Vouivre provoque la terreur chez ses ennemis."
+         ],
+         "order":4
+      },
+      "Char":{
+         "text":[
+            " Un Général, un Chaman ou un Héros peut monter",
+            "sur un Char. Un personnage monté sur un char gagne +1",
+            "Attaque."
+         ],
+         "order":5
+      },
+      "Gobelins sur Araignée":{
+         "order":7,
+         "text":[
+            "Au corps à corps, après avoir effectué les attaques empoisonnées des Chevaucheurs d'Araignée, retirez 1 à l’Armure de la cible : une Armure de 3+, passe à 4+, une de 4+ à 5+, une de 5+ à 6+. Une Armure de 6+ n’arrête pas les attaques."
+         ]
+      },
+      "Squigs":{
+         "order":9,
+         "text":[
+            "Il existe nombre de régiments composés de squigs, qu'ils soient montés, géants, ou en troupeau",
+            "Les Squigs sont fanatiques"
+         ]
+      },
+      "Balistes":{
+         "order":10,
+         "text":[
+            "L’Armure des cibles de la baliste est toujours annulée.",
+            "Lors d’un tir, une baliste traverse jusqu’à trois socles en contact les uns avec les autres, et dans la trajectoire du projectile, comme indiqué sur le diagramme ci-dessous. Il peut s’agir de socles appartenant à la même unité ou à des unités différentes : le tir traversera automatiquement jusqu’à trois socles du moment qu’ils sont au contact les uns des autres.",
+            "",
+            "Chaque unité touchée subira 1 attaque pour chacun de ses socles ayant été traversé. Toutes les attaques contre une même unité sont résolues en même temps. Par exemple, une unité d’infanterie en colonne affectée jettera trois dés pour trois attaques.",
+            "Du fait qu’une baliste peut toucher différentes unités en raison du fait que ses tirs traversent les socles, il peut arriver que son projectile touche un ennemi faisant partie d’un combat (au contact ou en soutien). Normalement, il est impossible de tirer sur ce genre de cibles, mais elles peuvent subir des touches si un tir est dirigé sur une unité proche par exemple. Les unités engagées des deux camps qui subissent des blessures les conservent pendant la phase de combat, et elles compteront durant ce round pour déterminer qui remporte le combat. Les unités faisant partie d’un combat ne sont jamais repoussées par ce genre de blessures ; leurs effets sont comptabilisés durant le corps à corps. Les unités ne faisant pas partie d’un combat sont repoussées de la manière habituelle. Si une unité amie est repoussée, résolvez son mouvement après le repoussement des unités ennemies.",
+            "Les balistes peuvent tirer en contre-charge à n’importe quel moment, y compris lorsque l’assaillant a atteint sa position finale.",
+            ""
+         ]
+      },
+      "Chariot a pompe":{
+         "order":11,
+         "text":[
+            "Le Chariot à Pompe est une machine insolite faite de bric et de broc par des Snotlings.",
+            "",
+            "Le Chariot à Pompe ne se déplace pas en phase de Commandement via initiative ou via un ordre réussi. Au lieu de cela, il peut se déplacer une fois par tour jusqu'à 10xD6cm. Ce mouvement est automatique, ne nécessite aucun jet de Commandement et peut se produire à tout moment pendant la phase de Commandement. Ce mouvement peut être effectué dans n'importe quelle direction et donnera au Chariot à Pompe un mouvement compris entre 10 cm et 60 cm à chaque tour. Le Chariot à Pompe n'a pas l'obligation de se déplacer.",
+            "",
+            "Au tour où il charge, lors des poursuites ou des avances, un Chariot à Pompe effectue D6 attaques en plus des attaques supplémentaires qu'il reçoit pour avoir chargé l'ennemi à découvert et pour être un char. Lorsqu'il est chargé ou en retraite à la suite d'un combat, ses attaques sont réduites de moitié à D3.",
+            "",
+            "Le Chariot à Pompe est piloté par des Snotlings inconscients due à leur consommation de champignons hallucinogènes. Un Chariot à Pompe avance (et recule, ainsi que sur le côté) à un rythme incessant et ne peut ni être confus ni être repoussé par un tir.",
+            "",
+            "Le Chariot à Pompe forme une unité à part entière et ne peut pas faire partie d'une brigade. Les personnages ne peuvent pas le rejoindre. L'ennemi ne gagne pas de points de victoire pour un Chariot à Pompe détruit et un Chariot à Pompe ne compte pas dans la valeur de rupture de l'armée gobelin."
+         ]
+      },
+      "Catapulte a plongeur de la mort":{
+         "order":12,
+         "text":[
+            "Le Plongeur de la Mort est sorte de baliste qui tire des gobelins. Ces gobelins sont équipés d'ailes grossières et sèment la confusion dans les rangs ennemis.",
+            "",
+            "Une unité touchée par un Plongeur de la Mort est autorisée à faire sa sauvegarde d'armure normale. Lorsqu'elle est repoussée, tout résultat de 4, 5 ou 6 signifie que l'unité devient confuse.",
+            "Le Plongeur de la Mort ne peut pas faire de tir de contre charge."
+         ]
+      },
+      "Arachnarok":{
+         "order":14,
+         "text":[
+            "Une Arachnarok ne peut rejoindre que des brigades composées de gobelins, de Chevaucheur d'araignées et/ou d’autres Aragnaroks",
+            "La portée des tirs des gobelins transportés par l’Arachnarok est de 15cm. Cependant, ils peuvent tirer depuis",
+            "n’importe quel bord de son socle sans avoir à se réorienter face à leur cible. Mesurez simplement la portée depuis",
+            "l’avant, le côté ou l’arrière du socle. Notez que cela leur permet de faire feu sur un ennemi qui le charge depuis",
+            "n’importe quelle direction.",
+            "L’Arachnarok peut se déplacer dans les terrains difficiles normalement interdits aux monstres. Au corps à corps,",
+            "ses attaques empoisonnées infligent un malus de -1 à l’Armure des unités ennemies.",
+            "L’Arachnarok provoque la terreur."
+         ]
+      },
+      "Fanatiques gobelins":{
+         "order":14,
+         "text":[
+            "Les fanatiques gobelins sont des gobelins de la nuit hystériques, équipés de chaines et de boules à pointes. Ils sont enfermés dans des cages et libérés au début des combat pour y faire un véritable carnage.",
+            "Une unité de gobelin peut intégrer 1 option de \"fanatiques gobelins\".",
+            "Lors du premier tour de combat, les fanatiques sont obligatoirement lâchés.",
+            "Les fanatiques infligent 1D6 touches sans sauvegarde d'armure à l'adversaire. Sur un 1, ce sont les gobelins qui prennent 1D6 touches sans sauvegarde d'armure."
+         ]
+      }
+   },
+   "spells":[
+      {
+         "roll":5,
+         "range":"30cm",
+         "text":[
+            "Ce sort peut être lancé sur une unité allié dans les 30 cm du Chaman. L'unité gagne une sauvegarde d'armure de 5+ jusqu'a la fin du tour. Si elle possédait déjà une sauvegarde, elle doit choisir la quelle utilisé, mais ne peut pas utiliser les deux."
+         ],
+         "name":"Mork Sov Nou !"
+      },
+      {
+         "roll":5,
+         "range":"30cm, pas de ligne de vue",
+         "text":[
+            "Un éclair d’énergie Whaaag jaillit des doigts de lu Chaman. Tracez une droite imaginaire de 30 cm de long, à partir du socle de du Chaman et dans n’importe quelle direction. La ligne peut traverser n’importe quelle unité, mais pas les terrains qui arrêteraient normalement un tir ordinaire, comme une colline, plus de 2 cm de forêt, etc. Toute unité traversée par la ligne subit 3 attaques de tir résolues de la façon habituelle. Notez que ce sort peut affecter plusieurs unités, et affectera automatiquement toutes celles qui se trouvent sous la ligne, même les vôtres. Les unités non engagées au corps à corps peuvent être repoussées par un Doigt de Gork comme par des tirs ordinaires, y compris vos propres troupes. Les unités engagées au corps à corps ne peuvent pas être repoussées par le Doigt, mais les blessures qu’il inflige sont reportées au premier round de combat et comptent comme ayant été infligées durant le corps à corps."
+         ],
+         "name":"Doigt de Gork"
+      },
+      {
+         "roll":5,
+         "range":"30cm, pas de ligne de vue",
+         "text":[
+            "La voix du Chaman résonne sur tout le champ de bataille et recouvre le tumulte des combats pour diriger les troupes. Ce sort peut être lancé sur une unité amie non engagée au corps à corps à moins de 30 cm, que le Chaman puisse la voir ou non. Le sort n’affecte jamais qu’une seule unité, en aucun cas une brigade. En cas de succès, l’unité peut être déplacée comme si elle venait de recevoir un ordre lors de la phase d’ordres. Seule l’unité visée sera affectée, pas les personnages qui se trouvent avec elle (ceux-ci restent sur place)."
+         ],
+         "name":"Bénédiction de la lune funeste"
+      },
+      {
+         "roll":4,
+         "range":"60cm",
+         "text":[
+            "Le chaman invoque la malédiction de l'araignée et inflige une douleur insupportable à ses victimes. Ce sort peut être lancé sur toute unité ennemie à portée et dans la ligne de vue du Sorcier. Ses effets durent jusqu’à la fin du tour suivant de l’ennemi. Tant que le sort dure, sa cible ne peut pas charger ou éviter par initiative. Elle considère toute unité ennemie comme Terrifiante. Même les morts-vivants et les unités normalement obligées de charger, avancer ou poursuivre sont affectés !"
+         ],
+         "name":"Malédiction de l'araignée"
+      }
+   ],
+   "armyRules":[
+      "Lorsqu'ils donnent des ordres, les personnages gobelins (ainsi que le général) font des gaffes sur un 9+ au lieu de 12+",
+      "Ils bénéficient toujours d'un bonus de +1 sur le tableau des gaffes (Ce bonus ne peut pas être cumulé avec un autre)",
+      "Attention, le chariot a pompe et le géant ne sont pas concernés par cette règle.",
+      "",
+      "Résultat du dé (avec le modificateur déjà appliqué)",
+      "1-2",
+      "L’unité/brigade ne peut plus se déplacer pour cette phase de commandement, sauf s’il existe une unité ennemie visible à portée de pleine vitesse, auquel cas l’unité (les unités concernées dans le cas d’une brigade) doit se déplacer de manière à se retrouver à une portée minimum égale à la pleine vitesse de l’ennemi. Si cela est impossible (terrain infranchissable, obligation de rester en brigade, etc.), alors l’unité doit s’éloigner au maximum de l’ennemi. Elle ne peut plus se déplacer pour cette phase de commandement.",
+      "3-4",
+      "L’unité/brigade peut se déplacer d’au plus la moitié de sa pleine vitesse, sans pouvoir charger. Elle ne peut plus se déplacer pour cette phase de commandement.",
+      "5-6",
+      "L’unité doit se déplacer aussi vite que sa formation le lui permet vers le plus proche ennemi visible de manière à le charger si possible. Dans le cas d’une brigade, chaque unité est déplacée séquentiellement, le mouvement de l’une pouvant affecter celui de la suivante. Si aucun ennemi n’est visible, l’unité se déplace normalement comme pour un ordre réussi, mais ne peut plus se déplacer pour cette phase d’ordre."
+   ]
+}

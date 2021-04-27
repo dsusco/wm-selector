@@ -1,0 +1,255 @@
+{
+  "name": "Swiss Confederation, 1476",
+  "version": "Warmaster Medieval",
+  "group": "Burgundian Wars",
+  "order": 1,
+  "units": {
+    "Men-at-Arms": {
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "4+",
+      "size": 3,
+      "max": 2,
+      "points": 135,
+      "specialRules": [
+        "Knights"
+      ],
+      "order": 0
+    },
+    "Mounted Crossbow": {
+      "type": "Cavalry",
+      "attack": 2,
+      "hits": 3,
+      "range": 15,
+      "armour": "6+",
+      "size": 3,
+      "max": 1,
+      "points": 60,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "order": 1
+    },
+    "Landwehr Pikemen": {
+      "type": "Infantry",
+      "attack": 3,
+      "armour": "5+",
+      "hits": 3,
+      "size": 3,
+      "min":4,
+      "points": 70,
+      "order": 2,
+      "specialRules": [
+        "Phalanx"
+      ]
+    },
+    "Landsturm Pikemen": {
+      "type": "Infantry",
+      "attack": 3,
+      "armour": "6+",
+      "hits": 3,
+      "size": 3,
+      "min":4,
+      "points": 60,
+      "order": 3,
+      "specialRules": [
+        "Phalanx"
+      ],
+      "upgrades": [
+        "Auszug Pikemen"
+      ]
+    },
+    "Halberdiers": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "armour": "6+",
+      "max": 4,
+      "points": 45,
+      "order": 4
+    },
+    "Crossbowmen": {
+      "type": "Infantry",
+      "attack": 2,
+      "hits": 3,
+      "range": 30,
+      "size": 3,
+      "max": 2,
+      "points": 45,
+      "order": 5,
+      "specialRules": [
+        "Crossbow",
+		"Skirmishers"
+      ],
+      "upgrades": [
+        "Skirmishers with Crossbow"
+      ]
+    },
+    "Handgunners": {
+      "type": "Infantry",
+      "attack": 2,
+      "hits": 3,
+      "range": 20,
+      "size": 3,
+      "max": 4,
+      "points": 45,
+      "order": 6,
+      "specialRules": [
+		"Skirmishers"
+      ],
+      "upgrades": [
+        "Skirmishers with Handguns"
+      ]
+    },
+    "Cannon": {
+      "type": "Artillery",
+      "attack": 1,
+      "range": "2x40",
+      "hits": 2,
+      "size": 2,
+      "max": 2,
+      "points": 50,
+      "specialRules": [
+        "Slow"
+      ],
+      "order": 7
+    },
+    "Organ Gun": {
+      "type": "Artillery",
+      "attack": 1,
+      "range": "D6x15",
+      "hits": 2,
+      "size": 1,
+      "max": 1,
+      "points": 50,
+      "order": 8
+    },
+    "Captain": {
+      "type": "Leader",
+      "attack": "+1",
+      "command": "8/9",
+      "size": 1,
+      "min": 1,
+      "points": 90,
+      "order": 9,
+      "upgrades": [
+        "Rene, Duke of Lorraine",
+		"Cantonal Standard"
+      ]
+    }
+  },
+  "upgrades": {
+    "Rene, Duke of Lorraine": {
+      "type": "General",
+      "attack": "+2",
+      "command": 9,
+      "size": 1,
+      "armyMax": 1,
+      "points": 10,
+      "order": 1
+    },
+    "Cantonal Standard": {
+      "type": "General",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "armyMax": 1,
+      "points": 10,
+      "order": 2
+    },
+    "Skirmishers with Crossbow": {
+      "type": "Infantry",
+      "attack": 1,
+      "hits": 3,
+      "range": 30,
+      "size": 3,
+      "points": -10,
+      "specialRules": [
+        "Skirmish",
+        "Crossbow"
+      ],
+      "order": 3
+    },
+    "Skirmishers with Handguns": {
+      "type": "Infantry",
+      "attack": 1,
+      "hits": 3,
+      "range": 15,
+      "size": 3,
+      "points": -15,
+      "specialRules": [
+        "Skirmish",
+        "Handgunners"
+      ],
+      "order": 4
+    },
+    "Auszug Pikemen": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 4,
+      "range": "5+",
+      "size": 3,
+      "points": 10,
+	  "max": "Up to half",
+      "specialRules": [
+        "Phalanx"
+      ],
+      "order": 5
+    }
+  },
+  "specialRules": {
+    "Skirmish": {
+      "order": 1
+    },
+    "Knights": {
+      "order": 3
+    },
+    "Slow": {
+      "order": 5
+    },
+    "Cannon": {
+      "order": 6
+    },
+    "Heavy Cannon": {
+      "order": 7
+    },
+    "Stakes": {
+      "order": 9
+    },
+    "Handgunners": {
+      "order": 10
+    },
+    "Phalanx": {
+      "order": 10
+    },
+    "Landwehr Pikemen": {
+      "text": [
+        "Up to half the Landwehr Pikement units can be upgraded to elite Auszug as noted below."
+      ],
+      "order": 11
+    },
+    "Captain": {
+      "text": [
+        "This army is unusual in that it has no General - representing the system of elected leadership. Instead the army have any unlimited number of Captains. Captains are leaders with a Command value of 8, but a command value of 9 if they have joined a unit when the order is given. Note that the order does not have to include the unit the Captain has joined - he simply has to have joined a unit to benefit from the higher value."
+      ],
+      "order": 12
+    },
+    "Duke Rene of Lorraine": {
+      "text": [
+        "One Captain can be upgraded to General with the stats and points adjustement shown. If Duke Rene leads the army then Men-at-arms min/max is increased to 1/2"
+      ],
+      "order": 13
+    },
+    "Cantonal Standard": {
+      "text": [
+        "The Captain selected to carry the standard may re-roll one failed Command roll during the game."
+      ],
+      "order": 14
+    },
+    "Organ Gun": {
+      "order": 15
+    }
+  }
+}

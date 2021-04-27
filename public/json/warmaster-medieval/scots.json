@@ -1,0 +1,188 @@
+{
+  "name": "Scots Army Of James IV, 1513",
+  "version": "Warmaster Medieval",
+  "group": "The Wars of the Roses",
+  "order": 4,
+  "units": {
+    "Pikemen": {
+      "type": "Infantry",
+      "attack": 3,
+      "armour": "6+",
+      "hits": 3,
+      "size": 3,
+      "min":8,
+      "points": 60,
+      "order": 1,
+      "specialRules": [
+        "Phalanx",
+        "Warband"
+      ],
+      "upgrades": [
+        "Elite Pikemen",
+        "Trained Pikemen",
+        "Border Pikemen",
+        "Highland Pikemen"		
+      ]
+    },
+    "Archers": {
+      "type": "Infantry",
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "points": 40,
+      "order": 2,
+      "max":2
+    },
+    "Border Horse": {
+      "type": "Cavalry",
+      "attack": 2,
+      "hits": 3,
+      "range": 15,
+      "armour": "6+",
+      "size": 3,
+      "min": 1,
+      "max": 2,
+      "points": 60,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "order": 3
+    },
+    "Culverin": {
+      "type": "Artillery",
+      "attack": 1,
+      "range": "3x60",
+      "hits": 2,
+      "size": 1,
+      "max": 3,
+      "points": 75,
+      "order": 4,
+      "specialRules": [
+		"Heavy Cannon"
+      ]
+    },
+    "Sakers": {
+      "type": "Artillery",
+      "attack": 1,
+      "range": "2x40",
+      "hits": 2,
+      "size": 2,
+      "min": 1,
+      "max": 2,
+      "points": 50,
+      "order": 5,
+      "specialRules": [
+		"Slow",	
+		"Cannon"	
+      ]
+    },
+    "General": {
+      "type": "General",
+      "attack": "+2",
+      "command": 8,
+      "size": 1,
+      "armyMax": 1,
+      "points": 100,
+      "order": 8,
+	  "upgrades":[
+		"King James"
+	  ]
+    },
+    "Lord": {
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "max": 2,
+      "points": 80,
+      "order": 9
+    }
+  },
+  "upgrades": {
+    "Elite Pikemen": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "armyMax": 1,
+      "points": 10,
+      "order": 1
+    },
+    "Trained Pikemen": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "max": "Up to Half",
+      "points": 0,
+      "order": 2,
+      "specialRules": [
+		"Phalanx"
+      ]
+    },
+    "Border Pikemen": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "max": 1,
+      "points": 5,
+      "order": 3,
+      "specialRules": [
+		"Phalanx",	
+		"Warband",
+		"Fanatic"
+      ]
+    },
+    "Highland Pikemen": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "max": "Up to Half",
+      "points": -10,
+      "order": 4,
+      "specialRules": [
+		"Phalanx",	
+		"Warband"
+      ]
+    },
+    "King James": {
+      "type": "General",
+      "attack": "+3",
+      "command": 8,
+      "size": 1,
+      "armyMin": 1,
+      "armyMax": 1,
+      "points": 10,
+      "order": 5
+    }
+  },
+  "specialRules": {
+    "Skirmish": {
+      "order": 1
+    },
+    "Phalanx": {
+      "order": 2
+    },
+    "Heavy Cannon": {
+      "order": 3
+    },
+    "Fanatic": {
+      "order": 4
+    },
+    "Cannon": {
+      "order": 5
+    },
+    "Slow": {
+      "order": 6
+    },
+    "Warband": {
+      "order": 7
+    }
+  }
+}

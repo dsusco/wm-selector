@@ -1,0 +1,252 @@
+{
+  "name": "Italian Condotta, 1495",
+  "version": "Warmaster Medieval",
+  "group": "Italian Wars",
+  "order": 0,
+  "units": {
+    "Mercenary Knights": {
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "4+",
+      "size": 3,
+      "min": 2,
+      "max": 4,
+      "points": 135,
+      "specialRules": [
+        "Knights"
+      ],
+      "order": 1
+    },
+    "Light Cavalry": {
+      "type": "Cavalry",
+      "attack": 2,
+      "hits": 3,
+      "range": 15,
+      "armour": "6+",
+      "size": 3,
+      "max": 4,
+      "points": 60,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "order": 2,
+	  "upgrades":[
+		"Mercenary Light Cavalry"
+		]
+    },
+    "Militia": {
+      "type": "Infantry",
+      "attack": 3,
+      "armour": "6+",
+      "hits": 3,
+      "size": 3,
+      "max":4,
+      "points": 35,
+      "order": 3,
+      "specialRules": [
+        "Unreliable"		
+      ],
+	  "upgrades":[
+		"Stakes"
+		]
+    },
+    "Crossbowmen": {
+      "type": "Infantry",
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "points": 45,
+      "order": 4,
+      "min":2,
+      "specialRules": [
+        "Crossbow"
+      ],
+	  "upgrades":[
+		"Skirmishers with Crossbows",
+		"Pavisse"
+		]
+    },
+    "Handgunners": {
+      "type": "Infantry",
+      "attack": 2,
+      "hits": 3,
+      "range": 20,
+      "size": 3,
+      "points": 45,
+      "order": 5,
+      "max":2,
+	  "upgrades":[
+		"Skirmishers with Handguns",
+		"Pavisse"
+		]
+    },
+    "Mercenary Pikemen": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "armour": "6+",
+      "max": 4,
+      "points": 60,
+      "order": 6,
+      "specialRules": [
+        "Phalanx"
+      ]
+    },
+    "Heavy Cannon": {
+      "type": "Artillery",
+      "attack": 1,
+      "range": "3x60",
+      "hits": 2,
+      "size": 1,
+      "max": 2,
+      "points": 75,
+      "order": 7
+    },
+    "Cannon": {
+      "type": "Artillery",
+      "attack": 1,
+      "range": "2x40",
+      "hits": 2,
+      "size": 1,
+      "max": 2,
+      "points": 50,
+      "order": 8,
+      "specialRules": [
+		"Slow"		
+      ]
+    },
+    "General": {
+      "type": "General",
+      "attack": "+2",
+      "command": 8,
+      "size": 1,
+      "armyMin": 1,
+      "armyMax": 1,
+      "points": 100,
+      "order": 9
+    },
+    "Captain": {
+      "type": "Leader",
+      "attack": "+1",
+      "command": 7,
+      "size": 1,
+      "points": 60,
+      "order": 10,
+	  "upgrades":[
+		"Mercenary Captain"
+		]
+    }
+  },
+  "upgrades": {
+    "Mercenary Light Cavalry": {
+      "type": "Cavalry",
+      "attack": 2,
+      "armour": "6+",
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": -10,
+      "order": 1,
+      "specialRules": [
+        "Knights"
+      ]
+    },
+    "Skirmishers with Crossbows": {
+      "type": "Infantry",
+      "attack": 1,
+      "hits": 3,
+      "range": 30,
+      "size": 3,
+      "points": -10,
+      "specialRules": [
+        "Crossbow",
+		"Skirmish"
+      ],
+      "order": 2
+    },
+    "Skirmishers with Handguns": {
+      "type": "Infantry",
+      "attack": 1,
+      "hits": 3,
+      "range": 15,
+      "size": 3,
+      "points": -15,
+      "specialRules": [
+		"Skirmish"
+      ],
+      "order": 3
+    },
+    "Pavisse": {
+      "type": "Special",
+      "points": 5,
+      "order": 4
+    },
+    "Stakes": {
+      "type": "Special",
+      "points": 5,
+      "order": 5
+    },
+    "Mercenary Captain": {
+      "type": "Leader",
+      "points": 10,      
+      "armyMax": 1,
+      "order": 6
+    }
+  },
+  "specialRules": {
+    "Skirmish": {
+      "order": 1
+    },
+    "Knights": {
+      "order": 2
+    },
+    "Unreliable": {
+      "order": 3
+    },
+    "Crossbow": {
+      "order": 4
+    },
+    "Stakes": {
+      "order": 5
+    },
+    "Handgunners": {
+      "order": 6
+    },
+    "Pavisse": {
+      "order": 7
+    },
+    "Phalanx": {
+      "order": 8
+    },
+    "Slow": {
+      "order": 9
+    },
+    "Heavy Cannon": {
+      "order": 10
+    },
+    "Cannon": {
+      "order": 11
+    },
+    "Mercenary Captain": {
+      "text": [
+        "If he is included, then all Unreliable units are not considered to be Unreliable until such time as the Mercenary Captain fails to issue an order on a Command roll of an 11 or 12. One the Mercenary Captain fails to issue an order on a roll of 11 or 12, then all Unreliable units become Unreliable again."
+      ],
+      "order": 12
+    },
+    "Skirmishers with Crossbows": {
+      "text": [
+        "They cannot carry pavisse"
+      ],
+      "order": 13
+    },
+    "Skirmishers with Handguns": {
+      "text": [
+        "They cannot carry pavisse"
+      ],
+      "order": 14
+    }
+  }
+}

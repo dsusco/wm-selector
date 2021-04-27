@@ -1,0 +1,95 @@
+{
+  "name": "The Grand Duchy Of Lithuania, 1410",
+  "version": "Warmaster Medieval",
+  "group": "Polish–Lithuanian–Teutonic War",
+  "order": 0,
+  "units": {
+    "Faris": {
+      "type": "Nobles",
+      "attack": 3,
+      "hits": 3,
+      "armour": "4+",
+      "size": 3,
+      "min": 1,
+      "points": 135,
+      "order": 0,
+      "specialRules": [
+        "Knights"
+      ]
+    },
+    "Retainers": {
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "min": 1,
+      "points": 110,
+      "order": 1,
+      "specialRules": [
+        "Shock"
+      ]
+    },
+    "Light cavalry": {
+      "type": "Cavalry",
+      "attack": 2,
+      "hits": 3,
+      "range": 15,
+      "armour": "6+",
+      "size": 3,
+      "min": 2,
+      "points": 60,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "order": 2
+    },
+    "General": {
+      "type": "General",
+      "attack": "+2",
+      "command": 8,
+      "size": 1,
+      "armyMin": 1,
+      "armyMax": 1,
+      "points": 100,
+      "order": 3,
+      "upgrades": [
+        "Prayer"
+      ]
+    },
+    "Leader": {
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "max": 2,
+      "points": 80,
+      "order": 4
+    }
+  },
+  "upgrades": {
+    "Prayer": {
+      "type": "Special",
+      "points": "+10",
+      "armyMax": 1,
+      "order": 0,
+      "specialRules": [
+        "Portents"
+      ]
+    }    
+  },
+  "specialRules": {
+    "Skirmish": {
+      "order": 1
+    },
+    "Shock": {
+      "order": 2
+    },
+    "Knights": {
+      "order": 3
+    },
+    "Portents": {
+      "order": 4
+    }
+  }
+}

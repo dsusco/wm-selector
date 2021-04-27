@@ -1,0 +1,263 @@
+{
+  "name": "The Ottoman Turks, 1444",
+  "version": "Warmaster Medieval",
+  "group": "Ottoman–Hungarian wars",
+  "order": 1,
+  "units": {
+    "Sipahis": {
+      "type": "Cavalry",
+      "attack": 3,
+      "range": 15,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "max": 2,
+      "points": 115,
+      "specialRules": [
+        "Shock"
+      ],
+      "upgrades": [
+        "Kapikulu"
+      ],
+      "order": 0
+    },
+    "Akincis": {
+      "type": "Cavalry",
+      "attack": 2,
+      "hits": 3,
+      "range": 15,
+      "armour": "6+",
+      "size": 3,
+      "min": 2,
+      "points": 60,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "order": 1
+    },
+    "Janissaries": {
+      "type": "Infantry",
+      "attack": 3,
+      "range": 30,
+      "armour": "6+",
+      "hits": 3,
+      "size": 3,
+      "max":4,
+      "points": 60,
+      "order": 2,
+      "upgrades": [
+        "Camels",
+		"Stakes",
+		"Janissaries Handgunners"
+      ]
+    },
+    "Azabs": {
+      "type": "Infantry",
+      "attack": 2,
+      "hits": 3,
+      "range": 15,
+      "size": 3,
+      "min": 4,
+      "points": 35,
+      "order": 3,
+      "upgrades": [
+        "Camels",
+		"Azabs Skirmishers"
+      ],
+      "specialRules": [
+        "Skirmishers"
+      ]
+    },
+    "Vassal Infantry": {
+      "type": "Infantry",
+      "attack": 2,
+      "hits": 3,
+      "size": 3,
+      "min": 2,
+      "points": 25,
+      "order": 4,
+      "upgrades": [
+        "Stakes",
+		"Vassal Skirmishers",
+		"Voynuks"
+      ],
+      "specialRules": [
+        "Skirmishers"
+      ]
+    },
+    "Cannon": {
+      "type": "Artillery",
+      "attack": 1,
+      "range": "2x40",
+      "hits": 2,
+      "size": 2,
+      "min": 1,
+      "max": 2,
+      "points": 50,
+      "specialRules": [
+        "Slow"
+      ],
+      "order": 5
+    },
+    "Heavy Cannon": {
+      "type": "Artillery",
+      "attack": 1,
+      "range": "3x60",
+      "hits": 2,
+      "size": 1,
+      "max": 1,
+      "points": 75,
+      "order": 6
+    },
+    "Sultan": {
+      "type": "General",
+      "attack": "+2",
+      "command": 9,
+      "size": 1,
+      "armyMin": 1,
+      "armyMax": 1,
+      "points": 125,
+      "upgrades": [
+        "Mehters"
+      ],
+      "order": 7
+    },
+    "Bey": {
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "max": 2,
+      "points": 80,
+      "order": 8
+    }
+  },
+  "upgrades": {
+    "Camels": {
+      "type": "Special",
+      "points": "+5",
+      "order": 0
+    },
+    "Stakes": {
+      "type": "Special",
+      "points": "+5",
+      "order": 1
+    },
+	"Kapikulu": {
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 4,
+      "range": 15,
+      "armour": "3+",
+      "size": 3,
+      "max": 1,
+      "points": 10,
+      "specialRules": [
+        "Shock"
+      ],
+      "order": 2 },
+	  
+    "Janissaries Handgunners": {
+      "type": "Infantry",
+      "attack": 3,
+      "range": 20,
+      "armour": "6+",
+      "hits": 3,
+      "size": 3,
+      "max":1,
+      "points": 5,
+      "order": 3,
+      "specialRules": [
+        "Handgunners"
+      ]
+    },
+    "Azabs Skirmishers": {
+      "type": "Infantry",
+      "attack": 1,
+      "hits": 3,
+      "range": 15,
+      "size": 3,
+      "max": "Up to Half",
+      "points": -5,
+      "order": 4,
+      "specialRules": [
+        "Skirmish"
+      ]
+    },
+    "Vassal Skirmishers": {
+      "type": "Infantry",
+      "attack": 1,
+      "hits": 3,
+      "range": 15,
+      "size": 3,
+      "points": 5,
+      "order": 5,
+      "specialRules": [
+        "Skirmish"
+      ]
+    },
+    "Voynuks": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "max": 1,
+      "points": 20,
+      "order": 6
+    },
+    "Mehters": {
+      "type": "General",
+      "attack": "+2",
+      "command": 8,
+      "size": 1,
+      "armyMax": 1,
+      "points": 25,
+      "order": 7
+    }
+  },
+  "specialRules": {
+    "Skirmish": {
+      "order": 1
+    },
+    "Shock": {
+      "order": 2
+    },
+    "Knights": {
+      "order": 3
+    },
+    "Portents": {
+      "order": 4
+    },
+    "Slow": {
+      "order": 5
+    },
+    "Cannon": {
+      "order": 6
+    },
+    "Heavy Cannon": {
+      "order": 7
+    },
+    "Camels": {
+      "order": 8
+    },
+    "Stakes": {
+      "order": 9
+    },
+    "Handgunners": {
+      "order": 10
+    },
+    "Mehters": {
+      "text": [
+        "All Janissary units within 20cm of the Sultan become immune to terrifying enemy and also ignore any drive backs otherwise caused by shooting, including confusion resulting from drive backs."
+      ],
+      "order": 11
+    },	
+    "Sipahis": {
+      "text": [
+        "Up to  one unit per 1000 pts of Siphasis can be uppgraded to Kapikulu"
+      ],
+      "order": 12
+    }
+  }
+}

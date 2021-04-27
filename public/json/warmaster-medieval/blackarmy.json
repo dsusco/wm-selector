@@ -1,0 +1,234 @@
+{
+  "name": "The Black Army Of Matthias Corvinus, 1467",
+  "version": "Warmaster Medieval",
+  "group": "Ottoman–Hungarian wars",
+  "order": 2,
+  "units": {
+    "Szekeler Cavalry": {
+      "type": "Cavalry",
+      "attack": 1,
+      "hits": 3,
+      "size": 3,
+      "range": 30,
+      "max": 2,
+      "points": 60,
+      "order": 0,
+      "specialRules": [
+        "Skirmish"
+      ]
+    },
+    "Hungarian/Crusader Knights": {
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "4+",
+      "size": 3,
+      "min": 1,
+      "points": 135,
+      "order": 1,
+      "specialRules": [
+        "Knights"
+      ],
+      "upgrades": [
+        "Royal Banderium"
+      ] 
+    },
+    "Crossbowmen": {
+      "type": "Infantry",
+      "attack": 2,
+      "hits": 3,
+      "range": 30,
+      "armour": "6+",
+      "size": 3,
+      "max": 2,
+      "points": 55,
+      "specialRules": [
+        "Crossbow"
+      ],
+      "order": 2,
+      "upgrades": [
+        "Pavisse"
+      ]
+    },
+    "Armati": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "min": 1,
+      "points": 60,
+      "order": 3,
+      "upgrades": [
+        "Pavisse"
+      ]
+    },
+    "Clipeati": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "min": 1,
+      "points": 45,
+      "order": 4,
+      "upgrades": [
+        "Pavisse"
+      ]
+    },
+    "Handgunners": {
+      "type": "Infantry",
+      "attack": 2,
+      "hits": 3,
+      "range": 20,
+      "armour": "6+",
+      "size": 3,
+      "max": 1,
+      "points": 55,
+      "order": 5,
+      "upgrades": [
+        "Pavisse"
+      ]
+    },
+    "Cannon": {
+      "type": "Artillery",
+      "attack": 1,
+      "range": "2x40",
+      "hits": 2,
+      "size": 2,
+      "max": 2,
+      "points": 50,
+      "specialRules": [
+        "Slow"
+      ],
+      "order": 6
+    },
+    "War Wagons": {
+      "type": "Wagon",
+      "attack": 1,
+      "hits": 3,
+      "range": "15+",
+      "armour": "4+",
+      "size": 3,
+      "max": 2,
+      "points": 60,
+      "order": 7
+    },
+    "Hussite Mercenaries": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "range": 20,
+      "armour": "6+",
+      "size": 3,
+      "max": 2,
+      "points": 60,
+      "order": 8
+    },
+    "General": {
+      "type": "General",
+      "attack": "+2",
+      "command": 8,
+      "size": 1,
+      "armyMin": 1,
+      "armyMax": 1,
+      "points": 100,
+      "order": 9,
+      "upgrades": [
+        "Prayer"
+      ]
+    },
+    "Leader": {
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "max": 3,
+      "points": 80,
+      "order": 10
+    },
+    "Captains": {
+      "type": "Subordinate",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 40,
+      "order": 11
+    }
+  },
+  "upgrades": {
+    "Royal Banderium": {
+      "type": "Cavalry",
+      "attack": 4,
+      "hits": 3,
+      "size": 3,
+      "armour": "4+",
+      "max": 1,
+      "points": 10,
+      "order": 0,
+      "specialRules": [
+        "Knights"
+      ]
+    },
+    "Pavisse": {
+      "type": "Special",
+      "points": 5,
+      "order": 1
+    },
+    "Prayer": {
+      "type": "Special",
+      "order": 2,
+      "points": 10,
+      "specialRules": [
+        "Portents"
+      ]
+    }    
+  },
+  "specialRules": {
+    "Skirmish": {
+      "order": 1
+    },
+    "Shock": {
+      "order": 2
+    },
+    "Knights": {
+      "order": 3
+    },
+    "Pavisse": {
+      "order": 4
+    },
+    "Handgunners": {
+      "order": 6
+    },
+    "Cannon": {
+      "order": 7
+    },
+    "Crossbow": {
+      "order": 9
+    },
+    "War Wagons": {
+      "text": [
+        "Range 15cm but they can combine with other War Wagons (see ballast wagons)"
+      ],
+      "order": 10
+    },
+    "Hussite Mercenaries": {
+      "text": [
+        "Range 20cm & -1 armour save modifier when stationary"
+      ],
+      "order": 11
+    },
+    "Royal Banderium": {
+      "text": [
+        "If you choose this option, you can upgrade one unit of Hungarian or Crusader Knights to the Royal Banderium. The first order given to the Banderium each turns counts the commander's Command value as 10"
+      ],
+      "order": 12
+    },
+    "Portents": {
+      "order": 13
+    },
+    "Slow": {
+      "order": 14
+    }
+  }
+}

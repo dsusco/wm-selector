@@ -3,7 +3,7 @@
         {
             "magic": true,
             "unitType": [
-                "Infantrie",
+                "Infanterie",
                 "Cavalerie",
                 "Char"
             ],

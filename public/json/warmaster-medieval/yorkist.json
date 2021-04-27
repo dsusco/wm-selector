@@ -1,0 +1,232 @@
+{
+  "name": "The Yorkist Pretender, 1487",
+  "version": "Warmaster Medieval",
+  "group": "The Wars of the Roses",
+  "order": 2,
+  "units": {
+    "Hobilars": {
+      "type": "Cavalry",
+      "attack": 2,
+      "hits": 3,
+      "range": 15,
+      "armour": "6+",
+      "size": 3,
+      "max": 2,
+      "points": 60,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "order": 1
+    },
+    "Men-At-Arms on Foot": {
+      "type": "Infantry",
+      "attack": 3,
+      "armour": "4+",
+      "hits": 3,
+      "size": 3,
+      "max":1,
+      "points": 85,
+      "order": 2,
+      "upgrades": [
+        "Men-At-Arms Mounted"
+      ]
+    },
+    "Longbowmen": {
+      "type": "Infantry",
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "points": 45,
+      "order": 3,
+      "min":1,
+      "specialRules": [
+        "Combined Arms",
+		"Longbow"
+      ],
+      "upgrades": [
+        "Stakes"
+      ]
+    },
+    "Bill": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "armour": "6+",
+      "points": 45,
+      "order": 4,
+      "min":1,
+      "specialRules": [
+        "Combined Arms"
+      ]
+    },
+    "Pikemen": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "armour": "6+",
+      "min": 2,
+      "max": 4,
+      "points": 60,
+      "order": 5,
+      "specialRules": [
+        "Phalanx"
+      ]
+    },
+    "Handgunners": {
+      "type": "Infantry",
+      "attack": 2,
+      "hits": 3,
+      "range": 20,
+      "size": 3,
+      "armour": "6+",
+      "max": 2,
+      "points": 55,
+      "order": 6
+    },
+    "Irish": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "min": 8,
+      "points": 35,
+      "order": 7,
+      "specialRules": [
+		"Warband"
+      ],
+	  "upgrades":[
+		"Irish Skirmishers"
+	  ]
+    },
+    "Cannon": {
+      "type": "Artillery",
+      "attack": 1,
+      "range": "2x40",
+      "hits": 2,
+      "size": 2,
+      "max": 2,
+      "points": 60,
+      "order": 8,
+      "specialRules": [
+		"Slow"		
+      ]
+    },
+    "Organ Gun": {
+      "type": "Artillery",
+      "attack": 1,
+      "range": "D6x15",
+      "hits": 2,
+      "size": 1,
+      "max": 1,
+      "points": 50,
+      "order": 9,
+      "specialRules": [
+		"Slow"
+      ]
+    },
+    "General": {
+      "type": "General",
+      "attack": "+2",
+      "command": 8,
+      "size": 1,
+      "armyMin": 1,
+      "armyMax": 1,
+      "points": 100,
+      "order": 10,
+	  "upgrades":[
+		"Martin Schwartz"
+	  ]
+    },
+    "Lord": {
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "max": 2,
+      "points": 80,
+      "order": 11
+    }
+  },
+  "upgrades": {
+    "Martin Schwartz": {
+      "type": "General",
+      "armyMax": 1,
+      "points": 20,
+      "order": 0
+    },
+    "Stakes": {
+      "type": "Special",
+      "points": 5,
+      "order": 1
+    },
+    "Men-At-Arms Mounted": {
+      "type": "Infantry",
+      "attack": 3,
+      "armour": "4+",
+      "hits": 3,
+      "size": 3,
+      "points": 50,
+      "order": 2,
+      "specialRules": [
+        "Knights"
+      ]
+    },
+    "Irish Skirmishers": {
+      "type": "Infantry",
+      "attack": 1,
+      "hits": 3,
+      "range": 15,
+      "size": 3,
+      "points": -5,
+      "max": "Up to half",
+      "specialRules": [
+        "Skirmish"
+      ],
+      "order": 3
+    }
+  },
+  "specialRules": {
+    "Skirmish": {
+      "order": 1
+    },
+    "Knights": {
+      "order": 2
+    },
+    "Shock": {
+      "order": 3
+    },
+    "Combined Arms": {
+      "order": 4
+    },
+    "Phalanx": {
+      "order": 5
+    },
+    "Stakes": {
+      "order": 6
+    },
+    "Handgunners": {
+      "order": 7
+    },
+    "Longbow": {
+      "order": 8
+    },
+    "Warband": {
+      "order": 9
+    },
+    "Slow": {
+      "order": 10
+    },
+    "Martin Schwartz": {
+      "text": [
+        "If he is your leader, then a further +1 is added to the result of all combat engagements where any commander is included in the engagement (ie, Warlord bonus WAA p84)"
+      ],
+      "order": 11
+    },
+    "Organ Gun": {
+      "order": 12
+    }
+  }
+}

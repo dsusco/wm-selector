@@ -34,7 +34,7 @@
           <option>Cavalerie</option>
           <option>Char</option>
           <option>Eléphant</option>
-          <option>Infantrie</option>
+          <option>Infanterie</option>
           <option>Machine</option>
           <option>Monstre</option>
         </optgroup>

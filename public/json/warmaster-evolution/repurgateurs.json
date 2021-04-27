@@ -1,0 +1,278 @@
+{
+   "name":"Répurgateurs",
+   "version":"Warmaster Evolution",
+   "group":2,
+   "order":5,
+   "units":{
+      "Paysans Révoltés":{
+         "type":"Infanterie",
+         "attack":3,
+         "hits":3,
+         "size":3,
+         "points":35,
+         "min":2,
+         "order":0,
+         "upgrades":[
+            "Autel de Sigmar",
+            "Dévots"
+         ]
+      },
+      "Flagellants":{
+         "type":"Infanterie",
+         "attack":5,
+         "hits":3,
+         "size":3,
+         "points":70,
+         "min":2,
+         "order":1
+      },
+      "Exorcistes":{
+         "type":"Infanterie",
+         "attack":"3/1",
+         "range":"15cm",
+         "hits":3,
+         "size":3,
+         "armour":"5+",
+         "points":80,
+         "max":2,
+         "order":2
+      },
+      "Miliciens":{
+         "type":"Infanterie",
+         "attack":3,
+         "hits":3,
+         "armour":"6+",
+         "size":3,
+         "points":45,
+         "max":2,
+         "order":3
+      },
+      "Chasseurs":{
+         "type":"Infanterie",
+         "attack":"3/1",
+         "range":"30cm",
+         "hits":3,
+         "size":3,
+         "points":55,
+         "max":2,
+         "order":4
+      },
+      "Chiens de Guerre":{
+         "type":"Infanterie",
+         "attack":"3",
+         "hits":3,
+         "armour":"-",
+         "size":"+1",
+         "points":20,
+         "noCount":true,
+         "augendUnits":[
+            "Paysans Révoltés",
+            "Flagellants"
+         ],
+         "noMagic":true,
+         "order":5
+      },
+      "Chevaliers":{
+         "type":"Cavalerie",
+         "attack":3,
+         "hits":3,
+         "armour":"4+",
+         "size":3,
+         "points":110,
+         "order":6,
+         "max":1
+      },
+      "Pistoliers":{
+         "type":"Cavalerie",
+         "attack":"3/1",
+         "range":"15cm à 360°",
+         "hits":3,
+         "armour":"5+",
+         "size":3,
+         "points":95,
+         "max":1,
+         "order":7
+      },
+      "Chariot purificateur":{
+         "type":"Char",
+         "attack":"4/4",
+         "hits":4,
+         "armour":"4+",
+         "size":1,
+         "points":100,
+         "max":1,
+         "order":8,
+         "range":"30cm"
+      },
+      "Inquisiteur":{
+         "type":"Général",
+         "attack":"+2",
+         "command":9,
+         "size":1,
+         "points":125,
+         "armyMin":1,
+         "armyMax":1,
+         "upgrades":[
+            "Prison tractée"
+         ],
+         "order":9
+      },
+      "Répurgateur":{
+         "type":"Héros",
+         "attack":"+2",
+         "command":8,
+         "size":1,
+         "points":95,
+         "max":1,
+         "upgrades":[
+            "Prison tractée"
+         ],
+         "order":10
+      },
+      "Prêtre guerrier":{
+         "type":"Sorcier",
+         "attack":"+1",
+         "command":7,
+         "size":1,
+         "points":55,
+         "max":2,
+         "order":11
+      }
+   },
+   "upgrades":{
+      "Prison tractée":{
+         "type":"Char monté",
+         "attack":"+1",
+         "points":"+80",
+         "armyMax":1,
+         "order":0
+      },
+      "Autel de Sigmar":{
+         "type":"Char monté",
+         "points":"+45",
+         "armyMax":1,
+         "order":1
+      },
+      "Dévots":{
+         "type":"Infanterie",
+         "attack":3,
+         "hits":3,
+         "size":3,
+         "points":"+5",
+         "min":"-",
+         "order":2
+      }
+   },
+   "specialRules":{
+      "Paysans Révoltés":{
+         "order":1,
+         "text":[
+            "Les Paysans Révoltés sont fanatiques.",
+            "Ils peuvent êtres améliorés en Dévots pour +5pts"
+         ]
+      },
+      "Dévots":{
+         "order":2,
+         "text":[
+            "Tout comme les paysans révoltés, les dévots sont fanatiques.",
+            "De plus, ces troupes gagnent +1 Attaque au premier tour d'un engagement contre les morts-vivants ou les forces corrompues par le chaos (Roi des tombes, Vampires, Chaos , Démons, Hommes-bêtes, Skavens, Nains du Chaos)."
+         ]
+      },
+      "Exorcistes":{
+         "order":3,
+         "text":[
+            "Les attaques de tir des Exorcistes retirent 1 à l’Armure de la cible : une Armure de 3+, passe à 4+, une de 4+ à 5+, une de 5+ à 6+. Une Armure de 6+ n’arrête pas les tirs des Exorcistes.",
+            "De plus, les Exorcistes ignorent la terreur"
+         ]
+      },
+      "Prison tractée":{
+         "order":4,
+         "text":[
+            "Certains individus doivent parfois être capturés pour être jugés ou étudiés",
+            "Une magie vengeresse imprègne la prison, tourmentant héros et dieux ennemis.",
+            "Seuls les Inquisiteurs et Répurgateurs peuvent embarquer dans une Prison tractée. Son mouvement est limité à 40cm et il cause la Terreur. Une fois par tour, la Prison tractée peut lancer le sort suivant :",
+            "",
+            "SCEAUX DE DESESPOIR",
+            "4+ to cast",
+            "Range Affecte toutes les unités ennemies à 30 cm.",
+            "Ce sort peut être lancé sur la prison tractée elle-même et affecte toutes les unités ennemies situées dans un rayon de 30cm autour de son socle.",
+            "Ses effets durent jusqu’à la fin du prochain tour ennemi. Le sort gêne les ordres ennemis. Toutes les unités ennemies affectées subissent un malus de -1 sur leurs jets d’ordre.",
+            "Cette pénalité s’applique au moment où chaque ordre est transmis : une unité peut par exemple recevoir un premier ordre pendant qu’elle se trouve à moins de 30cm de la prison, et un deuxième alors qu’elle ne s’y trouve plus."
+         ]
+      },
+      "Chiens de guerre":{
+         "order":5,
+         "text":[
+            "Les socles de Chiens de Guerre ne",
+            "combattent jamais comme unité indépendante. À la place,",
+            "vous pouvez ajouter un seul socle de Chiens de Guerre à",
+            "toute unité de Paysans Révoltés, de Dévots ou de",
+            "Flagellants. Cela fait passer la taille de l’unité de 3 à 4 socles,",
+            "trois socles ordinaires et un de Chiens de Guerre. Ils",
+            "combattent comme s’ils faisaient partie de l’unité et",
+            "peuvent être retirés comme pertes si le joueur le décide. La",
+            "perte de Chiens de Guerre ne compte pas lorsqu’il s’agit de",
+            "donner des ordres, il n’y a donc pas de malus de -1 pour",
+            "l’unité subissant des pertes si ces pertes sont des Chiens de",
+            "Guerre. Les socles de Chiens de Guerre ne comptent pas dans",
+            "la formation de l’unité pour déterminer son déplacement, il",
+            "n’y aura donc pas de malus de mouvement s’ils sont placés en",
+            "dehors de la formation de l’unité. C’est pour cela que les",
+            "Chiens de Guerre sont plus polyvalents et plus sacrifiables que",
+            "les autres troupes"
+         ]
+      },
+      "Autel de Sigmar":{
+         "order":6,
+         "text":[
+            "Cet autel sacré peut être donnée à une unique unité de Paysans Révoltés/Dévots. Cette unité ainsi que toutes les unités de Paysans Révoltés/Dévots à son contact gagnent le particule \"de Sigmar\" (tant qu’elles sont au contact) . Les Paysans Révoltés/Dévots de Sigmar ainsi que leurs éventuels chiens de guerre sont immunisés à la Terreur, de plus, leur profil passe à 4pv. Avant d’effectuer une action ou de subir une attaque avec des Dévots/Flagellants de Sigmar vérifiez s’ils touchent toujours l’unité portant le Reliquaire; sinon ils ne bénéficient pas de ses effets."
+         ]
+      },
+      "Flagellants":{
+         "order":7,
+         "text":[
+            "Les Flagellants sont Fanatiques."
+         ]
+      }
+   },
+   "spells":[
+      {
+         "roll":4,
+         "range":"N/A",
+         "text":[
+            "Le prêtre projette son marteau divin, massacrant ses adversaires avant qu'il ne revienne dans sa main.",
+            "Ce sort ne peut être lancé que si le Prêtre a rejoint une unité au combat. Il inflige directement 3 attaques sur une unité ennemie en contact de l'unité rejointe par le prêtre. Les attaques fonctionnent de manière habituelle. Toutes les blessures sont conservées jusqu'au premier round du combat et comptent comme si elles avaient étés faites en combat."
+         ],
+         "name":"Marteau de Sigmar"
+      },
+      {
+         "roll":4,
+         "range":"60cm, ligne de vue.",
+         "text":[
+            "Les entrailles des ennemis du Prête se contractent de terreur - ou à cause de quelque chose d’encore pire - ce qui gêne considérablement leurs mouvements. Ce sort peut être lancé sur toute unité ennemie à portée et dans la ligne de vue du Prête . Ses effets durent jusqu’à la fin du tour suivant de l’ennemi. Tant que le sort dure, sa cible ne peut pas charger ou éviter par initiative. Elle considère toute unité ennemie comme Terrifiante. Même les morts-vivants et les unités normalement obligées de charger, avancer ou poursuivre sont affectés !"
+         ],
+         "name":"Lumière ardente"
+      },
+      {
+         "roll":5,
+         "range":"30cm",
+         "text":[
+            "Le sort affecte une unité allié à portée du Prêtre et jusqu'au début prochain tour du joueur contrôlant le prêtre. Les attaques visant l'unité ciblé souffrent d'un malus de -1 pour toucher (comme si elle était en défense). Cela affecte les tirs, les touches magique et le Corps a Corps (uniquement pendant le premier round de combat)",
+            "Une unité fortifiée ne peut pas bénéficier de ce sort."
+         ],
+         "name":"Bénédiction des cieux"
+      },
+      {
+         "roll":6,
+         "text":[
+            "Des météorites s’abattent sur le champ de bataille. Ce sort affecte toutes les unités ennemies à portée. Chaque unité ennemie dans un rayon de 30 cm autour du mage est affectée et subit 1D3 attaques de tir résolues de la manière habituelle. Jetez le dé séparément pour chaque unité ennemie. Les météorites ne repousse pas ses victimes non engagées (le sol se soulève sous leurs pieds). Les unités engagées reportent les blessures infligées par ce sort dans le premier round de combat, et ces dernières comptent comme ayant été infligées lors du combat lui même."
+         ],
+         "name":"Comète de Sigmar",
+         "range":"30cm"
+      }
+   ],
+   "magic":true,
+   "armyRules":[
+      ""
+   ]
+}

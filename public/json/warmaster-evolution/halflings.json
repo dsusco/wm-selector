@@ -1,0 +1,303 @@
+{
+  "name": "Halflings",
+  "version": "Warmaster Evolution",
+  "group": 2,
+  "order": 4,
+  "units": {
+    "Miliciens": {
+      "type": "Infanterie",
+      "attack": "2/1",
+      "range": "15cm",
+      "hits": 3,
+      "size": 3,
+      "points": 30,
+      "max": 4,
+      "order": 0,
+      "specialRules": [
+        "Non-fiables"
+      ]
+    },
+    "Gardes": {
+      "type": "Infanterie",
+      "attack": 2,
+      "hits": 3,
+      "size": 3,
+      "armour": "6+",
+      "points": 40,
+      "min": 2,
+      "order": 1
+    },
+    "Chasseurs": {
+      "type": "Infanterie",
+      "attack": "2/1",
+      "range": "30cm",
+      "hits": 3,
+      "size": 3,
+      "points": 50,
+      "min": 2,
+      "order": 2
+    },
+    "Voleurs": {
+      "type": "Infanterie",
+      "attack": 2,
+      "hits": 3,
+      "armour": "- ou 6+",
+      "size": 1,
+      "points": 20,
+      "max": 1,
+      "order": 3,
+      "noCount": true,
+      "noMagic": true,
+      "augendUnits": [
+        "Gardes",
+        "Miliciens",
+        "Chasseurs"
+      ]
+    },
+    "Cavaliers": {
+      "type": "Cavalerie",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 100,
+      "max": 2,
+      "order": 4
+    },
+    "Lémures": {
+      "type": "Monture",
+      "attack": 4,
+      "hits": 4,
+      "armour": "5+",
+      "size": 3,
+      "points": 100,
+      "max": 2,
+      "order": 5,
+      "specialRules": [
+        "Esprits de la Forêt"
+      ]
+    },
+    "Homme Arbre": {
+      "type": "Monstre",
+      "attack": 6,
+      "hits": 4,
+      "armour": "4+",
+      "size": 1,
+      "points": 135,
+      "order": 6,
+      "max": 1,
+      "specialRules": [
+        "Esprits de la Forêt",
+        "Transporteur"
+      ]
+    },
+    "Buffles Géants": {
+      "type": "Monstre",
+      "attack": 3,
+      "hits": 4,
+      "armour": "5+",
+      "size": 3,
+      "points": 100,
+      "max": 3,
+      "order": 7,
+      "specialRules": [
+        "Transporteur"
+      ]
+    },
+    "Catapulte à Marmite": {
+      "type": "Artillerie",
+      "attack": "1/3",
+      "range": "60cm à 45°",
+      "hits": 3,
+      "size": 1,
+      "points": 75,
+      "max": 2,
+      "order": 8,
+      "upgrades": [
+        "Catapulte à Marmite sur Buffle"
+      ]
+    },
+    "Chef": {
+      "type": "Général",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 85,
+      "armyMin": 1,
+      "armyMax": 1,
+      "upgrades": [
+        "Griffon",
+        "Bélier"
+      ],
+      "order": 14
+    },
+    "Aventurier": {
+      "type": "Héros",
+      "attack": "+1",
+      "command": 7,
+      "size": 1,
+      "points": 50,
+      "max": 2,
+      "upgrades": [
+        "Griffon",
+        "Bélier"
+      ],
+      "order": 15
+    },
+    "Cuisinier": {
+      "type": "Sorcier",
+      "attack": "+0",
+      "command": 7,
+      "size": 1,
+      "points": 45,
+      "max": 1,
+      "upgrades": [
+        "Griffon",
+        "Bélier"
+      ],
+      "order": 16
+    }
+  },
+  "upgrades": {
+    "Catapulte à Marmite sur Buffle": {
+      "type": "Monstre",
+      "attack": "3/3",
+      "range": "40cm à 45°",
+      "hits": 4,
+      "armour": "5+",
+      "size": 3,
+      "points": "+25",
+      "order": 0
+    },
+    "Griffon": {
+      "type": "Monture Monstrueuse",
+      "attack": "+2",
+      "points": "+60",
+      "order": 1
+    },
+    "Bélier": {
+      "type": "Monture",
+      "attack": "+1",
+      "points": "+10",
+      "order": 2
+    }
+  },
+  "magic": true,
+  "specialRules": {
+    "Non-fiables": {
+      "order": 1,
+      "text": [
+        "Toute unité non fiable ou brigade comportant au moins une unité non fiable dans ses rangs entraîne une pénalité de commandement de -1."
+      ]
+    },
+    "Chevaucheurs de Bélier": {
+      "order": 2,
+      "text": [
+        "Une unité de Chevaucheurs de",
+        "Bélier qui charge un ennemi à découvert reçoit un bonus",
+        "supplémentaire de +1 Attaque, comme un char ou monstre."
+      ]
+    },
+    "Catapulte à Marmite sur Buffle": {
+      "order": 3,
+      "text": [
+        "Ses tirs annulent les sauvegardes mais il ne peut effectuer de tir de contre-charge. Durant la phase de tir, il se comporte comme une artillerie."
+      ]
+    },
+    "Esprits de la Forêt": {
+      "order": 4,
+      "text": [
+        "Ces unités ignorent tout malus de CdT lié aux terrains.",
+        "Les terrains difficiles sont considérés comme des terrains",
+        "dégagés, sans qu'il soit possible d'y terminer son mouvement."
+      ]
+    },
+    "Transporteur": {
+      "order": 5,
+      "text": [
+        "Ces unités octroient une position défensive partielle (5+ pour être touché, mais n'annule pas les bonus de charge ennemis) à toutes les unités d'infanteries ayant au moins 1 socle à leur contact."
+      ]
+    },
+    "Voleurs": {
+      "order": 6,
+      "text": [
+        "Les voleurs perturbent jusqu'au plus puissant",
+        "dragon, ils s'intéressent principalement aux richesses des",
+        "personnages adverses les plus fortunés.",
+        "Les héros adverses participant au même combat qu'une ou plusieurs unité(s) de voleur n'apportent pas de bonus d'attaque (y  ompris les bonus de la monture, des objets magiques ou de sorts)."
+      ]
+    },
+    "Lémures": {
+      "order": 7,
+      "text": [
+        "Les Lémures sont Lents."
+      ]
+    },
+    "Homme Arbre": {
+      "order": 8,
+      "text": [
+        "L’Homme-Arbre cause la Terreur."
+      ]
+    },
+    "Catapulte à Marmite": {
+      "order": 9,
+      "text": [
+        "Ses tirs annulent les sauvegardes mais il ne peut effectuer de tir de contre-charge. Une Catapulte à Marmite peut être montée sur un Buffle (voir profil correspondant)."
+      ]
+    },
+    "Cuisinier": {
+      "order": 10,
+      "text": [
+        "Le Cuisinier peut lancer des sorts."
+      ]
+    },
+    "Griffon": {
+      "order": 11,
+      "text": [
+        "Chefs, Cuisiniers et Aventuriers peuvent chevaucher des Griffons ; ils Volent et causent le Terreur."
+      ]
+    }
+  },
+  "spells": [
+    {
+      "roll": 4,
+      "range": "Unité rejointe",
+      "text": [
+        "\"Ne tombez pas dans la marmite !\"",
+        "Ce sort peut être lancé si le Cuisinier a rejoint une unité au combat. Le sort affecte l’unité qu’il a rejointe. Ses effets durent jusqu’à la fin de la prochaine phase de combat. Chacun des socles de l’unité, y compris les socles de personnages qui l’ont rejointe, ajoute +1 à sa valeur d’Attaques. Vu que le Cuistot doit avoir rejoint l’unité pour lancer le sort, celui-ci reçoit aussi ce bonus, mais il est possible que d’autres personnages l’accompagnent également, auquel cas tous bénéficient de +1 Attaque."
+      ],
+      "name": "Potion Magique"
+    },
+    {
+      "roll": 4,
+      "range": "toutes les unités < 30cm, pas de ligne de vue.",
+      "text": [
+        "\"J'ouvre la boite, sentez-moi ça les gars !\"",
+        "Le sort est lancé sur le Cuisinier lui-même, et affecte toutes les unités ennemies dans un rayon de 30 cm autour de son socle. Le sort dure jusqu’à la fin du prochain tour ennemi. Il affecte la capacité de l’adversaire à donner des ordres.",
+        "Toutes les unités ennemies se trouvant dans un rayon de 30cm autour du Cuisinier subissent un malus de -1 à tous leurs jets d’ordres. Cette pénalité s’applique à chaque tentative d’ordre : ainsi, une unité peut recevoir son premier ordre hors de portée du sort, mais s’y trouver avant de recevoir le deuxième."
+      ],
+      "name": "Fromage puant"
+    },
+    {
+      "roll": 4,
+      "range": "30cm, pas de ligne de vue.",
+      "text": [
+        "\"Un p'tit coup de gnôle et tu sentiras plus rien !\"",
+        "Ce sort peut être lancé sur une unité amie engagée au corps à corps et à portée. Le Cuisinier n’est pas obligé de voir sa cible pour pouvoir lancer ce sort. Les effets s’appliquent pour la durée de la prochaine phase de combat. La valeur d’Armure de l’unité est améliorée d’1 point, jusqu’à une valeur maximale de 4+. Ainsi, une Armure de 0 passe à 6+, une armure de 6+ passe à 5+ et 5+ passe à 4+. Si l’Armure de l’unité est déjà de 4+ ou qu’un autre bonus la porte à 4+, le sort n’a aucun effet."
+      ],
+      "name": "Étrange Enchantement"
+    },
+    {
+      "roll": 5,
+      "text": [
+        "\"Bougez-vous et vous aurez le double !\"",
+        "Ce sort peut être lancé sur une unité amie n’étant pas engagée au corps à corps, et rejointe par le Cuisinier. Ce sort n’affecte qu’une seule unité, jamais une brigade entière. L’unité peut se déplacer comme si elle avait reçu un ordre durant la phase d’ordres. Le Cuisinier est déplacé en même temps que l’unité et reste avec elle. Si d’autres personnages ont rejoint l’unité, ils restent sur place et ne se déplacent pas avec elle."
+      ],
+      "name": "Double ration",
+      "range": "Unité rejointe"
+    }
+  ],
+  "armyRules": [
+    "Bien que de petite taille, les Halflings sont des créatures très habiles. Les unités d'infanteries halflings et les héros qui la rejoignent gagnent la capacité suivante : Au corps à corps et en tir (tir de contre de charge inclus), les résultats de 6 des jets pour touchers comptent double. Les Halflings sont également passés maîtres dans l’art d’exploiter le terrain pour sauver leur vie. Une unité Halfling ne peut pas être poursuivie si son mouvement l’a amené sur un terrain difficile"
+  ]
+}

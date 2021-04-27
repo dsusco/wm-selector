@@ -1,0 +1,224 @@
+{
+  "name": "The Samurai Warring States Period, 1543",
+  "version": "Warmaster Medieval",
+  "group": "Japanese invasions of Korea",
+  "order": 1,
+  "units": {
+    "Mounted Samurai": {
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "max": 4,
+      "points": 110,
+      "specialRules": [
+        "Shock"
+      ],
+      "upgrades": [
+        "Mounted Samurai Guard",
+        "Mounted Guard with Bows",
+        "Mounted Samurai with Bows"
+      ],
+      "order": 0
+    },
+    "Samurai": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "min": 4,
+      "points": 60,
+      "order": 1,
+      "upgrades": [
+        "Samurai with Bows"
+      ]
+    },
+    "Ashigaru Bowmen": {
+      "type": "Infantry",
+      "attack": 2,
+      "hits": 3,
+      "range": "30",
+      "size": 3,
+      "max": 4,
+      "points": 40,
+      "order": 2,
+      "upgrades": [
+        "Skirmishers with Bows",
+		"Ashigaru Handgunners",
+		"Pavisse"
+      ]
+    },
+    "Ashigaru Spearmen": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "max": 4,
+      "points": 45,
+      "order": 3
+    },
+    "General": {
+      "type": "General",
+      "attack": "+2",
+      "command": 9,
+      "size": 1,
+      "armyMin": 1,
+      "armyMax": 1,
+      "points": 125,
+      "upgrades": [
+        "Daimyo"
+      ],
+      "order": 4
+    },
+    "Leader": {
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+	  "max":2,
+      "points": 80,
+      "order": 5,
+      "upgrades": [
+        "Heroes"
+      ]
+    }
+  },
+  "upgrades": {
+    "Skirmishers with Bows": {
+      "type": "Infantry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": -10,
+	  "max":2,
+      "order": 0,
+      "specialRules": [
+        "Skirmish"
+      ]
+    },
+    "Daimyo": {
+      "order": 2,
+      "armyMax": 1,
+      "points": 20
+    },
+    "Heroes": {
+      "order": 3,
+      "points": 25,
+      "specialRules": [
+        "Terror"
+      ]
+    },
+    "Pavisse": {
+      "order": 4,
+      "points":5
+    },
+    "Ashigaru Handgunners": {
+      "type": "Infantry",
+      "attack": 2,
+      "range": 20,
+      "hits": 3,
+      "size": 3,
+      "points": 5,
+	  "max":2,
+      "order": 5,
+      "specialRules": [
+        "Handgunners"
+      ]
+    },
+    "Mounted Samurai Guard": {
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 4,
+      "armour": "5+",
+      "size": 3,
+      "points": 10,
+	  "armyMax":1,
+      "order": 6,
+      "specialRules": [
+        "Shock",
+		"Elite"
+      ]
+    },
+    "Mounted Guard with Bows": {
+      "type": "Cavalry",
+      "attack": 3,
+      "range": 15,
+      "hits": 4,
+      "armour": "5+",
+      "size": 3,
+      "points": 15,
+	  "max":1,
+      "order": 7,
+      "specialRules": [
+        "Shock",
+		"Elite"
+      ]
+    },
+    "Mounted Samurai with Bows": {
+      "type": "Cavalry",
+      "attack": 3,
+      "range": 15,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 5,
+      "order": 8,
+      "specialRules": [
+        "Shock"
+      ]
+    },
+    "Samurai with Bows": {
+      "type": "Infantry",
+      "attack": 3,
+      "range": 30,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": -10,
+	  "max":"Up to Half",
+      "order": 9
+    }
+  },
+  "specialRules": {
+    "Skirmish": {
+      "order": 1
+    },
+    "Shock": {
+      "order": 2
+    },
+    "Handgunners": {
+      "order": 3
+    },
+    "Pavisse": {
+      "order": 4
+    },
+    "Daimyo": {
+      "text": [
+        "If Daimyo is attached to a unit when orders are issued, he counts his first order of the turn as a Command value of 10. All other orders revert to hist standard value of 9."
+      ],
+      "order": 5
+    },
+    "Skirmishers with Bows": {
+      "text": [
+        "They cannot carry pavisse. You can't have more than 2 'Skirmish' units per 1000 pts (with bows or arquebus)"
+      ],
+      "order": 6
+    },
+    "Elite": {
+      "text": [
+        "You cannot have more than one 'Elite' in the army"
+      ],
+      "order": 8
+    },
+    "Terror": {
+      "order": 9
+    },
+    "Skirmishers": {
+      "order": 10
+    }
+  }
+}
