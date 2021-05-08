@@ -1,1 +1,143 @@
-{"specialRules":{"Skirmish":{"order":1,"text":["In the Warmaster Ancients game, most skirmishers represent troops whose role is exclusively skirmishing. Whilst other troops may skirmish to a degree, they do so on the tactical level subsumed within close combat. The exceptions are some light cavalry and chariot units which are adjudged to have a duel role and which usually carry a mixture of weapons, eg, Huns.","","Because skirmishers are such a fundamental part of the armies, the skirmish rules are described throughout the book in the appropriate sections. These are summarised below together with references to the full descriptions.","","Skirmishers carry suitable weapons—sometimes bows but more likely s lings or javelins—and fight in loose, informal formations taking advantage of local terrain to avoid contact with more powerful but less mobile enemies. In general, skirmishing units represent fewer men than close fighting units. It is assumed they will usually disperse or flee if attacked.","1. Skirmishers always move at up to full pace for their type regardless of formation or circumstances (see p22).","2. Skirmishing units can see all round—they can draw a line of sight from any stand's edge. Their shooting zone extends all round to their front, side and rear. Because they can see enemies to their side or rear they can charge, evade or otherwise react to such units (see p10 Visibility) and (p37 Shooting).","3. Unless confused, skirmishers are allowed to evade from an enemy charge in the opposing Command phase (see p24).","4. Unless confused, skirmishers arc allowed to evade instead of being driven back by shooting in the opposing Shooting phase (see p25).","5. Skirmishers can evade through other units. If these other units are not skirmishers, or if they are a second or subsequent unit evaded through regardless of whether they are skirmishers or not, then both units must test for confusion once the move is complete. Units become confused on the roll of a 6 (see p24).","6. Skirmishing infantry can support from the side only: they cannot support from behind (see p50).","7. Skirmishing infantry can move through some types of terrain that is otherwise impassable—notably rivers/deep water, forests, and cliffs. This is described in the section on Terrain & Movement (see p31).","Note: For the avoidance of doubt, skirmishing infantry are able to evade from charging cavalry, or other non-skirmishing units, even if these units have a greater move distance than they do. In this case, skirmishers are assumed to have already seen, reacted to, and taken steps to avoid their attackers well before they reach their position."]},"Portents":{"order":2,"text":["The player can take the portents before the battle. This allows the General to re-roll one failed Command roll once during the battle. Take the Command test again—if successful the order is issued and the General can continue giving orders if you wish."]},"King David":{"order":3,"text":["King David carries the favour of his god and the supreme confidence of his warriors. Once in each turn you can intervene in any one combat engagement as follows. When your units roll for Attacks, you can immediately re-roll one dice again—picking out a miss and re-rolling it. Only one intervention is allowed in each turn."]}},"units":{"Infantry":{"order":0,"type":"Infantry","attack":3,"hits":3,"size":3,"points":35,"min":6},”Archers":{"order":1,"type":"Infantry","attack":2,"range":30,"hits":3,"size":3,"points":40},"Spearmen":{"order":2,"type":"Infantry","attack":3,"hits":3,"armour":"5+","size":3,"points":60,"max":4,"min":1},"Light Infantry":{"order":3,"type":"Infantry","attack":2,"range":15,"hits":3,"size":3,"points":40,"max":3,"specialRules”:[“1”]},”Skirmishers":{"order":4,"type":"Infantry","attack":1,"range":15,"hits":3,"size":3,"points":30,"specialRules”:[“1”]},”Guard":{"order":5,"type":"Infantry","attack":4,"hits":3,"armour":"5+","size":3,"points":70,"max":1},"General":{"order":6,"type":"General","attack":"+2","command":9,"size":1,"points":125,"min":1,"upgrades":["Portents","King David"]},"Leader":{"order":7,"type":"Leader","attack":"+1","command":8,"size":1,"points":80,"max":2}},"upgrades":{"Portents":{"order":0},"King David":{"order":1}},"order":"Chariot Era","name":"Israelites","version":"25-Apr-2016","group":"Rick's Warmaster","armyRules":["Note that in this particular case the General can be upgraded twice if you wish—once with Portents and once with King David.","","Infantry. Men from the tribes of Israel were drafted into rank-and-file units and generally armed with spears and shields.","","Archers. The tribe of Benjamin was noted for its archers.","","Spearmen. Although the spear was the usual infantry weapon these represent troops highly drilled and trained to a degree that makes them far more formidable than the ordinary mass of troops. They represent the tribe of Judah whose members fought in a close-order formation comparable to Greek Hoplites.","","Light Infantry. The Gadites were the tribe noted for skirmishing warfare providing the Israelite Kings with flexible formations of troops armed with javelins and light bucklers. Mercenaries from Phoenicia used similar tactics.","","Skirmishers. These troops could come from any tribe but probably include a large number of Benjamites. Generally these were armed with javelins, but could also include units of slingers.","","Guard. These are the best and most experienced veterans in the Israelite army. This category includes troops such as the Gibborim (Mighty Men) and the Zebulinites. Well armoured and handpicked by the king, they form the nucleus of the Israelite army."]}
+{
+  "specialRules": {
+    "Skirmish": {
+      "order": 1,
+      "text": [
+        "In the Warmaster Ancients game, most skirmishers represent troops whose role is exclusively skirmishing. Whilst other troops may skirmish to a degree, they do so on the tactical level subsumed within close combat. The exceptions are some light cavalry and chariot units which are adjudged to have a duel role and which usually carry a mixture of weapons, eg, Huns.",
+        "",
+        "Because skirmishers are such a fundamental part of the armies, the skirmish rules are described throughout the book in the appropriate sections. These are summarised below together with references to the full descriptions.",
+        "",
+        "Skirmishers carry suitable weapons—sometimes bows but more likely s lings or javelins—and fight in loose, informal formations taking advantage of local terrain to avoid contact with more powerful but less mobile enemies. In general, skirmishing units represent fewer men than close fighting units. It is assumed they will usually disperse or flee if attacked.",
+        "1. Skirmishers always move at up to full pace for their type regardless of formation or circumstances (see p22).",
+        "2. Skirmishing units can see all round—they can draw a line of sight from any stand's edge. Their shooting zone extends all round to their front, side and rear. Because they can see enemies to their side or rear they can charge, evade or otherwise react to such units (see p10 Visibility) and (p37 Shooting).",
+        "3. Unless confused, skirmishers are allowed to evade from an enemy charge in the opposing Command phase (see p24).",
+        "4. Unless confused, skirmishers arc allowed to evade instead of being driven back by shooting in the opposing Shooting phase (see p25).",
+        "5. Skirmishers can evade through other units. If these other units are not skirmishers, or if they are a second or subsequent unit evaded through regardless of whether they are skirmishers or not, then both units must test for confusion once the move is complete. Units become confused on the roll of a 6 (see p24).",
+        "6. Skirmishing infantry can support from the side only: they cannot support from behind (see p50).",
+        "7. Skirmishing infantry can move through some types of terrain that is otherwise impassable—notably rivers/deep water, forests, and cliffs. This is described in the section on Terrain & Movement (see p31).",
+        "Note: For the avoidance of doubt, skirmishing infantry are able to evade from charging cavalry, or other non-skirmishing units, even if these units have a greater move distance than they do. In this case, skirmishers are assumed to have already seen, reacted to, and taken steps to avoid their attackers well before they reach their position."
+      ]
+    },
+    "Portents": {
+      "order": 2,
+      "text": [
+        "The player can take the portents before the battle. This allows the General to re-roll one failed Command roll once during the battle. Take the Command test again—if successful the order is issued and the General can continue giving orders if you wish."
+      ]
+    },
+    "King David": {
+      "order": 3,
+      "text": [
+        "King David carries the favour of his god and the supreme confidence of his warriors. Once in each turn you can intervene in any one combat engagement as follows. When your units roll for Attacks, you can immediately re-roll one dice again—picking out a miss and re-rolling it. Only one intervention is allowed in each turn."
+      ]
+    }
+  },
+  "units": {
+    "Infantry": {
+      "order": 0,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "points": 35,
+      "min": 6
+    },
+    "Archers": {
+      "order": 1,
+      "type": "Infantry",
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "points": 40
+    },
+    "Spearmen": {
+      "order": 2,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 60,
+      "max": 4,
+      "min": 1
+    },
+    "Light Infantry": {
+      "order": 3,
+      "type": "Infantry",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": 40,
+      "max": 3
+    },
+    "Skirmishers": {
+      "order": 4,
+      "type": "Infantry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": 30
+    },
+    "Guard": {
+      "order": 5,
+      "type": "Infantry",
+      "attack": 4,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 70,
+      "max": 1
+    },
+    "General": {
+      "order": 6,
+      "type": "General",
+      "attack": "+2",
+      "command": 9,
+      "size": 1,
+      "points": 125,
+      "min": 1,
+      "upgrades": [
+        "Portents",
+        "King David"
+      ]
+    },
+    "Leader": {
+      "order": 7,
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 80,
+      "max": 2
+    }
+  },
+  "upgrades": {
+    "Portents": {
+      "order": 0
+    },
+    "King David": {
+      "order": 1
+    }
+  },
+  "order": "Chariot Era",
+  "name": "Israelites",
+  "version": "25-Apr-2016",
+  "group": "Rick's Warmaster",
+  "armyRules": [
+    "Note that in this particular case the General can be upgraded twice if you wish—once with Portents and once with King David.",
+    "",
+    "Infantry. Men from the tribes of Israel were drafted into rank-and-file units and generally armed with spears and shields.",
+    "",
+    "Archers. The tribe of Benjamin was noted for its archers.",
+    "",
+    "Spearmen. Although the spear was the usual infantry weapon these represent troops highly drilled and trained to a degree that makes them far more formidable than the ordinary mass of troops. They represent the tribe of Judah whose members fought in a close-order formation comparable to Greek Hoplites.",
+    "",
+    "Light Infantry. The Gadites were the tribe noted for skirmishing warfare providing the Israelite Kings with flexible formations of troops armed with javelins and light bucklers. Mercenaries from Phoenicia used similar tactics.",
+    "",
+    "Skirmishers. These troops could come from any tribe but probably include a large number of Benjamites. Generally these were armed with javelins, but could also include units of slingers.",
+    "",
+    "Guard. These are the best and most experienced veterans in the Israelite army. This category includes troops such as the Gibborim (Mighty Men) and the Zebulinites. Well armoured and handpicked by the king, they form the nucleus of the Israelite army."
+  ]
+}
