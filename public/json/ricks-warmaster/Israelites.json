@@ -69,7 +69,10 @@
       "hits": 3,
       "size": 3,
       "points": 40,
-      "max": 3
+      "max": 3,
+      "specialRules": [
+        "Skirmish"
+      ]
     },
     "Skirmishers": {
       "order": 4,
@@ -78,7 +81,10 @@
       "range": 15,
       "hits": 3,
       "size": 3,
-      "points": 30
+      "points": 30,
+      "specialRules": [
+        "Skirmish"
+      ]
     },
     "Guard": {
       "order": 5,
@@ -115,16 +121,27 @@
   },
   "upgrades": {
     "Portents": {
-      "order": 0
+      "order": 0,
+      "points": "+10",
+      "specialRules": [
+        "Portents"
+      ]
     },
     "King David": {
-      "order": 1
+      "order": 1,
+      "attack": "+2",
+      "command": 9,
+      "size": 1,
+      "points": "+15",
+      "specialRules": [
+        "King David"
+      ]
     }
   },
-  "order": "Chariot Era",
+  "order": 1,
   "name": "Israelites",
-  "version": "25-Apr-2016",
-  "group": "Rick's Warmaster",
+  "version": "Rick's Warmaster",
+  "group": "Chariot Era",
   "armyRules": [
     "Note that in this particular case the General can be upgraded twice if you wish—once with Portents and once with King David.",
     "",
