@@ -1,0 +1,249 @@
+{
+  "specialRules": {
+    "Skirmish": {
+      "order": 1,
+      "text": [
+        "In the Warmaster Ancients game, most skirmishers represent troops whose role is exclusively skirmishing. Whilst other troops may skirmish to a degree, they do so on the tactical level subsumed within close combat. The exceptions are some light cavalry and chariot units which are adjudged to have a duel role and which usually carry a mixture of weapons, eg, Huns.",
+        "Because skirmishers are such a fundamental part of the armies, the skirmish rules are described throughout the book in the appropriate sections. These are summarised below together with references to the full descriptions.",
+        "Skirmishers carry suitable weapons—sometimes bows but more likely s lings or javelins—and fight in loose, informal formations taking advantage of local terrain to avoid contact with more powerful but less mobile enemies. In general, skirmishing units represent fewer men than close fighting units. It is assumed they will usually disperse or flee if attacked.",
+        "",
+        "1. Skirmishers always move at up to full pace for their type regardless of format ion or circumstances (see p22).",
+        "2. Skirmishing units can see all round—they can draw a line of sight from any stand's edge. Their shooting zone extends all round to their front, side and rear. Because they can see enemies to their side or rear they can charge, evade or otherwise react to such units (see p10 Visibility) and (p37 Shooting).",
+        "3. Unless confused, skirmishers are allowed to evade from an enemy charge in the opposing Command phase (see p24).",
+        "4. Unless confused, skirmishers arc allowed to evade instead of being driven back by shooting in the opposing Shooting phase (see p25).",
+        "5. Skirmishers can evade through other units. If these other units are not skirmishers, or if they are a second or subsequent unit evaded through regardless of whether they are skirmishers or not, then both units must test for confusion once the move is complete. Units become confused on the roll of a 6 (see p24).",
+        "6. Skirmishing infantry can support from the side only: they cannot support from behind (see p50).",
+        "7. Skirmishing infantry can move through some types of terrain that is otherwise impassable—notablyrivers/deep water, forests, and cliffs. This is described in the section on Terrain & Movement (see p31).",
+        "Note: For the avoidance of doubt, skirmishing infantry are able to evade from charging cavalry, or other non-skirmishing units, even if these units have a greater move distance than they do. In this case, skirmishers are assumed to have already seen, reacted to, and taken steps to avoid their attackers well before they reach their position."
+      ]
+    },
+    "Portents": {
+      "order": 2,
+      "text": [
+        "The General can take the portents before the battle. This allows the General to re-roll one failed Command roll once during the battle. Take the Command test again—if successful the order is issued and the General can continue giving further orders if you wish."
+      ]
+    },
+    "Phalanx": {
+      "order": 3,
+      "text": [
+        "A phalanx is a deep formation made up of warriors armed with long pikes or spears. We use the term exclusively for those armed with pikes—the main fighting infantry type of Macedonian and later Hellenistic armies. Pikes could be extremely long so that a closely packed phalanx presents an almost unstoppable hedge of spear points to its front. Conversely, a phalanx is easily disordered if attcked to its flanks or moving over dense terrain.",
+        "1. To preserve the aesthetic appearance of the phalanx and reflect the characteristics of yhe troop type, phalangites are mounted facing the short (20mm) edge of the base. See Appendix 2 for alternative basing suggestions for larger scale models.",
+        "2. The phalanx is a cumbersome and relatively inflexible formation. To represent this, a phalanx unit moves at normal infantry pace of 20cm in the Command phase if it is both in a line formation and if the unit moves either directly forward or charges. In all other situations or formations, including during evades, the phalanx moves at half pace in the Command phase (10cm).",
+        "3. None-measured and fixed moves that take place outside the Command phase—such as advances, drive backs, pursuits, and fall backs are worked our exactly like other troops.",
+        "4. Phalanx stands can not be supported from behind —their basing already represents the depth of the phalanx formation. Phalanx stands can be supported by other phalanx stands to their side, or by other infantry stands positioned to their side and congruent to their front. See Support p49.",
+        "5. A Phalanx stand striking to its side or rear has an Attack value of '0'. Units are still entitled to a 'Last Ditch' dice where they would not otherwise strike at all.",
+        "6. Phalanx units treat all dense terrain as impenetrable—woods, villages/build up areas, (broken/marshy ground, steep hills/slopes, woods/tall scrub,villages/build-up areas).",
+        "7. Phalanx units cannot be placed on ramparts or given ladders with which to attack troops on ramparts.",
+        "8. A phalanx stand counts as a 'defended' enemy to cavalry, elephants, and chariots charging to its front so long as the stand is not also engaged to its side or rear."
+      ]
+    },
+    "Shock": {
+      "order": 4,
+      "text": [
+        "The 'shock' rule applies to hard hitting and often heavily armoured cavalry units. They are likely to be armed with long spears or lances, and charge at a good pace to deliver a decisive blow or punch through the enemy lines. These units are indicated in the army lists.",
+        "1. Shock cavalry units can be based facing the short (20mm) edge of the stand. Their narrow frontage and increased depth can be thought of as representing successive co-ordinated waves of attack against a narrow point.",
+        "2. Alternatively to the above, shock cavalry can be based facing the long (40mm) edge of the stand in which case, each stand adds + 1 Combat Attack when charging or pursuing.",
+        "3. If shock cavalry units are armed with bows, their shooting zone is always straight ahead of their frontage. See Shooting Zone p37.",
+        "Note: Two base sizes are given because it is recognised that players using larger scale models will find it impractical to base stands to the short edge. In addition, some players may have pre-existing armies based to a 40mm frontage. The long edge basing is not an exact equivalent, but it is comparable overall and is presented as a reasonable compromise. See the Appendices for more on alternative basing for different units."
+      ]
+    },
+    "Elephants": {
+      "order": 5,
+      "text": [
+        "Elephants are awesome but somewhat unpredictable weapons of ancient warfare—often proving as deadly to their own side as to the enemy. Once out of control they are inclined to panic and stampede, carrying their hapless crews through their own lines.",
+        "1. Elephants are terrifying and their enemies therefore suffer the usual -1 Combat modifier.",
+        "2. Elephants receive the additional + 1 charge bonus Combat rnodifier when charging enemies in the open.",
+        "3. Elephants that are driven back by shooting, or retreating from combat, or moving as a result of a blunder, will automatically rampage through each unit they contact during the drive back/retreat /blundered move. They will rampage through units regardless of whether they are friends or foes. This includes units they are already touching as well as units they touch as they move. Elephants will rampage through friends even if these make way and will rampage through enerny or friends even where the Elephant is destroyed as a result of retreating into enemy or into another combat.",
+        "Each unit that is rampaged through must test for confusion and becomes confused on the D6 roll of a 6. If a unit is already confused and is rampaged through then it is still necessary to test, if the dice result is a 6, the unit is destroyed entirely. All stands are removed when this happens during combats, this does not count as additional hits and combat results remain unaffected. See Confusion p63.",
+        "A unit that makes way for Elephants that are retreating from combat will have to test twice for confusion—once for Elephants and once for making way. In this instance, and all instances where multiple tests are required, always test for Elephants last of all.",
+        "",
+        "If an army list has elephant units of three stands then these can instead be fielded as three separate units of one stand each—this is entirely up to the player but must be established before the game begins. If an army includes more than one unit of elephants then all must be fielded in the same way—either as individuals or as units of three. If a unit is divided then each stand subsequently counts as an individual unit in all respects. The Victory points value of each elephant stand is 1/3 that given for the full unit of three rounded up to the nearest five (70 pts for standard Indian and 50 pts for standard African elephant). The army's withdrawal point must be increased concomitantly, counting each elephant stand as a unit.",
+        "The following rules apply to all elephant units of one stand. This includes units of three stands that have been divided into separate units and units of three stands reduced in size to one stand due to casualties.",
+        "",
+        "Elephants can be included as part of a brigade order without adding to the size of the brigade if there is at least one infantry unit in the brigade for each elephant, and, there are no chariots, cavalry or camels in the brigade. For example, a brigade could consist of four elephants and four infantry units and would count as four units. Three elephants and two infantry would count as three units—two infantry with two elephants counting as two plus an extra elephant. One elephant, one infantry, and one cavalry counts as three units because the brigade includes cavalry and therefore the elephant can't be included for 'free'.",
+        "",
+        "Up to four individual elephants can also be given a brigade order if they form a 'screen' of elephant stands separated by gaps of no more than 4cm between each elephant. Gaps between elephants must be clear gaps without any intervening troops or terrain that the elephants could not cross. Elephant screen brigades cannot include other types of troops. Although referred to as a 'screen', this is also a useful way of grouping elephants that have become dispersed following combat.",
+        "",
+        "Individual elephant stands do not receive the +1 charge bonus for 'Elephant charging against enemy in the open'. Henceforth, this bonus only applies to undivided units of at least two elephants and represents the mass charge of a large number of beasts. Note that the bonus does not apply where two or more separate elephants happen to be positioned next to each other (if you want the bonus use big elephant herds and deploy them as whole units). This does mean that a unit of three elephants reduced to a single elephant foregoes the charge bonus (and having lost all his friends you can't blame him, can you!).",
+        "Elephants brigaded with Warband infantry do not affect the Warband's command bonus so long as there is at least one infantry unit for each elephant in the brigade.",
+        "Note that as per the regular rules, elephant units of three stands that have been reduced to a single model still have an associated Command penalty of -2 (-1 per stand lost). This only applies to multi-stand units—it does not apply to elephants that have been divided into separate units of one stand."
+      ]
+    },
+    "Camels": {
+      "order": 6,
+      "text": [
+        "Some cavalry units were mounted on camels rather than horses. This was usually a matter of convenience or necessity rather than preference. Camels have a useful characteristic that the ancients recognized and often exploited: namely. horses don't like 'em! It's the smell.",
+        "1. If an army does not include camel units then its horses find the scent of camels unsettling. Consequently, if a unit of horsed cavalry or chariots is within 20cm of enemy camels when an order is given, any failure, regardless of the dice roll, is considered to be a Blunder (see p68). Even if the order is given by the General, a failure counts as a blunder in this situation. This penalty applies to armies even if their list allows camels but where they have not been included in the army.",
+        "In a doubles game where armies are fighting as allies, if one army has camels and the other does not, camels will also unsettle allied cavalry or chariot units within 20cm as described above."
+      ]
+    }
+  },
+  "units": {
+    "Peltasts": {
+      "order": 0,
+      "type": "Infantry",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "points": 40,
+      "max": 4
+    },
+    "Cretans": {
+      "order": 1,
+      "type": "Infantry",
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "points": 40,
+      "max": 2
+    },
+    "Skirmishers": {
+      "order": 2,
+      "type": "Infantry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "points": 30,
+      "max": 4
+    },
+    "Heavy Cavalry": {
+      "order": 3,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "specialRules": [
+        "Shock"
+      ],
+      "points": 110,
+      "min": 1,
+      "max": 2
+    },
+    "Ethnic Cavalry": {
+      "order": 4,
+      "type": "Cavalry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "points": 40,
+      "max": 2
+    },
+    "Camelry": {
+      "order": 5,
+      "type": "Cavalry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "specialRules": [
+        "Skirmish",
+        "Camels"
+      ],
+      "points": 60,
+      "max": 1
+    },
+    "Macedonian Phalanx": {
+      "order": 6,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "specialRules": [
+        "Phalanx"
+      ],
+      "points": 60,
+      "min": 4
+    },
+    "Agema Phalanx": {
+      "order": 7,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "specialRules": [
+        "Phalanx"
+      ],
+      "points": 70,
+      "max": 1
+    },
+    "Indian Elephant": {
+      "order": 8,
+      "type": "Elephant",
+      "attack": 4,
+      "range": 15,
+      "hits": 4,
+      "armour": "5+",
+      "size": 1,
+      "specialRules": [
+        "Elephants"
+      ],
+      "points": 70,
+      "max": 1
+    },
+    "General": {
+      "order": 9,
+      "upgrades": [
+        "Portents"
+      ],
+      "type": "General",
+      "attack": "+2",
+      "command": 9,
+      "size": 1,
+      "points": 125
+    },
+    "Leader": {
+      "order": 10,
+      "type": "Leader",
+      "max": 2,
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 80
+    }
+  },
+  "upgrades": {
+    "Portents": {
+      "order": 0,
+      "specialRules": [
+        "Portents"
+      ],
+      "points": "+10"
+    }
+  },
+  "order": 4,
+  "name": "Early Ptolemaic",
+  "version": "Rick's Warmaster",
+  "group": "Greece and the Near East",
+  "armyRules": [
+    "Macedonian Phalanx. The regular Macedonian phalanx. Well drilled soldiers.",
+    "",
+    "Agema Phalanx. The elite proportion of the army comprising veteran phalangites.",
+    "",
+    "Peltasts. Regular Successor type including Greek or Thracian peltasts, or even Cretan or Pisidian peltasts as well as garrison units fighting in a comparable fashion.",
+    "",
+    "Skirmishers. Lightly armed troops fighting as skirmishers—including javelinmen, bowmen and slingers. Mostly Egyptian or Syrian archers or slingers.",
+    "",
+    "Elephants. The Ptolomies had aceess to Indian elephants at certain periods but their use gradually declined. An attempt was made to import African elephants from Kush—but this was probably not a success.",
+    "",
+    "Heavy Cavalry. The Cleruch cavalry equipped and trained in the fashion of Macedonian Companions.",
+    "",
+    "Ethnic Cavalry. Locally trained cavalry armed with javelins."
+  ]
+}
