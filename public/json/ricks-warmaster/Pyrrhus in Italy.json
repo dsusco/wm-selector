@@ -60,18 +60,6 @@
       "points": 60,
       "max": 4
     },
-    "Galatians": {
-      "order": 3,
-      "type": "Infantry",
-      "specialRules": [
-        "Warband"
-      ],
-      "attack": 3,
-      "hits": 3,
-      "size": 3,
-      "points": 35,
-      "max": 2
-    },
     "Skirmishers": {
       "order": 4,
       "type": "Infantry",
@@ -117,7 +105,7 @@
       "order": 7,
       "type": "Elephant",
       "specialRules": [
-        "Elephants"
+        "Shock"
       ],
       "attack": 4,
       "hits": 3,
@@ -131,7 +119,7 @@
       "order": 8,
       "type": "General",
       "specialRules": [
-        "Pyrrhus"
+        "Elephants"
       ],
       "attack": "+2",
       "command": 9,
@@ -146,6 +134,48 @@
       "size": 1,
       "points": 80,
       "max": 2
+    },
+    "Oscans": {
+      "order": 10,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "min": 1,
+      "max": 4,
+      "type": "Infantry",
+      "points": 40
+    },
+    "Tarentine Cavalry": {
+      "order": 11,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "min": 1,
+      "max": 2,
+      "type": "Cavalry",
+      "points": 50
+    },
+    "Tarentine Phalanx": {
+      "order": 11,
+      "specialRules": [
+        "Phalanx"
+      ],
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "min": 2,
+      "max": 8,
+      "type": "Infantry",
+      "points": 50
     }
   },
   "upgrades": {
@@ -166,13 +196,13 @@
   "armyRules": [
     "Epirot Phalanx. Comparable in quality to a Macedonian phalanx and the core of the Epirot army.",
     "",
+    "Tarentine Phalanx. Less well drilled than most phalanx—the Tarentine phalanx is still numerically important during the Italian campaign.",
+    "",
     "Guard Phalanx. The elite proportion of the army mostly comprising veteran Chaeonians.",
     "",
     "Hoplites. Regular Hoplites but of mediocre quality—usually Italiote or Greek allies.",
     "",
     "Peltasts. Regular Successor type including Greek or Thracian peltasts, or even Cretan or Pisidian peltasts as well as garrison units fighting in a comparable fashion.",
-    "",
-    "Galatians. Celtic people originally from the Danube area—the Galatians were fierce warriors. A large body of Galatian mercenaries went over to Pyrrhus during his war against Macedon—it was these Galatians who were to subsequently cause much upset in Aegae by looting the royal cemetery!",
     "",
     "Oscans. A valuable light infantry type not unlike Greek peltasts.",
     "",
@@ -184,8 +214,8 @@
     "",
     "Epirot Cavalry. Elite shock cavalry armed with lances. Regardless of army size a single unit of Oscan cavalry can be upgraded to Epirot Cavalry with stats and points increase as shown."
   ],
-  "name": "Pyrrhic",
+  "name": "Pyrrhus in Italy",
   "version": "Rick's Warmaster",
   "group": "Greece and the Near East",
-  "order": 7
+  "order": 8
 }
