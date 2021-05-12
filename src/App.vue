@@ -41,7 +41,7 @@
 
     <footer id="footer">
       <p>This website is completely unofficial and in no way endorsed by Games Workshop Limited.</p>
-<hr>
+
       <p>This Warmaster army selector is open source and maintained on <a href="https://github.com/dsusco/wm-selector" target="_blank">GitHub</a>.</p>
 
       <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
