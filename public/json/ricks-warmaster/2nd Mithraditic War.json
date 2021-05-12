@@ -1,82 +1,174 @@
 {
   "specialRules": {
+    "Warband": {
+      "order": 1
+    },
     "Skirmish": {
-      "order": 1,
-      "text": [
-        "In the Warmaster Ancients game, most skirmishers represent troops whose role is exclusively skirmishing. Whilst other troops may skirmish to a degree, they do so on the tactical level subsumed within close combat. The exceptions are some light cavalry and chariot units which are adjudged to have a duel role and which usually carry a mixture of weapons, eg, Huns.",
-        "",
-        "Because skirmishers are such a fundamental part of the armies, the skirmish rules are described throughout the book in the appropriate sections. These are summarised below together with references to the full descriptions.",
-        "",
-        "Skirmishers carry suitable weapons—sometimes bows but more likely s lings or javelins—and fight in loose, informal formations taking advantage of local terrain to avoid contact with more powerful but less mobile enemies. In general, skirmishing units represent fewer men than close fighting units. It is assumed they will usually disperse or flee if attacked.",
-        "1. Skirmishers always move at up to full pace for their type regardless of formation or circumstances (see p22).",
-        "2. Skirmishing units can see all round—they can draw a line of sight from any stand's edge. Their shooting zone extends all round to their front, side and rear. Because they can see enemies to their side or rear they can charge, evade or otherwise react to such units (see p10 Visibility) and (p37 Shooting).",
-        "3. Unless confused, skirmishers are allowed to evade from an enemy charge in the opposing Command phase (see p24).",
-        "4. Unless confused, skirmishers arc allowed to evade instead of being driven back by shooting in the opposing Shooting phase (see p25).",
-        "5. Skirmishers can evade through other units. If these other units are not skirmishers, or if they are a second or subsequent unit evaded through regardless of whether they are skirmishers or not, then both units must test for confusion once the move is complete. Units become confused on the roll of a 6 (see p24).",
-        "6. Skirmishing infantry can support from the side only: they cannot support from behind (see p50).",
-        "7. Skirmishing infantry can move through some types of terrain that is otherwise impassable—notably rivers/deep water, forests, and cliffs. This is described in the section on Terrain & Movement (see p31).",
-        "Note: For the avoidance of doubt, skirmishing infantry are able to evade from charging cavalry, or other non-skirmishing units, even if these units have a greater move distance than they do. In this case, skirmishers are assumed to have already seen, reacted to, and taken steps to avoid their attackers well before they reach their position."
-      ]
+      "order": 2
     },
-    "Portents": {
-      "order": 2,
-      "text": [
-        "The player can take the portents before the battle. This allows the General to re-roll one failed Command roll once during the battle. Take the Command test again—if successful the order is issued and the General can continue giving orders if you wish."
-      ]
+    "Shock": {
+      "order": 3
     },
-    "King David": {
-      "order": 3,
+    "Warband (Restricted)": {
+      "order": 4
+    },
+    "Slow": {
+      "order": 5
+    },
+    "Unreliable": {
+      "order": 6
+    },
+    "Scythed Chariot": {
+      "order": 7
+    },
+    "Legion": {
+      "order": 8
+    },
+    "Mithridates the Brave": {
+      "order": 9,
       "text": [
-        "King David carries the favour of his god and the supreme confidence of his warriors. Once in each turn you can intervene in any one combat engagement as follows. When your units roll for Attacks, you can immediately re-roll one dice again—picking out a miss and re-rolling it. Only one intervention is allowed in each turn."
+        " In later life Mithridates liked to command from the front. He was wounded in the face and knee at Cabira, 67BC, and in the thigh at Zela, 67 BC. For purposes of one of his own command rolls during the game Mithridates can make up to 4 normally reliable units Brave—ignoring the usual command modifiers for enemy within 20cm and exposed flanks."
       ]
     }
   },
   "units": {
-    "Infantry": {
+    "Pontic or Black Sea Nobles": {
       "order": 0,
-      "type": "Infantry",
-      "attack": 3,
-      "hits": 3,
-      "size": 3,
-      "points": 35,
-      "min": 6
-    },
-    "Archers": {
-      "order": 1,
-      "type": "Infantry",
-      "attack": 2,
-      "range": 30,
-      "hits": 3,
-      "size": 3,
-      "points": 40
-    },
-    "Spearmen": {
-      "order": 2,
-      "type": "Infantry",
+      "type": "Cavalry",
+      "specialRules": [
+        "Shock",
+        "Warband (Restricted)"
+      ],
       "attack": 3,
       "hits": 3,
       "armour": "5+",
       "size": 3,
-      "points": 60,
-      "max": 4,
-      "min": 1
+      "points": 110,
+      "upgrades": [
+        "Guard Cavalry"
+      ],
+      "min": 1,
+      "max": 2
     },
-    "Light Infantry": {
+    "Sarmatian Nobles": {
+      "order": 1,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "range": 15,
+      "size": 3,
+      "points": 115,
+      "specialRules": [
+        "Shock",
+        "Warband (Restricted)"
+      ],
+      "max": 1
+    },
+    "Armenian Cataphracts": {
+      "order": 2,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "4+",
+      "size": 3,
+      "points": 115,
+      "specialRules": [
+        "Shock",
+        "Slow",
+        "Unreliable"
+      ],
+      "max": 3
+    },
+    "Light Cavalry": {
       "order": 3,
+      "type": "Cavalry",
+      "attack": 2,
+      "hits": 3,
+      "armour": "6+",
+      "range": 15,
+      "size": 3,
+      "points": 60,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "max": 2
+    },
+    "Skirmish Cavalry": {
+      "order": 4,
+      "type": "Cavalry",
+      "attack": 1,
+      "hits": 3,
+      "range": 15,
+      "size": 3,
+      "points": 40,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "max": 2
+    },
+    "Horse Archers": {
+      "order": 5,
+      "type": "Cavalry",
+      "attack": 1,
+      "hits": 3,
+      "range": 30,
+      "size": 3,
+      "points": 60,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "max": 2
+    },
+    "Galatians": {
+      "order": 6,
       "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "points": 25,
+      "specialRules": [
+        "Warband",
+        "Unreliable"
+      ],
+      "upgrades": [
+        "Bastarnae"
+      ],
+      "max": 4
+    },
+    "Mercenary Light Infantry and Thracians": {
+      "order": 7,
+      "type": "Infantry",
+      "min": 2,
       "attack": 2,
       "range": 15,
       "hits": 3,
       "size": 3,
       "points": 40,
-      "max": 3,
       "specialRules": [
         "Skirmish"
       ]
     },
-    "Skirmishers": {
-      "order": 4,
+    "Subject Archers": {
+      "order": 8,
       "type": "Infantry",
+      "max": 4,
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "points": 15,
+      "specialRules": [
+        "Unreliable"
+      ],
+      "upgrades": [
+        "Upgrade Subject Archers"
+      ]
+    },
+    "Skirmishers": {
+      "order": 9,
+      "type": "Infantry",
+      "max": 6,
       "attack": 1,
       "range": 15,
       "hits": 3,
@@ -86,75 +178,168 @@
         "Skirmish"
       ]
     },
-    "Guard": {
-      "order": 5,
+    "Imitation Legionaries": {
+      "order": 13,
+      "specialRules": [
+        "Legion"
+      ],
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
       "type": "Infantry",
+      "size": 3,
+      "points": 70,
+      "min": 2
+    },
+    "Scythed Chariots": {
+      "order": 14,
+      "type": "Chariot",
+      "max": 1,
       "attack": 4,
       "hits": 3,
       "armour": "5+",
+      "size": 1,
+      "points": 50,
+      "specialRules": [
+        "Scythed Chariots"
+      ]
+    },
+    "Sertorian Legion": {
+      "order": 15,
+      "specialRules": [
+        "Legion"
+      ],
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "type": "Infantry",
       "size": 3,
-      "points": 70,
+      "points": 80,
       "max": 1
     },
     "General": {
-      "order": 6,
+      "order": 16,
       "type": "General",
+      "upgrades": [
+        "Mithridates the Brave"
+      ],
       "attack": "+2",
       "command": 9,
       "size": 1,
-      "points": 125,
-      "min": 1,
-      "upgrades": [
-        "Portents",
-        "King David"
-      ]
+      "points": 125
     },
     "Leader": {
-      "order": 7,
+      "order": 17,
       "type": "Leader",
       "attack": "+1",
       "command": 8,
       "size": 1,
       "points": 80,
+      "max": 1
+    },
+    "Allied Commander": {
+      "order": 18,
+      "type": "Subordinate",
+      "upgrades": [
+        "Upgrade Commanders"
+      ],
+      "attack": "+1",
+      "command": 7,
+      "size": 1,
+      "points": 30,
       "max": 2
     }
   },
   "upgrades": {
-    "Portents": {
+    "Upgrade Subject Archers": {
       "order": 0,
-      "points": "+10",
+      "type": "Infantry",
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "points": "+25",
+      "max": "Any"
+    },
+    "Bastarnae": {
+      "order": 1,
+      "type": "Infantry",
+      "attack": 4,
+      "hits": 3,
+      "size": 3,
+      "points": "+20",
+      "max": 1,
       "specialRules": [
-        "Portents"
+        "Warband"
       ]
     },
-    "King David": {
-      "order": 1,
+    "Guard Cavalry": {
+      "order": 3,
+      "type": "Cavalry",
+      "attack": 4,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "max": 1,
+      "points": "+10",
+      "specialRules": [
+        "Shock",
+        "Warband (Restricted)"
+      ]
+    },
+    "Upgrade Commanders": {
+      "order": 5,
+      "type": "Subordinate",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": "+10",
+      "max": "Any"
+    },
+    "Mithridates the Brave": {
+      "order": 5,
+      "type": "General",
       "attack": "+2",
       "command": 9,
       "size": 1,
-      "points": "+15",
+      "points": "+25",
+      "max": 1,
       "specialRules": [
-        "King David"
+        "Mithridates the Brave"
       ]
     }
   },
-  "order": 1,
-  "name": "Israelites",
-  "version": "Rick's Warmaster",
-  "group": "Chariot Era",
   "armyRules": [
-    "Note that in this particular case the General can be upgraded twice if you wish—once with Portents and once with King David.",
+    "Imitation Legionaries. The Pontics retrained most of their close fighting infantry to mirror their Roman adversaries. However, whilst shields, helmets and weaponry may be quickly provided chainmail was much harder to produce. Without access to sources such as the Roman armouries we therefore consider these troops to be more lightly protected than their Roman counterparts, some wearing mail and some not.",
     "",
-    "Infantry. Men from the tribes of Israel were drafted into rank-and-file units and generally armed with spears and shields.",
+    "Sertorian Legion:  Standard legionary troops, who had fled from the Roman civil wars, well trained and equipped, armed with pilum and large shield.",
     "",
-    "Archers. The tribe of Benjamin was noted for its archers.",
+    "Galatians. Celtic tribes who lived in the desolate parts of Anatolia, part time subjects of  Pontus. Armed with javelins, long swords and shields and with captured Greek weaponry. They were notoriously fickle.",
     "",
-    "Spearmen. Although the spear was the usual infantry weapon these represent troops highly drilled and trained to a degree that makes them far more formidable than the ordinary mass of troops. They represent the tribe of Judah whose members fought in a close-order formation comparable to Greek Hoplites.",
+    "Bastarnae. The Bastarnae were renowned to be ferocious fighters. They were an important tribal group possibly of mixed German/Celtic ancestry although this is uncertain.  Later they fought with the Dacians.  Unarmoured but carried a shield with some fighting with a weapon similar to the falx.",
     "",
-    "Light Infantry. The Gadites were the tribe noted for skirmishing warfare providing the Israelite Kings with flexible formations of troops armed with javelins and light bucklers. Mercenaries from Phoenicia used similar tactics.",
+    "Subject Archers:  Provided by various subjects and Armenians!  Primarily armed with the bow but could also have a sword and small shield. Armenian archers were supplied for the Pontic re-conquest.",
     "",
-    "Skirmishers. These troops could come from any tribe but probably include a large number of Benjamites. Generally these were armed with javelins, but could also include units of slingers.",
+    "Mercenary Light Infantry and Thracians. Pontic mercenaries and other infantry of the peltast type including Thracians. They were lightly armoured and armed with a shield, javelins and sometimes long spear.  They fought in a looser order than the phalanx.",
     "",
-    "Guard. These are the best and most experienced veterans in the Israelite army. This category includes troops such as the Gibborim (Mighty Men) and the Zebulinites. Well armoured and handpicked by the king, they form the nucleus of the Israelite army."
-  ]
+    "Skirmishers.  Pontics, Armenians and mercenaries who fought from a distance and avoided close combat where possible. Likely to be armed with javelins.",
+    "",
+    "Pontic or Black Sea Nobles. Pontic nobility armed with long spears, swords, helmets and body armour. Sarmatian influence suggests some possibly had horse armour. May be upgraded to Guard to represent  an elite bodyguard unit of nobles and retainers some of whom stayed loyal to Mithridates until the very end.",
+    "",
+    "Sarmatian Nobles.  Armed with bows, kontos, swords, helmets and body armour .Many with horse armour of bronze, leather and horn. The bow fell out of use with the Black Sea Sarmatians , possibly through contact with the Greeks and the amount of horse armour may have declined  too",
+    "",
+    "Armenian Cataphracts.  We have represented these troops as more heavily armoured than the usual heavy cavalry riding horses which are also armoured.  Armed with the long lance-like kontos wielded in two hands, they are slow and ponderous.",
+    "",
+    "Light Cavalry: Armed with javelins and shields.  They fought in a looser order than heavy cavalry, their role to skirmish from a distance but to close with the enemy in the right circumstances.",
+    "",
+    "Horse Archers. These are mercenary Scythian horse archers raised from the steppes. They fought at long range with bows and were expert horsemen and archers.",
+    "",
+    "Skirmish Cavalry.  Mounted  skirmishers armed with javelins or bows and wearing no armour. They fight from a distance avoiding close combat where possible.",
+    "",
+    "Scythed chariots.  A chariot festooned with scythes and blades whose sole purpose was to drive into the enemy ranks to disrupt their formation."
+  ],
+  "name": "2nd Mithraditic War",
+  "version": "Rick's Warmaster",
+  "group": "Greece and the Near East",
+  "order": 10
 }
