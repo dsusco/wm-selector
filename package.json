@@ -15,7 +15,6 @@
     "build": "vue-cli-service build",
     "prebuild": "node scripts/build-src-json.js",
     "postbuild": "minify-json dist/json/",
-    "deploy": "npm run build && gcloud app deploy --project=wm-selector --quiet",
     "lint": "vue-cli-service lint",
     "serve": "vue-cli-service serve",
     "preserve": "node scripts/build-src-json.js",
@@ -23,7 +22,6 @@
   },
   "dependencies": {
     "axios": "^0.21.1",
-    "baseline-scss": "dsusco/baseline-scss",
     "core-js": "^3.6.5",
     "lodash": "^4.17.20",
     "marked": "^2.0.0",

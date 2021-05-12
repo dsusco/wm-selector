@@ -2,9 +2,9 @@
 
 @include normalize();
 
-@import '~baseline-scss/src/scss/regularize';
-@import '~baseline-scss/src/scss/components';
-@import '~baseline-scss/src/scss/content';
+@import 'baseline/regularize';
+@import 'baseline/components';
+@import 'baseline/content';
 
 .container {
   @include grid-container();

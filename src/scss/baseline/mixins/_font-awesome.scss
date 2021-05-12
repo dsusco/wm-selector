@@ -1,12 +1,4 @@
-@import 'bourbon/core/bourbon';
-@import 'bourbon-neat/core/neat';
-@import 'normalize-scss/sass/_normalize';
-
-@import 'baseline/variables';
-@import 'baseline/mixins';
-
 @mixin font-awesome($content: '') {
-  content: $content;
   font-style: normal;
   font-variant: normal;
   font-weight: normal;
@@ -16,7 +8,8 @@
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
 
-$_color_primary: #369;
-$_color_light: #ddd;
+  &::before {
+    content: unquote("\'") + unquote(str-insert($content, "\\", 1)) + unquote("\'")
+  }
+}

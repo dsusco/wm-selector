@@ -1,0 +1,42 @@
+@import 'bourbon';
+@import 'neat';
+@import 'normalize';
+
+@include normalize();
+
+@import 'variables';
+@import 'mixins';
+@import 'regularize';
+@import 'components';
+@import 'content';
+
+.container {
+  @include grid-container();
+
+  margin: 0 auto;
+  max-width: 72rem + 2 * map-get($neat-grid, gutter);
+
+  @include grid-media($md-neat-grid) {
+    max-width: 96rem + 2 * map-get($md-neat-grid, gutter);
+  }
+
+  @include grid-media($lg-neat-grid) {
+    max-width: 120rem + 2 * map-get($lg-neat-grid, gutter);
+  }
+
+  @include grid-media($xl-neat-grid) {
+    max-width: 144rem + 2 * map-get($xl-neat-grid, gutter);
+  }
+}
+
+.margin-bottom {
+  margin-bottom: $_;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0;
+}
+
+[tabindex] {
+  cursor: pointer;
+}

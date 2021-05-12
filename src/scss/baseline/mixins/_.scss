@@ -1,0 +1,4 @@
+@mixin _($font_size: $_font_size, $line_height: $_) {
+  font-size: $font_size;
+  line-height: ceil($font_size / $line_height) * $line_height / $font_size;
+}

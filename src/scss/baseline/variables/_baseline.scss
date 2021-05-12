@@ -1,0 +1,26 @@
+$_body_background: $_color_white !default;
+$_body_color: $_color_black !default;
+
+$_font_family_sans: Verdana, sans-serif !default;
+$_font_family_serif: Georgia, serif !default;
+$_font_family_mono: 'Courier New', monospace !default;
+
+$_font_family: $_font_family_sans !default;
+$_font_family_h: $_font_family_sans !default;
+
+$_font_size: 1.6rem !default;
+$_font_size_large: $_font_size * 1.25 !default;
+$_font_size_small: $_font_size * 0.75 !default;
+
+$_font_size_h1: $_font_size * 2 !default;
+$_font_size_h2: $_font_size * 1.75 !default;
+$_font_size_h3: $_font_size * 1.5 !default;
+$_font_size_h4: $_font_size * 1.25 !default;
+$_font_size_h5: $_font_size * 1 !default;
+$_font_size_h6: $_font_size * 0.75 !default;
+
+$_line_height: 1.5 !default;
+
+$_link_color: $_color_primary !default;
+
+$_: $_font_size * $_line_height !default;

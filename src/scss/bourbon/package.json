@@ -1,0 +1,67 @@
+{
+  "_args": [
+    [
+      "bourbon@6.0.0",
+      "/home/dsusco/vue/baseline-scss"
+    ]
+  ],
+  "_from": "bourbon@6.0.0",
+  "_id": "bourbon@6.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-Skds0R1+GY3c1oBddh9BggYVq39Uo4ySvW33zttPk+4+nfGYpbZqwaDwENkbtV7PYhCk0ctTFkzfTNFv5365ag==",
+  "_location": "/bourbon",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "bourbon@6.0.0",
+    "name": "bourbon",
+    "escapedName": "bourbon",
+    "rawSpec": "6.0.0",
+    "saveSpec": null,
+    "fetchSpec": "6.0.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/bourbon/-/bourbon-6.0.0.tgz",
+  "_spec": "6.0.0",
+  "_where": "/home/dsusco/vue/baseline-scss",
+  "author": {
+    "name": "thoughtbot",
+    "url": "http://thoughtbot.com"
+  },
+  "bugs": {
+    "url": "https://github.com/thoughtbot/bourbon/issues"
+  },
+  "description": "A lightweight Sass tool set.",
+  "devDependencies": {
+    "@thoughtbot/stylelint-config": "^1.0.0",
+    "stylelint": "^10.0.1"
+  },
+  "eyeglass": {
+    "needs": "*",
+    "exports": "eyeglass-exports.js"
+  },
+  "homepage": "https://www.bourbon.io/",
+  "keywords": [
+    "css",
+    "eyeglass-module",
+    "mixins",
+    "sass",
+    "scss"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "bourbon",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thoughtbot/bourbon.git"
+  },
+  "scripts": {
+    "stylelint": "npx stylelint 'core/**/*.scss'",
+    "test": "bundle exec rake"
+  },
+  "style": "core/_bourbon.scss",
+  "version": "6.0.0"
+}

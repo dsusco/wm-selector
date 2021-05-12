@@ -1,0 +1,26 @@
+$neat-grid: (
+  columns: 4,
+  gutter: 1rem,
+  color: rgba(#00f, 0.25)
+);
+
+$md-neat-grid: (
+  columns: 12,
+  gutter: 2rem,
+  media: 769px,
+  color: rgba(#0f0, 0.25),
+) !default;
+
+$lg-neat-grid: (
+  columns: 12,
+  gutter: 2rem,
+  media: 1025px,
+  color: rgba(#0ff, 0.25),
+) !default;
+
+$xl-neat-grid: (
+  columns: 12,
+  gutter: 2rem,
+  media: 1281px,
+  color: rgba(#f00, 0.25),
+) !default;

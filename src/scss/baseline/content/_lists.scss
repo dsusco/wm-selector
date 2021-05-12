@@ -1,0 +1,28 @@
+dl,
+ol,
+ul {
+  margin: 0 0 $_;
+
+  dl,
+  ol,
+  ul {
+    margin-bottom: 0;
+  }
+}
+
+ol,
+ul {
+  padding: 0 0 0 1.8rem;
+}
+
+dl dl {
+  margin-left: 1.8rem;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin: 0;
+}

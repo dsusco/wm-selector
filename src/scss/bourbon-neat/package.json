@@ -1,0 +1,75 @@
+{
+  "_args": [
+    [
+      "bourbon-neat@4.0.0",
+      "/home/dsusco/vue/baseline-scss"
+    ]
+  ],
+  "_from": "bourbon-neat@4.0.0",
+  "_id": "bourbon-neat@4.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-Ql1JdvjNvK9NbGvcBpsDkfuRRMK8fZ/mx1gRyZEy3PM/kqQ8QX0PcmKEqnZMl18YLfKaDwC0qa+e36TlDmT49g==",
+  "_location": "/bourbon-neat",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "bourbon-neat@4.0.0",
+    "name": "bourbon-neat",
+    "escapedName": "bourbon-neat",
+    "rawSpec": "4.0.0",
+    "saveSpec": null,
+    "fetchSpec": "4.0.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/bourbon-neat/-/bourbon-neat-4.0.0.tgz",
+  "_spec": "4.0.0",
+  "_where": "/home/dsusco/vue/baseline-scss",
+  "author": {
+    "name": "thoughtbot",
+    "url": "http://thoughtbot.com"
+  },
+  "bugs": {
+    "url": "https://github.com/thoughtbot/neat/issues"
+  },
+  "description": "A lightweight, semantic grid framework",
+  "devDependencies": {
+    "browser-sync": "^2.24.6",
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.1"
+  },
+  "eyeglass": {
+    "name": "neat",
+    "needs": "*",
+    "exports": "eyeglass-exports.js"
+  },
+  "homepage": "http://neat.bourbon.io",
+  "keywords": [
+    "columns",
+    "grid",
+    "layout",
+    "media",
+    "media-queries",
+    "neat",
+    "queries",
+    "sass",
+    "scss",
+    "semantic",
+    "eyeglass-module"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "bourbon-neat",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thoughtbot/neat.git"
+  },
+  "scripts": {
+    "contrib": "gulp",
+    "test": "bundle exec rake"
+  },
+  "style": "core/_neat.scss",
+  "version": "4.0.0"
+}

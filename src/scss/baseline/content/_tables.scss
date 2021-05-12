@@ -1,0 +1,43 @@
+table {
+  margin: 0 0 $_;
+  position: relative;
+  width: 100%;
+
+  &.striped {
+    > tbody {
+      > tr:nth-child(odd) {
+        background-color: darken($_body_background, 3.125%);
+      }
+    }
+  }
+}
+
+caption {
+  font-weight: bold;
+}
+
+thead + tbody,
+tbody + tbody,
+tbody + tfoot {
+  &::before {
+    @include position(absolute, null 0);
+
+    border-top: .1rem solid $_color_light;
+    content: '';
+  }
+}
+
+
+th,
+td {
+  padding: 0 .25em;
+
+  > dl,
+  > ol,
+  > ul,
+  > table {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,84 @@
+form {
+  margin: 0 0 $_;
+}
+
+fieldset {
+  border-top: .1rem solid $_color_light;
+  padding: 0 1.8rem;
+  margin: 0 0 $_;
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+legend {
+  display: initial;
+  margin-left: -.5em;
+  padding: 0 .5em;
+  width: initial;
+}
+
+label {
+  margin: 0 0 $_;
+  width: 100%;
+}
+
+#{$all-text-inputs},
+select {
+  background-color: $_body_background;
+  border: .1rem solid $_color_light;
+  border-radius: .4rem;
+  display: block;
+  margin: ($_ / 4) 0;
+  padding: (($_ / 4) - .1rem) 1rem;
+  width: 100%;
+
+  &.small {
+    @include _($_font_size * 0.875, $_ - .2rem);
+    @include padding(0 null);
+
+    border-radius: .3rem;
+    margin: 0;
+  }
+
+  &.large {
+    @include _($_font_size * 1.125, 2 * $_ - .2rem);
+    @include padding(0 null);
+
+    margin: 0;
+  }
+
+  &[disabled] {
+    background-color: darken($_body_background, 3.125%);
+    color: $_color_gray;
+    pointer-events: none;
+  }
+}
+
+select {
+  color: inherit;
+  height: 1.5 * $_;
+
+  &.small {
+    height: $_;
+  }
+
+  &.large {
+    height: 2 * $_;
+  }
+}
+
+textarea {
+  &.small,
+  &.large {
+    @include _($_font_size * 0.875);
+    @include padding((($_ / 4) - .1rem) null);
+
+    margin: ($_ / 4) 0;
+  }
+
+  &.large {
+    @include _($_font_size * 1.125);
+  }
+}

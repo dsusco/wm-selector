@@ -1,0 +1,94 @@
+.modal {
+  @include grid-column(4);
+  @include position(fixed, 14rem 0);
+
+  border-radius: .4rem;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 1;
+
+  .modal-header {
+    @include _($_font_size_large);
+    @include border-top-radius(.4rem);
+
+    background: $_body_background;
+    padding: ($_ / 2) 4rem;
+
+    .close {
+      @include position(absolute, 0 0 auto auto);
+
+      background: none;
+      border: 0;
+      padding: ($_ / 2);
+      width: 4rem;
+      z-index: 1;
+
+      &::before {
+        content: '\00D7';
+      }
+    }
+  }
+
+  .modal-body {
+    @include border-bottom-radius(.4rem);
+
+    background: $_body_background;
+    max-height: 100%;
+    min-height: 3 * $_;
+    overflow-y: auto;
+    padding: ($_ / 2) map-get($neat-grid, gutter);
+
+    &:empty {
+      position: relative;
+
+      &::before {
+        @include font-awesome('\f110');
+        @include prefixer(animation, fa-spin 2s infinite linear, ('webkit'));
+
+        position: absolute;
+        left: calc(50% - #{$_font_size / 2});
+      }
+    }
+  }
+
+  @include grid-media($md-neat-grid) {
+    @include grid-column(10);
+
+    margin: 0 auto;
+
+    .modal-body {
+      padding: $_ map-get($md-neat-grid, gutter);
+
+      &::before {
+        top: $_;
+      }
+    }
+  }
+
+  @include grid-media($lg-neat-grid) {
+    @include grid-column(9);
+
+    margin: 0 auto;
+
+    .modal-body {
+      @include padding(null map-get($lg-neat-grid, gutter));
+    }
+  }
+
+  @include grid-media($xl-neat-grid) {
+    @include grid-column(7);
+
+    margin: 0 auto;
+
+    .modal-body {
+      @include padding(null map-get($xl-neat-grid, gutter));
+    }
+  }
+}
+
+.modal-overlay::after {
+  @include position(fixed, 0);
+
+  background: rgba(0, 0, 0, 0.5);
+  content: '';
+}

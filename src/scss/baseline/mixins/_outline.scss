@@ -1,0 +1,13 @@
+@mixin outline() {
+  outline: default;
+}
+
+#{$all-buttons},
+#{$all-text-inputs},
+a[href],
+select,
+[tabindex] {
+  &:focus {
+    @include outline();
+  }
+}
