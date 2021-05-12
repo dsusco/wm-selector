@@ -1,9 +1,0 @@
-language: node_js
-os:
-  - linux
-node_js: 10
-
-script:
-  - npm run test:unit
-
-cache: node_modules
