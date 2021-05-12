@@ -1,30 +1,22 @@
-# Warmaster Army Selector [![Build Status](https://travis-ci.com/dsusco/wm-selector.svg?branch=master)](https://travis-ci.com/dsusco/wm-selector)
+# Warmaster Army Selector
 
+[![Deploy to wm-selector.github.io](https://github.com/dsusco/wm-selector/actions/workflows/deploy_to_github_pages.yml/badge.svg)](https://github.com/dsusco/wm-selector/actions/workflows/deploy_to_github_pages.yml)
 
-## Project setup
-```
-npm install
-```
+A Vue army builder for Games Workshop's Warmaster: [https://wm-selector.github.io/](https://wm-selector.github.io/)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## The TL;DR Start
 
-### Compiles and minifies for production
-```
-npm run build
-```
+    $ git clone git@github.com:dsusco/wm-selector.git
+    $ cd wm-selector/
+    $ npm ci
+    $ npm run serve
 
-### Run your unit tests
-```
-npm run test:unit
-```
+That should build and serve up the app at [http://localhost:8080/](http://localhost:8080/).
 
-### Lints and fixes files
-```
-npm run lint
-```
+## Contributing
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+1. Fork `https://github.com/dsusco/wm-selector`
+2. Create a branch (`git checkout -b new-feature`)
+3. Commit the changes (`git commit -am 'Added a new feature'`)
+4. Push the branch (`git push origin new-feature`)
+5. Create a pull request
