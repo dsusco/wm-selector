@@ -1,6 +1,6 @@
 # Warmaster Army Selector
 
-[![Deploy to wm-selector.github.io](https://github.com/dsusco/wm-selector/actions/workflows/deploy_to_github_pages.yml/badge.svg)](https://github.com/dsusco/wm-selector/actions/workflows/deploy_to_github_pages.yml)
+[![Unit Tests](https://github.com/dsusco/wm-selector/actions/workflows/run_unit_tests.yml/badge.svg)](https://github.com/dsusco/wm-selector/actions/workflows/run_unit_tests.yml) [![Deploy to wm-selector.github.io](https://github.com/dsusco/wm-selector/actions/workflows/deploy_to_github_pages.yml/badge.svg)](https://github.com/dsusco/wm-selector/actions/workflows/deploy_to_github_pages.yml)
 
 A Vue army builder for Games Workshop's Warmaster: [https://wm-selector.github.io/](https://wm-selector.github.io/)
 
