@@ -12,10 +12,11 @@ jobs:
       - uses: actions/checkout@v2
         with:
           repository: wm-selector/wm-selector.github.io
-          ssh-key: ${{ secrets.DEPLOY_KEY_SECRET }}
+          ssh-key: ${{ secrets.DEPLOY_KEY }}
           path: wm-selector.github.io
       - uses: actions/setup-node@v2
-      - run: |
+      - name: Build and Deploy
+        run: |
           npm ci
           npm run build
           rm -Rf wm-selector.github.io/*
