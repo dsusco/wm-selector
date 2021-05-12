@@ -16,12 +16,13 @@ jobs:
           path: wm-selector.github.io
       - uses: actions/setup-node@v2
       - run: |
+          npm ci
+          npm run build
+          rm -Rf wm-selector.github.io/*
+          cp -Rf dist/* wm-selector.github.io/
+          cd wm-selector.github.io/
           git config user.email 'dsusco@gmail.com'
           git config user.name 'David Susco'
-          npm ci
-          rm -Rf wm-selector.github.io/*
-          npm run build -- --dest wm-selector.github.io/ --no-clean
-          cd wm-selector.github.io/
           git checkout README.md
           git add .
           git commit -m '${GITHUB_REPOSITORY} ${GITHUB_SHA}'
