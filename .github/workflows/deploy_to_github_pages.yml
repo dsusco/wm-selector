@@ -26,5 +26,5 @@ jobs:
           git config user.name 'David Susco'
           git checkout README.md
           git add .
-          git commit -m '${{ env.GITHUB_REPOSITORY }} ${{ env.GITHUB_SHA }}'
+          git commit -m '${{ github.repository }} ${{ github.sha }}'
           git push -f origin main
