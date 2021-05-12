@@ -24,5 +24,5 @@ jobs:
           cd wm-selector.github.io/
           git checkout README.md
           git add .
-          git commit -m '${{GITHUB_REPOSITORY}} ${{GITHUB_SHA}}'
+          git commit -m '${GITHUB_REPOSITORY} ${GITHUB_SHA}'
           git push -f origin main
