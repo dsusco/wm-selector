@@ -1,81 +1,147 @@
 {
   "specialRules": {
     "Skirmish": {
-      "order": 1,
+      "order": 1
+    },
+    "Unreliable": {
+      "order": 2
+    },
+    "Scythed Chariots": {
+      "order": 3
+    },
+    "Elephants": {
+      "order": 4
+    },
+    "Darius": {
+      "order": 5,
       "text": [
-        "In the Warmaster Ancients game, most skirmishers represent troops whose role is exclusively skirmishing. Whilst other troops may skirmish to a degree, they do so on the tactical level subsumed within close combat. The exceptions are some light cavalry and chariot units which are adjudged to have a duel role and which usually carry a mixture of weapons, eg, Huns.",
-        "",
-        "Because skirmishers are such a fundamental part of the armies, the skirmish rules are described throughout the book in the appropriate sections. These are summarised below together with references to the full descriptions.",
-        "",
-        "Skirmishers carry suitable weapons—sometimes bows but more likely s lings or javelins—and fight in loose, informal formations taking advantage of local terrain to avoid contact with more powerful but less mobile enemies. In general, skirmishing units represent fewer men than close fighting units. It is assumed they will usually disperse or flee if attacked.",
-        "1. Skirmishers always move at up to full pace for their type regardless of formation or circumstances (see p22).",
-        "2. Skirmishing units can see all round—they can draw a line of sight from any stand's edge. Their shooting zone extends all round to their front, side and rear. Because they can see enemies to their side or rear they can charge, evade or otherwise react to such units (see p10 Visibility) and (p37 Shooting).",
-        "3. Unless confused, skirmishers are allowed to evade from an enemy charge in the opposing Command phase (see p24).",
-        "4. Unless confused, skirmishers arc allowed to evade instead of being driven back by shooting in the opposing Shooting phase (see p25).",
-        "5. Skirmishers can evade through other units. If these other units are not skirmishers, or if they are a second or subsequent unit evaded through regardless of whether they are skirmishers or not, then both units must test for confusion once the move is complete. Units become confused on the roll of a 6 (see p24).",
-        "6. Skirmishing infantry can support from the side only: they cannot support from behind (see p50).",
-        "7. Skirmishing infantry can move through some types of terrain that is otherwise impassable—notably rivers/deep water, forests, and cliffs. This is described in the section on Terrain & Movement (see p31).",
-        "Note: For the avoidance of doubt, skirmishing infantry are able to evade from charging cavalry, or other non-skirmishing units, even if these units have a greater move distance than they do. In this case, skirmishers are assumed to have already seen, reacted to, and taken steps to avoid their attackers well before they reach their position."
+        "The General may be Darius at the extra points cost shown—if Darius is chosen to lead your army he automatically rides a chariot and this is included in his stats and cost.  If Darius is your general then disregard the penalty for unreliable units that are within 20cm of Darius—if Darius is within 20cm the unit does not count as unreliable."
       ]
     },
-    "Portents": {
-      "order": 2,
+    "Mercenary Hoplites": {
+      "order": 6,
       "text": [
-        "The player can take the portents before the battle. This allows the General to re-roll one failed Command roll once during the battle. Take the Command test again—if successful the order is issued and the General can continue giving orders if you wish."
-      ]
-    },
-    "King David": {
-      "order": 3,
-      "text": [
-        "King David carries the favour of his god and the supreme confidence of his warriors. Once in each turn you can intervene in any one combat engagement as follows. When your units roll for Attacks, you can immediately re-roll one dice again—picking out a miss and re-rolling it. Only one intervention is allowed in each turn."
+        "Because Hoplites fought as mercenaries at this time, largely trusting to their own kind and sometimes distrusting their employers, Hoplites may not receive rear support from non-Hoplites—only Hoplites can rear-support other Hoplites."
       ]
     }
   },
   "units": {
-    "Infantry": {
+    "Heavy Cavalry": {
       "order": 0,
-      "type": "Infantry",
+      "type": "Cavalry",
       "attack": 3,
       "hits": 3,
+      "armour": "5+",
       "size": 3,
-      "points": 35,
-      "min": 6
+      "points": 80,
+      "min": 1,
+      "max": 4,
+      "upgrades": [
+        "Heavy Bactrian Cavalry"
+      ]
     },
-    "Archers": {
+    "Colonist Cavalry": {
       "order": 1,
-      "type": "Infantry",
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 70,
+      "min": 2
+    },
+    "Light Cavalry": {
+      "order": 2,
+      "type": "Cavalry",
       "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 60,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "max": 4
+    },
+    "Mounted Skirmishers": {
+      "order": 3,
+      "type": "Cavalry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": 40,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "min": 2,
+      "max": 6
+    },
+    "Scythian Horse Archers": {
+      "order": 4,
+      "type": "Cavalry",
+      "attack": 1,
       "range": 30,
       "hits": 3,
       "size": 3,
-      "points": 40
+      "points": 60,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "max": 1
     },
-    "Spearmen": {
-      "order": 2,
+    "Greek Hoplites": {
+      "order": 5,
       "type": "Infantry",
       "attack": 3,
       "hits": 3,
       "armour": "5+",
       "size": 3,
-      "points": 60,
-      "max": 4,
-      "min": 1
+      "points": 50,
+      "max": 6,
+      "specialRules": [
+        "Unreliable",
+        "Mercenary Hoplites"
+      ]
     },
-    "Light Infantry": {
-      "order": 3,
+    "Persian Infantry": {
+      "order": 6,
       "type": "Infantry",
-      "attack": 2,
-      "range": 15,
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 45,
+      "max": 4
+    },
+    "Subject Infantry": {
+      "order": 7,
+      "type": "Infantry",
+      "attack": 3,
       "hits": 3,
       "size": 3,
-      "points": 40,
-      "max": 3,
+      "points": 25,
+      "min": 4,
       "specialRules": [
-        "Skirmish"
+        "Unreliable"
+      ]
+    },
+    "Subject Archers": {
+      "order": 8,
+      "type": "Infantry",
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "points": 30,
+      "max": 6,
+      "specialRules": [
+        "Unreliable"
       ]
     },
     "Skirmishers": {
-      "order": 4,
+      "order": 9,
       "type": "Infantry",
       "attack": 1,
       "range": 15,
@@ -84,77 +150,169 @@
       "points": 30,
       "specialRules": [
         "Skirmish"
-      ]
+      ],
+      "max": 6
     },
-    "Guard": {
-      "order": 5,
-      "type": "Infantry",
+    "Scythed Chariot": {
+      "order": 10,
+      "type": "Chariot",
       "attack": 4,
       "hits": 3,
       "armour": "5+",
-      "size": 3,
+      "size": 1,
+      "points": 50,
+      "specialRules": [
+        "Scythed Chariots"
+      ],
+      "max": 1
+    },
+    "Elephant": {
+      "order": 11,
+      "type": "Elephant",
+      "attack": 4,
+      "range": 15,
+      "hits": 4,
+      "armour": "5+",
+      "size": 1,
       "points": 70,
+      "specialRules": [
+        "Elephants"
+      ],
       "max": 1
     },
     "General": {
-      "order": 6,
+      "order": 12,
       "type": "General",
       "attack": "+2",
-      "command": 9,
+      "command": 8,
       "size": 1,
-      "points": 125,
-      "min": 1,
+      "points": 90,
       "upgrades": [
-        "Portents",
-        "King David"
+        "Mount General on Chariot",
+        "Upgrade General to Darius"
       ]
     },
     "Leader": {
-      "order": 7,
+      "order": 13,
+      "type": "Leader",
+      "attack": "+1",
+      "command": 7,
+      "size": 1,
+      "max": 2,
+      "points": 60,
+      "upgrades": [
+        "Upgrade Leader"
+      ]
+    },
+    "Satrap": {
+      "order": 14,
+      "type": "Subordinate",
+      "attack": "+1",
+      "command": 7,
+      "size": 1,
+      "max": 2,
+      "points": 30,
+      "upgrades": [
+        "Upgrade Satrap"
+      ]
+    }
+  },
+  "upgrades": {
+    "Heavy Bactrian Cavalry": {
+      "order": 0,
+      "type": "Cavalry",
+      "points": "+5",
+      "size": 3,
+      "armour": "5+",
+      "hits": 3,
+      "attack": 3,
+      "range": 15,
+      "max": 2
+    },
+    "Thracian Peltasts": {
+      "order": 1,
+      "type": "Infantry",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "max": 2,
+      "points": "+10",
+      "specialRules": [
+        "Skirmish"
+      ]
+    },
+    "Mount General on Chariot": {
+      "order": 2,
+      "type": "Chariot Mount",
+      "attack": "+1",
+      "points": "+10",
+      "max": "1max"
+    },
+    "Upgrade General to Darius": {
+      "order": 3,
+      "type": "Chariot Mount",
+      "attack": "+2",
+      "command": 8,
+      "size": 1,
+      "points": "+30",
+      "specialRules": [
+        "Darius"
+      ],
+      "max": "1max"
+    },
+    "Upgrade Leader": {
+      "order": 4,
       "type": "Leader",
       "attack": "+1",
       "command": 8,
       "size": 1,
-      "points": 80,
-      "max": 2
-    }
-  },
-  "upgrades": {
-    "Portents": {
-      "order": 0,
-      "points": "+10",
-      "specialRules": [
-        "Portents"
-      ]
+      "points": "+20",
+      "max": "1max"
     },
-    "King David": {
-      "order": 1,
-      "attack": "+2",
-      "command": 9,
+    "Upgrade Satrap": {
+      "order": 5,
+      "type": "Subordinate",
+      "attack": "+1",
+      "command": 8,
       "size": 1,
-      "points": "+15",
-      "specialRules": [
-        "King David"
-      ]
+      "points": "+10",
+      "max": "1max"
     }
   },
-  "order": 1,
-  "name": "Israelites",
-  "version": "Rick's Warmaster",
-  "group": "Chariot Era",
   "armyRules": [
-    "Note that in this particular case the General can be upgraded twice if you wish—once with Portents and once with King David.",
+    "Heavy Cavalry.  These are retainers of the Persian and Median nobility—they have armour and are armed with spears and swords. They are not as aggressive or hard-fighting as their Macedonian opponents and for that reason are not considered to be ‘shock’ but regular heavy cavalry.",
     "",
-    "Infantry. Men from the tribes of Israel were drafted into rank-and-file units and generally armed with spears and shields.",
+    "Colonist Cavalry. These are equipped in a similar fashion to the Heavy Cavalry but are less likely to be armoured and could include vassals such as Indians.",
     "",
-    "Archers. The tribe of Benjamin was noted for its archers.",
+    "Light Cavalry. The mass of Persian cavalry lack substantial armour and carry spears and javelins with which to harass the enemy rather than charging to close quarters.",
     "",
-    "Spearmen. Although the spear was the usual infantry weapon these represent troops highly drilled and trained to a degree that makes them far more formidable than the ordinary mass of troops. They represent the tribe of Judah whose members fought in a close-order formation comparable to Greek Hoplites.",
+    "Mounted Skirmishers. These are Persians, Medes, Arachosians, Paphlagonians and other local skirmishing troops armed with javelins.",
     "",
-    "Light Infantry. The Gadites were the tribe noted for skirmishing warfare providing the Israelite Kings with flexible formations of troops armed with javelins and light bucklers. Mercenaries from Phoenicia used similar tactics.",
+    "Scythians. Mounted bowmen—and probably the best skirmishing cavalry of the ancient world.",
     "",
-    "Skirmishers. These troops could come from any tribe but probably include a large number of Benjamites. Generally these were armed with javelins, but could also include units of slingers.",
+    "Greek Hoplites. For many years Hoplites were the best close quarter fighting troops of the eastern Mediterranean region where they were widely employed as mercenaries. During Alexander’s wars they were to find their supremacy challenged by pike-armed Macedonians. They wear heavy armour of stiffened linen which was often reinforced by metal plates or scales—much like the cuirass worn by contemporary phalangites. They were well protected by bronze helmets and greaves, and carry a large round shield faced with bronze. They are armed with a long spear—often as long as ten feet— and a sword; which at this late period might be the single-edged Macedonian style kopis rather than the more traditional straight-bladed and double-edged weapon. Because Hoplites fought as mercenaries at this time, largely trusting to their own kind and sometimes distrusting their employers, Hoplites may not receive rear support from non-Hoplites—only Hoplites can rear-support other Hoplites.",
     "",
-    "Guard. These are the best and most experienced veterans in the Israelite army. This category includes troops such as the Gibborim (Mighty Men) and the Zebulinites. Well armoured and handpicked by the king, they form the nucleus of the Israelite army."
-  ]
+    "Persian Infantry. The Persian foot comprise a levy rather that professional soldiers and are armed with both spears and bows. They carry a large shield (to hide behind) . Bowfire is subsumed into combat value and is assumed to have effect only immediately prior to contact. The same stats may also represent Cardaces—a corps of Persian troops recruited from the lesser nobility and armed with shield and spear— an unsuccessful attempt to provide a home-grown alternative to the Hoplites.",
+    "",
+    "Subject Infantry. These are levies from far-flung satrapies of the Persian Empire. They are variously and irregularly armed with spears, bows and javelins. They wear no armour though some may carry shields. They are largely untrained, undisciplined and unenthusiastic—hence their status as ‘unreliable’.",
+    "",
+    "Subject Archers. Persian, Syrian, Armenian or other archers—not really equipped to fight at close quarters and probably not expecting to do so!",
+    "",
+    "Skirmishers. Skirmishers equipped with javelins or slings and small shields—these could be troops from the Persian Empire or Greek mercenaries.",
+    "",
+    "Scythed Chariots. Chariots equipped with scythes were used to break up enemy formations—but rarely with any success! Rather than a fighting crew these chariots would have a single driver whose task was to ram straight into the enemy as fast as possible with fatal consequences for all concerned.",
+    "",
+    "Elephants. The Persians did not enjoy much success with their elephants which were inclined to stampede and run amok  amongst their own troops. Maybe that’s why they seem to be guarding the camp during the Gaugamela battle.",
+    "",
+    "Heavy Bactrian Cavalry. Up to 2 units per 1000 points of Heavy Cavalry can be upgraded to Bactrian Heavy Cavalry for the additional points cost shown. This represents troops armed with bows as well as close fighting weapons and capable of ranged shooting.",
+    "",
+    "Thracian Peltasts. Up to 2 units per 1000 pts of  infantry skirmishers can be upgraded to Thracian Peltasts representing more heavily armed and armoured peltasts of which the Thracians were the most noted. Thracians were armed with a heavy cutting weapon called a rhomphaia (variously described as a long-handled sword or a double-handed bill-like weapon) as well as javelins. Other peltasts carried a spear as well as javelins. These intermediate troops were capable of skirmishers and fighting at close quarters—they were to evolve into the most common type of foot-soldier over the following centuries largely replacing Hoplites.",
+    "",
+    "Darius. The General may be Darius at the extra points cost shown—if Darius is chosen to lead your army he automatically rides a chariot and this is included in his stats and cost.  If Darius is your general then disregard the penalty for unreliable units that are within 20cm of Darius—if Darius is within 20cm the unit does not count as unreliable."
+  ],
+  "name": "Late Achaemenid Persian",
+  "version": "Rick's Warmaster",
+  "group": "Greece and the Near East",
+  "order": 18
 }
