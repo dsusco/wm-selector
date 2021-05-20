@@ -17,13 +17,24 @@
       "armour": "5+",
       "points": 80,
       "min": 2,
-      "max": 4,
-      "upgrades": [
-        "Elite Cavalry"
-      ]
+      "max": 4
+    },
+    "Chariots": {
+      "order": 1,
+      "type": "Chariot",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "armour": "6+",
+      "specialRules": [
+        "Skirmish"
+      ],
+      "points": 80,
+      "max": 2
     },
     "Mounted Skirmishers": {
-      "order": 1,
+      "order": 2,
       "type": "Cavalry",
       "attack": 1,
       "range": 15,
@@ -37,7 +48,7 @@
       "max": 4
     },
     "Cimmerian Horse Archers": {
-      "order": 2,
+      "order": 3,
       "type": "Cavalry",
       "attack": 1,
       "range": 30,
@@ -49,18 +60,18 @@
       "points": 60,
       "max": 1
     },
-    "Hoplites": {
-      "order": 3,
+    "Spearmen": {
+      "order": 4,
       "type": "Infantry",
       "attack": 3,
       "hits": 3,
-      "armour": "5+",
       "size": 3,
-      "points": 60,
+      "armour": "6+",
+      "points": 45,
       "min": 4
     },
     "Light Infantry": {
-      "order": 4,
+      "order": 5,
       "type": "Infantry",
       "attack": 2,
       "range": 15,
@@ -74,7 +85,7 @@
       "max": 4
     },
     "Skirmishers": {
-      "order": 5,
+      "order": 6,
       "type": "Infantry",
       "attack": 1,
       "range": 15,
@@ -90,7 +101,7 @@
       "max": 4
     },
     "General": {
-      "order": 6,
+      "order": 7,
       "type": "General",
       "attack": "+2",
       "upgrades": [
@@ -101,7 +112,7 @@
       "points": 100
     },
     "Leader": {
-      "order": 7,
+      "order": 8,
       "type": "Leader",
       "attack": "+1",
       "command": 8,
@@ -121,17 +132,8 @@
       "hits": 3,
       "size": 3
     },
-    "Elite Cavalry": {
-      "order": 1,
-      "type": "Cavalry",
-      "attack": 4,
-      "hits": 3,
-      "armour": "5+",
-      "points": "+10",
-      "size": 3
-    },
     "Portents": {
-      "order": 2,
+      "order": 1,
       "specialRules": [
         "Portents"
       ],
@@ -141,6 +143,8 @@
   },
   "armyRules": [
     "Heavy Cavalry. The Persians regarded the Lydian cavalry as the best of their troops and were reluctant to engage with them—we have therefore graded them as heavy cavalry with a further option to upgrade then to elite cavalry at +10pts per unit. If units are upgraded in this way no chariots can be included—it being assumed that the elite of Lydian society fight mounted rather than as chariot warriors.",
+    "",
+    "Chariots. These are two-horse light chariots whose crewmen are armed with javelins and light spears. Chariots were more common in the early part of the list and their use declined as time went on—eventually they were replaced by the cavalry for which Lydia was famous.",
     "",
     "Mounted Skirmishers. These could be Phrygian or Paphlagonian cavalrymen—lands to the north of Lydia that came to be part of the Lydian empire. They are typical skirmishing cavalry with javelins.",
     "",
@@ -152,8 +156,8 @@
     "",
     "Skirmishers. These are very lightly equipped javelin armed troops from Lydia, Phrygia or Mysia—all part of western Anatolia. Skirmishers like this could probably come from almost anywhere in the Lydian empire—but these areas are known for providing such troops. Up to half these units can be uprated to Lydian or Phrygian bowmen at the cost per unit shown."
   ],
-  "name": "Lydian",
+  "name": "Early Lydian",
   "version": "Rick's Warmaster",
   "group": "Greece and the Near East",
-  "order": 16
+  "order": 15
 }

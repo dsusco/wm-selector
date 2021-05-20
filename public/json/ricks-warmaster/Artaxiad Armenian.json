@@ -1,160 +1,248 @@
 {
   "specialRules": {
+    "Shock": {
+      "order": 1
+    },
+    "Slow": {
+      "order": 2
+    },
     "Skirmish": {
-      "order": 1,
-      "text": [
-        "In the Warmaster Ancients game, most skirmishers represent troops whose role is exclusively skirmishing. Whilst other troops may skirmish to a degree, they do so on the tactical level subsumed within close combat. The exceptions are some light cavalry and chariot units which are adjudged to have a duel role and which usually carry a mixture of weapons, eg, Huns.",
-        "",
-        "Because skirmishers are such a fundamental part of the armies, the skirmish rules are described throughout the book in the appropriate sections. These are summarised below together with references to the full descriptions.",
-        "",
-        "Skirmishers carry suitable weapons—sometimes bows but more likely s lings or javelins—and fight in loose, informal formations taking advantage of local terrain to avoid contact with more powerful but less mobile enemies. In general, skirmishing units represent fewer men than close fighting units. It is assumed they will usually disperse or flee if attacked.",
-        "1. Skirmishers always move at up to full pace for their type regardless of formation or circumstances (see p22).",
-        "2. Skirmishing units can see all round—they can draw a line of sight from any stand's edge. Their shooting zone extends all round to their front, side and rear. Because they can see enemies to their side or rear they can charge, evade or otherwise react to such units (see p10 Visibility) and (p37 Shooting).",
-        "3. Unless confused, skirmishers are allowed to evade from an enemy charge in the opposing Command phase (see p24).",
-        "4. Unless confused, skirmishers arc allowed to evade instead of being driven back by shooting in the opposing Shooting phase (see p25).",
-        "5. Skirmishers can evade through other units. If these other units are not skirmishers, or if they are a second or subsequent unit evaded through regardless of whether they are skirmishers or not, then both units must test for confusion once the move is complete. Units become confused on the roll of a 6 (see p24).",
-        "6. Skirmishing infantry can support from the side only: they cannot support from behind (see p50).",
-        "7. Skirmishing infantry can move through some types of terrain that is otherwise impassable—notably rivers/deep water, forests, and cliffs. This is described in the section on Terrain & Movement (see p31).",
-        "Note: For the avoidance of doubt, skirmishing infantry are able to evade from charging cavalry, or other non-skirmishing units, even if these units have a greater move distance than they do. In this case, skirmishers are assumed to have already seen, reacted to, and taken steps to avoid their attackers well before they reach their position."
-      ]
+      "order": 3
     },
-    "Portents": {
-      "order": 2,
-      "text": [
-        "The player can take the portents before the battle. This allows the General to re-roll one failed Command roll once during the battle. Take the Command test again—if successful the order is issued and the General can continue giving orders if you wish."
-      ]
+    "Unreliable": {
+      "order": 4
     },
-    "King David": {
-      "order": 3,
+    "Phalanx": {
+      "order": 5
+    },
+    "Tigranes the Great": {
+      "order": 6,
       "text": [
-        "King David carries the favour of his god and the supreme confidence of his warriors. Once in each turn you can intervene in any one combat engagement as follows. When your units roll for Attacks, you can immediately re-roll one dice again—picking out a miss and re-rolling it. Only one intervention is allowed in each turn."
+        "Tigranes begins the battle with a command value of 9, and is lowered to 8 as soon as an unmodified order roll is 10 or more. Also, any ally subordinate within 20cm of Tigranes has their command value modified to 8."
       ]
     }
   },
   "units": {
-    "Infantry": {
+    "Armenian Cataphracts": {
       "order": 0,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "armour": "4+",
+      "specialRules": [
+        "Shock",
+        "Slow"
+      ],
+      "points": 125,
+      "min": 1,
+      "max": 3
+    },
+    "Mounted Skirmishers": {
+      "order": 1,
+      "type": "Cavalry",
+      "attack": 1,
+      "hits": 3,
+      "size": 3,
+      "range": 15,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "points": 40,
+      "min": 2
+    },
+    "Horse Archers": {
+      "order": 2,
+      "type": "Cavalry",
+      "attack": 1,
+      "hits": 3,
+      "size": 3,
+      "range": 30,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "points": 60,
+      "max": 2
+    },
+    "Allied Cataphracts": {
+      "order": 3,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "armour": "4+",
+      "specialRules": [
+        "Shock",
+        "Slow",
+        "Unreliable"
+      ],
+      "points": 115,
+      "max": 2
+    },
+    "Archers": {
+      "order": 4,
+      "type": "Infantry",
+      "attack": 2,
+      "hits": 3,
+      "size": 3,
+      "range": 30,
+      "points": 40,
+      "min": 2
+    },
+    "Javelinmen": {
+      "order": 5,
       "type": "Infantry",
       "attack": 3,
       "hits": 3,
       "size": 3,
       "points": 35,
-      "min": 6
+      "min": 2
     },
-    "Archers": {
-      "order": 1,
+    "Skirmishers": {
+      "order": 6,
       "type": "Infantry",
-      "attack": 2,
-      "range": 30,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "attack": 1,
       "hits": 3,
       "size": 3,
-      "points": 40
+      "range": 15,
+      "points": 30,
+      "max": 6
     },
-    "Spearmen": {
-      "order": 2,
+    "Imitation Legion": {
+      "order": 7,
+      "upgrades": [
+        "Trained Legion"
+      ],
+      "specialRules": [
+        "Unreliable"
+      ],
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "armour": "5+",
+      "points": 50,
+      "max": 4
+    },
+    "Phalanx": {
+      "order": 8,
+      "specialRules": [
+        "Phalanx",
+        "Unreliable"
+      ],
+      "upgrades": [
+        "Loyal Phalanx"
+      ],
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "armour": "5+",
+      "points": 60,
+      "max": 4
+    },
+    "Armed Servants": {
+      "order": 9,
+      "type": "Infantry",
+      "attack": 2,
+      "hits": 3,
+      "size": 3,
+      "points": 25,
+      "max": 2
+    },
+    "General": {
+      "order": 10,
+      "type": "General",
+      "upgrades": [
+        "Tigranes"
+      ],
+      "points": 100,
+      "attack": "+2",
+      "command": 8,
+      "size": 1
+    },
+    "Crown Prince": {
+      "order": 11,
+      "type": "Leader",
+      "max": 1,
+      "points": 80,
+      "attack": "+1",
+      "command": 8,
+      "size": 1
+    },
+    "Allied Commander": {
+      "order": 12,
+      "type": "Subordinate",
+      "max": 2,
+      "points": 30,
+      "attack": "+1",
+      "command": 7,
+      "size": 1
+    }
+  },
+  "upgrades": {
+    "Trained Legion": {
+      "order": 0,
       "type": "Infantry",
       "attack": 3,
       "hits": 3,
       "armour": "5+",
       "size": 3,
-      "points": 60,
-      "max": 4,
-      "min": 1
+      "points": "+10",
+      "max": "All or none"
     },
-    "Light Infantry": {
-      "order": 3,
+    "Loyal Phalanx": {
+      "order": 1,
       "type": "Infantry",
-      "attack": 2,
-      "range": 15,
-      "hits": 3,
-      "size": 3,
-      "points": 40,
-      "max": 3,
-      "specialRules": [
-        "Skirmish"
-      ]
-    },
-    "Skirmishers": {
-      "order": 4,
-      "type": "Infantry",
-      "attack": 1,
-      "range": 15,
-      "hits": 3,
-      "size": 3,
-      "points": 30,
-      "specialRules": [
-        "Skirmish"
-      ]
-    },
-    "Guard": {
-      "order": 5,
-      "type": "Infantry",
-      "attack": 4,
+      "attack": 3,
       "hits": 3,
       "armour": "5+",
       "size": 3,
-      "points": 70,
-      "max": 1
+      "specialRules": [
+        "Phalanx"
+      ],
+      "points": "+10",
+      "max": "All or none"
     },
-    "General": {
-      "order": 6,
+    "Tigranes": {
+      "order": 2,
       "type": "General",
       "attack": "+2",
-      "command": 9,
+      "command": "9/8",
+      "specialRules": [
+        "Tigranes the Great"
+      ],
+      "max": 1,
       "size": 1,
-      "points": 125,
-      "min": 1,
-      "upgrades": [
-        "Portents",
-        "King David"
-      ]
-    },
-    "Leader": {
-      "order": 7,
-      "type": "Leader",
-      "attack": "+1",
-      "command": 8,
-      "size": 1,
-      "points": 80,
-      "max": 2
+      "points": "+30"
     }
   },
-  "upgrades": {
-    "Portents": {
-      "order": 0,
-      "points": "+10",
-      "specialRules": [
-        "Portents"
-      ]
-    },
-    "King David": {
-      "order": 1,
-      "attack": "+2",
-      "command": 9,
-      "size": 1,
-      "points": "+15",
-      "specialRules": [
-        "King David"
-      ]
-    }
-  },
-  "order": 1,
-  "name": "Israelites",
-  "version": "Rick's Warmaster",
-  "group": "Chariot Era",
   "armyRules": [
-    "Note that in this particular case the General can be upgraded twice if you wish—once with Portents and once with King David.",
+    "Armenian Cataphracts.  These are heavily armoured cavalrymen riding horses with varying degrees of armour.  They are armed with the long lance-like kontos wielded in two hands. They are relatively slow and ponderous.",
     "",
-    "Infantry. Men from the tribes of Israel were drafted into rank-and-file units and generally armed with spears and shields.",
+    "Mounted Skirmishers. This category represents light cavalrymen armed with either javelins or bows. These could be Armenians or could come from any one of Armenia’s allies or vassels.",
     "",
-    "Archers. The tribe of Benjamin was noted for its archers.",
+    "Archers.  Bow armed Armenians or archers from occupied areas with a strong tradition of archery including Syrian and Arab bowmen.",
     "",
-    "Spearmen. Although the spear was the usual infantry weapon these represent troops highly drilled and trained to a degree that makes them far more formidable than the ordinary mass of troops. They represent the tribe of Judah whose members fought in a close-order formation comparable to Greek Hoplites.",
+    "Javelinmen. Although armed with javelins or short spears and shields we’ve treated these as essentially close fighting infantry. These represent the native Armenian infantry fighting as formed units.",
     "",
-    "Light Infantry. The Gadites were the tribe noted for skirmishing warfare providing the Israelite Kings with flexible formations of troops armed with javelins and light bucklers. Mercenaries from Phoenicia used similar tactics.",
+    "Skirmishers. Armenian infantry fighting in loose formation at a distance either with bows, slings or javelins.",
     "",
-    "Skirmishers. These troops could come from any tribe but probably include a large number of Benjamites. Generally these were armed with javelins, but could also include units of slingers.",
+    "Imitation Legion. These are armoured troops fighting in broadly Roman fashion and trained by Tigranes’ ally Pontus; however, lacking the appropriate level of expertise we treat these as regular heavy infantry without the ‘Legion’ rule. We also consider them unreliable unless upgraded to ‘Trained’ , in which case they represent later battle-tried formations.",
     "",
-    "Guard. These are the best and most experienced veterans in the Israelite army. This category includes troops such as the Gibborim (Mighty Men) and the Zebulinites. Well armoured and handpicked by the king, they form the nucleus of the Israelite army."
-  ]
+    "Phalanx.  These represent formerly Seleucid troops and are classified as unreliable but can be upgraded to ‘Loyal’ phalanx if you wish.",
+    "",
+    "Armed Servants. These represent conscripted civilians and other lowly individuals brought along mostly to fetch and carry during siege operations but included here to swell the ranks. They would probably be armed with shields and spears or javelins and are treated as a poor quality ‘Javelinmen’.",
+    "",
+    "Horse Archers. These specialist horse archers represent Parthians or Medians allied to Tigranes.",
+    "",
+    "Allied Cataphracts.  These are heavy cavalry from amongst the vassel states to the south of Armenia including Media Atropatene, Gordyene, and Adiabene—all formerly northern territories of the Parthian Empire. They are generally armed and armoured much as contemporary Parthian Cataphracts"
+  ],
+  "name": "Artaxiad Armenian",
+  "version": "Rick's Warmaster",
+  "group": "Greece and the Near East",
+  "order": 13
 }

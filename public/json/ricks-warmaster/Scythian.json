@@ -1,112 +1,123 @@
 {
   "specialRules": {
     "Skirmish": {
-      "order": 1,
-      "text": [
-        "In the Warmaster Ancients game, most skirmishers represent troops whose role is exclusively skirmishing. Whilst other troops may skirmish to a degree, they do so on the tactical level subsumed within close combat. The exceptions are some light cavalry and chariot units which are adjudged to have a duel role and which usually carry a mixture of weapons, eg, Huns.",
-        "",
-        "Because skirmishers are such a fundamental part of the armies, the skirmish rules are described throughout the book in the appropriate sections. These are summarised below together with references to the full descriptions.",
-        "",
-        "Skirmishers carry suitable weapons—sometimes bows but more likely s lings or javelins—and fight in loose, informal formations taking advantage of local terrain to avoid contact with more powerful but less mobile enemies. In general, skirmishing units represent fewer men than close fighting units. It is assumed they will usually disperse or flee if attacked.",
-        "1. Skirmishers always move at up to full pace for their type regardless of formation or circumstances (see p22).",
-        "2. Skirmishing units can see all round—they can draw a line of sight from any stand's edge. Their shooting zone extends all round to their front, side and rear. Because they can see enemies to their side or rear they can charge, evade or otherwise react to such units (see p10 Visibility) and (p37 Shooting).",
-        "3. Unless confused, skirmishers are allowed to evade from an enemy charge in the opposing Command phase (see p24).",
-        "4. Unless confused, skirmishers arc allowed to evade instead of being driven back by shooting in the opposing Shooting phase (see p25).",
-        "5. Skirmishers can evade through other units. If these other units are not skirmishers, or if they are a second or subsequent unit evaded through regardless of whether they are skirmishers or not, then both units must test for confusion once the move is complete. Units become confused on the roll of a 6 (see p24).",
-        "6. Skirmishing infantry can support from the side only: they cannot support from behind (see p50).",
-        "7. Skirmishing infantry can move through some types of terrain that is otherwise impassable—notably rivers/deep water, forests, and cliffs. This is described in the section on Terrain & Movement (see p31).",
-        "Note: For the avoidance of doubt, skirmishing infantry are able to evade from charging cavalry, or other non-skirmishing units, even if these units have a greater move distance than they do. In this case, skirmishers are assumed to have already seen, reacted to, and taken steps to avoid their attackers well before they reach their position."
-      ]
+      "order": 1
     },
-    "Portents": {
-      "order": 2,
-      "text": [
-        "The player can take the portents before the battle. This allows the General to re-roll one failed Command roll once during the battle. Take the Command test again—if successful the order is issued and the General can continue giving orders if you wish."
-      ]
+    "Shock": {
+      "order": 2
     },
-    "King David": {
-      "order": 3,
+    "Unreliable": {
+      "order": 3
+    },
+    "Warband": {
+      "order": 4
+    },
+    "Atheios": {
+      "order": 5,
       "text": [
-        "King David carries the favour of his god and the supreme confidence of his warriors. Once in each turn you can intervene in any one combat engagement as follows. When your units roll for Attacks, you can immediately re-roll one dice again—picking out a miss and re-rolling it. Only one intervention is allowed in each turn."
+        "King Atheios—whose name appears in various spellings—was said to be 90 years old when he confronted Philip II of Macedon and was defeated and killed in battle. Prior to this, however, he had enjoyed considerable success, extending his influence westwards and subjugating many of the settled peoples of the Black Sea region. So, we shall adopt his name for our Scythian General upgrade—though to be fair a more successful exponent of it might reasonably be said to have been King Idantirs whose constant refusal to close to fight, instead peppering his foes from a distant, thwarted the invasion of King Darius of Persia.",
+        "",
+        "If the Atheios upgrade is chosen then once per turn the shooting target of a cavalry unit within 20cm of the General can be driven ‘forward’ rather than ‘back’. This represents the unit using a feigned retreat to lure the enemy unit forwards. Before the drive back is thrown the Scythian player must announce that the Atheios ability is being used. Move the target unit exactly as you would for a drive back—but directly towards the nearest shooter rather than away from it—i.e. exactly 180 degrees opposite to normal. The unit that is driven forward won’t move closer to the closest enemy shooter than 1cm and if it would otherwise move closer the driven unit is automatically confused if it is not so already.  Once the unit has moved then any missile armed  Scythian units that did not shoot in the shooting phase can shoot at the unit if it is the closest target and within range as normal. The unit can then be driven back by further casualties. Note that any additional hits inflicted are not cumulative with hits already suffered."
       ]
     }
   },
   "units": {
-    "Infantry": {
+    "Scythians": {
       "order": 0,
-      "type": "Infantry",
-      "attack": 3,
-      "hits": 3,
-      "size": 3,
-      "points": 35,
-      "min": 6
-    },
-    "Archers": {
-      "order": 1,
-      "type": "Infantry",
-      "attack": 2,
+      "attack": 1,
       "range": 30,
       "hits": 3,
       "size": 3,
-      "points": 40
+      "specialRules": [
+        "Skirmish"
+      ],
+      "points": 60,
+      "min": 5
     },
-    "Spearmen": {
-      "order": 2,
-      "type": "Infantry",
+    "Nobles": {
+      "order": 1,
       "attack": 3,
+      "range": 15,
       "hits": 3,
       "armour": "5+",
       "size": 3,
-      "points": 60,
-      "max": 4,
-      "min": 1
+      "specialRules": [
+        "Shock"
+      ],
+      "upgrades": [
+        "Heavy Cavalry"
+      ],
+      "points": 115,
+      "min": 1,
+      "max": 3
     },
-    "Light Infantry": {
-      "order": 3,
-      "type": "Infantry",
+    "Light Cavalry": {
+      "order": 2,
       "attack": 2,
       "range": 15,
       "hits": 3,
+      "armour": "6+",
       "size": 3,
-      "points": 40,
-      "max": 3,
       "specialRules": [
         "Skirmish"
-      ]
+      ],
+      "points": 60,
+      "min": "-",
+      "max": 2
+    },
+    "Subject Infantry": {
+      "order": 3,
+      "attack": 2,
+      "hits": 3,
+      "size": 3,
+      "specialRules": [
+        "Unreliable"
+      ],
+      "upgrades": [
+        "Black Sea Infantry"
+      ],
+      "points": 15,
+      "max": 4
+    },
+    "Subject Archers": {
+      "order": 4,
+      "attack": 1,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "specialRules": [
+        "Unreliable"
+      ],
+      "upgrades": [
+        "Scythian Archers"
+      ],
+      "points": 15,
+      "max": 4
     },
     "Skirmishers": {
-      "order": 4,
-      "type": "Infantry",
+      "order": 5,
       "attack": 1,
       "range": 15,
       "hits": 3,
       "size": 3,
-      "points": 30,
       "specialRules": [
         "Skirmish"
-      ]
-    },
-    "Guard": {
-      "order": 5,
-      "type": "Infantry",
-      "attack": 4,
-      "hits": 3,
-      "armour": "5+",
-      "size": 3,
-      "points": 70,
-      "max": 1
+      ],
+      "upgrades": [
+        "Thracian Infantry"
+      ],
+      "points": 30,
+      "max": 4
     },
     "General": {
       "order": 6,
       "type": "General",
       "attack": "+2",
-      "command": 9,
+      "command": 8,
       "size": 1,
-      "points": 125,
-      "min": 1,
+      "points": 100,
       "upgrades": [
-        "Portents",
-        "King David"
+        "Atheios"
       ]
     },
     "Leader": {
@@ -116,45 +127,100 @@
       "command": 8,
       "size": 1,
       "points": 80,
+      "max": 1
+    },
+    "Chieftain": {
+      "order": 8,
+      "type": "Subordinate",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 40,
       "max": 2
     }
   },
   "upgrades": {
-    "Portents": {
+    "Scythian Archers": {
       "order": 0,
+      "type": "Infantry",
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "points": "+25",
+      "max": 2
+    },
+    "Black Sea Infantry": {
+      "order": 1,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": "+30",
+      "max": 2
+    },
+    "Thracian Infantry": {
+      "order": 2,
+      "type": "Infantry",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
       "points": "+10",
+      "max": 2,
       "specialRules": [
-        "Portents"
+        "Skirmish",
+        "Warband"
       ]
     },
-    "King David": {
-      "order": 1,
-      "attack": "+2",
-      "command": 9,
-      "size": 1,
-      "points": "+15",
+    "Heavy Cavalry": {
+      "order": 3,
+      "type": "Cavalry",
+      "attack": 3,
+      "range": 15,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": "-30",
+      "max": "All or none"
+    },
+    "Atheios": {
+      "order": 4,
       "specialRules": [
-        "King David"
-      ]
+        "Atheios"
+      ],
+      "attack": "+2",
+      "command": 8,
+      "size": 1,
+      "points": "+25",
+      "max": 1,
+      "type": "General"
     }
   },
-  "order": 1,
-  "name": "Israelites",
-  "version": "Rick's Warmaster",
-  "group": "Chariot Era",
   "armyRules": [
-    "Note that in this particular case the General can be upgraded twice if you wish—once with Portents and once with King David.",
+    " Scythians.  The bulk of the Scythian force comprises mounted archers.",
     "",
-    "Infantry. Men from the tribes of Israel were drafted into rank-and-file units and generally armed with spears and shields.",
+    "Nobles. These represent the small core of nobility wearing various degrees of armour and armed with lances, long spears and assorted side-arms as well as bows and possibly javelins.",
     "",
-    "Archers. The tribe of Benjamin was noted for its archers.",
+    "Light Cavalry. Judging from archaeological finds it appears that at least some warriors carried shafted weapons such as javelins and spears and wore some body armour—suggesting a more directly combative role than that of mounted archers.  These light cavalry have been included to represent such warriors—though whether they would have fought as bodies or dispersed amongst the more lightly equipped horse archers is pure speculation.",
     "",
-    "Spearmen. Although the spear was the usual infantry weapon these represent troops highly drilled and trained to a degree that makes them far more formidable than the ordinary mass of troops. They represent the tribe of Judah whose members fought in a close-order formation comparable to Greek Hoplites.",
+    "Subject Infantry. The Scythians conquered large parts of what is today Moldova, the Ukraine, Romania and even parts of Bulgaria—all of which were settled if not exactly civilised areas. The Scythians were known in ancient Greece as suppliers of slaves—presumably from amongst these subject peoples. These subject infantry have been included to represent the contribution of such peoples in the west—and corresponding peoples in the eastern areas adjoining the Pontic Steppe. They would be armed in their native fashion—probably with javelins and light spears for the most part.",
     "",
-    "Light Infantry. The Gadites were the tribe noted for skirmishing warfare providing the Israelite Kings with flexible formations of troops armed with javelins and light bucklers. Mercenaries from Phoenicia used similar tactics.",
+    "Subject Archers. As above but bow armed.",
     "",
-    "Skirmishers. These troops could come from any tribe but probably include a large number of Benjamites. Generally these were armed with javelins, but could also include units of slingers.",
+    "Skirmishers. These could be subject tribes or Scythians fighting on foot—they are likely to be armed with bows but javelins is possible.",
     "",
-    "Guard. These are the best and most experienced veterans in the Israelite army. This category includes troops such as the Gibborim (Mighty Men) and the Zebulinites. Well armoured and handpicked by the king, they form the nucleus of the Israelite army."
-  ]
+    "Scythian Archers. Subject Archers can be upgraded to Scythian archers at the cost indicated—these represent either native Scythians or dependable subjects or allies. Such warriors are depicted by Greeks by Scythians themselves.",
+    "",
+    "Black Sea Infantry. Subject Infantry can be upgraded to Black Sea infantry at the cost indicated. These represent troops from the Greek colonies of the Crimea—probably armed with spears, wearing some body armour and carrying shields.",
+    "",
+    "Thracian Infantry. Skirmishers can be upgraded to Thracians at the cost indicated. They represent principally Thracian type peltasts but also any comparable barbarian tribes from the areas at the south-western periphery of the Scythian domains.",
+    "",
+    "Heavy Cavalry. Nobles can be fielded as non-shock based bow-armed heavy cavalry at the points reduction indicated. All Noble units must be fielded in this fashion or else none. This is to allow to differences of interpretation and is arguably a more credible way of representing Scythian Nobles prior to Hellenistic times."
+  ],
+  "name": "Scythians",
+  "version": "Rick's Warmaster",
+  "group": "Greece and the Near East",
+  "order": 14
 }

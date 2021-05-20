@@ -1,78 +1,75 @@
 {
   "specialRules": {
+    "Phalanx": {
+      "order": 1
+    },
     "Skirmish": {
-      "order": 1,
-      "text": [
-        "In the Warmaster Ancients game, most skirmishers represent troops whose role is exclusively skirmishing. Whilst other troops may skirmish to a degree, they do so on the tactical level subsumed within close combat. The exceptions are some light cavalry and chariot units which are adjudged to have a duel role and which usually carry a mixture of weapons, eg, Huns.",
-        "",
-        "Because skirmishers are such a fundamental part of the armies, the skirmish rules are described throughout the book in the appropriate sections. These are summarised below together with references to the full descriptions.",
-        "",
-        "Skirmishers carry suitable weapons—sometimes bows but more likely s lings or javelins—and fight in loose, informal formations taking advantage of local terrain to avoid contact with more powerful but less mobile enemies. In general, skirmishing units represent fewer men than close fighting units. It is assumed they will usually disperse or flee if attacked.",
-        "1. Skirmishers always move at up to full pace for their type regardless of formation or circumstances (see p22).",
-        "2. Skirmishing units can see all round—they can draw a line of sight from any stand's edge. Their shooting zone extends all round to their front, side and rear. Because they can see enemies to their side or rear they can charge, evade or otherwise react to such units (see p10 Visibility) and (p37 Shooting).",
-        "3. Unless confused, skirmishers are allowed to evade from an enemy charge in the opposing Command phase (see p24).",
-        "4. Unless confused, skirmishers arc allowed to evade instead of being driven back by shooting in the opposing Shooting phase (see p25).",
-        "5. Skirmishers can evade through other units. If these other units are not skirmishers, or if they are a second or subsequent unit evaded through regardless of whether they are skirmishers or not, then both units must test for confusion once the move is complete. Units become confused on the roll of a 6 (see p24).",
-        "6. Skirmishing infantry can support from the side only: they cannot support from behind (see p50).",
-        "7. Skirmishing infantry can move through some types of terrain that is otherwise impassable—notably rivers/deep water, forests, and cliffs. This is described in the section on Terrain & Movement (see p31).",
-        "Note: For the avoidance of doubt, skirmishing infantry are able to evade from charging cavalry, or other non-skirmishing units, even if these units have a greater move distance than they do. In this case, skirmishers are assumed to have already seen, reacted to, and taken steps to avoid their attackers well before they reach their position."
-      ]
+      "order": 2
     },
-    "Portents": {
-      "order": 2,
-      "text": [
-        "The player can take the portents before the battle. This allows the General to re-roll one failed Command roll once during the battle. Take the Command test again—if successful the order is issued and the General can continue giving orders if you wish."
-      ]
-    },
-    "King David": {
+    "King of Macedon": {
       "order": 3,
       "text": [
-        "King David carries the favour of his god and the supreme confidence of his warriors. Once in each turn you can intervene in any one combat engagement as follows. When your units roll for Attacks, you can immediately re-roll one dice again—picking out a miss and re-rolling it. Only one intervention is allowed in each turn."
+        "The army’s General can be upgraded to King of Macedon—if this option is taken the army is led by an expert tactician in command of the best drilled army in the world. If the General issues an order to a phalanx then the –1 Command penalty for enemy within 20cm is ignored so long as no penalty also applies for an exposed flank or rear. If the –1 penalty for exposed flank or rear applies then no benefit can be drawn from the King of Macedon. This benefit only applies to phalanxes and not to other units or brigades containing a mix of phalanx and non-phalanx units."
       ]
     }
   },
   "units": {
-    "Infantry": {
+    "Phalanx": {
       "order": 0,
       "type": "Infantry",
       "attack": 3,
       "hits": 3,
+      "armour": "6+",
       "size": 3,
-      "points": 35,
-      "min": 6
+      "points": 60,
+      "min": 4,
+      "specialRules": [
+        "Phalanx"
+      ]
     },
-    "Archers": {
+    "Veteran Phalanx": {
       "order": 1,
-      "type": "Infantry",
-      "attack": 2,
-      "range": 30,
-      "hits": 3,
-      "size": 3,
-      "points": 40
-    },
-    "Spearmen": {
-      "order": 2,
       "type": "Infantry",
       "attack": 3,
       "hits": 3,
       "armour": "5+",
       "size": 3,
-      "points": 60,
-      "max": 4,
-      "min": 1
+      "specialRules": [
+        "Phalanx"
+      ],
+      "points": 70,
+      "upgrades": [
+        "Agema Phalanx"
+      ],
+      "max": 4
     },
     "Light Infantry": {
-      "order": 3,
+      "order": 2,
       "type": "Infantry",
       "attack": 2,
       "range": 15,
       "hits": 3,
       "size": 3,
-      "points": 40,
-      "max": 3,
       "specialRules": [
         "Skirmish"
-      ]
+      ],
+      "points": 40,
+      "upgrades": [
+        "Thracians",
+        "Thureophoroi"
+      ],
+      "min": 2,
+      "max": 6
+    },
+    "Archers": {
+      "order": 3,
+      "type": "Infantry",
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "points": 40,
+      "max": 1
     },
     "Skirmishers": {
       "order": 4,
@@ -81,80 +78,168 @@
       "range": 15,
       "hits": 3,
       "size": 3,
-      "points": 30,
       "specialRules": [
         "Skirmish"
-      ]
+      ],
+      "points": 30,
+      "max": 4
     },
-    "Guard": {
+    "Heavy Cavalry": {
       "order": 5,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 80,
+      "max": 2
+    },
+    "Mounted Skirmishers": {
+      "order": 6,
+      "type": "Cavalry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "points": 40,
+      "upgrades": [
+        "Tarantines",
+        "Horse Archers"
+      ],
+      "min": 1,
+      "max": 3
+    },
+    "General": {
+      "order": 7,
+      "type": "General",
+      "upgrades": [
+        "King of Macedon"
+      ],
+      "points": 125
+    },
+    "Leader": {
+      "order": 8,
+      "type": "Leader",
+      "points": 80,
+      "max": 2
+    },
+    "Subordinate": {
+      "order": 10,
+      "type": "Subordinate",
+      "points": 40,
+      "max": 1
+    },
+    "Allied Subordinate": {
+      "order": 10,
+      "type": "Subordinate",
+      "points": 30,
+      "max": 1
+    }
+  },
+  "upgrades": {
+    "Agema Phalanx": {
+      "order": 0,
+      "specialRules": [
+        "Phalanx"
+      ],
       "type": "Infantry",
       "attack": 4,
       "hits": 3,
       "armour": "5+",
       "size": 3,
-      "points": 70,
+      "points": "+10",
+      "max": "2max"
+    },
+    "Thracians": {
+      "order": 1,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "type": "Infantry",
+      "attack": 3,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": "+10",
+      "max": 2
+    },
+    "Thureophoroi": {
+      "order": 2,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": "+5",
+      "max": "Half"
+    },
+    "Tarantines": {
+      "order": 3,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "type": "Cavalry",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": "+20",
       "max": 1
     },
-    "General": {
-      "order": 6,
+    "Horse Archers": {
+      "order": 4,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "type": "Cavalry",
+      "attack": 1,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "points": "+20",
+      "max": 1
+    },
+    "King of Macedon": {
+      "order": 5,
       "type": "General",
       "attack": "+2",
       "command": 9,
       "size": 1,
-      "points": 125,
-      "min": 1,
-      "upgrades": [
-        "Portents",
-        "King David"
-      ]
-    },
-    "Leader": {
-      "order": 7,
-      "type": "Leader",
-      "attack": "+1",
-      "command": 8,
-      "size": 1,
-      "points": 80,
-      "max": 2
+      "max": 1,
+      "points": "+10"
     }
   },
-  "upgrades": {
-    "Portents": {
-      "order": 0,
-      "points": "+10",
-      "specialRules": [
-        "Portents"
-      ]
-    },
-    "King David": {
-      "order": 1,
-      "attack": "+2",
-      "command": 9,
-      "size": 1,
-      "points": "+15",
-      "specialRules": [
-        "King David"
-      ]
-    }
-  },
-  "order": 1,
-  "name": "Israelites",
-  "version": "Rick's Warmaster",
-  "group": "Chariot Era",
   "armyRules": [
-    "Note that in this particular case the General can be upgraded twice if you wish—once with Portents and once with King David.",
+    "Phalanx. The core of Macedonian armies  were formed from phalangites, notably the Leukaspides (white shields) and Chalkaspides (brazen shields). Phalangites of the later Hellenistic period are often, and rather confusingly, referred to as peltasts after their small round shield—although earlier the term is used only for lightly armed troops.  I’ve therefore stuck with phalangites as the term for these pike armed infantry, as this is consistent with other lists.",
     "",
-    "Infantry. Men from the tribes of Israel were drafted into rank-and-file units and generally armed with spears and shields.",
+    "Veteran Phalanx. Macedonian armies were well trained and enjoyed a reputation for martial efficiency—at least from their enemies the Romans. These units represent elite fighting formations. They comprise a greater or lesser proportion of the army because the loss of troops in battle could not easily be made good. Up to 2 units can be upgraded to Agema.",
     "",
-    "Archers. The tribe of Benjamin was noted for its archers.",
+    "Light Infantry. These are the equivalents of the old fashioned peltasts . Can include Greeks or Illyrian javelinmen as well as Thracians. Some can be upgraded to Thracians as noted.",
     "",
-    "Spearmen. Although the spear was the usual infantry weapon these represent troops highly drilled and trained to a degree that makes them far more formidable than the ordinary mass of troops. They represent the tribe of Judah whose members fought in a close-order formation comparable to Greek Hoplites.",
+    "Skirmishers. As found in many contemporary armies—armed with javelins, bows or slings. Could be Macedonoan archers or mercenaries such as Agrianian javelinmen or Rhodian sligners.",
     "",
-    "Light Infantry. The Gadites were the tribe noted for skirmishing warfare providing the Israelite Kings with flexible formations of troops armed with javelins and light bucklers. Mercenaries from Phoenicia used similar tactics.",
+    "Archers. These could be Macedonians, Cretans or other Greeks. These represent archers fighting as formed bodies of troops—although many archers could also fight as skirmishers.",
     "",
-    "Skirmishers. These troops could come from any tribe but probably include a large number of Benjamites. Generally these were armed with javelins, but could also include units of slingers.",
+    "Heavy Cavalry. Macedonian, Thessalian and/or Thracian Cavalry. It appears that the cavalry were now fighting with lighter spears than previously, perhaps reflecting the nature of warfare amongst the hilly country surrounding Macedonia.",
     "",
-    "Guard. These are the best and most experienced veterans in the Israelite army. This category includes troops such as the Gibborim (Mighty Men) and the Zebulinites. Well armoured and handpicked by the king, they form the nucleus of the Israelite army."
-  ]
+    "Mounted Skirmishers. Macedonian, Thessalian. Thracian and other Greeks armed with javelins and a shield.",
+    "",
+    "Agema Phalanx. These are the elite of the veteran units—possibly up to 3000 of the 5000 veterans available to the army. Regardless of the army size you can upgrade up to a maximum of 2 Veteran units to Agema with the stats and additional points cost shown.",
+    "",
+    "Thracians. These represent the more aggressive and warlike of the light troops—not just Thracians as such. The Thracians were sometimes armed with the heavy rhomphaia—a curved sword perhaps comparable with the later Dacian falx. Up to 2 units of Light Infantry per 1000 points can be upgraded to Thracians for the points adjustment shown.",
+    "",
+    "Thureophoroi. These represent light infantry equipped for fighting at close quarters with spear and ‘theuros’ - a large shield whose name means ‘door’. This was a kind of troop that was becoming increasingly common throughout the Mediterranean region—some troops of this kind wore mail armour. Up to half the Light Infantry can be upgraded to Thureophoroi with the stats and points adjustment shown.",
+    "",
+    "Tarentines. These represent light cavalry of a superior kind—often armed with spears as well as javelins—the name refers to the city of Tarentum which was famous for its horsemen—although the term acquired general usage for light cavalry of this kind. Up to 1 unit of mounted skirmishers per 1000 points can be upgraded to Tarentines at the points cost shown.",
+    "",
+    "Horse Archers. This unit represent Getic horse archers from northern Thrace. Up to 1 unit of mounted skirmishers per 1000 points can be uprated to horse archers at the additional points cost shown."
+  ],
+  "name": "Antigonid Macedonian",
+  "version": "Rick's Warmaster",
+  "group": "Greece and the Near East",
+  "order": 12
 }
