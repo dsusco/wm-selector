@@ -1,160 +1,165 @@
 {
   "specialRules": {
+    "Warband": {
+      "order": 1
+    },
     "Skirmish": {
-      "order": 1,
-      "text": [
-        "In the Warmaster Ancients game, most skirmishers represent troops whose role is exclusively skirmishing. Whilst other troops may skirmish to a degree, they do so on the tactical level subsumed within close combat. The exceptions are some light cavalry and chariot units which are adjudged to have a duel role and which usually carry a mixture of weapons, eg, Huns.",
-        "",
-        "Because skirmishers are such a fundamental part of the armies, the skirmish rules are described throughout the book in the appropriate sections. These are summarised below together with references to the full descriptions.",
-        "",
-        "Skirmishers carry suitable weapons—sometimes bows but more likely s lings or javelins—and fight in loose, informal formations taking advantage of local terrain to avoid contact with more powerful but less mobile enemies. In general, skirmishing units represent fewer men than close fighting units. It is assumed they will usually disperse or flee if attacked.",
-        "1. Skirmishers always move at up to full pace for their type regardless of formation or circumstances (see p22).",
-        "2. Skirmishing units can see all round—they can draw a line of sight from any stand's edge. Their shooting zone extends all round to their front, side and rear. Because they can see enemies to their side or rear they can charge, evade or otherwise react to such units (see p10 Visibility) and (p37 Shooting).",
-        "3. Unless confused, skirmishers are allowed to evade from an enemy charge in the opposing Command phase (see p24).",
-        "4. Unless confused, skirmishers arc allowed to evade instead of being driven back by shooting in the opposing Shooting phase (see p25).",
-        "5. Skirmishers can evade through other units. If these other units are not skirmishers, or if they are a second or subsequent unit evaded through regardless of whether they are skirmishers or not, then both units must test for confusion once the move is complete. Units become confused on the roll of a 6 (see p24).",
-        "6. Skirmishing infantry can support from the side only: they cannot support from behind (see p50).",
-        "7. Skirmishing infantry can move through some types of terrain that is otherwise impassable—notably rivers/deep water, forests, and cliffs. This is described in the section on Terrain & Movement (see p31).",
-        "Note: For the avoidance of doubt, skirmishing infantry are able to evade from charging cavalry, or other non-skirmishing units, even if these units have a greater move distance than they do. In this case, skirmishers are assumed to have already seen, reacted to, and taken steps to avoid their attackers well before they reach their position."
-      ]
+      "order": 2
     },
     "Portents": {
-      "order": 2,
-      "text": [
-        "The player can take the portents before the battle. This allows the General to re-roll one failed Command roll once during the battle. Take the Command test again—if successful the order is issued and the General can continue giving orders if you wish."
-      ]
-    },
-    "King David": {
-      "order": 3,
-      "text": [
-        "King David carries the favour of his god and the supreme confidence of his warriors. Once in each turn you can intervene in any one combat engagement as follows. When your units roll for Attacks, you can immediately re-roll one dice again—picking out a miss and re-rolling it. Only one intervention is allowed in each turn."
-      ]
+      "order": 3
     }
   },
   "units": {
-    "Infantry": {
+    "Warriors": {
       "order": 0,
       "type": "Infantry",
       "attack": 3,
-      "hits": 3,
-      "size": 3,
-      "points": 35,
-      "min": 6
-    },
-    "Archers": {
-      "order": 1,
-      "type": "Infantry",
-      "attack": 2,
-      "range": 30,
-      "hits": 3,
-      "size": 3,
-      "points": 40
-    },
-    "Spearmen": {
-      "order": 2,
-      "type": "Infantry",
-      "attack": 3,
-      "hits": 3,
-      "armour": "5+",
-      "size": 3,
-      "points": 60,
-      "max": 4,
-      "min": 1
-    },
-    "Light Infantry": {
-      "order": 3,
-      "type": "Infantry",
-      "attack": 2,
       "range": 15,
       "hits": 3,
       "size": 3,
-      "points": 40,
-      "max": 3,
       "specialRules": [
-        "Skirmish"
-      ]
+        "Warband"
+      ],
+      "min": 8,
+      "points": 40
+    },
+    "Nobles": {
+      "order": 1,
+      "type": "Infantry",
+      "attack": 4,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "specialRules": [
+        "Warband"
+      ],
+      "max": 4,
+      "points": 55
     },
     "Skirmishers": {
-      "order": 4,
+      "order": 2,
       "type": "Infantry",
       "attack": 1,
       "range": 15,
       "hits": 3,
       "size": 3,
-      "points": 30,
+      "specialRules": [
+        "Warband",
+        "Skirmish"
+      ],
+      "max": 4,
+      "points": 30
+    },
+    "Cavalry": {
+      "order": 3,
+      "type": "Cavalry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
       "specialRules": [
         "Skirmish"
-      ]
+      ],
+      "max": 2,
+      "points": 40
     },
-    "Guard": {
-      "order": 5,
-      "type": "Infantry",
-      "attack": 4,
+    "Light Cavalry": {
+      "order": 4,
+      "type": "Cavalry",
+      "attack": 2,
+      "range": 15,
       "hits": 3,
-      "armour": "5+",
       "size": 3,
-      "points": 70,
+      "armour": "6+",
+      "specialRules": [
+        "Skirmish"
+      ],
+      "upgrades": [
+        "Horse Archers"
+      ],
+      "points": 60,
+      "max": 4
+    },
+    "Noble Cavalry": {
+      "order": 5,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "armour": "5+",
+      "points": 80,
       "max": 1
     },
     "General": {
       "order": 6,
       "type": "General",
-      "attack": "+2",
-      "command": 9,
-      "size": 1,
-      "points": 125,
-      "min": 1,
       "upgrades": [
-        "Portents",
-        "King David"
-      ]
-    },
-    "Leader": {
-      "order": 7,
-      "type": "Leader",
-      "attack": "+1",
+        "Portents"
+      ],
       "command": 8,
+      "attack": "+2",
       "size": 1,
-      "points": 80,
-      "max": 2
+      "points": 100
+    },
+    "Superior Tribal Chief": {
+      "order": 7,
+      "type": "Subordinate",
+      "max": 2,
+      "command": 8,
+      "attack": "+1",
+      "size": 1,
+      "points": 40
+    },
+    "Tribal Chieftain": {
+      "order": 8,
+      "type": "Subordinate",
+      "max": 2,
+      "command": 7,
+      "attack": "+1",
+      "size": 1,
+      "points": 30
     }
   },
   "upgrades": {
     "Portents": {
-      "order": 0,
+      "order": 1,
       "points": "+10",
       "specialRules": [
         "Portents"
       ]
     },
-    "King David": {
+    "Horse Archers": {
       "order": 1,
-      "attack": "+2",
-      "command": 9,
-      "size": 1,
-      "points": "+15",
+      "type": "Cavalry",
+      "attack": 1,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
       "specialRules": [
-        "King David"
-      ]
+        "Skirmish"
+      ],
+      "max": "1max",
+      "points": "free"
     }
   },
-  "order": 1,
-  "name": "Israelites",
-  "version": "Rick's Warmaster",
-  "group": "Chariot Era",
   "armyRules": [
-    "Note that in this particular case the General can be upgraded twice if you wish—once with Portents and once with King David.",
+    "Warriors.  Thracians were fierce fighters who fought in comparatively dense formations and are therefore considered warband. They carry spears, shields, javelins and might be armed with knives or swords if they are lucky.",
     "",
-    "Infantry. Men from the tribes of Israel were drafted into rank-and-file units and generally armed with spears and shields.",
+    "Nobles. These are the best equipped of the Thracians and we have treated then as the most aggressive and dangerous. Some Thracians carried weapons with long, curving blades which may have been similar to the Dacian flax of later times. These are known as rhomphaia and came in single-handed and double handed versions.",
     "",
-    "Archers. The tribe of Benjamin was noted for its archers.",
+    "Skirmishers. The usual slingers and javelin armed troops.",
     "",
-    "Spearmen. Although the spear was the usual infantry weapon these represent troops highly drilled and trained to a degree that makes them far more formidable than the ordinary mass of troops. They represent the tribe of Judah whose members fought in a close-order formation comparable to Greek Hoplites.",
+    "Cavalry. These are javelin armed skirmishing cavalry.",
     "",
-    "Light Infantry. The Gadites were the tribe noted for skirmishing warfare providing the Israelite Kings with flexible formations of troops armed with javelins and light bucklers. Mercenaries from Phoenicia used similar tactics.",
+    "Light Cavalry. Some Thracians lives in areas more conducive to raising horses and were able to deploy some numbers of horsemen.",
     "",
-    "Skirmishers. These troops could come from any tribe but probably include a large number of Benjamites. Generally these were armed with javelins, but could also include units of slingers.",
+    "Noble Cavalry. These are the best equipped of the mounted arm, wearing some armour and carrying a spear or javelins.",
     "",
-    "Guard. These are the best and most experienced veterans in the Israelite army. This category includes troops such as the Gibborim (Mighty Men) and the Zebulinites. Well armoured and handpicked by the king, they form the nucleus of the Israelite army."
-  ]
+    "Horse Archers.  Up to a maximum of 1 unit of Light Cavalry can be regraded as a Horse Archer at no extra cost. Note that this is a maximum of 1 unit regardless of army size."
+  ],
+  "name": "Thracian Lowland Tribes",
+  "version": "Rick's Warmaster",
+  "group": "Greece and the Near East",
+  "order": 20
 }
