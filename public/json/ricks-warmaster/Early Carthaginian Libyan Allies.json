@@ -1,0 +1,230 @@
+{
+  "specialRules": {
+    "Heavy Chariots": {
+      "order": 1
+    },
+    "Skirmish": {
+      "order": 2
+    },
+    "Unreliable": {
+      "order": 3
+    },
+    "Warband (Restricted)": {
+      "order": 4
+    },
+    "Warband": {
+      "order": 5
+    },
+    "Portents": {
+      "order": 6
+    }
+  },
+  "units": {
+    "Heavy Chariots": {
+      "order": 0,
+      "type": "Chariot",
+      "attack": 3,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "armour": "5+",
+      "specialRules": [
+        "Heavy Chariots"
+      ],
+      "min": 1,
+      "max": 4,
+      "points": 115
+    },
+    "Poeni Cavalry": {
+      "order": 1,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "armour": "6+",
+      "points": 70,
+      "min": 1,
+      "max": 2
+    },
+    "Numidians": {
+      "order": 2,
+      "type": "Cavalry",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "min": "-",
+      "points": 50,
+      "max": 4
+    },
+    "Sacred Band": {
+      "order": 3,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "armour": "5+",
+      "points": 60,
+      "max": 2
+    },
+    "African Spearmen": {
+      "order": 4,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "armour": "6+",
+      "specialRules": [
+        "Unreliable"
+      ],
+      "upgrades": [
+        "Punic Infantry"
+      ],
+      "points": 35,
+      "min": 4
+    },
+    "Gallic Warriors": {
+      "order": 5,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "specialRules": [
+        "Warband (Restricted)"
+      ],
+      "max": 2,
+      "points": 35
+    },
+    "Skirmishers": {
+      "order": 6,
+      "type": "Infantry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "points": 30,
+      "min": 4
+    },
+    "Warriors": {
+      "order": 7,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "specialRules": [
+        "Warband"
+      ],
+      "points": 35,
+      "min": 1,
+      "max": 2
+    },
+    "Javelinmen": {
+      "order": 8,
+      "type": "Infantry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": 30,
+      "min": 2,
+      "max": 8,
+      "specialRules": [
+        "Skirmish",
+        "Warband"
+      ]
+    },
+    "General": {
+      "order": 9,
+      "upgrades": [
+        "Portents",
+        "Chariot"
+      ],
+      "type": "General",
+      "attack": "+2",
+      "command": 9,
+      "size": 1,
+      "points": 125
+    },
+    "Leader": {
+      "order": 10,
+      "upgrades": [
+        "Chariot"
+      ],
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 80,
+      "max": 2
+    },
+    "Tribal Chief": {
+      "order": 11,
+      "upgrades": [
+        "Chariot"
+      ],
+      "type": "Subordinate",
+      "attack": "+1",
+      "command": 7,
+      "size": 1,
+      "points": 30,
+      "max": 1
+    }
+  },
+  "upgrades": {
+    "Portents": {
+      "order": 0,
+      "points": "+10",
+      "specialRules": [
+        "Portents"
+      ]
+    },
+    "Punic Infantry": {
+      "order": 1,
+      "type": "Infantry",
+      "points": "+10",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "max": "Up to half"
+    },
+    "Chariot": {
+      "order": 2,
+      "type": "Chariot Mount",
+      "points": "+10",
+      "attack": "+1",
+      "max": 2
+    }
+  },
+  "name": "Early Carthaginian Libyan Allies",
+  "version": "Rick's Warmaster",
+  "group": "Greece and the Near East",
+  "order": 21,
+  "armyRules": [
+    "Heavy Chariots. The Carthaginians deployed some heavy chariots during this period. Drawn by four horses, they are heavy and powerful enough to qualify as standard heavy chariots but with fewer crew the Attacks value has been reduced as shown.",
+    "",
+    "Poeni Cavalry. Poorly protected and lightly equipped cavalry",
+    "",
+    "Numidians. The Numidians are lightly equipped and ride small, fleet-footed horses. They are armed with javelins and may have small leather shields.",
+    "",
+    "Sacred Band. These are the elite of the Carthaginian infantry.",
+    "",
+    "African Spearmen. These are the mainstay of the army but of generally poor quality— not up to the standards to be attained during Hannibal’s day.",
+    "",
+    "Gallic Warriors. These are allied Gauls that make up a small part of the army.",
+    "",
+    "Skirmishers. These are lightly equipped skirmishers who could come from any of the nations within the Carthaginian sphere including native Africans, Numidians, Greeks, Gauls and Spanish. A few might have slings or bows but most would be armed with javelins and small shields.",
+    "",
+    "Punic Infantry. Up to half the units of African Spearmen can be ungraded to similarly equipped but superior Punic Infantry.",
+    "",
+    "Libyan Warriors. Although not heavily armed these fight in close order and are fierce warriors—so we count them as warband.",
+    "",
+    "Libyan Javelinmen. Skirmishers carrying javelins."
+  ]
+}
