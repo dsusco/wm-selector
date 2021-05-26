@@ -25,7 +25,7 @@
       "type": "Chariot",
       "attack": 3,
       "range": 15,
-      "hits": 3,
+      "hits": 4,
       "size": 3,
       "armour": "5+",
       "specialRules": [
