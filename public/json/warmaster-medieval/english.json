@@ -1,0 +1,220 @@
+{
+  "name": "English Army, 1415",
+  "version": "Warmaster Medieval",
+  "group": "Hundred Years War",
+  "order": 0,
+  "units": {
+    "Sergeants": {
+      "order": 0,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 110,
+      "max": 1,
+      "specialRules": [
+        "Shock"
+      ]
+    },
+    "Men-at-Arms": {
+      "order": 2,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "4+",
+      "size": 3,
+      "points": 85,
+      "min": 1,
+      "max": 2,
+      "upgrades": [
+        "Mounted Men-at-Arms"
+      ],
+      "specialRules": [
+        "Combined Arms"
+      ]
+    },
+    "Longbowmen": {
+      "order": 2,
+      "type": "Infantry",
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "points": 45,
+      "min": 2,
+      "upgrades": [
+        "Skirmisher Longbowmen",
+		"Stakes"
+      ],
+      "specialRules": [
+        "Combined Arms"
+      ]
+    },
+    "Billmen": {
+      "order": 3,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 45,
+      "min": 2,
+      "max": 4,
+      "specialRules": [
+        "Combined Arms",
+        "Longbow"
+      ]
+    },
+    "Peasants": {
+      "order": 4,
+      "type": "Infantry",
+      "attack": 2,
+      "hits": 2,
+      "size": 3,
+      "points": 20,
+      "max": 2
+    },
+    "Welsh Infantry": {
+      "order": 5,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 45,
+      "max": 4,
+      "specialRules": [
+        "Warband"
+      ]
+    },
+    "Cannon": {
+      "order": 6,
+      "type": "Artillery",
+      "attack": 1,
+      "range": "2x40cm",
+      "hits": 2,
+      "size": 2,
+      "points": 50,
+      "max": 1,
+      "specialRules": [
+        "Slow"
+      ]
+    },
+    "General": {
+      "order": 7,
+      "type": "General",
+      "attack": "+2",
+      "size": 1,
+      "points": 100,
+      "command": 8,
+      "armyMin": 1,
+      "armyMax": 1,
+      "upgrades": [
+        "Henry V"
+      ]
+    },
+    "Lord": {
+      "order": 8,
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 80,
+      "max": 2
+    }
+  },
+  "upgrades": {
+    "Mounted Men-at-Arms": {
+      "order": 0,
+      "type": "Cavalry",
+      "points": "+50",
+      "attack": 3,
+      "hits": 3,
+      "armour": "4+",
+      "size": 3,
+      "specialRules": [
+        "Knights"
+      ]
+    },
+    "Skirmisher Longbowmen": {
+      "order": 1,
+      "type": "Infantry",
+      "attack": 1,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "points": "-10",
+      "specialRules": [
+        "Longbow",
+        "Slow"
+      ],
+      "max": 2
+    },
+    "Henry V": {
+      "order": 2,
+      "type": "General",
+      "command": 9,
+      "max": 1,
+      "points": "+15"
+    },
+    "Stakes": {
+      "order": 3,
+      "type": "Special",
+      "points": "+5"
+    }
+  },
+  "specialRules": {
+    "Knights": {
+      "order": 1
+    },
+    "Skirmish": {
+      "order": 2
+    },
+    "Warband": {
+      "order": 8
+    },
+    "Skirmishers": {
+      "order": 7
+    },
+    "Shock": {
+      "order": 5
+    },
+    "Combined Arms": {
+      "order": 6
+    },
+    "Longbow": {
+      "order": 7,
+      "text": [
+        "Any longbow can be equipped with stakes at a cost of +5 pts per unit. Note that stakes ar note allowed in a Chevauchee army."
+      ]
+    },
+    "Cannon": {
+      "order": 8,
+      "text": [
+        "Cannon must be regarded as immobile and treated as Heavy Cannon for purposes of drive backs from shooting"
+      ]
+    },
+    "Slow": {
+      "order": 9
+    },
+    "Stakes": {
+      "order": 10
+    },
+    "Mounted Infantry": {
+      "order": 11
+    },
+    "Skirmisher Longbowmen": {
+      "order": 12,
+      "text": [
+        "Longbow units in the army can be regraded as Skirmishers. Shrimishers cannot carry stakes.Note that Skirmishing Longbowmen retain range of longbows but lose the longbow special rule (+1 shoot from 'massed' bowfire)"
+      ]
+    },
+    "Henry V": {
+      "order": 13,
+      "text": [
+        "If you field the English King and victor of Agincourt you can re-roll one failed shooting attack from any one of your Longbow units during each Shooting phase."
+      ]
+    }
+  }
+}

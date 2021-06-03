@@ -1,0 +1,173 @@
+{
+  "name": "Mongols, 1241",
+  "version": "Warmaster Medieval",
+  "group": "Mongol invasion",
+  "order": 0,
+  "units": {
+    "Heavy Cavalry": {
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "range": 30,
+      "armour": "5+",
+      "size": 3,
+      "min": 2,
+      "max": 4,
+      "points": 125,
+      "specialRules": [
+        "Shock"
+      ],
+      "upgrades": [
+        "Guard Cavalry"
+      ],
+      "order": 0
+    },
+    "Mongol Cavalry": {
+      "type": "Cavalry",
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "min": 4,
+      "points": 70,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "order": 1
+    },
+    "Subject Cavalry": {
+      "type": "Cavalry",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": 60,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "order": 2
+    },
+    "Catapult": {
+      "type": "Light Artillery",
+      "attack": 1,
+      "range": "2x40",
+      "hits": 2,
+      "size": 2,
+      "max": 1,
+      "points": 60,
+      "specialRules": [
+        "Light Artillery"
+      ],
+      "order": 3
+    },
+    "Khagan": {
+      "type": "General",
+      "attack": "+2",
+      "command": 9,
+      "size": 1,
+      "armyMin": 1,
+      "armyMax": 1,
+      "points": 125,
+      "upgrades": [
+        "Subutai"
+      ],
+      "order": 4
+    },
+    "Noyan": {
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 80,
+      "order": 5
+    },
+	
+    "Subject Infantry": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "armour": "6+",
+      "points": 45,
+      "order": 6,
+      "specialRules": [
+        "Siege"
+      ]
+    },
+    "Dismounted Mongols": {
+      "type": "Infantry",
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "armour": "6+",
+      "max": 4,
+      "points": 50,
+      "upgrades": [
+        "Pavisse"
+      ],
+      "order": 7,
+      "specialRules": [
+        "Siege"
+      ]
+    }
+  },
+  "upgrades": {
+    "Guard Cavalry": {
+      "type": "Cavalry",
+      "attack": 3,
+      "range": 30,
+      "armour": "5+",
+      "hits": 4,
+      "size": 3,
+      "armyMax": 1,
+      "points": 10,
+      "order": 0,
+      "specialRules": [
+        "Shock"
+      ]
+    },
+    "Pavisse": {
+      "type": "Special",
+      "points": 5,
+      "order": 1
+    },
+    "Subutai": {
+      "attack": "+2",
+      "command": 9,
+      "order": 2,
+      "armyMax": 1,
+      "points": 10
+    }
+  },
+  "specialRules": {
+    "Shock": {
+      "order": 1
+    },
+    "Skirmish": {
+      "order": 2
+    },
+    "Light Artillery": {
+      "order": 3
+    },
+    "Pavisse": {
+      "order": 4
+    },
+    "Subutai": {
+      "text": [
+        "You can re-roll any blunders by any of your leaders - only one re-roll is allowed for any given order though, if the re-roll results in another blunder then the commander really has blundered!"
+      ],
+      "order": 5
+    },
+    "Siege": {
+      "text": [
+        "This option are available only during siege games and during campaigns where 'infantry' may be recruited from territories"
+      ],
+      "order": 6
+    },
+    "Skirmishers": {
+      "order": 7
+    }
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "name": "The Army Of Barbarossa, 1159-60",
+  "version": "Warmaster Medieval",
+  "group": "Guelphs and Ghibellines",
+  "order": 1,
+  "units": {
+    "German & Allied Knights": {
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "min": 3,
+      "points": 110,
+      "specialRules": [
+        "Knights"
+      ],
+      "order": 0
+    },
+    "Sergeants": {
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "min": 1,
+      "max": 4,
+      "points": 100,
+      "specialRules": [
+        "Shock"
+      ],
+      "order": 1
+    },
+    "Mercenary Cavalry": {
+      "type": "Cavalry",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "min": 0,
+      "max": 2,
+      "points": 60,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "order": 2
+    },
+    "Militia Crossbowmen": {
+      "type": "Infantry",
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "max": 2,
+      "points": 45,
+      "specialRules": [
+        "Crossbow",
+		"Skirmishers"
+      ],
+      "upgrades": [
+        "Skirmishing Crossbowmen"
+      ],
+      "order": 3
+    },
+    "Militia Spearmen": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "armour": "6+",
+      "max": 2,
+      "points": 45,
+      "order": 4
+    },
+    "Mercenary Crossbowmen": {
+      "type": "Infantry",
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "max": 1,
+      "points": 60,
+      "specialRules": [
+        "Crossbow",
+		"Pavisse"
+      ],
+      "order": 5
+    },
+    "General": {
+      "type": "General",
+      "attack": "+2",
+      "command": 8,
+      "size": 1,
+      "armyMin": 1,
+      "armyMax": 1,
+      "points": 100,
+      "upgrades": [
+        "Barbarossa"
+      ],
+      "order": 6
+    },
+    "Leader": {
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "max": 2,
+      "points": 80,
+      "order": 7
+    },
+    "Cleric": {
+      "type": "Subordinate",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "max": 1,
+      "points": 50,
+      "order": 8
+    }
+  },
+  "upgrades": {
+    "Skirmishing Crossbowmen": {
+      "type": "Infantry",
+      "attack": 1,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "points": -10,
+      "order": 0,
+      "specialRules": [
+        "Skirmish",
+		"Crossbow"
+      ]
+    },
+    "Barbarossa": {
+      "attack": "+2",
+      "command": 9,
+      "order": 2,
+      "points": 25
+    }
+  },
+  "specialRules": {
+    "Knights": {
+      "order": 1
+    },
+    "Shock": {
+      "order": 2
+    },
+    "Skirmish": {
+      "order": 3
+    },
+    "Crossbow": {
+      "order": 4
+    },
+    "Pavisse": {
+      "order": 5
+    },
+    "Cleric": {
+      "text": [
+        "If a Cleric joins a unit, then that unit may re-roll all failed armour saving rolls during its first round of every combat engagement so long as the Cleric is with the unit. The Cleric can move from one unit to another if required - though the benefit of this inspiring words can only be enjoyed by one unit at a time. Bear in mind the benefit applies in the first round of the engagement - and not each turn!"
+      ],
+      "order": 6
+    },
+    "Skirmishers": {
+      "order": 7
+    }
+  }
+}

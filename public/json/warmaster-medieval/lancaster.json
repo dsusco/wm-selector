@@ -1,0 +1,290 @@
+{
+  "name": "The House Of Lancaster, 1455",
+  "version": "Warmaster Medieval",
+  "group": "The Wars of the Roses",
+  "order": 0,
+  "units": {
+    "Currours": {
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "max": 1,
+      "points": 110,
+      "specialRules": [
+        "Shock"
+      ],
+      "order": 0
+    },
+    "Border Horse": {
+      "type": "Cavalry",
+      "attack": 2,
+      "hits": 3,
+      "range": 15,
+      "armour": "6+",
+      "size": 3,
+      "max": 1,
+      "points": 60,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "order": 1
+    },
+    "Men-At-Arms on Foot": {
+      "type": "Infantry",
+      "attack": 3,
+      "armour": "4+",
+      "hits": 3,
+      "size": 3,
+      "min":1,
+      "max":2,
+      "points": 85,
+      "order": 2,
+      "specialRules": [
+        "Combined Arms"
+      ],
+      "upgrades": [
+        "Men-At-Arms Mounted"
+      ]
+    },
+    "Shire Longbow": {
+      "type": "Infantry",
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "min":2,
+      "points": 45,
+      "order": 3,
+      "specialRules": [
+        "Combined Arms",
+		"Longbow"
+      ],
+      "upgrades": [
+        "Stakes",
+		"Retinue Longbow",
+		"Skirmishers"
+      ]
+    },
+    "Shire Bill": {
+      "type": "Infantry",
+      "attack": 2,
+      "hits": 3,
+      "size": 3,
+      "armour": "6+",
+      "min":2,
+      "points": 45,
+      "order": 4,
+      "specialRules": [
+        "Combined Arms"
+      ],
+      "upgrades": [
+		"Retinue Bill"
+      ]
+    },
+    "Welsh Spearmen": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "armour": "6+",
+      "max": 4,
+      "points": 45,
+      "order": 5
+    },
+    "Handgunners": {
+      "type": "Infantry",
+      "attack": 2,
+      "hits": 3,
+      "range": 20,
+      "size": 3,
+      "armour": "6+",
+      "max": 2,
+      "points": 55,
+      "order": 6
+    },
+    "Irish": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "max": 4,
+      "points": 35,
+      "order": 7,
+      "specialRules": [
+		"Warband"
+      ]
+    },
+    "Heavy Cannon": {
+      "type": "Artillery",
+      "attack": 1,
+      "range": "3x60",
+      "hits": 2,
+      "size": 1,
+      "max": 1,
+      "points": 75,
+      "order": 8
+    },
+    "Organ Gun": {
+      "type": "Artillery",
+      "attack": 1,
+      "range": "D6x15",
+      "hits": 2,
+      "size": 1,
+      "max": 1,
+      "points": 50,
+      "order": 9,
+      "specialRules": [
+		"Slow"
+      ]
+    },
+    "General": {
+      "type": "General",
+      "attack": "+2",
+      "command": 9,
+      "size": 1,
+      "armyMin": 1,
+      "armyMax": 1,
+      "points": 125,
+      "order": 10,
+      "upgrades": [
+        "Henry Tudor"
+      ]
+    },
+    "Lord": {
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "max": 2,
+      "points": 80,
+      "order": 11
+    }
+  },
+  "upgrades": {
+    "Henry Tudor": {
+      "type": "General",
+      "armyMax": 1,
+      "points": 25,
+      "order": 0
+    },
+    "Skirmishers": {
+      "type": "Infantry",
+      "attack": 1,
+      "hits": 3,
+      "range": 30,
+      "size": 3,
+      "points": -10,
+      "max": 2,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "order": 1
+    },
+    "Retinue Longbow": {
+      "type": "Infantry",
+      "attack": 2,
+      "hits": 3,
+      "range": 30,
+      "armour": "6+",
+      "size": 3,
+      "points": 10,
+      "max": "Up to half",
+      "specialRules": [
+        "Combined arms",
+		"Longbow"
+      ],
+      "order": 2
+    },
+    "Retinue Bill": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 10,
+      "max": "Up to half",
+      "specialRules": [
+        "Combined arms"
+      ],
+      "order": 3
+    },
+    "Stakes": {
+      "type": "Special",
+      "points": 5,
+      "order": 4
+    },
+    "Men-At-Arms Mounted": {
+      "type": "Infantry",
+      "attack": 3,
+      "armour": "4+",
+      "hits": 3,
+      "size": 3,
+      "points": 50,
+      "order": 5,
+      "specialRules": [
+        "Knights"
+      ]
+    }
+  },
+  "specialRules": {
+    "Skirmish": {
+      "order": 1
+    },
+    "Knights": {
+      "order": 2
+    },
+    "Shock": {
+      "order": 3
+    },
+    "Combined Arms": {
+      "order": 4
+    },
+    "Heavy Cannon": {
+      "order": 5
+    },
+    "Stakes": {
+      "order": 6
+    },
+    "Handgunners": {
+      "order": 7
+    },
+    "Longbow": {
+      "order": 8
+    },
+    "Warband": {
+      "order": 9
+    },
+    "Slow": {
+      "order": 10
+    },
+    "Henry Tudor": {
+      "text": [
+        "You can re-roll any and all failed Command rolls by Henry until such time as a re-roll failed"
+      ],
+      "order": 11
+    },
+    "Shire Longbow": {
+      "text": [
+        "They lose the Longbow special rule"
+      ],
+      "order": 12
+    },
+    "Retinue Bill": {
+      "text": [
+        "They can make combined arms formation with Retinue Longbowmen"
+      ],
+      "order": 13
+    },
+    "Shire Bill": {
+      "text": [
+        "They can make combined arms formation with Shire Longbowmen"
+      ],
+      "order": 14
+    },
+    "Organ Gun": {
+      "order": 15
+    } 
+  }
+}

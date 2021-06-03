@@ -1,0 +1,163 @@
+{
+  "name": "The Bohemian League, 1434",
+  "version": "Warmaster Medieval",
+  "group": "Ottoman–Hungarian wars",
+  "order": 0,
+  "units": {
+    "Knights": {
+      "type": "Nobles",
+      "attack": 3,
+      "hits": 3,
+      "armour": "4+",
+      "size": 3,
+      "min": 2,
+      "points": 135,
+      "order": 0
+    },
+    "Light cavalry": {
+      "type": "Cavalry",
+      "attack": 2,
+      "hits": 3,
+      "range": 15,
+      "armour": "6+",
+      "size": 3,
+      "points": 60,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "order": 1
+    },
+    "Militia": {
+      "type": "Infantry",
+      "attack": 3,
+      "armour": "6+",
+      "hits": 3,
+      "size": 3,
+      "min":4,
+      "points": 35,
+      "order": 2
+    },
+    "Peasants": {
+      "type": "Infantry",
+      "attack": 2,
+      "hits": 2,
+      "size": 3,
+      "max": 2,
+      "points": 20,
+      "order": 3
+    },
+    "Handgunners": {
+      "type": "Infantry",
+      "attack": 2,
+      "range": "20",
+      "armour": "6+",
+      "hits": 3,
+      "size": 3,
+      "max": 1,
+      "points": 60,
+      "specialRules": [
+        "Pavisse"
+      ],
+      "order": 4
+    },
+    "Cannon": {
+      "type": "Artillery",
+      "attack": 1,
+      "range": "2x40",
+      "hits": 2,
+      "size": 2,
+      "max": 2,
+      "points": 50,
+      "specialRules": [
+        "Slow"
+      ],
+      "order": 5
+    },
+    "War Wagons": {
+      "type": "Wagon",
+      "attack": 1,
+      "hits": 3,
+      "range": "15+",
+      "armour": "4+",
+      "size": 3,
+      "min": 3,
+      "points": 60,
+      "order": 6
+    },
+    "Utraquist Infantry": {
+      "type": "Infantry",
+      "attack": 3,
+      "armour": "6+",
+      "hits": 3,
+      "size": 3,
+      "max": 2,
+      "points": 60,
+      "order": 7
+    },
+    "General": {
+      "type": "General",
+      "attack": "+2",
+      "command": 8,
+      "size": 1,
+      "armyMin": 1,
+      "armyMax": 1,
+      "points": 100,
+      "order": 8,
+      "upgrades": [
+        "Prayer"
+      ]
+    },
+    "Leader": {
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "max": 3,
+      "points": 80,
+      "order": 9
+    }
+  },
+  "upgrades": {
+    "Prayer": {
+      "type": "Special",
+      "points": "+10",
+      "armyMax": 1,
+      "order": 0,
+      "specialRules": [
+        "Portents"
+      ]
+    }    
+  },
+  "specialRules": {
+    "Skirmish": {
+      "order": 1
+    },
+    "Shock": {
+      "order": 2
+    },
+    "Knights": {
+      "order": 3
+    },
+    "Portents": {
+      "order": 4
+    },
+    "Slow": {
+      "order": 5
+    },
+    "Pavisse": {
+      "order": 7
+    },
+    "Cannon": {
+      "order": 8
+    },
+    "Handgunners": {
+      "order": 9
+    },
+    "Utraquist Infantry": {
+      "text": [
+        "Range 20cm & -1 armour save modifier when stationary"
+      ],
+      "order": 10
+    }
+  }
+}

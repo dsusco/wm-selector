@@ -1,0 +1,215 @@
+{
+  "name": "French Army, 1429",
+  "version": "Warmaster Medieval",
+  "group": "Hundred Years War",
+  "order": 2,
+  "units": {
+    "Retainers": {
+      "order": 0,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 110,
+      "min": 1,
+      "specialRules": [
+        "Shock"
+      ]
+    },
+    "Breton Horse": {
+      "order": 1,
+      "type": "Cavalry",
+      "range": 15,
+      "attack": 2,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 60,
+      "max": 2,
+      "specialRules": [
+        "Skirmish"
+      ]
+    },
+    "Knights": {
+      "order": 2,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "4+",
+      "size": 3,
+      "points": 135,
+      "min": 2
+    },
+    "Foot Knights": {
+      "order": 3,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "armour": "4+",
+      "points": 85,
+      "max": 2
+    },
+    "Crossbowmen": {
+      "order": 4,
+      "type": "Infantry",
+      "range": 30,
+      "attack": 2,
+      "hits": 3,
+      "size": 3,
+      "points":45,
+      "min": 1,
+      "specialRules": [
+        "Crossbows"
+      ],
+	  "upgrades":[
+		"Skirmishers"
+	  ]
+		
+    },
+    "Brigans/Militia": {
+      "order": 5,
+      "type": "Infantry",
+      "attack": 2,
+      "hits": 3,
+      "range": 15,
+      "size": 3,
+      "points": 35,
+      "max": 8,
+      "specialRules": [
+        "Warband"
+      ]
+    },
+    "Mercenary Archers": {
+      "order": 6,
+      "type": "Infantry",
+      "attack": 2,
+      "hits": 3,
+      "range": 30,
+      "armour": "6+",
+      "size": 3,
+      "points": 50,
+      "max": 2,
+      "specialRules": [
+        "Warband"
+      ]
+    },
+    "Mercenary Infantry": {
+      "order": 7,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 60,
+      "max": 2,
+      "specialRules": [
+        "Warband"
+      ]
+    },
+    "Cannon": {
+      "order": 8,
+      "type": "Artillery",
+      "attack": 1,
+      "range": "2x40cm",
+      "hits": 2,
+      "size": 2,
+      "points": 50,
+      "max": 1,
+      "specialRules": [
+        "Slow"
+      ]
+    },
+    "General": {
+      "order": 7,
+      "type": "General",
+      "attack": "+2",
+      "size": 1,
+      "points": 100,
+      "command": 8,
+      "armyMin": 1,
+      "armyMax": 1,
+      "upgrades": [
+        "Oriflamme"
+      ]
+    },
+    "Noble": {
+      "order": 8,
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 80
+    }
+  },
+  "upgrades": {
+    "Skirmishers": {
+      "order": 1,
+      "type": "Infantry",
+      "attack": 1,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "points": "-10",
+      "specialRules": [
+        "Skirmish"
+      ],
+      "max": 2
+    },
+    "Oriflamme": {
+      "order": 2,
+      "type": "Special",
+      "points": "+25"
+    },
+    "Pavisse": {
+      "order": 3,
+      "type": "Special",
+      "points": "+5"
+    }
+  },
+  "specialRules": {
+    "Knights": {
+      "order": 1
+    },
+    "Skirmish": {
+      "order": 2
+    },
+    "Warband": {
+      "order": 3
+    },
+    "Skirmishers": {
+      "order": 4
+    },
+    "Shock": {
+      "order": 5
+    },
+    "Crossbow": {
+      "order": 6
+    },
+    "Longbow": {
+      "order": 7,
+      "text": [
+        "Any longbow can be equipped with stakes at a cost of +5 pts per unit. Note that stakes ar note allowed in a Chevauchee army."
+      ]
+    },
+    "Cannon": {
+      "order": 8,
+      "text": [
+        "Cannon must be regarded as immobile and treated as Heavy Cannon for purposes of drive backs from shooting"
+      ]
+    },
+    "Slow": {
+      "order": 9
+    },
+    "Pavisse": {
+      "order": 10
+    },
+    "Oriflamme": {
+      "order": 11,
+      "text": [
+        "If you take Oriflamme banner, select one unit of French Knights. This unit can re-roll all missed attacks on its first charge during the game and increase the distance at with it can une initiative from 20cm to 30cm"
+      ]
+    }
+  }
+}

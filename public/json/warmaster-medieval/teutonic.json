@@ -1,0 +1,163 @@
+{
+  "name": "The Teutonic Order, 1410",
+  "version": "Warmaster Medieval",
+  "group": "Polish–Lithuanian–Teutonic War",
+  "order": 2,
+  "units": {
+    "Brother Knights": {
+      "type": "Cavalry",
+      "attack": 4,
+      "hits": 4,
+      "armour": "4+",
+      "size": 3,
+      "min": 1,
+      "points": 155,
+      "order": 0,
+      "specialRules": [
+        "Knights"
+      ]
+    },
+    "Crusader Knights": {
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "4+",
+      "size": 3,
+      "max": 3,
+      "points": 135,
+      "order": 1,
+      "specialRules": [
+        "Knights"
+      ]
+    },
+    "Light Horse": {
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "range": 15,
+      "armour": "6+",
+      "size": 3,
+      "min": 2,
+      "points": 70,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "order": 2
+    },
+    "Native Horse": {
+      "type": "Cavalry",
+      "attack": 2,
+      "hits": 3,
+      "range": 15,
+      "armour": "6+",
+      "size": 3,
+      "max": 4,
+      "points": 60,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "order": 3
+    },
+    "Subject Infantry": {
+      "type": "Infantry",
+      "attack": 2,
+      "hits": 2,
+      "size": 3,
+      "max": 4,
+      "points": 20,
+      "order": 4
+    },
+    "Ordensdiener Spearmen": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "max": 8,
+      "points": 45,
+      "specialRules": [
+        "Combined Arms"
+      ],
+      "upgrades": [
+        "Pavisse"
+      ],
+      "order": 5
+    },
+    "Ordensdiener Crossbowmen": {
+      "type": "Infantry",
+      "attack": 2,
+      "hits": 3,
+      "range": 30,
+      "armour": "6+",
+      "size": 3,
+      "max": 8,
+      "points": 55,
+      "specialRules": [
+        "Skirmish",
+        "Combined Arms"
+      ],
+      "upgrades": [
+        "Pavisse"
+      ],
+      "order": 6
+    },
+    "Grand Master": {
+      "type": "General",
+      "attack": "+2",
+      "command": 9,
+      "size": 1,
+      "armyMin": 1,
+      "armyMax": 1,
+      "points": 125,
+      "order": 7,
+      "upgrades": [
+        "Ulrich Von Jugingen"
+      ]
+    },
+    "Magister": {
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "max": 2,
+      "points": 80,
+      "order": 8
+    }
+  },
+  "upgrades": {
+    "Ulrich Von Jugingen": {
+      "type": "General",
+      "points": "+10",
+      "armyMax": 1,
+      "order": 0
+    }   ,
+    "Pavisse": {
+      "type": "Special",
+      "points": "+5",
+      "order": 1
+    }    
+  },
+  "specialRules": {
+    "Skirmish": {
+      "order": 1
+    },
+    "Knights": {
+      "order": 2
+    },
+    "Pavisse": {
+      "order": 3
+    },
+    "Crossbow": {
+      "order": 4
+    },
+    "Combined Arms": {
+      "order": 5
+    },
+    "Ulrich Von Jugingen": {
+      "text": [
+        "If you decide to upgrade your general to Grandmaster Ulrich Von Jungingen, then all commanders in the army have a Command value of 10 in the first turn of the game. This bonus only applies in the first turn thereafter all commanders have standard values."
+      ],
+      "order": 6
+    }
+  }
+}

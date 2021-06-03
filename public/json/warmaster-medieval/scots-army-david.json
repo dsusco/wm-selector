@@ -1,0 +1,158 @@
+{
+  "name": "The Scots Army Of David I, 1138",
+  "version": "Warmaster Medieval",
+  "group": "The Anarchy",
+  "order": 1,
+  "units": {
+    "Knights": {
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "min": 0,
+      "max": 2,
+      "points": 110,
+      "order": 0
+    },
+    "Scouts": {
+      "type": "Cavalry",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "min": 0,
+      "max": 1,
+      "points": 60,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "order": 1
+    },
+    "Lowlanders": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "min": 8,
+      "points": 45,
+      "specialRules": [
+        "Warband"
+      ],
+      "order": 2
+    },
+    "Galwegians": {
+      "type": "Infantry",
+      "attack": 4,
+      "hits": 3,
+      "size": 3,
+      "min": 1,
+      "max": 4,
+      "points": 45,
+      "specialRules": [
+        "Warband"
+      ],
+      "order": 3
+    },
+    "Archers": {
+      "type": "Infantry",
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "max": 1,
+      "points": 40,
+      "upgrades": [
+        "Skirmishers"
+      ],
+      "specialRules": [
+        "Skirmishers"
+      ],
+      "order": 4
+    },
+    "General": {
+      "type": "General",
+      "attack": "+2",
+      "command": 8,
+      "size": 1,
+      "armyMin": 1,
+      "armyMax": 1,
+      "points": 100,
+      "upgrades": [
+        "Prayer"
+      ],
+      "order": 5
+    },
+    "Leader": {
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "max": 2,
+      "points": 80,
+      "order": 6
+    },
+    "Chieftain": {
+      "type": "Subordinate",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "max": 1,
+      "points": 40,
+      "order": 7
+    }
+  },
+  "upgrades": {
+    "Skirmishers": {
+      "type": "Infantry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": -10,
+      "order": 0,
+      "specialRules": [
+        "Skirmish"
+      ]
+    },
+    "Prayer": {
+      "armyMax": 1,
+      "order": 1,
+      "points": 10,
+      "specialRules": [
+        "Portents"
+      ]
+    }
+  },
+  "specialRules": {
+    "Knights": {
+      "order": 1
+    },
+    "Skirmish": {
+      "order": 2
+    },
+    "Warband": {
+      "order": 3
+    },
+    "Portents": {
+      "order": 4
+    },
+    "Religious Followers": {
+      "text": [
+        "If  the  Bishop  carries  a Religious Standard , the  army must include a single unit of Religious Followers.Whenever a religious standard was carried to battle it would be accompanied by a group of followers  responsible for the safety of the standard and the priests"
+      ],
+      "order": 5
+    },
+    "Prayer": {
+      "text": [
+        "This rule allows the General to re-roll one failed Comma nd roll once during the battle. Take the Command test again - if successful, the order is issued and the General can conti nue giving further orders if you wish."
+      ],
+      "order": 6
+    },
+    "Skirmishers": {
+      "order": 7
+    }
+  }
+}

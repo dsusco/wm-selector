@@ -4,6 +4,6 @@ export default {
   'Warmaster Revolution': 'Warmaster Revolution',
   'Warmaster Ancients': 'Warmaster Ancients',
   'Warmaster Ancient Armies': 'Warmaster Ancients',
-  'Warmaster Medieval Armies': 'Warmaster Ancients',
+  'Warmaster Medieval': 'Warmaster Medieval',
   'Warmaster Evolution': 'Warmaster Evolution',
 };
