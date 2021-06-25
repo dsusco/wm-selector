@@ -1,0 +1,223 @@
+{
+  "specialRules": {
+    "Heavy Chariots": {
+      "order": 1
+    },
+    "Skirmish": {
+      "order": 2
+    },
+    "Unreliable": {
+      "order": 3
+    },
+    "Light Artillery": {
+      "order": 4
+    },
+    "Shock": {
+      "order": 5
+    },
+    "Portents": {
+      "order": 6
+    }
+  },
+  "units": {
+    "'Che' Heavy Chariots": {
+      "order": 0,
+      "type": "Chariot",
+      "specialRules": [
+        "Heavy Chariots"
+      ],
+      "size": 3,
+      "attack": 4,
+      "range": 15,
+      "hits": 4,
+      "armour": "5+",
+      "points": 135,
+      "max": 1
+    },
+    "Cavalry": {
+      "order": 1,
+      "type": "Cavalry",
+      "size": 3,
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "points": 80,
+      "max": 2
+    },
+    "Skirmish Cavalry": {
+      "order": 2,
+      "type": "Cavalry",
+      "specialRules": [
+        "Skirmish"
+      ],
+      "size": 3,
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "points": 40,
+      "max": 2
+    },
+    "Halberdiers": {
+      "order": 3,
+      "type": "Infantry",
+      "specialRules": [
+        "Unreliable"
+      ],
+      "size": 3,
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "points": 35,
+      "min": 2
+    },
+    "Crossbowmen": {
+      "order": 4,
+      "type": "Infantry",
+      "specialRules": [
+        "Unreliable"
+      ],
+      "size": 3,
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "armour": "6+",
+      "points": 40,
+      "min": 2
+    },
+    "Spearmen": {
+      "order": 5,
+      "type": "Infantry",
+      "size": 3,
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "points": 45,
+      "max": 2
+    },
+    "Pressed Convicts": {
+      "order": 6,
+      "type": "Infantry",
+      "specialRules": [
+        "Unreliable"
+      ],
+      "size": 3,
+      "attack": 3,
+      "hits": 3,
+      "points": 25,
+      "max": 2
+    },
+    "Skirmish Infantry": {
+      "order": 7,
+      "type": "Infantry",
+      "specialRules": [
+        "Skirmish"
+      ],
+      "size": 3,
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "points": 30,
+      "max": 4
+    },
+    "Large Crossbow Artillery": {
+      "order": 8,
+      "type": "Artillery",
+      "specialRules": [
+        "Light Artillery"
+      ],
+      "size": 2,
+      "attack": 1,
+      "range": 40,
+      "hits": 3,
+      "points": 50,
+      "max": 2
+    },
+    "Hsiung-nu Cavalry": {
+      "order": 9,
+      "type": "Cavalry",
+      "specialRules": [
+        "Unreliable",
+        "Shock"
+      ],
+      "size": 3,
+      "attack": 3,
+      "range": 15,
+      "hits": 3,
+      "armour": "5+",
+      "points": 105,
+      "max": 1
+    },
+    "Hsiung-nu Horse Archers": {
+      "order": 10,
+      "type": "Cavalry",
+      "specialRules": [
+        "Skirmish",
+        "Unreliable"
+      ],
+      "size": 3,
+      "attack": 1,
+      "range": 30,
+      "hits": 3,
+      "points": 50,
+      "max": 2
+    },
+    "General": {
+      "order": 11,
+      "type": "General",
+      "upgrades": [
+        "Portents"
+      ],
+      "attack": "+2",
+      "command": 9,
+      "points": 125,
+      "size": 1
+    },
+    "Leader": {
+      "order": 12,
+      "type": "Leader",
+      "attack": "+1",
+      "max": 4,
+      "command": 8,
+      "points": 80,
+      "size": 1
+    }
+  },
+  "upgrades": {
+    "Portents": {
+      "order": 0,
+      "points": "+10",
+      "specialRules": [
+        "Portents"
+      ]
+    }
+  },
+  "order": 3,
+  "group": "The Far East",
+  "version": "Rick's Warmaster",
+  "name": "Han, and Xin (Hsin) China",
+  "armyRules": [
+    "‘Che’ Heavy Chariots are heavy, four horse wooden chariots with a crew armed with swords, spears and crossbows.",
+    "",
+    "Chinese Cavalry were most likely armed with spears and thick leather armour although it is conjectured that they may also have made use of the composite bow in imitation of their Hsiung-nu foes.",
+    "",
+    "Chinese Light Horse was an attempt by the Han to counter the threat posed by the Hsiung-nu.  Low quality horse archers they were always outclassed by their nomadic opponents.",
+    "",
+    "Halberdiers and Conscript halberdiers were armed with the cross-bladed ‘ji’ heavy spear, and well armoured in leather, paper, or even metal lamellar.  They were often unwilling conscripts and lacked staying power in open battle.",
+    "",
+    "Crossbowmen and Conscript Crossbowmen  were armed with the ‘nu’ pistol-grip crossbow, a cheap reliable weapon for a conscript army.  Like the halberdiers they supported, the crossbowmen were well armoured but brittle conscripts.",
+    "",
+    "Mixed Foot were often fielded by the Han, with the conscripted halberdiers and crossbowmen fighting closely together in mixed units.",
+    "",
+    "Skirmishers were armed with the nu crossbow and deployed where difficult terrain was expected.",
+    "",
+    "Spearmen are armed with the ‘mao’ long spear or ‘yan’ short spear.  They fought in disciplined, well ordered ranks and were typically mercenary or volunteer ‘professional’ troops.  Many also fought with the Chinese sword as skilled swordsmen.",
+    "",
+    "Pressed Convict Soldiers are those prisoners given the opportunity to earn their freedom through Imperial service.  They fought fiercely but were unreliable, lacking military discipline.",
+    "",
+    "Large Crossbow Artillery represents the Han light artillery, similar to the ballista.",
+    "",
+    "Hsiung-nu (Xiongnu) Cavalry represent tribal heavy troops in the service of the Han Chinese.  Armed with bow and sword they are capable of showering an enemy with deadly arrows of fighting up close.  They are none-the-less wild and unreliable.",
+    "",
+    "Hsiung-nu (Xiongnu) Horse Archers represent tribesmen in the service of the Chinese.  They fight in dense skirmishing swarms, and use their deadly bows to great effect, often at the gallop.  They are also unreliable."
+  ]
+}
