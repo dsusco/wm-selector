@@ -20,7 +20,7 @@
       "hits": 3,
       "armour": "4+",
       "size": 3,
-      "points": 100,
+      "points": 110,
       "min": 1,
       "max": 4,
       "order": 1
@@ -168,7 +168,7 @@
     },
     "Ulfwerener": {
       "text": [
-        "Unlike usual infantry troops, the Ulfwerener are based facing the short edge in the same way as cavalry. In addition they receive an additional +1 Attack modifier when they charge an enemy in the open in the same way as monsters and chariots and have an ability to pursue cavalry and chariots troop types. The Ulfwerener stands can never support or being supported at all. Because of their rather bestial nature, only characters with the Were Kin Character upgrade may join units of Ulfwerener and they cannot be brigaded with any units apart from other Ulfwerener. Ulfwerener units can not take any magic items."
+        "Unlike usual infantry troops, the Ulfwerener are based facing the short edge in the same way as cavalry. In addition they receive an additional +1 Attack modifier when they charge an enemy in the open in the same way as monsters and chariots and have an ability to pursue cavalry and chariots troop types. Because of their rather bestial nature, only characters with the Were Kin Character upgrade may join units of Ulfwerener. Ulfwerener units can not take any magic items."
       ],
       "order": 2
     },

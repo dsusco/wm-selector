@@ -13,6 +13,9 @@
       "points": 110,
       "min": 2,
       "max": 4,
+      "upgrades": [
+        "Blunderbusses"
+      ],
       "order": 0
     },
     "Blunderbusses": {
@@ -32,7 +35,7 @@
       "range": "15cm",
       "hits": 3,
       "size": 3,
-      "points": 50,
+      "points": 45,
       "order": 2
     },
     "Black Orcs": {
@@ -73,7 +76,7 @@
       "hits": 4,
       "armour": "5+",
       "size": 3,
-      "points": 150,
+      "points": 140,
       "max": 2,
       "order": 6
     },
@@ -164,9 +167,8 @@
   "upgrades": {
     "Great Taurus": {
       "type": "Monstrous Mount",
-      "attack": "+2/+2",
-      "range": "20cm",
-      "points": "+90",
+      "attack": "+2",
+      "points": "+80",
       "max": 1,
       "order": 0
     },
@@ -190,13 +192,24 @@
         "Rod of Repetition"
       ],
       "order": 2
+    },
+    "Blunderbusses": {
+      "type": "Infantry",
+      "attack": "3/2",
+      "range": "15cm",
+      "hits": 4,
+      "armour": "6+",
+      "size": 3,
+      "points": "-20",
+      "max": 1,
+      "order": 3
     }
   },
   "magic": true,
   "specialRules": {
     "Blunderbusses": {
       "text": [
-        "Units with Blunderbusses have a shooting range of 15cm. The unit has 2 shooting attacks. However, when making a stand and shoot attack, it has only 1 shooting attack per stand. Units hit by Blunderbusses get a -1 penalty for their armour rolls."
+        "Units with Blunderbusses have a shooting range of 15cm. The unit has 2 shooting attacks per stand, it may roll both attacks (per stand) as part of a Stand and Shoot action. Units hit by Blunderbusses get a -1 penalty for their armour rolls. Up to 1 unit of Chaos Dwarfs per 1000 points may be replaced by Blunderbusses (including the 20 point discount) while still counting for the Chaos Dwarf min/max value. Note that this unit also counts for min/max value of Blunderbusses."
       ],
       "order": 1
     },
@@ -240,7 +253,7 @@
     },
     "Great Taurus": {
       "text": [
-        "Any character may be mounted on a Great Taurus. This mighty beast is fearsome to face on the battlefield. The Great Taurus causes terror and is able to fly. A Great Taurus may make a shooting attack with a range of 20cms if it joins a unit."
+        "Any character may be mounted on a Great Taurus. This mighty beast charges across the battlefield with molten fury. The Great Taurus causes Terror and is able to Fly"
       ],
       "order": 7
     },

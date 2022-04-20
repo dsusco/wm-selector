@@ -158,14 +158,14 @@
   "armyRules": [
     "__Ignore Terror.__ All units ignore the -1 Attack penalty in combat for fighting terrifying troops – you cannot frighten them at all.",
     "",
-    "__Daemonic Instability.__ At the start of the player’s own Command phase, before making any initiatives moves, all Daemon units that have taken at least 1 casualty (i.e. lost at least 1 stand out of 3) must make a ‘Daemonic Instability’ test. Roll a D6. If the unit has lost 2 stands (i.e. has only 1 stand remaining from 3) deduct 1 from the roll.",
+    "__Daemonic Instability.__ At the start of the player’s own Command phase, before making any initiatives moves, all friendly Daemon units that have taken at least 1 casualty (i.e. lost at least 1 stand out of 3) must make a ‘Daemonic Instability’ test. Roll a D6. If the unit has lost 2 stands and is further away than 20cm from a friendly daemon Wizard (i.e. has only 1 stand remaining from 3) deduct 1 from the roll.",
     "",
     "|||",
     "-|-",
-    "__0-1__|One stand is destroyed – the daemons fade away and are absorbed back into the Realm of Chaos from which they came. Remove one stand from play. If a character is with the unit and the last stand is removed the character is destroyed too.",
+    "__0-1__|One stand is destroyed – the daemons fade away and are absorbed back into the Realm of Chaos from which they came. Remove one stand from play. If a character is with the unit.and the last stand is removed the character is destroyed too.",
     "__2-3__|The unit becomes confused - if not already confused the stand becomes confused as it is torn between this world and the next.",
-    "__4-5__|No effect – unless the unit is confused in which case it ceases to be confused as it is favoured with the invigorating power of Chaos.",
-    "__6__|The unit feels the power of the gods. As a result it attacks the closest enemy within initiative range. If there is no enemy in initiative range the unit ignores command penalties for the lost stand till its next turn."
+    "__4-5__| No effect – unless the unit is confused in which case it ceases to be confused as it is favoured with the invigorating power of Chaos",
+    "__6__|The unit regains one stand. The regained stand is placed in formation with the rest of the unit. If it is impossible to position the\nstand in formation with its unit, then the stand cannot be added."
   ],
   "specialRules": {
     "Daemon Swarm": {

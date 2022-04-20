@@ -211,7 +211,7 @@
       "text": [
         "*The Druid breathes out some of the mystical mist that surrounds his enigmatic homeland and envelopes his compatriots, making them hard to target by enemy troops.*",
         "",
-        "This spell affects a friendly unit within range of the Druid and lasts until the start of the Druid player’s next turn. Attacks against the target unit suffer -1 to hit (as if it were defended). This affects attacks from shooting, magic and in the first round of Combat phase. A unit in the open still counts as ‘in the open’ for the purposes of charging. A unit that is fortified cannot be affected by the Mists of Albion."
+        "This spell may be cast upon a single friendly Infantry unit within range, regardless of whether the caster can see\nthem or not. The spell lasts until the start of the caster’s next turn, or until the target unit moves in any way. The\ntarget Infantry unit counts as Defended, even if it is in open terrain."
       ],
       "name": "Mists of Albion"
     },

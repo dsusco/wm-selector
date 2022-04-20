@@ -159,7 +159,7 @@
     },
     "Leadbelchers": {
       "text": [
-        "Leadbelchers' cannons have a range of 15cm. The unit has 2 shooting attack, however, when making a stand and shoot reaction it has only 1 shooting attack per stand. Units hit by Leadbelchers get a -1 penalty for their armour rolls."
+        "Leadbelchers have a shooting range of 15cm. The unit has 2 shooting attacks per stand, it may roll both attacks (per stand) as part of a Stand and Shoot action.\nUnits receiving a shooting attack from Leadbelchers receive a -1 penalty for their armour rolls."
       ],
       "order": 2
     },

@@ -44,20 +44,19 @@
       "type": "Infantry",
       "attack": 5,
       "hits": 4,
-      "armour": "6+",
       "size": 3,
-      "points": 110,
-      "max": 1,
+      "points": 80,
+      "max": 2,
       "order": 3
     },
     "Centigors": {
-      "type": "Infantry",
+      "type": "Cavalry",
       "attack": "3/1",
       "range": "15cm",
       "hits": 3,
       "armour": "6+",
       "size": 3,
-      "points": 80,
+      "points": 60,
       "max": 2,
       "order": 4
     },
@@ -126,9 +125,9 @@
     },
     "Doombull": {
       "type": "Hero",
-      "attack": "+3",
+      "attack": "+2",
       "command": 6,
-      "points": 85,
+      "points": 80,
       "max": 1,
       "order": 11,
       "size": 1
@@ -180,13 +179,13 @@
     "Minotaurs": {
       "order": 2,
       "text": [
-        "Minotaurs are subject for Bloodlust – they always use initiative to charge if possible and cannot be given orders instead. Minotaurs never use initiative to evade and must pursue or advance where possible. Also they are immune to terror."
+        "Minotaurs are subject for Bloodlust – they always use initiative to charge if possible and cannot be given orders instead. They never use their initiative to evade and must pursue or advance where possible. A unit with Bloodlust cannot be driven back by shooting and never roll for drive backs. A unit with Bloodlust must pursue or advance if victorious in combat where they are permitted to do so. A unit with Bloodlust is unaffected by an enemy that causes terror in combat -they don't suffer the -1 Attack modifier"
       ]
     },
     "Centigors": {
       "order": 3,
       "text": [
-        "Centigors count as infantry, they are based along the long edge, but can not provide or receive support. Centigors are able to pursue any type of enemy troops (the same as Dwarf Rangers). They can shoot in any direction all around (360 degree arc of sight) in range up to 15cm."
+        "Centigors carry an assortment of smaller ranged arms, so may only shoot up to 15cm. However, they can shoot from any edge without turning stands to face their target. Just measure the range from any stand edge, front, side or rear. Also this enables them to shoot at enemies charging them from any direction."
       ]
     },
     "Dragon Ogres": {
@@ -218,7 +217,7 @@
     "Doombull": {
       "order": 7,
       "text": [
-        "Beastherd, Herdkin and Bestigors joined by a Doombull will become subject to Bloodlust in the same way as Minotaurs and can only receive orders from the Doombull as long as it is part of the unit."
+        "Max 1 per army. Causes Terror. Beastherd, Herdkin and Bestigors joined by a Doombull will become subject to Bloodlust in the same way as Minotaur units, until the end of the following command phase"
       ]
     },
     "Tuskgor Chariot": {
@@ -245,7 +244,7 @@
       "text": [
         "*The Shaman’s magic power arouses in the herd an uncontrollable desire to tear asunder any enemy and feast on their bloody remains. Rows of wild warriors charge headlong into their foes.*",
         "",
-        "The spell can be cast on unengaged friendly unit of infantry or cavalry within range regardless of whether the Shaman can see it or not. The spell affects only a single unit, never a brigade. The unit can be moved just as if it had received an order in the Command phase. Character stands that have joined the unit will not move with it - they remain where they are."
+        "The spell can be cast on any unengaged friendly unit within range regardless of whether the Shaman can see it or not. The spell affects only a single unit, never a brigade. The unit can be moved just as if it had received an order in the Command phase. Character stands that have joined the unit will not move with it - they remain where they are."
       ],
       "name": "Hunting for Gore!"
     },

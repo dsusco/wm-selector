@@ -120,10 +120,10 @@
     },
     "Warrior Priest": {
       "type": "Wizard",
-      "attack": "+0",
+      "attack": "+1",
       "command": 7,
       "size": 1,
-      "points": 45,
+      "points": 55,
       "max": 1,
       "order": 11
     }
