@@ -8,7 +8,7 @@
       "type": "Infantry",
       "attack": 3,
       "hits": 3,
-      "armour": "6+",
+      "armour": "5+",
       "size": 3,
       "points": 60,
       "min": 2,
