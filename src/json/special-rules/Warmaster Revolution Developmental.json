@@ -1,0 +1,59 @@
+{
+  "Bolt Thrower": {
+    "text": [
+      "Targets always ignore their armour when shot at by a Bolt Thrower. No Armour roll is made. The Bolt Thrower’s heavy dart can pierce even the thickest armour.",
+      "When you shoot with a Bolt Thrower it will strike up to two touching stands within the missile’s line of flight. These can be stands from the same or a different unit the missile will automatically pass through and strike up to two stands so long as they are touching along the missile's path.",
+      "The target unit suffers two attacks plus +1 for additional stand from the same unit within the missile's path. A shot that skewer into a different unit inflicts one attack on that unit. All attacks against the same unit are rolled at once - for example, an infantry unit in column takes three attacks so roll three dice.",
+      "Because a bolt thrower can cause hits on different units by skewering shots, it is possible to inflict hits upon enemy units that are engaged in combat or even upon friendly units in some situations. These are normally ineligible targets, but in the case of skewering shots they can suffer hits as a result of fire directed at supporting enemy. Any engaged units from either side taking hits from Bolt Throwers will carry hits forward into the combat round and hits count as having been struck during that round for purposes of working out which side wins. Units engaged in combat are not driven back by any hits taken carrying hits forward takes this into account. Units that are not engaged are driven back in the usual way. If friends are driven back then work out all enemy drive backs first.",
+      "Bolt Throwers can shoot at charging enemy and can do so at any point as the enemy charges, including the start of the move or when the charger has reached its final position."
+    ]
+  },
+  "Cannon": {
+    "text": [
+      "Cannons ignore a target’s Armour because no armour can nullify a hit caused by a cannon ball. No Armour roll is made. In addition, fortified targets only count as being defended (5+ to hit) and defended targets count as being in the open (4+ to hit).",
+      "",
+      "Cannon balls can bounce through densely packed ranks causing immense destruction. To represent this, a shot is deemed to strike the closest point of the target stand, pass all the way through it and bounce a further 5cm in the same direction. If more than one cannon from the same unit is shooting then both cannon balls are assumed to bounce the same distance through the path between the closest cannon and closest target stand. The target unit suffers two attacks plus +1 for each additional stand from the same unit that is bounced through.",
+      "",
+      "A shot that bounces into a different unit inflicts one attack on that unit for each stand bounced through. This can result in units normally ineligible as targets being hit, such as friendly units or units in combat. Total up the number of attacks struck and roll for all the attacks against each unit at a time.",
+      "",
+      "If a cannon is charged it can shoot at the enemy by firing ‘grapeshot’. Like cannon balls, grapeshot has an Attack value of 2 but it doesn’t bounce and targets shot at by grapeshot count their full Armour value. Armour is not discounted as it is with a cannon ball.",
+      "",
+      "Although grapeshot is pretty effective compared to, say, a shot from a single archer stand, it is actually less effective than ordinary cannon fire. At first glance this may seem wrong. After all, shouldn’t grapeshot be devastating compared to normal cannon fire? The reason for this is not that we’ve made grapeshot weak but that normal cannon fire represents not a single shot but a continuous bombardment in which dozens of balls are fired by each cannon. Grapeshot, on the other hand, represents just one hurried blast at close quarters, far more deadly than a single cannon ball which could easily sail over the enemy formation or pass between the ranks but not as deadly as a rain of well aimed cannon balls over a longer period.",
+      "",
+      "Because cannons can cause additional damage by bouncing shots, it is possible to inflict hits upon friends or upon units from either side that are engaged in combat. Both of these are normally ineligible targets, but in the case of bouncing cannon shots they can suffer hits as a result of fire directed nearby. Any friendly unengaged units that take hits from cannons are driven back as if taking enemy fire. Where friendly units are driven back in this way wait until all drive backs for enemy units have been completed, and then work out drive backs for friendly units. Any engaged units taking hits from cannons will carry hits forward into the combat round and hits count as having been struck during that round for purposes of working out which side wins. Units engaged in combat are not driven back by any hits taken carrying hits forward takes this into account."
+    ]
+  },
+  "Elven Bolt Thrower": {
+    "text": [
+      "The Elven Bolt Thrower can shoot at a charging enemy in the same way as a missile-armed infantry or cavalry unit.",
+      "",
+      "Unlike many artillery pieces, the Elven Bolt Thrower does not automatically pierce its target’s armour. Enemies take their Armour rolls as normal. The Elven Bolt Thrower’s darts are relatively small and light compared to say, the Undead Bone Thrower’s."
+    ]
+  },
+  "Giant": {
+    "text": [
+      "Giants must always be given a separate order. They cannot be brigaded with other troops, although several Giants can be brigaded together if you so wish. If you attempt to give an order to a Giant and fail then you must take a test to see what it does. Ignore potential blunders - these are taken into account by the following rules. Roll a dice and consult the Giant Goes Wild chart. Where Giants are brigaded together roll for each separately.",
+      "",
+      "Giants have a great many hits, 8 in fact, which are almost impossible to inflict during even a fairly lengthy combat engagement. Because Giants have so many hits we must consider the possibility of hurting the Giant and reducing its effectiveness in subsequent turns. Therefore, if a Giant has accumulated 5-7 hits by the end of the Shooting phase or Combat phase and is no longer engaged in combat it is deemed to have been badly hurt. Once a Giant is badly hurt all accumulated hits are discounted and its maximum Hits value and Attacks are halved for the rest of the battle (to 4 Hits and 4 Attacks). A Giant causes terror in its enemies.",
+      "",
+      "__Giant Goes Wild Chart__",
+      "",
+      "|||",
+      "-|-",
+      "_D6_|_On no! What's he doing now!_",
+      "1|The Giant will neither move nor fight this turn but simply stands rooted to the spot looking dopey.",
+      "2|Move the Giant directly towards the nearest table edge. If he moves into another unit he will attack it regardless of which side it is on. If victorious in combat the Giant will hold his ground.",
+      "3|The Giant picks up a rock, tree, abandoned cart, outhouse or whatever comes to hand and throws it at the closest unit - friend or foe - that he can see. The object travels 5xD6cm and, if it travels far enough to hit its target, strikes with 3 Attacks worked out in the usual way.",
+      "4|The Giant moves straight forward at full pace in the direction he is facing in. If he reaches an enemy unit he will attack as normal. If he reaches a friendly unit he will walk straight through and out the other side if there is room and he has sufficient move. If he reaches a friendly unit and does not have sufficient move or enough room to walk all the way through then he halts on contact. A friendly unit that is walked through or contacted in this way instantly becomes confused for the remainder of the Command phase. Such a unit ceases to be confused at the end of the Command phase along with other confused units.",
+      "5|The Giant moves towards the nearest enemy unit that he can see as fast as he can. If he reaches the foe he will attack as normal. If friends are in the way he will walk through them causing confusion as described above.",
+      "6|The Giant gives a mighty bellow and rushes straight at the nearest enemy unit that he can see. Move the Giant at double his normal full pace move. If he reaches an enemy unit, he fights by jumping up and down on the foe, furiously doubling his Attacks value in the first round of combat."
+    ]
+  },
+  "Stone Thrower": {
+    "text": [
+      "Because Stone Throwers lob rocks of such immense size no armour can protect against them. Even the most heavily armoured knight would be instantly pulped if a boulder the size of a horse were to land on him. To represent this, targets always ignore their armour when shot at by a Stone Thrower. No Armour roll is made.",
+      "Stone Throwers shoot with such a high trajectory that they cannot shoot at charging enemies.",
+      "Because of the high trajectory Stone Throwers can shoot blind at targets they cannot see. The targets are assumed to be reported by scouts or messengers from other units. If there is no target in sight a Stone Thrower may instead shoot at the nearest enemy unit in range it cannot see. When shooting blind it always hits on 6+ no matter if the target is in the open, defended or even fortified."
+    ]
+  }
+}

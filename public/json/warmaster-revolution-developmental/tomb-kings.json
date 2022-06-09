@@ -1,0 +1,267 @@
+{
+  "name": "Tomb Kings",
+  "version": "Warmaster Revolution Developmental",
+  "group": 0,
+  "order": 1,
+  "units": {
+    "Skeletons": {
+      "type": "Infantry",
+      "attack": 2,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 30,
+      "min": 2,
+      "order": 0
+    },
+    "Skeleton Bowmen": {
+      "type": "Infantry",
+      "attack": "2/1",
+      "range": "30cm",
+      "hits": 3,
+      "size": 3,
+      "points": 45,
+      "min": 2,
+      "order": 1
+    },
+    "Skeleton Cavalry": {
+      "type": "Cavalry",
+      "attack": 2,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 60,
+      "order": 2
+    },
+    "Skeleton Chariots": {
+      "type": "Chariot",
+      "attack": "3/1",
+      "range": "30cm",
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 110,
+      "max": 3,
+      "order": 3
+    },
+    "Carrion": {
+      "type": "Monster",
+      "attack": 2,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 65,
+      "max": 1,
+      "order": 4
+    },
+    "Bone Giant": {
+      "type": "Monster",
+      "attack": 6,
+      "hits": 4,
+      "armour": "4+",
+      "size": 1,
+      "points": 125,
+      "max": 1,
+      "order": 5
+    },
+    "Sphinx": {
+      "type": "Monster",
+      "attack": 4,
+      "hits": 6,
+      "armour": "3+",
+      "size": 1,
+      "points": 150,
+      "max": 1,
+      "order": 6
+    },
+    "Skull Chukka": {
+      "type": "Artillery",
+      "attack": "1/3",
+      "range": "60cm",
+      "hits": 3,
+      "size": 1,
+      "points": 85,
+      "max": 1,
+      "specialRules": [
+        "Stone Thrower"
+      ],
+      "order": 7
+    },
+    "Bone Thrower": {
+      "type": "Artillery",
+      "attack": "1/2 per stand",
+      "range": "40cm",
+      "hits": 2,
+      "size": 2,
+      "points": 65,
+      "max": 1,
+      "specialRules": [
+        "Bolt Thrower"
+      ],
+      "order": 8
+    },
+    "Tomb King": {
+      "type": "General",
+      "attack": "+2",
+      "command": 9,
+      "size": 1,
+      "points": 130,
+      "armyMin": 1,
+      "armyMax": 1,
+      "upgrades": [
+        "Zombie Dragon",
+        "Liche Chariot"
+      ],
+      "order": 9
+    },
+    "Liche Priest": {
+      "type": "Wizard",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 90,
+      "max": 2,
+      "upgrades": [
+        "Zombie Dragon",
+        "Liche Chariot"
+      ],
+      "order": 10
+    }
+  },
+  "upgrades": {
+    "Zombie Dragon": {
+      "type": "Monstrous Mount",
+      "attack": "+3",
+      "points": "+100",
+      "max": 1,
+      "order": 0
+    },
+    "Liche Chariot": {
+      "type": "Chariot Mount",
+      "attack": "+1",
+      "points": "+10",
+      "max": 1,
+      "order": 1
+    }
+  },
+  "magic": true,
+  "armyRules": [
+    "Undead troops are quite beyond any feelings of revulsion, fear, trepidation or anything else for that matter. They are dead and as such nothing holds any real terror for them. Conversely the spells that bind them to life allow only the most rudimentary or specialised intelligence. The following rules apply to all units.",
+    "",
+    "Undead units never act on initiative. An Undead unit only moves in the Command phase if given orders (except Carrion who can also home back as noted below).",
+    "",
+    "Undead units are unaffected by the -1 Command penalty for enemy within 20cm.",
+    "",
+    "Undead units are unaffected by the -1 Combat penalty for fighting terrifying troops.",
+    "",
+    "Undead units are unaffected by the Confusion rule - they cannot become confused for any reason."
+  ],
+  "specialRules": {
+    "Carrion": {
+      "text": [
+        "Carrion can fly. Note that Carrion can always return to a character by homing back at the start of the Command phase. No order is required to do this."
+      ],
+      "order": 1
+    },
+    "Bone Giant": {
+      "text": [
+        "Bone Giants cause terror. When a Tomb King gives an order to a Bone Giant or a brigade that contains a Bone Giant there is a -1 Command penalty. There is no penalty when a Liche-Priest gives an order."
+      ],
+      "order": 2
+    },
+    "Sphinx": {
+      "text": [
+        "Because the Sphinx has so many hits (6) we must consider the possibility of hurting the Sphinx and reducing its effectiveness in subsequent turns. Therefore, if a Sphinx has accumulated 4-5 hits by the end of the Shooting phase or Combat phase and is no longer engaged in combat it is deemed to have been badly hurt. Once a Sphinx is badly hurt all accumulated hits are discounted and its maximum Hits and Attacks are halved for the rest of the battle (to 3 Hits and 2 Attacks). The Sphinx causes terror."
+      ],
+      "order": 3
+    },
+    "Skull Chukka": {
+      "text": [
+        "The Skull Chukka is a Stone Thrower but with the following additional rule. When a unit is driven back as a result of hits scored by a Skull Chukka, then any dice rolled in respect to those hits will cause Confusion on the roll of 4, 5 or 6 (rather than 6 as normal). Note that if a unit has taken other hits as well it will be necessary to roll the Skull Chukka dice separately. See the Artillery and Machines section of the rulebook for the Stone Thrower rules."
+      ],
+      "order": 4
+    },
+    "Bolt Thrower": {
+      "order": 5
+    },
+    "Tomb King": {
+      "text": [
+        "The Tomb King is empowered by the spells cast upon him when buried. He can use this power to increase the Combat Attacks value of all the stands in one unit within 20cm by+1 for the duration of one Combat phase. This ability can only be used once per battle."
+      ],
+      "order": 6
+    },
+    "Liche Priest": {
+      "text": [
+        "Liche Priests cast spells like other wizards."
+      ],
+      "order": 7
+    },
+    "Zombie Dragon": {
+      "text": [
+        "A Tomb King or Liche Priest can ride a Zombie Dragon. A Dragon can fly increasing its rider's move from 60 to 100cm and it adds +3 Attacks to those of its rider. Zombie Dragons have a special shooting attack - they can belch corrosive breath! This attack can only be used if the Dragon riding character has joined a unit but is not engaged in combat. A character that has not joined a unit cannot use the Breath attack. The corrosive breath has a range of 20cm. It can be directed against one target as normal and has 3 Attacks worked out in the usual way. The Zombie Dragon is a terrifying creature - a unit that has been joined by a Dragon riding character causes terror in its enemies."
+      ],
+      "order": 8
+    },
+    "Liche Chariot": {
+      "text": [
+        "A Tomb King or Liche priest can ride a chariot. A character riding a chariot adds +1 to his Attacks."
+      ],
+      "order": 9
+    },
+    "Stone Thrower": {
+      "order": 10
+    }
+  },
+  "spells": [
+    {
+      "roll": 5,
+      "range": "30cm",
+      "text": [
+        "*At the Wizard's beckoning the mangled corpses that litter the battleground rise from the dead to continue the slaughter.*",
+        "",
+        "This spell can be cast upon a combat engagement taking place within 30cm of the Wizard. The spell can be cast regardless of whether the Wizard can see any units in the combat engagement or not. A single combat engagement can only be affected once by this spell in any turn regardless of how many units are involved in the combat. For purposes of deciding whether a combat is eligible as a target, combat engagements are as they appear in the Shooting phase when the spell is cast: so it is possible for pursuit or advances to bring two units of raised dead into the same engagement later on.",
+        "",
+        "A Skeleton unit of three stands is created. The raised unit must be placed either so that it can fight in the combat engagement, or so that it can support a friendly unit that is already engaged. The unit can be placed to the enemy's front, side or rear edges, or lapped round as required to join the engagement. If there is insufficient room for the raised unit to contact the enemy, the unit must be positioned so that it touches at least one friendly unit that is already engaged. A raised unit can be placed so that it is supporting where opportunity permits. If it is impossible to position the unit so that it touches either enemy or friends then the spell cannot be cast. Raised dead do not count as charging in the first round of combat. Raised dead are ignored for working out victory points at the end of the game."
+      ],
+      "name": "Raise Dead"
+    },
+    {
+      "roll": 4,
+      "range": "- Touching",
+      "text": [
+        "*The Wizard's enemies crumble to dust as he smites them with the corrupting Touch of Death.*",
+        "",
+        "The Wizard can cast this spell if he has joined a unit in combat. The spell can be cast on any single enemy unit that it is touching the unit the Wizard has joined.",
+        "",
+        "The target unit takes three attacks worked out in the usual way. Any hits scored are carried over into the first round of combat and count as having been struck in the first round for purposes of working out combat results."
+      ],
+      "name": "Touch of Death"
+    },
+    {
+      "roll": 4,
+      "range": "60cm",
+      "text": [
+        "*A dark cloud of doom and despair settles over the enemy, sapping their courage and dampening their warlike spirit.*",
+        "",
+        "This spell can be cast on any enemy unit within range regardless of whether the Wizard can see it or not.",
+        "",
+        "The spell takes effect until the end of the opposing player's next turn.",
+        "",
+        "Whilst the spell lasts the unit cannot charge and if engaged in combat will not pursue or advance. Even units that are otherwise obliged to charge, pursue, or advance will not do so if affected by Doom and Despair. Note that even other Undead are not immune - they are overcome by the ennui of the tomb!"
+      ],
+      "name": "Doom and Despair"
+    },
+    {
+      "roll": 5,
+      "range": "30cm",
+      "text": [
+        "*A fearsome bolt of sorcerous lightning flies from the Wizard's outstretched finger tips and strikes an enemy unit.*",
+        "",
+        "This spell can be cast on an enemy unit. The Wizard must be able to see his target to use this spell. The spell cannot be directed at a unit engaged in combat.",
+        "",
+        "The Death Bolt is treated like three ordinary shooting attacks except that armour has no effect (all targets count as having no armour). A unit can be driven back by a Death Bolt as with ordinary shooting."
+      ],
+      "name": "Death Bolt"
+    }
+  ]
+}

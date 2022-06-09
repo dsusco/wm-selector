@@ -1,0 +1,269 @@
+{
+  "name": "Araby",
+  "version": "Warmaster Revolution Developmental",
+  "group": 1,
+  "order": 4,
+  "units": {
+    "Spearmen": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 45,
+      "min": 2,
+      "order": 0
+    },
+    "Bowmen": {
+      "type": "Infantry",
+      "attack": "3/1",
+      "range": "30cm",
+      "hits": 3,
+      "size": 3,
+      "points": 55,
+      "min": 2,
+      "order": 1
+    },
+    "Guards": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 65,
+      "max": 4,
+      "order": 2
+    },
+    "Knights": {
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "4+",
+      "size": 3,
+      "points": 110,
+      "order": 3
+    },
+    "Desert Riders": {
+      "type": "Cavalry",
+      "attack": "3/1",
+      "range": "15cm",
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 80,
+      "order": 4
+    },
+    "Camel Riders": {
+      "type": "Cavalry",
+      "attack": "3/1",
+      "range": "30cm",
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 100,
+      "max": 2,
+      "order": 5
+    },
+    "Magic Carpets": {
+      "type": "Cavalry",
+      "attack": "1/2",
+      "range": "15cm",
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 85,
+      "max": 1,
+      "order": 6
+    },
+    "Elephants": {
+      "type": "Monster",
+      "attack": 5,
+      "hits": 4,
+      "armour": "5+",
+      "size": 3,
+      "points": 200,
+      "max": 1,
+      "order": 7
+    },
+    "General": {
+      "type": "General",
+      "attack": "+2",
+      "command": 9,
+      "size": 1,
+      "points": 125,
+      "armyMin": 1,
+      "armyMax": 1,
+      "upgrades": [
+        "Flying Carpet",
+        "Elephant",
+        "Djinn"
+      ],
+      "order": 8
+    },
+    "Hero": {
+      "type": "Hero",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 80,
+      "max": 2,
+      "upgrades": [
+        "Flying Carpet",
+        "Elephant",
+        "Djinn"
+      ],
+      "order": 9
+    },
+    "Wizard": {
+      "type": "Wizard",
+      "attack": "+0",
+      "command": 7,
+      "size": 1,
+      "points": 45,
+      "max": 1,
+      "upgrades": [
+        "Flying Carpet",
+        "Elephant",
+        "Djinn"
+      ],
+      "order": 10
+    }
+  },
+  "upgrades": {
+    "Flying Carpet": {
+      "type": "Chariot Mount",
+      "attack": "+0",
+      "points": "+10",
+      "max": 1,
+      "order": 0
+    },
+    "Elephant": {
+      "type": "Monstrous Mount",
+      "attack": "+2",
+      "points": "+65",
+      "max": 1,
+      "order": 1
+    },
+    "Djinn": {
+      "type": "Monstrous Mount",
+      "attack": "+2/+2",
+      "points": "+90",
+      "max": 1,
+      "order": 2
+    }
+  },
+  "magic": true,
+  "specialRules": {
+    "Guards": {
+      "text": [
+        "The Sultan's Guards are so unquestioningly loyal that they will obey the first order given to them each turn on the Command roll of 10 or less so long as the order comes from the General himself. No penalties are applied to this order. Further orders are given using the General's normal command value and penalties. This applies only to Guards and not to brigades that include Guards and other units."
+      ],
+      "order": 1
+    },
+    "Desert Riders": {
+      "text": [
+        "Desert Riders have a shooting range of only 15cm, however they can shoot all round - ie behind or to the side as well as to their front. Just measure the range from any stand edge either front, side or rear. Desert Riders can shoot at enemy charging them from any direction."
+      ],
+      "order": 2
+    },
+    "Camel Riders": {
+      "text": [
+        "Camel Riders ignore distance modifiers when commands are issued to them. This applies only to Camel Riders and not to brigades that include Camel Riders and other units. Remember that characters are still bound by their maximum command ranges and cannot issue orders to units beyond range. This represents their fierce self-reliance and their mounts' instinctive sense of direction allowing them to operate effectively far from their own battle lines. Because Camels are such intractable creatures all orders are issued with a Command penalty of -1, this penalty applies to any unit of Camel Riders or to any brigade that contains one or more units of Camel Riders."
+      ],
+      "order": 3
+    },
+    "Magic Carpets": {
+      "text": [
+        "Magic carpets can fly – they have been rated as aerial 'cavalry' as this is the closest categorisation to their type. Because they are awkward flyers, they can be pursued by any type of enemy troops. Riders have a shooting range of only 15cm. However, they can shoot from any edge without turning stands to face their target. Just measure the range from any stand edge, front, side or rear. Note that this enables them to shoot at enemies charging them from any direction."
+      ],
+      "order": 4
+    },
+    "Elephants": {
+      "text": [
+        "Elephants cause terror. Elephants cannot be brigaded with cavalry but can be brigaded with other types of troops including other Elephants. If an Elephant unit would otherwise become confused - for whatever reason - then it will stampede instead. It is not confused and none of the normal rules for confusion apply. Stampeding elephants automatically cease to stampede at the end of their Command phase (note that this is in the same way as confused units cease to be confused).",
+        "",
+        "1. Stampeding Elephants cannot be given orders or use initiative. Instead roll a dice at the start of the Command phase before moving anything else on initiative, and move the unit as follows.",
+        "",
+        "|||",
+        "-|-",
+        "*1-2.*|Move towards the nearest enemy unit as far as possible – if the stampeding elephants contact the enemy they automatically count as charging even if they couldn't see at the start of the move. If the elephant contacts a friendly unit it counts as moving into friends (see below).",
+        "*3-4.*|Move directly away from the nearest enemy unit as far as possible – work out the stampede direction in the same way as you would for an evade move. If the elephant contacts another enemy unit it counts as charging (see above). If the elephant contacts a friendly unit it counts as moving into friends (see below).",
+        "*5.*|Move towards the nearest friendly unit as far as possible – if the stampeding elephants contact the friendly unit they automatically count as charging even if they couldn't see at the start of the move.",
+        "*6.*|Move directly away from the nearest friendly unit as far as possible - work out the stampede direction in the same way as you would for an evade move. If the elephant contacts an enemy or friendly unit it counts as charging (see above).",
+        "",
+        "2. A Stampeding Elephant unit that charges into an enemy or friendly unit fights in the combat phase in the same way as a regular charging unit. The stampeding Elephant counts as 'enemies' for the duration of the combat and therefore continue to cause 'terror' in opponents regardless of which side they are on. The Elephants count as charging in the first round. If the Elephants win a combat round then they must pursue if possible and will continue to do so each round. Should their opponents be destroyed they will not advance but will halt without reforming.",
+        "",
+        "3. Stampeding Elephants might conceivably move into a unit, therefore initiating combat, but are unable to form a battleline because they have insufficient movement distance. In the case of stampeding elephants, the combat is still fought, and the elephants still count as charging. It is up to the player whether he moves the elephants the extra distance required to make a battle-line or simply fights with the elephants in an irregular formation."
+      ],
+      "order": 5
+    },
+    "Flying Carpet": {
+      "text": [
+        "This is considered to be a flying chariot mount."
+      ],
+      "order": 6
+    },
+    "Elephant": {
+      "text": [
+        "The Elephant mount is a standard monster mount except that a character mounted on an Elephant cannot join a unit of friendly cavalry. A unit joined by a character riding an Elephant causes Terror."
+      ],
+      "order": 7
+    },
+    "Djinn": {
+      "text": [
+        "The Djinn accompanies its master and can transform both of them into a whirlwind enabling the stand to fly as for a normal flying mount. If the sorcerer has a Djinn he can also cast the Curse of the Djinn spell with a 1 casting bonus (see spells). Note that unusually the Djinn has 2 shooting attacks - these are added to a stand from a unit that the character has joined and can only be used when the character joins a unit. If the Wizard is accompanied by a Djinn then any unit he joins causes Terror."
+      ],
+      "order": 8
+    }
+  },
+  "spells": [
+    {
+      "roll": 4,
+      "range": "– affects enemy within 30cm",
+      "text": [
+        "*The sorcerer commands the desert spirits to engulf his foes in a swirling cloud of choking sand and dust.*",
+        "",
+        "The spell is cast upon the Sorcerer himself and affects all enemy units within 30cm of the stand.",
+        "",
+        "The spell lasts until the end of the opposing player's following turn.",
+        "",
+        "The spell affects the opposing army's ability to issue commands. All enemy units within 30cm of the Arabian Sorcerer suffer a -1 Command penalty. This penalty is applied when each order is issued: a unit might therefore be within 30cm of the Sorcerer for one order but not for a second, for example."
+      ],
+      "name": "Sand Storm"
+    },
+    {
+      "roll": 4,
+      "range": "60cm",
+      "text": [
+        "*The sorcerer creates the illusion of a huge host of fearsome warriors, bearing down inexorably upon his startled foes.*",
+        "",
+        "To use this spell the player will need an additional unit chosen from the Araby list - this can be infantry, cavalry or monsters it does not matter which. This unit becomes the 'illusion' and is immediately placed within 60cm of the sorcerer and more than 20cm from any enemy units. The illusionary unit cannot move or fight - for it isn't really there! However, the illusionary unit is treated as if it were real by the enemy up until such time as an enemy unit charges into contact with it, touches it as an incidental contact during combat, advances upon it, or brings it into combat in any other fashion. This means, for example, Command penalties are suffered for proximity, and enemy shooters are obliged to target the illusion if it is the closest target - it cannot be harmed of course! The illusionary unit is also dispelled immediately if the Araby player moves any of his units or characters through it.",
+        "",
+        "Whilst the Mirage unit is on the battlefield the Wizard cannot cast any other spells - if the player wishes the Wizard to cast a new spell the Mirage comes to an end and the Wizard can then attempt a new spell as normal."
+      ],
+      "name": "Mirage"
+    },
+    {
+      "roll": 5,
+      "range": "30cm",
+      "text": [
+        "*Bright beams of burning energy leap from the sorcerer's eyes and scythe through all before him.*",
+        "",
+        "Draw an imaginary line 30cm long from the Wizard's stand in any direction you wish. Each unit under the line takes three shooting attacks worked out in the usual way all relevant modifiers are applied. Note that this spell can easily affect several units and will affect all units that fall beneath its path (including you own). Unengaged units can be driven back by Sunstrike as with ordinary shooting whether friend or foe. Engaged units cannot be driven back but carry over any hits that are scored into the first round of combat. Hits caused by the Sunstrike count as having been struck in the combat itself."
+      ],
+      "name": "Sunstrike"
+    },
+    {
+      "roll": 6,
+      "range": "30cm",
+      "text": [
+        "*The sorcerer channels the immense power of the Djinn through his own body and lays a terrible curse upon his foes.*",
+        "",
+        "The sorcerer may cast this spell on an enemy unit within range. The target unit must re-roll all successful armour saves for the duration of the following close combat phase.",
+        "",
+        "If the Sorcerer has a Djinn then he adds +1 to his dice roll when casting this spell, and therefore casts successfully on a 5+."
+      ],
+      "name": "Curse of the Djinn"
+    }
+  ]
+}

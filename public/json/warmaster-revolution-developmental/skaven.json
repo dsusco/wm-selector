@@ -1,0 +1,259 @@
+{
+  "name": "Skaven",
+  "version": "Warmaster Revolution Developmental",
+  "group": 0,
+  "order": 6,
+  "units": {
+    "Clanrats": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 40,
+      "min": 2,
+      "order": 0
+    },
+    "Stormvermin": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 55,
+      "max": 2,
+      "order": 1
+    },
+    "Jezzails": {
+      "type": "Infantry",
+      "attack": "3/1",
+      "range": "30cm",
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 70,
+      "max": 2,
+      "order": 2
+    },
+    "Plague Monks": {
+      "type": "Infantry",
+      "attack": 5,
+      "hits": 3,
+      "size": 3,
+      "points": 70,
+      "max": 2,
+      "order": 3
+    },
+    "Rat Swarms": {
+      "type": "Infantry",
+      "attack": 2,
+      "hits": 3,
+      "size": 3,
+      "points": 25,
+      "min": 2,
+      "noMagic": true,
+      "order": 4
+    },
+    "Gutter Runners": {
+      "type": "Infantry",
+      "attack": "3/1",
+      "range": "15cm",
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 70,
+      "max": 4,
+      "order": 5
+    },
+    "Rat Ogres": {
+      "type": "Infantry",
+      "attack": 4,
+      "hits": 4,
+      "armour": "5+",
+      "size": 3,
+      "points": 110,
+      "max": 2,
+      "order": 6
+    },
+    "Warp Lightning Cannon": {
+      "type": "Artillery",
+      "attack": "1/D6",
+      "range": "40cm",
+      "hits": 2,
+      "size": 1,
+      "points": 50,
+      "max": 2,
+      "order": 7
+    },
+    "Doom Wheel": {
+      "type": "Machine",
+      "attack": 5,
+      "hits": 4,
+      "armour": "4+",
+      "size": 1,
+      "points": 125,
+      "max": 1,
+      "order": 8
+    },
+    "Screaming Bell": {
+      "type": "Machine",
+      "attack": 0,
+      "hits": 4,
+      "armour": "4+",
+      "size": 1,
+      "points": 125,
+      "armyMax": 1,
+      "order": 9
+    },
+    "Grey Seer": {
+      "type": "General",
+      "attack": "+1",
+      "command": 9,
+      "size": 1,
+      "points": 130,
+      "armyMin": 1,
+      "armyMax": 1,
+      "upgrades": [
+        "Ring of Magic",
+        "Staff of Spellbinding",
+        "Scroll of Dispelling",
+        "Wand of Power",
+        "Rod of Repetition"
+      ],
+      "order": 10
+    },
+    "Hero": {
+      "type": "Hero",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 70,
+      "max": 2,
+      "order": 11
+    },
+    "Warlock": {
+      "type": "Wizard",
+      "attack": "+0",
+      "command": 6,
+      "size": 1,
+      "points": 30,
+      "max": 1,
+      "order": 12
+    }
+  },
+  "magic": true,
+  "armyRules": [
+    "__Strength in Numbers.__ Brigades may be of any size and are not restricted to the normal four unit maximum.",
+    "",
+    "__Vermintide.__ Skaven units that win a round of combat can choose to pursue retreating enemy units regardless of troops type. Any Skaven units (including artillery) can pursue any enemy units (including flyers, cavalry and chariots). Although allowed to pursue regardless of enemy troop type, Skaven are still constrained by terrain and fortified status the same as other armies – eg they cannot pursue if fortified.",
+    "",
+    "__Under the Lash.__ All Skaven characters have a Command range of 20cm whether General, Heroes or Wizards. Even Skaven Generals have a Command range of 20cm. Skaven are very good at directing their underlings - but only so long as they remain close at hand. We call it 'under the lash'."
+  ],
+  "specialRules": {
+    "Jezzails": {
+      "text": [
+        "Count enemy armour values as one worse that normal when shot by a jezzail. So, for example, an armour value of 3+ counts as 4+, 5+ counts as 6+, and 6+ can't save against a jezzail."
+      ],
+      "order": 1
+    },
+    "Plague Monks": {
+      "text": [
+        "A unit of Plague Monks will always use its initiative to charge an enemy if possible and can't be given orders instead. They will never use their initiative to evade. They can't be driven back by shooting and never roll for drive backs. If victorious in combat they must pursue where possible.",
+        "",
+        "Plague Monks are unaffected by enemies that cause terror in combat, they do not suffer the usual -1 Attack modifier."
+      ],
+      "order": 2
+    },
+    "Rat Swarms": {
+      "text": [
+        "Rat Swarms cannot be driven back by shooting and do not roll for drive backs. A Rat Swarm stand cannot be supported by other kinds of infantry - only by other Ratswarm stands. Note, however, that Rat Swarms can support other kinds of infantry as normal. A Rat Swarm cannot be given magic items."
+      ],
+      "order": 3
+    },
+    "Gutter Runners": {
+      "text": [
+        "Gutter Runners are armed with throwing stars and darts, and are therefore allowed to shoot as if they had bows, but their range is reduced to 15cm. However, they may shoot from any edge without turning stands to face their target. In addition, Gutter Runners do not have to be deployed before the game if the player does not wish to do so. Instead individual units can be infiltrated onto the battlefield once the game has begun. To infiltrate a unit, the Skaven player nominates the point where he wants the Gutter Runners to appear and issues an 'infiltration' order from any character. The character does not have to be within his normal command range to issue an infiltration order - the character's command range is considered to extend over the entire tabletop when issuing an infiltration order. Treat the order as issued to the nominated point, and apply any modifiers for distance and proximity of enemy, but ignore penalties for dense terrain. The nominated point must lie either on the table within dense terrain or on any base edge other than the enemy player's own table edge. If successful, place one stand on the nominated spot and arrange the rest of the unit into formation around it. The infiltrated unit cannot be placed so that it touches an enemy unit. Once deployed, orders can be given to the unit by the same character that gave the infiltration order if he is within his normal command range, the infiltrating unit is considered to have used its first order to deploy. If the infiltration order is failed the unit is not deployed and cannot infiltrate that turn, it can attempt to infiltrate in a subsequent turn at the same or a different place."
+      ],
+      "order": 4
+    },
+    "Warp Lightning Cannon": {
+      "text": [
+        "The Warp Lightning Cannon has a range of 40cm. It has D6 Attacks - generate the number of Attacks and then roll for each Attack as usual. However, if the number of Attacks is 1 this indicates something has gone wrong. Roll the D6 again and work out this many Attacks against the Warp Lightning Cannon itself.",
+        "",
+        "Units that take casualties from the Warp Lightning Cannon are not driven back as a result - disregard these casualties when working out drive backs.",
+        "",
+        "Units that take one or more casualties from a Warp Lightning Cannon must roll a D6 immediately and on a roll of 6 become confused. Units that are adjacent to a unit taking casualties from a Warp Lightning Cannon can also potentially become confused. Roll a D6 for each unit that is touching the target unit. On a roll of a 6 the unit becomes confused. Note that it is possible for Skaven units to become confused if they are touching the Warp Lightning Cannon when it goes wrong and inflicts casualties upon itself."
+      ],
+      "order": 5
+    },
+    "Doom Wheel": {
+      "text": [
+        "When the Doom Wheel charges against targets in the open it receives D6 bonus Attacks in addition to the normal +1 Attack for charging. Note that this bonus applies only when charging - not during pursuits, advances and not when the Doom Wheel is charged itself. Doomwheel has a move of 20cm and causes terror."
+      ],
+      "order": 6
+    },
+    "Grey Seer": {
+      "text": [
+        "The Grey Seer is the army's General and can use Skaven magic in the same manner as a Warlock."
+      ],
+      "order": 7
+    },
+    "Screaming Bell": {
+      "text": [
+        "A Screaming Bell is a gigantic device - it cannot move of its own accord - but relies upon the great mass of Skaven to push it forward. The Screaming Bell can therefore only move in the Command phase if it forms a brigade with one or more infantry units. It can then move 20cm at infantry pace. It cannot move using initiative and cannot be driven back by shooting and does not roll for drive backs. In combat it is automatically destroyed if forced to retreat but will pursue, advance and fall back so long as it is touching a Skaven infantry unit at the start and end of its move: otherwise it cannot pursue, advance or fall back as it is unable to move of its own accord. All Skaven units touching the Screaming Bell are unaffected by the usual penalty for Terror whilst they remain so. In addition, any Skaven Hero or Warlock within 30cm of the Screaming Bell adds +1 to their Command value. Any enemy character within 30cm of the Screaming Bell deducts -1 from their Command value. A Skaven army can only ever include a maximum of 1 Screaming Bell no matter how large."
+      ],
+      "order": 8
+    }
+  },
+  "spells": [
+    {
+      "roll": 2,
+      "text": [
+        "*Inhaling an especially large pinch of warpstone dust the Skaven vanishes in a cloud of green vapour to reappear anywhere on the battlefield.*",
+        "",
+        "The Wizard is moved to a new position anywhere on the table. He can leave or join a unit if he wishes, enabling a Wizard to move into or out of combat for example. Once the Wizard has moved he can cast a second spell, but note this must be a different spell and not a further Skitterleap! Roll to cast the second spell as normal. A Wizard that Skitterleaps successfully can therefore potentially cast two spells that turn."
+      ],
+      "name": "Skitterleap"
+    },
+    {
+      "roll": 5,
+      "range": "30cm",
+      "text": [
+        "*An arc of pure warp energy strikes the foe wreaking strange changes, melting flesh and twisting bone into monstrous forms.*",
+        "",
+        "This spell can be cast on an enemy unit. The Wizard must be able to see his target to use this spell. The spell cannot be directed at a unit engaged in combat.",
+        "",
+        "Warp Lightning is treated like three ordinary shooting attacks except that armour has no effect (all targets count as having no armour). A unit can be driven back by Warp Lightning as with ordinary shooting."
+      ],
+      "name": "Warp Lightning"
+    },
+    {
+      "roll": 5,
+      "range": "30cm",
+      "text": [
+        "*The Skaven screams a blasphemous litany to the Horned Rat driving the Skaven masses into a frenzy of warpdust fuelled destruction.*",
+        "",
+        "This spell can be cast upon a friendly unit that is engaged in combat and which is within range. The Wizard does not have to be able to see the target to cast the spell.",
+        "",
+        "The effect lasts for the duration of the following combat phase and the indicated bonus attacks are added to the unit's total attacks each round.",
+        "",
+        "The unit gains bonus Death Frenzy attacks for the following combat phase. To determine the number of bonus attacks roll one D6 at a time and add the results together. The player can roll as many D6 as he wishes up to a maximum of 1 per stand in the unit. The player always rolls one dice at a time and can decide to stop at any point. However - if the player rolls a second or subsequent dice and scores the same value as any previously rolled dice, then the total Death Frenzy attacks are directed against the targeted unit instead of its enemy. Death Frenzy attacks that rebound in this way are struck only once in the first round of combat: they are not struck each round.",
+        "",
+        "Example, 1 + 4 + 6 = 11 extra attacks for the Skaven unit each round. 1+4+1 = 6 Attacks upon the Skaven unit in the first round."
+      ],
+      "name": "Death Frenzy"
+    },
+    {
+      "roll": 6,
+      "range": "30cm",
+      "text": [
+        "*A swirling could of virulence envelopes the enemy troops causing their bodies to erupt in pustules, their skins to split apart with running sores, their joints to swell with buboes and their hair to crawl with lice and fleas.*",
+        "",
+        "This spell can be cast on any unengaged enemy unit within range regardless of whether the Wizard can see it or not. The spell cannot be cast on a unit engaged in combat.",
+        "",
+        "The unit suffers six attacks worked out in the usual way. A unit cannot be driven back by Plague (the vile Plague erupts from within!)."
+      ],
+      "name": "Plague"
+    }
+  ]
+}

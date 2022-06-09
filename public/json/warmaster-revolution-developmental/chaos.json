@@ -1,0 +1,266 @@
+{
+  "name": "Chaos",
+  "version": "Warmaster Revolution Developmental",
+  "group": 0,
+  "order": 2,
+  "units": {
+    "Chaos Warriors": {
+      "type": "Infantry",
+      "attack": 4,
+      "hits": 4,
+      "armour": "4+",
+      "size": 3,
+      "points": 140,
+      "min": 1,
+      "order": 0
+    },
+    "Chaos Marauders": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 60,
+      "min": 1,
+      "order": 1
+    },
+    "Ogres": {
+      "type": "Infantry",
+      "attack": 4,
+      "hits": 4,
+      "armour": "5+",
+      "size": 3,
+      "points": 105,
+      "max": 1,
+      "order": 2
+    },
+    "Trolls": {
+      "type": "Infantry",
+      "attack": 5,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 110,
+      "max": 3,
+      "order": 3
+    },
+    "Marauder Horsemen": {
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 90,
+      "max": 4,
+      "order": 4
+    },
+    "Chaos Knights": {
+      "type": "Cavalry",
+      "attack": 4,
+      "hits": 4,
+      "armour": "4+",
+      "size": 3,
+      "points": 200,
+      "max": 4,
+      "order": 5
+    },
+    "Chaos Hounds": {
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "points": 40,
+      "max": 2,
+      "order": 6
+    },
+    "Chaos Chariots": {
+      "type": "Chariot",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 95,
+      "max": 3,
+      "order": 7
+    },
+    "Harpies": {
+      "type": "Monster",
+      "attack": 2,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 65,
+      "max": 1,
+      "order": 8
+    },
+    "Dragon Ogres": {
+      "type": "Monster",
+      "attack": 6,
+      "hits": 4,
+      "armour": "5+",
+      "size": 3,
+      "points": 250,
+      "max": 1,
+      "order": 9
+    },
+    "Chaos Spawn": {
+      "type": "Monster",
+      "attack": "3/3",
+      "range": "15cm",
+      "hits": 4,
+      "armour": "3+",
+      "size": 1,
+      "points": 110,
+      "max": 2,
+      "order": 10
+    },
+    "General": {
+      "type": "General",
+      "attack": "+2",
+      "command": 9,
+      "size": 1,
+      "points": 125,
+      "armyMin": 1,
+      "armyMax": 1,
+      "upgrades": [
+        "Chaos Dragon"
+      ],
+      "order": 11
+    },
+    "Hero": {
+      "type": "Hero",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 80,
+      "max": 1,
+      "upgrades": [
+        "Chaos Dragon"
+      ],
+      "order": 12
+    },
+    "Sorcerer": {
+      "type": "Wizard",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 90,
+      "max": 1,
+      "upgrades": [
+        "Chaos Dragon"
+      ],
+      "order": 13
+    }
+  },
+  "upgrades": {
+    "Chaos Dragon": {
+      "type": "Monstrous Mount",
+      "attack": "+3",
+      "points": "+100",
+      "max": 1,
+      "order": 0
+    }
+  },
+  "magic": true,
+  "specialRules": {
+    "Ogres": {
+      "text": [
+        "If an Ogre unit can use its initiative to charge an enemy unit of humans at the start of the Command phase then it must do so. This happens automatically and their commander can do nothing about it. 'Humans' encompasses all 'men' including Chaos Warriors and Marauders, but not Dwarfs, Elves etc."
+      ],
+      "order": 1
+    },
+    "Trolls": {
+      "text": [
+        "When trying to issue an order to a unit of Trolls or to a brigade that contains a unit of Trolls, there is always a -1 Command penalty. Trolls can regenerate wounds - in each round of combat after whole stands have been removed Trolls automatically regenerate one outstanding hit. If no hits are left over after removing whole stands then regeneration has no effect. Regenerated hits still count towards the combat result for the round."
+      ],
+      "order": 2
+    },
+    "Harpies": {
+      "text": [
+        "Harpies are based facing the long edge of the base in the same way as infantry, rather than the short edge like other monsters. Harpies can fly. A unit of harpies cannot be joined by a character."
+      ],
+      "order": 3
+    },
+    "Dragon Ogres": {
+      "text": [
+        "Dragon Ogres are immune to terror."
+      ],
+      "order": 4
+    },
+    "Chaos Spawn": {
+      "text": [
+        "Spawn cannot be given orders in the Command phase unless they are part of a brigade that includes at least one unit other than Spawn. Spawn can act on their initiative as normal. Spawn can be included as a bonus to the size of the brigade up to a maximum of one Spawn per non-Spawn unit. For example, 4 Chaos Warriors plus 4 Spawn counts as a brigade of 4 units - the 4 Spawn do not count towards the size of the brigade. Where several Spawn are brigaded with fewer non-Spawn units, then only the additional Spawn count towards the size of the brigade. For example, 2 Chaos Warriors and 4 Spawn count as 4 units - 2 Spawn are included for 'free'.",
+        "",
+        "Spawn cause terror in combat - enemies suffer the -1 Combat modifier for fighting terrifying creatures.",
+        "",
+        "Spawn have a shooting range of 15cm and can shoot to the side or behind as well as to the front. Just measure the range from any stand edge, front, side or rear. They can therefore shoot at any enemy charging them from any direction."
+      ],
+      "order": 5
+    },
+    "Chaos Dragon": {
+      "text": [
+        "Generals, Wizards and Heroes can ride a Chaos Dragon. The Chaos Dragon can fly, increasing the rider's move from 60 to 100cm, and it adds +3 Attacks to those of its rider. In addition the Dragon has a special shooting attack. It can breathe fire. This special attack can only be used if the rider has joined a unit and is not engaged in combat. A rider that has not joined a unit cannot use the Dragon's fiery breath to attack.",
+        "",
+        "The Dragon's fire breath works as follows. The fire breath has a range of 20cm. It can be directed against one target as normal and has 3 Attacks worked out in the usual way.",
+        "",
+        "The Chaos Dragon is a large terrifying creature. A unit that has been joined by a Chaos Dragon causes terror in its enemies and therefore imposes the usual Combat penalty."
+      ],
+      "order": 6
+    }
+  },
+  "spells": [
+    {
+      "roll": 4,
+      "text": [
+        "*A dark power billows from the Sorcerer filling his troops with the destructive vigour of chaos.*",
+        "",
+        "This spell can be cast if the Sorcerer has joined a unit in combat. The spell affects the unit he has joined. The effect lasts for the duration of the following Combat phase.",
+        "",
+        "Every stand in the unit, including characters that have joined the unit, adds +1 to its Attacks value. As the Sorcerer must join the unit to cast the spell this includes the Sorcerer himself, but it is possible for other characters to join the unit as well, in which case the +1 is applied to whichever character fights."
+      ],
+      "name": "Boon of Chaos"
+    },
+    {
+      "roll": 4,
+      "range": "30cm",
+      "text": [
+        "*The anger of the chaos gods blots out the sun and sends clouds of rage scudding across the battlefield all around the Sorcerer.*",
+        "",
+        "The spell is cast upon the Sorcerer himself and affects all enemy units within 30cm of the stand.",
+        "",
+        "The spell lasts until the end of the opposing player's following turn.",
+        "",
+        "The spell affects the opposing army's ability to issue commands. All enemy units within 30cm of the Chaos Sorcerer suffer a -1 Command penalty. This penalty is applied when each order is issued: a unit might therefore be within 30cm of the Sorcerer for one order but not for a second, for example."
+      ],
+      "name": "Anger of the Gods"
+    },
+    {
+      "roll": 5,
+      "range": "30cm",
+      "text": [
+        "*The Sorcerer screams a blasphemous litany to his dark gods. From the black gore that drenches the battlefield leaps a roaring daemonic shadow that fights with great madness and ferocity.*",
+        "",
+        "This spell can be cast upon a friendly unit that is engaged in combat and which is within range. The Sorcerer does not have to be able to see the target to cast the spell.",
+        "",
+        "The affect lasts for the duration of the following combat phase and the indicated bonus attacks are added to the unit's total attacks each round.",
+        "",
+        "The unit gains bonus Rage of Chaos attacks for the following combat phase. To determine the number of bonus attacks roll one D6 at a time and add the results together. The player can roll as many D6 as he wishes up to a maximum of 1 per stand in the unit. The player always rolls one dice at a time and can decide to stop at any point. However - if the player rolls a second or subsequent dice and scores the same value as any previously rolled dice, then the total Rage of Chaos attacks are directed against the targeted unit instead of its enemy. Rage of Chaos attacks that rebound in this way are struck only once in the first round of combat: they are not struck each round.",
+        "",
+        "Example, 1 + 4 + 6 = 11 extra attacks for the Chaos unit each round. 1+4+1 = 6 Attacks upon the Chaos unit in the first round."
+      ],
+      "name": "Rage of Chaos"
+    },
+    {
+      "roll": 5,
+      "range": "30cm",
+      "text": [
+        "*An arc of pure energy strikes the foe, wreaking monstrous changes, melting flesh and twisting bones into monstrous form.*",
+        "",
+        "This spell can be cast on an enemy unit. The Sorcerer must be able to see his target to use this spell. The spell cannot be directed at a unit engaged in combat.",
+        "",
+        "The Curse of Chaos is treated like three ordinary shooting attacks except that armour has no effect (all targets count as having no armour). A unit can be driven back by a Curse of Chaos as with ordinary shooting."
+      ],
+      "name": "Curse of Chaos"
+    }
+  ]
+}

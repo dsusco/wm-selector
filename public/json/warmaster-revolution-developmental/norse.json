@@ -1,0 +1,256 @@
+{
+  "name": "Norse",
+  "version": "Warmaster Revolution Developmental",
+  "group": 2,
+  "order": 6,
+  "units": {
+    "Bondsmen": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 60,
+      "min": 2,
+      "order": 0
+    },
+    "Huscarls": {
+      "type": "Infantry",
+      "attack": 4,
+      "hits": 3,
+      "armour": "4+",
+      "size": 3,
+      "points": 100,
+      "min": 1,
+      "max": 4,
+      "order": 1
+    },
+    "Huntsmen": {
+      "type": "Infantry",
+      "attack": "3/1",
+      "range": "30cm",
+      "hits": 3,
+      "size": 3,
+      "points": 55,
+      "order": 2
+    },
+    "Berserkers": {
+      "type": "Infantry",
+      "attack": 5,
+      "hits": 3,
+      "size": 3,
+      "points": 70,
+      "max": 1,
+      "order": 3
+    },
+    "Ulfwerener": {
+      "type": "Infantry",
+      "attack": 4,
+      "hits": 4,
+      "armour": "6+",
+      "size": 3,
+      "points": 115,
+      "max": 1,
+      "noMagic": true,
+      "order": 4
+    },
+    "Cavalry": {
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 90,
+      "max": 4,
+      "order": 5
+    },
+    "Storm Giant": {
+      "type": "Monster",
+      "attack": 8,
+      "hits": 8,
+      "armour": "5+",
+      "size": 1,
+      "points": 150,
+      "max": 1,
+      "order": 6,
+      "specialRules": [
+        "Giant"
+      ]
+    },
+    "War Mammoth": {
+      "type": "Monster",
+      "attack": 8,
+      "hits": 10,
+      "armour": "5+",
+      "size": 1,
+      "points": 200,
+      "max": 1,
+      "order": 7
+    },
+    "Valkyries": {
+      "type": "Monster",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 120,
+      "noCount": true,
+      "requiredUnits": [
+        "Shaman"
+      ],
+      "order": 8,
+      "armyMax": 1
+    },
+    "Jarl": {
+      "type": "General",
+      "attack": "+2",
+      "command": 9,
+      "size": 1,
+      "points": 125,
+      "armyMin": 1,
+      "armyMax": 1,
+      "upgrades": [
+        "Were Kin"
+      ],
+      "order": 9
+    },
+    "Hero": {
+      "type": "Hero",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 80,
+      "max": 1,
+      "upgrades": [
+        "Were Kin"
+      ],
+      "order": 10
+    },
+    "Shaman": {
+      "type": "Wizard",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 90,
+      "max": 1,
+      "upgrades": [
+        "Were Kin",
+        "Horn of Resounding"
+      ],
+      "order": 11
+    }
+  },
+  "upgrades": {
+    "Were Kin": {
+      "type": "Special",
+      "attack": "+1",
+      "points": "+40",
+      "max": 1,
+      "order": 0
+    },
+    "Horn of Resounding": {
+      "type": "Chariot Mount",
+      "attack": "+1",
+      "points": "+15",
+      "order": 1,
+      "armyMax": 1
+    }
+  },
+  "magic": true,
+  "specialRules": {
+    "Berserkers": {
+      "text": [
+        "The Norsemen are famously fond of their ale, so much so that they’ve been known to wage war to obtain a decent stock for the winter. However, some Norsemen whenever they have more than the slightest drop of Mead go into a berserk frenzy, where they feel no pain and fear nothing. A bit annoying in the Mead Hall, but very useful on the battlefield.",
+        "",
+        "Such is the eagerness to get into combat that a unit of Berserkers will always use its initiative to charge an enemy if possible and can’t be given orders instead. They’ll never use their initiative to evade. They can’t be driven back by shooting and do not roll for drive backs. If victorious in combat, they must pursue or advance where possible. Berserkers are unaffected by enemies that cause terror in combat, so they do not suffer the usual -1 Attack modifier."
+      ],
+      "order": 1
+    },
+    "Ulfwerener": {
+      "text": [
+        "Unlike usual infantry troops, the Ulfwerener are based facing the short edge in the same way as cavalry. In addition they receive an additional +1 Attack modifier when they charge an enemy in the open in the same way as monsters and chariots and have an ability to pursue cavalry and chariots troop types. The Ulfwerener stands can never support or being supported at all. Because of their rather bestial nature, only characters with the Were Kin Character upgrade may join units of Ulfwerener and they cannot be brigaded with any units apart from other Ulfwerener. Ulfwerener units can not take any magic items."
+      ],
+      "order": 2
+    },
+    "Giant": {
+      "order": 3
+    },
+    "War Mammoth": {
+      "text": [
+        "The Norse War Mammoth is a huge creature used by the Norsemen on the battlefield, especially against fortified opponents where its ability to swipe troops off the ramparts with its trunk is most useful.",
+        "",
+        "The Mammoth is a truly huge monster, so is based on a 6x4cm base, with the shorter edge being its front. It causes terror and may attack troops on ramparts with its trunk in the same manner as a Giant. Alternatively, it may elect to batter a wall section or gateway with its tusks in the same manner as a battering ram.",
+        "",
+        "One last option available in a siege is that if a Norse War Mammoth is in base contact with a wall section, then one Norse infantry unit may assault that wall section via the Mammoth. Climbing up ladders and ropes at the rear of the Mammoth and using boarding ramps and the like to assault the fortress walls. This is not quite as effective as assaulting from a siege tower, so the enemy being assaulted only counts as defended rather than in the open, but is much better than counting it as fortified. If a unit assaults in this manner, then the War Mammoth may not attack with its trunk or batter the walls; as such action would result in attacking your own troops or bringing a wall section down from under them, not a good idea, even for the Norse troops.",
+        "",
+        "When reduced to four or less hits at the end of Combat or Shooting phase but not destroyed and no longer engaged in combat, thereafter halve the War Mammoth’s Attacks and Hits characteristics (to 4 Attacks and 5 Hits)."
+      ],
+      "order": 4
+    },
+    "Valkyries": {
+      "text": [
+        "There can ever be only one Valkyrie unit in a Norse army. Valkyries cannot be deployed as normal. They have to enter the battlefield during the game as an ambush. To deploy Valkyries during the game the Norse player nominates the point where he wants the Valkyries to appear and issues a \"deployment\" order by a shaman character with the Horn of Resounding. The shaman does not have to be within his normal command range to issue a deployment order - the shaman's command range is considered to extend over the entire tabletop when issuing a deployment order.",
+        "",
+        "Treat the order as issued to the nominated point, and apply any modifiers for distance and proximity of the enemy. The nominated point must lie on any base edge other than the enemy player's own table edge. If successful, place one stand on the nominated spot and arrange the rest of the unit into formation around it. The unit cannot be placed so that it touches an enemy unit. Once deployed, orders can be given to the unit by the same character that gave the first order if he is within his normal command range, the Valkyrie unit is considered to have used its first order to deploy. If the deployment order is failed the unit is not deployed that turn. It can attempt to deploy in a subsequent turn at the same or a different place. Should the Shaman carrying the Horn of Resounding die, they can home back to and be commanded by the General but with a -2 command penalty. Valkyries can fly."
+      ],
+      "order": 5
+    },
+    "Were Kin": {
+      "text": [
+        "The Were Kin special mount option may be taken by any character in Norse army. It is not actually a mount as such, more an upgrade. A unit that is joined by the character with the Were Kin upgrade causes terror in its enemies. No terrain restriction apply for Were Kin - just treat the character as having +1 extra Attack and causing terror."
+      ],
+      "order": 6
+    },
+    "Horn of Resounding": {
+      "text": [
+        "A single shaman in the army may be given this chariot upgrade. It gives the saman +1 Attack and allowes him to summon and command Valkyrie unit."
+      ],
+      "order": 7
+    }
+  },
+  "spells": [
+    {
+      "roll": 4,
+      "range": "30cm",
+      "text": [
+        "*The Shaman turns the friendly unit into an illusive pack of monstrous creatures entailing the fear in a hearts of enemies.*",
+        "",
+        "This spell can only be cast on any friendly unit within range regardless of whether the Shaman can see it or not. The unit counts as causing terror for the duration of the Combat phase."
+      ],
+      "name": "Aspect of Wulfen"
+    },
+    {
+      "roll": 5,
+      "range": "30cm",
+      "text": [
+        "A lightning shoots from the Shaman’s outstretched arm burning all in its path.",
+        "",
+        "Draw an imaginary line 30cm long from the Shaman’s stand in any direction you wish. The line will pass through any intervening units but not beyond terrain that would normally stop a missile shot, e.g. over the crest of a hill, more than 2cm of woodland, and so forth.",
+        "",
+        "Each unit under the line takes three shooting attacks worked out in the usual way. Note that this spell can easily affect several units and will affect all units that fall beneath the line (including your own). Unengaged units can be driven back by a Thunder of Fo’Wor as with ordinary shooting (even including friends). Engaged units cannot be driven back by the Thunder of Fo’Wor but carry over any hits scored into the first round of combat; any hits scored count as having been struck in the combat itself."
+      ],
+      "name": "Thunder of Fo'Wor"
+    },
+    {
+      "roll": 5,
+      "text": [
+        "*The Shaman sacrifices a sacred Raven over a mystical flame. Ingesting the ash that is quickly formed, giving him visions of the near future.*",
+        "",
+        "The Norse player may re-roll a single D6 at any time during the rest of his turn, through his opponents turn or in his following turn up to the end of his next Command phase when the effect of the spell ends if the re-roll has not already been used. The result of the re-roll cannot be changed in any way or re-rolled again, for example with an Orb of Majesty, Banner of Fortune or through other means. Likewise the re-roll from this spell cannot be used to re-roll any dice that another re-roll has already been used on. Nor can the re- roll be used in the case of a blunder of a command roll, not even mystical foresight can help avert such mishaps, but it can mitigate the effects, so can be used to re-roll the dice roll on the blunder chart. For example if the Norse player rolled for a command needing a roll of a seven and rolled a five and a three, he could re-roll the dice that came up as a five, hopefully rolling a four or less making it a successful command.",
+        "",
+        "Only one Eye of the Raven spell may be in effect per turn."
+      ],
+      "name": "Eye of the Raven"
+    },
+    {
+      "roll": 5,
+      "range": "30cm",
+      "text": [
+        "*The Shaman makes a weird enchantment calling the gods to curse the enemy with bad luck and failure.*",
+        "",
+        "All enemy characters within 30cm of the spell caster that roll a double have those orders count as blunders. This works on all results, from a double one, to a double five. As a result all doubles rolled not only blunder, but as with all normal blunders, it counts as a failed order. The only exception is the enemy general, as he cannot blunder. The spell lasts until the end of enemy Command phase."
+      ],
+      "name": "Spite of Low'Key"
+    }
+  ]
+}

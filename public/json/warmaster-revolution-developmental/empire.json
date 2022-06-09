@@ -1,0 +1,318 @@
+{
+  "name": "Empire",
+  "version": "Warmaster Revolution Developmental",
+  "group": 0,
+  "order": 0,
+  "units": {
+    "Halberdiers": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 45,
+      "min": 2,
+      "order": 0
+    },
+    "Handgunners": {
+      "type": "Infantry",
+      "attack": "3/1",
+      "range": "30cm",
+      "hits": 3,
+      "size": 3,
+      "points": 65,
+      "max": 3,
+      "order": 1
+    },
+    "Crossbowmen": {
+      "type": "Infantry",
+      "attack": "3/1",
+      "range": "30cm",
+      "hits": 3,
+      "size": 3,
+      "points": 55,
+      "min": 2,
+      "upgrades": [
+        "Handgunners"
+      ],
+      "order": 2
+    },
+    "Flagellants": {
+      "type": "Infantry",
+      "attack": 5,
+      "hits": 3,
+      "size": 3,
+      "points": 70,
+      "max": 1,
+      "order": 3
+    },
+    "Skirmishers": {
+      "type": "Infantry",
+      "attack": 4,
+      "hits": 3,
+      "armour": "-/6+",
+      "size": "+1",
+      "points": 25,
+      "noCount": true,
+      "augendUnits": [
+        "Halberdiers",
+        "Handgunners",
+        "Crossbowmen",
+        "Flagellants"
+      ],
+      "noMagic": true,
+      "order": 4
+    },
+    "Knights": {
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "4+",
+      "size": 3,
+      "points": 110,
+      "order": 5
+    },
+    "Pistoliers": {
+      "type": "Cavalry",
+      "attack": "3/1",
+      "range": "15cm",
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 95,
+      "max": 4,
+      "order": 6
+    },
+    "Helblaster": {
+      "type": "Artillery",
+      "attack": "1/8-4-2",
+      "range": "30cm",
+      "hits": 2,
+      "size": 1,
+      "points": 50,
+      "max": 1,
+      "order": 7
+    },
+    "Cannon": {
+      "type": "Artillery",
+      "attack": "1/2+bounce",
+      "range": "60cm",
+      "hits": 2,
+      "size": 2,
+      "points": 85,
+      "max": 1,
+      "order": 8
+    },
+    "Steam Tank": {
+      "type": "Machine",
+      "attack": "3/3",
+      "range": "30cm",
+      "hits": 4,
+      "armour": "3+",
+      "size": 1,
+      "points": 130,
+      "max": 1,
+      "order": 9
+    },
+    "General": {
+      "type": "General",
+      "attack": "+2",
+      "command": 9,
+      "size": 1,
+      "points": 125,
+      "armyMin": 1,
+      "armyMax": 1,
+      "upgrades": [
+        "Griffon"
+      ],
+      "order": 10
+    },
+    "Hero": {
+      "type": "Hero",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 80,
+      "max": 2,
+      "upgrades": [
+        "Griffon"
+      ],
+      "order": 11
+    },
+    "Wizard": {
+      "type": "Wizard",
+      "attack": "+0",
+      "command": 7,
+      "size": 1,
+      "points": 45,
+      "max": 1,
+      "upgrades": [
+        "Griffon",
+        "War Altar"
+      ],
+      "order": 12
+    }
+  },
+  "upgrades": {
+    "Griffon": {
+      "type": "Monstrous Mount",
+      "attack": "+2",
+      "points": "+80",
+      "max": 1,
+      "order": 0
+    },
+    "War Altar": {
+      "type": "Chariot Mount",
+      "attack": "+1",
+      "points": "+15",
+      "armyMax": 1,
+      "order": 1
+    },
+    "Handgunners": {
+      "type": "Special",
+      "attack": "3/1",
+      "range": "30cm",
+      "hits": 3,
+      "size": 3,
+      "points": "+10",
+      "max": 1,
+      "order": 2
+    }
+  },
+  "magic": true,
+  "specialRules": {
+    "Handgunners": {
+      "text": [
+        "Count enemy Armour values as one worse than normal when shot by a handgun. So an armour value of 3+ counts as 4+, 4+ as 5+, and 5+ as 6+, whilst an Armour value of 6+ can't save against a handgun. One unit of Crossbowmen per full 1000 points can be replaced by Handgunners (including the 10pts extra in price) while still counting for the Crossbowmen min/max value. Note that this unit also counts for min/max value of Handgunners."
+      ],
+      "order": 1
+    },
+    "Flagellants": {
+      "text": [
+        "So keen are they to meet their maker that a unit of Flagellants will always use its initiative to charge an enemy if possible and can't be given orders instead. They'll never use their initiative to evade. They can't be driven back by shooting and do not roll for drive backs. If victorious in combat they must pursue or advance where possible. Flagellants are unaffected by enemies that cause terror in combat, so they do not suffer the usual -1 Attack modifier."
+      ],
+      "order": 2
+    },
+    "Skirmishers": {
+      "text": [
+        "Skirmisher stands never fight as independent units. Instead, you may add one stand of Skirmishers to any of your infantry units apart from Flagellants. This brings the size of the unit to 4 stands -i.e. 3 ordinary stands plus the skirmishers. Skirmishers always have the same Armour value as the rest of their unit, either 6+ or 0. They fight as part of their unit and can be removed as a unit casualty if the player wishes. Skirmisher casualties never count as casualties for purposes of issuing orders, which means there is no -1 Command penalty as there normally would be for units that have lost a stand. Skirmisher stands never count as part of the unit's formation when determining whether they move at full or half pace, so no movement penalty is incurred if they are arranged out of the unit's regular formation. As a result skirmishers are both more adaptable and more expendable than other troops."
+      ],
+      "order": 3
+    },
+    "Pistoliers": {
+      "text": [
+        "Pistoliers have a shooting range of only 15cm however they can shoot all round - i.e. behind or to the side as well as to their front. Just measure the range from any stand edge either front, side or rear. Pistoliers can shoot at enemy charging them from any direction."
+      ],
+      "order": 4
+    },
+    "Helblaster": {
+      "text": [
+        "The Helblaster is a primitive type of crankdriven and unreliable machine gun. It has maximum range of 30cm. Its attacks value varies according to range: the closer the range the more deadly it becomes.",
+        "",
+        "|||||",
+        "-|-|-|-",
+        "__Range__|1–10|10–20cm|20–30cm",
+        "__Attacks__|8|4|2",
+        "",
+        "Targets struck by a Helblaster count their Armour value as one worse than normal - so 3+ counts as 4+, 4+ as 5+, whilst 6+ is ignored. When shooting with a Helblaster roll to hit as normal but if any 1s are rolled count them up and resolve the effect before counting.",
+        "",
+        "__No of 1s__|__Result__",
+        "-|-",
+        "__1, 2__|__Fizzle.__ Despite scary noises the weapon is still functional. Work out the attacks as usual.",
+        "__3__|__Misfire.__ The gun fails to go off - no shots at all hit this turn. Disregard all hits this turn.",
+        "__4+__|__Ka-boom!__ The weapon explodes destroying itself and mortally surprising its crew. The Helblaster stand is removed as a casualty. No hits are struck against the enemy unless the exploding Helblaster is shooting at a charging foe, in which case 6 hits are automatically inflicted. Make armour saves as for ordinary Helblaster hits.",
+        "",
+        "A Helblaster can shoot at charging enemies in the usual manner (see Shooting). In this case the crew will fire at the shortest possible range to maximise the number of shots against the target. Note: in the event of the Helblaster exploding 6 hits are inflicted on the charging enemy unit as described above - Helblasters are extremely dangerous to charge… for everyone concerned."
+      ],
+      "order": 5
+    },
+    "Steam Tank": {
+      "text": [
+        "The Steam Tank forms a unit on its own, it moves up to 20cm, and must be given its own orders. The Steam Tank cannot be given a brigade order with other units, not even with other Steams Tanks. A character cannot join with a Steam Tank. A Steam Tank can shoot from any edge of a stand: side or rear as well as the front like other units. Steam Tanks weapons have a range of 30cm. A Steam Tank therefore shoots to its front, side or rear against the closest enemy target.",
+        "",
+        "Targets suffering hits from a Steam Tank count their Armour value as one worse than normal - so 3+ counts as 4+, 4+ as 5+, whilst 6+ is ignored. A Steam Tank can shoot at charging enemy.",
+        "",
+        "Because of its exceptionally heavy armour plating, a Steam Tank always counts as defended - so a 5 or 6 is normally required to inflict a hit from shooting or in combat. The Steam Tank fights combat like any other unit. Steam Tanks cannot be driven back or routed by shooting. Steam Tanks cannot be driven back or routed by shooting.",
+        "",
+        "If the player attempts to issue an order to a Steam Tank and rolls double six then the order is failed as usual and the machine does not move. Ignore the usual Blunder chart for heroes and wizards. Roll on the following Malfunction chart. Note that although a General cannot blunder he must still roll for malfunctions.",
+        "",
+        "__Steam Tank Malfunction Chart__",
+        "",
+        "|||",
+        "-|-",
+        "__D6__|__Result__",
+        "__1.__|__Destroyed.__ The Steam Tank grinds to a halt rupturing steam and noxious gasses. Remove the Steam Tank as a casualty.",
+        "__2.__|__Broken Down.__ The Steam Tank's drive has broken. It does not move further this turn and cannot move in future turns. Should it be obliged to move for any reason it is destroyed. Otherwise, the Steam Tank can continue to shoot and fight as normal.",
+        "__3.__|__Stuck.__ The Steam tank does not move further this turn. It cannot shoot this turn. Otherwise it is unaffected and can move in future turns as normal.",
+        "__4.__|__Commander Slain.__ The Steam Tank does not move further this turn. It can move in future turns but suffers a command penalty of -1 for the remainder of the game. The Steam Tank can shoot as normal.",
+        "__5.__|__Momentary Halt.__ The Steam Tank cannot move further this turn but is otherwise unaffected.",
+        "__6.__|__Steam Overload.__ The Steam Tank cannot move further this turn but can shoot with double the usual number of Attacks (6) to represent steam being uncontrollably diverted into weaponry."
+      ],
+      "order": 6
+    },
+    "Griffon": {
+      "text": [
+        "Generals, Wizards and Heroes can ride Griffons. The Griffon can fly increasing its rider's Movement from 60cm to 100cm. It adds +2 Attacks to those of its rider. A unit that includes a Griffon rider causes terror in its enemies (and one might imagine a great deal of nervousness amongst its own ranks)."
+      ],
+      "order": 7
+    },
+    "War Altar": {
+      "text": [
+        "There is only one War Altar of Sigmar. Consequently an army, no matter how large, can only ever include one. A War Altar can only be included as a mount for a Wizard, in which case he is assumed to be the Grand Theogonist. The presence of the War Altar adds +1 Attack and enables the Grand Theogonist to add +1 to the dice when casting a spell once during the battle. The player must announce that he is using the power of the War Altar before rolling the dice for the spell."
+      ],
+      "order": 8
+    },
+    "Cannon": {
+      "order": 9
+    }
+  },
+  "spells": [
+    {
+      "roll": 5,
+      "range": "30cm",
+      "text": [
+        "*A ball of flame shoots from the Wizard's outstretched arm burning all in its path*",
+        "",
+        "Draw an imaginary line 30cm long from the Wizard's stand in any direction you wish. The line will pass through any intervening units but not beyond terrain that would normally stop a missile shot, e.g. over the crest of a hill, more than 2cm of woodland, and so forth.",
+        "",
+        "Each unit under the line takes three shooting attacks worked out in the usual way. Note that this spell can easily affect several units and will affect all units that fall beneath the line (including your own). Unengaged units can be driven back by a Ball of Flame as with ordinary shooting (even including friends). Engaged units cannot be driven back by the Ball of Flame but carry over any hits scored into the first round of combat; any hits scored count as having been struck in the combat itself."
+      ],
+      "name": "Ball of Flame"
+    },
+    {
+      "roll": 5,
+      "range": "30cm",
+      "text": [
+        "*The Wizard's voice booms out across the battlefield directing troops above the tumult of combat with the magical Voice of Command.*",
+        "",
+        "The spell can be cast on any unengaged friendly unit within range regardless of whether the Wizard can see it or not. The spell affects only a single unit, never a brigade and there is no supporting charge possible.",
+        "",
+        "The unit can be moved just as if it had received an order in the Command phase. Character stands that have joined the unit will not move with it: they remain where they are."
+      ],
+      "name": "Voice of Command"
+    },
+    {
+      "roll": 4,
+      "range": "30cm",
+      "text": [
+        "*A weird enchantment forms around the target unit and engulfs it in strange lights, scary nightmares and disorientating special effects.*",
+        "",
+        "This spell can be cast on any enemy unit within range regardless of whether the Wizard can see it or not.",
+        "",
+        "The spell lasts until the end of the opposing player's following turn.",
+        "",
+        "The unit moves at half pace in all situations: even when charging for example. The unit counts all enemies as terrifying (-1 Attack penalty) even when it is otherwise immune to terror. If the unit would normally cause terror then it ceases to do so and counts all enemies as terrifying just like everyone else. However, if the target is Undead or Daemon it will not count enemies as terrifying although all other penalties apply as described (Undead and Daemons are hard to spook)."
+      ],
+      "name": "Weird Enchantment"
+    },
+    {
+      "roll": 2,
+      "text": [
+        "*With a swirl of his cloak, a crack of thunder and just a hint of maniacal laughter the Wizard vanishes to reappear anywhere on the battlefield.*",
+        "",
+        "The Wizard is moved to a new position anywhere on the table. He can leave or join a unit if he wishes, enabling a Wizard to move into or out of combat for example. Once the Wizard has moved he can cast a second spell, but note this must be a different spell and not a further Teleport! Roll to cast the second spell as normal. A Wizard that Teleports successfully can therefore potentially cast two spells that turn."
+      ],
+      "name": "Teleport"
+    }
+  ]
+}

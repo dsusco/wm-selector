@@ -1,0 +1,289 @@
+{
+  "name": "Orcs",
+  "version": "Warmaster Revolution Developmental",
+  "group": 0,
+  "order": 3,
+  "units": {
+    "Orc Warriors": {
+      "type": "Infantry",
+      "attack": 4,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 60,
+      "min": 2,
+      "order": 0
+    },
+    "Black Orcs": {
+      "type": "Infantry",
+      "attack": 4,
+      "hits": 4,
+      "armour": "5+",
+      "size": 3,
+      "points": 110,
+      "max": 1,
+      "order": 1
+    },
+    "Goblins": {
+      "type": "Infantry",
+      "attack": "2/1",
+      "range": "15cm",
+      "hits": 3,
+      "size": 3,
+      "points": 30,
+      "min": 2,
+      "order": 2
+    },
+    "Trolls": {
+      "type": "Infantry",
+      "attack": 5,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 110,
+      "max": 3,
+      "order": 3
+    },
+    "Ogres": {
+      "type": "Infantry",
+      "attack": 4,
+      "hits": 4,
+      "armour": "5+",
+      "size": 3,
+      "points": 105,
+      "max": 1,
+      "order": 4
+    },
+    "Boar Riders": {
+      "type": "Cavalry",
+      "attack": 4,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 110,
+      "order": 5
+    },
+    "Wolf Riders": {
+      "type": "Cavalry",
+      "attack": "2/1",
+      "range": "15cm",
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 60,
+      "order": 6
+    },
+    "Wolf Chariots": {
+      "type": "Chariot",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 80,
+      "max": 3,
+      "order": 7
+    },
+    "Giant": {
+      "type": "Monster",
+      "attack": 8,
+      "hits": 8,
+      "armour": "5+",
+      "size": 1,
+      "points": 150,
+      "max": 1,
+      "order": 8
+    },
+    "Rock Lobber": {
+      "type": "Artillery",
+      "attack": "1/3",
+      "range": "60cm",
+      "hits": 3,
+      "size": 1,
+      "points": 75,
+      "max": 1,
+      "specialRules": [
+        "Stone Thrower"
+      ],
+      "order": 9
+    },
+    "Orc General": {
+      "type": "General",
+      "attack": "+2",
+      "command": 8,
+      "size": 1,
+      "points": 95,
+      "armyMin": 1,
+      "armyMax": 1,
+      "upgrades": [
+        "Wyvern",
+        "Chariot"
+      ],
+      "order": 10
+    },
+    "Orc Hero": {
+      "type": "Hero",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 80,
+      "max": 2,
+      "upgrades": [
+        "Wyvern",
+        "Chariot"
+      ],
+      "order": 11
+    },
+    "Orc Shaman": {
+      "type": "Wizard",
+      "attack": "+0",
+      "command": 7,
+      "size": 1,
+      "points": 45,
+      "max": 1,
+      "upgrades": [
+        "Wyvern",
+        "Chariot"
+      ],
+      "order": 12
+    },
+    "Goblin Hero": {
+      "type": "Hero",
+      "attack": "+1",
+      "command": 7,
+      "size": 1,
+      "points": 45,
+      "max": 2,
+      "upgrades": [
+        "Wyvern",
+        "Chariot"
+      ],
+      "order": 13
+    },
+    "Goblin Shaman": {
+      "type": "Wizard",
+      "attack": "+0",
+      "command": 6,
+      "size": 1,
+      "points": 30,
+      "max": 1,
+      "upgrades": [
+        "Wyvern",
+        "Chariot"
+      ],
+      "order": 14
+    }
+  },
+  "upgrades": {
+    "Wyvern": {
+      "type": "Monstrous Mount",
+      "attack": "+2",
+      "points": "+80",
+      "max": 1,
+      "order": 0
+    },
+    "Chariot": {
+      "type": "Chariot Mount",
+      "attack": "+1",
+      "points": "+10",
+      "max": 1,
+      "order": 1
+    }
+  },
+  "magic": true,
+  "specialRules": {
+    "Goblins": {
+      "text": [
+        "A Goblin unit is allowed to shoot as if it had bows but its range is reduced to 15cm."
+      ],
+      "order": 1
+    },
+    "Trolls": {
+      "text": [
+        "When trying to issue an order to a unit of Trolls or to a brigade that contains a unit of Trolls, there is always a -1 Command penalty. Trolls can regenerate wounds - in each round of combat after whole stands have been removed Trolls automatically regenerate one outstanding hit. If no hits are left over after removing whole stands then regeneration has no effect. Regenerated hits still count towards the combat result for the round."
+      ],
+      "order": 2
+    },
+    "Ogres": {
+      "text": [
+        "If an Ogre unit can use its initiative to charge an enemy unit of humans at the start of the Command phase then it must do so. This happens automatically and their commander can do nothing about it. 'Humans' encompasses all 'men' including Chaos Warriors and Marauders, but not Dwarfs, Elves etc."
+      ],
+      "order": 3
+    },
+    "Wolf Riders": {
+      "text": [
+        "The Wolf Rider's range is restricted to 15cm. Wolf Riders can shoot behind or to the side as well as to the front. Just measure the range from any stand edge, front, side or rear. They can therefore shoot at enemy charging them from any direction."
+      ],
+      "order": 4
+    },
+    "Giant": {
+      "order": 5
+    },
+    "Stone Thrower": {
+      "order": 6
+    },
+    "Wyvern": {
+      "text": [
+        "Generals, Wizards and Heroes can ride Wyverns. A Wyvern can fly, increasing its riders' move from 60 to 100cm, and it adds +2 Attacks to those of its rider. A unit that includes a Wyvern rider causes terror in its enemies."
+      ],
+      "order": 7
+    },
+    "Chariot": {
+      "text": [
+        "A General, Wizard or Hero can ride a Chariot. A character in a chariot adds +1 to his Attacks."
+      ],
+      "order": 8
+    }
+  },
+  "spells": [
+    {
+      "roll": 6,
+      "range": "50cm",
+      "text": [
+        "*A gigantic spectral green foot descends from the heavens with a mighty thunk, crushing the enemy to pulp and grinding their bones into the dirt.*",
+        "",
+        "This spell can be cast on any unengaged enemy unit within range regardless of whether the Shaman can see it or not. The spell cannot be cast on a unit engaged in combat.",
+        "",
+        "The unit suffers six attacks worked out in the usual way. A unit cannot be driven back by the Foot of Gork (Gork's foot descends from above!)."
+      ],
+      "name": "Foot of Gork"
+    },
+    {
+      "roll": 5,
+      "range": "30cm",
+      "text": [
+        "*With a mighty heave a huge green fist erupts from the Shaman's gaping mouth and strikes all within its path.*",
+        "",
+        "Draw an imaginary line 30cm long from the Shaman's stand in any direction you wish. The line will pass through any intervening units but not beyond terrain that would normally stop a missile shot, eg over the crest of a hill, more than 2cm of woodland, and so forth.",
+        "",
+        "Each unit under the line takes three shooting attacks worked out in the usual way. Note that this spell can easily affect several units and will affect all units that fall beneath the line (including your own). Unengaged units can be driven back by a Gotcha as with ordinary shooting (even including friends). Engaged units cannot be driven back by the Gotcha but carry over any hits scored into the first round of combat; any hits scored count as having been struck in the combat itself."
+      ],
+      "name": "Gotcha!"
+    },
+    {
+      "roll": 5,
+      "range": "60cm",
+      "text": [
+        "*The voice of Gork booms out across the battlefield driving back his foes with a rancid gale force yell.*",
+        "",
+        "This spell can be cast on any unengaged enemy unit within range regardless of whether the Shaman can see it or not. The spell cannot be cast on a unit engaged in combat.",
+        "",
+        "The enemy unit is driven back 5 x D6cm towards its own table edge. This is treated in the same way as a drive back from shooting, except that the direction is established by determining the shortest route to the table edge. A unit cannot be routed by a drive back from a Gerroff spell. If the unit leaves the table edge it must roll as described in the main Warmaster rules (See Movement p19-23)."
+      ],
+      "name": "Gerroff!!!"
+    },
+    {
+      "roll": 4,
+      "range": "30cm",
+      "text": [
+        "*The shaman summons the power of the mighty Waaagh! to invigorate the greenskins.*",
+        "",
+        "This spell can be cast on a friendly unit of Orc or Goblins engaged in combat; including Black Orcs, Wolf Riders, Boar Boyz and any type of Orc or Goblin troops but not Trolls, Ogres, Giants or other non-greenskins. The spell can be cast regardless of whether the Shaman can see the target or not.",
+        "",
+        "The spell lasts for the duration of the following Combat phase.",
+        "",
+        "Every stand in the unit, including characters that have joined the unit, adds +1 to its Attacks value."
+      ],
+      "name": "Waaagh!"
+    }
+  ]
+}

@@ -1,0 +1,279 @@
+{
+  "name": "Dark Elves",
+  "version": "Warmaster Revolution Developmental",
+  "group": 1,
+  "order": 2,
+  "units": {
+    "Spearmen": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 60,
+      "min": 2,
+      "order": 0
+    },
+    "Crossbowmen": {
+      "type": "Infantry",
+      "attack": "3/2-1",
+      "range": "30cm",
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 75,
+      "min": 1,
+      "specialRules": [
+        "Crossbowmen and Dark Riders"
+      ],
+      "order": 1
+    },
+    "Witch Elves": {
+      "type": "Infantry",
+      "attack": 5,
+      "hits": 3,
+      "size": 3,
+      "points": 70,
+      "max": 2,
+      "order": 2
+    },
+    "Dark Riders": {
+      "type": "Cavalry",
+      "attack": "3/2-1",
+      "range": "30cm",
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 95,
+      "max": 3,
+      "specialRules": [
+        "Crossbowmen and Dark Riders"
+      ],
+      "order": 3
+    },
+    "Cold One Knights": {
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "4+",
+      "size": 3,
+      "points": 130,
+      "max": 3,
+      "specialRules": [
+        "Cold Ones Knights"
+      ],
+      "order": 4
+    },
+    "Harpies": {
+      "type": "Monster",
+      "attack": 2,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 65,
+      "max": 1,
+      "order": 5
+    },
+    "War Hydra": {
+      "type": "Monster",
+      "attack": "6/2",
+      "range": "20cm",
+      "hits": 4,
+      "armour": "4+",
+      "size": 1,
+      "points": 135,
+      "max": 1,
+      "order": 6
+    },
+    "Bolt Thrower": {
+      "type": "Artillery",
+      "attack": "1/3",
+      "range": "40cm",
+      "hits": 2,
+      "size": 2,
+      "points": 55,
+      "max": 1,
+      "order": 7,
+      "specialRules": [
+        "Elven Bolt Thrower"
+      ]
+    },
+    "General": {
+      "type": "General",
+      "attack": "+2",
+      "command": 10,
+      "size": 1,
+      "points": 155,
+      "armyMin": 1,
+      "armyMax": 1,
+      "upgrades": [
+        "Manticore",
+        "Chariot"
+      ],
+      "order": 8
+    },
+    "Hero": {
+      "type": "Hero",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 80,
+      "max": 1,
+      "upgrades": [
+        "Manticore",
+        "Chariot"
+      ],
+      "order": 9
+    },
+    "Sorceress": {
+      "type": "Wizard",
+      "attack": "+0",
+      "command": 8,
+      "size": 1,
+      "points": 80,
+      "max": 1,
+      "upgrades": [
+        "Manticore",
+        "Chariot",
+        "Cauldron of Blood"
+      ],
+      "order": 10
+    }
+  },
+  "upgrades": {
+    "Manticore": {
+      "type": "Monstrous Mount",
+      "attack": "+2",
+      "points": "+80",
+      "max": 1,
+      "order": 0
+    },
+    "Chariot": {
+      "type": "Chariot Mount",
+      "attack": "+1",
+      "points": "+10",
+      "max": 1,
+      "order": 1
+    },
+    "Cauldron of Blood": {
+      "type": "Special Mount",
+      "attack": "+2",
+      "points": "+15",
+      "armyMax": 1,
+      "requiredUnits": [
+        "Witch Elves"
+      ],
+      "order": 2
+    }
+  },
+  "magic": true,
+  "specialRules": {
+    "Crossbowmen and Dark Riders": {
+      "order": 1,
+      "text": [
+        "These units are equipped with the repeating crossbow. These units shoot once at ranges up to 30cm and twice at ranges up to 15cm. A unit of three stands would therefore shoot 6 Attacks at a target within 15cm and 3 Attacks at a target at greater ranges. Units may shoot at enemies that charge them - in which case they shoot 1 Attack per stand regardless of range."
+      ]
+    },
+    "Witch Elves": {
+      "text": [
+        "A unit of Witch Elves always uses its initiative to charge an enemy if possible and cannot be given orders instead. Witch Elves never use their initiative to evade. The unit cannot be driven back by shooting and never roll for drive backs. If victorious in combat they must pursue or advance where possible. Witch Elves are unaffected by enemies that cause terror in combat and do not suffer the usual -1 Attack modifier."
+      ],
+      "order": 2
+    },
+    "Cold Ones Knights": {
+      "text": [
+        "Such is their unthinking instinct to take a bite out of anything that passes, Cold One Knights has an Attack value bonus of +1 in the first round of each combat when fighting to the front, i.e. the Cold One Knights’ stand has to touch the enemy in arc of sight with its frontal edge and/or frontal corners (including contact by frontal corner only). For the same reason Cold One Knights cannot form brigades except with other units of Cold One Knights."
+      ],
+      "order": 3
+    },
+    "Harpies": {
+      "text": [
+        "Harpies are based facing the long edge of the base in the same way as infantry, rather than the short edge like other monsters. Harpies can fly. A unit of harpies cannot be joined by a character."
+      ],
+      "order": 4
+    },
+    "War Hydra": {
+      "text": [
+        "War Hydras are so aggressive that they cannot be included as part of a brigade not even with other War Hydras. They cause terror in their enemies. The War Hydra can breath fire with a range of 20cm and 2 Attacks that are worked out in the normal way. Once all hits have been struck for that round, and assuming it has not been slain, the War Hydra automatically regenerates 1 hit that it suffered that round. A hit that is inflicted and subsequently regenerated still counts towards the results for that round."
+      ],
+      "order": 5
+    },
+    "Bolt Thrower": {
+      "order": 6,
+      "text": [
+        "The Bolt Thrower counts as an Elven Bolt Thrower."
+      ]
+    },
+    "General": {
+      "text": [
+        "Dark Elf commanders are masters of manipulation and cruelty - this makes them uncompromising in their dealings with subordinates! If a Dark Elf Hero or Sorceress rolls a double 6 when issuing orders then the General must either lose 1 level of Command value (ie drop from 10 to 9) or execute the failed underling - in which case the character is removed as a casualty but does not count towards the enemy's victory points. In addition, if the General rolls a 'blunder' (ie a double 6) then the General automatically loses 1 level. Regardless of these penalties a General can only drop 2 levels (to a minimum of 8) after which all subordinates who blunder are executed and any 'blunders' rolled by the General merely end the phase as normal."
+      ],
+      "order": 7
+    },
+    "Manticore": {
+      "text": [
+        "Generals, Heroes and the Sorceress can ride a Manticore. The Manticore can fly increasing the rider's movement to 100cm. An extra +2 Attacks are added to those of the rider. A unit joined by the character causes Terror."
+      ],
+      "order": 8
+    },
+    "Cauldron of Blood": {
+      "text": [
+        "A Sorceress can have a Cauldron of Blood - this is categorised as a 'special' mount because it is treated as a mount and a Sorceress with a cauldron of Blood cannot have another mount. A Sorceress with a Cauldron of Blood suffers a movement reduction to 30cm. The army can only ever include one Cauldron of Blood and it can only be included if there is at least 1 unit of Witch Elves in the army. The Cauldron of Blood adds +2 Attacks to the Sorceress and can be used to add +1 to the Sorceress' dice roll to cast a spell once per battle. The player must announce that the Cauldron of Blood's spell bonus is being used before rolling the dice to determine if the spell is cast."
+      ],
+      "order": 9
+    },
+    "Elven Bolt Thrower": {
+      "order": 10
+    }
+  },
+  "spells": [
+    {
+      "roll": 5,
+      "range": "30cm",
+      "text": [
+        "*A bolt of pure malicious darkness arcs from the Sorcerer's fingertip and stabs towards the foes of the Dark Elves.*",
+        "",
+        "Draw an imaginary line 30cm long from the Wizard's stand in any direction you wish. The line will pass through any intervening units but not beyond terrain that would normally stop a missile shot, eg over the crest of a hill, more than 2cm of woodland, and so forth.",
+        "",
+        "Each unit under the line takes three shooting attacks worked out in the usual way. Note that this spell can easily effect several units and will affect all units that fall beneath the line (including your own). Unengaged units can be driven back by a Doombolt as with ordinary shooting (even including friends). Engaged units cannot be driven back by the Doombolt but carry over any hits scored into the first round of combat; any hits scored count as having been struck in the combat itself."
+      ],
+      "name": "Doom Bolt"
+    },
+    {
+      "roll": 6,
+      "range": "50cm",
+      "text": [
+        "*A whirling vortex of dark enemy surrounds and drags its victims into the infernal realms of Khaine the Lord of Murder.*",
+        "",
+        "This spell can be cast upon an enemy unit the Sorceress can see and which is not engaged in combat. The units suffers 4 Attacks with no saves for Armour. A unit that takes hits from the Black Horror is not driven back as a result - the whirling vortex sucks its victims down affording them no chance to avoid it."
+      ],
+      "name": "Black Horror"
+    },
+    {
+      "roll": 4,
+      "range": "60cm",
+      "text": [
+        "*Upon invoking the curse of the foul god Khaine an unnatural and unbearable agony suffuses the body of his foes.*",
+        "",
+        "This spell can be cast on any enemy unit within range regardless of whether the Sorceress can see it or not.",
+        "",
+        "The spell takes affect until the end of the opposing player's next turn.",
+        "",
+        "Whilst the spell lasts the unit cannot charge and if engaged in combat will not pursue or advance. Even units that are otherwise obliged to charge, pursue, or advance will not do so if affected by Dominion."
+      ],
+      "name": "Dominion"
+    },
+    {
+      "roll": 5,
+      "range": "Touching",
+      "text": [
+        "*Invoking the daemons of the abyss the Sorcerer tears the very souls from his enemies.*",
+        "",
+        "The Sorceress can cast this spell if she has joined a unit in combat. The spell can be cast on any single enemy unit that is touching the unit the Sorceress has joined.",
+        "",
+        "The target unit takes three attacks worked out in the usual way. Targets get no armour saving throws when they suffer hits from the Soul Stealer - all Armour values count as 0. Any hits scored are carried over into the first round of combat and count as having been struck in the first round for purposes of working out combat results."
+      ],
+      "name": "Soul Stealer"
+    }
+  ]
+}

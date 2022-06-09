@@ -1,0 +1,263 @@
+{
+  "name": "High Elves",
+  "version": "Warmaster Revolution Developmental",
+  "group": 0,
+  "order": 4,
+  "units": {
+    "Spearmen": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 60,
+      "min": 2,
+      "order": 0
+    },
+    "Archers": {
+      "type": "Infantry",
+      "attack": "3/1",
+      "range": "30cm",
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 75,
+      "min": 1,
+      "order": 1
+    },
+    "Silver Helms": {
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "4+",
+      "size": 3,
+      "points": 110,
+      "order": 2
+    },
+    "Reavers": {
+      "type": "Cavalry",
+      "attack": "3/1",
+      "range": "30cm",
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 90,
+      "max": 3,
+      "order": 3
+    },
+    "Chariots": {
+      "type": "Chariot",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 95,
+      "max": 3,
+      "order": 4
+    },
+    "Giant Eagles": {
+      "type": "Monster",
+      "attack": 2,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 70,
+      "max": 1,
+      "order": 5
+    },
+    "Dragon Rider": {
+      "type": "Monster",
+      "attack": "6/3",
+      "range": "20cm",
+      "hits": 6,
+      "armour": "4+",
+      "size": 1,
+      "points": 300,
+      "max": 1,
+      "specialRules": [
+        "Dragons"
+      ],
+      "order": 6
+    },
+    "Elven Bolt Thrower": {
+      "type": "Artillery",
+      "attack": "1/3",
+      "range": "40cm",
+      "hits": 2,
+      "size": 2,
+      "points": 55,
+      "max": 1,
+      "order": 7
+    },
+    "General": {
+      "type": "General",
+      "attack": "+2",
+      "command": 10,
+      "size": 1,
+      "points": 180,
+      "armyMin": 1,
+      "armyMax": 1,
+      "upgrades": [
+        "Giant Eagle",
+        "Dragon",
+        "Chariot"
+      ],
+      "order": 8
+    },
+    "Hero": {
+      "type": "Hero",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 80,
+      "max": 1,
+      "upgrades": [
+        "Giant Eagle",
+        "Dragon",
+        "Chariot"
+      ],
+      "order": 9
+    },
+    "Wizard": {
+      "type": "Wizard",
+      "attack": "+0",
+      "command": 8,
+      "size": 1,
+      "points": 90,
+      "max": 1,
+      "upgrades": [
+        "Giant Eagle",
+        "Dragon",
+        "Chariot"
+      ],
+      "order": 10
+    }
+  },
+  "upgrades": {
+    "Giant Eagle": {
+      "type": "Monstrous Mount",
+      "attack": "+2",
+      "points": "+20",
+      "max": 1,
+      "order": 0
+    },
+    "Dragon": {
+      "type": "Monstrous Mount",
+      "attack": "+3/+3",
+      "range": "20cm",
+      "points": "+100",
+      "max": 1,
+      "specialRules": [
+        "Dragons"
+      ],
+      "order": 1
+    },
+    "Chariot": {
+      "type": "Chariot Mount",
+      "attack": "+1",
+      "points": "+10",
+      "max": 1,
+      "order": 2
+    }
+  },
+  "magic": true,
+  "specialRules": {
+    "Archers": {
+      "text": [
+        "High Elf archers add +1 to their dice roll when making Shooting attacks. They will therefore score a hit against targets in the open on a 3 or more, against targets that are defended on a 4 or more, and against fortified targets on a 5 or more."
+      ],
+      "order": 1
+    },
+    "Giant Eagles": {
+      "text": [
+        "Eagles can fly."
+      ],
+      "order": 2
+    },
+    "Dragons": {
+      "text": [
+        "Dragons can fly. Dragon rider units and any other units that include a Dragon riding character cause terror in their enemies.",
+        "",
+        "Because Dragon Riders have a great many hits (6) which are difficult to inflict even during a lengthy combat engagement, we must consider the possibility of hurting the Dragon and reducing its effectiveness in subsequent turns. Therefore, if a Dragon Rider has accumulated 4-5 hits by the end of the Shooting phase or Combat phase and is no longer engaged in combat it is deemed to have been badly hurt. Once a Dragon has been badly hurt all accumulated hits are discounted and its maximum hits value and Attacks are halved for the rest of the battle (to 3 Hits and 3/2 Attacks).",
+        "",
+        "Generals, Wizards and Heroes can ride Dragons. A Dragon can fly increasing its rider's move from 60 to 100cm. An extra +3 Attacks are added to those of its rider. A Dragon can breath fire if the character has joined a unit that isn't engaged in combat. A Dragon ridden by a character can't breath fire if it is not part of a unit.",
+        "",
+        "Dragons can make a fiery breath. This applies both to a unit of Dragon Riders and to Dragons ridden by characters that have joined a unit of troops. Dragon fire works as follows. The fire breath has a range of 20cm. Breath can be directed against one target as for normal shooting and has 3 Attacks that are worked out in the usual way at 4+ to hit."
+      ],
+      "order": 3
+    },
+    "Elven Bolt Thrower": {
+      "order": 4
+    },
+    "Wizard": {
+      "text": [
+        "High Elf Mages are especially powerful wizards and to represent this can re-roll a failed spell on any dice result except a 1. If a spell is failed because a 1 is rolled then no re-roll is permitted."
+      ],
+      "order": 5
+    },
+    "Giant Eagle": {
+      "text": [
+        "Generals, Wizards and Heroes can ride a Giant Eagle. An Eagle can fly increasing its rider's move from 60 to 100cm. An extra +2 Attacks are added to those of its rider."
+      ],
+      "order": 6
+    },
+    "Chariot": {
+      "text": [
+        "Generals, Wizards and Heroes can ride Chariots. An extra +1 Attack is added to those of its rider."
+      ],
+      "order": 7
+    }
+  },
+  "spells": [
+    {
+      "roll": 6,
+      "range": "30cm",
+      "text": [
+        "*The ground erupts around the Mage, and a hail of stones, rocks and dirt hurls itself upon his foes.*",
+        "",
+        "This spell affects every enemy unit within range. Every enemy unit within range takes D3 Attacks worked out in the normal way. Roll separately to determine the number of attacks on each enemy unit.",
+        "",
+        "Unengaged units are not driven back by the Storm of Stone (the assault comes from the ground beneath their feet). Engaged units carry over any hits scored into the first round of combat; any hits scored count as having been struck in the combat itself."
+      ],
+      "name": "Storm of Stone"
+    },
+    {
+      "roll": 5,
+      "range": "30cm",
+      "text": [
+        "*A radiant light shines forth upon the Mage's companions filling them with magical vigour.*",
+        "",
+        "This spell affects every friendly unit within range.",
+        "",
+        "The spell lasts for the duration of the following Combat phase.",
+        "",
+        "Every unit and every character that has joined a unit gains a bonus +1 attack. These attacks can be allocated to any stand in the unit and can be allocated to a different stand in each combat round."
+      ],
+      "name": "Light of Battle"
+    },
+    {
+      "roll": 4,
+      "range": "30cm",
+      "text": [
+        "*The mage imbues the Elven archers with an unearthly swiftness enabling them to rain death upon the enemy.*",
+        "",
+        "This spell can be cast upon a friendly unit of unengaged missilearmed infantry or cavalry within range. It cannot be cast on artillery. The Mage does not need to be able to see the friendly unit nor their intended target.",
+        "",
+        "When the Heaven's Fire spell is cast on a unit, it can shoot twice that turn instead of once. If it has already shot that turn it can therefore shoot again immediately. If it has yet to shoot it can shoot twice. When a unit shoots twice due to Heaven's Fire the second shot is always at a -1 penalty."
+      ],
+      "name": "Heaven's Fire"
+    },
+    {
+      "roll": 5,
+      "range": "30cm",
+      "text": [
+        "*A hail of fiery arrows flies from the Mage's outstretched finger tips and strikes an enemy unit.*",
+        "",
+        "This spell can be cast on an enemy unit. The Mage must be able to see his target to use this spell. The spell cannot be directed at a unit engaged in combat.",
+        "",
+        "The Hail of Destruction is treated like three ordinary shooting attacks (4+ to hit) except that armour has no effect (all targets count as having no armour). A unit can be driven back by a Hail of Destruction as with ordinary shooting."
+      ],
+      "name": "Hail of Destruction"
+    }
+  ]
+}

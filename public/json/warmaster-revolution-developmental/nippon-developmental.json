@@ -1,0 +1,268 @@
+{
+  "name": "Nippon (Developmental)",
+  "version": "Warmaster Revolution Developmental",
+  "group": 2,
+  "order": 7,
+  "units": {
+    "Ashigaru": {
+      "order": 0,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": 6,
+      "size": 3,
+      "points": 45,
+      "noCount": true,
+      "min": 1
+    },
+    "Ashigaru Bowmen": {
+      "order": 1,
+      "type": "Infantry",
+      "attack": "3/1",
+      "range": "30cm",
+      "hits": 3,
+      "armour": 0,
+      "size": 3,
+      "noCount": true,
+      "points": 55
+    },
+    "Ashigaru Teppo": {
+      "order": 2,
+      "type": "Infantry",
+      "attack": "3/1",
+      "range": "30cm",
+      "hits": 3,
+      "armour": 0,
+      "size": 3,
+      "points": 65,
+      "noCount": true,
+      "max": 2,
+      "specialRules": [
+        "Handgunners"
+      ]
+    },
+    "Samurai": {
+      "order": 3,
+      "type": "Infantry",
+      "attack": 4,
+      "hits": 3,
+      "armour": 5,
+      "size": 3,
+      "points": 80,
+      "min": 3,
+      "specialRules": [
+        "Bushido"
+      ]
+    },
+    "Samurai Cavalry": {
+      "order": 4,
+      "type": "Cavalry",
+      "attack": 4,
+      "hits": 3,
+      "armour": 5,
+      "size": 3,
+      "points": 110,
+      "max": 4,
+      "specialRules": [
+        "Bushido"
+      ]
+    },
+    "Ronin": {
+      "order": 5,
+      "type": "Infantry",
+      "attack": 4,
+      "hits": 3,
+      "armour": 6,
+      "size": 3,
+      "points": 60,
+      "noCount": true,
+      "max": 2
+    },
+    "Ninja": {
+      "order": 6,
+      "type": "Infantry",
+      "attack": "3/1",
+      "range": "15cm",
+      "hits": 3,
+      "armour": 6,
+      "size": 3,
+      "points": 70,
+      "max": 2
+    },
+    "Komainu": {
+      "order": 7,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": 5,
+      "size": 3,
+      "points": 90,
+      "noCount": true,
+      "max": 2,
+      "specialRules": [
+        "Temple Demons"
+      ]
+    },
+    "Oni": {
+      "order": 8,
+      "type": "Infantry",
+      "specialRules": [
+        "Temple Demons"
+      ],
+      "attack": 4,
+      "hits": 4,
+      "armour": 5,
+      "size": 3,
+      "points": 110,
+      "noCount": true,
+      "max": 1
+    },
+    "Tengu": {
+      "order": 9,
+      "type": "Monster",
+      "specialRules": [
+        "Temple Demons"
+      ],
+      "attack": 2,
+      "hits": 3,
+      "armour": 5,
+      "size": 3,
+      "points": 80,
+      "noCount": true,
+      "max": 1
+    },
+    "Shogun": {
+      "order": 10,
+      "type": "General",
+      "command": 9,
+      "attack": 2,
+      "points": 125,
+      "armyMin": 1,
+      "armyMax": 1
+    },
+    "Daimyo": {
+      "order": 11,
+      "type": "Hero",
+      "attack": 1,
+      "points": 80,
+      "command": 8,
+      "max": 2
+    },
+    "Shugenja": {
+      "order": 12,
+      "type": "Hero",
+      "attack": 1,
+      "points": 90,
+      "command": 8,
+      "max": 1
+    },
+    "Tatsu": {
+      "order": 13,
+      "type": "Monstrous Mount",
+      "attack": 2,
+      "points": 80,
+      "max": 1
+    },
+    "Shrine": {
+      "order": 14,
+      "type": "Special Mount",
+      "points": 50,
+      "armyMax": 1
+    }
+  },
+  "upgrades": {},
+  "magic": true,
+  "specialRules": {
+    "Handgunners": {
+      "order": 1,
+      "text": [
+        "Armour piercing: enemy armour saves count as 1 less"
+      ]
+    },
+    "Bushido": {
+      "order": 2,
+      "text": [
+        "Samurai live their lives by a strict code of honour and ideals. The troops do not like losing face, so:",
+        "",
+        "a) they cannot use Initiative to evade;",
+        "b) they roll 1 less drive back dice;",
+        "c) they must pursue if winning a combat.",
+        "",
+        "They are not obliged to Advance if the enemy is destroyed nor must they Pursue if fortified."
+      ]
+    },
+    "Ronin": {
+      "order": 3,
+      "text": [
+        "The Samurai Bushido (Code of Honour) prevents them from serving a new master without permission from their previous Master. Ronin are former samurai whose master was killed or disgraced, so they could not be released from their oath to their previous Master and often work as mercenaries for Daimyo who needed to bolster their armies.",
+        "",
+        "They have not forgotten their martial arts training, but their armour is not as good as their former samurai days.",
+        "",
+        "They are resentful of the Code of Honour that prevents them living a normal life, so are not concerned about losing face like their Samurai counterparts and tend to act as they see fit on the battlefield. This is represented with a -1 command penalty when receiving orders."
+      ]
+    },
+    "Ninja": {
+      "order": 4,
+      "text": [
+        "Ninja are armed with throwing stars and darts, and are therefore allowed to shoot as if they had bows, but their range is reduced to 15cm. However, they may shoot from any edge without turning stands to face their target.",
+        "Infiltrate: Ninja do not have to be deployed before the game if the player does not wish to do so. Instead individual units can be infiltrated onto the battlefield once the game has begun. To infiltrate a unit, the Nippon player nominates the point where he wants the Ninja to appear and issues an 'infiltration' order from any character. The character does not have to be within his normal command range to issue an infiltration order - the character's command range is considered to extend over the entire tabletop when issuing an infiltration order. Treat the order as issued to the nominated point, and apply any modifiers for distance and proximity of enemy, but ignore penalties for dense terrain. The nominated point must lie either on the table within dense terrain or on any base edge other than the enemy player's own table edge. If successful, place one stand on the nominated spot and arrange the rest of the unit into formation around it. The infiltrated unit cannot be placed so that it touches an enemy unit. Once deployed, orders can be given to the unit by the same character that gave the infiltration order if he is within his normal command range, the infiltrating unit is considered to have used its first order to deploy. If the infiltration order is failed the unit is not deployed and cannot infiltrate that turn, it can attempt to infiltrate in a subsequent turn at the same or a different place.",
+        ""
+      ]
+    },
+    "Temple Demons": {
+      "order": 5,
+      "text": [
+        "Terror: Temple daemon units are immune to terror.",
+        "Daemonic Instability: At the start of the Nippon player’s own Command phase, before making any initiatives moves, all Daemon units that have taken at least 1 casualty (i.e. lost at least 1 stand out of 3) must make a ‘Daemonic Instability’ test. Roll a D6. If the unit has lost 2 stands (i.e. has only 1 stand remaining from 3) deduct 1 from the roll. If a Shugenja is within 20cm of the unit, add +1 to the roll.",
+        "0-1 One stand is destroyed  the daemons fade away and are absorbed back to the heavens from which they came. Remove one stand from play. If a character is with the unit and the last stand is removed the character is destroyed too.",
+        "2-3 The unit becomes confused - if not already confused the stand becomes confused as it is torn between this world and the next.",
+        "4-5 No effect  unless the unit is confused in which case it ceases to be confused as it is favoured with the invigorating power of the Temple.",
+        "6 The unit is invigorated by the power of the heavens. As a result it attacks the closest enemy within initiative range. If there is no enemy in initiative range the unit ignores command penalties for the lost stand till its next turn.",
+        ""
+      ]
+    },
+    "Tengu": {
+      "order": 6,
+      "text": [
+        "Tengu can fly. Tengu are an exception to the normal conventions for basing monsters in that they face the long edge of the stand in the same way as infantry rather than the short edge as most other monsters.",
+        "Tengu are affected by Instability and Immune to Terror like other Nippon Daemons.",
+        ""
+      ]
+    },
+    "Shogun": {
+      "order": 7,
+      "text": [
+        "Only the boldest Daimyo can become Shogun. The Shogun is the Supreme General, answering only to the Emperor himself. Such is their exalted position, a sub-commander in the Shogun’s army suffers a significant embarrassment if they make a mistake, which affects their standing in front of the noble Samurai troops.",
+        "If a Nippon Hero (Daimyo or Shugenja, not the Shogun) rolls a double 6 when issuing orders, the player must roll on the Blunder table with a -1 penalty on the result. If the table indicates a “You must be crazy” result, the -1 Command penalty must be applied to a Samurai or Samurai cavalry unit if a unit of these troops was being ordered, or was in the brigade being ordered. If there is more than one of these units present, the Nippon player may choose which is affected.",
+        ""
+      ]
+    },
+    "Shugenja": {
+      "order": 8,
+      "text": [
+        "Although they are not wizards and cannot therefore cast spells, Nippon Shugenja can combat the magic of their enemies. If an enemy Wizard who is within 50cm of the Shugenja casts a spell the Shugenja can attempt to 'anti-magic' it. Note that it does not matter what the spell is or where it is cast, the Shugenja can 'anti-magic' it so long as the caster is with 50cm. To determine if this works roll a D6 - on the score of 4, 5 or 6 the Shugenja has succeeded and the spell doesn't work, it is dispelled by the Shugenja’s defiant efforts. If he fails, then the Shugenja’s efforts come to nothing and the spell works as normal. A Shugenja can attempt to anti-magic any number of spells in a turn, but only one attempt can be made to anti-magic any individual spell - even if the army includes more than one Shugenja and several are in range of the enemy Wizard.",
+        "The Shugenja adds +1 to any rolls on the Daemonic Instability table if he is within 20cm of the affected Daemon unit.",
+        ""
+      ]
+    },
+    "Tatsu": {
+      "order": 9,
+      "text": [
+        "Generals and Heroes can ride Tatsu, a kind of dragon native to Nippon. Tatsu can fly and cause terror in their enemies. An extra +2 Attacks are added to those of its rider."
+      ]
+    },
+    "Shrine": {
+      "order": 10,
+      "text": [
+        "The army can only include a single Shrine and it is incorporated onto the stand of a Shugenja. If a Shugenja stand includes the Shrine, once per battle he can add +1 to his dice roll when he attempts to dispel enemy magic spells using the Shrine anti-magic ability (see Shugenja).",
+        "In addition, the Shugenja can invoke the gods using the Shrine during the Shooting phase of his own Shugenja. The shrine’s invocation fills the Nippon army with even greater resolve! Roll a D6. On the score of a 4, 5 or 6 all Nippon units within 20cm of the Shugenja are unaffected by Terror for the rest of the Nippon player's turn. On a roll of less than 4 there is no effect.",
+        ""
+      ]
+    }
+  },
+  "armyRules": [
+    "Feudal rule: Nippon armies are based on feudal rule  Nippon overlords tend to be as arrogant as their Bretonnian counterparts towards those they consider to be inferior classes. They have a limited but grudging respect for the Ninja Clanmasters, partly so they can call on them for troops, but mainly because Ninja Clanmasters are better as friends than enemies.",
+    "To represent this, the Nippon army calculates when it must withdraw from the battle in a different way to other armies. Instead of counting all of its units at the start of the game, count only the number of units of Samurai, Samurai cavalry and Ninjas. Once the army has lost a half or more of its units of Samurai / Samurai cavalry / Ninjas, it must withdraw.",
+    ""
+  ]
+}
