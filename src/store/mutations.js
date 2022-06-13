@@ -92,12 +92,13 @@ export default {
 
       // add any upgrades as defined by the army's upgrade constraints
       state.upgradeConstraints.forEach((upgradeConstraint) => {
-        if ((upgradeConstraint.unitType &&
-            upgradeConstraint.unitType.includes(unit.type) ||
-            upgradeConstraint.armour &&
-            upgradeConstraint.armour === unit.armour ||
-            upgradeConstraint.hits &&
-            upgradeConstraint.hits === unit.hits) &&
+        if ((upgradeConstraint.armour && upgradeConstraint.armour === unit.armour) ||
+            (upgradeConstraint.armour === "6+" && !unit.armour && !upgradeConstraint.upgrades.includes("Minor Banner of Steadfastness")) ||
+            (upgradeConstraint.hits && upgradeConstraint.hits === unit.hits) ||
+            (!upgradeConstraint.armour && !upgradeConstraint.hits)
+            &&
+            (upgradeConstraint.unitType &&
+            upgradeConstraint.unitType.includes(unit.type)) &&
             !unit.noUpgrades &&
             !(unit.noMagic && upgradeConstraint.magic)) {
           try {

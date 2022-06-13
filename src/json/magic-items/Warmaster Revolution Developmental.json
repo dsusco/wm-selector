@@ -9,8 +9,8 @@
         "A unit with this banner increases the Attacks value of each of its stands by +1 during its first Combat engagement of fighting. The effect only lasts for the first combat engagement of the battle, including rounds of pursuit combat during the same engagement and any further engagements which result from an advance."
       ]
     },
-    "Banner of Shielding": {
-      "order": "BSh",
+    "Superior Banner of Shielding": {
+      "order": "supBSh",
       "type": "Magic Standard",
       "points": "+50",
       "armyMax": 1,
@@ -18,8 +18,26 @@
         "A unit with this banner has its Armour value increased in effectiveness by +1. If the unit’s Armour value is 5+ then this banner increases it to 4+ and so on. A unit’s Armour value cannot be better than 3+. If a unit already has an Armour value of 3+ then this banner has no effect. This bonus lasts until the unit loses a stand. After the unit has lost a stand, the banner has no further effect."
       ]
     },
-    "Banner of Fortitude": {
-      "order": "BFd",
+    "Major Banner of Shielding": {
+      "order": "majBSh",
+      "type": "Magic Standard",
+      "points": "+30",
+      "armyMax": 1,
+      "text": [
+        "A unit with this banner has its Armour value increased in effectiveness by +1. If the unit’s Armour value is 5+ then this banner increases it to 4+ and so on. A unit’s Armour value cannot be better than 3+. If a unit already has an Armour value of 3+ then this banner has no effect. This bonus lasts until the unit loses a stand. After the unit has lost a stand, the banner has no further effect."
+      ]
+    },
+    "Minor Banner of Shielding": {
+      "order": "minBSh",
+      "type": "Magic Standard",
+      "points": "+15",
+      "armyMax": 1,
+      "text": [
+        "A unit with this banner has its Armour value increased in effectiveness by +1. If the unit’s Armour value is 5+ then this banner increases it to 4+ and so on. A unit’s Armour value cannot be better than 3+. If a unit already has an Armour value of 3+ then this banner has no effect. This bonus lasts until the unit loses a stand. After the unit has lost a stand, the banner has no further effect."
+      ]
+    },
+    "Major Banner of Fortitude": {
+      "order": "majBFd",
       "type": "Magic Standard",
       "points": "+50",
       "armyMax": 1,
@@ -27,10 +45,37 @@
         "A unit with this banner increases the Hits value of each of its stands by +1 during its first Combat engagement of fighting. The effect only lasts for the first combat engagement of the battle, including rounds of pursuit combat during the same engagement and any further engagements which result from an advance. Discard odd hits at the end of the Combat engagement before discounting the effect of the Banner of Fortitude."
       ]
     },
-    "Banner of Steadfastness": {
-      "order": "BSt",
+    "Minor Banner of Fortitude": {
+      "order": "minBFd",
       "type": "Magic Standard",
       "points": "+30",
+      "armyMax": 1,
+      "text": [
+        "A unit with this banner increases the Hits value of each of its stands by +1 during its first Combat engagement of fighting. The effect only lasts for the first combat engagement of the battle, including rounds of pursuit combat during the same engagement and any further engagements which result from an advance. Discard odd hits at the end of the Combat engagement before discounting the effect of the Banner of Fortitude."
+      ]
+    },
+    "Superior Banner of Steadfastness": {
+      "order": "supBSt",
+      "type": "Magic Standard",
+      "points": "+20",
+      "armyMax": 1,
+      "text": [
+        "One shooting hit inflicted on the unit after saves have been taken in each turn is ignored because the missiles are cast aside by the Banner of Steadfastness. This includes hits from magic spells inflicted in the Shooting phase. This effect lasts until the unit loses a stand. After the unit has lost a stand the banner has no further effect."
+      ]
+    },
+    "Major Banner of Steadfastness": {
+      "order": "majBSt",
+      "type": "Magic Standard",
+      "points": "+15",
+      "armyMax": 1,
+      "text": [
+        "One shooting hit inflicted on the unit after saves have been taken in each turn is ignored because the missiles are cast aside by the Banner of Steadfastness. This includes hits from magic spells inflicted in the Shooting phase. This effect lasts until the unit loses a stand. After the unit has lost a stand the banner has no further effect."
+      ]
+    },
+    "Minor Banner of Steadfastness": {
+      "order": "BSt",
+      "type": "Magic Standard",
+      "points": "+10",
       "armyMax": 1,
       "text": [
         "One shooting hit inflicted on the unit after saves have been taken in each turn is ignored because the missiles are cast aside by the Banner of Steadfastness. This includes hits from magic spells inflicted in the Shooting phase. This effect lasts until the unit loses a stand. After the unit has lost a stand the banner has no further effect."
@@ -39,7 +84,7 @@
     "Banner of Fortune": {
       "order": "BFn",
       "type": "Magic Standard",
-      "points": "+20",
+      "points": "+15",
       "armyMax": 1,
       "text": [
         "The player can choose to immediately re-roll all the unit’s Attack dice once in either the Shooting phase or Combat phase should he wish to do so. This includes any bonus attacks from magic items or characters. The player declares that he is unsatisfied with the scores he has rolled, takes all the dice and immediately rolls them all once again. Note that the player must roll all the dice again, including any that have scored hits, so it is possible to be very unfortunate and roll an even worse score! The Banner of Fortune works only once during the entire game."
@@ -176,9 +221,6 @@
       ],
       "upgrades": [
         "Battle Banner",
-        "Banner of Shielding",
-        "Banner of Fortitude",
-        "Banner of Steadfastness",
         "Banner of Fortune",
         "Sword of Destruction",
         "Sword of Fate",
@@ -223,6 +265,92 @@
         "Scroll of Dispelling",
         "Wand of Power",
         "Rod of Repetition"
+      ],
+      "magic": true
+    },
+    {
+      "unitType": [
+        "Infantry",
+        "Cavalry",
+        "Chariot"
+      ],
+      "armour": "4+",
+      "upgrades": [
+        "Superior Banner of Shielding",
+        "Superior Banner of Steadfastness"
+      ],
+      "magic": true
+    },
+    {
+      "unitType": [
+        "Infantry",
+        "Cavalry",
+        "Chariot"
+      ],
+      "armour": "5+",
+      "upgrades": [
+        "Major Banner of Shielding",
+        "Major Banner of Steadfastness"
+      ],
+      "magic": true
+    },
+    {
+      "unitType": [
+        "Infantry",
+        "Cavalry",
+        "Chariot"
+      ],
+      "armour": "6+",
+      "upgrades": [
+        "Minor Banner of Shielding"
+      ],
+      "magic": true
+    },
+    {
+      "unitType": [
+        "Infantry",
+        "Cavalry",
+        "Chariot"
+      ],
+      "armour": "6+",
+      "upgrades": [
+        "Minor Banner of Steadfastness"
+      ],
+      "magic": true
+    },
+    {
+      "unitType": [
+        "Infantry",
+        "Cavalry",
+        "Chariot"
+      ],
+      "hits": 4,
+      "upgrades": [
+        "Major Banner of Fortitude"
+      ],
+      "magic": true
+    },
+    {
+      "unitType": [
+        "Infantry",
+        "Cavalry",
+        "Chariot"
+      ],
+      "hits": 3,
+      "upgrades": [
+        "Minor Banner of Fortitude"
+      ],
+      "magic": true
+    },
+    {
+      "unitType": [
+        "Infantry",
+        "Cavalry",
+        "Chariot"
+      ],
+      "hits": 2,
+      "upgrades": [
+        "Minor Banner of Fortitude"
       ],
       "magic": true
     }
