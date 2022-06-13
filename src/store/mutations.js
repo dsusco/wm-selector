@@ -92,19 +92,16 @@ export default {
 
       // add any upgrades as defined by the army's upgrade constraints
       state.upgradeConstraints.forEach((upgradeConstraint) => {
-        if ((upgradeConstraint.armour && upgradeConstraint.armour === unit.armour) ||
-            (upgradeConstraint.armour === "6+" && !unit.armour && !upgradeConstraint.upgrades.includes("Minor Banner of Steadfastness") && !unit.noMagic) ||
-            (upgradeConstraint.hits && upgradeConstraint.hits === unit.hits && !unit.noMagic) ||
-            (!upgradeConstraint.armour && !upgradeConstraint.hits)
-            &&
-            (upgradeConstraint.unitType &&
-            upgradeConstraint.unitType.includes(unit.type)) &&
-            !unit.noUpgrades &&
-            !(unit.noMagic && upgradeConstraint.magic)) {
-          try {
-            Vue.set(unit, 'upgrades', unit.upgrades.concat(upgradeConstraint.upgrades));
-          } catch {
-            Vue.set(unit, 'upgrades', upgradeConstraint.upgrades);
+        if (upgradeConstraint.unitType && upgradeConstraint.unitType.includes(unit.type) && !unit.noMagic) {
+          if ((upgradeConstraint.armour && upgradeConstraint.armour === unit.armour) ||
+            (upgradeConstraint.armour === "6+" && !unit.armour && !upgradeConstraint.upgrades.includes("Minor Banner of Steadfastness")) ||
+            (upgradeConstraint.hits && upgradeConstraint.hits === unit.hits) ||
+            (!upgradeConstraint.armour && !upgradeConstraint.hits)) {
+            try {
+              Vue.set(unit, 'upgrades', unit.upgrades.concat(upgradeConstraint.upgrades));
+            } catch {
+              Vue.set(unit, 'upgrades', upgradeConstraint.upgrades);
+            }
           }
         }
       });
