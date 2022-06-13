@@ -92,7 +92,12 @@ export default {
 
       // add any upgrades as defined by the army's upgrade constraints
       state.upgradeConstraints.forEach((upgradeConstraint) => {
-        if (upgradeConstraint.unitType.includes(unit.type) &&
+        if ((upgradeConstraint.unitType &&
+            upgradeConstraint.unitType.includes(unit.type) ||
+            upgradeConstraint.armour &&
+            upgradeConstraint.armour === unit.armour ||
+            upgradeConstraint.hits &&
+            upgradeConstraint.hits === unit.hits) &&
             !unit.noUpgrades &&
             !(unit.noMagic && upgradeConstraint.magic)) {
           try {
