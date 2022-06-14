@@ -123,7 +123,8 @@
       "armyMin": 1,
       "armyMax": 1,
       "upgrades": [
-        "Chaos Dragon"
+        "Chaos Dragon",
+        "Chariot"
       ],
       "order": 11
     },
@@ -135,7 +136,8 @@
       "points": 80,
       "max": 1,
       "upgrades": [
-        "Chaos Dragon"
+        "Chaos Dragon",
+        "Chariot"
       ],
       "order": 12
     },
@@ -147,7 +149,8 @@
       "points": 90,
       "max": 1,
       "upgrades": [
-        "Chaos Dragon"
+        "Chaos Dragon",
+        "Chariot"
       ],
       "order": 13
     }
@@ -157,6 +160,13 @@
       "type": "Monstrous Mount",
       "attack": "+3",
       "points": "+100",
+      "max": 1,
+      "order": 0
+    },
+    "Chariot": {
+      "type": "Chariot Mount",
+      "attack": "+1",
+      "points": "+10",
       "max": 1,
       "order": 0
     }

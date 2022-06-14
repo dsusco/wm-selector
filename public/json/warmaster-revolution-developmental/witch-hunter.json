@@ -150,7 +150,7 @@
     },
     "Warhounds": {
       "text": [
-        "These monstrous hounds are bred by Witch Hunters for seeking out heretics. They are treated like Skirmishers from Empire army list but they have 30cm movement distance and no armour obviously. Because of their speed, they are able to keep up with cavalry units and may be attached to cavalry in the same way as to infantry. Warhounds may join the following units: Zealots, Handgunners, Pistoliers and Flagellants. If they join cavalry unit (i.e. Pistoliers), they are still considered as an infantry stand, but in this particular case they can pursue enemy cavalry together with the main unit."
+        "Warhounds stands never fight as independent unit. Instead, you may add one stand of Warhounds to your units of\nZealots, Handgunners, Pistoliers or Flagellants. This brings the size of the unit to 4 stands. Warhounds always have Armour value 0. Warhounds can move up to 30cm. They fight as part of their unit and can be removed as a unit causality if player wishes. Warhounds causality never count as causality for purposes of issuing orders, which means there is no -1 Command penalty as there normally would be for units that have lost a stand. Warhound stands never count as part of the unit's formation when determining whether they move at full of half pace, so no movement penalty is incurred if they are arranged out of the unit's regular formation. If they join cavalry unit (i.e. Pistoliers), they are still considered as an infantry stand, but in this particular case they can pursue enemy cavalry together with the main unit."
       ],
       "order": 4
     },
@@ -207,6 +207,6 @@
   "armyRules": [
     "__GENERAL NOTE:__",
     "",
-    "Some unit’s abilities from Witch Hunter army will affect ‘Chaos and/or Undead’. ‘Chaos’ means Chaos army, Daemons army and Beastmen army. ‘Undead’ means Undead Tomb Kings army and Vampire Counts army (including units of Ghouls!)."
+    "Some unit’s abilities from Witch Hunter army will affect ‘Chaos and/or Undead’. ’Chaos’ means Chaos army, Daemons army, Beastmen army, Chaos Dwarf army and Skaven army. ‘Undead’ means Undead Tomb Kings army and Vampire Counts army (including units of Ghouls!)."
   ]
 }

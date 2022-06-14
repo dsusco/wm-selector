@@ -22,7 +22,10 @@
       "size": 3,
       "points": 55,
       "min": 2,
-      "order": 1
+      "order": 1,
+      "upgrades": [
+        "Handgunners"
+      ]
     },
     "Handgunners": {
       "type": "Infantry",
@@ -199,6 +202,16 @@
       "specialRules": [
         "Paymaster, Pay Wagon"
       ]
+    },
+    "Handgunners": {
+      "type": "Special",
+      "attack": "3/1",
+      "range": "30cm",
+      "hits": 3,
+      "size": 3,
+      "points": "+10",
+      "max": 1,
+      "order": 2
     }
   },
   "magic": true,

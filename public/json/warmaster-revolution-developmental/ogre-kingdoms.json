@@ -41,7 +41,7 @@
       "hits": 3,
       "armour": "5+",
       "size": 3,
-      "points": 130,
+      "points": 120,
       "max": 2,
       "order": 3
     },
@@ -165,13 +165,13 @@
     },
     "Yhetees": {
       "text": [
-        "When trying to issue an order to a unit of Yhetees or to a brigade that contains a unit of Yhetees, there is always a -1 Command penalty due their beastly and unruly nature. Yhetees always ignore distance modifiers when receiving orders. If a character joined Yhetees unit it can not be brigaded with Gnoblars."
+        "When trying to issue an order to a unit of Yhetees or to a brigade that contains a unit of Yhetees, there is always a -1 Command penalty due their beastly and unruly nature. Yhetees always ignore distance modifiers when receiving orders. If a character joined Yhetees unit it can not be brigaded with Gnoblars. Yhetees can pursue any type of retreating enemy."
       ],
       "order": 3
     },
     "Gnoblars": {
       "text": [
-        "Unit is allowed to shoot as if it had bows but its range is reduced to 15cm. Also, Gnoblars can only be brigaded with other Gnoblars and Yhetees. Characters cannot join Gnoblar units."
+        "Gnoblars are allowed to shoot as if it had bows but its range is reduced to 15cm. A Gnoblar stand cannot be supported by other kinds of infantry - only by other Gnoblar stands. Note, however, that Gnoblars can support other kinds of infantry as normal. Gnoblars cannot be given magic items. Characters cannot join Gnoblar units."
       ],
       "order": 4
     },

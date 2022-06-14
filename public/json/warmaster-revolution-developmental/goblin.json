@@ -12,7 +12,10 @@
       "size": 3,
       "points": 30,
       "min": 4,
-      "order": 0
+      "order": 0,
+      "upgrades": [
+        "Squig Herd"
+      ]
     },
     "Squig Herd": {
       "type": "Infantry",
@@ -151,6 +154,14 @@
       "attack": "+2",
       "points": "+80",
       "max": 1,
+      "order": 1
+    },
+    "Squig Herd": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "points": "+0",
       "order": 1
     }
   },
