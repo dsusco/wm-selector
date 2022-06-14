@@ -162,7 +162,8 @@
       "hits": 3,
       "size": 3,
       "points": "+0",
-      "order": 1
+      "order": 1,
+      "max": 2
     }
   },
   "magic": true,
