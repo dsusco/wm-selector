@@ -33,7 +33,8 @@
       "size": 1,
       "points": 30,
       "max": 4,
-      "order": 2
+      "order": 2,
+      "noCount": true
     },
     "Waywatchers": {
       "type": "Infantry",
