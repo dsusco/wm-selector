@@ -78,7 +78,7 @@ export default {
         context.dispatch('validate');
       })
       .then(() => router.push({ name: 'Selector' }))
-      .catch(() => router.push({ name: 'Home' }).catch(err => {}));
+      .catch(() => router.push({ name: 'Home' }).catch(() => {}));
   },
   removePrintItem (context, index) {
     context.commit('REMOVE_PRINT_ITEM', index);
@@ -92,7 +92,7 @@ export default {
       .then((response) => initializeState(context, response))
       .then(() => context.dispatch('validate'))
       .then(() => router.push({ name: 'Selector' }))
-      .catch(() => router.push({ name: 'Home' }).catch(err => {}));
+      .catch(() => router.push({ name: 'Home' }).catch(() => {}));
   },
   setLabel (context, label) {
     context.commit('SET_LABEL', label);
