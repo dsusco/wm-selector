@@ -1,7 +1,7 @@
 <template>
   <tr class="used unit upgrade" tabindex="0" @click="remove" @keyup.enter="remove">
     <td class="number">({{number}})</td>
-    <td class="id">{{upgradeID}}
+    <td class="id">{{upgradeID}}</td>
     <td class="pointsCost">({{pointsCost}})</td>
   </tr>
 </template>
