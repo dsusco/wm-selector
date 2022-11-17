@@ -1,4 +1,5 @@
 import axios from 'axios';
+import flushPromises from 'flush-promises';
 
 import actions from '@/store/actions';
 import magicItems from '@/json/magic-items.json';
@@ -103,23 +104,35 @@ describe('store.js actions', () => {
     });
 
     it('dispatches setActiveArmyListAccordion', async () => {
-      await Promise.all([actions.loadSaveURL(context, params)]);
+      Promise.all([actions.loadSaveURL(context, params)]);
+
+      await flushPromises();
+
       expect(dispatch).toHaveBeenCalledWith('setActiveArmyListAccordion', 'a version');
     });
 
     it('dispatches setLabel', async () => {
-      await Promise.all([actions.loadSaveURL(context, params)]);
+      Promise.all([actions.loadSaveURL(context, params)]);
+
+      await flushPromises();
+
       expect(dispatch).toHaveBeenCalledWith('setLabel', 'a label');
     });
 
     it('dispatches addPrintItem', async () => {
-      await Promise.all([actions.loadSaveURL(context, params)]);
+      Promise.all([actions.loadSaveURL(context, params)]);
+
+      await flushPromises();
+
       expect(dispatch).toHaveBeenCalledWith('addPrintItem', 1);
       expect(dispatch).toHaveBeenCalledWith('addPrintItem', 0);
     });
 
     it('dispatches setUnitNumber', async () => {
-      await Promise.all([actions.loadSaveURL(context, params)]);
+      Promise.all([actions.loadSaveURL(context, params)]);
+
+      await flushPromises();
+
       expect(dispatch).toHaveBeenCalledWith('setUnitNumber', {
         unitID: 'a unit',
         number: 2,
@@ -128,7 +141,10 @@ describe('store.js actions', () => {
     });
 
     it('dispatches setUnitUpgradeNumber', async () => {
-      await Promise.all([actions.loadSaveURL(context, params)]);
+      Promise.all([actions.loadSaveURL(context, params)]);
+
+      await flushPromises();
+
       expect(dispatch).toHaveBeenCalledWith('setUnitUpgradeNumber', {
         unitID: 'a unit',
         upgradeID: 'an upgrade',
@@ -138,12 +154,18 @@ describe('store.js actions', () => {
     });
 
     it('dispatches validate', async () => {
-      await Promise.all([actions.loadSaveURL(context, params)]);
+      Promise.all([actions.loadSaveURL(context, params)]);
+
+      await flushPromises();
+
       expect(dispatch).toHaveBeenCalledWith('validate');
     });
 
     it('pushes Selector location to router', async () => {
-      await Promise.all([actions.loadSaveURL(context, params)]);
+      Promise.all([actions.loadSaveURL(context, params)]);
+
+      await flushPromises();
+
       expect(routerPushSpy).toHaveBeenCalledWith({ name: 'Selector' });
     });
   });
@@ -158,9 +180,12 @@ describe('store.js actions', () => {
     expect(commit).toHaveBeenCalledWith('SET_ACTIVE_ARMY_LIST_ACCORDION', 'an accordion');
   });
 
+
   describe('setArmy', () => {
     it('commits SET_JSON_PATH and the response data', async () => {
-      await actions.setArmy(context, expected.jsonPath);
+      actions.setArmy(context, expected.jsonPath);
+
+      await flushPromises();
 
       expect(commit).toHaveBeenCalledWith('SET_ARMY_LIST', axiosResponse.data.name);
       expect(commit).toHaveBeenCalledWith('SET_ARMY_RULES', axiosResponse.data.armyRules);
@@ -175,22 +200,34 @@ describe('store.js actions', () => {
     });
 
     it('pushes Selector location to router', async () => {
-      await actions.setArmy(context, expected.jsonPath);
+      actions.setArmy(context, expected.jsonPath);
+
+      await flushPromises();
+
       expect(routerPushSpy).toHaveBeenCalledWith({ name: 'Selector' });
     });
 
     it('dispatches validate', async () => {
-      await Promise.all([actions.setArmy(context, expected.jsonPath)]);
+      actions.setArmy(context, expected.jsonPath);
+
+      await flushPromises();
+
       expect(dispatch).toHaveBeenCalledWith('validate');
     });
 
     it('commits SET_PRINT_ITEMS', async () => {
-      await actions.setArmy(context, expected.jsonPath);
+      actions.setArmy(context, expected.jsonPath);
+
+      await flushPromises();
+
       expect(commit).toHaveBeenCalledWith('SET_PRINT_ITEMS', []);
     });
 
     it('commits SET_PRINTABLE_ITEMS', async () => {
-      await actions.setArmy(context, expected.jsonPath);
+      actions.setArmy(context, expected.jsonPath);
+
+      await flushPromises();
+
       expect(commit).toHaveBeenCalledWith('SET_PRINTABLE_ITEMS', [
         { abbr: 'l', title: 'Text List' },
         { abbr: 's', title: 'Stats' },
