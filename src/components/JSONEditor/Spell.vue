@@ -4,17 +4,17 @@
 
     <label>
       <span>Name</span>
-      <input class="small" type="text" placeholder="Please enter a name…" v-model="spell.name"/>
+      <input class="small" type="text" placeholder="Please enter a name…" v-model="name"/>
     </label>
 
     <label>
       <span>Roll</span>
-      <input class="small" type="text" placeholder="X+ to cast" v-model="spell.roll"/>
+      <input class="small" type="text" placeholder="X+ to cast" v-model="roll"/>
     </label>
 
     <label>
       <span>Range</span>
-      <input class="small" type="text" placeholder="N/A" v-model="spell.range"/>
+      <input class="small" type="text" placeholder="N/A" v-model="range"/>
     </label>
 
     <textarea class="small" placeholder="Please enter some markdown…" v-model="text" @blur="$event.target.rows = null" @focus="$event.target.rows = 10"></textarea>
@@ -29,6 +29,18 @@ import Vue from 'vue';
 export default {
   name: 'Spell',
   computed: {
+    name: {
+      get () { return this.spell.name },
+      set (name) { Vue.set(this.spell, 'name', name) }
+    },
+    roll: {
+      get () { return this.spell.roll },
+      set (roll) { Vue.set(this.spell, 'roll', roll) }
+    },
+    range: {
+      get () { return this.spell.range },
+      set (range) { Vue.set(this.spell, 'range', range) }
+    },
     text: {
       get () {
         try {

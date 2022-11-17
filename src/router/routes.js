@@ -1,4 +1,4 @@
-import Querystring from 'querystring';
+import Querystring from 'querystring-es3';
 
 import store from '@/store';
 
