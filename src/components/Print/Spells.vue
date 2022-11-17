@@ -15,13 +15,13 @@
 
 <script>
 import { mapGetters } from 'vuex';
-import Marked from 'marked';
+import { marked } from 'marked';
 
 export default {
   name: 'Spells',
   computed: mapGetters(['spells']),
   methods: {
-    marked: (text) => Marked(text.join('\n'))
+    marked: (text) => marked(text.join('\n'))
   }
 };
 </script>

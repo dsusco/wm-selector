@@ -13,7 +13,7 @@
 
 <script>
 import _ from 'lodash';
-import Marked from 'marked';
+import { marked } from 'marked';
 
 import specialRules from '@/json/special-rules.json';
 import store from '@/store';
@@ -61,7 +61,7 @@ export default {
     }
   },
   methods: {
-    marked: (name) => Marked((store.getters.specialRules[name].text || specialRules[versionKey[store.getters.version]][name].text).join('\n'))
+    marked: (name) => marked((store.getters.specialRules[name].text || specialRules[versionKey[store.getters.version]][name].text).join('\n'))
   },
   props: ['used']
 };

@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import Marked from 'marked';
+import { marked } from 'marked';
 
 import store from '@/store';
 import magicItems from '@/json/magic-items.json';
@@ -33,7 +33,7 @@ export default {
     }
   },
   methods: {
-    marked: (text) => Marked(text.join('\n'))
+    marked: (text) => marked(text.join('\n'))
   },
   props: ['used']
 };
