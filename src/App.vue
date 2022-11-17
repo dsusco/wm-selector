@@ -42,7 +42,7 @@
     <footer id="footer">
       <p>This website is completely unofficial and in no way endorsed by Games Workshop Limited.</p>
 
-      <p>This Warmaster army selector is open source and maintained on <a href="https://github.com/dsusco/wm-selector" target="_blank">GitHub</a>.</p>
+      <p>This Warmaster army selector (v{{version}}) is open source and maintained on <a href="https://github.com/dsusco/wm-selector" target="_blank">GitHub</a>.</p>
 
       <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
         <input type="hidden" name="cmd" value="_s-xclick" />
@@ -70,7 +70,10 @@ export default {
   name: 'wm-selector',
   components: { PrintItems },
   computed: mapGetters(['jsonPath', 'printItems']),
-  data: () => ({ local: window.location.hostname === 'localhost' }),
+  data: () => ({
+    local: window.location.hostname === 'localhost',
+    version: process.env.VUE_APP_VERSION
+  }),
   mounted () {
     document.addEventListener('focusin', (event) => {
       if (event.target.closest('.hasFocus')) {
