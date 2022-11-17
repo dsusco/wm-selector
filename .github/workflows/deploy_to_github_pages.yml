@@ -9,8 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          node-version: 16
       - uses: actions/checkout@v2
         with:
+          node-version: 16
           repository: wm-selector/wm-selector.github.io
           ssh-key: ${{ secrets.DEPLOY_KEY }}
           path: wm-selector.github.io
