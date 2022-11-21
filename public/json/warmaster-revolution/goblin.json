@@ -12,6 +12,9 @@
       "size": 3,
       "points": 30,
       "min": 4,
+      "upgrades": [
+        "Squig Herd"
+      ],
       "order": 0
     },
     "Squig Herd": {
@@ -152,13 +155,22 @@
       "points": "+80",
       "max": 1,
       "order": 1
+    },
+    "Squig Herd": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "points": "+0",
+      "max": 2,
+      "order": 2
     }
   },
   "magic": true,
   "specialRules": {
     "Goblins": {
       "text": [
-        "Goblins fight in a close mob or huddle in which the smallest and weediest are pushed to the outside. A unit of Goblins includes some armed with bows, some armed with clubs, a few with spears and most with whatever comes to hand. To represent this, the Goblin unit is allowed to shoot as if it had bows but its range is reduced to 15cm."
+        "Goblins fight in a close mob or huddle in which the smallest and weediest are pushed to the outside. A unit of Goblins includes some armed with bows, some armed with clubs, a few with spears and most with whatever comes to hand. To represent this, the Goblin unit is allowed to shoot as if it had bows but its range is reduced to 15cm. Up to two units per full 1000 points can be replaced by Squig Herd while still counting for the Goblin min/max value. Note that these units still count for min/max value of Squig Herds."
       ],
       "order": 1
     },

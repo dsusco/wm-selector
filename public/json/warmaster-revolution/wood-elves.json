@@ -30,9 +30,15 @@
       "attack": 4,
       "hits": 3,
       "armour": "-/5+",
-      "size": 1,
+      "size": "+1",
       "points": 30,
       "max": 4,
+      "noCount": true,
+      "augendUnits": [
+        "Glade Guard",
+        "Eternal Guard"
+      ],
+      "noMagic": true,
       "order": 2
     },
     "Waywatchers": {
