@@ -26,7 +26,7 @@ export default {
       let points;
 
       if (this.troop.pointsValue !== undefined) {
-        points = this.troop.points[store.getters.units[this.parent][this.troop.pointsValue]];
+        points = this.troop.points[store.getters.units[this.parent][this.troop.pointsValue] || '-'];
       } else {
         points = this.troop.points;
       }

@@ -21,7 +21,7 @@ jest.mock('@/store', () => {
           }
         },
         'another unit': {
-          order: 0,
+          order: 1,
           number: 2,
           upgrades: {
             'another upgrade': {
@@ -36,7 +36,7 @@ jest.mock('@/store', () => {
         },
         'another upgrade': {
           points: {
-            '0': '+10'
+            '1': '+10'
           },
           pointsValue: 'order'
         }

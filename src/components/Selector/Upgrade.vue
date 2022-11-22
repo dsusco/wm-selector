@@ -21,7 +21,7 @@ export default {
         points;
 
       if (upgrade.pointsValue !== undefined) {
-        points = upgrade.points[store.getters.units[this.unitID][upgrade.pointsValue]];
+        points = upgrade.points[store.getters.units[this.unitID][upgrade.pointsValue] || '-'];
       } else {
         points = upgrade.points;
       }

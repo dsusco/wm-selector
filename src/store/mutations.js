@@ -81,7 +81,7 @@ export default {
     unitUpgrade.number = payload.number;
 
     if (upgrade.pointsValue !== undefined) {
-      unitUpgrade.pointsCost = payload.number * +upgrade.points[unit[upgrade.pointsValue]];
+      unitUpgrade.pointsCost = payload.number * +upgrade.points[unit[upgrade.pointsValue] || '-'];
     } else {
       unitUpgrade.pointsCost = payload.number * +upgrade.points;
     }
@@ -101,6 +101,8 @@ export default {
       // add any upgrades as defined by the army's upgrade constraints
       state.upgradeConstraints.forEach((upgradeConstraint) => {
         if (upgradeConstraint.unitType.includes(unit.type) &&
+            (upgradeConstraint.unitArmour === undefined || upgradeConstraint.unitArmour.includes(unit.armour || '-')) &&
+            (upgradeConstraint.unitHits === undefined || upgradeConstraint.unitHits.includes(unit.hits || '-')) &&
             !unit.noUpgrades &&
             !(unit.noMagic && upgradeConstraint.magic)) {
           try {
