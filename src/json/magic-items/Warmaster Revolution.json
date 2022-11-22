@@ -12,7 +12,12 @@
     "Banner of Shielding": {
       "order": "BSh",
       "type": "Magic Standard",
-      "points": "+50",
+      "points": {
+        "4+": "+50",
+        "5+": "+30",
+        "6+": "+15"
+      },
+      "pointsValue": "armour",
       "armyMax": 1,
       "text": [
         "A unit with this banner has its Armour value increased in effectiveness by +1. If the unit’s Armour value is 5+ then this banner increases it to 4+ and so on. A unit’s Armour value cannot be better than 3+. If a unit already has an Armour value of 3+ then this banner has no effect. This bonus lasts until the unit loses a stand. After the unit has lost a stand, the banner has no further effect."
@@ -21,7 +26,12 @@
     "Banner of Fortitude": {
       "order": "BFd",
       "type": "Magic Standard",
-      "points": "+50",
+      "points": {
+        "4": "+50",
+        "3": "+30",
+        "2": "+30"
+      },
+      "pointsValue": "hits",
       "armyMax": 1,
       "text": [
         "A unit with this banner increases the Hits value of each of its stands by +1 during its first Combat engagement of fighting. The effect only lasts for the first combat engagement of the battle, including rounds of pursuit combat during the same engagement and any further engagements which result from an advance. Discard odd hits at the end of the Combat engagement before discounting the effect of the Banner of Fortitude."
@@ -30,7 +40,12 @@
     "Banner of Steadfastness": {
       "order": "BSt",
       "type": "Magic Standard",
-      "points": "+30",
+      "points": {
+        "4+": "+20",
+        "5+": "+15",
+        "6+": "+10"
+      },
+      "pointsValue": "armour",
       "armyMax": 1,
       "text": [
         "One shooting hit inflicted on the unit after saves have been taken in each turn is ignored because the missiles are cast aside by the Banner of Steadfastness. This includes hits from magic spells inflicted in the Shooting phase. This effect lasts until the unit loses a stand. After the unit has lost a stand the banner has no further effect."
@@ -39,7 +54,7 @@
     "Banner of Fortune": {
       "order": "BFn",
       "type": "Magic Standard",
-      "points": "+20",
+      "points": "+15",
       "armyMax": 1,
       "text": [
         "The player can choose to immediately re-roll all the unit’s Attack dice once in either the Shooting phase or Combat phase should he wish to do so. This includes any bonus attacks from magic items or characters. The player declares that he is unsatisfied with the scores he has rolled, takes all the dice and immediately rolls them all once again. Note that the player must roll all the dice again, including any that have scored hits, so it is possible to be very unfortunate and roll an even worse score! The Banner of Fortune works only once during the entire game."
@@ -84,7 +99,7 @@
     "Crown of Command": {
       "order": "CC",
       "type": "Device of Power",
-      "points": "+100",
+      "points": "+75",
       "armyMax": 1,
       "text": [
         "If the General has this potent magic item he can choose to issue his first order of each turn against an unmodified Command value of 10. No command penalties apply when the Crown of Command is used. This only applies to the General’s first order each turn, subsequent orders must be given normally. Should the General fail to issue his first order, by rolling an 11 or 12, then the Crown of Command ceases to work."
@@ -93,7 +108,7 @@
     "Helm of Dominion": {
       "order": "HD",
       "type": "Device of Power",
-      "points": "+50",
+      "points": "+40",
       "armyMax": 1,
       "text": [
         "Only a General is allowed to wear the Helm of Dominion (only his head is big enough!). The General’s Command value is increased by +1 up to a maximum value of 10. The Helm of Dominion works for one turn only during the entire battle, the player must specify at the start of the turn if he wishes to employ its powers."

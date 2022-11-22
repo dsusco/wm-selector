@@ -73,10 +73,18 @@ export default {
     }
   },
   SET_UNIT_UPGRADE_NUMBER_AND_POINTS_COST (state, payload) {
-    var unitUpgrade = state.units[payload.unitID].upgrades[payload.upgradeID];
+    var
+      unit = state.units[payload.unitID],
+      upgrade = state.upgrades[payload.upgradeID],
+      unitUpgrade = unit.upgrades[payload.upgradeID];
 
     unitUpgrade.number = payload.number;
-    unitUpgrade.pointsCost = payload.number * +state.upgrades[payload.upgradeID].points;
+
+    if (upgrade.pointsValue !== undefined) {
+      unitUpgrade.pointsCost = payload.number * +upgrade.points[unit[upgrade.pointsValue]];
+    } else {
+      unitUpgrade.pointsCost = payload.number * +upgrade.points;
+    }
   },
   SET_UNITS (state, units) {
     var unit;

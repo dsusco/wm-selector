@@ -23,12 +23,26 @@ jest.mock('@/store', () => {
               number: 1
             }
           }
+        },
+        'another unit': {
+          order: 0,
+          upgrades: {
+            'another upgrade': {
+              number: 1
+            }
+          }
         }
       },
       upgrades: {
         'an upgrade': {
           minMax: '0–1',
           points: '+10'
+        },
+        'another upgrade': {
+          points: {
+            '0': '+5'
+          },
+          pointsValue: 'order'
         }
       }
     }
@@ -36,22 +50,35 @@ jest.mock('@/store', () => {
 });
 
 describe('Upgrade.vue', () => {
-  beforeEach(() => {
-    wrapper = shallowMount(Upgrade, { propsData });
+  describe('with standard upgrade', () => {
+    beforeEach(() => {
+      wrapper = shallowMount(Upgrade, { propsData: { upgradeID: 'an upgrade', unitID: 'a unit' } });
+    });
+
+    it('renders', () => {
+      expect(wrapper.find('.id').text()).toEqual('an upgrade');
+      expect(wrapper.find('.minMax').text()).toEqual('0–1');
+      expect(wrapper.find('.points').text()).toEqual('+10');
+    });
+
+    it('dispatches setUpgradeUpgradeNumber on tr click', () => {
+      wrapper.find('tr').trigger('click');
+      expect(mockDispatch).toHaveBeenCalledWith('setUnitUpgradeNumber', {
+        unitID: 'a unit',
+        upgradeID: 'an upgrade',
+        number: 2
+      });
+    });
   });
 
-  it('renders', () => {
-    expect(wrapper.find('.id').text()).toEqual('an upgrade');
-    expect(wrapper.find('.minMax').text()).toEqual('0–1');
-    expect(wrapper.find('.points').text()).toEqual('+10');
-  });
+  describe('with a variable cost upgrade', () => {
+    beforeEach(() => {
+      wrapper = shallowMount(Upgrade, { propsData: { upgradeID: 'another upgrade', unitID: 'another unit' } });
+    });
 
-  it('dispatches setUpgradeUpgradeNumber on tr click', () => {
-    wrapper.find('tr').trigger('click');
-    expect(mockDispatch).toHaveBeenCalledWith('setUnitUpgradeNumber', {
-      unitID: 'a unit',
-      upgradeID: 'an upgrade',
-      number: 2
+    it('renders', () => {
+      expect(wrapper.find('.id').text()).toEqual('another upgrade');
+      expect(wrapper.find('.points').text()).toEqual('+5');
     });
   });
 });

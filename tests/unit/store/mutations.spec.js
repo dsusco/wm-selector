@@ -220,6 +220,30 @@ describe('store.js mutations', () => {
     });
   });
 
+  it('SET_UNIT_UPGRADE_NUMBER_AND_POINTS_COST hangle points object correctly', () => {
+    mutations.SET_UPGRADES(state, { 'an upgrade': { points: { '0': '+10' }, pointsValue: 'order' } });
+    mutations.SET_UPGRADE_CONSTRAINTS(state, expected.upgradeConstraints);
+    mutations.SET_UNITS(state, expected.units);
+    mutations.SET_UNIT_UPGRADE_NUMBER_AND_POINTS_COST(state, { unitID: 'a unit', upgradeID: 'an upgrade', number: 1 });
+    expect(state.units).toEqual({
+      'a unit': {
+        min: 2,
+        minMax: '2/-',
+        number: 0,
+        order: 0,
+        points: 50,
+        pointsCost: 0,
+        type: 'a type',
+        upgrades: {
+          'an upgrade': {
+            number: 1,
+            pointsCost: 10
+          }
+        }
+      }
+    });
+  });
+
   it('SET_UNITS sets state.units and adds number, pointsCost and minMax properties', () => {
     mutations.SET_UPGRADE_CONSTRAINTS(state, expected.upgradeConstraints);
     mutations.SET_UNITS(state, expected.units);

@@ -29,7 +29,7 @@
       <tbody v-if="used">
         <template v-for="(unit, unitID) in usedUnits">
           <StatLine :key="'unit_' + unitID" :name="unitID" :troop="unit" :used="used" />
-          <StatLine v-for="(upgrade, upgradeID) in unit.upgrades"  :key="'upgrade_' + upgradeID" :name="upgradeID" :troop="upgrade" :used="used" />
+          <StatLine v-for="(upgrade, upgradeID) in unit.upgrades"  :key="'upgrade_' + upgradeID" :name="upgradeID" :troop="upgrade" :used="used" :parent="unitID" />
         </template>
       </tbody>
 

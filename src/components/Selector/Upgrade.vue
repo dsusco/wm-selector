@@ -16,7 +16,17 @@ export default {
       return store.getters.upgrades[this.upgradeID].minMax;
     },
     points () {
-      return store.getters.upgrades[this.upgradeID].points;
+      let
+        upgrade = store.getters.upgrades[this.upgradeID],
+        points;
+
+      if (upgrade.pointsValue !== undefined) {
+        points = upgrade.points[store.getters.units[this.unitID][upgrade.pointsValue]];
+      } else {
+        points = upgrade.points;
+      }
+
+      return points;
     }
   },
   methods: {

@@ -28,7 +28,17 @@ export default {
       return store.getters.units[this.unitID].upgrades[this.upgradeID].number;
     },
     points () {
-      return store.getters.upgrades[this.upgradeID].points;
+      let
+        upgrade = store.getters.upgrades[this.upgradeID],
+        points;
+
+      if (upgrade.pointsValue !== undefined) {
+        points = upgrade.points[store.getters.units[this.unitID][upgrade.pointsValue]];
+      } else {
+        points = upgrade.points;
+      }
+
+      return points;
     },
     tagID () {
       return (this.unitID + '_unit_' + this.upgradeID + '_upgrade').toLowerCase().replace(/\W+/g, '_');
