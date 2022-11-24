@@ -3,7 +3,7 @@
     "Battle Banner": {
       "order": "BB",
       "type": "Magic Standard",
-      "points": "+50",
+      "points": "+30",
       "armyMax": 1,
       "text": [
         "A unit with this banner increases the Attacks value of each of its stands by +1 during its first Combat engagement of fighting. The effect only lasts for the first combat engagement of the battle, including rounds of pursuit combat during the same engagement and any further engagements which result from an advance."
