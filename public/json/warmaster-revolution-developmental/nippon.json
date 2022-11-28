@@ -1,8 +1,8 @@
 {
-  "name": "Nippon (Developmental)",
-  "version": "Warmaster Revolution",
-  "group": 2,
-  "order": 7,
+  "name": "Nippon",
+  "version": "Warmaster Revolution Developmental",
+  "group": 1,
+  "order": 1,
   "units": {
     "Ashigaru": {
       "order": 0,
@@ -212,6 +212,7 @@
     "Temple Demons": {
       "order": 5,
       "text": [
+        "Temple Demons may not take magic items.",
         "Terror: Temple daemon units are immune to terror.",
         "Daemonic Instability: At the start of the Nippon player’s own Command phase, before making any initiatives moves, all Daemon units that have taken at least 1 casualty (i.e. lost at least 1 stand out of 3) must make a ‘Daemonic Instability’ test. Roll a D6. If the unit has lost 2 stands (i.e. has only 1 stand remaining from 3) deduct 1 from the roll. If a Shugenja is within 20cm of the unit, add +1 to the roll.",
         "0-1 One stand is destroyed  the daemons fade away and are absorbed back to the heavens from which they came. Remove one stand from play. If a character is with the unit and the last stand is removed the character is destroyed too.",

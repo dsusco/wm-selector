@@ -25,6 +25,10 @@
       <a target="_blank" title="Warmaster Revolution Armies" href="/pdfs/WMR armies1.22.pdf"><span>Warmaster Revolution Armies</span></a>
     </ArmyListAccordion>
 
+    <ArmyListAccordion :title="'Warmaster Revolution Developmental'">
+      <a target="_blank" title="Warmaster Revolution updates for 2022" href="/pdfs/warmaster-revolution-updates-for-2022-final-draft.pdf"><span>Warmaster Revolution updates for 2022</span></a>
+    </ArmyListAccordion>
+
     <ArmyListAccordion :title="'Warmaster Ancients'">
       <a target="_blank" title="Warmaster Ancients Rulebook Errata" href="/pdfs/WAerr.pdf"><span>Warmaster Ancients Rulebook Errata</span></a>
       <a target="_blank" title="Rules Update for Warmaster Ancients" href="/pdfs/WarmasterAncientsUpdate28.pdf"><span>Rules Update for Warmaster Ancients</span></a>
