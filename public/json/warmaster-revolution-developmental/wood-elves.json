@@ -1,0 +1,345 @@
+{
+  "name": "Wood Elves",
+  "version": "Warmaster Revolution Developmental",
+  "group": 1,
+  "order": 5,
+  "units": {
+    "Glade Guard": {
+      "type": "Infantry",
+      "attack": "3/1",
+      "range": "30cm",
+      "hits": 3,
+      "size": 3,
+      "points": 65,
+      "min": 2,
+      "max": 4,
+      "order": 0
+    },
+    "Eternal Guard": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 60,
+      "max": 3,
+      "order": 1
+    },
+    "Wardancers": {
+      "type": "Infantry",
+      "attack": 4,
+      "hits": 3,
+      "armour": "-/5+",
+      "size": "+1",
+      "points": 30,
+      "max": 4,
+      "noCount": true,
+      "augendUnits": [
+        "Glade Guard",
+        "Eternal Guard"
+      ],
+      "noMagic": true,
+      "order": 2
+    },
+    "Waywatchers": {
+      "type": "Infantry",
+      "attack": "1/2",
+      "range": "30cm",
+      "hits": 3,
+      "size": 2,
+      "points": 60,
+      "max": 1,
+      "order": 3
+    },
+    "Dryads": {
+      "type": "Infantry",
+      "attack": 4,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 60,
+      "min": 1,
+      "specialRules": [
+        "Forest Spirits"
+      ],
+      "order": 4
+    },
+    "Glade Riders": {
+      "type": "Cavalry",
+      "attack": "3/1",
+      "range": "30cm",
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 90,
+      "max": 3,
+      "order": 5
+    },
+    "Wild Riders": {
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 110,
+      "max": 2,
+      "specialRules": [
+        "Forest Spirits"
+      ],
+      "order": 6
+    },
+    "Warhawk Riders": {
+      "type": "Monster",
+      "attack": "2/1",
+      "range": "15cm",
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 85,
+      "max": 1,
+      "order": 7
+    },
+    "Treekin": {
+      "type": "Infantry",
+      "attack": 4,
+      "hits": 4,
+      "armour": "5+",
+      "size": 3,
+      "points": 110,
+      "max": 2,
+      "specialRules": [
+        "Forest Spirits"
+      ],
+      "order": 8
+    },
+    "Treeman": {
+      "type": "Monster",
+      "attack": 6,
+      "hits": 4,
+      "armour": "4+",
+      "size": 1,
+      "points": 130,
+      "max": 1,
+      "specialRules": [
+        "Forest Spirits"
+      ],
+      "order": 9
+    },
+    "General": {
+      "type": "General",
+      "attack": "+2",
+      "command": 10,
+      "size": 1,
+      "points": 155,
+      "armyMin": 1,
+      "armyMax": 1,
+      "upgrades": [
+        "Giant Stag",
+        "Warhawk",
+        "Forest Dragon"
+      ],
+      "order": 10
+    },
+    "Noble": {
+      "type": "Hero",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 80,
+      "max": 1,
+      "upgrades": [
+        "Giant Stag",
+        "Warhawk",
+        "Forest Dragon"
+      ],
+      "order": 11
+    },
+    "Treeman Ancient": {
+      "type": "Hero",
+      "attack": "+3",
+      "command": 8,
+      "size": 1,
+      "points": 130,
+      "armyMax": 1,
+      "noMagic": true,
+      "order": 12
+    },
+    "Branchwraith": {
+      "type": "Wizard",
+      "attack": "+2",
+      "command": 8,
+      "size": 1,
+      "points": 90,
+      "max": 1,
+      "noMagic": true,
+      "order": 13
+    },
+    "Spell Weaver": {
+      "type": "Wizard",
+      "attack": "+0",
+      "command": 8,
+      "size": 1,
+      "points": 80,
+      "max": 1,
+      "upgrades": [
+        "Giant Stag",
+        "Unicorn",
+        "Warhawk",
+        "Forest Dragon"
+      ],
+      "order": 14
+    }
+  },
+  "upgrades": {
+    "Giant Stag": {
+      "type": "Special Mount",
+      "attack": "+1",
+      "points": "+10",
+      "order": 0,
+      "max": 1
+    },
+    "Unicorn": {
+      "type": "Special Mount",
+      "attack": "+1",
+      "points": "+15",
+      "order": 1,
+      "max": 1
+    },
+    "Warhawk": {
+      "type": "Monstrous Mount",
+      "attack": "+1",
+      "points": "+15",
+      "order": 2,
+      "max": 1
+    },
+    "Forest Dragon": {
+      "type": "Monstrous Mount",
+      "attack": "+3",
+      "points": "+100",
+      "max": 1,
+      "order": 3
+    }
+  },
+  "magic": true,
+  "armyRules": [
+    "**Woodland Folk.** Due to living amongst the forests of Loren all Wood Elf infantry does not suffer the usual -1 Command penalty when within woodland."
+  ],
+  "specialRules": {
+    "Glade Guard": {
+      "order": 1,
+      "text": [
+        "Wood Elves are just as famed for their bow as their High Elf cousins, and as such Glade Guard units add +1 to their dice roll when making shooting attacks. Therefore these units score a hit against targets in the open on a 3+, against defended targets on a 4+, and against fortified targets on a 5+."
+      ]
+    },
+    "Wardancers": {
+      "order": 2,
+      "text": [
+        "Wardancer stands never fight as a independent unit. Instead, you may add one stand of Wardancers to a Glade Guard or Eternal Guard unit. This brings the size of the unit to 4 stands. Wardancers always have the same Armour value as the rest of their unit, either 5+ or 0. They fight as part of their unit and can be removed as a unit casualty if a player wishes. Wardancer casualty never count as casualty for purposes of issuing orders, which means there is no -1 Command penalty as there normally would be for units that have lost a stand. Wardancer stands never count as part of the unit's formation when determining whether they move at full of half pace, so no movement penalty is incurred if they are arranged out of the unit's regular formation."
+      ]
+    },
+    "Waywatchers": {
+      "order": 3,
+      "text": [
+        "Famous for their bow skills even by a Wood Elf standards, Waywatchers shoot the enemy with terrifying accuracy. They add +1 to their dice roll when making shooting attacks and these attacks are resolved at -1 Armor value for the enemy.",
+        "",
+        "Waywatchers can also ambush. Individual units can be infiltrated onto the battlefield once the game has begun. To infiltrate a unit, the Wood Elf player nominates the point where he wants the Waywatchers to appear and issues an 'infiltration' order from any character. The character does not have to be within his normal command range to issue an infiltration order - the character's command range is considered to extend over the entire tabletop when issuing an infiltration order. Treat the order as issued to the nominated point, and apply any modifiers for distance and proximity of enemy, but ignore penalties of dense terrain. The nominated point must lie either on the table within dense terrain or on any base edge other than the enemy player's own table edge. If successful, place one stand on the nominated spot and arrange the rest of the unit around it. The infiltrated unit cannot be placed so that it touches an enemy unit. Once deployed, orders can be given to the unit by the same character that gave the infiltration order if he is within his normal command range, the infiltrating unit is considered to have used its first order to deploy. If the infiltration order is failed the unit is not deployed and cannot infiltrate that turn, it can attempt to infiltrate in a subsequent turn at the same or a different place."
+      ]
+    },
+    "Forest Spirits": {
+      "order": 4,
+      "text": [
+        "Forest Spirits are woodland creatures. They are immune to terror and suffer -1 Command penalty when being ordered by a General or Noble."
+      ]
+    },
+    "Wild Riders": {
+      "order": 5,
+      "text": [
+        "Wild Riders receive +1 Attack in the first round of every combat when fighting to the front."
+      ]
+    },
+    "Warhawk Riders": {
+      "order": 6,
+      "text": [
+        "Warhawk riders can fly. They have a shooting range of only 15cm. However, they can shoot from any edge without turning stands to face their target. Just measure the range from any stand edge, front, side or rear. Note that this enables them to shoot at enemies charging them from any direction."
+      ]
+    },
+    "Treeman": {
+      "order": 7,
+      "text": [
+        "Treeman can enter woods and suffers no command spenalty for being within the woods but cannot get defended status there. Treeman causes terror."
+      ]
+    },
+    "Treeman Ancient": {
+      "order": 8,
+      "text": [
+        "Treeman Ancient has -1 Command penalty when issuing orders to other than Forest Spirit units. Can join only Forest Spirit units and is able to cast Tree Singing spell. Units joined by Treeman Ancient cause terror. There can ever be only one Treeman Ancient in any Wood Elf army. Cannot be given any magic items."
+      ]
+    },
+    "Branchwraith": {
+      "order": 9,
+      "text": [
+        "Branchwraith has -1 Command penalty when issuing orders to other than Forest Spirit units. Can join only Forest Spirit units and is able to cast Tree Singing spell. Cannot be given any magic items."
+      ]
+    },
+    "Giant Stag": {
+      "order": 10,
+      "text": [
+        "General, Nobles and Spell Weavers may ride a Giant Stag. The Stag adds +1 Attack to those of its rider."
+      ]
+    },
+    "Unicorn": {
+      "order": 11,
+      "text": [
+        "This mount can be ridden by Spell Weaver only. The Unicorn adds +1 Attack to those of its rider. Once per battle the Unicorn’s magical power adds +1 to the dice when casting a spell. The player must announce that the Unicorn’s magic before rolling to see if the spell works. There can be only one Unicorn in the army."
+      ]
+    },
+    "Warhawk": {
+      "order": 12,
+      "text": [
+        "General, Nobles and Spell Weavers may ride a Warhawk. The Warhawk can fly, increasing its rider’s move from 60cm to 100cm, and it adds +1 Attack to those of its rider."
+      ]
+    },
+    "Forest Dragon": {
+      "order": 13,
+      "text": [
+        "Generals, Nobles and Spell Weavers may ride Forest Dragons. A Forest Dragon can fly, increasing its rider’s move to 100cm, and adds +3 Attacks to those of its rider. Any unit joined by a character riding a Forest Dragon cause terror in their enemies and so long as the Dragon is attached to a unit, it can use its Corrosive Breath attack. This is a shooting attack with a range of 20cm, which can be directed against one target as normal. The breath has 3 Attacks, which are worked out in the usual way."
+      ]
+    }
+  },
+  "spells": [
+    {
+      "roll": 4,
+      "range": "30cm",
+      "text": [
+        "The Wizard calls force a mass of tangling thorn branches to surround their troops, protecting them from harm. This spell may be cast upon a single friendly Infantry unit within range, regardless of whether the caster can see them or not. The spell lasts until the start of the caster’s next turn, or until the target unit moves in any way. The target Infantry unit counts as Defended, even if it is in open terrain."
+      ],
+      "name": "Tree Singing"
+    },
+    {
+      "roll": 5,
+      "range": "30cm",
+      "text": [
+        "A weird enchantment forms around the target unit and engulfs it. Unit causes terror until Wood Elf next magic phase."
+      ],
+      "name": "Twilight Host"
+    },
+    {
+      "roll": 5,
+      "range": "30cm",
+      "text": [
+        "Unit may make a full pace move into contact with the nearest visible enemy unit in the same way as when charging. Enemy may not shoot at chargers."
+      ],
+      "name": "Call of the Hunt"
+    },
+    {
+      "roll": 6,
+      "range": "60cm",
+      "text": [
+        "The spell makes three shooting attacks on all enemy units within 10cm of chosen wooded terrain piece. Units get no armour save if within wooded terrain.",
+        "",
+        "Unengaged units are not driven back by this spell (the assault comes form the ground beneath their feet). Engaged units carry over any hits scored into the first round of combat; any hits scored count as having been struck in the combat itself."
+      ],
+      "name": "Fury of the Forest"
+    }
+  ]
+}

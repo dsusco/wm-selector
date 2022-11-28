@@ -1,0 +1,331 @@
+{
+  "name": "Dogs of War",
+  "version": "Warmaster Revolution Developmental",
+  "group": 0,
+  "order": 4,
+  "units": {
+    "Pikemen": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 60,
+      "min": 2,
+      "order": 0
+    },
+    "Crossbowmen": {
+      "type": "Infantry",
+      "attack": "3/1",
+      "range": "30cm",
+      "hits": 3,
+      "size": 3,
+      "points": 55,
+      "min": 2,
+      "upgrades": [
+        "Handgunners"
+      ],
+      "order": 1
+    },
+    "Handgunners": {
+      "type": "Infantry",
+      "attack": "3/1",
+      "range": "30cm",
+      "hits": 3,
+      "size": 3,
+      "points": 65,
+      "max": 2,
+      "order": 2
+    },
+    "Swordsmen": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 45,
+      "max": 4,
+      "order": 3
+    },
+    "Ogres": {
+      "type": "Infantry",
+      "attack": 4,
+      "hits": 4,
+      "armour": "5+",
+      "size": 3,
+      "points": 105,
+      "max": 1,
+      "order": 4
+    },
+    "Dwarfs": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 4,
+      "armour": "4+",
+      "size": 3,
+      "points": 110,
+      "max": 2,
+      "order": 5
+    },
+    "Marauders": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 60,
+      "max": 2,
+      "order": 6
+    },
+    "Light Cavalry": {
+      "type": "Cavalry",
+      "attack": "3/1",
+      "range": "15cm",
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 80,
+      "max": 4,
+      "order": 7
+    },
+    "Knights": {
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "4+",
+      "size": 3,
+      "points": 110,
+      "max": 2,
+      "order": 8
+    },
+    "Galloper Guns": {
+      "type": "Artillery",
+      "attack": "1/2+bounce",
+      "range": "40cm",
+      "hits": 2,
+      "size": 2,
+      "points": 85,
+      "max": 1,
+      "order": 9,
+      "specialRules": [
+        "Cannon"
+      ]
+    },
+    "Giant": {
+      "type": "Monster",
+      "attack": 8,
+      "hits": 8,
+      "armour": "5+",
+      "size": 1,
+      "points": 150,
+      "max": 1,
+      "order": 10
+    },
+    "Birdmen": {
+      "type": "Infantry",
+      "attack": "2/1",
+      "range": "30cm",
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 85,
+      "max": 1,
+      "order": 11
+    },
+    "General": {
+      "type": "General",
+      "attack": "+2",
+      "command": 9,
+      "size": 1,
+      "points": 125,
+      "armyMin": 1,
+      "armyMax": 1,
+      "upgrades": [
+        "Griffon"
+      ],
+      "order": 12
+    },
+    "Hero": {
+      "type": "Hero",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 80,
+      "max": 2,
+      "upgrades": [
+        "Griffon"
+      ],
+      "order": 13
+    },
+    "Paymaster": {
+      "type": "Hero",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 80,
+      "armyMax": 1,
+      "upgrades": [
+        "Pay Wagon"
+      ],
+      "order": 14,
+      "specialRules": [
+        "Paymaster, Pay Wagon"
+      ]
+    },
+    "Wizard": {
+      "type": "Wizard",
+      "attack": "+0",
+      "command": 7,
+      "size": 1,
+      "points": 45,
+      "max": 1,
+      "upgrades": [
+        "Griffon"
+      ],
+      "order": 15
+    }
+  },
+  "upgrades": {
+    "Griffon": {
+      "type": "Monstrous Mount",
+      "attack": "+2",
+      "points": "+80",
+      "max": 1,
+      "order": 0
+    },
+    "Pay Wagon": {
+      "type": "Chariot Mount",
+      "attack": "+1",
+      "points": "+20",
+      "armyMax": 1,
+      "order": 1,
+      "specialRules": [
+        "Paymaster, Pay Wagon"
+      ]
+    },
+    "Handgunners": {
+      "type": "Special",
+      "attack": "3/1",
+      "range": "30cm",
+      "hits": 3,
+      "size": 3,
+      "points": "+10",
+      "max": 1,
+      "order": 2
+    }
+  },
+  "magic": true,
+  "specialRules": {
+    "Pikemen": {
+      "text": [
+        "The pike is the traditional weapon of the mercenaries of Tilea. Twice as long as a spear and even longer than a cavalryman’s lance this is truly fearsome although rather unwieldy weapon. Due to this Pikemen never benefit from defended or fortified status when in dense terrain (even partially) or on fortress walls etc. They still may be in defended position on higher ground or behind low obstacle as usual. Pikemen count as defended against charging cavalry or chariots to their front. The bonus only applies in the first combat round of an engagement. Note that the rule doesn't apply when pikemen are partially in dense terrain. Pikemen should be based as cavalry - i.e. the models are orientated towards the narrow edge of the base. Pikemen stands may only give or receive support by other infantry or Pikemen stands that are facing the same direction and touch their flank with the whole of their own flank. Any support behind or in front of Pikemen stand is not allowed. In all other respects they count as infantry (movement/pursuit etc.)."
+      ],
+      "order": 1
+    },
+    "Handgunners": {
+      "text": [
+        "Count enemy Armour values as one worse than normal when shot by a handgun. So an armour value of 3+ counts as 4+, 4+ as 5+, and 5+ as 6+, whilst an Armour value of 6+ can't save against a handgun. One unit of Crossbowmen per full 1000 points can be replaced by Handgunners (including the 10pts extra in price) while still counting for the Crossbowmen min/max value. Note that this unit also counts for min/max value of Handgunners."
+      ],
+      "order": 2
+    },
+    "Ogres": {
+      "text": [
+        "Ogres flock to Dogs of War armies for the chance of a good fight and as much as they can eat. These creatures are notoriously fond of fresh human meat, although they will eat practically anything that was once alive (or still is). To represent this an Ogre unit must use its Initiative to charge an enemy unit of humans (humans... Men not Dwarfs, Elves etc.) if it is within 20cm at the start of the Command phase and the Ogres can reach it. This happens automatically."
+      ],
+      "order": 3
+    },
+    "Light Cavalry": {
+      "text": [
+        "Dogs of War armies make great use of expert light cavalry from all around the world. Empire Pistoliers, Arabian Desert Riders, Hobgoblin Wolf Riders and Kislev Horse Archers are particularly adept at outmanoeuvring an enemy and harrying his flanks. Light cavalry are equipped with light bows or pistols and have a range of 15cm. However, as their weapons are so handy, they can shoot behind or to the side without turning stands to face their target. Just measure the range from any edge, front side or rear. They can therefore shoot at enemy charging them from any direction."
+      ],
+      "order": 4
+    },
+    "Galloper Guns": {
+      "text": [
+        "These are lighter artillery than Dwarf or Empire cannons; due to this they are shorter ranged, but can make up for their lighter shot by producing a higher volume of fire.",
+        "",
+        "Galloper Guns move 20cm. All the normal rules for artillery applies as well as cannon’s rules for shooting (bounce through, no saves and reduction of cover values). Because they are light guns they have a range of only 40cm. They still may shoot at the charging enemy by firing ‘grapeshot’ as normal."
+      ],
+      "order": 5
+    },
+    "Giant": {
+      "order": 6
+    },
+    "Birdmen": {
+      "text": [
+        "Only half-mad nutters like Tileans would try to fly! The Birdmen wear insane contraptions of light wood covered in canvas that are shaped like wings and allow them to glide on the air currents. These ‘wings’ allow the Birdmen to fly and still use their crossbows as normal. Because they are awkward flyers, they can be pursued by any type of enemy troops. Birdmen are based facing the long edge of the base in the same way as other infantry."
+      ],
+      "order": 7
+    },
+    "Paymaster, Pay Wagon": {
+      "order": 8,
+      "text": [
+        "There may only ever be one Paymaster in the army. Only the Paymaster may use the Wagon. If the Pay Wagon is used the Paymaster may bribe the units around him to fight harder. He may add +1 to all of his Command checks for a single turn only."
+      ]
+    },
+    "Wizard": {
+      "text": [
+        "The Wizard uses the Empire spells."
+      ],
+      "order": 9
+    },
+    "Griffon": {
+      "text": [
+        "Generals, Wizards and Heroes may ride Griffons. The Griffon combines the appearance of a lion and an eagle. These creatures are hatched from stolen eggs and hand reared to serve as mounts for favoured individuals. The Griffon can fly, increasing the rider’s movement to 100cm and it adds +2 Attacks to those of the rider. A unit which includes a Griffon causes terror in its enemies."
+      ],
+      "order": 10
+    },
+    "Cannon": {
+      "order": 11
+    }
+  },
+  "spells": [
+    {
+      "roll": 5,
+      "range": "30cm",
+      "text": [
+        "*A ball of flame shoots from the Wizard's outstretched arm burning all in its path*",
+        "",
+        "Draw an imaginary line 30cm long from the Wizard's stand in any direction you wish. The line will pass through any intervening units but not beyond terrain that would normally stop a missile shot, e.g. over the crest of a hill, more than 2cm of woodland, and so forth.",
+        "",
+        "Each unit under the line takes three shooting attacks worked out in the usual way. Note that this spell can easily affect several units and will affect all units that fall beneath the line (including your own). Unengaged units can be driven back by a Ball of Flame as with ordinary shooting (even including friends). Engaged units cannot be driven back by the Ball of Flame but carry over any hits scored into the first round of combat; any hits scored count as having been struck in the combat itself."
+      ],
+      "name": "Ball of Flame"
+    },
+    {
+      "roll": 5,
+      "range": "30cm",
+      "text": [
+        "*The Wizard's voice booms out across the battlefield directing troops above the tumult of combat with the magical Voice of Command.*",
+        "",
+        "The spell can be cast on any unengaged friendly unit within range regardless of whether the Wizard can see it or not. The spell affects only a single unit, never a brigade and there is no supporting charge possible.",
+        "",
+        "The unit can be moved just as if it had received an order in the Command phase. Character stands that have joined the unit will not move with it: they remain where they are."
+      ],
+      "name": "Voice of Command"
+    },
+    {
+      "roll": 4,
+      "range": "30cm",
+      "text": [
+        "*A weird enchantment forms around the target unit and engulfs it in strange lights, scary nightmares and disorientating special effects.*",
+        "",
+        "This spell can be cast on any enemy unit within range regardless of whether the Wizard can see it or not.",
+        "",
+        "The spell lasts until the end of the opposing player's following turn.",
+        "",
+        "The unit moves at half pace in all situations: even when charging for example. The unit counts all enemies as terrifying (-1 Attack penalty) even when it is otherwise immune to terror. If the unit would normally cause terror then it ceases to do so and counts all enemies as terrifying just like everyone else. However, if the target is Undead or Daemon it will not count enemies as terrifying although all other penalties apply as described (Undead and Daemons are hard to spook)."
+      ],
+      "name": "Weird Enchantment"
+    },
+    {
+      "roll": 2,
+      "text": [
+        "*With a swirl of his cloak, a crack of thunder and just a hint of maniacal laughter the Wizard vanishes to reappear anywhere on the battlefield.*",
+        "",
+        "The Wizard is moved to a new position anywhere on the table. He can leave or join a unit if he wishes, enabling a Wizard to move into or out of combat for example. Once the Wizard has moved he can cast a second spell, but note this must be a different spell and not a further Teleport! Roll to cast the second spell as normal. A Wizard that Teleports successfully can therefore potentially cast two spells that turn."
+      ],
+      "name": "Teleport"
+    }
+  ]
+}

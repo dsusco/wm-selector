@@ -1,0 +1,244 @@
+{
+  "name": "Ogre Kingdoms",
+  "version": "Warmaster Revolution Developmental",
+  "group": 1,
+  "order": 3,
+  "units": {
+    "Bull Ogres": {
+      "type": "Infantry",
+      "attack": 4,
+      "hits": 4,
+      "armour": "5+",
+      "size": 3,
+      "points": 105,
+      "min": 2,
+      "order": 0
+    },
+    "Leadbelchers": {
+      "type": "Infantry",
+      "attack": "3/2",
+      "range": "15cm",
+      "hits": 4,
+      "armour": "6+",
+      "size": 3,
+      "points": 90,
+      "max": 2,
+      "order": 1
+    },
+    "Ironguts": {
+      "type": "Infantry",
+      "attack": 4,
+      "hits": 4,
+      "armour": "4+",
+      "size": 3,
+      "points": 140,
+      "max": 2,
+      "order": 2
+    },
+    "Yhetees": {
+      "type": "Infantry",
+      "attack": 5,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 120,
+      "max": 2,
+      "order": 3
+    },
+    "Gnoblars": {
+      "type": "Infantry",
+      "attack": "2/1",
+      "range": "15cm",
+      "hits": 3,
+      "size": 3,
+      "points": 30,
+      "max": 4,
+      "order": 4
+    },
+    "Rhinox Riders": {
+      "type": "Cavalry",
+      "attack": 5,
+      "hits": 4,
+      "armour": "5+",
+      "size": 3,
+      "points": 220,
+      "max": 1,
+      "order": 5
+    },
+    "Gorgers": {
+      "type": "Monster",
+      "attack": 4,
+      "hits": 4,
+      "armour": "5+",
+      "size": 3,
+      "points": 145,
+      "max": 1,
+      "order": 6
+    },
+    "Slave Giant": {
+      "type": "Monster",
+      "attack": 8,
+      "hits": 8,
+      "armour": "5+",
+      "size": 1,
+      "points": 150,
+      "max": 1,
+      "order": 7,
+      "specialRules": [
+        "Giant"
+      ]
+    },
+    "Scrap Launcher": {
+      "type": "Artillery",
+      "attack": "1/3",
+      "range": "60cm",
+      "hits": 3,
+      "armour": "-",
+      "size": 1,
+      "points": 75,
+      "max": 1,
+      "order": 8,
+      "specialRules": [
+        "Stone Thrower"
+      ]
+    },
+    "Tyrant": {
+      "type": "General",
+      "attack": "+2",
+      "command": 9,
+      "points": 125,
+      "armyMin": 1,
+      "armyMax": 1,
+      "upgrades": [
+        "Bull Rhinox"
+      ],
+      "order": 9,
+      "size": 1
+    },
+    "Bruiser": {
+      "type": "Hero",
+      "attack": "+1",
+      "command": 8,
+      "points": 80,
+      "max": 1,
+      "upgrades": [
+        "Bull Rhinox"
+      ],
+      "order": 10,
+      "size": 1
+    },
+    "Butcher": {
+      "type": "Wizard",
+      "attack": "+1",
+      "command": 8,
+      "points": 90,
+      "max": 1,
+      "upgrades": [
+        "Bull Rhinox"
+      ],
+      "order": 11,
+      "size": 1
+    }
+  },
+  "upgrades": {
+    "Bull Rhinox": {
+      "type": "Monstrous Mount",
+      "attack": "+2",
+      "points": "+65",
+      "max": 1,
+      "order": 0
+    }
+  },
+  "magic": true,
+  "specialRules": {
+    "Bull Ogres": {
+      "text": [
+        "If an Ogre unit can use its initiative to charge an enemy unit of humans at the start of the Command phase then it must do so. This happens automatically and their commander can do nothing about it. ‘Humans’ encompasses all ‘men’ including Chaos Warriors and Marauders, but not Dwarfs, Elves etc."
+      ],
+      "order": 1
+    },
+    "Leadbelchers": {
+      "text": [
+        "Leadbelchers have a shooting range of 15cm. The unit has 2 shooting attacks per stand, it may roll both attacks (per stand) as part of a Stand and Shoot action. Units receiving a shooting attack from Leadbelchers receive a -1 penalty for their armour rolls."
+      ],
+      "order": 2
+    },
+    "Yhetees": {
+      "text": [
+        "When trying to issue an order to a unit of Yhetees or to a brigade that contains a unit of Yhetees, there is always a -1 Command penalty due their beastly and unruly nature. Yhetees always ignore distance modifiers when receiving orders and can pursue any type of retreating enemy. If a character joined Yhetees unit it can not be brigaded with Gnoblars."
+      ],
+      "order": 3
+    },
+    "Gnoblars": {
+      "text": [
+        "Unit is allowed to shoot as if it had bows but its range is reduced to 15cm. A Gnoblar stand cannot be supported by other kinds of infantry - only by other Gnoblar stands. Note, however, that Gnoblars can support other kinds of infantry as normal. Gnoblars cannot be given magic items. Characters cannot join Gnoblar units."
+      ],
+      "order": 4
+    },
+    "Rhinox Riders": {
+      "text": [
+        "Units of Rhinox Riders are unaffected by terror. Rhinox Riders receive +1 Attack when charging against an enemy in open in the same way as chariots and monsters."
+      ],
+      "order": 5
+    },
+    "Gorgers": {
+      "text": [
+        "Rather than usual monsters the Gorgers are based along the long base edge as infantry stands. Gorgers must use its initiative to charge an enemy if possible and never use their initiative to evade. Gorgers must always pursue, but can not advance. They are unaffected by enemies that cause terror in combat and do not suffer the usual -1 Attack modifier."
+      ],
+      "order": 6
+    },
+    "Giant": {
+      "order": 7
+    },
+    "Stone Thrower": {
+      "order": 8
+    },
+    "Bull Rhinox": {
+      "text": [
+        "Tyrant, Bruisers and Butchers may ride the Bull Rhinox. A unit that is joined with a character mounted on this huge beast causes terror in enemies."
+      ],
+      "order": 9
+    }
+  },
+  "spells": [
+    {
+      "roll": 3,
+      "range": "20cm",
+      "text": [
+        "*The Butcher grinds his way through a lump of earth encrusted bedrock taken from the peak of a mountain, imbuing himself and his fellows with supernatural resilience. This often costs the Butcher more than a couple of teeth.*",
+        "",
+        "Target friendly unit can’t be driven back or confused until your next turn."
+      ],
+      "name": "Tooth Cracker"
+    },
+    {
+      "roll": 5,
+      "range": "20cm",
+      "text": [
+        "*Shovelling dry bones into his mouth, the Butcher painfully crunches his way through femurs, ribs and skulls. As he points at his foes and spits his bloody curse, the enemy find their own bones breaking within their bodies.*",
+        "",
+        "Counts as three shooting attacks with no armour save. The spell causes drive back as for normal shooting. Also, drive back rolls of 5-6 from Bone Cruncher cause confusion. The Wizard must be able to see the target and can’t cast the spell into a combat."
+      ],
+      "name": "Bone Cruncher"
+    },
+    {
+      "roll": 4,
+      "text": [
+        "*The Butcher greedily devours the heart of a Bull Rhinox, no doubt enjoying the feast of healthy blood and muscle whilst he imbues himself and his charges with the strength of a charging Rhinox.",
+        "",
+        "The spell adds +1 Attack for each stand in a unit the Butcher has joined, including his own stand. The spell lasts for the duration of the following Combat phase."
+      ],
+      "name": "Bull Gorger"
+    },
+    {
+      "roll": 5,
+      "range": "20cm",
+      "text": [
+        "*The Ogre Butcher forces down the toxic guts of a Stone Troll, great quantities of acid and bile ravaging his much abused gut as he transfers the supernatural abilities of the troll onto himself and his companions.*",
+        "",
+        "This spell can be cast on friendly unit in combat. Each stand in affected unit gain +1 Hit during the following Combat phase."
+      ],
+      "name": "Troll Guts"
+    }
+  ]
+}
