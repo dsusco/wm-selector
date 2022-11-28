@@ -1,0 +1,243 @@
+{
+  "name": "The Koreans, 1592",
+  "version": "Warmaster Medieval",
+  "group": "Japanese invasions of Korea",
+  "order": 2,
+  "units": {
+      "Heavy Cavalry": {
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "range": "15",
+      "size": 3,
+      "max": 4,
+      "min": 2,
+      "points": 115,
+      "specialRules": [
+        "Shock"
+      ],
+      "order": 0,
+      "upgrades": [
+        "Heavy Infantry"
+      ]
+    },
+    "Light Cavalry": {
+      "type": "Cavalry",
+      "attack": 2,
+      "hits": 3,
+      "range": "15",
+      "armour": "6+",
+      "size": 3,
+      "max": 4,
+      "points": 60,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "order": 1
+    },
+    "Spearmen": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "points": 35,
+      "order": 2
+    },
+    "Bowmen": {
+      "type": "Infantry",
+      "attack": 2,
+      "hits": 3,
+      "range": "30",
+      "size": 3,
+      "max": 8,
+      "points": 40,
+      "order": 3,
+      "upgrades": [
+        "Pavisse",
+		"Skirmishers Bowmen",
+		"ArquebusierB"
+      ]
+    },
+    "Handgunners": {
+      "type": "Infantry",
+      "attack": 2,
+      "hits": 3,
+      "range": "20",
+      "size": 3,
+      "max": 1,
+      "points": 45,
+      "order": 4,
+      "upgrades": [
+        "Pavisse",
+		"Skirmishers Arquebusier",
+		"ArquebusierH"
+      ]
+    },
+    "Slaves": {
+      "type": "Infantry",
+      "attack": 2,
+      "hits": 2,
+      "size": 3,
+      "max": 8,
+      "points": 20,
+      "order": 5
+    },
+    "Heavy Cannon": {
+      "type": "Artillery",
+      "attack": 1,
+      "range": "3x60",
+      "hits": 2,
+      "size": 1,
+      "max": 1,
+      "points": 75,
+      "order": 6
+    },
+    "Cannon": {
+      "type": "Artillery",
+      "attack": 1,
+      "range": "2x40",
+      "hits": 2,
+      "size": 2,
+      "max": 2,
+      "points": 50,
+      "order": 7,
+      "specialRules": [
+        "Slow"
+      ]},
+      "General": {
+        "type": "General",
+        "attack": "+3",
+        "command": 8,
+        "size": 1,
+        "armyMin": 1,
+        "armyMax": 1,
+        "points": 100,
+        "upgrades": [
+          "Portents"
+        ],
+        "order": 8
+      },
+      "Leader": {
+        "type": "Leader",
+        "attack": "+2",
+        "command": 8,
+        "size": 1,
+        "max": 2,
+        "points": 80,
+        "order": 9
+      }
+    },
+    "upgrades": {
+      "Skirmishers Bowmen": {
+        "type": "Infantry",
+        "attack": 1,
+        "range": 15,
+        "hits": 3,
+        "size": 3,
+        "points": -10,
+        "max": 2,
+        "order": 1,
+        "specialRules": [
+          "Skirmish"
+        ]
+      },
+      "Skirmishers Arquebusier": {
+        "type": "Infantry",
+        "attack": 1,
+        "range": 30,
+        "hits": 3,
+        "size": 3,
+        "points": -10,
+        "max": 2,
+        "order": 2,
+        "specialRules": [
+          "Skirmish",
+          "Handgunners"
+        ]
+      },
+      "Portents": {
+        "order": 3,
+        "armyMax": 1,
+        "points": 10
+      },
+      "Pavisse": {
+        "order": 4,
+        "points": 5
+      },
+      "ArquebusierB": {
+        "type": "Infantry",
+        "attack": 2,
+        "range": 30,
+        "hits": 3,
+        "size": 3,
+        "points": 10,
+        "max": 2,
+        "order": 5,
+        "specialRules": [
+          "Handgunners"
+        ]
+      },
+      "ArquebusierH": {
+        "type": "Infantry",
+        "attack": 2,
+        "range": 30,
+        "hits": 3,
+        "size": 3,
+        "points": 5,
+        "max": 2,
+        "order": 6,
+        "specialRules": [
+          "Handgunners"
+        ]
+      },
+      "Heavy Infantry": {
+        "type": "Infantry",
+        "attack": 3,
+        "range": 30,
+        "hits": 3,
+        "armour": "5+",
+        "size": 3,
+        "points": -45,
+        "order": 7
+      }
+    },
+    "specialRules": {
+      "Skirmish": {
+        "order": 1
+      },
+      "Shock": {
+        "order": 2
+      },
+      "Handgunners": {
+        "order": 3
+      },
+      "Pavisse": {
+        "order": 4
+      },
+      "Slow": {
+        "order": 5
+      },
+      "Skirmishers Bowmen": {
+        "text": [
+          "They cannot carry pavisse. You can't have more than 2 'Skirmish' units per 1000 pts (with bows or arquebus)"
+        ],
+        "order": 6
+      },
+      "Skirmishers Arquebusier": {
+        "text": [
+          "They cannot carry pavisse. You can't have more than 2 'Skirmish' units per 1000 pts  (with bows or arquebus)"
+        ],
+        "order": 7
+      },
+      "Portents": {
+        "order": 8
+    },
+      "Cannon": {
+        "order": 9
+      },
+      "Heavy Cannon": {
+        "order": 10
+      }
+  }
+}

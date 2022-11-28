@@ -1,0 +1,149 @@
+{
+  "name": "The Hussites, 1424",
+  "version": "Warmaster Medieval",
+  "group": "Hussite Wars",
+  "order": 0,
+  "units": {
+    "Hussite Nobles": {
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "4+",
+      "size": 3,
+      "max": 1,
+      "points": 135,
+      "order": 0,
+      "specialRules": [
+        "Knights"
+      ]
+    },
+    "Hussite Scouts": {
+      "type": "Cavalry",
+      "attack": 2,
+      "hits": 3,
+      "range": 15,
+      "armour": "6+",
+      "size": 3,
+      "min": 1,
+      "max": 4,
+      "points": 60,
+      "order": 1,
+      "specialRules": [
+        "Scouts",		
+        "Skirmish"
+      ]
+    },
+    "Hussite Followers": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "range": 20,
+      "armour": "6+",
+      "size": 3,
+      "min": 3,
+      "points": 60,
+      "order": 2
+    },
+    "War Wagons": {
+      "type": "Wagon",
+      "attack": 1,
+      "hits": 3,
+      "range": "15+",
+      "armour": "4+",
+      "size": 3,
+      "min": 3,
+      "points": 60,
+      "order": 3,
+      "upgrades": [
+        "Ballast Wagons"
+      ]
+    },
+    "Captain": {
+      "type": "General",
+      "attack": "+2",
+      "command": 9,
+      "size": 1,
+      "armyMin": 1,
+      "armyMax": 1,
+      "points": 125,
+      "order": 4,
+      "upgrades": [
+        "Jan Zizka"
+      ]
+    },
+    "Leader": {
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "max": 2,
+      "points": 80,
+      "order": 5
+    }
+  },
+  "upgrades": {
+    "Ballast Wagons": {
+      "type": "Wagon",
+      "attack": "1/6 special",
+      "hits": 3,
+      "range": "15+",
+      "armour": "4+",
+      "size": 3,
+      "armyMax": 1,
+      "points": 25,
+      "order": 0
+    }  ,
+    "Jan Zizka": {
+      "type": "General",
+      "points": 25,
+      "armyMax": 1,
+      "order": 2,
+      "specialRules": [
+        "Terror"
+      ]
+    }    
+  },
+  "specialRules": {
+    "Skirmish": {
+      "order": 1
+    },
+    "Shock": {
+      "order": 2
+    },
+    "Knights": {
+      "order": 3
+    },
+    "Terror": {
+      "order": 4
+    },
+    "Hussite Scouts": {
+      "text": [
+        "They can either included in the battle as normal - or up to two units can be used to advance your army before the battle begins as follows. The player can give up either one or two units of Scouts before the battle begins - these count as casualties. For each unit given up in this way, the player can move up to 1.000 points of troops forward up to 10 cm from their initial position. Where two units are given up, the player can either move the same troops forward twice or two different sets of troops once each."
+      ],
+      "order": 5
+    },
+    "Hussite Followers": {
+      "text": [
+        "Range 20cm & -1 armour save modifier when stationary"
+      ],
+      "order": 6
+    },
+    "War Wagons": {
+      "text": [
+        "Range 15cm but they can combine with other War Wagons (see ballast wagons)"
+      ],
+      "order": 7
+    },
+    "Ballast Wagons": {
+      "text": [
+        "Specal rule :",
+		"1 : The unit fights exactly like other war Wagons. In addition the player can cut the wagons loose and roll them towards the enemy - this requires a separate order to be successfully issued to the Ballast Wagons in the Command phase.",
+		"2 : If successful, the unit is formed into a line (narrow edge to the front) and aimed at a visible enemy target within 30cm and within the frontal arc of the unit (as standard for missile targets).",
+		"The player then rolls 5d6 and adds the scores together - this is the total distance the Wagon unit ttravels before the Wagons tip over and destroyed. The Wagons will roll through any units in their wau, striking each in turn. Any unit hit by the runaway Wagons suffers 6 attacks with no saving throws allowed for any hits caused. Enemy units treat any hits suffered as missile hits in the Shooting Phase and must roll for drive backs accordingly.",
+		"3 : Once employed in this fashion, the Ballast Wagon unit is destroyed and all three stands representing it are removed casualties.",
+		"Comment : Note that we allow to roll from flat ground and make the assumption that no ground is really flat and a gentle slope may be involved. If wagon stands attempt to roll uphill or if they hit woods, a river, or any terrain normally impassable to wagons, they are wrecked without further effect. In any case, once employed in this fashion, the Ballast Wagon unit is destroyed and all three stands representing it are removed."
+      ],
+      "order": 8
+    }
+  }
+}

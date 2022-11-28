@@ -1,0 +1,160 @@
+{
+  "name": "The Anglo Normands, 1138",
+  "version": "Warmaster Medieval",
+  "group": "The Anarchy",
+  "order": 0,
+  "units": {
+    "Knights": {
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "min": 2,
+      "max": 4,
+      "points": 110,
+      "order": 0
+    },
+    "Retainers": {
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "min": 1,
+      "max": 2,
+      "points": 80,
+      "order": 1
+    },
+    "Scouts": {
+      "type": "Cavalry",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "min": 0,
+      "max": 1,
+      "points": 60,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "order": 2
+    },
+    "Fyrd": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "min": 4,
+      "points": 50,
+      "specialRules": [
+        "Shieldwall"
+      ],
+      "order": 3
+    },
+    "Archers": {
+      "type": "Infantry",
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "max": 2,
+      "points": 40,
+      "upgrades": [
+        "Skirmishers"
+      ],
+      "specialRules": [
+        "Skirmishers"
+      ],
+      "order": 4
+    },
+    "Religious Followers": {
+      "type": "Infantry",
+      "attack": 2,
+      "hits": 3,
+      "size": 3,
+      "armyMax": 1,
+      "points": 25,
+      "order": 5
+    },
+    "General": {
+      "type": "General",
+      "attack": "+2",
+      "command": 8,
+      "size": 1,
+      "armyMin": 1,
+      "armyMax": 1,
+      "points": 100,
+      "order": 6
+    },
+    "Leader": {
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "max": 2,
+      "points": 80,
+      "order": 7
+    },
+    "Bishop": {
+      "type": "Subordinate",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "max": 1,
+      "points": 40,
+      "upgrades": [
+        "Bishop With Religious Standard"
+      ],
+      "order": 8
+    }
+  },
+  "upgrades": {
+    "Skirmishers": {
+      "type": "Infantry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": -10,
+      "order": 0,
+      "specialRules": [
+        "Skirmish"
+      ]
+    },
+    "Bishop With Religious Standard": {
+      "attack": "+1",
+      "size": 1,
+      "type": "Subordinate",
+      "points": 0,
+      "command": 10,
+      "max": 1,
+      "order": 1
+    }
+  },
+  "specialRules": {
+    "Skirmish": {
+      "order": 1
+    },
+    "Shieldwall": {
+      "order": 3
+    },
+    "Religious Followers": {
+      "text": [
+        "If  the  Bishop  carries  a Religious Standard , the  army must include a single unit of Religious Followers.Whenever a religious standard was carried to battle it would be accompanied by a group of followers  responsible for the safety of the standard and the priests"
+      ],
+      "order": 4
+    },
+    "Bishop With Religious Standard": {
+      "text": [
+        "The Bishop can be upgraded to carry a Religious Standard, increasing his Command value to 10. Bear in mind he still a Subordinate and therefore still has range of only 20cm when giving orders."
+      ],
+      "order": 5
+    },
+    "Skirmishers": {
+      "order": 6
+    }
+  }
+}

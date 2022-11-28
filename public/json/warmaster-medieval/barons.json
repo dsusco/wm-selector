@@ -1,0 +1,198 @@
+{
+  "name": "Royalist or Baronial Rebels, 1264",
+  "version": "Warmaster Medieval",
+  "group": "Second Barons' War",
+  "order": 0,
+  "units": {
+    "Knights": {
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "min": 1,
+      "max": 2,
+      "points": 110,
+      "order": 0
+    },
+    "Sergeants": {
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "max": 1,
+      "points": 100,
+      "specialRules": [
+        "Shock"
+      ],
+      "order": 1
+    },
+    "Border Horse": {
+      "type": "Cavalry",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+	  "max":1,
+      "points": 60,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "order": 2
+    },
+    "Bowmen": {
+      "type": "Infantry",
+      "attack": 2,
+      "range": "30",
+      "hits": 3,
+      "size": 3,
+      "min": 1,
+      "max": 6,
+      "upgrades": [
+        "Skirmishers",		
+        "Longbowmen"
+      ],
+      "points": 40,
+      "order": 3
+    },
+    "Spearmen": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "armour": "6+",
+      "min": 4,
+      "points": 45,
+      "order": 4
+    },
+    "Mercenary Crossbow": {
+      "type": "Infantry",
+      "attack": 2,
+      "range": "30",
+      "hits": 3,
+      "size": 3,
+      "max": 2,
+      "points": 45,
+      "specialRules": [
+        "Crossbow"
+      ],
+      "order": 5
+    },
+    "Welsh Infantry": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "max": 4,
+      "points": 35,
+      "specialRules": [
+        "Warband"
+      ],
+      "order": 6
+    },
+    "General": {
+      "type": "General",
+      "attack": "+2",
+      "command": 8,
+      "size": 1,
+      "armyMin": 1,
+      "armyMax": 1,
+      "points": 100,
+      "upgrades": [
+        "Prince Edward",		
+        "Simon de Montfort"
+      ],
+      "order": 7
+    },
+    "Lord": {
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+	  "max":2,
+      "points": 80,
+      "order": 8
+    }
+  },
+  "upgrades": {
+    "Skirmishers": {
+      "type": "Infantry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "max": 2,
+      "points": -10,
+      "order": 0,
+      "specialRules": [
+        "Skirmish"
+      ]
+    },
+    "Longbowmen": {
+      "type": "Infantry",
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "points": "+5",
+      "order": 1,
+      "specialRules": [
+        "Skirmish"
+      ]
+    },
+    "Prince Edward": {
+      "attack": "+2",
+      "command": 8,
+      "order": 2,
+      "armyMax": 1,
+      "points": 25,
+      "specialRules": [
+        "Terror"
+      ]
+    },
+    "Simon de Montfort": {
+      "attack": "+2",
+      "command": 8,
+      "order": 3,
+      "armyMax": 1,
+      "points": 25
+    }
+  },
+  "specialRules": {
+    "Shock": {
+      "order": 1
+    },
+    "Skirmish": {
+      "order": 2
+    },
+    "Crossbow": {
+      "order": 3
+    },
+    "Warband": {
+      "order": 4
+    },
+    "Prince Edward": {
+      "text": [
+        "The General can be upgraded to either Prince Edward (Royalist) or Simon de monford (Baronial Rebels).If you have Prince Edward as your General the he is terrifying! If Prince Edward joins a unit then the unit becomes terrifying."
+      ],
+      "order": 5
+    },
+    "Simon de Monfort": {
+      "text": [
+        "The General can be upgraded to either Prince Edward (Royalist) or Simon de monford (Baronial Rebels).If you have Simon de Montfort as your General then you may add +1 to the result of all combats that the General or any leaders are taking part in (+1 combat result in the same way as +1 for support)."
+      ],
+      "order": 6
+    },
+    "Bowmen": {
+      "text": [
+        "Up to two units of Bowmen per 1,000 pts of army size can be regraded as Skirmishers with the stats shown and a reduction of -10pts OR any bowmen can be upgraded to Longbowmen for an additional +5pts."
+      ],
+      "order": 7
+    },
+    "Skirmishers": {
+      "order": 8
+    }
+  }
+}

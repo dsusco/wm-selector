@@ -1,0 +1,88 @@
+{
+  "name": "Siege (defensive)",
+  "version": "Warmaster Medieval",
+  "group": "Siege",
+  "order": 1,
+  "units": {
+    "Barricade": {
+      "type": "Defenses",
+      "hits": "Gate +2",
+      "max": "1/gate",
+      "points": 10,
+      "order": 1
+    },
+    "Boiling Oil": {
+      "type": "Defenses",
+      "attack": "1/chargers",      
+      "points": 20,
+      "order": 2
+    },
+    "Hoardings": {
+      "type": "Defenses",
+      "attack": "reroll 1 shot",  
+	  "max":1,
+      "points": 50,
+      "order": 3
+    },
+    "Light Artillery": {
+      "type": "Artillery",
+      "attack": 1,  
+      "range": 40,
+	  "size":1,
+      "points": 25,
+      "order": 4
+    },
+    "Countermines": {
+      "type": "Defenses",
+      "attack": "D6",
+      "points": 50,
+	  "max":1,
+      "order": 5
+    },
+    "Repairs": {
+      "type": "Defenses",
+      "attack": "D6",
+      "points": 25,
+	  "max":1,
+      "order": 6
+    }
+  },
+  "specialRules": {
+    "Barricade": {
+      "order": 1,
+      "text": [
+        "10pts per gate, The weakest point of any fortiication is the gate. Consequent, gates were often reinforced with additional barricades. These could take the form of wagons loaded with boulders that were pushed up to the gates, or by extra wooden stkes that were wedged into the ground to support the gates themselves. À barricade increases the number of hits a gateway can take by +2. If the fortress has more than one gateway, each can be barricaded or some can, at a cost of 10 points per gate."
+      ]
+    },
+    "Boiling Oil": {
+      "order": 2,
+      "text": [
+        "When attacked, the defenders would often have one or two nasty surprises in store for would- be attackers. Such things include missile of various kinds that would be thrown from the ramparts onto theatackers below. Hot sand, pitch, scalding water or boiling oil would work their way through armour and burn even well protected foes. Cobbles and slabs of masonry would be even more prosaically destructive. Though we have chosen to use the dramatic term ‘boiling oi’, the rule encompasses all of these missiles employed in quantity. The cost of boiling oil is 20 points for a wall section (ie, for every 120mm of wall). Either note down which wall sections are provided with oil or use a counter to indicate where oil has been placed. If boiling oil is provided, any unit placed on that section can make use of it. However, each section's oil can only be used once in the entire game: once used it is expended. À defending unit can use the oil to ‘shoot at enemy employing ladders 10 charge home. Boiling oil shots are in addition to any other shooting the unit may have. The defending unit gets one boiling oil shot in total regardiess ofthe number of stands and no armour roll is permitted for any hits inflicted (ie, roll one dice needing 10 score a hit). Any charging enemy. unit that suffers one or more hits from boiling oil will not complete its charge, is automatically driven back to its Starting position and becomes confused. "
+      ]
+    },
+    "Hoardings": {
+      "order": 3,
+      "text": [
+        "Points : 50 per 100cm. During a siege, the battlements of a castle were extended by wooden hoardings that provided even more cover for the defenders and afforded ideal platforms from which to observe and shoot at the besiegers. If the defender erects hoardings, these cover the whole defences and affect missile fire from the castle or city walls as follows. À unit shooting missile fire from behind hoardings can re-roll one dice to hit each time it shoot. The cost of hoardings is 50 points for every 100cm points of defences eg, 300 cm of defences will require 150 points of hoardings."
+		]
+    },
+    "Light Artillery": {
+      "order": 4,
+      "text": [
+        "This is intended to represent all kinds of anti-personal arüllery which could include onagers, springald, ballistas and other designs. They can be positioned on battlements to shoot at any enemy below. Light artillery is exacty as described in Warmaster Ancients, except that these represent static weapons which are immobile other than that they can be turned to face as per Heavy Cannons — note that this requires an order (see pg 76)"
+      ]
+    },
+    "Countermines": {
+      "order": 5,
+      "text": [
+        "Defenders would carefully listen for sounds of mining beneath their feet and would dig deeper mines of their own 1 try to intercept and destroy enemy mining operations. If countermines are dug, we assume the player has invested in a network of countermines and can potentilly thwart any enemy mining operations. Each time the enemy reveals a mine, You can use the countermine 10 try 10 stop it. Roll a D6 — on the score of 4, 5 or 6, the mine has been intercepted and destroyed before it can do any damage."
+      ]
+    },
+    "Repairs": {
+      "order": 6,
+      "text": [
+        "Defenders were often able to affect temporary repairs during a siege, rebuilding walls behind the originals, lowering sections of padded hurdie like à big mattress over breaches to seal them, or bracing crumbling structures with timber and ropes. The defender can buy ‘repairs' as part of his defences and it represents supplies of materials available 10 affect these emergency reconstructions. Each repair can be used only once. À repair can be attempted at the start of the player’s turn and can be used 10 repair a damaged wall, tower or gateway section that bas not yet collapsed. Once a section has collapsed, it is beyond repair. To see how effective the repair is, roll a dice and add this number of Damage points to the structure. If the structure is carrying à negative Damage value as ‘extra damage” (-1, -2 and 50 on) the repair is only effective if the score lifts the value 0 at least 1. Ifthe score is insufficient to raise the Damage value 10 at least 1, the repair has not worked."
+      ]
+    }
+  }
+}

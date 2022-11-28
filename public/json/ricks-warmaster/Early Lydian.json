@@ -1,0 +1,165 @@
+{
+  "specialRules": {
+    "Skirmish": {
+      "order": 1
+    },
+    "Portents": {
+      "order": 2
+    }
+  },
+  "units": {
+    "Heavy Cavalry": {
+      "order": 0,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "armour": "5+",
+      "points": 80,
+      "min": 2,
+      "max": 4
+    },
+    "Chariots": {
+      "order": 1,
+      "type": "Chariot",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "armour": "6+",
+      "specialRules": [
+        "Skirmish"
+      ],
+      "points": 80,
+      "max": 2
+    },
+    "Mounted Skirmishers": {
+      "order": 2,
+      "type": "Cavalry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "points": 40,
+      "min": 2,
+      "max": 4
+    },
+    "Cimmerian Horse Archers": {
+      "order": 3,
+      "type": "Cavalry",
+      "attack": 1,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "points": 60,
+      "max": 1
+    },
+    "Spearmen": {
+      "order": 4,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "armour": "6+",
+      "points": 45,
+      "min": 4
+    },
+    "Light Infantry": {
+      "order": 5,
+      "type": "Infantry",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "points": 40,
+      "min": 1,
+      "max": 4
+    },
+    "Skirmishers": {
+      "order": 6,
+      "type": "Infantry",
+      "attack": 1,
+      "range": 15,
+      "upgrades": [
+        "Bowmen"
+      ],
+      "hits": 3,
+      "size": 3,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "points": 30,
+      "max": 4
+    },
+    "General": {
+      "order": 7,
+      "type": "General",
+      "attack": "+2",
+      "upgrades": [
+        "Portents"
+      ],
+      "command": 8,
+      "size": 1,
+      "points": 100,
+      "armyMax": 1,
+	  "armyMin": 1
+    },
+    "Leader": {
+      "order": 8,
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 80,
+      "max": 2
+    }
+  },
+  "upgrades": {
+    "Bowmen": {
+      "order": 0,
+      "type": "Infantry",
+      "max": "Up to half",
+      "points": "+15",
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "size": 3
+    },
+    "Portents": {
+      "order": 1,
+      "specialRules": [
+        "Portents"
+      ],
+      "max": 1,
+      "points": "+10"
+    }
+  },
+  "armyRules": [
+    "Heavy Cavalry. The Persians regarded the Lydian cavalry as the best of their troops and were reluctant to engage with them—we have therefore graded them as heavy cavalry with a further option to upgrade then to elite cavalry at +10pts per unit. If units are upgraded in this way no chariots can be included—it being assumed that the elite of Lydian society fight mounted rather than as chariot warriors.",
+    "",
+    "Chariots. These are two-horse light chariots whose crewmen are armed with javelins and light spears. Chariots were more common in the early part of the list and their use declined as time went on—eventually they were replaced by the cavalry for which Lydia was famous.",
+    "",
+    "Mounted Skirmishers. These could be Phrygian or Paphlagonian cavalrymen—lands to the north of Lydia that came to be part of the Lydian empire. They are typical skirmishing cavalry with javelins.",
+    "",
+    "Cimmerian Horse Archers. The Cimmerians were early invaders of the Near East—they were driven southward by the Scythians and caused much unrest in Anatolia and Assyria. They were typical steppe nomads—and we have represented them here as horse archers for the sake of variety (they could just as easily be represented by a standard light cavalry stat at the same points cost if players preferred).",
+    "",
+    "Spearmen. These are the citizen militia of Anatolian cities such as Sardis— in time they would transmute into Greek-style Hoplites with armour, bronze helmets and long spears—but in the early years they would have shorter spears and or javelins and little if any armour. All or none of the Spearmen can be upgraded to Hoplites either representing native troops or Mercenary Greeks . This costs the indicated points per unit.",
+    "",
+    "Light Infantry. These represent the lightly equipped troops of the mountainous regions of Anatolia, such as  Phyrgians, Paphlagonians, and Cilicians as well as mercenary Thracians from the west. They are armed with javelins and spears and carry large shields.",
+    "",
+    "Skirmishers. These are very lightly equipped javelin armed troops from Lydia, Phrygia or Mysia—all part of western Anatolia. Skirmishers like this could probably come from almost anywhere in the Lydian empire—but these areas are known for providing such troops. Up to half these units can be uprated to Lydian or Phrygian bowmen at the cost per unit shown."
+  ],
+  "name": "Early Lydian",
+  "version": "Warmaster Ancients Ricks lists",
+  "group": "Greece and the Near East",
+  "order": 9
+}

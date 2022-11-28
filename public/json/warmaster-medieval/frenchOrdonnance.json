@@ -1,0 +1,267 @@
+{
+  "name": "French Ordonnance, 1515",
+  "version": "Warmaster Medieval",
+  "group": "Italian Wars",
+  "order": 1,
+  "units": {
+    "Ordonnance Gendarmes": {
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "4+",
+      "size": 3,
+      "min": 2,
+      "max": 4,
+      "points": 135,
+      "specialRules": [
+        "Knights"
+      ],
+      "order": 1
+    },
+    "Ordonnance Coustilliers": {
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "max": 4,
+      "points": 110,
+      "specialRules": [
+        "Shock"
+      ],
+      "order": 2
+    },
+    "Argoulouts & Stradiotti": {
+      "type": "Infantry",
+      "attack": 2,
+      "armour": "6+",
+	  "range":15,
+      "hits": 3,
+      "size": 3,
+      "max":2,
+      "points": 60,
+      "order": 3,
+      "specialRules": [
+        "Skirmish"		
+      ]
+    },
+    "French Infantry": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 45,
+      "order": 4,
+      "min":2
+    },
+    "Crossbowmen": {
+      "type": "Infantry",
+      "attack": 2,
+      "hits": 3,
+      "range": 30,
+      "size": 3,
+      "points": 45,
+      "order": 5,
+      "max":4,
+      "specialRules": [
+        "Crossbow",
+		"Skirmishers"
+      ],
+      "upgrades": [
+        "Skirmishers"		
+      ]
+    },
+    "Handgunners": {
+      "type": "Infantry",
+      "attack": 2,
+      "hits": 3,
+      "range": 20,
+      "size": 3,
+      "points": 45,
+      "order": 6,
+      "max":2
+    },
+    "Pike": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "armour": "6+",
+      "min": 2,
+      "max": 6,
+      "points": 60,
+      "order": 7,
+      "specialRules": [
+        "Phalanx"
+      ],
+      "upgrades": [
+		"Swiss Pikes"
+      ]
+    },
+    "Cannon": {
+      "type": "Artillery",
+      "attack": 1,
+      "range": "2x40",
+      "hits": 2,
+      "size": 2,
+      "min": 1,
+      "max": 6,
+      "points": 50,
+      "order": 8,
+      "specialRules": [
+		"Slow"		
+      ]
+    },
+    "Bombards": {
+      "type": "Artillery",
+      "attack": 1,
+      "range": "3x60",
+      "hits": 2,
+      "size": 1,
+      "max": 4,
+      "points": 75,
+      "order": 9,
+      "specialRules": [
+		"Heavy Cannon"		
+      ]
+    },
+    "Ribaudequins": {
+      "type": "Artillery",
+      "attack": 1,
+      "range": "D6x15",
+      "hits": 2,
+      "size": 1,
+      "max": 4,
+      "points": 75,
+      "order": 10,
+      "specialRules": [
+		"Slow",
+		"Organ Gun"
+      ]
+    },
+    "General": {
+      "type": "General",
+      "attack": "+2",
+      "command": 8,
+      "size": 1,
+      "armyMin": 1,
+      "armyMax": 1,
+      "points": 100,
+      "order": 11,
+	  "upgrades":[
+		"Artillery Master"
+		]
+    },
+    "Noble": {
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 60,
+      "order": 12,
+	  "max":2
+    },
+	
+    "Ordonnance Archers": {
+      "type": "Infantry",
+      "attack": 2,
+      "hits": 3,
+      "range": 30,
+      "size": 3,
+      "points": 45,
+      "order": 13,
+      "max":2,
+      "specialRules": [
+        "Longbow",
+		"Options"		
+      ]
+    }
+  },
+  "upgrades": {
+	"Skirmishers": {
+      "type": "Infantry",
+      "attack": 1,
+      "hits": 3,
+      "range": 30,
+      "size": 3,
+      "points": -10,
+      "order": 1,
+      "max":"Up to Half",
+      "specialRules": [
+        "Skirmish",
+		"Options"		
+      ]
+    },
+	"Swiss Pikes": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 4,
+      "range": 30,
+      "size": 3,
+      "armour": "6+",
+      "points": 10,
+      "order": 2,
+      "specialRules": [
+        "Phalanx",
+		"Options"		
+      ]
+    },
+    "Artillery Master": {
+      "type": "General upgrades",
+      "points": 10,      
+      "armyMax": 1,
+      "order": 3
+    }
+  },
+  "specialRules": {
+    "Skirmish": {
+      "order": 1
+    },
+    "Knights": {
+      "order": 2
+    },
+    "Shock": {
+      "order": 3
+    },
+    "Crossbow": {
+      "order": 4
+    },
+    "Handgunners": {
+      "order": 5
+    },
+    "Phalanx": {
+      "order": 6
+    },
+    "Slow": {
+      "order": 7
+    },
+    "Heavy Cannon": {
+      "order": 8
+    },
+    "Cannon": {
+      "order": 9
+    },
+    "Organ Gun": {
+      "order": 10
+    },
+    "Longbow": {
+      "order": 11
+    },
+    "Skirmishers": {
+      "order": 12
+    },
+    "Artillery Master": {
+      "text": [
+        "If the army inclides the Artillery Master, artillery discounts the additional -1 penalty for 'slow' moves."
+      ],
+      "order": 13
+    },
+    "Options": {
+      "text": [
+        "These options represent armies from a broader time period of the Italian Wars"
+      ],
+      "order": 14
+    }
+  }
+}

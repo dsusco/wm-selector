@@ -1,0 +1,316 @@
+{
+  "specialRules": {
+    "Phalanx": {
+      "order": 1
+    },
+    "Warband": {
+      "order": 2
+    },
+    "Skirmish": {
+      "order": 3
+    },
+    "Shock": {
+      "order": 4
+    },
+    "Warband (Restricted)": {
+      "order": 5
+    },
+    "Slow": {
+      "order": 6
+    },
+    "Unreliable": {
+      "order": 7
+    },
+    "Scythed Chariots": {
+      "order": 8
+    },
+    "Legion": {
+      "order": 9
+    }
+  },
+  "units": {
+    "Pontic or Black Sea Nobles": {
+      "order": 0,
+      "type": "Cavalry",
+      "specialRules": [
+        "Shock",
+        "Warband (Restricted)"
+      ],
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 110,
+      "upgrades": [
+        "Guard Cavalry"
+      ],
+      "min": 1,
+      "max": 2
+    },
+    "Sarmatian Nobles": {
+      "order": 1,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "range": 15,
+      "size": 3,
+      "points": 115,
+      "specialRules": [
+        "Shock",
+        "Warband (Restricted)"
+      ],
+      "max": 1
+    },
+    "Armenian Cataphracts": {
+      "order": 2,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "4+",
+      "size": 3,
+      "points": 125,
+      "specialRules": [
+        "Shock",
+        "Slow"
+      ],
+      "max": 1
+    },
+    "Light Cavalry": {
+      "order": 3,
+      "type": "Cavalry",
+      "attack": 2,
+      "hits": 3,
+      "armour": "6+",
+      "range": 15,
+      "size": 3,
+      "points": 60,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "max": 2
+    },
+    "Skirmish Cavalry": {
+      "order": 4,
+      "type": "Cavalry",
+      "attack": 1,
+      "hits": 3,
+      "range": 15,
+      "size": 3,
+      "points": 40,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "max": 2
+    },
+    "Horse Archers": {
+      "order": 5,
+      "type": "Cavalry",
+      "attack": 1,
+      "hits": 3,
+      "range": 30,
+      "size": 3,
+      "points": 60,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "max": 2
+    },
+    "Galatians": {
+      "order": 6,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "points": 25,
+      "specialRules": [
+        "Warband",
+        "Unreliable"
+      ],
+      "upgrades": [
+        "Bastarnae"
+      ],
+      "max": 4
+    },
+    "Mercenary Light Infantry and Thracians": {
+      "order": 7,
+      "type": "Infantry",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": 40,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "max": 4
+    },
+    "Subject Archers": {
+      "order": 8,
+      "type": "Infantry",
+      "max": 4,
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "points": 15,
+      "specialRules": [
+        "Unreliable"
+      ],
+      "upgrades": [
+        "Upgrade Subject Archers"
+      ]
+    },
+    "Skirmishers": {
+      "order": 9,
+      "type": "Infantry",
+      "max": 4,
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": 30,
+      "specialRules": [
+        "Skirmish"
+      ]
+    },
+    "Imitation Legionaries": {
+      "order": 10,
+      "specialRules": [
+        "Legion"
+      ],
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "type": "Infantry",
+      "size": 3,
+      "points": 70,
+      "min": 2
+    },
+    "Late Phalanx": {
+      "order": 11,
+      "specialRules": [
+        "Phalanx"
+      ],
+      "points": 60,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "max": 4
+    },
+    "Scythed Chariots": {
+      "order": 12,
+      "type": "Chariot",
+      "max": 1,
+      "attack": 4,
+      "hits": 3,
+      "armour": "5+",
+      "size": 1,
+      "points": 50,
+      "specialRules": [
+        "Scythed Chariots"
+      ]
+    },
+    "General": {
+      "order": 13,
+      "type": "General",
+      "attack": "+2",
+      "command": 9,
+      "size": 1,
+      "points": 125,
+      "armyMax": 1,
+	  "armyMin": 1
+    },
+    "Leader": {
+      "order": 14,
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 80,
+      "max": 1
+    },
+    "Allied Commander": {
+      "order": 15,
+      "type": "Subordinate",
+      "attack": "+1",
+      "command": 7,
+      "size": 1,
+      "points": 30,
+      "max": 2
+    }
+  },
+  "upgrades": {
+    "Upgrade Subject Archers": {
+      "order": 0,
+      "type": "Infantry",
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "points": "+25",
+      "max": "Any"
+    },
+    "Bastarnae": {
+      "order": 1,
+      "type": "Infantry",
+      "attack": 4,
+      "hits": 3,
+      "size": 3,
+      "points": "+20",
+      "max": 1,
+      "specialRules": [
+        "Warband"
+      ]
+    },
+    "Guard Cavalry": {
+      "order": 3,
+      "type": "Cavalry",
+      "attack": 4,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "max": 1,
+      "points": "+10",
+      "specialRules": [
+        "Shock",
+        "Warband (Restricted)"
+      ]
+    }
+  },
+  "armyRules": [
+    "Imitation Legionaries. The Pontics retrained most of their close fighting infantry to mirror their Roman adversaries. However, whilst shields, helmets and weaponry may be quickly provided chainmail was much harder to produce. Without access to sources such as the Roman armouries we therefore consider these troops to be more lightly protected than their Roman counterparts, some wearing mail and some not.",
+    "",
+    "Phalanx. Standard phalangites most probably raised from the 6,000 Greek mercenaries hired early in Mithridates’ reign and from the independently-minded, wealthy trading city of Sinope.  They wear linen or leather armour and carry a small shield.  Armed with a long pike and wearing bronze and iron helmets. Some may have been wealthy enough to afford armour.",
+    "",
+    "Galatians. Celtic tribes who lived in the desolate parts of Anatolia, part time subjects of  Pontus. Armed with javelins, long swords and shields and with captured Greek weaponry. They were notoriously fickle.",
+    "",
+    "Bastarnae. The Bastarnae were renowned to be ferocious fighters. They were an important tribal group possibly of mixed German/Celtic ancestry although this is uncertain.  Later they fought with the Dacians.  Unarmoured but carried a shield with some fighting with a weapon similar to the falx.",
+    "",
+    "Subject Archers:  Provided by various subjects and Armenians!  Primarily armed with the bow but could also have a sword and small shield. Armenian archers were supplied for the Pontic re-conquest.",
+    "",
+    "Mercenary Light Infantry and Thracians. Pontic mercenaries and other infantry of the peltast type including Thracians. They were lightly armoured and armed with a shield, javelins and sometimes long spear.  They fought in a looser order than the phalanx.",
+    "",
+    "Skirmishers.  Pontics, Armenians and mercenaries who fought from a distance and avoided close combat where possible. Likely to be armed with javelins.",
+    "",
+    "Pontic or Black Sea Nobles. Pontic nobility armed with long spears, swords, helmets and body armour. Sarmatian influence suggests some possibly had horse armour. May be upgraded to Guard to represent  an elite bodyguard unit of nobles and retainers some of whom stayed loyal to Mithridates until the very end.",
+    "",
+    "Sarmatian Nobles.  Armed with bows, kontos, swords, helmets and body armour .Many with horse armour of bronze, leather and horn. The bow fell out of use with the Black Sea Sarmatians , possibly through contact with the Greeks and the amount of horse armour may have declined  too",
+    "",
+    "Armenian Cataphracts.  We have represented these troops as more heavily armoured than the usual heavy cavalry riding horses which are also armoured.  Armed with the long lance-like kontos wielded in two hands, they are slow and ponderous.",
+    "",
+    "Light Cavalry: Armed with javelins and shields.  They fought in a looser order than heavy cavalry, their role to skirmish from a distance but to close with the enemy in the right circumstances.",
+    "",
+    "Horse Archers. These are mercenary Scythian horse archers raised from the steppes. They fought at long range with bows and were expert horsemen and archers.",
+    "",
+    "Skirmish Cavalry.  Mounted  skirmishers armed with javelins or bows and wearing no armour. They fight from a distance avoiding close combat where possible.",
+    "",
+    "Scythed chariots.  A chariot festooned with scythes and blades whose sole purpose was to drive into the enemy ranks to disrupt their formation."
+  ],
+  "name": "3rd Mithraditic War",
+  "version": "Warmaster Ancients Ricks lists",
+  "group": "Greece and the Near East",
+  "order": 3
+}

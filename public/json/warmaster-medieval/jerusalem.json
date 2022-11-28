@@ -1,0 +1,212 @@
+{
+  "name": "The kingdom of Jerusalem, 1099",
+  "version": "Warmaster Medieval",
+  "group": "Crusades",
+  "order": 0,
+  "units": {
+    "Crusader Knights": {
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "min": 1,
+      "max": 3,
+      "points": 110,
+      "order": 0,
+      "upgrades": [
+        "Crusaders on Foot"
+      ],
+      "specialRules": [
+        "Knights"
+      ]
+    },
+    "Knights Templar": {
+      "type": "Cavalry",
+      "attack": 4,
+      "hits": 4,
+      "armour": "5+",
+      "size": 3,
+      "max": 1,
+      "points": 130,
+      "order": 1,
+      "upgrades": [
+        "Templars on Foot"
+      ],
+      "specialRules": [
+        "Knights"
+      ]
+    },
+    "Sergeants": {
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "min": 1,
+      "max": 2,
+      "points": 70,
+      "upgrades": [
+        "Shock Cavalry"
+      ],
+      "order": 2
+    },
+    "Turkomen": {
+      "type": "Cavalry",
+      "attack": 1,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "points": 60,
+      "order": 3,
+      "specialRules": [
+        "Skirmish"
+      ]
+    },
+    "Infantry": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "min": 2,
+      "max": 4,
+      "points": 60,
+      "order": 4
+    },
+    "Crossbowmen": {
+      "type": "Infantry",
+      "attack": 2,
+      "range": 30,
+      "armour": "6+",
+      "hits": 3,
+      "size": 3,
+      "min": 2,
+      "max": 4,
+      "points": 55,
+      "specialRules": [
+        "Crossbow"
+      ],
+      "order": 5
+    },
+    "Pilgrims": {
+      "type": "Infantry",
+      "attack": 2,
+      "hits": 3,
+      "size": 3,
+      "max": 4,
+      "points": 25,
+      "order": 6
+    },
+    "Lord": {
+      "type": "General",
+      "attack": "+2",
+      "command": 9,
+      "size": 1,
+      "armyMin": 1,
+      "armyMax": 1,
+      "points": 125,
+      "upgrades": [
+        "True Cross"
+      ],
+      "order": 7
+    },
+    "Noble": {
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "max": 2,
+      "points": 80,
+      "order": 8
+    },
+    "Baron": {
+      "type": "Subordinate",
+      "attack": "+1",
+      "command": 7,
+      "size": 1,
+      "max": 1,
+      "points": 30,
+      "order": 9
+    }
+  },
+  "upgrades": {
+    "True Cross": {
+      "type": "General",
+      "points": "+25",
+      "armyMax": 1,
+      "order": 0
+    },
+    "Crusaders on Foot": {
+      "type": "Infantry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": -10,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "order": 1
+    },
+    "Templars on Foot": {
+      "type": "Infantry",
+      "attack": 4,
+      "hits": 4,
+      "armour": "4+",
+      "size": 3,
+      "points": -35,
+      "specialRules": [
+        "Slow"
+      ],
+      "order": 2
+    },
+    "Shock Cavalry": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "4+",
+      "size": 3,
+      "points": -35,
+      "order": 3,
+      "specialRules": [
+        "Slow"
+      ]
+    }
+  },
+  "specialRules": {
+    "Skirmish": {
+      "order": 1
+    },
+    "Shock": {
+      "order": 2
+    },
+    "Slow": {
+      "order": 3
+    },
+    "Knights": {
+      "order": 4
+    },
+    "Crossbow": {
+      "order": 5
+    },
+    "True Cross": {
+	  "text":[
+	    "If the army in cludes the True Cross, the player may re-roll any failed attacks from any one unit in a single round of combat during the game. Bear in mind this only works once in the whole game - so time it carefully!"
+	  ],
+      "order": 6
+    },
+    "Templars on Foot": {
+	  "text":[
+	    "Any units of Templar Knights can instead be fielded as infantry at a cost reduction of -35 points and stats as shown (ie, 95 pts per unit)"
+	  ],
+      "order": 7
+    },
+    "Crusaders on Foot": {
+	  "text":[
+	    "Any units of Crusader Knights can instead be fielded as infantry at a cost reduction of -35 points and stats as shown (ie, 75 pts per unit)."
+	  ],
+      "order": 8
+    }
+  }
+}

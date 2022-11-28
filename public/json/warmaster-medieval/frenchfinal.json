@@ -1,0 +1,195 @@
+{
+  "name": "French Final Years Army, 1429",
+  "version": "Warmaster Medieval",
+  "group": "Hundred Years War",
+  "order": 3,
+  "units": {
+    "Knights": {
+      "order": 0,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "4+",
+      "size": 3,
+      "points": 135,
+      "max": 4
+    },
+    "Foot Knights": {
+      "order": 1,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "armour": "4+",
+      "points": 85,
+      "min": 2,
+      "max": 4
+    },
+    "Foot Retainers": {
+      "order": 2,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 60,
+      "max": 2
+    },
+    "Handgunners": {
+      "order": 3,
+      "type": "Infantry",
+      "range": 20,
+      "attack": 2,
+      "hits": 3,
+      "size": 3,
+      "points":45,
+      "max": 2,
+	  "upgrades":[
+		"Skirmishers",
+		"Pavisse"
+	  ]	
+    },
+    "Scots (Garde Ecossaise)": {
+      "order": 4,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 4,
+      "armour": "6+",
+      "size": 3,
+      "points": 55,
+      "max": 2
+    },
+    "Genoese": {
+      "order": 5,
+      "type": "Infantry",
+      "attack": 2,
+      "hits": 3,
+      "range": 30,
+      "armour": "6+",
+      "size": 3,
+      "points": 55,
+      "max": 4,
+      "specialRules": [
+        "Crossbow"
+      ],
+	  "upgrades":[
+		"Pavisse"
+	  ]	
+    },
+    "Cannon": {
+      "order": 8,
+      "type": "Artillery",
+      "attack": 1,
+      "range": "2x40cm",
+      "hits": 2,
+      "size": 2,
+      "points": 50,
+      "max": 3,
+      "specialRules": [
+        "Slow"
+      ]
+    },
+    "General": {
+      "order": 7,
+      "type": "General",
+      "attack": "+2",
+      "size": 1,
+      "points": 100,
+      "command": 8,
+      "armyMin": 1,
+      "armyMax": 1,
+      "upgrades": [
+        "Jeanne d'Arc",
+        "Oriflamme"
+      ]
+    },
+    "Noble": {
+      "order": 8,
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 80
+    }
+  },
+  "upgrades": {
+    "Skirmishers": {
+      "order": 1,
+      "type": "Infantry",
+      "attack": 1,
+      "range": 20,
+      "hits": 3,
+      "size": 3,
+      "points": "-10",
+      "specialRules": [
+        "Skirmish"
+      ],
+      "max": 2
+    },
+    "Jeanne d'Arc": {
+      "order": 2,
+      "type": "Special",
+      "points": "+25"
+    },
+    "Pavisse": {
+      "order": 3,
+      "type": "Special",
+      "points": "+5"
+    },
+    "Oriflamme": {
+      "order": 4,
+      "type": "Special",
+      "points": "+25"
+    }
+  },
+  "specialRules": {
+    "Knights": {
+      "order": 1
+    },
+    "Skirmish": {
+      "order": 2
+    },
+    "Skirmishers": {
+      "order": 4
+    },
+    "Crossbow": {
+      "order": 6
+    },
+    "Handgunners": {
+      "order": 7,
+      "text": [
+        "Any handgunners can be provided with pavisse for +5 pts or they can be fielded as Skirmishers (not both)"
+      ]
+    },
+    "Genoese": {
+      "order": 11,
+      "text": [
+        "Any Genoese can be provided with pavisse for +5 pts"
+      ]
+    },
+    "Cannon": {
+      "order": 8,
+      "text": [
+        "Cannon must be regarded as immobile and treated as Heavy Cannon for purposes of drive backs from shooting"
+      ]
+    },
+    "Slow": {
+      "order": 9
+    },
+    "Pavisse": {
+      "order": 10
+    },
+    "Oriflamme": {
+      "order": 12,
+      "text": [
+        "If you take Oriflamme banner, select one unit of French Knights. This unit can re-roll all missed attacks on its first charge during the game and increase the distance at with it can une initiative from 20cm to 30cm"
+      ]
+    },
+    "Jeann d'Arc": {
+      "order": 13,
+      "text": [
+        "You can elect to upgrade your General to the Maid of Orleans instead of choosing the Oriflamme. Note that a General can only be upgraded to either the Oriflamme of Jeanne D'Arc and not both. If the General is Jeanne D'Arc, she can re-roll a single failed Command roll each turn until she rolls a Blunders - no further re-rolls are allowed once a Blunder has been rolled."
+      ]
+    }
+  }
+}

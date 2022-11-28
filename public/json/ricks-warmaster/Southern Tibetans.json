@@ -1,0 +1,209 @@
+{
+  "specialRules": {
+    "Shock": {
+      "order": 1
+    },
+    "Slow": {
+      "order": 2
+    },
+    "Warband": {
+      "order": 3
+    },
+    "Fanatics": {
+      "order": 4
+    },
+    "Skirmish": {
+      "order": 5
+    },
+    "Portents": {
+      "order": 6
+    },
+    "Unreliable": {
+      "order": 7
+    }
+  },
+  "units": {
+    "Cataphracts": {
+      "order": 0,
+      "type": "Cavalry",
+      "attack": 3,
+      "range": 15,
+      "hits": 3,
+      "armour": "4+",
+      "size": 3,
+      "points": 130,
+      "specialRules": [
+        "Shock",
+        "Slow"
+      ],
+      "min": 2
+    },
+    "Nepalese Cavalry": {
+      "order": 1,
+      "type": "Cavalry",
+      "specialRules": [
+        "Warband",
+        "Unreliable"
+      ],
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "max": 2,
+      "armour": "6+",
+      "points": 60
+    },
+    "Neoalese Light Cavalry": {
+      "order": 2,
+      "type": "Cavalry",
+      "specialRules": [
+        "Fanatics",
+        "Skirmish",
+        "Unreliable"
+      ],
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "max": 2,
+      "points": 30
+    },
+    "Nepalese Infantry": {
+      "order": 3,
+      "type": "Infantry",
+      "specialRules": [
+        "Warband",
+        "Unreliable"
+      ],
+      "attack": 2,
+      "hits": 3,
+      "size": 3,
+      "max": 4,
+      "points": 25
+    },
+    "Dismounted Cataphracts": {
+      "order": 4,
+      "type": "Infantry",
+      "attack": 3,
+      "range": 30,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 70,
+      "max": 2
+    },
+    "Exorcists": {
+      "order": 5,
+      "type": "Infantry",
+      "attack": 4,
+      "hits": 3,
+      "size": 3,
+      "points": 50,
+      "specialRules": [
+        "Warband",
+        "Fanatics"
+      ],
+      "max": 1
+    },
+    "Spearmen": {
+      "order": 6,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 45,
+      "max": 4
+    },
+    "Archers": {
+      "order": 7,
+      "type": "Infantry",
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "points": 40,
+      "max": 4
+    },
+    "Himalayan Soldiers": {
+      "order": 8,
+      "type": "Infantry",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": 40,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "max": 2
+    },
+    "Mountaineers": {
+      "order": 9,
+      "type": "Infantry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": 30,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "max": 2
+    },
+    "General": {
+      "order": 10,
+      "type": "General",
+      "attack": "+2",
+      "command": 9,
+      "size": 1,
+      "points": 125,
+      "upgrades": [
+        "Portents"
+      ],
+      "armyMax": 1,
+	  "armyMin": 1
+    },
+    "Leader": {
+      "order": 11,
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 80,
+      "max": 2
+    }
+  },
+  "upgrades": {
+    "Portents": {
+      "order": 0,
+      "max": 1,
+      "points": "+10",
+      "specialRules": [
+        "Portents"
+      ]
+    }
+  },
+  "order": 8,
+  "group": "The Far East",
+  "version": "Warmaster Ancients Ricks lists",
+  "name": "Southern Tibetans",
+  "armyRules": [
+    "Cataphracts. These heavily armoured cavalry carry a bow along with a lance and shield. They are effectively mounted bowmen wearing mail armour. According to their opponents, men and horses were entirely covered by mail.",
+    "",
+    "Exorcists. These are warriors monks and animist sorcerers reputably armed with magical daggers!",
+    "",
+    "Dismounted Cataphracts. Cataphracts occasionally fought dismounted as heavy infantry.",
+    "",
+    "Spearmen. Spear armed troops carrying shields and wearing lighter armour.",
+    "",
+    "Archers. Lightly armoured and mostly unarmoured troops armed with composite bows.",
+    "",
+    "Himalayan Soldiers. These are levies recruited from over the Tibetan empire and fighting as skirmishers—often they were former bandits!",
+    "",
+    "Mountaineers. Similar to Himalayan troops but more lightly equipped and fighting in a purely skirmishing role.",
+    "",
+    "Nomad Heavy Cavalry. Turkic or Arab nomadic people fighting on armoured horses with lance, sword and possibly javelins.",
+    "",
+    "Nomad Light Cavalry. Mostly horse archers."
+  ]
+}

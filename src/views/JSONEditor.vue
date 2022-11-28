@@ -265,7 +265,7 @@ export default {
       }
     },
     jsonString () {
-      return JSON.stringify(this.json)
+      return JSON.stringify(this.json,null, "\t")
         .replace(/":"(\d+)"/g, '":$1')
         .replace(/ +"/g, '"')
         .replace(/,?"[^"]+":(""|\[\]|false)/g, '')

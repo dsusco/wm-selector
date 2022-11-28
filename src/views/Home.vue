@@ -37,15 +37,20 @@
     <ArmyListAccordion :title="'Warmaster Ancient Armies'">
       <a target="_blank" title="Warmaster Ancient Armies Errata" href="/pdfs/WAAerr.pdf"><span>Warmaster Ancient Armies Errata</span></a>
     </ArmyListAccordion>
-
-    <ArmyListAccordion :title="'Warmaster Medieval Armies'">
+	
+	<ArmyListAccordion :title="'Warmaster Ancients Ricks lists'">
+    </ArmyListAccordion>
+	
+    <ArmyListAccordion :title="'Warmaster Medieval'">
       <a target="_blank" title="Warmaster Medieval Armies Errata" href="/pdfs/WMAerr.pdf"><span>Warmaster Medieval Armies Errata</span></a>
     </ArmyListAccordion>
 	
     <ArmyListAccordion :title="'Warmaster Evolution'">
       <a target="_blank" title="Warmaster Evolution Règles" href="/pdfs/WME_Regles_v4-0-0.pdf"><span>Warmaster Evolution Règles</span></a>
-      <a target="_blank" title="Warmaster Evolution Armées" href="/pdfs/WME_Armees_v2.42_beta.pdf"><span>Warmaster Evolution Armées</span></a>
+      <a target="_blank" title="Warmaster Evolution Armées" href="/pdfs/WME_Armees_Beta_v2-70.pdf"><span>Warmaster Evolution Armées</span></a>
     </ArmyListAccordion>
+	
+
   </main>
 </template>
 

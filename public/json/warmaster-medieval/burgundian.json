@@ -1,0 +1,322 @@
+{
+  "name": "The Burgundian Ordonnance Of Charles The Bold, 1476",
+  "version": "Warmaster Medieval",
+  "group": "Burgundian Wars",
+  "order": 0,
+  "units": {
+    "Coustilliers": {
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "min": 1,
+      "max": 2,
+      "points": 110,
+      "order": 0,
+      "specialRules": [
+        "Shock"
+      ]
+    },
+    "Mounted Crossbow": {
+      "type": "Cavalry",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "max": 1,
+      "points": 60,
+      "order": 1,
+      "specialRules": [
+        "Skirmish"
+      ] 
+    },
+    "Gendarmes": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "4+",
+      "size": 3,
+      "min": 1,
+      "max": 2,
+      "points": 55,
+      "order": 2,
+      "upgrades": [
+        "Mounted Gendarmes"
+      ]
+    },
+    "Household Infantry": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "min": 1,
+      "max": 4,
+      "points": 60,
+      "order": 3,
+      "upgrades": [
+        "Pavisse"
+      ]
+    },
+    "Longbowmen": {
+      "type": "Infantry",
+      "attack": 2,
+      "hits": 3,
+      "armour": "6+",
+      "range": 30,
+      "size": 3,
+      "min": 1,
+      "max": 4,
+      "points": 55,
+      "order": 4,
+      "specialRules": [
+        "Longbow",
+		"Combined Arms"
+      ],
+      "upgrades": [
+        "Stakes",
+		"Mounted Longbowmen"
+      ]
+    },
+    "Crossbowmen": {
+      "type": "Infantry",
+      "attack": 2,
+      "hits": 3,
+      "range": 30,
+      "size": 3,
+      "max": 2,
+      "points": 45,
+      "order": 5,
+      "upgrades": [
+        "Pavisse",
+		"Skirmishers with Crossbow"
+      ],
+      "specialRules": [
+        "Crossbow"
+      ] 
+    },
+    "Handgunners": {
+      "type": "Infantry",
+      "attack": 2,
+      "hits": 3,
+      "range": 20,
+      "size": 3,
+      "max": 2,
+      "points": 45,
+      "order": 6,
+      "upgrades": [
+        "Pavisse",
+		"Skirmishers with Handguns"
+      ],
+      "specialRules": [
+        "Handgun"
+      ] 
+    },
+    "Burgundian Pikemen": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "max": 4,
+      "armour": "6+",
+      "points": 60,
+      "order": 7,
+      "upgrades": [
+        "Pavisse"
+      ],
+      "specialRules": [
+        "Combined Arms",
+        "Pikemen"
+      ] 
+    },
+    "Serpentine": {
+      "type": "Artillery",
+      "attack": 1,
+      "range": "2x40",
+      "hits": 2,
+      "size": 2,
+      "min": 1,
+      "max": 2,
+      "points": 50,
+      "specialRules": [
+        "Slow",
+        "Cannon"
+      ],
+      "order": 8
+    },
+    "Veuglaires": {
+      "type": "Artillery",
+      "attack": 1,
+      "range": "3x60",
+      "hits": 2,
+      "size": 1,
+      "max": 2,
+      "points": 75,
+      "specialRules": [
+        "Heavy Cannon"
+      ],
+      "order": 9
+    },
+    "Organ gun": {
+      "type": "Artillery",
+      "attack": 1,
+      "range": "D6x15",
+      "hits": 2,
+      "size": 2,
+      "max": 2,
+      "points": 50,
+      "specialRules": [
+        "Slow"
+      ],
+      "order": 10
+    },
+    "Duke": {
+      "type": "General",
+      "attack": "+2",
+      "command": 8,
+      "size": 1,
+      "armyMin": 1,
+      "armyMax": 1,
+      "points": 100,
+      "order": 11
+    },
+    "Leader": {
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "max": 2,
+      "points": 80,
+      "order": 12
+    }
+  },
+  "upgrades": {    
+    "Mounted Gendarmes": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "4+",
+      "size": 3,
+      "points": 50,
+      "order": 0
+    },
+    "Skirmishers with Crossbow": {
+      "type": "Infantry",
+      "attack": 1,
+      "hits": 3,
+      "range": 30,
+      "size": 3,
+      "points": -10,
+      "order": 1,
+      "specialRules": [
+        "Skirmish",
+		"Crossbow"
+      ]
+    },
+    "Skirmishers with Handguns": {
+      "type": "Infantry",
+      "attack": 1,
+      "hits": 3,
+      "range": 15,
+      "size": 3,
+      "points": -15,
+      "order": 2,
+      "specialRules": [
+        "Handgunners",
+		"Skirmish"
+      ] 
+    },
+    "Mounted Longbowmen": {
+      "type": "Infantry",
+      "attack": 2,
+      "hits": 3,
+      "armour": "6+",
+      "range": 30,
+      "size": 3,
+      "max": 1,
+      "points": 10,
+      "order": 3,
+      "specialRules": [
+        "Longbow",
+		"Mounted Infantry"
+      ] 
+    },
+    "Pavisse": {
+      "type": "Special",
+      "points": 5,
+      "order": 4
+    },
+    "Stakes": {
+      "type": "Special",
+      "points": 5,
+      "order": 5
+    }    
+  },
+  "specialRules": {
+    "Skirmish": {
+      "order": 1
+    },
+    "Shock": {
+      "order": 2
+    },
+    "Knights": {
+      "order": 3
+    },
+    "Pavisse": {
+      "order": 4
+    },
+    "Handgunners": {
+      "order": 5
+    },
+    "Cannon": {
+      "order": 6
+    },
+    "Crossbow": {
+      "order": 7
+    },
+    "Mounted Infantry": {
+      "order": 8
+    },
+    "Longbow": {
+      "order": 9
+    },
+    "Stakes": {
+      "order": 12
+    },
+    "Combined Arms": {
+      "order": 13
+    },
+    "Burgundian Pikemen": {
+      "text": [
+        "Longbowmen and Pikemen can form a combined arms formation with pikes at the front and longbows behind"
+      ],
+      "order": 14
+    },
+    "Slow": {
+      "order": 15
+    },
+    "Mounted Longbowmen": {
+      "text": [
+        "Mounted longbowmen cannot carry stakes"
+      ],
+      "order": 16
+    },
+    "Skirmishers with Handguns": {
+      "text": [
+        "Skirmishers with Handgunners cannot carry pavisse"
+      ],
+      "order": 17
+    },
+    "Skirmishers with Crossbow": {
+      "text": [
+        "Skirmishers with Crossbowmen cannot carry pavisse"
+      ],
+      "order": 18
+    },
+    "Organ Gun": {
+      "order": 19
+    }
+  }
+}

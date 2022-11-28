@@ -1,0 +1,239 @@
+{
+  "name": "The House of Tudor, 1487",
+  "version": "Warmaster Medieval",
+  "group": "The Wars of the Roses",
+  "order": 3,
+  "units": {
+    "Currours": {
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "max": 1,
+      "points": 110,
+      "specialRules": [
+        "Shock"
+      ],
+      "order": 1
+    },
+    "Border Horse": {
+      "type": "Cavalry",
+      "attack": 2,
+      "hits": 3,
+      "range": 15,
+      "armour": "6+",
+      "size": 3,
+      "max": 2,
+      "points": 60,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "order": 2
+    },
+    "Men-At-Arms on Foot": {
+      "type": "Infantry",
+      "attack": 3,
+      "armour": "4+",
+      "hits": 3,
+      "size": 3,
+      "max":2,
+      "points": 85,
+      "order": 3,
+      "upgrades": [
+        "Men-At-Arms Mounted"
+      ]
+    },
+    "Longbowmen": {
+      "type": "Infantry",
+      "attack": 2,
+      "range": 30,
+      "armour": "6+",
+      "hits": 3,
+      "size": 3,
+      "points": 55,
+      "order": 4,
+      "min":8,
+      "specialRules": [
+        "Combined Arms",
+		"Longbow",
+		"Skirmishers"
+      ],
+      "upgrades": [
+        "Stakes",
+		"Shire Longbowmen"
+      ]
+    },
+    "Bill": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "armour": "5+",
+      "points": 60,
+      "order": 5,
+      "min":2,
+      "specialRules": [
+        "Combined Arms"
+      ],
+	  "upgrades":[
+		"Shire Bill"]
+    },
+    "Handgunners": {
+      "type": "Infantry",
+      "attack": 2,
+      "hits": 3,
+      "range": 20,
+      "size": 3,
+      "max": 1,
+      "points": 45,
+      "order": 6
+    },
+    "Cannon": {
+      "type": "Artillery",
+      "attack": 1,
+      "range": "2x40",
+      "hits": 2,
+      "size": 2,
+      "max": 2,
+      "points": 50,
+      "order": 7,
+      "specialRules": [
+		"Slow"		
+      ]
+    },
+    "General": {
+      "type": "General",
+      "attack": "+2",
+      "command": 9,
+      "size": 1,
+      "armyMin": 1,
+      "armyMax": 1,
+      "points": 125,
+      "order": 8,
+	  "upgrades":[
+		"Prayer"
+	  ]
+    },
+    "Lord": {
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "max": 2,
+      "points": 80,
+      "order": 9
+    }
+  },
+  "upgrades": {
+    "Stakes": {
+      "type": "Special",
+      "points": 5,
+      "order": 1
+    },
+    "Men-At-Arms Mounted": {
+      "type": "Infantry",
+      "attack": 3,
+      "armour": "4+",
+      "hits": 3,
+      "size": 3,
+      "points": 50,
+      "order": 2,
+      "specialRules": [
+        "Knights"
+      ]
+    },
+    "Skirmishers": {
+      "type": "Infantry",
+      "attack": 1,
+      "hits": 3,
+      "range": 30,
+      "size": 3,
+      "points": -20,
+      "max": 2,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "order": 3
+    },
+    "Shire Longbowmen": {
+      "type": "Infantry",
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "max": "Up to Half",
+      "points": -10,
+      "order": 4,
+      "specialRules": [
+        "Combined Arms",
+		"Longbow"
+      ]
+    },
+    "Shire Bill": {
+      "type": "Infantry",
+      "attack": 2,
+      "hits": 3,
+      "size": 3,
+      "armour": "6+",
+      "max": "Up to Half",
+      "points": -15,
+      "order": 5,
+      "specialRules": [
+        "Combined Arms"
+      ]
+    },
+    "Prayer": {
+      "type": "Special",
+      "points": 10,
+      "order": 6,
+      "specialRules": [
+        "Portents"
+      ]
+    }
+  },
+  "specialRules": {
+    "Skirmish": {
+      "order": 1
+    },
+    "Knights": {
+      "order": 2
+    },
+    "Shock": {
+      "order": 3
+    },
+    "Combined Arms": {
+      "order": 4
+    },
+    "Stakes": {
+      "order": 5
+    },
+    "Handgunners": {
+      "order": 6
+    },
+    "Longbow": {
+      "order": 7
+    },
+    "Warband": {
+      "order": 8
+    },
+    "Slow": {
+      "order": 9
+    },
+    "Portents": {
+      "order": 10
+    },
+    "Shire Longbowmen": {
+      "text": [
+        "Shire Longbowmen can adopt a combined formation with Shire Bill."
+      ],
+      "order": 11
+    },
+    "Longbowmen": {
+      "text": [
+        "Longbowmen can adopt a combined formation with Bill."
+      ],
+      "order": 12
+    }
+  }
+}
