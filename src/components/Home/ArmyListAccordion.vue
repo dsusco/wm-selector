@@ -36,16 +36,14 @@ export default {
     },
     groupClass () {
       switch (Object.keys(armyLists[this.title]).length) {
+        case 1:
+          return '';
         case 2:
           return 'half';
         case 3:
           return 'third';
-        case 4:
-          return 'quarter';
-        case 5:
-          return 'quarter';
         default:
-          return '';
+          return 'quarter';
       }
     },
     jsonPath: {

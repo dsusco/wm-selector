@@ -7,10 +7,12 @@ const
 
 function groupOrder(group) {
   switch (group) {
+    // Warmaster Trial Armies Compendium 2009
     case 'Tournament Armies':
       return 0;
     case 'Experimental Armies':
       return 1;
+    // Warmaster Ancients/Warmaster Ancient Armies
     case 'Fan Armies':
       return 2;
     case 'Chariot Era':
@@ -23,6 +25,11 @@ function groupOrder(group) {
       return 3;
     case 'The Far East':
       return 4;
+    // Warmaster Medieval Armies
+    case 'Reconquista':
+      return 0;
+    case 'Crusades':
+      return 1;
     default:
       return +group;
   }
