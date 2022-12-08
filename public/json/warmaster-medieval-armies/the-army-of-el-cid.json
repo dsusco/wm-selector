@@ -1,7 +1,7 @@
 {
   "name": "The Army of El Cid",
   "version": "Warmaster Medieval Armies",
-  "group": "Reconquista",
+  "group": 0,
   "order": 1,
   "units": {
     "Knights": {

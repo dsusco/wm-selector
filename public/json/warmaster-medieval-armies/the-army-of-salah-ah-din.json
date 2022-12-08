@@ -1,8 +1,8 @@
 {
   "name": "The Army of Salah Ah-Din",
   "version": "Warmaster Medieval Armies",
-  "group": "Crusades",
-  "order": 1,
+  "group": 0,
+  "order": 3,
   "units": {
     "Faris": {
       "type": "Cavalry",

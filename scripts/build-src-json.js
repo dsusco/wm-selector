@@ -25,11 +25,6 @@ function groupOrder(group) {
       return 3;
     case 'The Far East':
       return 4;
-    // Warmaster Medieval Armies
-    case 'Reconquista':
-      return 0;
-    case 'Crusades':
-      return 1;
     default:
       return +group;
   }

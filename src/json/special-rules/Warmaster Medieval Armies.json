@@ -144,7 +144,7 @@
       "Pikemen never benefit from defended or fortified status when in dense terrain (even partially) or on fortress walls etc. They still may be in defended position on higher ground or behind low obstacle as usual. Pikemen count as defended against charging cavalry or chariots to their front. The bonus only applies in the first combat round of an engagement. Note that the rule doesn't apply when pikemen are partially in dense terrain. Pikemen should be based as cavalry - i.e. the models are orientated towards the narrow edge of the base. Pikemen stands may only give or receive support by other infantry or Pikemen stands that are facing the same direction and touch their flank with the whole of their own flank. Any support behind or in front of Pikemen stand is not allowed. In all other respects they count as infantry (movement/pursuit etc.)."
     ]
   },
-  "Portents": {
+  "Prayer": {
     "text": [
       "The General can take the portents before the battle. This allows the Genral to re-roll one failed Command roll once during the battle. Take the Command test again—if successful the order is issued and the General can continue giving further orders if you wish."
     ]
@@ -194,11 +194,6 @@
       "7. Skirmishing infantry can move through some types of terrain that is otherwise impassable&mdash;notably rivers/deep water, forests, and cliffs. This is described in the section on Terrain &amp; Movement (see p31).",
       "",
       "**Note:** For the avoidance of doubt, skirmishing infantry are able to evade from charging cavalry, or other non-skirmishing units, even if these units have a greater move distance than they do. In this case, skirmishers are assumed to have already seen, reacted to, and taken steps to avoid their attackers well before they reach their position."
-    ]
-  },
-  "Skirmishers": {
-    "text": [
-      "Can be regraded as Skirmisher with the stats and price reduction shown."
     ]
   },
   "Slow": {

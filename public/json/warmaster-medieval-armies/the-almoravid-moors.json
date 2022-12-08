@@ -1,7 +1,7 @@
 {
   "name": "The Almoravid Moors",
   "version": "Warmaster Medieval Armies",
-  "group": "Reconquista",
+  "group": 0,
   "order": 0,
   "units": {
     "Hasham Guard Cavalry": {
