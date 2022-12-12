@@ -300,7 +300,7 @@ function checkValidations (context, id, item) {
 
         return count;
       }, 0)) {
-    context.commit('PUSH_ERROR', item.number + ' ' + id + ' may only have ' + item.number + ' upgrades' + (item.number > 1 ? 's.' : '.'));
+    context.commit('PUSH_ERROR', item.number + ' ' + id + ' may only have ' + item.number + ' upgrade' + (item.number > 1 ? 's.' : '.'));
   }
 
   // units added to other units/upgrades
