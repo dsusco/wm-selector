@@ -1,0 +1,205 @@
+{
+  "name": "The English Army of the Hundread Years War (Chevauchee)",
+  "version": "Warmaster Medieval Armies",
+  "group": 1,
+  "order": 4,
+  "units": {
+    "Sergeants": {
+      "order": 0,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 110,
+      "max": 6,
+      "specialRules": [
+        "Shock"
+      ]
+    },
+    "Men-at-Arms": {
+      "order": 2,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "4+",
+      "size": 3,
+      "points": 85,
+      "min": 2,
+      "max": 4,
+      "upgrades": [
+        "Men-at-Arms"
+      ]
+    },
+    "Longbowmen": {
+      "order": 2,
+      "type": "Infantry",
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "points": 45,
+      "min": 4,
+      "upgrades": [
+        "Skirmisher Longbowmen",
+        "Mounted Longbowmen"
+      ],
+      "specialRules": [
+        "Longbow"
+      ]
+    },
+    "Billmen": {
+      "order": 3,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 45,
+      "min": 2,
+      "max": 4
+    },
+    "Peasants": {
+      "order": 4,
+      "type": "Infantry",
+      "attack": 2,
+      "hits": 2,
+      "size": 3,
+      "points": 20,
+      "max": 8
+    },
+    "Welsh Infantry": {
+      "order": 5,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 45,
+      "max": 4,
+      "specialRules": [
+        "Warband"
+      ]
+    },
+    "Hobilars": {
+      "order": 6,
+      "type": "Cavalry",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 60,
+      "max": 4,
+      "specialRules": [
+        "Skirmish"
+      ]
+    },
+    "General": {
+      "order": 7,
+      "type": "General",
+      "attack": "+2",
+      "size": 1,
+      "points": 100,
+      "command": 8,
+      "armyMin": 1,
+      "armyMax": 1,
+      "upgrades": [
+        "Henry V"
+      ]
+    },
+    "Lord": {
+      "order": 8,
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 80,
+      "max": 2
+    }
+  },
+  "upgrades": {
+    "Men-at-Arms": {
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "4+",
+      "size": 3,
+      "points": "+50",
+      "specialRules": [
+        "Knights"
+      ],
+      "order": 1
+    },
+    "Skirmisher Longbowmen": {
+      "type": "Infantry",
+      "attack": 1,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "max": "Up to Half",
+      "points": -10,
+      "specialRules": [
+        "Longbow",
+        "Skirmish"
+      ],
+      "requiredUnits": [
+        "Longbowmen"
+      ],
+      "order": 2
+    },
+    "Mounted Longbowmen": {
+      "type": "Infantry",
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "max": 2,
+      "points": "+10",
+      "specialRules": [
+        "Longbow",
+        "Mounted Infantry"
+      ],
+      "order": 3
+    },
+    "Henry V": {
+      "type": "Special",
+      "command": "+1",
+      "armyMax": 1,
+      "points": "+40",
+      "order": 4
+    }
+  },
+  "specialRules": {
+    "Shock": {
+      "order": 1
+    },
+    "Knights": {
+      "order": 2
+    },
+    "Longbow": {
+      "order": 3
+    },
+    "Warband": {
+      "order": 4
+    },
+    "Skirmish": {
+      "order": 5
+    },
+    "Mounted Infantry": {
+      "order": 6
+    },
+    "Skirmisher Longbowmen": {
+      "order": 7,
+      "text": [
+        "Skirmishers cannot carry stakes. Note that Skirmishing Longbowmen retain the range of longbows but lose the Longbow special rule (+1 shot from 'massed' bowfire)"
+      ]
+    },
+    "Henry V": {
+      "order": 8,
+      "text": [
+        "If you field the English King and victor of Agincourt you can re-roll one failed shooting attack from any one of your Longbow units during each Shooting phase."
+      ]
+    }
+  }
+}
