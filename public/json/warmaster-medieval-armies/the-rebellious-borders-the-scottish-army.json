@@ -1,8 +1,8 @@
 {
   "name": "The Rebelious Borders – The Scottish Army",
   "version": "Warmaster Medieval Armies",
-  "group": 1,
-  "order": 2,
+  "group": 0,
+  "order": 12,
   "units": {
     "Scottish Knights": {
       "type": "Cavalry",

@@ -2,7 +2,7 @@
   "name": "The French Army of the Hundread Years War (Final Years)",
   "version": "Warmaster Medieval Armies",
   "group": 1,
-  "order": 6,
+  "order": 3,
   "units": {
     "Retainers": {
       "order": 0,

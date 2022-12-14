@@ -2,7 +2,7 @@
   "name": "The English Army of the Hundread Years War (Chevauchee)",
   "version": "Warmaster Medieval Armies",
   "group": 1,
-  "order": 4,
+  "order": 1,
   "units": {
     "Sergeants": {
       "order": 0,

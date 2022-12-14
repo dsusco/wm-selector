@@ -1,8 +1,8 @@
 {
   "name": "The Rebelious Borders – The Welsh Army",
   "version": "Warmaster Medieval Armies",
-  "group": 1,
-  "order": 1,
+  "group": 0,
+  "order": 11,
   "units": {
     "Welsh Knights": {
       "type": "Cavalry",

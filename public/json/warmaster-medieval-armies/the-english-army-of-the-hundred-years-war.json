@@ -2,7 +2,7 @@
   "name": "The English Army of the Hundread Years War",
   "version": "Warmaster Medieval Armies",
   "group": 1,
-  "order": 3,
+  "order": 0,
   "units": {
     "Sergeants": {
       "order": 0,
