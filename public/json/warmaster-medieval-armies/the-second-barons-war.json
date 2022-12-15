@@ -76,7 +76,7 @@
       "max": 2,
       "points": 45,
       "specialRules": [
-        "Crossbow"
+        "Crossbows"
       ],
       "order": 5
     },
@@ -174,7 +174,7 @@
     "Skirmish": {
       "order": 3
     },
-    "Crossbow": {
+    "Crossbows": {
       "order": 4
     },
     "Warband": {

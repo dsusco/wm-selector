@@ -68,7 +68,7 @@
       "points":45,
       "min": 1,
       "specialRules": [
-        "Crossbow"
+        "Crossbows"
       ],
       "upgrades":[
         "Pavisse",
@@ -173,7 +173,7 @@
       "points": 55,
       "max": 4,
       "specialRules": [
-        "Crossbow"
+        "Crossbows"
       ],
       "upgrades":[
         "Pavisse"
@@ -249,7 +249,7 @@
     "Knights": {
       "order": 3
     },
-    "Crossbow": {
+    "Crossbows": {
       "order": 4
     },
     "Warband": {

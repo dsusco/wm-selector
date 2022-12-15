@@ -94,7 +94,7 @@
       "points": 55,
       "specialRules": [
         "Combined Arms",
-        "Crossbow"
+        "Crossbows"
       ],
       "upgrades": [
         "Pavisse"
@@ -147,7 +147,7 @@
     "Combined Arms": {
       "order": 3
     },
-    "Crossbow": {
+    "Crossbows": {
       "order": 4
     },
     "Pavisse": {
