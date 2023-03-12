@@ -99,7 +99,7 @@
       "hits": 10,
       "armour": "4+",
       "size": 1,
-      "points": 250,
+      "points": 225,
       "max": 1,
       "order": 7
     },
@@ -192,7 +192,7 @@
         "",
         "If a Salamander stand is attached to a Skink unit the entire unit, including the Salamander, is considered to employ 'Salamander Venom' shooting attacks. Enemy Armour saving throws suffer a - 1 penalty when hit by Salamander Venom (eg 5+ save requires a roll of 6).",
         "",
-        "Salamander stands have 2 shooting attacks, a range of 15cm, and can shoot from any edge in the same way as Skinks. If their unit is charged then Salamanders can shoot in the same way as any other shooting stand - however when shooting against chargers their number of Attacks is reduced to 1."
+        "Salamander stands have 2 shooting attacks, a range of 15cm, and can shoot from any edge in the same way as Skinks."
       ]
     },
     "Terradons": {

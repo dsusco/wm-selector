@@ -55,5 +55,12 @@
       "Stone Throwers shoot with such a high trajectory that they cannot shoot at charging enemies.",
       "Because of the high trajectory Stone Throwers can shoot blind at targets they cannot see. The targets are assumed to be reported by scouts or messengers from other units. If there is no target in sight a Stone Thrower may instead shoot at the nearest enemy unit in range it cannot see. When shooting blind it always hits on 6+ no matter if the target is in the open, defended or even fortified."
     ]
+  },
+  "Trolls": {
+    "text": [
+      "Trolls are witless creatures that find it hard to remember orders let alone obey them. To represent this, any Command penalty applied for distance between the character and the Troll unit is always doubled. So at 20cm no penalty applies, at 40cm -2, at 60cm -4, and so on.",
+      "",
+      "By way of compensation, Trolls have a remarkable ability. They can regenerate their bodies and repair the most horrendous injuries. To represent this, in each round of combat after whole stands have been removed Trolls automatically regenerate one outstanding hit. If no hits are left over after removing stands then regeneration has no effect. Regenerated hits still count towards the combat result for the round."
+    ]
   }
 }

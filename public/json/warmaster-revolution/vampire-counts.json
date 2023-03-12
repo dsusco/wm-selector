@@ -2,7 +2,7 @@
   "name": "Vampire Counts",
   "version": "Warmaster Revolution",
   "group": 1,
-  "order": 5,
+  "order": 3,
   "units": {
     "Skeletons": {
       "type": "Infantry",

@@ -100,7 +100,7 @@
     "Crown of Command": {
       "order": "CC",
       "type": "Device of Power",
-      "points": "+75",
+      "points": "+70",
       "armyMax": 1,
       "text": [
         "If the General has this potent magic item he can choose to issue his first order of each turn against an unmodified Command value of 10. No command penalties apply when the Crown of Command is used. This only applies to the General’s first order each turn, subsequent orders must be given normally. Should the General fail to issue his first order, by rolling an 11 or 12, then the Crown of Command ceases to work."

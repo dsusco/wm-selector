@@ -2,7 +2,7 @@
   "name": "Daemons",
   "version": "Warmaster Revolution",
   "group": 1,
-  "order": 3,
+  "order": 2,
   "units": {
     "Daemon Hordes": {
       "type": "Infantry",
@@ -60,7 +60,7 @@
       "hits": 4,
       "armour": "5+",
       "size": 3,
-      "points": 220,
+      "points": 200,
       "max": 1,
       "order": 5
     },
@@ -80,7 +80,7 @@
       "hits": 6,
       "armour": "4+",
       "size": 1,
-      "points": 300,
+      "points": 280,
       "max": 1,
       "order": 7
     },

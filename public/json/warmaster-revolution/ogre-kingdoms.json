@@ -2,7 +2,7 @@
   "name": "Ogre Kingdoms",
   "version": "Warmaster Revolution",
   "group": 1,
-  "order": 7,
+  "order": 6,
   "units": {
     "Bull Ogres": {
       "type": "Infantry",
@@ -38,11 +38,10 @@
     "Yhetees": {
       "type": "Infantry",
       "attack": 5,
-      "hits": 3,
-      "armour": "5+",
+      "hits": 4,
       "size": 3,
-      "points": 120,
-      "max": 2,
+      "points": 90,
+      "max": 1,
       "order": 3
     },
     "Gnoblars": {
@@ -55,25 +54,34 @@
       "max": 4,
       "order": 4
     },
+    "Sabretusks": {
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "points": 40,
+      "max": 1,
+      "order": 5
+    },
     "Rhinox Riders": {
       "type": "Cavalry",
       "attack": 5,
       "hits": 4,
       "armour": "5+",
       "size": 3,
-      "points": 220,
+      "points": 200,
       "max": 1,
-      "order": 5
+      "order": 6
     },
     "Gorgers": {
       "type": "Monster",
-      "attack": 4,
-      "hits": 4,
+      "attack": 5,
+      "hits": 3,
       "armour": "5+",
       "size": 3,
-      "points": 145,
+      "points": 110,
       "max": 1,
-      "order": 6
+      "order": 7
     },
     "Slave Giant": {
       "type": "Monster",
@@ -81,9 +89,9 @@
       "hits": 8,
       "armour": "5+",
       "size": 1,
-      "points": 150,
+      "points": 135,
       "max": 1,
-      "order": 7,
+      "order": 8,
       "specialRules": [
         "Giant"
       ]
@@ -97,7 +105,7 @@
       "size": 1,
       "points": 75,
       "max": 1,
-      "order": 8,
+      "order": 9,
       "specialRules": [
         "Stone Thrower"
       ]
@@ -112,7 +120,7 @@
       "upgrades": [
         "Bull Rhinox"
       ],
-      "order": 9,
+      "order": 10,
       "size": 1
     },
     "Bruiser": {
@@ -124,7 +132,7 @@
       "upgrades": [
         "Bull Rhinox"
       ],
-      "order": 10,
+      "order": 11,
       "size": 1
     },
     "Butcher": {
@@ -136,7 +144,7 @@
       "upgrades": [
         "Bull Rhinox"
       ],
-      "order": 11,
+      "order": 12,
       "size": 1
     }
   },
@@ -165,7 +173,7 @@
     },
     "Yhetees": {
       "text": [
-        "When trying to issue an order to a unit of Yhetees or to a brigade that contains a unit of Yhetees, there is always a -1 Command penalty due their beastly and unruly nature. Yhetees always ignore distance modifiers when receiving orders and can pursue any type of retreating enemy. If a character joined Yhetees unit it can not be brigaded with Gnoblars."
+        "If the unit of Yhetees is charging against an enemy in the open it receives an additional +1 Attack modifier in the same way as chariots and monsters. A Yhetee unit can only give support and be supported by other Yhetee units and must pursue retreating enemies where possible and must advance into a combat if they are able to do so."
       ],
       "order": 3
     },
@@ -183,7 +191,7 @@
     },
     "Gorgers": {
       "text": [
-        "Rather than usual monsters the Gorgers are based along the long base edge as infantry stands. Gorgers must use its initiative to charge an enemy if possible and never use their initiative to evade. Gorgers must always pursue, but can not advance. They are unaffected by enemies that cause terror in combat and do not suffer the usual -1 Attack modifier."
+        "When trying to issue an order to a unit of Gorgers or to a brigade that contains a unit of Gorgers, there is always a -1 Command penalty due their beastly and unruly nature. Gorgers always ignore distance modifiers when receiving orders and can pursue any type of retreating enemy. If a character joined Gorgers unit it can not be brigaded with Gnoblars. Gorgers do not have to be deployed before the game if the player does not wish to do so. Instead individual units can be infiltrated onto the battlefield once the game has begun. To infiltrate a unit, the Ogre player nominates the point where he wants the Gorgers to appear and issues an 'infiltration' order from any character. The character does not have to be within his ormal command range to issue an infiltration order - the character's command range is considered to extend over the entire tabletop when issuing an infiltration order. Treat the order as ssued to the nominated point, and apply any modifiers for distance and proximity of enemy, but ignore penalties for dense terrain. The nominated point must lie either on the table within dense terrain or on any base edge other than the enemy player's own table edge. If successful, place one stand on the nominated spot and arrange the rest of the unit into formation around it. The infiltrated unit cannot be placed so that it touches an enemy unit. Once deployed, orders can be given to the unit by the same character that gave the infiltration order. The infiltrating unit is considered to have used its first order to deploy. If the infiltration order is failed the unit is not deployed and cannot infiltrate that turn, it can attempt to infiltrate in a subsequent turn at the same or a different place. Gorgers don't suffer -1 Command penalty for Dense Terrain."
       ],
       "order": 6
     },
@@ -203,7 +211,7 @@
   "spells": [
     {
       "roll": 3,
-      "range": "20cm",
+      "range": "30cm",
       "text": [
         "*The Butcher grinds his way through a lump of earth encrusted bedrock taken from the peak of a mountain, imbuing himself and his fellows with supernatural resilience. This often costs the Butcher more than a couple of teeth.*",
         "",
@@ -213,11 +221,13 @@
     },
     {
       "roll": 5,
-      "range": "20cm",
+      "range": "30cm",
       "text": [
         "*Shovelling dry bones into his mouth, the Butcher painfully crunches his way through femurs, ribs and skulls. As he points at his foes and spits his bloody curse, the enemy find their own bones breaking within their bodies.*",
         "",
-        "Counts as three shooting attacks with no armour save. The spell causes drive back as for normal shooting. Also, drive back rolls of 5-6 from Bone Cruncher cause confusion. The Wizard must be able to see the target and can’t cast the spell into a combat."
+        "Draw an imaginary line 30cm long from the Wizard's stand in any direction you wish. The line will pass through any intervening units but not beyond terrain that would normally stop a missile shot, eg over the crest of a hill, more than 2cm of woodland, and so forth.",
+        "",
+        "Each unit under the line takes three shooting attacks worked out in the usual way. Note that this spell can easily effect several units and will affect all units that fall beneath the line (including your own). Unengaged units can be driven back by a Doombolt as with ordinary shooting (even including friends). Engaged units cannot be driven back by the Doombolt but carry over any hits scored into the first round of combat; any hits scored count as having been struck in the combat itself."
       ],
       "name": "Bone Cruncher"
     },
@@ -232,7 +242,7 @@
     },
     {
       "roll": 5,
-      "range": "20cm",
+      "range": "30cm",
       "text": [
         "*The Ogre Butcher forces down the toxic guts of a Stone Troll, great quantities of acid and bile ravaging his much abused gut as he transfers the supernatural abilities of the troll onto himself and his companions.*",
         "",

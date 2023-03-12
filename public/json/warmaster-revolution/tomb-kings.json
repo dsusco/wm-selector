@@ -60,7 +60,7 @@
       "hits": 4,
       "armour": "4+",
       "size": 1,
-      "points": 125,
+      "points": 110,
       "max": 1,
       "order": 5
     },
@@ -70,7 +70,7 @@
       "hits": 6,
       "armour": "3+",
       "size": 1,
-      "points": 150,
+      "points": 135,
       "max": 1,
       "order": 6
     },

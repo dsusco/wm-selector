@@ -2,7 +2,7 @@
   "name": "Dark Elves",
   "version": "Warmaster Revolution",
   "group": 1,
-  "order": 2,
+  "order": 1,
   "units": {
     "Spearmen": {
       "type": "Infantry",
@@ -81,7 +81,7 @@
       "hits": 4,
       "armour": "4+",
       "size": 1,
-      "points": 135,
+      "points": 125,
       "max": 1,
       "order": 6
     },

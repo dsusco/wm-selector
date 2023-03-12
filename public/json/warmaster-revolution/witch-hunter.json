@@ -2,7 +2,7 @@
   "name": "Witch Hunter",
   "version": "Warmaster Revolution",
   "group": 2,
-  "order": 2,
+  "order": 0,
   "units": {
     "Zealots": {
       "type": "Infantry",

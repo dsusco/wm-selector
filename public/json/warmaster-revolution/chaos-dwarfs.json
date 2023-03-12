@@ -2,7 +2,7 @@
   "name": "Chaos Dwarfs",
   "version": "Warmaster Revolution",
   "group": 2,
-  "order": 3,
+  "order": 1,
   "units": {
     "Chaos Dwarfs": {
       "type": "Infantry",
@@ -61,7 +61,7 @@
       "hits": 3,
       "armour": "6+",
       "size": 3,
-      "points": 80,
+      "points": 75,
       "specialRules": [
         "Hobgoblins"
       ],
@@ -202,7 +202,7 @@
     },
     "Hobgoblins": {
       "text": [
-        "Hobgoblins and Hobgoblin Wolf Riders carry an assortment of smaller ranged arms, so may only shoot up to 15cm. However, they can shoot from any edge without turning stands to face their target. Just measure the range from any stand edge, front, side or rear. Also this enables them to shoot at enemies charging them from any direction. Hobgoblins and Orcs have a strong hatred so units of Hobgoblins or Hobgoblin Wolf Riders may not brigade with units of Black Orcs or Orc Slaves."
+        "Hobgoblins and Hobgoblin Wolf Riders carry an assortment of smaller ranged arms, so may only shoot up to 15cm. However, they can shoot from any edge without turning stands to face their target. Just measure the range from any stand edge, front, side or rear. Also this enables them to shoot at enemies charging them from any direction. Hobgoblins and Orcs have a strong hatred so units of Hobgoblins or Hobgoblin Wolf Riders may not brigade with units of Black Orcs or Orc Slaves unless Warriror of Blunderbuss unit is part of the brigade."
       ],
       "order": 2
     },
@@ -277,7 +277,7 @@
       "text": [
         "*The wizard calls forth a storm of magma from beneath the earth.*",
         "",
-        "Each enemy unit within 30cm of the Wizard’s stand takes D3 attacks worked out in the normal way. Roll separately for each enemy unit. A unit is not driven back by the Volcanic Eruption. Engaged units carry over any hits scored into the first round of combat and hits caused by the Volcanic Eruption count as having been struck in the combat itself."
+        "Each enemy unit within 30cm of the Wizard’s stand takes 3 attacks worked out in the normal way. Roll separately for each enemy unit. A unit is not driven back by the Volcanic Eruption. Engaged units carry over any hits scored into the first round of combat and hits caused by the Volcanic Eruption count as having been struck in the combat itself."
       ],
       "name": "Volcanic Eruption"
     },
