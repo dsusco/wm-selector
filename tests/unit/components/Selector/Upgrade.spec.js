@@ -2,12 +2,6 @@ import { shallowMount } from '@vue/test-utils'
 
 import Upgrade from '@/components/Selector/Upgrade';
 
-const
-  propsData = {
-    unitID: 'a unit',
-    upgradeID: 'an upgrade'
-  };
-
 var mockDispatch, wrapper;
 
 jest.mock('@/store', () => {
