@@ -55,8 +55,8 @@
       "max": 2,
       "points": 45,
       "specialRules": [
-        "Crossbow",
-		"Skirmishers"
+        "Crossbows",
+        "Skirmishers"
       ],
       "upgrades": [
         "Skirmishing Crossbowmen"
@@ -83,8 +83,8 @@
       "max": 1,
       "points": 60,
       "specialRules": [
-        "Crossbow",
-		"Pavisse"
+        "Crossbows",
+        "Pavisse"
       ],
       "order": 5
     },
@@ -130,7 +130,7 @@
       "points": -10,
       "specialRules": [
         "Skirmish",
-        "Crossbow"
+        "Crossbows"
       ],
       "order": 0
     },
@@ -152,7 +152,7 @@
     "Skirmish": {
       "order": 3
     },
-    "Crossbow": {
+    "Crossbows": {
       "order": 4
     },
     "Pavisse": {

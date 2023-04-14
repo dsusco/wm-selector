@@ -62,7 +62,7 @@
       "max": 4,
       "points": 50,
       "specialRules": [
-        "Crossbow",
+        "Crossbows",
         "Pavisse"
       ],
       "upgrades": [
@@ -104,7 +104,7 @@
       "order": 0,
       "specialRules": [
         "Skirmish",
-        "Crossbow"
+        "Crossbows"
       ]
     },
     "Company of Death": {
@@ -135,7 +135,7 @@
     "Skirmish": {
       "order": 2
     },
-    "Crossbow": {
+    "Crossbows": {
       "order": 3
     },
     "Pavisse": {

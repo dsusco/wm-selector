@@ -33,7 +33,7 @@
       "6. When a combined arms Pike and Longbow formation is engaged in combat, both ranks of troops count as engaged even though the archers cannot support and are not normally considered part of the combat. Although the rear rank does not contribute to the fighting, it is obliged to retrat if defeated, can pursue if victorious, and so on."
     ]
   },
-  "Crossbow": {
+  "Crossbows": {
     "text": [
       "Troops hit by crossbows during their Shooting phase take any armour saving throws with a -1 penality if the Crossbowmen did not move during their Command phase. Note that this does not apply to shooting that takes place when crossbowmen shoot at chargers - which occurs in the enemy's Command phase."
     ]
@@ -231,6 +231,11 @@
       "1. If three or four units of warband are given a brigade order, the player can add 1 to the commander's Command value up to a maximum of 10. The entire brigade has to comprise warband units, and there must be at least three units in the brigade.",
       "2. If a warband unit is driven back by shooting bur has not yet lost a stand then it rolls one less dice for the drive back than usual. If a warband is driven back by shooting and has lost one or more stands for whatever reason then it rolls one more dice than usual.",
       "3. If a warband unit pursues in combat then it receives a further +1 Attack bonus per stand in the following pursuit round. If a warband retreats from combat then it receives a -1 Attack penalty per stand in the following pursuit round."
+    ]
+  },
+  "War Wagons": {
+    "text": [
+      ""
     ]
   }
 }
