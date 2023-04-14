@@ -13,6 +13,9 @@
       "points": 110,
       "min": 2,
       "max": 4,
+      "upgrades": [
+        "Blunderbusses"
+      ],
       "order": 0
     },
     "Blunderbusses": {
@@ -32,7 +35,7 @@
       "range": "15cm",
       "hits": 3,
       "size": 3,
-      "points": 50,
+      "points": 45,
       "order": 2
     },
     "Black Orcs": {
@@ -61,7 +64,7 @@
       "hits": 3,
       "armour": "6+",
       "size": 3,
-      "points": 80,
+      "points": 75,
       "specialRules": [
         "Hobgoblins"
       ],
@@ -73,7 +76,7 @@
       "hits": 4,
       "armour": "5+",
       "size": 3,
-      "points": 150,
+      "points": 140,
       "max": 2,
       "order": 6
     },
@@ -89,9 +92,6 @@
       "order": 7,
       "specialRules": [
         "Stone Thrower"
-      ],
-      "homologousUnits": [
-        "Death Rocket"
       ]
     },
     "Death Rocket": {
@@ -106,9 +106,6 @@
       "order": 8,
       "specialRules": [
         "Stone Thrower"
-      ],
-      "homologousUnits": [
-        "Earthshaker Cannon"
       ]
     },
     "Bolt Thrower": {
@@ -164,9 +161,8 @@
   "upgrades": {
     "Great Taurus": {
       "type": "Monstrous Mount",
-      "attack": "+2/+2",
-      "range": "20cm",
-      "points": "+90",
+      "attack": "+2",
+      "points": "+80",
       "max": 1,
       "order": 0
     },
@@ -190,19 +186,30 @@
         "Rod of Repetition"
       ],
       "order": 2
-    }
+    },
+    "Blunderbusses": {
+      "type": "Special",
+      "attack": "3/2",
+      "range": "15cm",
+      "hits": 4,
+      "armour": "6+",
+      "size": 3,
+      "points": "-20",
+      "max": 1,
+      "order": 3
+    }    
   },
   "magic": true,
   "specialRules": {
     "Blunderbusses": {
       "text": [
-        "Units with Blunderbusses have a shooting range of 15cm. The unit has 2 shooting attacks. However, when making a stand and shoot attack, it has only 1 shooting attack per stand. Units hit by Blunderbusses get a -1 penalty for their armour rolls."
+        "Hobgoblins and Hobgoblin Wolf Riders carry an assortment of smaller ranged arms, so may only shoot up to 15cm. However, they can shoot from any edge without turning stands to face their target. Just measure the range from any stand edge, front, side or rear. Also this enables them to shoot at enemies charging them from any direction. Hobgoblins and Orcs have a strong hatred so units of Hobgoblins or Hobgoblin Wolf Riders may not brigade with units of Black Orcs or Orc Slaves unless Chaos Dwarfs or Blunderbuss unit is part of the brigade."
       ],
       "order": 1
     },
     "Hobgoblins": {
       "text": [
-        "Hobgoblins and Hobgoblin Wolf Riders carry an assortment of smaller ranged arms, so may only shoot up to 15cm. However, they can shoot from any edge without turning stands to face their target. Just measure the range from any stand edge, front, side or rear. Also this enables them to shoot at enemies charging them from any direction. Hobgoblins and Orcs have a strong hatred so units of Hobgoblins or Hobgoblin Wolf Riders may not brigade with units of Black Orcs or Orc Slaves."
+        "Hobgoblins and Hobgoblin Wolf Riders carry an assortment of smaller ranged arms, so may only shoot up to 15cm. However, they can shoot from any edge without turning stands to face their target. Just measure the range from any stand edge, front, side or rear. Also this enables them to shoot at enemies charging them from any direction. Hobgoblins and Orcs have a strong hatred so units of Hobgoblins or Hobgoblin Wolf Riders may not brigade with units of Black Orcs or Orc Slaves unless Chaos Dwarfs or Blunderbuss unit is part of the brigade."
       ],
       "order": 2
     },
@@ -214,13 +221,13 @@
     },
     "Earthshaker Cannon": {
       "text": [
-        "The Earthshaker acts as a Stone Thrower as described in main Rulebook. The exception is that the drive back from the Eartshaker shot causes confusion on rolls of 4+ rather than the usual 6+. In addition the Earthshaker shot causes confusion in units in base contact with the victim unit on rolls of 6 on a D6 (roll for each unit). The total number of Earthshakers and Death Rockets in the army is limited in the way that only 1 piece of this kind is allowed per 1000 points."
+        "The Earthshaker acts as a Stone Thrower as described in main Rulebook. The exception is that the drive back from the Eartshaker shot causes confusion on rolls of 4+ rather than the usual 6+. In addition the Earthshaker shot causes confusion in units in base contact with the victim unit on rolls of 6 on a D6 (roll for each unit)."
       ],
       "order": 4
     },
     "Death Rocket": {
       "text": [
-        "The Death Rocket acts similar to a Stone Thrower as described in main Rulebook, except it shoots D6 times per phase and hits inflicted on the target can be still saved by the armour with -1 modifier (as for handguns). The total number of Earthshakers and Death Rockets in the army is limited to 1 piece per 1000 points. If the roll for the number of shots comes up a 1, the Death Rocket has misfired and you must roll a D6 against the Death Rocket Misfire chart.",
+        "The Death Rocket acts similar to a Stone Thrower as described in main Rulebook, except it shoots D6 times per phase and hits inflicted on the target can be still saved by the armour with -1 modifier (as for handguns). If the roll for the number of shots comes up a 1, the Death Rocket has misfired and you must roll a D6 against the Death Rocket Misfire chart.",
         "",
         " **Death Rocket Misfire Chart**",
         "",
@@ -240,13 +247,13 @@
     },
     "Great Taurus": {
       "text": [
-        "Any character may be mounted on a Great Taurus. This mighty beast is fearsome to face on the battlefield. The Great Taurus causes terror and is able to fly. A Great Taurus may make a shooting attack with a range of 20cms if it joins a unit."
+        "Any character may be mounted on a Great Taurus. This mighty beast is fearsome to face on the battlefield. The Great Taurus causes terror and is able to fly."
       ],
       "order": 7
     },
     "Lammasu": {
       "text": [
-        "The Lammasu is a magical creature trained to serve the Chaos Dwarfs. A Chaos Dwarf Sorcerer may be mounted on a Lammasu. A Lammasu is able to fly. In addition any hostile spell cast on a unit joined by the Lammasu may be dispelled on a roll of 4+ on a D6. (This acts like the Dwarf dispel except it only works when the Lammasu’s unit is targeted)."
+        "The Lammasu is a magical creature trained to serve the Chaos Dwarfs. A Chaos Dwarf Sorcerer may be mounted on a Lammasu. A Lammasu is able to fly. In addition once per turn you can attempt to dispel one hostile spell cast on one friendly unit within 30cm of the Lammasu on a roll of 4+ on a D6. There can only be one Lammasu in the army."
       ],
       "order": 8
     },
@@ -277,7 +284,7 @@
       "text": [
         "*The wizard calls forth a storm of magma from beneath the earth.*",
         "",
-        "Each enemy unit within 30cm of the Wizard’s stand takes D3 attacks worked out in the normal way. Roll separately for each enemy unit. A unit is not driven back by the Volcanic Eruption. Engaged units carry over any hits scored into the first round of combat and hits caused by the Volcanic Eruption count as having been struck in the combat itself."
+        "Each enemy unit within 30cm of the Sorcerer’s stand takes 3 Attacks worked out in the normal way. A unit is not driven back by the Volcanic Eruption. Engaged units carry over any hits scored into the first round of combat and hits caused by the Volcanic Eruption count as having been struck in the combat itself."
       ],
       "name": "Volcanic Eruption"
     },

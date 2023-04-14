@@ -73,7 +73,7 @@
       "hits": 8,
       "armour": "5+",
       "size": 1,
-      "points": 150,
+      "points": 135,
       "max": 1,
       "order": 6
     },
@@ -176,9 +176,7 @@
     },
     "Trolls": {
       "text": [
-        "Trolls are especially stupid creatures that find it difficult to walk or spit straight, let alone think. Consequently, when trying to issue an order to a unit of Trolls or to a brigade that contains a unit of Trolls, there is always a -1 Command penalty.",
-        "",
-        "By way of compensation, Trolls have a remarkable ability. They can regenerate their bodies and repair the most horrendous injuries. To represent this, in each round of combat after whole stands have been removed Trolls automatically regenerate one outstanding hit. If no hits are left over after removing stands then regeneration has no effect. Regenerated hits still count towards the combat result for the round."
+        "When trying to issue an order to a unit of Trolls or to a brigade that contains a unit of Trolls, any Command penalty applied for distance between the character and the Troll unit is always doubled. So at 20cm no penalty applies, at 40cm -2, at 60cm -4, and so on. Trolls can regenerate wounds - in each round of combat after whole stands have been removed Trolls automatically regenerate one outstanding hit. If no hits are left over after removing whole stands then regeneration has no effect. Regenerated hits still count towards the combat result for the round."
       ],
       "order": 2
     },
@@ -272,7 +270,9 @@
       "text": [
         "*The Shaman summons the power of the mighty Waaagh!, invigorating the greenskins.*",
         "",
-        "This spell can be cast on any friendly unit of Goblins engaged in combat and within range, whether the Shaman can see the unit or not. Every stand in the unit, including character stands, adds +1 to its Attacks value during the following Combat phase. A unit can only have one Waaagh! cast successfully on it at a time."
+        "This spell can be cast on a friendly unit of Goblins engaged in combat; including Squig Herds, Wolf Riders, Wolf Chariots and Pump Wagons but not Trolls, Giants or other non-greenskins. The spell can be cast regardless of whether the Shaman can see the target or not.",
+        "",
+        "The spell lasts for the duration of the following Combat phase. Every stand in the unit, including characters that have joined the unit, adds +1 to its Attacks value."
       ],
       "name": "Waaagh!"
     }

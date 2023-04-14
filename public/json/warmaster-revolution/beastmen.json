@@ -44,20 +44,19 @@
       "type": "Infantry",
       "attack": 5,
       "hits": 4,
-      "armour": "6+",
       "size": 3,
-      "points": 110,
-      "max": 1,
+      "points": 80,
+      "max": 2,
       "order": 3
     },
     "Centigors": {
-      "type": "Infantry",
+      "type": "Cavalry",
       "attack": "3/1",
       "range": "15cm",
       "hits": 3,
       "armour": "6+",
       "size": 3,
-      "points": 80,
+      "points": 75,
       "max": 2,
       "order": 4
     },
@@ -107,7 +106,7 @@
       "hits": 8,
       "armour": "5+",
       "size": 1,
-      "points": 175,
+      "points": 160,
       "max": 1,
       "order": 9
     },
@@ -126,10 +125,10 @@
     },
     "Doombull": {
       "type": "Hero",
-      "attack": "+3",
+      "attack": "+2",
       "command": 6,
-      "points": 85,
-      "max": 1,
+      "points": 80,
+      "armyMax": 1,
       "order": 11,
       "size": 1
     },
@@ -160,21 +159,25 @@
       "type": "Chariot Mount",
       "attack": "+1",
       "points": "+10",
+      "max": 1,
       "order": 0
     }
   },
   "magic": true,
+  "armyRules": [
+    "__The things in the woods.__ Beastmen infantry do not suffer the usual -1 Command penalty when within woodland."
+  ],
   "specialRules": {
     "Beastherd/Herdkin": {
       "order": 1,
       "text": [
-        "Up to half of the total number of Beastherd/Herdkin units (rounded down) may be deployed as ambushers rather than be deployed at the start of the game. The ambushers must be deployed in groups up to 4 units. The number of Herdkin units in thees groups may not exceed the number of Beastherd units.",
+        "Up to half of the total number of Beastherd/Herdkin units (rounded down) may be deployed as ambushers rather than be deployed at the start of the game. The ambushers must be deployed in groups up to 4 units. The number of Herdkin units in these groups may not exceed the number of Beastherd units.",
         "",
-        "During the order movement sequence the Beastmen player nominates a point within a terrain feature or on any base edge other than the enemy player's own table edge for every group of ambushing units he wants to deploy this turn. If the nominated point is in dense terrain it must be chosen that every stand of every unit within the group must be at least partially within the terrain.",
+        "During the order movement sequence the Beastmen player nominates a point within dense terrain or on any base edge other than the enemy player‘s own table edge for every group of ambushing units he wants to deploy this turn. If the nominated point is in dense terrain it must be chosen that every stand of every unit within the group must be at least partially within the terrain.",
         "",
-        "Each group of ambushing units is ordered with a brigade order and apply any order modifiers but ignore the penalties for dense terrain and command range. The character's command range is considered to extend over the entire tabletop when issuing an ambush order. If successful, place one stand, of one unit on the nominated spot and arrange the rest of the unit around it. Then place the remaining units of the ambushing group next to each other. Every unit must touch at least one stand of another unit form that ambushing group. Once deployed, orders can be given to the unit by the same character that gave the infiltration order if he is within his normal command range, the infiltrating unit is considered to have used its first order to deploy.",
+        "Each group of ambushing units is ordered with a brigade order. Treat the order as issued to the nominated point, and apply any modifiers for distance and enemy proximity, but ignore the penalties for dense terrain and command range. The character‘s command range is considered to extend over the entire tabletop when issuing an ambush order. If successful, place one stand, of one unit on the nominated spot and arrange the rest of the unit around it. Then place the remaining units of the ambushing group next to each other. Every unit must touch at least one stand of another unit form that ambushing group. The infiltrated unit cannot be placed so that it touches an enemy unit. Once deployed, orders can be given to the unit by the same character that gave the infiltration order if he is within his normal command range, the infiltrating unit is considered to have used its first order to deploy.",
         "",
-        "If the ambush order is failed the ambushing group is not deployed and cannot ambush that turn, it can attempt to ambush in a subsequent turn at the same or a different place and at the same and different composition of units.ers (distance, enemy within 20cm etc.) apply."
+        "If the ambush order is failed the ambushing group is not deployed and cannot ambush that turn, it can attempt to ambush in a subsequent turn at the same or a different place and at the same and different composition of units (distance, enemy within 20cm etc.) apply."
       ]
     },
     "Minotaurs": {
@@ -186,7 +189,7 @@
     "Centigors": {
       "order": 3,
       "text": [
-        "Centigors count as infantry, they are based along the long edge, but can not provide or receive support. Centigors are able to pursue any type of enemy troops (the same as Dwarf Rangers). They can shoot in any direction all around (360 degree arc of sight) in range up to 15cm."
+        "Centigors have a shooting range of only 15cm, however they can shoot all round - ie behind or to the side as well as to their front. Just measure the range from any stand edge either front, side or rear. Centigors can shoot at enemy charging them from any direction."
       ]
     },
     "Dragon Ogres": {
@@ -198,13 +201,11 @@
     "Chaos Spawn": {
       "order": 5,
       "text": [
-        "Spawn cannot be given orders in the Command phase unless they are part of a brigade that includes at least one unit other than Spawn. Spawn can act on their initiative as normal.",
+        "Spawn units have -1 Command penalty if not part of a brigade that includes more non-Spawn units than Spawn units. Up to two Spawn units can be included in any brigade and do not count towards the maximum size of that brigade.",
         "",
-        "Spawn can be included as a bonus to the size of the brigade up to a maximum of one Spawn per non-Spawn unit. For example, 4 Bestigor units plus 4 Spawns counts as a brigade of 4 units - the 4 Spawns do not count towards the size of the brigade. Where several Spawns are brigaded with fewer non-Spawn units, then only the additional Spawn count towards the size of the brigade. For example, 2 Bestigor units and 4 Spawns count as 4 units - 2 Spawns are included for ‘free’. Note the Spawn can not ambush.",
+        "Spawn units cause terror in combat - enemies suffer the -1 Combat modifier for fighting terrifying creatures. Spawn units cannot be driven back by shooting and never rolls for drive backs. Spawn units must pursue or advance if victorious in combat where it is permitted to do so.",
         "",
-        "Spawn cause terror in its enemies.",
-        "",
-        "Spawn have a shooting range of 15cm and can shoot to the side or behind as well as to the front. Just measure the range form any stand edge, front, side or rear. They can therefore shoot at any enemy charging them from any direction."
+        "Spawn units have a shooting range of 15cm and can shoot to the side or behind as well as to the front. Just measure the range from any stand edge, front, side or rear. They can therefore shoot at any enemy charging them from any direction."
       ]
     },
     "Dragon Ogre Shaggoth": {
@@ -218,7 +219,7 @@
     "Doombull": {
       "order": 7,
       "text": [
-        "Beastherd, Herdkin and Bestigors joined by a Doombull will become subject to Bloodlust in the same way as Minotaurs."
+        "Causes Terror. Beastherd, Herdkin and Bestigors joined by a Doombull will become subject to Bloodlust in the same way as Minotaur units, until the end of the following command phase."
       ]
     },
     "Tuskgor Chariot": {
@@ -235,7 +236,7 @@
       "text": [
         "*The pulsating energies of Chaos radiate from the Shaman and envelop a cloud of arrows launched from the Beastmen’s archers. Falling around the enemy they are surrounded by ill-omened hallucinations and terrifying phantoms, arousing terror amongst the enemy.*",
         "",
-        "This spell can be cast on single unengaged unit of Herdkin, Centigor or Chaos Spawn. The Shaman must be able to see his target to use this spell. When spell is successfully cast then unit’s shooting makes enemy confused on 4+."
+        "This spell can be cast on a single unengaged unit of Herdkin, Centigor, or Chaos Spawn. The Shaman must be able to see his target to use this spell. When the spell is successfully cast the target unit gains Screaming Arrows for this shooting phase. When a unit is driven back as a result of hits scored by a unit with Screaming Arrows, then any dice rolled in respect of drivebacks for those hits will cause Confusion on the roll of 4, 5 or 6 (rather than 6 as normal). Note that if a unit has taken other hits as well it will be necessary to roll the Screaming Arrow dice separately."
       ],
       "name": "Screaming Arrows"
     },

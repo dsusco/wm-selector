@@ -72,7 +72,7 @@
       "hits": 6,
       "armour": "4+",
       "size": 1,
-      "points": 300,
+      "points": 270,
       "max": 1,
       "specialRules": [
         "Dragons"
@@ -215,9 +215,9 @@
       "text": [
         "*The ground erupts around the Mage, and a hail of stones, rocks and dirt hurls itself upon his foes.*",
         "",
-        "This spell affects every enemy unit within range. Every enemy unit within range takes D3 Attacks worked out in the normal way. Roll separately to determine the number of attacks on each enemy unit.",
+        "This spell affects every enemy unit within range.",
         "",
-        "Unengaged units are not driven back by the Storm of Stone (the assault comes from the ground beneath their feet). Engaged units carry over any hits scored into the first round of combat; any hits scored count as having been struck in the combat itself."
+        "Every enemy unit within range takes 3 Attacks worked out in the normal way. Unengaged units are not driven back by the Storm of Stone (the assault comes from the ground beneath their feet). Engaged units carry over any hits scored into the first round of combat; any hits scored count as having been struck in the combat itself."
       ],
       "name": "Storm of Stone"
     },

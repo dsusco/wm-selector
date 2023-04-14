@@ -99,7 +99,7 @@
       "hits": 4,
       "armour": "5+",
       "size": 3,
-      "points": 250,
+      "points": 230,
       "max": 1,
       "order": 9
     },
@@ -181,7 +181,7 @@
     },
     "Trolls": {
       "text": [
-        "When trying to issue an order to a unit of Trolls or to a brigade that contains a unit of Trolls, there is always a -1 Command penalty. Trolls can regenerate wounds - in each round of combat after whole stands have been removed Trolls automatically regenerate one outstanding hit. If no hits are left over after removing whole stands then regeneration has no effect. Regenerated hits still count towards the combat result for the round."
+        "Trolls are witless creatures that find it hard to remember orders let alone obey them. To represent this, any Command penalty applied for distance between the character and the Troll unit is always doubled. So at 20cm no penalty applies, at 40cm -2, at 60cm -4, and so on."
       ],
       "order": 2
     },
@@ -199,11 +199,11 @@
     },
     "Chaos Spawn": {
       "text": [
-        "Spawn cannot be given orders in the Command phase unless they are part of a brigade that includes at least one unit other than Spawn. Spawn can act on their initiative as normal. Spawn can be included as a bonus to the size of the brigade up to a maximum of one Spawn per non-Spawn unit. For example, 4 Chaos Warriors plus 4 Spawn counts as a brigade of 4 units - the 4 Spawn do not count towards the size of the brigade. Where several Spawn are brigaded with fewer non-Spawn units, then only the additional Spawn count towards the size of the brigade. For example, 2 Chaos Warriors and 4 Spawn count as 4 units - 2 Spawn are included for 'free'.",
+        "Spawn units have -1 Command penalty if not part of a brigade that includes more non-Spawn units than Spawn units. Up to two Spawn units can be included in any brigade and do not count towards the maximum size of that brigade.",
         "",
-        "Spawn cause terror in combat - enemies suffer the -1 Combat modifier for fighting terrifying creatures.",
+        "Spawn units cause terror in combat - enemies suffer the -1 Combat modifier for fighting terrifying creatures. Spawn units cannot be driven back by shooting and never rolls for drive backs. Spawn units must pursue or advance if victorious in combat where it is permitted to do so.",
         "",
-        "Spawn have a shooting range of 15cm and can shoot to the side or behind as well as to the front. Just measure the range from any stand edge, front, side or rear. They can therefore shoot at any enemy charging them from any direction."
+        "Spawn units have a shooting range of 15cm and can shoot to the side or behind as well as to the front. Just measure the range from any stand edge, front, side or rear. They can therefore shoot at any enemy charging them from any direction."
       ],
       "order": 5
     },

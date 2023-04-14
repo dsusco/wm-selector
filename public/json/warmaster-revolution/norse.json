@@ -20,7 +20,7 @@
       "hits": 3,
       "armour": "4+",
       "size": 3,
-      "points": 100,
+      "points": 110,
       "min": 1,
       "max": 4,
       "order": 1
@@ -70,7 +70,7 @@
       "hits": 8,
       "armour": "5+",
       "size": 1,
-      "points": 150,
+      "points": 135,
       "max": 1,
       "order": 6,
       "specialRules": [
@@ -83,23 +83,23 @@
       "hits": 10,
       "armour": "5+",
       "size": 1,
-      "points": 200,
+      "points": 180,
       "max": 1,
       "order": 7
     },
     "Valkyries": {
       "type": "Monster",
-      "attack": 3,
+      "attack": 2,
       "hits": 3,
       "armour": "5+",
       "size": 3,
-      "points": 120,
+      "points": 80,
       "noCount": true,
       "requiredUnits": [
         "Shaman"
       ],
       "order": 8,
-      "armyMax": 1
+      "max": 1
     },
     "Jarl": {
       "type": "General",
@@ -151,7 +151,7 @@
     "Horn of Resounding": {
       "type": "Chariot Mount",
       "attack": "+1",
-      "points": "+15",
+      "points": "+20",
       "order": 1,
       "armyMax": 1
     }
@@ -168,7 +168,7 @@
     },
     "Ulfwerener": {
       "text": [
-        "Unlike usual infantry troops, the Ulfwerener are based facing the short edge in the same way as cavalry. In addition they receive an additional +1 Attack modifier when they charge an enemy in the open in the same way as monsters and chariots and have an ability to pursue cavalry and chariots troop types. The Ulfwerener stands can never support or being supported at all. Because of their rather bestial nature, only characters with the Were Kin Character upgrade may join units of Ulfwerener and they cannot be brigaded with any units apart from other Ulfwerener. Ulfwerener units can not take any magic items."
+        "Unlike usual infantry troops, the Ulfwerener are based facing the short edge in the same way as cavalry. In addition they receive an additional +1 Attack modifier when they charge an enemy in the open in the same way as monsters and chariots and have an ability to pursue cavalry and chariots troop types. The Ulfwerener stands can never support or being supported at all. Because of their rather bestial nature, only characters with the Were Kin Character upgrade may join units of Ulfwerener."
       ],
       "order": 2
     },
@@ -189,9 +189,7 @@
     },
     "Valkyries": {
       "text": [
-        "There can ever be only one Valkyrie unit in a Norse army. Valkyries cannot be deployed as normal. They have to enter the battlefield during the game as an ambush. To deploy Valkyries during the game the Norse player nominates the point where he wants the Valkyries to appear and issues a \"deployment\" order by a shaman character with the Horn of Resounding. The shaman does not have to be within his normal command range to issue a deployment order - the shaman's command range is considered to extend over the entire tabletop when issuing a deployment order.",
-        "",
-        "Treat the order as issued to the nominated point, and apply any modifiers for distance and proximity of the enemy. The nominated point must lie on any base edge other than the enemy player's own table edge. If successful, place one stand on the nominated spot and arrange the rest of the unit into formation around it. The unit cannot be placed so that it touches an enemy unit. Once deployed, orders can be given to the unit by the same character that gave the first order if he is within his normal command range, the Valkyrie unit is considered to have used its first order to deploy. If the deployment order is failed the unit is not deployed that turn. It can attempt to deploy in a subsequent turn at the same or a different place. Should the Shaman carrying the Horn of Resounding die, they can home back to and be commanded by the General but with a -2 command penalty. Valkyries can fly."
+        "Valkyries can fly. Valkyries will always use their initiative to charge an enemy if possible and cannot be given orders instead. They will never use their initiative to evade. Valkyries are unaffected by enemy that cause terror in combat and they don’t suffer the usual -1 Attack modifier."
       ],
       "order": 5
     },
@@ -203,7 +201,7 @@
     },
     "Horn of Resounding": {
       "text": [
-        "A single shaman in the army may be given this chariot upgrade. It gives the saman +1 Attack and allowes him to summon and command Valkyrie unit."
+        "A single shaman in the army may be given this chariot upgrade. It gives the shaman +1 Attack if the Horn is used the Shaman inspires the units around him to fight harder. He may add +1 to all of his Command checks for a single turn only."
       ],
       "order": 7
     }

@@ -105,7 +105,7 @@
       "hits": 4,
       "armour": "5+",
       "size": 3,
-      "points": 105,
+      "points": 110,
       "max": 2,
       "specialRules": [
         "Forest Spirits"
@@ -222,8 +222,6 @@
   },
   "magic": true,
   "armyRules": [
-    "Before deploying armies the Wood Elf player may decide to place additional piece of wooded terrain instead of fielding one of his Wardancer units (assuming he has one in his list). The additional wood must be placed so that at least part of it lies within the Wood Elf deployment zone. It cannot be placed closer than 12cm to any other terrain feature except for road or hill. The size of any single additional wooded piece cannot have any dimension larger than 16cm. In this way the player can field one additional wood per full 1000 points, however the wood cannot be placed if that would bring the total number of the woods on the Wood Elf player's half of the table over four.",
-    "",
     "**Woodland Folk.** Due to living amongst the forests of Loren all Wood Elf infantry does not suffer the usual -1 Command penalty when within woodland."
   ],
   "specialRules": {
@@ -313,7 +311,9 @@
       "roll": 4,
       "range": "30cm",
       "text": [
-        "This spell can be cast on one of the additional wooded terrain pieces brought by a Wood Elf player and move it up to 2D6 in any direction. A Wood Elf unit of which all stands are at least partially in the wood can be moved along but cannot be moved into contact with the enemy. Every single wood may only be affected by this spell once per phase. The wood cannot be moved over any enemy units and terrain feature other than road or hill."
+        "The Spell Weaver calls force a mass of tangling branches to surround ther troops, protecting them form harm.",
+        "",
+        "This spell may be cast upon a single unengaged friendly Infantry unit within range, regardless of whether the caster can see them or not. The spell lasts until the start of the caster‘s next turn, or until the target unit moves in any way. The target Infantry unit counts as Defended, even if it is in open terrain."
       ],
       "name": "Tree Singing"
     },

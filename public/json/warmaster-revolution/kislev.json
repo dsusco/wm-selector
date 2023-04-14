@@ -77,7 +77,7 @@
       "attack": 5,
       "hits": 4,
       "size": 3,
-      "points": 110,
+      "points": 90,
       "max": 1,
       "order": 6
     },
@@ -85,10 +85,10 @@
       "type": "Artillery",
       "attack": "4/4",
       "range": "30cm",
-      "hits": 5,
+      "hits": 4,
       "armour": "4+/-",
       "size": 2,
-      "points": 140,
+      "points": 125,
       "max": 1,
       "order": 7
     },
@@ -183,15 +183,11 @@
     },
     "Bears": {
       "text": [
-        "Bears cannot be brigaded with other units only with other units of Bears.",
-        "",
         "Bears are defined as infantry for rules purposes as this gives them the appropriate mobility for such creatures, but they add +1 Attack when they charge an enemy in the open in the same way as monsters and chariots.",
         "",
-        "A Bear unit that scores more hits than it suffers in the first round of a combat will automatically strike one more Attack per stand before the combat result is worked out. Resolve these Attacks as normal and then calculate results.",
+        "A Bear unit can only give support and be supported by other Bear units and must pursue retreating enemy where possible and must advance if they are able to do so. Also, Bears never count as defended outside a dense terrain.",
         "",
-        "Bears must pursue retreating enemy where possible and must advance if they are able to do so.",
-        "",
-        "Note that these rules apply only to Bear units - not to characters riding a Bear or Shaman that have transformed in Monster Bear."
+        "Note that these rules apply only to Bear units - not to characters riding a Bear or Shaman that have transformed in Monster Bear"
       ],
       "order": 4
     },
