@@ -21,12 +21,8 @@
     </ArmyListAccordion>
 
     <ArmyListAccordion :title="'Warmaster Revolution'">
-      <a target="_blank" title="Warmaster Revolution Compendium" href="/pdfs/WMR1.2.pdf"><span>Warmaster Revolution Compendium</span></a>
-      <a target="_blank" title="Warmaster Revolution Armies" href="/pdfs/WMR armies1.22.pdf"><span>Warmaster Revolution Armies</span></a>
-    </ArmyListAccordion>
-
-    <ArmyListAccordion :title="'Warmaster Revolution Developmental'">
-      <a target="_blank" title="Warmaster Revolution updates for 2022" href="/pdfs/warmaster-revolution-updates-for-2022-final-draft.pdf"><span>Warmaster Revolution updates for 2022</span></a>
+      <a target="_blank" title="Warmaster Revolution Rules" href="/pdfs/WMR 2.0.pdf"><span>Warmaster Revolution Rules</span></a>
+      <a target="_blank" title="Warmaster Revolution Armies" href="/pdfs/WMR_Armies2.23.pdf"><span>Warmaster Revolution Armies</span></a>
     </ArmyListAccordion>
 
     <ArmyListAccordion :title="'Warmaster Ancients'">
@@ -41,7 +37,7 @@
     <ArmyListAccordion :title="'Warmaster Medieval Armies'">
       <a target="_blank" title="Warmaster Medieval Armies Errata" href="/pdfs/WMAerr.pdf"><span>Warmaster Medieval Armies Errata</span></a>
     </ArmyListAccordion>
-	
+
     <ArmyListAccordion :title="'Warmaster Evolution'">
       <a target="_blank" title="Warmaster Evolution Règles" href="/pdfs/WME_Regles_v4-0-0.pdf"><span>Warmaster Evolution Règles</span></a>
       <a target="_blank" title="Warmaster Evolution Armées" href="/pdfs/WME_Armees_v2.42_beta.pdf"><span>Warmaster Evolution Armées</span></a>
