@@ -197,13 +197,13 @@
       "points": "-20",
       "max": 1,
       "order": 3
-    }    
+    }
   },
   "magic": true,
   "specialRules": {
     "Blunderbusses": {
       "text": [
-        "Hobgoblins and Hobgoblin Wolf Riders carry an assortment of smaller ranged arms, so may only shoot up to 15cm. However, they can shoot from any edge without turning stands to face their target. Just measure the range from any stand edge, front, side or rear. Also this enables them to shoot at enemies charging them from any direction. Hobgoblins and Orcs have a strong hatred so units of Hobgoblins or Hobgoblin Wolf Riders may not brigade with units of Black Orcs or Orc Slaves unless Chaos Dwarfs or Blunderbuss unit is part of the brigade."
+        " Units with Blunderbusses have a shooting range of 15cm. The unit has 2 shooting attacks. Units hit by Blunderbusses get a -1 penalty for their armour rolls. One unit of Blunderbusses per full 1000 points can replace a unit of Warriors while still counting for the Warrior min/max value. Note that this unit still counts for max value of Blunderbusses."
       ],
       "order": 1
     },
