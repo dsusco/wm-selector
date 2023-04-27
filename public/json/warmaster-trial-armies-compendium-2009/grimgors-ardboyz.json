@@ -5,16 +5,17 @@
   "order": 4,
   "units": {
     "Orc Warriors": {
+      "order": 0,
       "type": "Infantry",
       "attack": 4,
       "hits": 3,
       "armour": "6+",
       "size": 3,
       "points": 60,
-      "min": 3,
-      "order": 0
+      "min": 3
     },
     "Black Orcs": {
+      "order": 1,
       "type": "Infantry",
       "attack": 4,
       "hits": 4,
@@ -22,49 +23,49 @@
       "size": 3,
       "points": 110,
       "min": 1,
-      "max": 2,
-      "order": 1
+      "max": 2
     },
     "Trolls": {
+      "order": 2,
       "type": "Infantry",
       "attack": 5,
       "hits": 3,
       "armour": "5+",
       "size": 3,
       "points": 110,
-      "max": 1,
-      "order": 2
+      "max": 1
     },
     "Boar Riders": {
+      "order": 3,
       "type": "Cavalry",
       "attack": 4,
       "hits": 3,
       "armour": "5+",
       "size": 3,
-      "points": 110,
-      "order": 3
+      "points": 110
     },
     "Giant": {
+      "order": 4,
       "type": "Monster",
       "attack": 8,
       "hits": 8,
       "armour": "5+",
       "size": 1,
       "points": 150,
-      "max": 1,
-      "order": 4
+      "max": 1
     },
     "Rock Lobber": {
+      "order": 5,
       "type": "Artillery",
       "attack": "1/3",
       "range": "60cm",
       "hits": 3,
       "size": 1,
       "points": 75,
-      "max": 1,
-      "order": 5
+      "max": 1
     },
     "Orc General": {
+      "order": 6,
       "type": "General",
       "attack": "+2",
       "command": 8,
@@ -76,10 +77,10 @@
         "Wyvern",
         "Chariot",
         "Grimgor Ironhide"
-      ],
-      "order": 6
+      ]
     },
     "Orc Hero": {
+      "order": 7,
       "type": "Hero",
       "attack": "+1",
       "command": 8,
@@ -89,10 +90,10 @@
       "upgrades": [
         "Wyvern",
         "Chariot"
-      ],
-      "order": 7
+      ]
     },
     "Orc Shaman": {
+      "order": 8,
       "type": "Wizard",
       "attack": "+0",
       "command": 7,
@@ -102,17 +103,17 @@
       "upgrades": [
         "Wyvern",
         "Chariot"
-      ],
-      "order": 8
+      ]
     },
     "Effigy of Gork": {
-      "type": "Special",
-      "points": 100,
-      "armyMax": 1,
       "order": 9,
-      "size": 1
+      "type": "Special",
+      "size": 1,
+      "points": 100,
+      "armyMax": 1
     },
     "Da Immortulz": {
+      "order": 10,
       "type": "Infantry",
       "attack": 4,
       "hits": 4,
@@ -120,29 +121,29 @@
       "size": 3,
       "points": 110,
       "armyMax": 1,
+      "noMagic": true,
       "requiredUpgrades": [
         "Grimgor Ironhide"
-      ],
-      "noMagic": true,
-      "order": 10
+      ]
     }
   },
   "upgrades": {
     "Wyvern": {
+      "order": 0,
       "type": "Monstrous Mount",
       "attack": "+2",
       "points": "+80",
-      "max": 1,
-      "order": 0
+      "max": 1
     },
     "Chariot": {
+      "order": 1,
       "type": "Chariot Mount",
       "attack": "+1",
       "points": "+10",
-      "max": 1,
-      "order": 1
+      "max": 1
     },
     "Grimgor Ironhide": {
+      "order": 2,
       "type": "Special",
       "attack": "+1",
       "command": 8,
@@ -150,17 +151,16 @@
       "max": 1,
       "specialRules": [
         "Grimgor"
-      ],
-      "order": 2
+      ]
     }
   },
   "magic": true,
   "specialRules": {
     "Trolls": {
+      "order": 1,
       "text": [
         "When trying to issue an order to a unit of Trolls or to a brigade that contains a unit of Trolls, there is always a -1 Command penalty. Trolls can regenerate wounds - in each round of combat after whole stands have been removed Trolls automatically regenerate one outstanding hit. If no hits are left over after removing whole stands then regeneration has no effect. Regenerated hits still count towards the combat result for the round."
-      ],
-      "order": 1
+      ]
     },
     "Giant": {
       "order": 2
@@ -169,46 +169,47 @@
       "order": 3
     },
     "Orc Shaman": {
+      "order": 4,
       "text": [
         "Orc Shaman uses common Orc Spells."
-      ],
-      "order": 4
+      ]
     },
     "Wyvern": {
+      "order": 5,
       "text": [
         "Generals, Wizards and Heroes can ride Wyverns. A Wyvern can fly, increasing its riders' move from 60 to 100cm, and it adds +2 Attacks to those of its rider. A unit that includes a Wyvern rider causes terror in its enemies."
-      ],
-      "order": 5
+      ]
     },
     "Chariot": {
+      "order": 6,
       "text": [
         "A General, Wizard or Hero can ride a Chariot. A character in a chariot adds +1 to his Attacks."
-      ],
-      "order": 6
+      ]
     },
     "Effigy of Gork": {
+      "order": 7,
       "text": [
         "Effigy of Gork is a rough stone statue (or a sort of) that 'Ardboyz establish before the battle, believing that the power of Gork will help them in a time of fight.",
         "",
         "The army can include a single Effigy of Gork. Effigy is a terrain-piece-alike marker that may be placed anywhere in 'Ardboyz' deployment zone before the battle and can not be moved further. Once per Command phase any one Orc character that is in range up to 50cm from the Effigy can issue his first order against an unmodified Command value of 10. So no any penalties or other bonuses apply when the Effigy's bonus is used. The Effigy's bonus only applies to the character's first order this turn, subsequent orders must be given normally. Should the character fail to issue his first order, by rolling an 11 or 12, then the Effigy of Gork ceases to work till the end of battle."
-      ],
-      "order": 7
+      ]
     },
     "Grimgor": {
+      "order": 8,
       "text": [
         "The General may be upgraded to a Grimgor himself. In this case the single unit of Da Immortulz is allowed when picking the army. Grimgor can not join other units than Da Immortulz. Grimgor can not take any magic items. Once per battle Grimgor may add +1 to his command value. You must declare the using of this ability before the roll is made."
-      ],
-      "order": 8
+      ]
     },
     "Da Immortulz": {
+      "order": 9,
       "text": [
         "Being Black Orcs, the unit of Da Immortulz doesn't count for determining the min/max number of Black Orcs in your army. The unit of Da Immortulz can not take any magic items or magic banners. Grimgor can join and leave Da Immortulz as usual, but can't join other units. Other characters can't join Da Immortulz. When Grimgor joined with Da Immortulz, the unit may not be confused, also Grimgor and the unit may re-roll all missed attack in the first round of any combat."
-      ],
-      "order": 9
+      ]
     }
   },
   "spells": [
     {
+      "name": "Foot of Gork",
       "roll": 6,
       "range": "50cm",
       "text": [
@@ -217,10 +218,10 @@
         "This spell can be cast on any unengaged enemy unit within range regardless of whether the Shaman can see it or not. The spell cannot be cast on a unit engaged in combat.",
         "",
         "The unit suffers six attacks worked out in the usual way. A unit cannot be driven back by the Foot of Gork (Gork's foot descends from above!)."
-      ],
-      "name": "Foot of Gork"
+      ]
     },
     {
+      "name": "Gotcha!",
       "roll": 5,
       "range": "30cm",
       "text": [
@@ -229,10 +230,10 @@
         "Draw an imaginary line 30cm long from the Shaman's stand in any direction you wish. The line will pass through any intervening units but not beyond terrain that would normally stop a missile shot, eg over the crest of a hill, more than 2cm of woodland, and so forth.",
         "",
         "Each unit under the line takes three shooting attacks worked out in the usual way. Note that this spell can easily affect several units and will affect all units that fall beneath the line (including your own). Unengaged units can be driven back by a Gotcha as with ordinary shooting (even including friends). Engaged units cannot be driven back by the Gotcha but carry over any hits scored into the first round of combat; any hits scored count as having been struck in the combat itself."
-      ],
-      "name": "Gotcha!"
+      ]
     },
     {
+      "name": "Gerroff!!!",
       "roll": 5,
       "range": "60cm",
       "text": [
@@ -241,10 +242,10 @@
         "This spell can be cast on any unengaged enemy unit within range regardless of whether the Shaman can see it or not. The spell cannot be cast on a unit engaged in combat.",
         "",
         "The enemy unit is driven back 5 x D6cm towards its own table edge. This is treated in the same way as a drive back from shooting, except that the direction is established by determining the shortest route to the table edge. A unit cannot be routed by a drive back from a Gerroff spell. If the unit leaves the table edge it must roll as described in the main Warmaster rules (See Movement p19-23)."
-      ],
-      "name": "Gerroff!!!"
+      ]
     },
     {
+      "name": "Waaagh!",
       "roll": 5,
       "range": "30cm",
       "text": [
@@ -255,8 +256,7 @@
         "The spell lasts for the duration of the following Combat phase.",
         "",
         "Every stand in the unit, including characters that have joined the unit, adds +1 to its Attack value."
-      ],
-      "name": "Waaagh!"
+      ]
     }
   ]
 }

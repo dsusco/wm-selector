@@ -5,115 +5,115 @@
   "order": 0,
   "units": {
     "Sacred Band": {
+      "order": 0,
       "type": "Infantry",
       "attack": 4,
       "hits": 3,
       "armour": "5+",
       "size": 3,
-      "max": 1,
       "points": 70,
+      "max": 1,
       "upgrades": [
         "Spartan Bodyguard"
-      ],
-      "order": 0
+      ]
     },
     "Hoplites": {
+      "order": 1,
       "type": "Infantry",
       "attack": 3,
       "hits": 3,
       "armour": "5+",
       "size": 3,
-      "min": 8,
       "points": 60,
-      "order": 1
+      "min": 8
     },
     "Archers": {
+      "order": 2,
       "type": "Infantry",
       "attack": 2,
       "range": 30,
       "hits": 3,
       "size": 3,
-      "max": 1,
       "points": 40,
-      "order": 2
+      "max": 1
     },
     "Skirmishers": {
+      "order": 3,
       "type": "Infantry",
       "attack": 1,
       "range": 15,
       "hits": 3,
       "size": 3,
-      "max": 6,
       "points": 30,
+      "max": 6,
       "specialRules": [
         "Skirmish"
-      ],
-      "order": 3
+      ]
     },
     "Noble Cavalry": {
+      "order": 4,
       "type": "Cavalry",
       "attack": 3,
       "hits": 3,
       "armour": "5+",
       "size": 3,
-      "max": 1,
       "points": 80,
-      "order": 4
+      "max": 1
     },
     "Mounted Skirmishers": {
+      "order": 5,
       "type": "Cavalry",
       "attack": 1,
       "range": 15,
       "hits": 3,
       "size": 3,
-      "max": 2,
       "points": 40,
+      "max": 2,
       "specialRules": [
         "Skirmish"
-      ],
-      "order": 5
+      ]
     },
     "General": {
+      "order": 6,
       "type": "General",
       "attack": "+2",
       "command": 9,
       "size": 1,
+      "points": 125,
       "armyMin": 1,
       "armyMax": 1,
-      "points": 125,
       "upgrades": [
         "Leonidas"
-      ],
-      "order": 6
+      ]
     },
     "Leader": {
+      "order": 7,
       "type": "Leader",
       "attack": "+1",
       "command": 8,
       "size": 1,
-      "max": 2,
       "points": 80,
-      "order": 7
+      "max": 2
     }
   },
   "upgrades": {
     "Leonidas": {
+      "order": 0,
       "type": "General",
       "attack": "+3",
       "command": 9,
-      "armyMax": 1,
       "points": "+20",
-      "order": 0
+      "armyMax": 1
     },
     "Spartan Bodyguard": {
+      "order": 1,
       "type": "Infantry",
       "attack": 4,
       "hits": 4,
       "armour": "5+",
       "size": 3,
-      "armyMax": 1,
       "points": "+10",
-      "order": 1
+      "armyMax": 1
     }
   },
   "specialRules": {
@@ -121,16 +121,16 @@
       "order": 1
     },
     "Leonidas": {
+      "order": 2,
       "text": [
         "Upgrade to Leonidas&mdash;If the General is upgrade to Leonidas, any unit he fights gains the benefit of his additional Attack bonus. In addition, the unit he fights with is so determined to fight to the last that its Armour value is improved by 1&mdash;thus Hoplites become 4+ and troops with no armour become 6+ for example."
-      ],
-      "order": 2
+      ]
     },
     "Spartan Bodyguard": {
+      "order": 3,
       "text": [
         "Upgrade one unit of Scared Band to Spartan Bodyguard with the stats shown. Only one unit can be upgraded regardless of the size of the army."
-      ],
-      "order": 3
+      ]
     }
   }
 }

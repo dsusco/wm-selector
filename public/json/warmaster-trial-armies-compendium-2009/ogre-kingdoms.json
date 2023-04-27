@@ -5,16 +5,17 @@
   "order": 1,
   "units": {
     "Bull Ogres": {
+      "order": 0,
       "type": "Infantry",
       "attack": 4,
       "hits": 4,
       "armour": "5+",
       "size": 3,
       "points": 110,
-      "min": 2,
-      "order": 0
+      "min": 2
     },
     "Leadbelchers": {
+      "order": 1,
       "type": "Infantry",
       "attack": "3/D3",
       "range": "15cm",
@@ -22,60 +23,60 @@
       "armour": "6+",
       "size": 3,
       "points": 110,
-      "max": 2,
-      "order": 1
+      "max": 2
     },
     "Ironguts": {
+      "order": 2,
       "type": "Infantry",
       "attack": 4,
       "hits": 4,
       "armour": "4+",
       "size": 3,
       "points": 145,
-      "max": 2,
-      "order": 2
+      "max": 2
     },
     "Yhetees": {
+      "order": 3,
       "type": "Infantry",
       "attack": 5,
       "hits": 3,
       "armour": "5+",
       "size": 3,
       "points": 130,
-      "max": 2,
-      "order": 3
+      "max": 2
     },
     "Gnoblars": {
+      "order": 4,
       "type": "Infantry",
       "attack": "2/1",
       "range": "15cm",
       "hits": 3,
       "size": 3,
       "points": 30,
-      "max": 4,
-      "order": 4
+      "max": 4
     },
     "Rhinox Riders": {
+      "order": 5,
       "type": "Cavalry",
       "attack": 5,
       "hits": 4,
       "armour": "5+",
       "size": 3,
       "points": 250,
-      "max": 1,
-      "order": 5
+      "max": 1
     },
     "Gorgers": {
+      "order": 6,
       "type": "Monster",
       "attack": 4,
       "hits": 4,
       "armour": "5+",
       "size": 3,
       "points": 145,
-      "max": 1,
-      "order": 6
+      "max": 1
     },
     "Slave Giant": {
+      "order": 7,
       "type": "Monster",
       "attack": 8,
       "hits": 8,
@@ -83,142 +84,141 @@
       "size": 1,
       "points": 150,
       "max": 1,
-      "order": 7,
       "specialRules": [
         "Giant"
       ]
     },
     "Tyrant": {
+      "order": 8,
       "type": "General",
       "attack": "+2",
       "command": 9,
+      "size": 1,
       "points": 125,
       "armyMin": 1,
       "armyMax": 1,
       "upgrades": [
         "Bull Rhinox"
-      ],
-      "order": 8,
-      "size": 1
+      ]
     },
     "Bruiser": {
+      "order": 9,
       "type": "Hero",
       "attack": "+1",
       "command": 8,
+      "size": 1,
       "points": 80,
       "max": 1,
       "upgrades": [
         "Bull Rhinox"
-      ],
-      "order": 9,
-      "size": 1
+      ]
     },
     "Butcher": {
+      "order": 10,
       "type": "Wizard",
       "attack": "+1",
       "command": 8,
+      "size": 1,
       "points": 90,
-      "max": 1,
-      "order": 10,
-      "size": 1
+      "max": 1
     }
   },
   "upgrades": {
     "Bull Rhinox": {
+      "order": 0,
       "type": "Monstrous Mount",
       "attack": "+2",
       "points": "+65",
-      "max": 1,
-      "order": 0
+      "max": 1
     }
   },
   "magic": true,
   "specialRules": {
     "Bull Ogres": {
+      "order": 1,
       "text": [
         "If an Ogre unit can use its initiative to charge an enemy unit of humans at the start of the Command phase then it must do so. This happens automatically and their commander can do nothing about it. 'Humans' encompasses all 'men' including Chaos Warriors and Marauders, but not Dwarfs, Elves etc."
-      ],
-      "order": 1
+      ]
     },
     "Leadbelchers": {
+      "order": 2,
       "text": [
         "Leadbelchers cannons have a range of 15cm. Roll D3 for every stand separately to determine how many shots they get to shoot. When rolling to hit, any dice roll of a 1 hits the Leadbelchers themselves. Leadbelchers are not driven back by these hits, but dice should still be rolled as normal to see if the unit becomes confused (except when shooting at chargers). Additionally, any units hit by Leadbelchers' shots count their Armour value as one worse (-1) than normal. When shooting at chargers the hits taken by both sides count as having been struck in the first round of combat."
-      ],
-      "order": 2
+      ]
     },
     "Yhetees": {
+      "order": 3,
       "text": [
         "When trying to issue an order to a unit of Yhetees or to a brigade that contains a unit of Yhetees, there is always a -1 Command penalty due their beastly and unruly nature. Yhetees always ignore distance modifiers when receiving orders. If a character joined Yhetees unit it can not be brigaded with Gnoblars."
-      ],
-      "order": 3
+      ]
     },
     "Gnoblars": {
+      "order": 4,
       "text": [
         "Unit is allowed to shoot as if it had bows but its range is reduced to 15cm. Also, Gnoblars can only be brigaded with other Gnoblars and Yhetees. Characters cannot join Gnoblar units."
-      ],
-      "order": 4
+      ]
     },
     "Rhinox Riders": {
+      "order": 5,
       "text": [
         "Units of Rhinox Riders are unaffected by terror. Rhinox Riders receive +1 Attack when charging against an enemy in open in the same way as chariots and monsters, must use its initiative to charge an enemy if possible and never use their initiative to evade. If victorious in combat they must pursue or advance where possible. Due to its mass and clumsiness the unit of Rhinox Rider can not be driven back (and therefore can't be routed by drive back - that is highly unlikely), but must roll for confusion as normal (roll a dice for every hit inflicted - if any dice is '6' then unit becomes confused). Rhinox Riders never makes way."
-      ],
-      "order": 5
+      ]
     },
     "Gorgers": {
+      "order": 6,
       "text": [
         "Rather than usual monsters the Gorgers are based along the long base edge as infantry stands. Gorgers must use its initiative to charge an enemy if possible and never use their initiative to evade. Gorgers must always pursue, but can not advance. They are unaffected by enemies that cause terror in combat and do not suffer the usual -1 Attack modifier."
-      ],
-      "order": 6
+      ]
     },
     "Giant": {
       "order": 7
     },
     "Bull Rhinox": {
+      "order": 8,
       "text": [
         "Tyrant or Bruisers only may ride the Bull Rhinox. A unit that is joined with a character mounted on this huge beast causes terror in enemies."
-      ],
-      "order": 8
+      ]
     }
   },
   "spells": [
     {
+      "name": "Tooth Cracker",
       "roll": 3,
       "range": "20cm",
       "text": [
         "*The Butcher grinds his way through a lump of earth encrusted bedrock taken from the peak of a mountain, imbuing himself and his fellows with supernatural resilience. This often costs the Butcher more than a couple of teeth.*",
         "",
         "Target friendly unit can't be driven back or confused until your next turn."
-      ],
-      "name": "Tooth Cracker"
+      ]
     },
     {
+      "name": "Bone Cruncher",
       "roll": 5,
       "range": "20cm",
       "text": [
         "*Shovelling dry bones into his mouth, the Butcher painfully crunches his way through femurs, ribs and skulls. As he points at his foes and spits his bloody curse, the enemy find their own bones breaking within their bodies.*",
         "",
         "Counts as three shooting attacks with no armour save. The spell causes drive back as for normal shooting. Also, drive back rolls of 5-6 from Bone Cruncher cause confusion. The Wizard must be able to see the target and can't cast the spell into a combat."
-      ],
-      "name": "Bone Cruncher"
+      ]
     },
     {
+      "name": "Bull Gorger",
       "roll": 4,
       "text": [
         "*The Butcher greedily devours the heart of a Bull Rhinox, no doubt enjoying the feast of healthy blood and muscle whilst he imbues himself and his charges with the strength of a charging Rhinox.*",
         "",
         "The spell adds +1 Attack for each stand in a unit the Butcher has joined, including his own stand. The spell lasts for the duration of the following Combat phase."
-      ],
-      "name": "Bull Gorger"
+      ]
     },
     {
+      "name": "Troll Guts",
       "roll": 5,
       "range": "20cm",
       "text": [
         "*The Ogre Butcher forces down the toxic guts of a Stone Troll, great quantities of acid and bile ravaging his much abused gut as he transfers the supernatural abilities of the troll onto himself and his companions.*",
         "",
         "This spell can be cast on friendly unit in combat. Each stand in affected unit gain +1 Hit during the following Combat phase."
-      ],
-      "name": "Troll Guts"
+      ]
     }
   ]
 }

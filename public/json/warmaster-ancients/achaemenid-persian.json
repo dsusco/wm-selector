@@ -5,20 +5,21 @@
   "order": 1,
   "units": {
     "Persian Infantry": {
+      "order": 0,
       "type": "Infantry",
       "attack": 2,
       "range": 30,
       "hits": 3,
       "armour": "6+",
       "size": 3,
-      "min": 4,
       "points": 50,
+      "min": 4,
       "upgrades": [
         "Immortals"
-      ],
-      "order": 0
+      ]
     },
     "Subject Infantry": {
+      "order": 1,
       "type": "Infantry",
       "attack": 3,
       "hits": 3,
@@ -26,33 +27,33 @@
       "points": 25,
       "specialRules": [
         "Unreliable"
-      ],
-      "order": 1
+      ]
     },
     "Subject Greeks": {
+      "order": 2,
       "type": "Infantry",
       "attack": 3,
       "hits": 3,
       "armour": "5+",
       "size": 3,
-      "max": 2,
       "points": 50,
+      "max": 2,
       "specialRules": [
         "Unreliable"
-      ],
-      "order": 2
+      ]
     },
     "Archers": {
+      "order": 3,
       "type": "Infantry",
       "attack": 2,
       "range": 30,
       "hits": 3,
       "size": 3,
-      "max": 6,
       "points": 40,
-      "order": 3
+      "max": 6
     },
     "Skirmishers": {
+      "order": 4,
       "type": "Infantry",
       "attack": 1,
       "range": 15,
@@ -61,110 +62,109 @@
       "points": 30,
       "specialRules": [
         "Skirmish"
-      ],
-      "order": 4
+      ]
     },
     "Heavy Cavalry": {
+      "order": 5,
       "type": "Cavalry",
       "attack": 3,
       "hits": 3,
       "armour": "5+",
       "size": 3,
-      "max": 2,
       "points": 80,
-      "order": 5
+      "max": 2
     },
     "Light Cavalry": {
+      "order": 6,
       "type": "Cavalry",
       "attack": 2,
       "range": 15,
       "hits": 3,
       "armour": "6+",
       "size": 3,
-      "max": 4,
       "points": 60,
+      "max": 4,
       "specialRules": [
         "Skirmish"
-      ],
-      "order": 6
+      ]
     },
     "Scythians": {
+      "order": 7,
       "type": "Cavalry",
       "attack": 1,
       "range": 30,
       "hits": 3,
       "size": 3,
-      "max": 2,
       "points": 60,
+      "max": 2,
       "specialRules": [
         "Skirmish"
-      ],
-      "order": 7
+      ]
     },
     "Chariots": {
+      "order": 8,
       "type": "Chariot",
       "attack": 2,
       "range": 15,
       "hits": 3,
       "armour": "6+",
       "size": 3,
-      "max": 1,
       "points": 80,
+      "max": 1,
       "specialRules": [
         "Skirmish"
-      ],
-      "order": 8
+      ]
     },
     "General": {
+      "order": 9,
       "type": "General",
       "attack": "+2",
       "command": 9,
       "size": 1,
+      "points": 125,
       "armyMin": 1,
       "armyMax": 1,
-      "points": 125,
       "upgrades": [
         "Chariot",
         "Xerxes"
-      ],
-      "order": 9
+      ]
     },
     "Leader": {
+      "order": 10,
       "type": "Leader",
       "attack": "+1",
       "command": 8,
       "size": 1,
-      "max": 2,
       "points": 80,
-      "order": 10
+      "max": 2
     }
   },
   "upgrades": {
     "Chariot": {
+      "order": 0,
       "type": "Mount",
       "attack": "+1",
-      "max": 1,
       "points": "+10",
-      "order": 0
+      "max": 1
     },
     "Xerxes": {
+      "order": 1,
       "type": "General",
       "attack": "+2",
       "command": 9,
-      "armyMax": 1,
       "points": "+25",
-      "order": 1
+      "armyMax": 1
     },
     "Immortals": {
+      "order": 2,
       "type": "Infantry",
       "attack": 3,
       "range": 30,
       "hits": 3,
       "armour": "6+",
       "size": 3,
-      "armyMax": 1,
       "points": "+10",
-      "order": 2
+      "armyMax": 1
     }
   },
   "specialRules": {
@@ -175,22 +175,22 @@
       "order": 2
     },
     "Chariot": {
+      "order": 3,
       "text": [
         "Upgrade to mount General only on chariot."
-      ],
-      "order": 3
+      ]
     },
     "Xerxes": {
+      "order": 4,
       "text": [
         "Upgrade General to Xerxes&mdash;Xerxes can demand supplication from his enemy before the battle! As the Persians advanced through Greece, many cities swore fealty to the Persians rather than be destroyed, whilst still others wavered even in the heat of battle itself. Before the game, the Persian player rolls a D6 and deducts 2 down to a minimum score of 1. This indicates the number of enemy units that are affected (between 1 and 4). These units are considered to be Unreliable until such time as one core Persian unit has been destroyed. The opposing player chooses which of his own units are affected&mdash;these must be units that are not normally Unreliable."
-      ],
-      "order": 4
+      ]
     },
     "Immortals": {
+      "order": 5,
       "text": [
         "Upgrade one unit of Persian infantry to Immortals with the stats shown. The Immortals are the picked guard unit of the Persian army&mdash;the best troops in the whole empire. Only one unit can be upgraded no matter the army size."
-      ],
-      "order": 5
+      ]
     }
   }
 }

@@ -1,24 +1,8 @@
 {
-  "specialRules": {
-    "Shock": {
-      "order": 1
-    },
-    "Warband": {
-      "order": 2
-    },
-    "Skirmish": {
-      "order": 3
-    },
-    "Unreliable": {
-      "order": 4
-    },
-    "Slow": {
-      "order": 5
-    },
-    "Portents": {
-      "order": 6
-    }
-  },
+  "name": "Sarmatians (Black Sea Sarmatians)",
+  "version": "Warmaster Ancient Armies",
+  "group": "The Rise of Rome",
+  "order": 13,
   "units": {
     "Heavy Cavalry": {
       "order": 0,
@@ -43,12 +27,12 @@
       "order": 1,
       "type": "Cavalry",
       "attack": "2/1",
+      "range": "15xm",
       "hits": 3,
       "armour": "6+",
       "size": 3,
       "points": 60,
       "max": 4,
-      "range": "15xm",
       "specialRules": [
         "Skirmish"
       ]
@@ -103,14 +87,14 @@
       "order": 6,
       "type": "General",
       "attack": "+2",
+      "command": 8,
       "size": 1,
       "points": 100,
       "armyMin": 1,
       "armyMax": 1,
       "upgrades": [
         "Portents"
-      ],
-      "command": 8
+      ]
     },
     "Chieftain": {
       "order": 7,
@@ -159,8 +143,8 @@
       "order": 2,
       "type": "Subordinate",
       "attack": "+1",
-      "size": 1,
       "command": 8,
+      "size": 1,
       "points": "+10",
       "max": 1
     },
@@ -172,8 +156,24 @@
       "armyMax": 1
     }
   },
-  "version": "Warmaster Ancient Armies",
-  "group": "The Rise of Rome",
-  "order": 13,
-  "name": "Sarmatians (Black Sea Sarmatians)"
+  "specialRules": {
+    "Shock": {
+      "order": 1
+    },
+    "Warband": {
+      "order": 2
+    },
+    "Skirmish": {
+      "order": 3
+    },
+    "Unreliable": {
+      "order": 4
+    },
+    "Slow": {
+      "order": 5
+    },
+    "Portents": {
+      "order": 6
+    }
+  }
 }

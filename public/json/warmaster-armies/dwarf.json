@@ -5,26 +5,27 @@
   "order": 5,
   "units": {
     "Warriors": {
+      "order": 0,
       "type": "Infantry",
       "attack": 3,
       "hits": 4,
       "armour": "4+",
       "size": 3,
       "points": 110,
-      "min": 2,
-      "order": 0
+      "min": 2
     },
     "Handgunners": {
+      "order": 1,
       "type": "Infantry",
       "attack": "3/1",
       "range": "30cm",
       "hits": 4,
       "armour": "6+",
       "size": 3,
-      "points": 90,
-      "order": 1
+      "points": 90
     },
     "Rangers": {
+      "order": 2,
       "type": "Infantry",
       "attack": "3/1",
       "range": "30cm",
@@ -32,19 +33,19 @@
       "armour": "5+",
       "size": 3,
       "points": 110,
-      "max": 2,
-      "order": 2
+      "max": 2
     },
     "Troll Slayers": {
+      "order": 3,
       "type": "Infantry",
       "attack": 5,
       "hits": 4,
       "size": 3,
       "points": 80,
-      "max": 2,
-      "order": 3
+      "max": 2
     },
     "Cannon": {
+      "order": 4,
       "type": "Artillery",
       "attack": "1/2+b",
       "range": "60cm",
@@ -52,10 +53,10 @@
       "armour": "6+",
       "size": 2,
       "points": 90,
-      "max": 1,
-      "order": 4
+      "max": 1
     },
     "Flame Cannon": {
+      "order": 5,
       "type": "Artillery",
       "attack": "1/2D6",
       "range": "30cm",
@@ -63,10 +64,10 @@
       "armour": "6+",
       "size": 1,
       "points": 50,
-      "max": 1,
-      "order": 5
+      "max": 1
     },
     "Gyrocopter": {
+      "order": 6,
       "type": "Machine",
       "attack": "1/3",
       "range": "30cm",
@@ -74,29 +75,29 @@
       "armour": "5+",
       "size": 1,
       "points": 75,
-      "max": 1,
-      "order": 6
+      "max": 1
     },
     "General": {
+      "order": 7,
       "type": "General",
       "attack": "+2",
       "command": 10,
       "size": 1,
       "points": 155,
       "armyMin": 1,
-      "armyMax": 1,
-      "order": 7
+      "armyMax": 1
     },
     "Hero": {
+      "order": 8,
       "type": "Hero",
       "attack": "+1",
       "command": 8,
       "size": 1,
       "points": 80,
-      "max": 1,
-      "order": 8
+      "max": 1
     },
     "Runesmith": {
+      "order": 9,
       "type": "Hero",
       "attack": "+1",
       "command": 8,
@@ -107,34 +108,34 @@
         "Anvil",
         "Staff of Spellbinding",
         "Scroll of Dispelling"
-      ],
-      "order": 9
+      ]
     }
   },
   "upgrades": {
     "Anvil": {
+      "order": 0,
       "type": "Special",
       "attack": "+1",
       "points": "+50",
-      "armyMax": 1,
-      "order": 0
+      "armyMax": 1
     }
   },
   "magic": true,
   "specialRules": {
     "Handgunners": {
+      "order": 1,
       "text": [
         "A handgun shot can pierce armour far more easily than an arrow or a crossbow bolt. Therefore, count enemy Armour values as one worse than normal when shot by a handgun. So an armour value of 3+ counts as 4+, 4+ as 5+, and 5+ as 6+, whilst an Armour value of 6+ can't save against a handgun."
-      ],
-      "order": 1
+      ]
     },
     "Rangers": {
+      "order": 2,
       "text": [
         "Although they are infantry the exceptional mobility of Dwarf Rangers means that they can pursue any type of retreating enemy."
-      ],
-      "order": 2
+      ]
     },
     "Troll Slayers": {
+      "order": 3,
       "text": [
         "A Troll Slayer unit will always use its initiative to charge an enemy if possible and cannot be given orders instead. They will never use their initiative to evade. Two or more Troll Slayer units cannot be given the same brigade order - only a single Troll Slayer unit can ever be included in a brigade. Troll Slayers cannot be driven back by shooting and never roll for drive backs. Troll Slayers must pursue or advance if victorious in combat where they are permitted to do so. Troll Slayers are unaffected by enemy that cause terror in combat - they don't suffer the -1 Attack modifier. Troll Slayers positively enjoy fighting monsters - the bigger the better in fact! Slayers add +1 Attack when fighting against a Monster stand.",
         "",
@@ -145,8 +146,7 @@
         "2. If a Troll Slayer unit is destroyed no victory points are scored by either side.",
         "",
         "Slayer units that have been destroyed still count towards the Dwarf army's losses for purposes of calculating withdrawal."
-      ],
-      "order": 3
+      ]
     },
     "Cannon": {
       "order": 4
@@ -158,16 +158,16 @@
       "order": 6
     },
     "Runesmith": {
+      "order": 7,
       "text": [
         "Although they are not wizards and cannot therefore cast spells, Dwarf Runesmiths can combat the magic of their enemies. If an enemy Wizard who is within 50cm of the Runesmith casts a spell the Runesmith can attempt to 'anti-magic' it. Note that it does not matter what the spell is or where it is cast, the Runesmith can 'anti-magic' it so long as the caster is with 50cm. To determine if this works roll a D6 - on the score of 4, 5 or 6 the Runesmith has succeeded and the spell doesn't work, it is dispelled by the Runesmith's defiant efforts. If he fails then the Runesmith's efforts come to nothing and the spell works as normal. A Runesmith can attempt to anti-magic any number of spells in a turn, but only one attempt can be made to anti-magic any individual spell - even if the army includes more than one Runesmith and several are in range of the enemy Wizard."
-      ],
-      "order": 7
+      ]
     },
     "Anvil": {
+      "order": 8,
       "text": [
         "The army can only include a single Anvil and it is incorporated onto the stand of a Runesmith. If a Runesmith stand includes the Anvil, once per battle he can add +1 to his dice roll when he attempts to dispel enemy magic spells using the Dwarf anti-magic ability (see Runesmith). In addition the Runesmith can strike the Anvil during the Shooting phase of his own turn. The Anvil's plangent rune-song fills the Dwarfs with even greater resolve! Roll a D6. On the score of a 4, 5 or 6 all Dwarf units within 20cm of the Runesmith are unaffected by Terror till the start of the next Dwarf player's turn. On a roll of less than 4 there is no effect."
-      ],
-      "order": 8
+      ]
     }
   }
 }

@@ -5,121 +5,121 @@
   "order": 1,
   "units": {
     "Aga Ush": {
+      "order": 0,
       "type": "Infantry",
       "attack": 2,
       "hits": 3,
       "size": 3,
-      "points": 25,
-      "order": 0
+      "points": 25
     },
     "Erin Summa": {
+      "order": 1,
       "type": "Infantry",
       "attack": 3,
       "hits": 3,
       "size": 3,
-      "min": 4,
       "points": 35,
+      "min": 4,
       "upgrades": [
         "Shielded Infantry"
-      ],
-      "order": 1
+      ]
     },
     "Shub Lugal": {
+      "order": 2,
       "type": "Infantry",
       "attack": 4,
       "hits": 3,
       "size": 3,
-      "max": 1,
       "points": 45,
-      "order": 2
+      "max": 1
     },
     "Archers": {
+      "order": 3,
       "type": "Infantry",
       "attack": "2/1",
       "range": "30cm",
       "hits": 3,
       "size": 3,
-      "max": 8,
       "points": 40,
-      "order": 3
+      "max": 8
     },
     "Nim": {
+      "order": 4,
       "type": "Infantry",
       "attack": "1/1",
       "range": "15cm",
       "hits": 3,
       "size": 3,
-      "min": 2,
       "points": 30,
+      "min": 2,
       "specialRules": [
         "Skirmish"
-      ],
-      "order": 4
+      ]
     },
     "Gish Gigir": {
+      "order": 5,
       "type": "Chariot",
       "attack": "3/1",
       "range": "15cm",
       "hits": 3,
       "armour": "6+",
       "size": 3,
-      "max": 4,
       "points": 90,
+      "max": 4,
       "specialRules": [
         "Unreliable",
         "Heavy Chariots"
-      ],
-      "order": 5
+      ]
     },
     "Lugal": {
+      "order": 6,
       "type": "General",
       "attack": "+2",
       "command": 9,
+      "size": 1,
+      "points": 125,
       "armyMin": 1,
       "armyMax": 1,
-      "points": 125,
       "upgrades": [
         "Chariot",
         "Portents"
-      ],
-      "order": 6,
-      "size": 1
+      ]
     },
     "Shaknu": {
+      "order": 7,
       "type": "Leader",
       "attack": "+1",
       "command": 8,
-      "max": 4,
+      "size": 1,
       "points": 80,
+      "max": 4,
       "upgrades": [
         "Chariot"
-      ],
-      "order": 7,
-      "size": 1
+      ]
     }
   },
   "upgrades": {
     "Shielded Infantry": {
+      "order": 0,
       "type": "Special",
       "attack": 3,
       "hits": 3,
       "armour": "6+",
       "size": 3,
-      "points": "+10",
-      "order": 0
+      "points": "+10"
     },
     "Chariot": {
+      "order": 1,
       "type": "Chariot Mount",
       "attack": "+1",
-      "max": 3,
       "points": "+10",
-      "order": 1
+      "max": 3
     },
     "Portents": {
+      "order": 2,
       "type": "Special",
-      "armyMax": 1,
       "points": "+10",
-      "order": 2
+      "armyMax": 1
     }
   },
   "specialRules": {

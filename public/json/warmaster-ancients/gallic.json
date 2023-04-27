@@ -5,125 +5,125 @@
   "order": 3,
   "units": {
     "Bodyguard": {
+      "order": 0,
       "type": "Infantry",
       "attack": 3,
       "hits": 4,
       "armour": "6+",
       "size": 3,
-      "max": 2,
       "points": 55,
+      "max": 2,
       "specialRules": [
         "Warband"
-      ],
-      "order": 0
+      ]
     },
     "Warriors": {
+      "order": 1,
       "type": "Infantry",
       "attack": 3,
       "hits": 3,
       "size": 3,
-      "min": 8,
       "points": 35,
+      "min": 8,
       "specialRules": [
         "Warband"
-      ],
-      "order": 1
+      ]
     },
     "Skirmishers": {
+      "order": 2,
       "type": "Infantry",
       "attack": 1,
       "range": 15,
       "hits": 3,
       "size": 3,
-      "max": 8,
       "points": 30,
+      "max": 8,
       "specialRules": [
         "Warband",
         "Skirmish"
-      ],
-      "order": 2
+      ]
     },
     "Noble Cavalry": {
+      "order": 3,
       "type": "Cavalry",
       "attack": 3,
       "hits": 3,
       "armour": "5+",
       "size": 3,
-      "max": 3,
       "points": 80,
+      "max": 3,
       "specialRules": [
         "Warband"
-      ],
-      "order": 3
+      ]
     },
     "Mounted Skirmishers": {
+      "order": 4,
       "type": "Cavalry",
       "attack": 1,
       "range": 15,
       "hits": 3,
       "size": 3,
+      "points": 40,
       "min": 1,
       "max": 2,
-      "points": 40,
       "specialRules": [
         "Skirmish"
-      ],
-      "order": 4
+      ]
     },
     "General": {
+      "order": 5,
       "type": "General",
       "attack": "+2",
       "command": 8,
       "size": 1,
+      "points": 100,
       "armyMin": 1,
       "armyMax": 1,
-      "points": 100,
       "upgrades": [
         "Chariot",
         "Vercingetorix"
-      ],
-      "order": 5
+      ]
     },
     "Warlord": {
+      "order": 6,
       "type": "Leader",
       "attack": "+1",
       "command": 7,
       "size": 1,
-      "max": 2,
       "points": 60,
+      "max": 2,
       "upgrades": [
         "Chariot"
-      ],
-      "order": 6
+      ]
     },
     "Chieftain": {
+      "order": 7,
       "type": "Subordinate",
       "attack": "+1",
       "command": 7,
       "size": 1,
-      "max": 2,
       "points": 30,
+      "max": 2,
       "upgrades": [
         "Chariot"
-      ],
-      "order": 7
+      ]
     }
   },
   "upgrades": {
     "Chariot": {
+      "order": 0,
       "type": "Mount",
       "attack": "+1",
-      "max": 2,
       "points": "+10",
-      "order": 0
+      "max": 2
     },
     "Vercingetorix": {
+      "order": 1,
       "type": "General",
       "attack": "+2",
       "command": 8,
-      "armyMax": 1,
       "points": "+25",
-      "order": 1
+      "armyMax": 1
     }
   },
   "specialRules": {
@@ -134,16 +134,16 @@
       "order": 2
     },
     "Chariot": {
+      "order": 3,
       "text": [
         "Upgrade for Command stands."
-      ],
-      "order": 3
+      ]
     },
     "Vercingetorix": {
+      "order": 4,
       "text": [
         "Upgrade General to Vercingetorix&mdash;the mighty Gallic warlord who united the celtic chieftains to defy Caesar. If the General is upgraded then all leaders and subordinates within 20cm of the General can give orders using the General's command value of 8."
-      ],
-      "order": 4
+      ]
     }
   }
 }

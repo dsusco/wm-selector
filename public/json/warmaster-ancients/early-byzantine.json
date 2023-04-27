@@ -5,137 +5,137 @@
   "order": 2,
   "units": {
     "Spearmen": {
+      "order": 0,
       "type": "Infantry",
       "attack": 3,
       "hits": 3,
       "armour": "5+",
       "size": 3,
-      "points": 60,
-      "order": 0
+      "points": 60
     },
     "Archers": {
+      "order": 1,
       "type": "Infantry",
       "attack": 2,
       "range": 30,
       "hits": 3,
       "size": 3,
-      "max": 2,
       "points": 40,
-      "order": 1
+      "max": 2
     },
     "Skirmishers": {
+      "order": 2,
       "type": "Infantry",
       "attack": 1,
       "range": 15,
       "hits": 3,
       "size": 3,
-      "max": 4,
       "points": 30,
+      "max": 4,
       "specialRules": [
         "Skirmish"
-      ],
-      "order": 2
+      ]
     },
     "Cataphracts": {
+      "order": 3,
       "type": "Cavalry",
       "attack": 3,
       "hits": 3,
       "armour": "4+",
       "size": 3,
-      "max": 1,
       "points": 125,
+      "max": 1,
       "specialRules": [
         "Shock",
         "Slow"
-      ],
-      "order": 3
+      ]
     },
     "Heavy Cavalry": {
+      "order": 4,
       "type": "Cavalry",
       "attack": 3,
       "range": 15,
       "hits": 3,
       "armour": "5+",
       "size": 3,
-      "min": 2,
       "points": 115,
+      "min": 2,
       "specialRules": [
         "Shock",
         "Slow"
-      ],
-      "order": 4
+      ]
     },
     "Mounted Skirmishers": {
+      "order": 5,
       "type": "Cavalry",
       "attack": 1,
       "range": 15,
       "hits": 3,
       "size": 3,
-      "max": 2,
       "points": 40,
+      "max": 2,
       "specialRules": [
         "Skirmish"
-      ],
-      "order": 5
+      ]
     },
     "Ally Cavalry": {
+      "order": 6,
       "type": "Cavalry",
       "attack": 3,
       "hits": 3,
       "armour": "5+",
       "size": 3,
-      "max": 4,
       "points": 100,
+      "max": 4,
       "specialRules": [
         "Shock",
         "Unreliable"
-      ],
-      "order": 6
+      ]
     },
     "Huns": {
+      "order": 7,
       "type": "Cavalry",
       "attack": 2,
       "range": 15,
       "hits": 3,
       "armour": "6+",
       "size": 3,
-      "max": 2,
       "points": 50,
+      "max": 2,
       "specialRules": [
         "Skirmish",
         "Unreliable"
-      ],
-      "order": 7
+      ]
     },
     "General": {
+      "order": 8,
       "type": "General",
       "attack": "+2",
       "command": 9,
       "size": 1,
+      "points": 125,
       "armyMin": 1,
       "armyMax": 1,
-      "points": 125,
       "upgrades": [
         "Portents"
-      ],
-      "order": 8
+      ]
     },
     "Leader": {
+      "order": 9,
       "type": "Leader",
       "attack": "+1",
       "command": 8,
       "size": 1,
-      "max": 2,
       "points": 80,
-      "order": 9
+      "max": 2
     }
   },
   "upgrades": {
     "Portents": {
+      "order": 0,
       "type": "Special",
-      "armyMax": 1,
       "points": "+10",
-      "order": 0
+      "armyMax": 1
     }
   },
   "specialRules": {
@@ -152,10 +152,10 @@
       "order": 4
     },
     "Portents": {
+      "order": 5,
       "text": [
         "The General can take the portents before the battle. This allows the Genral to re-roll one failed Command roll once during the battle. Take the Command test again—if successful the order is issued and the General can continue giving further orders if you wish."
-      ],
-      "order": 5
+      ]
     }
   }
 }

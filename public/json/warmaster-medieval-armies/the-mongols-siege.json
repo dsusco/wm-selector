@@ -5,38 +5,39 @@
   "order": 9,
   "units": {
     "Heavy Cavalry": {
+      "order": 0,
       "type": "Cavalry",
       "attack": 3,
-      "hits": 3,
       "range": 30,
+      "hits": 3,
       "armour": "5+",
       "size": 3,
+      "points": 125,
       "min": 2,
       "max": 4,
-      "points": 125,
       "specialRules": [
         "Shock"
       ],
       "upgrades": [
         "Guard Cavalry"
-      ],
-      "order": 0
+      ]
     },
     "Mongol Cavalry": {
+      "order": 1,
       "type": "Cavalry",
       "attack": 2,
       "range": 30,
       "hits": 3,
       "armour": "6+",
       "size": 3,
-      "min": 4,
       "points": 80,
+      "min": 4,
       "specialRules": [
         "Skirmish"
-      ],
-      "order": 1
+      ]
     },
     "Subject Cavalry": {
+      "order": 2,
       "type": "Cavalry",
       "attack": 2,
       "range": 15,
@@ -46,92 +47,91 @@
       "points": 60,
       "specialRules": [
         "Skirmish"
-      ],
-      "order": 2
+      ]
     },
     "Catapult": {
+      "order": 3,
       "type": "Light Artillery",
       "attack": 1,
       "range": "2×40",
       "hits": 2,
       "size": 2,
-      "max": 1,
       "points": 60,
+      "max": 1,
       "specialRules": [
         "Light Artillery"
-      ],
-      "order": 3
+      ]
     },
     "Subject Infantry": {
+      "order": 4,
       "type": "Infantry",
       "attack": 3,
       "hits": 3,
-      "size": 3,
       "armour": "6+",
-      "points": 45,
-      "order": 4
+      "size": 3,
+      "points": 45
     },
     "Dismounted Mongols": {
+      "order": 5,
       "type": "Infantry",
       "attack": 2,
       "range": 30,
       "hits": 3,
-      "size": 3,
       "armour": "6+",
-      "max": 4,
+      "size": 3,
       "points": 50,
+      "max": 4,
       "upgrades": [
         "Pavisse"
-      ],
-      "order": 5
+      ]
     },
     "Khagan": {
+      "order": 6,
       "type": "General",
       "attack": "+2",
       "command": 9,
       "size": 1,
+      "points": 125,
       "armyMin": 1,
       "armyMax": 1,
-      "points": 125,
       "upgrades": [
         "Subutai"
-      ],
-      "order": 6
+      ]
     },
     "Noyan": {
+      "order": 7,
       "type": "Leader",
       "attack": "+1",
       "command": 8,
       "size": 1,
-      "points": 80,
-      "order": 7
+      "points": 80
     }
   },
   "upgrades": {
     "Guard Cavalry": {
+      "order": 0,
       "type": "Cavalry",
       "attack": 3,
       "range": 30,
-      "armour": "5+",
       "hits": 4,
+      "armour": "5+",
       "size": 3,
-      "armyMax": 1,
       "points": "+10",
-      "order": 0,
+      "armyMax": 1,
       "specialRules": [
         "Shock"
       ]
     },
     "Pavisse": {
+      "order": 1,
       "type": "Special",
-      "points": "+5",
-      "order": 1
+      "points": "+5"
     },
     "Subutai": {
+      "order": 2,
       "type": "Special",
-      "armyMax": 1,
       "points": "+10",
-      "order": 2      
+      "armyMax": 1
     }
   },
   "specialRules": {
@@ -148,10 +148,10 @@
       "order": 4
     },
     "Subutai": {
+      "order": 5,
       "text": [
         "You can re-roll any blunders by any of your leaders - only one re-roll is allowed for any given order though, if the re-roll results in another blunder then the commander really has blundered!"
-      ],
-      "order": 5
+      ]
     }
   }
 }

@@ -5,132 +5,133 @@
   "order": 10,
   "units": {
     "Knights": {
+      "order": 0,
       "type": "Cavalry",
       "attack": 3,
       "hits": 3,
       "armour": "5+",
       "size": 3,
-      "min": 1,
-      "max": 2,
       "points": 110,
-      "order": 0
+      "min": 1,
+      "max": 2
     },
     "Sergeants": {
+      "order": 1,
       "type": "Cavalry",
       "attack": 3,
       "hits": 3,
       "armour": "6+",
       "size": 3,
-      "max": 1,
       "points": 100,
+      "max": 1,
       "specialRules": [
         "Shock"
-      ],
-      "order": 1
+      ]
     },
     "Border Horse": {
+      "order": 2,
       "type": "Cavalry",
       "attack": 2,
       "range": 15,
       "hits": 3,
       "armour": "6+",
       "size": 3,
-	  "max":1,
       "points": 60,
+      "max": 1,
       "specialRules": [
         "Skirmish"
-      ],
-      "order": 2
+      ]
     },
     "Bowmen": {
+      "order": 3,
       "type": "Infantry",
       "attack": 2,
       "range": "30",
       "hits": 3,
       "size": 3,
+      "points": 40,
       "min": 1,
       "max": 6,
       "upgrades": [
-        "Skirmishers",		
+        "Skirmishers",
         "Longbowmen"
-      ],
-      "points": 40,
-      "order": 3
+      ]
     },
     "Spearmen": {
+      "order": 4,
       "type": "Infantry",
       "attack": 3,
       "hits": 3,
-      "size": 3,
       "armour": "6+",
-      "min": 4,
+      "size": 3,
       "points": 45,
-      "order": 4
+      "min": 4
     },
     "Mercenary Crossbow": {
+      "order": 5,
       "type": "Infantry",
       "attack": 2,
       "range": "30",
       "hits": 3,
       "size": 3,
-      "max": 2,
       "points": 45,
+      "max": 2,
       "specialRules": [
         "Crossbows"
-      ],
-      "order": 5
+      ]
     },
     "Welsh Infantry": {
+      "order": 6,
       "type": "Infantry",
       "attack": 3,
       "hits": 3,
       "size": 3,
-      "max": 4,
       "points": 35,
+      "max": 4,
       "specialRules": [
         "Warband"
-      ],
-      "order": 6
+      ]
     },
     "General": {
+      "order": 7,
       "type": "General",
       "attack": "+2",
       "command": 8,
       "size": 1,
+      "points": 100,
       "armyMin": 1,
       "armyMax": 1,
-      "points": 100,
       "upgrades": [
-        "Prince Edward",		
+        "Prince Edward",
         "Simon de Montfort"
-      ],
-      "order": 7
+      ]
     },
     "Lord": {
+      "order": 8,
       "type": "Leader",
       "attack": "+1",
       "command": 8,
       "size": 1,
-	  "max":2,
       "points": 80,
-      "order": 8
+      "max": 2
     }
   },
   "upgrades": {
     "Skirmishers": {
+      "order": 0,
       "type": "Infantry",
       "attack": 1,
       "range": 15,
       "hits": 3,
       "size": 3,
-      "max": 2,
       "points": -10,
+      "max": 2,
       "specialRules": [
         "Skirmish"
-      ],
-      "order": 0
+      ]
     },
     "Longbowmen": {
+      "order": 1,
       "type": "Infantry",
       "attack": 2,
       "range": 30,
@@ -139,29 +140,28 @@
       "points": "+5",
       "specialRules": [
         "Longbow"
-      ],      
-      "order": 1
+      ]
     },
     "Prince Edward": {
+      "order": 2,
       "type": "Special",
-      "armyMax": 1,
       "points": "+25",
+      "armyMax": 1,
       "specialRules": [
         "Terror"
       ],
       "prohibitedUpgrades": [
         "Simon de Montfort"
-      ],
-      "order": 2
+      ]
     },
     "Simon de Montfort": {
+      "order": 3,
       "type": "Special",
-      "armyMax": 1,
       "points": "+20",
+      "armyMax": 1,
       "prohibitedUpgrades": [
         "Prince Edward"
-      ],
-      "order": 3
+      ]
     }
   },
   "specialRules": {
@@ -187,16 +187,16 @@
       "order": 7
     },
     "Prince Edward": {
+      "order": 8,
       "text": [
         "The General can be upgraded to either Prince Edward (Royalist) or Simon de monford (Baronial Rebels). If you have Prince Edward as your General the he is *terrifying*! If Prince Edward joins a unit then the unit becomes *terrifying*."
-      ],
-      "order": 8
+      ]
     },
     "Simon de Montfort": {
+      "order": 9,
       "text": [
         "The General can be upgraded to either Prince Edward (Royalist) or Simon de monford (Baronial Rebels). If you have Simon de Montfort as your General then you may add +1 to the result of all combats that the General or any leaders are taking part in (+1 combat result in the same way as +1 for support)."
-      ],
-      "order": 9
+      ]
     }
   }
 }

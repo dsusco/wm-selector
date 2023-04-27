@@ -1,21 +1,8 @@
 {
-  "specialRules": {
-    "Shock": {
-      "order": 1
-    },
-    "Warband": {
-      "order": 2
-    },
-    "Skirmish": {
-      "order": 3
-    },
-    "Slow": {
-      "order": 4
-    },
-    "Portents": {
-      "order": 5
-    }
-  },
+  "name": "Sarmatians (Alliance with Marcomanni)",
+  "version": "Warmaster Ancient Armies",
+  "group": "The Rise of Rome",
+  "order": 12,
   "units": {
     "Heavy Cavalry": {
       "order": 0,
@@ -39,12 +26,12 @@
       "order": 1,
       "type": "Cavalry",
       "attack": "2/1",
+      "range": "15cm",
       "hits": 3,
       "armour": "6+",
       "size": 3,
       "points": 60,
       "max": 4,
-      "range": "15cm",
       "specialRules": [
         "Skirmish"
       ]
@@ -81,27 +68,27 @@
       "hits": 3,
       "size": 3,
       "points": 35,
+      "min": 4,
       "max": 8,
       "specialRules": [
         "Warband"
-      ],
-      "min": 4
+      ]
     },
     "General": {
       "order": 5,
       "type": "General",
       "attack": "+2",
+      "command": 8,
       "size": 1,
       "points": 100,
       "armyMin": 1,
       "armyMax": 1,
       "upgrades": [
         "Portents"
-      ],
-      "command": 8
+      ]
     },
     "Chieftain": {
-      "order": 7,
+      "order": 6,
       "type": "Subordinate",
       "attack": "+1",
       "command": 7,
@@ -115,7 +102,7 @@
   },
   "upgrades": {
     "Noble Cavalry": {
-      "order": 2,
+      "order": 0,
       "type": "Cavalry",
       "attack": "4/1",
       "range": "15cm",
@@ -131,24 +118,37 @@
       ]
     },
     "Chieftain": {
-      "order": 3,
+      "order": 1,
       "type": "Subordinate",
       "attack": "+1",
-      "size": 1,
       "command": 8,
+      "size": 1,
       "points": "+10",
       "max": 1
     },
     "Portents": {
-      "order": 4,
+      "order": 2,
       "type": "Special",
       "attack": "+0",
       "points": "+10",
       "armyMax": 1
     }
   },
-  "version": "Warmaster Ancient Armies",
-  "group": "The Rise of Rome",
-  "order": 12,
-  "name": "Sarmatians (Alliance with Marcomanni)"
+  "specialRules": {
+    "Shock": {
+      "order": 1
+    },
+    "Warband": {
+      "order": 2
+    },
+    "Skirmish": {
+      "order": 3
+    },
+    "Slow": {
+      "order": 4
+    },
+    "Portents": {
+      "order": 5
+    }
+  }
 }

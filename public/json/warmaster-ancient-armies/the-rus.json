@@ -1,18 +1,8 @@
 {
-  "specialRules": {
-    "Shieldwall": {
-      "order": 1
-    },
-    "Warband": {
-      "order": 2
-    },
-    "Skirmish": {
-      "order": 3
-    },
-    "Shock": {
-      "order": 4
-    }
-  },
+  "name": "The Rus",
+  "version": "Warmaster Ancient Armies",
+  "group": "The Dark Ages",
+  "order": 6,
   "units": {
     "Varangians": {
       "order": 0,
@@ -30,13 +20,13 @@
     },
     "Polk": {
       "order": 1,
-      "size": 3,
-      "points": 50,
-      "min": 4,
       "type": "Infantry",
       "attack": 3,
       "hits": 3,
       "armour": "6+",
+      "size": 3,
+      "points": 50,
+      "min": 4,
       "specialRules": [
         "Shieldwall",
         "Warband"
@@ -44,75 +34,75 @@
     },
     "Archers": {
       "order": 2,
-      "size": 3,
-      "points": 40,
-      "max": 4,
       "type": "Infantry",
       "attack": "2/1",
       "range": "30cm",
-      "hits": 3
+      "hits": 3,
+      "size": 3,
+      "points": 40,
+      "max": 4
     },
     "Skirmishers": {
       "order": 3,
-      "size": 3,
-      "points": 30,
-      "max": 4,
       "type": "Infantry",
       "attack": "1/1",
       "range": "15cm",
       "hits": 3,
+      "size": 3,
+      "points": 30,
+      "max": 4,
       "specialRules": [
         "Skirmish"
       ]
     },
     "Druzhina": {
       "order": 4,
-      "size": 3,
-      "points": 120,
-      "max": 1,
       "type": "Cavalry",
       "attack": 4,
       "hits": 3,
       "armour": "5+",
+      "size": 3,
+      "points": 120,
+      "max": 1,
       "specialRules": [
         "Shock"
       ]
     },
     "Light Cavalry": {
       "order": 5,
-      "size": 3,
-      "points": 60,
-      "max": 2,
       "type": "Cavalry",
       "attack": "2/1",
       "range": "15cm",
       "hits": 3,
       "armour": "6+",
+      "size": 3,
+      "points": 60,
+      "max": 2,
       "specialRules": [
         "Skirmish"
       ]
     },
     "General": {
       "order": 6,
+      "type": "General",
+      "attack": "+2",
+      "command": 8,
       "size": 1,
       "points": 100,
       "armyMin": 1,
       "armyMax": 1,
-      "type": "General",
-      "attack": "+2",
-      "command": 8,
       "upgrades": [
         "Svyatoslav"
       ]
     },
     "Chieftain": {
       "order": 7,
-      "size": 1,
-      "points": 30,
-      "max": 4,
       "type": "Subordinate",
       "attack": "+1",
-      "command": 7
+      "command": 7,
+      "size": 1,
+      "points": 30,
+      "max": 4
     }
   },
   "upgrades": {
@@ -126,8 +116,18 @@
       "armyMax": 1
     }
   },
-  "name": "The Rus",
-  "version": "Warmaster Ancient Armies",
-  "group": "The Dark Ages",
-  "order": 6
+  "specialRules": {
+    "Shieldwall": {
+      "order": 1
+    },
+    "Warband": {
+      "order": 2
+    },
+    "Skirmish": {
+      "order": 3
+    },
+    "Shock": {
+      "order": 4
+    }
+  }
 }

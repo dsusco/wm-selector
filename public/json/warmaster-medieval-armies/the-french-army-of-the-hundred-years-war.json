@@ -20,8 +20,8 @@
     "Breton Horse": {
       "order": 1,
       "type": "Cavalry",
-      "range": 15,
       "attack": 2,
+      "range": 15,
       "hits": 3,
       "armour": "6+",
       "size": 3,
@@ -49,8 +49,8 @@
       "type": "Infantry",
       "attack": 3,
       "hits": 3,
-      "size": 3,
       "armour": "4+",
+      "size": 3,
       "points": 85,
       "max": 2,
       "upgrades": [
@@ -60,26 +60,26 @@
     "Crossbowmen": {
       "order": 4,
       "type": "Infantry",
-      "range": 30,
       "attack": 2,
+      "range": 30,
       "hits": 3,
       "size": 3,
-      "points":45,
+      "points": 45,
       "min": 1,
       "specialRules": [
         "Crossbows"
       ],
-      "upgrades":[
+      "upgrades": [
         "Pavisse",
         "Skirmishers"
-      ]		
+      ]
     },
     "Brigans/Militia": {
       "order": 5,
       "type": "Infantry",
       "attack": 2,
-      "hits": 3,
       "range": 15,
+      "hits": 3,
       "size": 3,
       "points": 35,
       "max": 8,
@@ -91,8 +91,8 @@
       "order": 6,
       "type": "Infantry",
       "attack": 2,
-      "hits": 3,
       "range": 30,
+      "hits": 3,
       "armour": "6+",
       "size": 3,
       "points": 50,
@@ -114,8 +114,18 @@
         "Warband"
       ]
     },
-    "Cannon": {
+    "General": {
       "order": 8,
+      "type": "General",
+      "attack": "+2",
+      "command": 8,
+      "size": 1,
+      "points": 100,
+      "armyMin": 1,
+      "armyMax": 1
+    },
+    "Cannon": {
+      "order": 9,
       "type": "Artillery",
       "attack": 1,
       "range": "2×40cm",
@@ -127,18 +137,8 @@
         "Slow"
       ]
     },
-    "General": {
-      "order": 7,
-      "type": "General",
-      "attack": "+2",
-      "size": 1,
-      "points": 100,
-      "command": 8,
-      "armyMin": 1,
-      "armyMax": 1
-    },
     "Noble": {
-      "order": 8,
+      "order": 10,
       "type": "Leader",
       "attack": "+1",
       "command": 8,
@@ -148,28 +148,28 @@
   },
   "upgrades": {
     "Pavisse": {
+      "order": 0,
       "type": "Special",
-      "points": "+5",
-      "order": 0
+      "points": "+5"
     },
     "Skirmishers": {
+      "order": 1,
       "type": "Infantry",
       "attack": 1,
       "range": 30,
       "hits": 3,
       "size": 3,
       "points": "-10",
+      "max": 2,
       "specialRules": [
         "Skirmish"
-      ],
-      "max": 2,
-      "order": 1
+      ]
     },
     "Oriflamme": {
+      "order": 2,
       "type": "Special",
       "points": "+25",
-      "armyMax": 1,
-      "order": 2
+      "armyMax": 1
     }
   },
   "specialRules": {

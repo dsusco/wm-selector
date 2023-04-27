@@ -5,16 +5,17 @@
   "order": 2,
   "units": {
     "Knights": {
+      "order": 0,
       "type": "Cavalry",
       "attack": 3,
       "hits": 3,
       "armour": "4+",
       "size": 3,
       "points": 110,
-      "max": 4,
-      "order": 0
+      "max": 4
     },
     "Horse Archers": {
+      "order": 1,
       "type": "Cavalry",
       "attack": "3/1",
       "range": "15cm",
@@ -22,38 +23,38 @@
       "armour": "6+",
       "size": 3,
       "points": 80,
-      "min": 2,
-      "order": 1
+      "min": 2
     },
     "Bowmen": {
+      "order": 2,
       "type": "Infantry",
       "attack": "3/1",
       "range": "30cm",
       "hits": 3,
       "size": 3,
-      "points": 55,
-      "order": 2
+      "points": 55
     },
     "Axemen": {
+      "order": 3,
       "type": "Infantry",
       "attack": 3,
       "hits": 3,
       "armour": "6+",
       "size": 3,
       "points": 45,
-      "min": 2,
-      "order": 3
+      "min": 2
     },
     "Bears": {
+      "order": 4,
       "type": "Infantry",
       "attack": 5,
       "hits": 3,
       "size": 3,
       "points": 85,
-      "max": 1,
-      "order": 4
+      "max": 1
     },
     "War Wagon": {
+      "order": 5,
       "type": "Artillery",
       "attack": "4/4",
       "range": "30cm",
@@ -61,10 +62,10 @@
       "armour": "-/4+",
       "size": 2,
       "points": 140,
-      "max": 1,
-      "order": 5
+      "max": 1
     },
     "General": {
+      "order": 6,
       "type": "General",
       "attack": "+2",
       "command": 9,
@@ -75,10 +76,10 @@
       "upgrades": [
         "Bear",
         "Tzarina"
-      ],
-      "order": 6
+      ]
     },
     "Hero": {
+      "order": 7,
       "type": "Hero",
       "attack": "+1",
       "command": 8,
@@ -87,10 +88,10 @@
       "max": 2,
       "upgrades": [
         "Bear"
-      ],
-      "order": 7
+      ]
     },
     "Shaman": {
+      "order": 8,
       "type": "Wizard",
       "attack": "+0",
       "command": 7,
@@ -99,19 +100,19 @@
       "max": 1,
       "upgrades": [
         "Bear"
-      ],
-      "order": 8
+      ]
     }
   },
   "upgrades": {
     "Bear": {
+      "order": 0,
       "type": "Monstrous Mount",
       "attack": "+1",
       "points": "+10",
-      "max": 1,
-      "order": 0
+      "max": 1
     },
     "Tzarina": {
+      "order": 1,
       "type": "Special",
       "attack": "+0",
       "points": "+25",
@@ -122,19 +123,19 @@
         "Scroll of Dispelling",
         "Wand of Power",
         "Rod of Repetition"
-      ],
-      "order": 1
+      ]
     }
   },
   "magic": true,
   "specialRules": {
     "Horse Archers": {
+      "order": 1,
       "text": [
         "Kislevite Horse Archers have only a short range (15cm). They can shoot behind or to the side without turning stands to face their target. Just measure the range from any stand edge, front, side or rear."
-      ],
-      "order": 1
+      ]
     },
     "Bears": {
+      "order": 2,
       "text": [
         "Bears cannot be brigaded with other units only with other units of Bears.",
         "",
@@ -145,10 +146,10 @@
         "Bears must pursue retreating enemy where possible and must advance if they are able to do so.",
         "",
         "Note that these rules apply only to Bear units - not to characters riding a Bear or Shaman that have transformed into Monster Bears."
-      ],
-      "order": 2
+      ]
     },
     "War Wagon": {
+      "order": 3,
       "text": [
         "The War Wagon unit consists of two separate stands: the wagon stand with the wagon on it and the team stand with horses on it. The unit must always be in one of two formations: a wagon column with the horse team in front of the wagon, and a wagon laager with the horse team placed beside the wagon edge to edge.",
         "",
@@ -173,24 +174,24 @@
         "Any Kislev infantry unit positioned so that the side edge of at least one stand touches any edge of the wagon stand (not the Team stand) of a laagered War Wagon unit counts the whole unit as defended for purposes of shooting and combat (ie the infantry unit must line up so that the wagon stand and any infantry stand from the unit would be in a mutually supporting position were they both infantry). This assumes some intermingling of infantry in the wagon laager which is otherwise impossible to represent, but can be readily imagined. This advantage applies only in the first round of combat when charged, in exactly the same way as defended units on high ground or amongst woods or other dense terrain. Note that these associated infantry do not retain defended status in subsequent rounds as does the war wagon itself, even where they remain in touch with the wagon stand.",
         "",
         "Note that as described above, either the wagon or the team stand can be removed as a casualty - it is up to the player to decide which to remove. If the horses are removed the war wagon cannot move. If the wagon is removed the horses can move but obviously cannot attack - this gives the player the opportunity to retreat the 'horses' out of harms way thus avoiding losing the unit. The unit is not destroyed until both stands have been removed as normal."
-      ],
-      "order": 3
+      ]
     },
     "Bear": {
+      "order": 4,
       "text": [
         "Generals, heroes and shamans can ride a Bear mount. The Bear adds +1 Attack to that of its rider."
-      ],
-      "order": 4
+      ]
     },
     "Tzarina": {
+      "order": 5,
       "text": [
         "The General may be a Tzarina of the royal blood - perhaps Tzarina Katrina herself. The Tzarina rides a horse-drawn sled - note this is not a chariot! The Tzarina can cast spells like a Wizard and can carry a magic item restricted to a Wizard if desired. Once during the battle the Tzarina can add +1 to the dice when attempting to cast a spell. The player must announce that the Tzarina's special spell casting bonus is being used before rolling for the spell."
-      ],
-      "order": 5
+      ]
     }
   },
   "spells": [
     {
+      "name": "Icy Blast",
       "roll": 5,
       "range": "30cm",
       "text": [
@@ -199,10 +200,10 @@
         "This spell can be cast on an enemy unit. The Wizard must be able to see his target to use this spell. The spell cannot be directed at a unit engaged in combat.",
         "",
         "The Icy Blast is treated like three ordinary shooting attacks except that armour has no effect (all targets count as having no armour). A unit can be driven back by an Icy Blast as with ordinary shooting."
-      ],
-      "name": "Icy Blast"
+      ]
     },
     {
+      "name": "Chill",
       "roll": 4,
       "range": "30cm",
       "text": [
@@ -213,10 +214,10 @@
         "The spell lasts for the duration of the following combat phase.",
         "",
         "Every stand in the unit, including characters that have joined the unit, deducts -1 from its Attack value."
-      ],
-      "name": "Chill"
+      ]
     },
     {
+      "name": "Monster Bear!",
       "roll": 5,
       "text": [
         "The Wizard transforms himself into a gigantic ferocious supernatural bear and hurls himself into the enemy's ranks.",
@@ -228,10 +229,10 @@
         "The unit causes terror and the Wizard gains a further +2 Attack bonus that he adds to the unit in the regular way.",
         "",
         "Note that if the Tzarina uses this spell she adds +4 Attacks: +2 as General and +2 from Monster Bear."
-      ],
-      "name": "Monster Bear!"
+      ]
     },
     {
+      "name": "Freeze",
       "roll": 6,
       "range": "60cm",
       "text": [
@@ -240,8 +241,7 @@
         "This spell can be cast at an enemy unit within range regardless of whether the Wizard can see it or not. The spell cannot be directed at a unit engaged in combat.",
         "",
         "Roll a D6. If the score exceeds the number of hits that the target troop type has then one stand is destroyed. If not then the target is unscathed. If a stand is destroyed it is removed as a casualty. A unit cannot be driven back by Freeze."
-      ],
-      "name": "Freeze"
+      ]
     }
   ]
 }

@@ -5,153 +5,153 @@
   "order": 4,
   "units": {
     "Warriors": {
-      "armour": "4+",
+      "order": 0,
+      "type": "Infantry",
       "attack": 3,
       "hits": 4,
-      "max": 4,
-      "min": 2,
-      "order": 0,
-      "points": 110,
+      "armour": "4+",
       "size": 3,
-      "type": "Infantry"
+      "points": 110,
+      "min": 2,
+      "max": 4
     },
     "Handgunners": {
-      "armour": "6+",
-      "attack": "3/1",
-      "hits": 4,
-      "max": 2,
-      "min": 1,
       "order": 1,
-      "points": 90,
+      "type": "Infantry",
+      "attack": "3/1",
       "range": "30cm",
+      "hits": 4,
+      "armour": "6+",
       "size": 3,
-      "type": "Infantry"
+      "points": 90,
+      "min": 1,
+      "max": 2
     },
     "Rangers": {
-      "armour": "5+",
-      "attack": "3/1",
-      "hits": 4,
-      "max": 4,
       "order": 2,
-      "points": 110,
+      "type": "Infantry",
+      "attack": "3/1",
       "range": "30cm",
+      "hits": 4,
+      "armour": "5+",
       "size": 3,
-      "type": "Infantry"
+      "points": 110,
+      "max": 4
     },
     "Troll Slayers": {
+      "order": 3,
+      "type": "Infantry",
       "attack": 5,
       "hits": 4,
-      "max": "elite",
-      "order": 3,
-      "points": 90,
       "size": 3,
-      "type": "Infantry"
+      "points": 90,
+      "max": "elite"
     },
     "Militia": {
-      "armour": "6+",
-      "attack": "2/1",
-      "hits": 4,
       "order": 4,
-      "points": 45,
+      "type": "Infantry",
+      "attack": "2/1",
       "range": "0cm",
+      "hits": 4,
+      "armour": "6+",
       "size": 3,
+      "points": 45,
       "specialRules": [
         "Throwing Weapons"
-      ],
-      "type": "Infantry"
+      ]
     },
     "Miners": {
-      "armour": "5+",
-      "attack": "3/1",
-      "hits": 4,
-      "max": 2,
       "order": 5,
-      "points": 110,
+      "type": "Infantry",
+      "attack": "3/1",
       "range": "0cm",
+      "hits": 4,
+      "armour": "5+",
       "size": 3,
+      "points": 110,
+      "max": 2,
       "specialRules": [
         "Throwing Weapons"
-      ],
-      "type": "Infantry"
+      ]
     },
     "Cannon": {
-      "armour": "6+",
-      "attack": "1/2+b",
-      "hits": 2,
-      "max": 1,
       "order": 6,
-      "points": 90,
+      "type": "Artillery",
+      "attack": "1/2+b",
       "range": "60cm",
+      "hits": 2,
+      "armour": "6+",
       "size": 2,
+      "points": 90,
+      "max": 1,
       "specialRules": [
         "Artillery and Machines"
-      ],
-      "type": "Artillery"
+      ]
     },
     "Flame Cannon": {
-      "armour": "6+",
-      "attack": "1/2D6",
-      "hits": 2,
-      "max": 3,
       "order": 7,
-      "points": 50,
+      "type": "Artillery",
+      "attack": "1/2D6",
       "range": "30cm",
+      "hits": 2,
+      "armour": "6+",
       "size": 1,
+      "points": 50,
+      "max": 3,
       "specialRules": [
         "Artillery and Machines"
-      ],
-      "type": "Artillery"
+      ]
     },
     "Gyrocopter": {
-      "armour": "5+",
-      "attack": "1/3",
-      "hits": 3,
-      "max": 2,
       "order": 8,
-      "points": 75,
+      "type": "Machine",
+      "attack": "1/3",
       "range": "30cm",
+      "hits": 3,
+      "armour": "5+",
       "size": 1,
+      "points": 75,
+      "max": 2,
       "specialRules": [
         "Artillery and Machines"
-      ],
-      "type": "Machine"
+      ]
     },
     "General": {
-      "armyMax": 1,
-      "armyMin": 1,
+      "order": 9,
+      "type": "General",
       "attack": "+2",
       "command": 10,
-      "order": 9,
-      "points": 155,
       "size": 1,
-      "type": "General"
+      "points": 155,
+      "armyMin": 1,
+      "armyMax": 1
     },
     "Hero": {
+      "order": 10,
+      "type": "Hero",
       "attack": "+1",
       "command": 8,
-      "max": 1,
-      "order": 10,
-      "points": 80,
       "size": 1,
-      "type": "Hero"
+      "points": 80,
+      "max": 1
     },
     "Dragon Slayer": {
+      "order": 11,
+      "type": "Hero",
       "attack": "+2",
       "command": 6,
-      "max": 1,
-      "order": 11,
-      "points": 80,
       "size": 1,
-      "type": "Hero"
+      "points": 80,
+      "max": 1
     },
     "Runesmith": {
+      "order": 12,
+      "type": "Hero",
       "attack": "+1",
       "command": 8,
-      "max": 1,
-      "order": 12,
-      "points": 90,
       "size": 1,
-      "type": "Hero",
+      "points": 90,
+      "max": 1,
       "upgrades": [
         "Anvil",
         "Staff of Spellbinding",
@@ -161,11 +161,11 @@
   },
   "upgrades": {
     "Anvil": {
-      "armyMax": 1,
-      "attack": "+1",
       "order": 0,
+      "type": "Special",
+      "attack": "+1",
       "points": "+50",
-      "type": "Special"
+      "armyMax": 1
     }
   },
   "magic": true,
@@ -197,7 +197,7 @@
     "Troll Slayers": {
       "order": 3,
       "text": [
-        "(What we considered is giving the Troll Slayers an extended move, representing their eagerness to get stuck in and giving the Dwarfs the equivalent of cavalry\u2026 Very suicidal ones at that.)",
+        "(What we considered is giving the Troll Slayers an extended move, representing their eagerness to get stuck in and giving the Dwarfs the equivalent of cavalry… Very suicidal ones at that.)",
         "",
         "1. During the 'home back' part of the Movement phase, Troll Slayers must move 10cm towards the nearest enemy in sight. No formation changes may be made during this move, unless they come into contact with the enemy and in result count as charging. If there is no enemy in sight this additional move is not allowed.",
         "",

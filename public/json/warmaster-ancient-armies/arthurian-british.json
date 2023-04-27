@@ -1,24 +1,8 @@
 {
-  "specialRules": {
-    "Warband": {
-      "order": 1
-    },
-    "Unreliable": {
-      "order": 2
-    },
-    "Skirmish": {
-      "order": 3
-    },
-    "Shock": {
-      "order": 4
-    },
-    "Arthur": {
-      "order": 5,
-      "text": [
-        "The General represents an heroic warlord such as Arthur or Ambrosius Aurelianus. If the army is led by an 'Arthur' then a further +1 is added to the result of all combat engagements where either the General or any Leader are included in the engagement. Note that this bonus adds to the total result for the engagement in the same way as, for example, a single supporting stand."
-      ]
-    }
-  },
+  "name": "Arthurian British",
+  "version": "Warmaster Ancient Armies",
+  "group": "The Dark Ages",
+  "order": 1,
   "units": {
     "Spearmen": {
       "order": 0,
@@ -100,11 +84,11 @@
       "order": 6,
       "type": "General",
       "attack": "+2",
+      "command": 9,
       "size": 1,
       "points": 125,
       "armyMin": 1,
       "armyMax": 1,
-      "command": 9,
       "upgrades": [
         "Arthur"
       ]
@@ -113,10 +97,10 @@
       "order": 7,
       "type": "Leader",
       "attack": "+1",
+      "command": 8,
       "size": 1,
       "points": 80,
-      "max": 2,
-      "command": 8
+      "max": 2
     }
   },
   "upgrades": {
@@ -152,8 +136,24 @@
       "armyMax": 1
     }
   },
-  "name": "Arthurian British",
-  "version": "Warmaster Ancient Armies",
-  "group": "The Dark Ages",
-  "order": 1
+  "specialRules": {
+    "Warband": {
+      "order": 1
+    },
+    "Unreliable": {
+      "order": 2
+    },
+    "Skirmish": {
+      "order": 3
+    },
+    "Shock": {
+      "order": 4
+    },
+    "Arthur": {
+      "order": 5,
+      "text": [
+        "The General represents an heroic warlord such as Arthur or Ambrosius Aurelianus. If the army is led by an 'Arthur' then a further +1 is added to the result of all combat engagements where either the General or any Leader are included in the engagement. Note that this bonus adds to the total result for the engagement in the same way as, for example, a single supporting stand."
+      ]
+    }
+  }
 }

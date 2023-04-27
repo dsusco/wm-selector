@@ -5,6 +5,7 @@
   "order": 2,
   "units": {
     "Wannabee/Young Slayers": {
+      "order": 0,
       "type": "Infantry",
       "attack": 3,
       "hits": 4,
@@ -13,10 +14,10 @@
       "min": 4,
       "specialRules": [
         "Slayers"
-      ],
-      "order": 0
+      ]
     },
     "Troll Slayers": {
+      "order": 1,
       "type": "Infantry",
       "attack": 5,
       "hits": 4,
@@ -26,10 +27,10 @@
       "max": 4,
       "specialRules": [
         "Slayers"
-      ],
-      "order": 1
+      ]
     },
     "Rangers": {
+      "order": 2,
       "type": "Infantry",
       "attack": "3/1",
       "range": "30cm",
@@ -37,10 +38,10 @@
       "armour": "5+",
       "size": 3,
       "points": 110,
-      "max": 1,
-      "order": 2
+      "max": 1
     },
     "Cannon": {
+      "order": 3,
       "type": "Artillery",
       "attack": "1/2+b",
       "range": "60cm",
@@ -48,10 +49,10 @@
       "armour": "6+",
       "size": 2,
       "points": 100,
-      "max": "elite",
-      "order": 3
+      "max": "elite"
     },
     "Goblin Hewer": {
+      "order": 4,
       "type": "Artillery",
       "attack": "1/2D6",
       "range": "30cm",
@@ -59,10 +60,10 @@
       "armour": "6+",
       "size": 1,
       "points": 50,
-      "max": "elite",
-      "order": 4
+      "max": "elite"
     },
     "Slayercopter": {
+      "order": 5,
       "type": "Machine",
       "attack": "D6/D6",
       "range": "30cm",
@@ -70,56 +71,56 @@
       "armour": "5+",
       "size": 1,
       "points": 85,
-      "max": "elite",
-      "order": 5
+      "max": "elite"
     },
     "Slayer King": {
+      "order": 6,
       "type": "General",
       "attack": "+2",
       "command": 10,
       "size": 1,
       "points": 155,
       "armyMin": 1,
-      "armyMax": 1,
-      "order": 6
+      "armyMax": 1
     },
     "Giant Slayer": {
+      "order": 7,
       "type": "Hero",
       "attack": "+1",
       "command": 8,
       "size": 1,
       "points": 80,
-      "max": 1,
-      "order": 7
+      "max": 1
     },
     "Dragon Slayer": {
+      "order": 8,
       "type": "Hero",
       "attack": "+2",
       "command": 6,
       "size": 1,
       "points": 80,
-      "max": "elite",
-      "order": 8
+      "max": "elite"
     },
     "Daemon Slayer": {
+      "order": 9,
       "type": "Hero",
       "attack": "+2",
       "command": 6,
       "size": 1,
       "points": 90,
-      "max": 1,
-      "order": 9
+      "max": 1
     }
   },
   "magic": true,
   "specialRules": {
     "Slayers": {
+      "order": 1,
       "text": [
         "At the start of the Movement phase (i.e. before movement by initiative) Slayers must move 10cm towards the nearest enemy in sight, no formation changes may be made during this move."
-      ],
-      "order": 1
+      ]
     },
     "Troll Slayers": {
+      "order": 2,
       "text": [
         "Troll Slayers must charge on initiative if enemy is within 20 cm, this is determined after their mandatory move. Troll Slayers may not evade on initiative.",
         "",
@@ -132,16 +133,16 @@
         "If Troll Slayers win a combat by 3 or more they are so within the enemy ranks that they may even pursue flyers or cavalry.",
         "",
         "Troll Slayer units that have been destroyed do not count towards the Dwarf army's losses for purposes of calculating withdrawal. If a Troll Slayer unit is destroyed then all its cost as victory points is scored for the opponent."
-      ],
-      "order": 2
+      ]
     },
     "Rangers": {
+      "order": 3,
       "text": [
         "Although they are infantry the exceptional mobility of Dwarf Rangers means that they can pursue any type of retreating enemy."
-      ],
-      "order": 3
+      ]
     },
     "Goblin Hewer": {
+      "order": 4,
       "text": [
         "Goblin Hewer is a steam-powered artillery device created by infamous Malakai Makaisson who claimed himself as a best Engineer-Slayer ever lived (and this is true because he is the first and only Engineer-Slayer). Though he has every reason for that. This rapid-firing, axe-throwing extravaganza of destruction, the Goblin Hewer with its Slayers crew is capable of scything through even the most numerous opposition with a hail of blades.",
         "",
@@ -161,30 +162,29 @@
         "__6__|The Goblin Hewer lurches in its mountings while its crew grease the axles, making it spin at top speed, launching 12+D6 attacks on the target. The Goblin Hewer is otherwise unaffected.",
         "",
         "A Goblin Hewer can shoot at charging enemy in the usual way."
-      ],
-      "order": 4
+      ]
     },
     "Slayercopter": {
+      "order": 5,
       "text": [
         "The Slayer King's army has limited access to artillery, not in a sense that it lacks the access to a normal dwarven armoury, but rather that they tend to think the slower pace of the artillery train will slow them down. Some of the more insane dwarven engineers have joined the Slayer Kings's court and developed the Slayercopter. With a decidedly more spiky bodywork it functions better when it ends up in combat, but the most important improvement seen so far is the naphtha-bomb delivery system.",
         "",
         "The Slayercopter is an experimental modification of 'improved' gyrocopter. Unfortunately the construction is still raw and in addition with Slayer-pilot leads enough to unwanted results. When rolling to hit either in Shooting or Combat phase any rolled '1s' hits a Copter itself instead of enemy. If a Slayercopter is destroyed its pilot tries to make his end as glorious as possible. If destroyed by shooting the Slayercopter flies 1D6x5cm directly towards its nearest opponent (no matter if it could see it or not). At the moment the Slayercopter hits the unit it explodes and makes D6 attacks -1 save. If the Slayercopter flies short and ends its movement over a friendly unit it does the same. When destroyed in combat the Slayercopter also gets another D6 attacks on any one unit in base contact by Slayer player choice."
-      ],
-      "order": 5
+      ]
     },
     "Dragon Slayer": {
+      "order": 6,
       "text": [
         "Dragon Slayer causes terror, so the unit which is joined by a Slayer character is considered to cause terror.",
         "",
         "Dragon Slayers may not retreat up to 30cm when moved through by an enemy unit. Instead any Dragon Slayer character captured for any reason by an enemy unit will seek their doom and attempt to die honourably in battle. As such the Dragon Slayer executes a number of attacks equal to his Attack value +D3 on the capturing unit. The effect of this will be applied immediately, and does not carry over. Should these attacks effectively kill the capturing unit then the Dragon Slayer character stays alive and remains in the game."
-      ],
-      "order": 6
+      ]
     },
     "Daemon Slayer": {
+      "order": 7,
       "text": [
         " Daemon Slayers are potent heroes carrying the Wards of Grimnir, that allow them to combat the magic of their enemies in the same way as Runesmiths do. If an enemy Wizard who is within 50cm of the Daemon Slayer casts a spell the Daemon Slayer can attempt to 'anti-magic' it. Note that it does not matter what the spell is or where it is cast, the Daemon Slayer can 'anti-magic' it so long as the caster is within 50cm. To determine if this works roll a D6 - on the score of 4, 5 or 6 the Daemon Slayer has succeeded and the spell doesn't work, it is dispelled by the Ward of Grimnir. If he fails then the Daemon Slayer's efforts come to nothing and the spell works as normal. A Daemon Slayer can attempt to anti-magic any number of spells in a turn, but only one attempt can be made to anti- magic any individual spell - even if the army includes more than one Daemon Slayer and several are in range of the enemy Wizard."
-      ],
-      "order": 7
+      ]
     }
   }
 }

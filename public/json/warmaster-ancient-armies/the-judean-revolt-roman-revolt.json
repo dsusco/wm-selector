@@ -1,15 +1,8 @@
 {
-  "specialRules": {
-    "Skirmish": {
-      "order": 1
-    },
-    "Shock": {
-      "order": 2
-    },
-    "Fanatics": {
-      "order": 3
-    }
-  },
+  "name": "The Judean Revolt (Roman Revolt)",
+  "version": "Warmaster Ancient Armies",
+  "group": "The Rise of Rome",
+  "order": 3,
   "units": {
     "Infantry": {
       "order": 0,
@@ -51,7 +44,7 @@
       ]
     },
     "Mounted Skirmishers": {
-      "order": 4,
+      "order": 3,
       "type": "Cavalry",
       "attack": "1/1",
       "range": "15cm",
@@ -64,28 +57,28 @@
       ]
     },
     "General": {
-      "order": 5,
+      "order": 4,
       "type": "General",
       "attack": "+2",
+      "command": 9,
       "size": 1,
       "points": 125,
       "armyMin": 1,
-      "armyMax": 1,
-      "command": 9
+      "armyMax": 1
     },
     "Subordinate": {
-      "order": 6,
+      "order": 5,
       "type": "Subordinate",
       "attack": "+1",
+      "command": 7,
       "size": 1,
       "points": 30,
-      "max": 4,
-      "command": 7
+      "max": 4
     }
   },
   "upgrades": {
     "Zealot Infantry": {
-      "order": 1,
+      "order": 0,
       "type": "Infantry",
       "attack": 2,
       "hits": 3,
@@ -101,7 +94,7 @@
       ]
     },
     "Zealot Archers": {
-      "order": 2,
+      "order": 1,
       "type": "Infantry",
       "attack": "1/1",
       "range": "30cm",
@@ -117,8 +110,15 @@
       ]
     }
   },
-  "name": "The Judean Revolt (Roman Revolt)",
-  "version": "Warmaster Ancient Armies",
-  "group": "The Rise of Rome",
-  "order": 3
+  "specialRules": {
+    "Skirmish": {
+      "order": 1
+    },
+    "Shock": {
+      "order": 2
+    },
+    "Fanatics": {
+      "order": 3
+    }
+  }
 }

@@ -5,16 +5,17 @@
   "order": 2,
   "units": {
     "Warriors": {
+      "order": 0,
       "type": "Infantry",
       "attack": 3,
       "hits": 3,
       "armour": "5+",
       "size": 3,
       "points": 60,
-      "min": 2,
-      "order": 0
+      "min": 2
     },
     "Slingers": {
+      "order": 1,
       "type": "Infantry",
       "attack": "2/1",
       "range": "30cm",
@@ -22,39 +23,39 @@
       "size": 3,
       "points": 40,
       "min": 1,
-      "max": 6,
-      "order": 1
+      "max": 6
     },
     "Ogres": {
+      "order": 2,
       "type": "Infantry",
       "attack": 4,
       "hits": 4,
       "armour": "5+",
       "size": 3,
       "points": 105,
-      "max": 2,
-      "order": 2
+      "max": 2
     },
     "Wolfhounds": {
+      "order": 3,
       "type": "Cavalry",
       "attack": 3,
       "hits": 3,
       "size": 3,
       "points": 30,
-      "max": 6,
-      "order": 3
+      "max": 6
     },
     "Cavalry": {
+      "order": 4,
       "type": "Cavalry",
       "attack": 3,
       "hits": 3,
       "armour": "5+",
       "size": 3,
       "points": 90,
-      "max": 4,
-      "order": 4
+      "max": 4
     },
     "Chariots": {
+      "order": 5,
       "type": "Chariot",
       "attack": 3,
       "hits": 3,
@@ -62,30 +63,30 @@
       "size": 3,
       "points": 95,
       "min": 1,
-      "max": 4,
-      "order": 5
+      "max": 4
     },
     "Giant": {
+      "order": 6,
       "type": "Monster",
       "attack": 8,
       "hits": 8,
       "armour": "5+",
       "size": 1,
       "points": 150,
-      "max": 1,
-      "order": 6
+      "max": 1
     },
     "Giant Eagles": {
+      "order": 7,
       "type": "Monster",
       "attack": 2,
       "hits": 3,
       "armour": "6+",
       "size": 3,
       "points": 70,
-      "max": 1,
-      "order": 7
+      "max": 1
     },
     "Fenbeast": {
+      "order": 8,
       "type": "Monster",
       "attack": 6,
       "hits": 4,
@@ -96,10 +97,10 @@
       "noCount": true,
       "requiredUnits": [
         "Druid"
-      ],
-      "order": 8
+      ]
     },
     "General": {
+      "order": 9,
       "type": "General",
       "attack": "+2",
       "command": 9,
@@ -109,10 +110,10 @@
       "armyMax": 1,
       "upgrades": [
         "Chariot"
-      ],
-      "order": 9
+      ]
     },
     "Hero": {
+      "order": 10,
       "type": "Hero",
       "attack": "+1",
       "command": 8,
@@ -121,10 +122,10 @@
       "max": 2,
       "upgrades": [
         "Chariot"
-      ],
-      "order": 10
+      ]
     },
     "Druid": {
+      "order": 11,
       "type": "Wizard",
       "attack": "+0",
       "command": 7,
@@ -134,88 +135,88 @@
       "upgrades": [
         "Giant Eagle",
         "Chariot"
-      ],
-      "order": 11
+      ]
     }
   },
   "upgrades": {
     "Giant Eagle": {
+      "order": 0,
       "type": "Monstrous Mount",
       "attack": "+2",
       "points": "+20",
-      "max": 1,
-      "order": 0
+      "max": 1
     },
     "Chariot": {
+      "order": 1,
       "type": "Chariot Mount",
       "attack": "+1",
       "points": "+10",
-      "max": 1,
-      "order": 1
+      "max": 1
     }
   },
   "magic": true,
   "specialRules": {
     "Ogres": {
+      "order": 1,
       "text": [
         "Ogres are notoriously fond of fresh human meat, although they will eat practically anything that was once alive (or still is). They can't abide the taste of greenskin and won't touch a Goblin or an Orc unless they are seriously peckish. To represent this, an Ogre unit must charge a unit of humans (literally humans&hellip; Men, not Dwarfs, Elves, etc) if it is within 20cm at the start of the Command phase and the Ogres can reach it. This happens automatically and their commander can do nothing about it!"
-      ],
-      "order": 1
+      ]
     },
     "Giant": {
       "order": 2
     },
     "Giant Eagles": {
+      "order": 3,
       "text": [
         "Giant Eagles can fly up to 100cm."
-      ],
-      "order": 3
+      ]
     },
     "Giant Eagle": {
+      "order": 4,
       "text": [
         "Giant Eagles can be ridden by Druid only. An Eagle can fly increasing its rider's move from 60 to 100cm, and it adds +2 Attacks to those of its rider."
-      ],
-      "order": 4
+      ]
     },
     "Fenbeast": {
+      "order": 5,
       "text": [
         "Fenbeast is an individual troop unit, but it can not be fielded like other units in the standard way. Fenbeast can appear on the battlefield only by Druid's spell Summon Fenbeast. It cannot be brigaded with other troop units, not even other Fenbeasts. Fenbeasts never use their initiative to move in the Command phase. Because they are completely dominated by the will of the Druid who summoned them, the Druid counts as having a Command value of +1 when commanding the Fenbeast - that is 8 rather than 7. They can move through bogs as though they were open terrain. Unlike the wild Bog Beasts from the 'Dark Shadows' campaign, Fenbeast will make way for friendly troops. Fenbeasts are terrifying creatures and cause terror."
-      ],
-      "order": 5
+      ]
     }
   },
   "spells": [
     {
+      "name": "Downpour",
       "roll": 5,
       "range": "30cm",
       "text": [
         "*The Druid brings down a localised shower of fine, freezing rain upon his foes.*",
         "",
         "Until the start of the Druid player's next turn all enemy units within 30cms of the casting Druid suffer -1 to their command."
-      ],
-      "name": "Downpour"
+      ]
     },
     {
+      "name": "Storm of Hail",
       "roll": 5,
       "range": "30cm",
       "text": [
         "*The Druid harnesses the power of the weather to attack his enemies with enormous hailstones.*",
         "",
         "The Druid targets a single enemy unit within range and that he can see. This has the effect of three shooting attacks except that it ignores any armour save the target may have. The target unit may be driven back in the same way as for shooting."
-      ],
-      "name": "Storm of Hail"
+      ]
     },
     {
+      "name": "Mists of Albion",
       "roll": 5,
       "range": "30cm",
       "text": [
         "*The Druid breathes out some of the mystical mist that surrounds his enigmatic homeland and envelopes his compatriots, making them hard to target by enemy troops.*",
         "",
         "This spell affects a friendly unit within range of the Druid and lasts until the start of the Druid player's next turn. Attacks against the target unit suffer -1 to hit (as if it were defended). This affects attacks from shooting, magic and in the first round of Combat phase. A unit in the open still counts as 'in the open' for the purposes of charging. A unit that is fortified cannot be affected by the Mists of Albion."
-      ],
-      "name": "Mists of Albion"
+      ]
     },
     {
+      "name": "Summon Fenbeast",
       "roll": 6,
       "range": "30cm",
       "text": [
@@ -224,8 +225,7 @@
         "The Druid summons forth a Fenbeast. Once summoned, the Fenbeast is under the control of the summoning player.",
         "",
         "Since it is summoned in the Shooting phase it cannot be given orders until the following turn. It may be summoned into contact with an enemy unit only if that unit is already in combat. It may be removed from play if destroyed (like any other unit) or if the loss of a Druid character reduces the number of Druids to less than the number of Fenbeasts - the owning player chooses a Fenbeast and removes it from play. Summoning Fenbeast unit does not influence army withdrawal calculation in any way and does not have a points value. Fenbeasts may only be given orders by Druids. Fenbeasts may not be brigaded with other troops, not even other Fenbeasts. An army cannot have more summoned Fenbeasts in play than it has Druids."
-      ],
-      "name": "Summon Fenbeast"
+      ]
     }
   ]
 }

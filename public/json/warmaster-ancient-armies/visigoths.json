@@ -1,38 +1,32 @@
 {
-  "specialRules": {
-    "Skirmish": {
-      "order": 1
-    },
-    "Shock": {
-      "order": 2
-    },
-    "Porents": {
-      "order": 5
-    }
-  },
+  "name": "Visigoths",
+  "version": "Warmaster Ancient Armies",
+  "group": "The Dark Ages",
+  "order": 9,
   "units": {
     "Warriors": {
       "order": 0,
+      "type": "Infantry",
       "attack": 3,
       "hits": 3,
       "armour": "6+",
       "size": 3,
       "points": 45,
-      "min": 6,
-      "type": "Infantry"
+      "min": 6
     },
     "Archers": {
       "order": 1,
+      "type": "Infantry",
       "attack": "2/1",
       "range": "30cm",
       "hits": 3,
       "size": 3,
       "points": 40,
-      "max": 4,
-      "type": "Infantry"
+      "max": 4
     },
     "Skirmishers": {
       "order": 2,
+      "type": "Infantry",
       "attack": "1.1",
       "range": "15cm",
       "hits": 3,
@@ -41,28 +35,28 @@
       "max": 4,
       "specialRules": [
         "Skirmish"
-      ],
-      "type": "Infantry"
+      ]
     },
     "Heavy Cavalry": {
       "order": 3,
+      "type": "Cavalry",
       "attack": 3,
       "hits": 3,
       "armour": "5+",
       "size": 3,
       "points": 110,
-      "max": 4,
       "min": 1,
+      "max": 4,
       "specialRules": [
         "Shock"
       ],
-      "type": "Cavalry",
       "upgrades": [
         "Fideles"
       ]
     },
     "Light Cavalry": {
       "order": 4,
+      "type": "Cavalry",
       "attack": "2/1",
       "range": "15cm",
       "hits": 3,
@@ -73,13 +67,13 @@
       "specialRules": [
         "Skirmish"
       ],
-      "type": "Cavalry",
       "upgrades": [
         "Gardingi"
       ]
     },
     "General": {
       "order": 5,
+      "type": "General",
       "attack": "+2",
       "command": 8,
       "size": 1,
@@ -88,17 +82,16 @@
       "armyMax": 1,
       "upgrades": [
         "Porents"
-      ],
-      "type": "General"
+      ]
     },
     "Chieftain": {
       "order": 6,
+      "type": "Subordinate",
       "attack": "+1",
       "command": 7,
       "size": 1,
       "points": 30,
-      "max": 4,
-      "type": "Subordinate"
+      "max": 4
     }
   },
   "upgrades": {
@@ -130,8 +123,15 @@
       "armyMax": 1
     }
   },
-  "name": "Visigoths",
-  "version": "Warmaster Ancient Armies",
-  "group": "The Dark Ages",
-  "order": 9
+  "specialRules": {
+    "Skirmish": {
+      "order": 1
+    },
+    "Shock": {
+      "order": 2
+    },
+    "Porents": {
+      "order": 3
+    }
+  }
 }

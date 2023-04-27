@@ -6,7 +6,7 @@ const
   glob = require('glob');
 
 function UnitOrUpgradeToJSON () {
-  let order = 1;
+  let order = 0;
 
   return Object.keys(this)
     .sort((a, b) => this[a].order - this[b].order)

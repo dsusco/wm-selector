@@ -5,16 +5,17 @@
   "order": 1,
   "units": {
     "Bowmen": {
+      "order": 0,
       "type": "Infantry",
       "attack": "3/1",
       "range": "30cm",
       "hits": 3,
       "size": 3,
       "points": 55,
-      "noCount": true,
-      "order": 0
+      "noCount": true
     },
     "Men-at-arms": {
+      "order": 1,
       "type": "Infantry",
       "attack": 3,
       "hits": 3,
@@ -22,20 +23,20 @@
       "size": 3,
       "points": 45,
       "min": 1,
-      "noCount": true,
-      "order": 1
+      "noCount": true
     },
     "Peasants": {
+      "order": 2,
       "type": "Infantry",
       "attack": 3,
       "hits": 3,
       "size": 3,
       "points": 30,
       "max": 4,
-      "noCount": true,
-      "order": 2
+      "noCount": true
     },
     "Squires": {
+      "order": 3,
       "type": "Cavalry",
       "attack": "3/1",
       "range": "30cm",
@@ -45,30 +46,30 @@
       "points": 90,
       "min": 1,
       "max": 4,
-      "noCount": true,
-      "order": 3
+      "noCount": true
     },
     "Knights": {
+      "order": 4,
       "type": "Cavalry",
       "attack": 3,
       "hits": 3,
       "armour": "4+",
       "size": 3,
       "points": 110,
-      "min": 1,
-      "order": 4
+      "min": 1
     },
     "Grail Knights": {
+      "order": 5,
       "type": "Cavalry",
       "attack": 3,
       "hits": 3,
       "armour": "4+",
       "size": 3,
       "points": 120,
-      "max": 1,
-      "order": 5
+      "max": 1
     },
     "Trebuchet": {
+      "order": 6,
       "type": "Artillery",
       "attack": "1/6",
       "range": "30-100cm",
@@ -76,10 +77,10 @@
       "size": 1,
       "points": 150,
       "max": 1,
-      "noCount": true,
-      "order": 6
+      "noCount": true
     },
     "General": {
+      "order": 7,
       "type": "General",
       "attack": "+2",
       "command": 9,
@@ -89,10 +90,10 @@
       "armyMax": 1,
       "upgrades": [
         "Pegasus"
-      ],
-      "order": 7
+      ]
     },
     "Hero": {
+      "order": 8,
       "type": "Hero",
       "attack": "+1",
       "command": 8,
@@ -101,10 +102,10 @@
       "max": 2,
       "upgrades": [
         "Pegasus"
-      ],
-      "order": 8
+      ]
     },
     "Enchantress": {
+      "order": 9,
       "type": "Wizard",
       "attack": "+0",
       "command": 7,
@@ -114,24 +115,23 @@
       "upgrades": [
         "Pegasus",
         "Unicorn"
-      ],
-      "order": 9
+      ]
     }
   },
   "upgrades": {
     "Pegasus": {
+      "order": 0,
       "type": "Monstrous Mount",
       "attack": "+1",
       "points": "+15",
-      "max": 1,
-      "order": 0
+      "max": 1
     },
     "Unicorn": {
+      "order": 1,
       "type": "Monstrous Mount",
       "attack": "+1",
       "points": "+15",
-      "max": 1,
-      "order": 1
+      "max": 1
     }
   },
   "magic": true,
@@ -140,24 +140,25 @@
   ],
   "specialRules": {
     "Peasants": {
+      "order": 1,
       "text": [
         "A unit of peasants suffers an additional -1 Command penalty when given an order. However, this penalty is waived if the peasant unit is part of a brigade that includes at least one non-peasant unit. Peasants cannot use initiative to charge - though they can use initiative to evade as usual. When they charge they receive no bonus attack modifier for doing so."
-      ],
-      "order": 1
+      ]
     },
     "Knights": {
+      "order": 2,
       "text": [
         "A Knight unit will always use its initiative to charge an enemy if possible and cannot be given orders instead. They will never use their initiative to evade. Knights are unaffected by enemy that cause terror in combat, they don't suffer the usual -1 Attack modifier."
-      ],
-      "order": 2
+      ]
     },
     "Grail Knights": {
+      "order": 3,
       "text": [
         "All the rules described for Knights also apply to Grail Knights. In addition, if the unit is charging against an enemy in the open it receives an additional +1 Attack modifier in the same way as chariots and monsters."
-      ],
-      "order": 3
+      ]
     },
     "Trebuchet": {
+      "order": 4,
       "text": [
         "The model must be mounted onto a base 40mm frontage and 60mm depth - note that this is equivalent to three standard sized Warmaster bases glued together.",
         "",
@@ -174,24 +175,24 @@
         "If obliged to move off table by a Gerroff spell then roll 1 X D6. If a 6 is rolled it is destroyed. All other dice rolls are ignored.",
         "",
         "Note that you can only have 1 trebuchet in your army no matter how many points you are playing (just like a general). Also, the Trebuchet is is not counted towards the army's units for purposes of withdrawal - it is not a unit of Knights or Grail Knights!"
-      ],
-      "order": 4
+      ]
     },
     "Pegasus": {
+      "order": 5,
       "text": [
         "The pegasus can be ridden by a general, hero or Enchantress and adds +1 Attack to the rider as well as allowing the character to fly. "
-      ],
-      "order": 5
+      ]
     },
     "Unicorn": {
+      "order": 6,
       "text": [
         "Only an Enchantress can ride a unicorn. The unicorn adds +1 to the Enchantress's Attacks. Once per battle the unicorn's magical power adds +1 to the dice when casting a spell. The player must announce that he is using the unicorn's magic before rolling to see if the spell works."
-      ],
-      "order": 6
+      ]
     }
   },
   "spells": [
     {
+      "name": "Aerial Shield",
       "roll": 4,
       "range": "15cm",
       "text": [
@@ -206,10 +207,10 @@
         "The re-roll also applies to Armour rolls taken for hits that have been suffered whilst charging at an enemy unit that shoots prior to contact. In this case the re-roll only applies if the Enchantress is within 15cm of the unit at the start of its charge move: it does not matter if the Enchantress is more distant once the unit has completed its charge.",
         "",
         "Note that only a single re-roll is permitted regardless of how many Enchantresses are within range or what other factors apply. It is never permitted to re-roll a re-roll in any circumstances."
-      ],
-      "name": "Aerial Shield"
+      ]
     },
     {
+      "name": "Shield of Combat",
       "roll": 4,
       "text": [
         "The enemy's blows are magically deflected by unseen forces and cause no harm.",
@@ -221,10 +222,10 @@
         "The unit can re-roll any failed Armour rolls during the Combat phase. This does not include hits suffered from enemy missile- fire during a charge, as these are deemed to be shooting hits and are encompassed by the Aerial Shield spell.",
         "",
         "Note that only a single re-roll is permitted regardless of what other factors apply. It is never permitted to re-roll a re-roll in any circumstances."
-      ],
-      "name": "Shield of Combat"
+      ]
     },
     {
+      "name": "Eerie Mist",
       "roll": 4,
       "range": "30cm",
       "text": [
@@ -235,10 +236,10 @@
         "The spell lasts until the end of the opposing player's following turn.",
         "",
         "The unit cannot use its initiative. Any order given to the unit, or to any brigade of which it is a part, suffers a -1 Command penalty."
-      ],
-      "name": "Eerie Mist"
+      ]
     },
     {
+      "name": "Lady's Favour",
       "roll": 5,
       "range": "30cm",
       "text": [
@@ -247,8 +248,7 @@
         "The spell can be cast on any unengaged friendly unit within range regardless of whether the Enchantress can see it or not. The spell affects only a single unit, never a brigade.",
         "",
         "The unit can be moved just as if it had received an order in the Command phase. Character stands that have joined the unit will not move with it: they remain where they are."
-      ],
-      "name": "Lady's Favour"
+      ]
     }
   ]
 }

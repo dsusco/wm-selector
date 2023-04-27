@@ -5,102 +5,102 @@
   "order": 4,
   "units": {
     "Nobles": {
+      "order": 0,
       "type": "Infantry",
       "attack": 3,
       "hits": 3,
       "armour": "6+",
       "size": 3,
-      "max": 4,
       "points": 45,
+      "max": 4,
       "specialRules": [
         "Warband"
-      ],
-      "order": 0
+      ]
     },
     "Warriors": {
+      "order": 1,
       "type": "Infantry",
       "attack": 3,
       "hits": 3,
       "size": 3,
-      "min": 8,
       "points": 35,
+      "min": 8,
       "specialRules": [
         "Warband"
-      ],
-      "order": 1
+      ]
     },
     "Archers": {
+      "order": 2,
       "type": "Infantry",
       "attack": 2,
       "range": 30,
       "hits": 3,
       "size": 3,
-      "max": 4,
       "points": 40,
+      "max": 4,
       "specialRules": [
         "Warband"
-      ],
-      "order": 2
+      ]
     },
     "Skirmishers": {
+      "order": 3,
       "type": "Infantry",
       "attack": 1,
       "range": 15,
       "hits": 3,
       "size": 3,
+      "points": 30,
       "min": 2,
       "max": 6,
-      "points": 30,
       "specialRules": [
         "Warband",
         "Skirmish"
-      ],
-      "order": 3
+      ]
     },
     "Cavalry": {
+      "order": 4,
       "type": "Cavalry",
       "attack": 3,
       "hits": 3,
       "armour": "6+",
       "size": 3,
-      "max": 4,
       "points": 70,
+      "max": 4,
       "specialRules": [
         "Warband"
-      ],
-      "order": 4
+      ]
     },
     "General": {
+      "order": 5,
       "type": "General",
       "attack": "+2",
       "command": 8,
       "size": 1,
+      "points": 100,
       "armyMin": 1,
       "armyMax": 1,
-      "points": 100,
       "upgrades": [
         "Hermann"
-      ],
-      "order": 5
+      ]
     },
     "Chieftain": {
+      "order": 6,
       "type": "Subordinate",
       "attack": "+1",
       "command": 7,
       "size": 1,
-      "max": 4,
       "points": 30,
-      "order": 6
+      "max": 4
     }
   },
   "upgrades": {
     "Hermann": {
+      "order": 0,
       "type": "General",
       "attack": "+2",
       "command": 8,
-      "armyMax": 1,
       "points": "+25",
-      "order": 0
+      "armyMax": 1
     }
   },
   "specialRules": {
@@ -111,10 +111,10 @@
       "order": 2
     },
     "Hermann": {
+      "order": 3,
       "text": [
         "Extra to upgrade the army's General to Hermann the German (Arminius if one prefers his latin name&mdash;but us honest, manly barbarians will stick with Hermann). If the army is led by Hermann then all Noble and Warrior units roll one extra Attack dice in the first round of every combat engagement when they charge. Note this is just one dice per unit and not one dice per stand. The bonus dice can be allocated to any stand in the unit."
-      ],
-      "order": 3
+      ]
     }
   }
 }

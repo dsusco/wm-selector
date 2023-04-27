@@ -1,1 +1,512 @@
-{"name":"Orques & Gobelins","version":"Warmaster Evolution","group":2,"order":0,"units":{"Guerriers Orques":{"type":"Infantrie","attack":4,"hits":3,"armour":"6+","size":3,"points":60,"min":2,"order":0},"Orques Noirs":{"type":"Infantrie","attack":4,"hits":4,"armour":"5+","size":3,"points":110,"max":1,"order":1},"Gobelins":{"type":"Infantrie","attack":"2/1","range":"15cm","hits":3,"size":3,"points":30,"min":2,"order":2},"Trolls":{"type":"Infantrie","attack":5,"hits":3,"armour":"5+","size":3,"points":110,"max":3,"order":3},"Ogres":{"type":"Infantrie","attack":4,"hits":4,"armour":"5+","size":3,"points":105,"max":1,"order":4},"Orques Sauvages (*)":{"order":5,"type":"Infantrie","attack":5,"hits":3,"size":3,"points":70,"specialRules":["Règle optionnelle"]},"Archers Gobelins (*)":{"order":6,"type":"Infantrie","attack":"2/1","range":"15cm","hits":3,"size":3,"points":40,"specialRules":["Règle optionnelle"]},"Gobelins des Forêts (*)":{"order":7,"type":"Infantrie","attack":"2/1","range":"15cm","hits":3,"size":3,"points":40,"specialRules":["Règle optionnelle"]},"Orques sur Sanglier":{"type":"Cavalerie","attack":4,"hits":3,"armour":"5+","size":3,"points":110,"order":8},"Gobelins sur Loup":{"type":"Cavalerie","attack":"2/1","range":"15cm","hits":3,"armour":"6+","size":3,"points":60,"order":9},"Orques Sauvages sur Sanglier (*)":{"order":10,"type":"Cavalerie","attack":5,"hits":3,"size":3,"points":110,"specialRules":["Règle optionnelle"]},"Gobelins sur Araignée (*)":{"order":11,"type":"Cavalerie","attack":2,"hits":3,"size":3,"points":60,"specialRules":["Règle optionnelle"]},"Chars à Loup":{"type":"Char","attack":3,"hits":3,"armour":"6+","size":3,"points":80,"max":3,"order":12},"Géant":{"type":"Monstre","attack":8,"hits":8,"armour":"5+","size":1,"points":150,"max":1,"order":13},"Lance-Rocs":{"type":"Artillerie","attack":"1/3","range":"60cm","hits":3,"size":1,"points":75,"max":1,"order":14},"Général Orque":{"type":"Général","attack":"+2","command":8,"size":1,"points":95,"armyMin":1,"armyMax":1,"upgrades":["Vouivre","Char"],"order":15},"Héros Orque":{"type":"Héros","attack":"+1","command":8,"size":1,"points":80,"max":2,"upgrades":["Vouivre","Char"],"order":16},"Chaman Orque":{"type":"Sorcier","attack":"+0","command":7,"size":1,"points":45,"max":1,"upgrades":["Vouivre","Char"],"order":17},"Héros Gobelin":{"type":"Héros","attack":"+1","command":7,"size":1,"points":45,"max":2,"upgrades":["Vouivre","Char"],"order":18},"Chaman Gobelin":{"type":"Sorcier","attack":"+0","command":6,"size":1,"points":30,"max":1,"upgrades":["Vouivre","Char"],"order":19}},"upgrades":{"Vouivre":{"type":"Monture Monstrueuse","attack":"+2","points":"+80","max":1,"order":0},"Char":{"type":"Char monté","attack":"+1","points":"+10","max":1,"order":1}},"magic":true,"specialRules":{"Trolls":{"text":["Les Trolls sont Lents. En revanche, les Trolls","peuvent se régénérer et récupérer de la plupart des","blessures. Pour représenter cela, à chaque round de","combat, avant que les socles aient été retirés, les Trolls","peuvent récupérer 1 Point de Vie sur les blessures restantes.","Les blessures régénérées comptent tout de même dans les","résultats de combats."],"order":1},"Ogres":{"text":["Si une unité d’ogres peut charger par initiative","une unité ennemie d’humains (littéralement humains, ce qui","inclut les Maraudeurs et Guerriers du Chaos mais pas les","Nains, les Elfes, ou les autres humanoïdes) au début de la","phase d’ordres, elle doit le faire. Cela est automatique et","leur général ne peut rien y faire !",""],"order":2},"Gobelins sur Loup":{"text":["La portée de tir des Gobelins sur","loups est limitée à 15 cm. Ils peuvent tirer sur les côtés et","derrière eux sans réorienter leur socle. Ils peuvent donc tirer","sur un ennemi qui les charge de n’importe quelle direction"],"order":3},"Géant":{"text":[" Les Géants doivent toujours recevoir des ordres","séparés. Ils ne peuvent pas rejoindre des brigades d’autres","troupes mais peuvent constituer des brigades de Géants. Si","vous tentez de donner un ordre à un Géant et que vous","échouez, vous devez effectuer un test pour voir ce qui se","passe. Ne vous inquiétez pas des éventuelles gaffes, elles","sont prises en compte dans le tableau ci-contre. Lancez un","dé et consultez le Tableau de Démence du Géant. Lorsque","les Géants sont regroupés en brigades, faites un jet par","Géant.","Un géant possède beaucoup de Points de Vie (8). Il serait","donc très difficile d’en venir à bout en un tour et, pour","compenser cette apparente invulnérabilité, la règle suivante","s’applique: si un géant a accumulé entre 4 et 7 blessures à la","fin d’une phase de tir ou de combat, il est Blessé. Une fois","qu’un Géant est Blessé, toutes les blessures accumulées","jusque-là sont annulées mais ses Attaques et ses Points de","Vie sont réduits de moitié pour le reste de la partie (4","Attaques et 4 PV).","Un Géant provoque la terreur.","","","Tableau de Démence du Géant","Résultat du D6","","1 )","Le Géant ne se déplace pas et ne combat pas durant","ce tour. Il reste là, à bayer aux corneilles !","","2 )","Déplacez le Géant vers le bord de table le plus","proche. S’il entre en contact avec une autre unité, il","l’attaque quel que soit son camp d’origine. S’il gagne","le combat, le Géant reste sur place.","","3 )","Le Géant ramasse un rocher, une épave de Char,","un arbre, voire une masure, enfin tout ce qui lui","tombe sous la main, et l’envoie sur l’unité la plus","proche se trouvant dans sa ligne de vue, qu’elle soit","amie ou ennemie. La portée du projectile est de","5D6cm et si cela suffit à atteindre sa cible, il","provoque 3 Attaques résolues normalement.","","4 )","Le Géant se déplace droit devant à pleine vitesse. S’il","atteint une unité ennemie, il combat tout à fait","normalement. Si une unité amie se trouve sur son","chemin, il la traverse s’il en a la place et s’il a assez","de mouvement. Dans le cas contraire, il s’arrête au","contact de l’unité. L’unité amie est alors","automatiquement confuse pour tout le reste de la","phase d’ordres, que le Géant l’ait traversée ou qu’il","se soit seulement arrêté à son contact. L’unité","récupère de sa confusion en même temps que les","autres unités, c’est-à-dire à la fin de la phase","d’ordres.","","5 )","Le Géant se déplace le plus vite possible vers l’unité","ennemie la plus proche qu’il voit. S’il atteint","l’ennemi, il combat normalement. Si des unités","amies sont sur le chemin, il les traversera en semant","la confusion, voir ci-dessus.","","6 )","Le Géant pousse un terrible beuglement et se","précipite sur l’unité ennemie visible la plus proche.","Déplacez le géant au double de sa pleine vitesse. S’il","atteint une unité ennemie, il combat en la piétinant","joyeusement et en doublant son nombre d’Attaques","lors du premier round de corps à corps."],"order":4},"Lance-Rocs":{"text":["Il peut tirer à 45° et sa portée est de 60cm. Il","ignore les sauvegardes mais ne peut effectuer de tir de","contre-charge."],"order":5},"Vouivre":{"text":["Un Général, un Chaman ou un Héros peut","chevaucher une Vouivre. Une Vouivre vole, augmentant","ainsi le mouvement de son cavalier de 60 cm à 100 cm, et","elle lui ajoute +2 Attaques. Une unité rejointe par une","Vouivre provoque la terreur chez ses ennemis."],"order":6},"Char":{"text":[" Un Général, un Chaman ou un Héros peut monter","sur un Char. Un personnage monté sur un char gagne +1","Attaque."],"order":7},"Orques Sauvages (*)":{"order":8,"text":["Les Orques Sauvages et Orques Sauvages","sur Sanglier sont Fanatiques. Ces unités ne peuvent rejoindre","que des brigades constituées d’autres Orques Sauvages."]},"Archers Gobelins (*)":{"order":9,"text":["Une unité d’Archers Gobelins de trois","socles déployés en ligne ajoute +1 tir à son total de tirs; une","telle unité a donc 4 tirs au lieu de 3. Le tir bonus est affecté à","n’importe quel socle, au choix du joueur."]},"Gobelins des Forêts (*)":{"order":10,"text":["Aucune pénalité de Commandement","due au terrain dense ne s’applique aux Gobelins des Forêts."]},"Gobelins sur Araignée (*)":{"order":11,"text":[" Au corps à corps, après avoir","effectué les attaques empoisonnées des Gobelins sur","Araignée, retirez 1 à l’Armure de la cible : une Armure de 3+,","passe à 4+, une de 4+ à 5+, une de 5+ à 6+. Une Armure de 6+","n’arrête pas les attaques."]},"Règle optionnelle":{"order":12,"text":["Ces règles optionnelles ne peuvent être utilisées qu’avec","l’accord de votre adversaire."]}},"spells":[{"roll":6,"range":"50cm, pas de ligne de vue.","text":["Un immense pied vert et spectral descend des cieux,","réduisant l’ennemi en bouillie et incrustant ses os dans le","sol.","Vous pouvez lancer ce sort sur une unité ennemie dans un","rayon de 50cm du chaman, que ce dernier puisse la voir ou","non. Le sort ne peut pas être lancé sur un ennemi engagé au","combat. L’unité subit six attaques résolues de la manière","habituelle. Une unité ne peut pas être repoussée par le Pied","de Gork car l’attaque vient d’en haut!",""],"name":"Pied de Gork"},{"roll":5,"range":"30cm, pas de ligne de vue.","text":["Dans un grand spasme, le chaman crache un énorme poing","vert qui frappe tout ce qui se trouve sur son chemin.","Tracez une droite imaginaire de 30 cm de long partant du","socle du chaman vers la direction de votre choix. Cette ligne","traverse les unités, mais s’arrête contre les décors qui","bloquent normalement les tirs, comme les collines, plus de 2","cm de forêt, etc.","Toute unité traversée par cette ligne subit trois attaques de","tir résolues de la manière habituelle. Notez que ce sort peut","affecter plusieurs unités ennemies, et affectera toutes les","unités traversées, y compris les vôtres. Les unités non","engagées, amies ou ennemies, peuvent être repoussées par","une Mandale comme par des tirs ordinaires. Les unités","engagées ne sont pas repoussées mais reportent les","blessures subies sur leur prochain round de combat. Ces","dernières comptent comme ayant été infligées durant le","combat.",""],"name":"Mandale"},{"roll":5,"range":"60cm, pas de ligne de vue","text":["La voix de Gork tonne sur le champ de bataille et repousse ses","ennemis d’un cri surpuissant.","Ce sort peut être lancé sur une unité ennemie dans un rayon","de 60cm du chaman, qu’il puisse la voir ou non, mais pas sur","une unité engagée au combat.","L’unité ennemie est repoussée par le hurlement de 5xD6 cm","vers son bord de table, comme par un tir, sauf que sa direction","est celle du chemin le plus court vers le bord de table. Une","unité ne peut pas être dispersée suite à un repoussement","causé par ce sort. Si l’unité quitte la table, elle doit effectuer","un jet comme indiqué dans les règles de base (voir «Unités","sortant de la Table» page 31).",""],"name":"Le Cri de Gork"},{"roll":4,"range":"30cm","text":["Le chaman invoque la puissance de la grande Waaagh! pour","encourager les peaux vertes.","Ce sort peut être lancé sur toute unité amie peau-verte","(orques, gobelins, orques noirs, gobelins sur loup, orques sur","sanglier, et tout autre type d’orque ou de gobelin, mais pas les","Trolls, les Géants, les Ogres et les troupes n’étant pas des","peaux-vertes) engagée au combat dans un rayon de 30cm du","chaman, qu’il puisse la voir ou non.","Le sort dure toute la prochaine phase de combat.","Chaque socle de l’unité, y compris les socles de Personnages","qui l’ont rejointe, ajoute +1 à sa valeur d’Attaques durant la","phase de Combat suivante."],"name":"Waaagh!"}],"armyRules":[""]}
+{
+  "name": "Orques & Gobelins",
+  "version": "Warmaster Evolution",
+  "group": 2,
+  "order": 0,
+  "units": {
+    "Guerriers Orques": {
+      "order": 0,
+      "type": "Infantrie",
+      "attack": 4,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 60,
+      "min": 2
+    },
+    "Orques Noirs": {
+      "order": 1,
+      "type": "Infantrie",
+      "attack": 4,
+      "hits": 4,
+      "armour": "5+",
+      "size": 3,
+      "points": 110,
+      "max": 1
+    },
+    "Gobelins": {
+      "order": 2,
+      "type": "Infantrie",
+      "attack": "2/1",
+      "range": "15cm",
+      "hits": 3,
+      "size": 3,
+      "points": 30,
+      "min": 2
+    },
+    "Trolls": {
+      "order": 3,
+      "type": "Infantrie",
+      "attack": 5,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 110,
+      "max": 3
+    },
+    "Ogres": {
+      "order": 4,
+      "type": "Infantrie",
+      "attack": 4,
+      "hits": 4,
+      "armour": "5+",
+      "size": 3,
+      "points": 105,
+      "max": 1
+    },
+    "Orques Sauvages (*)": {
+      "order": 5,
+      "type": "Infantrie",
+      "attack": 5,
+      "hits": 3,
+      "size": 3,
+      "points": 70,
+      "specialRules": [
+        "Règle optionnelle"
+      ]
+    },
+    "Archers Gobelins (*)": {
+      "order": 6,
+      "type": "Infantrie",
+      "attack": "2/1",
+      "range": "15cm",
+      "hits": 3,
+      "size": 3,
+      "points": 40,
+      "specialRules": [
+        "Règle optionnelle"
+      ]
+    },
+    "Gobelins des Forêts (*)": {
+      "order": 7,
+      "type": "Infantrie",
+      "attack": "2/1",
+      "range": "15cm",
+      "hits": 3,
+      "size": 3,
+      "points": 40,
+      "specialRules": [
+        "Règle optionnelle"
+      ]
+    },
+    "Orques sur Sanglier": {
+      "order": 8,
+      "type": "Cavalerie",
+      "attack": 4,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 110
+    },
+    "Gobelins sur Loup": {
+      "order": 9,
+      "type": "Cavalerie",
+      "attack": "2/1",
+      "range": "15cm",
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 60
+    },
+    "Orques Sauvages sur Sanglier (*)": {
+      "order": 10,
+      "type": "Cavalerie",
+      "attack": 5,
+      "hits": 3,
+      "size": 3,
+      "points": 110,
+      "specialRules": [
+        "Règle optionnelle"
+      ]
+    },
+    "Gobelins sur Araignée (*)": {
+      "order": 11,
+      "type": "Cavalerie",
+      "attack": 2,
+      "hits": 3,
+      "size": 3,
+      "points": 60,
+      "specialRules": [
+        "Règle optionnelle"
+      ]
+    },
+    "Chars à Loup": {
+      "order": 12,
+      "type": "Char",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 80,
+      "max": 3
+    },
+    "Géant": {
+      "order": 13,
+      "type": "Monstre",
+      "attack": 8,
+      "hits": 8,
+      "armour": "5+",
+      "size": 1,
+      "points": 150,
+      "max": 1
+    },
+    "Lance-Rocs": {
+      "order": 14,
+      "type": "Artillerie",
+      "attack": "1/3",
+      "range": "60cm",
+      "hits": 3,
+      "size": 1,
+      "points": 75,
+      "max": 1
+    },
+    "Général Orque": {
+      "order": 15,
+      "type": "Général",
+      "attack": "+2",
+      "command": 8,
+      "size": 1,
+      "points": 95,
+      "armyMin": 1,
+      "armyMax": 1,
+      "upgrades": [
+        "Vouivre",
+        "Char"
+      ]
+    },
+    "Héros Orque": {
+      "order": 16,
+      "type": "Héros",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 80,
+      "max": 2,
+      "upgrades": [
+        "Vouivre",
+        "Char"
+      ]
+    },
+    "Chaman Orque": {
+      "order": 17,
+      "type": "Sorcier",
+      "attack": "+0",
+      "command": 7,
+      "size": 1,
+      "points": 45,
+      "max": 1,
+      "upgrades": [
+        "Vouivre",
+        "Char"
+      ]
+    },
+    "Héros Gobelin": {
+      "order": 18,
+      "type": "Héros",
+      "attack": "+1",
+      "command": 7,
+      "size": 1,
+      "points": 45,
+      "max": 2,
+      "upgrades": [
+        "Vouivre",
+        "Char"
+      ]
+    },
+    "Chaman Gobelin": {
+      "order": 19,
+      "type": "Sorcier",
+      "attack": "+0",
+      "command": 6,
+      "size": 1,
+      "points": 30,
+      "max": 1,
+      "upgrades": [
+        "Vouivre",
+        "Char"
+      ]
+    }
+  },
+  "upgrades": {
+    "Vouivre": {
+      "order": 0,
+      "type": "Monture Monstrueuse",
+      "attack": "+2",
+      "points": "+80",
+      "max": 1
+    },
+    "Char": {
+      "order": 1,
+      "type": "Char monté",
+      "attack": "+1",
+      "points": "+10",
+      "max": 1
+    }
+  },
+  "magic": true,
+  "armyRules": [
+    ""
+  ],
+  "specialRules": {
+    "Trolls": {
+      "order": 1,
+      "text": [
+        "Les Trolls sont Lents. En revanche, les Trolls",
+        "peuvent se régénérer et récupérer de la plupart des",
+        "blessures. Pour représenter cela, à chaque round de",
+        "combat, avant que les socles aient été retirés, les Trolls",
+        "peuvent récupérer 1 Point de Vie sur les blessures restantes.",
+        "Les blessures régénérées comptent tout de même dans les",
+        "résultats de combats."
+      ]
+    },
+    "Ogres": {
+      "order": 2,
+      "text": [
+        "Si une unité d’ogres peut charger par initiative",
+        "une unité ennemie d’humains (littéralement humains, ce qui",
+        "inclut les Maraudeurs et Guerriers du Chaos mais pas les",
+        "Nains, les Elfes, ou les autres humanoïdes) au début de la",
+        "phase d’ordres, elle doit le faire. Cela est automatique et",
+        "leur général ne peut rien y faire !",
+        ""
+      ]
+    },
+    "Gobelins sur Loup": {
+      "order": 3,
+      "text": [
+        "La portée de tir des Gobelins sur",
+        "loups est limitée à 15 cm. Ils peuvent tirer sur les côtés et",
+        "derrière eux sans réorienter leur socle. Ils peuvent donc tirer",
+        "sur un ennemi qui les charge de n’importe quelle direction"
+      ]
+    },
+    "Géant": {
+      "order": 4,
+      "text": [
+        " Les Géants doivent toujours recevoir des ordres",
+        "séparés. Ils ne peuvent pas rejoindre des brigades d’autres",
+        "troupes mais peuvent constituer des brigades de Géants. Si",
+        "vous tentez de donner un ordre à un Géant et que vous",
+        "échouez, vous devez effectuer un test pour voir ce qui se",
+        "passe. Ne vous inquiétez pas des éventuelles gaffes, elles",
+        "sont prises en compte dans le tableau ci-contre. Lancez un",
+        "dé et consultez le Tableau de Démence du Géant. Lorsque",
+        "les Géants sont regroupés en brigades, faites un jet par",
+        "Géant.",
+        "Un géant possède beaucoup de Points de Vie (8). Il serait",
+        "donc très difficile d’en venir à bout en un tour et, pour",
+        "compenser cette apparente invulnérabilité, la règle suivante",
+        "s’applique: si un géant a accumulé entre 4 et 7 blessures à la",
+        "fin d’une phase de tir ou de combat, il est Blessé. Une fois",
+        "qu’un Géant est Blessé, toutes les blessures accumulées",
+        "jusque-là sont annulées mais ses Attaques et ses Points de",
+        "Vie sont réduits de moitié pour le reste de la partie (4",
+        "Attaques et 4 PV).",
+        "Un Géant provoque la terreur.",
+        "",
+        "",
+        "Tableau de Démence du Géant",
+        "Résultat du D6",
+        "",
+        "1 )",
+        "Le Géant ne se déplace pas et ne combat pas durant",
+        "ce tour. Il reste là, à bayer aux corneilles !",
+        "",
+        "2 )",
+        "Déplacez le Géant vers le bord de table le plus",
+        "proche. S’il entre en contact avec une autre unité, il",
+        "l’attaque quel que soit son camp d’origine. S’il gagne",
+        "le combat, le Géant reste sur place.",
+        "",
+        "3 )",
+        "Le Géant ramasse un rocher, une épave de Char,",
+        "un arbre, voire une masure, enfin tout ce qui lui",
+        "tombe sous la main, et l’envoie sur l’unité la plus",
+        "proche se trouvant dans sa ligne de vue, qu’elle soit",
+        "amie ou ennemie. La portée du projectile est de",
+        "5D6cm et si cela suffit à atteindre sa cible, il",
+        "provoque 3 Attaques résolues normalement.",
+        "",
+        "4 )",
+        "Le Géant se déplace droit devant à pleine vitesse. S’il",
+        "atteint une unité ennemie, il combat tout à fait",
+        "normalement. Si une unité amie se trouve sur son",
+        "chemin, il la traverse s’il en a la place et s’il a assez",
+        "de mouvement. Dans le cas contraire, il s’arrête au",
+        "contact de l’unité. L’unité amie est alors",
+        "automatiquement confuse pour tout le reste de la",
+        "phase d’ordres, que le Géant l’ait traversée ou qu’il",
+        "se soit seulement arrêté à son contact. L’unité",
+        "récupère de sa confusion en même temps que les",
+        "autres unités, c’est-à-dire à la fin de la phase",
+        "d’ordres.",
+        "",
+        "5 )",
+        "Le Géant se déplace le plus vite possible vers l’unité",
+        "ennemie la plus proche qu’il voit. S’il atteint",
+        "l’ennemi, il combat normalement. Si des unités",
+        "amies sont sur le chemin, il les traversera en semant",
+        "la confusion, voir ci-dessus.",
+        "",
+        "6 )",
+        "Le Géant pousse un terrible beuglement et se",
+        "précipite sur l’unité ennemie visible la plus proche.",
+        "Déplacez le géant au double de sa pleine vitesse. S’il",
+        "atteint une unité ennemie, il combat en la piétinant",
+        "joyeusement et en doublant son nombre d’Attaques",
+        "lors du premier round de corps à corps."
+      ]
+    },
+    "Lance-Rocs": {
+      "order": 5,
+      "text": [
+        "Il peut tirer à 45° et sa portée est de 60cm. Il",
+        "ignore les sauvegardes mais ne peut effectuer de tir de",
+        "contre-charge."
+      ]
+    },
+    "Vouivre": {
+      "order": 6,
+      "text": [
+        "Un Général, un Chaman ou un Héros peut",
+        "chevaucher une Vouivre. Une Vouivre vole, augmentant",
+        "ainsi le mouvement de son cavalier de 60 cm à 100 cm, et",
+        "elle lui ajoute +2 Attaques. Une unité rejointe par une",
+        "Vouivre provoque la terreur chez ses ennemis."
+      ]
+    },
+    "Char": {
+      "order": 7,
+      "text": [
+        " Un Général, un Chaman ou un Héros peut monter",
+        "sur un Char. Un personnage monté sur un char gagne +1",
+        "Attaque."
+      ]
+    },
+    "Orques Sauvages (*)": {
+      "order": 8,
+      "text": [
+        "Les Orques Sauvages et Orques Sauvages",
+        "sur Sanglier sont Fanatiques. Ces unités ne peuvent rejoindre",
+        "que des brigades constituées d’autres Orques Sauvages."
+      ]
+    },
+    "Archers Gobelins (*)": {
+      "order": 9,
+      "text": [
+        "Une unité d’Archers Gobelins de trois",
+        "socles déployés en ligne ajoute +1 tir à son total de tirs; une",
+        "telle unité a donc 4 tirs au lieu de 3. Le tir bonus est affecté à",
+        "n’importe quel socle, au choix du joueur."
+      ]
+    },
+    "Gobelins des Forêts (*)": {
+      "order": 10,
+      "text": [
+        "Aucune pénalité de Commandement",
+        "due au terrain dense ne s’applique aux Gobelins des Forêts."
+      ]
+    },
+    "Gobelins sur Araignée (*)": {
+      "order": 11,
+      "text": [
+        " Au corps à corps, après avoir",
+        "effectué les attaques empoisonnées des Gobelins sur",
+        "Araignée, retirez 1 à l’Armure de la cible : une Armure de 3+,",
+        "passe à 4+, une de 4+ à 5+, une de 5+ à 6+. Une Armure de 6+",
+        "n’arrête pas les attaques."
+      ]
+    },
+    "Règle optionnelle": {
+      "order": 12,
+      "text": [
+        "Ces règles optionnelles ne peuvent être utilisées qu’avec",
+        "l’accord de votre adversaire."
+      ]
+    }
+  },
+  "spells": [
+    {
+      "name": "Pied de Gork",
+      "roll": 6,
+      "range": "50cm, pas de ligne de vue.",
+      "text": [
+        "Un immense pied vert et spectral descend des cieux,",
+        "réduisant l’ennemi en bouillie et incrustant ses os dans le",
+        "sol.",
+        "Vous pouvez lancer ce sort sur une unité ennemie dans un",
+        "rayon de 50cm du chaman, que ce dernier puisse la voir ou",
+        "non. Le sort ne peut pas être lancé sur un ennemi engagé au",
+        "combat. L’unité subit six attaques résolues de la manière",
+        "habituelle. Une unité ne peut pas être repoussée par le Pied",
+        "de Gork car l’attaque vient d’en haut!",
+        ""
+      ]
+    },
+    {
+      "name": "Mandale",
+      "roll": 5,
+      "range": "30cm, pas de ligne de vue.",
+      "text": [
+        "Dans un grand spasme, le chaman crache un énorme poing",
+        "vert qui frappe tout ce qui se trouve sur son chemin.",
+        "Tracez une droite imaginaire de 30 cm de long partant du",
+        "socle du chaman vers la direction de votre choix. Cette ligne",
+        "traverse les unités, mais s’arrête contre les décors qui",
+        "bloquent normalement les tirs, comme les collines, plus de 2",
+        "cm de forêt, etc.",
+        "Toute unité traversée par cette ligne subit trois attaques de",
+        "tir résolues de la manière habituelle. Notez que ce sort peut",
+        "affecter plusieurs unités ennemies, et affectera toutes les",
+        "unités traversées, y compris les vôtres. Les unités non",
+        "engagées, amies ou ennemies, peuvent être repoussées par",
+        "une Mandale comme par des tirs ordinaires. Les unités",
+        "engagées ne sont pas repoussées mais reportent les",
+        "blessures subies sur leur prochain round de combat. Ces",
+        "dernières comptent comme ayant été infligées durant le",
+        "combat.",
+        ""
+      ]
+    },
+    {
+      "name": "Le Cri de Gork",
+      "roll": 5,
+      "range": "60cm, pas de ligne de vue",
+      "text": [
+        "La voix de Gork tonne sur le champ de bataille et repousse ses",
+        "ennemis d’un cri surpuissant.",
+        "Ce sort peut être lancé sur une unité ennemie dans un rayon",
+        "de 60cm du chaman, qu’il puisse la voir ou non, mais pas sur",
+        "une unité engagée au combat.",
+        "L’unité ennemie est repoussée par le hurlement de 5xD6 cm",
+        "vers son bord de table, comme par un tir, sauf que sa direction",
+        "est celle du chemin le plus court vers le bord de table. Une",
+        "unité ne peut pas être dispersée suite à un repoussement",
+        "causé par ce sort. Si l’unité quitte la table, elle doit effectuer",
+        "un jet comme indiqué dans les règles de base (voir «Unités",
+        "sortant de la Table» page 31).",
+        ""
+      ]
+    },
+    {
+      "name": "Waaagh!",
+      "roll": 4,
+      "range": "30cm",
+      "text": [
+        "Le chaman invoque la puissance de la grande Waaagh! pour",
+        "encourager les peaux vertes.",
+        "Ce sort peut être lancé sur toute unité amie peau-verte",
+        "(orques, gobelins, orques noirs, gobelins sur loup, orques sur",
+        "sanglier, et tout autre type d’orque ou de gobelin, mais pas les",
+        "Trolls, les Géants, les Ogres et les troupes n’étant pas des",
+        "peaux-vertes) engagée au combat dans un rayon de 30cm du",
+        "chaman, qu’il puisse la voir ou non.",
+        "Le sort dure toute la prochaine phase de combat.",
+        "Chaque socle de l’unité, y compris les socles de Personnages",
+        "qui l’ont rejointe, ajoute +1 à sa valeur d’Attaques durant la",
+        "phase de Combat suivante."
+      ]
+    }
+  ]
+}

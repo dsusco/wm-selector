@@ -18,7 +18,7 @@
       ]
     },
     "Men-at-Arms": {
-      "order": 2,
+      "order": 1,
       "type": "Infantry",
       "attack": 3,
       "hits": 3,
@@ -40,12 +40,12 @@
       "size": 3,
       "points": 45,
       "min": 4,
+      "specialRules": [
+        "Longbow"
+      ],
       "upgrades": [
         "Skirmisher Longbowmen",
         "Mounted Longbowmen"
-      ],
-      "specialRules": [
-        "Longbow"
       ]
     },
     "Billmen": {
@@ -99,9 +99,9 @@
       "order": 7,
       "type": "General",
       "attack": "+2",
+      "command": 8,
       "size": 1,
       "points": 100,
-      "command": 8,
       "armyMin": 1,
       "armyMax": 1,
       "upgrades": [
@@ -120,6 +120,7 @@
   },
   "upgrades": {
     "Men-at-Arms": {
+      "order": 0,
       "type": "Cavalry",
       "attack": 3,
       "hits": 3,
@@ -128,46 +129,45 @@
       "points": "+50",
       "specialRules": [
         "Knights"
-      ],
-      "order": 1
+      ]
     },
     "Skirmisher Longbowmen": {
+      "order": 1,
       "type": "Infantry",
       "attack": 1,
       "range": 30,
       "hits": 3,
       "size": 3,
-      "max": "Up to Half",
       "points": -10,
+      "max": "Up to Half",
       "specialRules": [
         "Longbow",
         "Skirmish"
       ],
       "requiredUnits": [
         "Longbowmen"
-      ],
-      "order": 2
+      ]
     },
     "Mounted Longbowmen": {
+      "order": 2,
       "type": "Infantry",
       "attack": 2,
       "range": 30,
       "hits": 3,
       "size": 3,
-      "max": 2,
       "points": "+10",
+      "max": 2,
       "specialRules": [
         "Longbow",
         "Mounted Infantry"
-      ],
-      "order": 3
+      ]
     },
     "Henry V": {
+      "order": 3,
       "type": "Special",
       "command": "+1",
-      "armyMax": 1,
       "points": "+40",
-      "order": 4
+      "armyMax": 1
     }
   },
   "specialRules": {

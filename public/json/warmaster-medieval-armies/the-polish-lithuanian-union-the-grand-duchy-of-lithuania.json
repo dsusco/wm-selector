@@ -5,75 +5,75 @@
   "order": 4,
   "units": {
     "Nobles": {
+      "order": 0,
       "type": "Cavalry",
       "attack": 3,
       "hits": 3,
       "armour": "4+",
       "size": 3,
-      "min": 1,
       "points": 135,
-      "order": 0,
+      "min": 1,
       "specialRules": [
         "Knights"
       ]
     },
     "Retainers": {
+      "order": 1,
       "type": "Cavalry",
       "attack": 3,
       "hits": 3,
       "armour": "5+",
       "size": 3,
-      "min": 1,
       "points": 110,
-      "order": 1,
+      "min": 1,
       "specialRules": [
         "Shock"
       ]
     },
     "Light Cavalry": {
+      "order": 2,
       "type": "Cavalry",
       "attack": 2,
-      "hits": 3,
       "range": 15,
+      "hits": 3,
       "armour": "6+",
       "size": 3,
-      "min": 2,
       "points": 60,
+      "min": 2,
       "specialRules": [
         "Skirmish"
-      ],
-      "order": 2
+      ]
     },
     "General": {
+      "order": 3,
       "type": "General",
       "attack": "+2",
       "command": 8,
       "size": 1,
+      "points": 100,
       "armyMin": 1,
       "armyMax": 1,
-      "points": 100,
-      "order": 3,
       "upgrades": [
         "Prayer"
       ]
     },
     "Leader": {
+      "order": 4,
       "type": "Leader",
       "attack": "+1",
       "command": 8,
       "size": 1,
-      "max": 2,
       "points": 80,
-      "order": 4
+      "max": 2
     }
   },
   "upgrades": {
     "Prayer": {
+      "order": 0,
       "type": "Special",
       "points": "+10",
-      "armyMax": 1,
-      "order": 0
-    }    
+      "armyMax": 1
+    }
   },
   "specialRules": {
     "Knights": {

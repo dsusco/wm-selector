@@ -5,144 +5,144 @@
   "order": 1,
   "units": {
     "Veteran Legion": {
+      "order": 0,
       "type": "Infantry",
       "attack": 4,
       "hits": 3,
       "armour": "5+",
       "size": 3,
-      "max": 2,
       "points": 90,
+      "max": 2,
       "specialRules": [
         "Legion"
-      ],
-      "order": 0
+      ]
     },
     "Legion": {
+      "order": 1,
       "type": "Infantry",
       "attack": 3,
       "hits": 3,
       "armour": "5+",
       "size": 3,
-      "min": 4,
       "points": 80,
+      "min": 4,
       "specialRules": [
         "Legion"
-      ],
-      "order": 1
+      ]
     },
     "Auxiliaries": {
+      "order": 2,
       "type": "Infantry",
       "attack": 3,
       "hits": 3,
       "armour": "6+",
       "size": 3,
-      "max": 8,
       "points": 45,
-      "order": 2
+      "max": 8
     },
     "Archers": {
+      "order": 3,
       "type": "Infantry",
       "attack": 2,
       "range": 30,
       "hits": 3,
       "size": 3,
-      "max": 4,
       "points": 40,
-      "order": 3
+      "max": 4
     },
     "Skirmishers": {
+      "order": 4,
       "type": "Infantry",
       "attack": 1,
       "range": 15,
       "hits": 3,
       "size": 3,
-      "max": 4,
       "points": 30,
+      "max": 4,
       "specialRules": [
         "Skirmish"
-      ],
-      "order": 4
+      ]
     },
     "Heavy Cavalry": {
+      "order": 5,
       "type": "Cavalry",
       "attack": 3,
       "hits": 3,
       "armour": "5+",
       "size": 3,
-      "max": 2,
       "points": 80,
-      "order": 5
+      "max": 2
     },
     "Light Cavalry": {
+      "order": 6,
       "type": "Cavalry",
       "attack": 2,
       "range": 15,
       "hits": 3,
       "armour": "6+",
       "size": 3,
-      "max": 2,
       "points": 60,
+      "max": 2,
       "specialRules": [
         "Skirmish"
-      ],
-      "order": 6
+      ]
     },
     "Scorpion": {
+      "order": 7,
       "type": "Artillery",
       "attack": 1,
       "range": 40,
       "hits": 3,
       "size": 2,
-      "max": 1,
       "points": 50,
+      "max": 1,
       "specialRules": [
         "Light Artillery"
-      ],
-      "order": 7
+      ]
     },
     "Onager": {
+      "order": 8,
       "type": "Artillery",
       "attack": 1,
       "range": "3x60",
       "hits": 3,
       "size": 1,
-      "max": 1,
       "points": 75,
+      "max": 1,
       "specialRules": [
         "Heavy Artillery",
         "Slow"
-      ],
-      "order": 8
+      ]
     },
     "General": {
+      "order": 9,
       "type": "General",
       "attack": "+2",
       "command": 9,
       "size": 1,
+      "points": 125,
       "armyMin": 1,
       "armyMax": 1,
-      "points": 125,
       "upgrades": [
         "Portents"
-      ],
-      "order": 9
+      ]
     },
     "Legate": {
+      "order": 10,
       "type": "Leader",
       "attack": "+1",
       "command": 8,
       "size": 1,
-      "max": 2,
       "points": 80,
-      "order": 10
+      "max": 2
     }
   },
   "upgrades": {
     "Portents": {
+      "order": 0,
       "type": "Special",
-      "armyMax": 1,
       "points": "+10",
-      "order": 0
+      "armyMax": 1
     }
   },
   "specialRules": {
@@ -162,10 +162,10 @@
       "order": 5
     },
     "Portents": {
+      "order": 6,
       "text": [
         "The General can take the portents before the battle. This allows the Genral to re-roll one failed Command roll once during the battle. Take the Command test again—if successful the order is issued and the General can continue giving further orders if you wish."
-      ],
-      "order": 6
+      ]
     }
   }
 }

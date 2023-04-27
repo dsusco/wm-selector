@@ -1,21 +1,8 @@
 {
-  "specialRules": {
-    "Shieldwall": {
-      "order": 1
-    },
-    "Skirmish": {
-      "order": 2
-    },
-    "Shock": {
-      "order": 3
-    },
-    "Charlemagne": {
-      "order": 4,
-      "text": [
-        "Charlemagne has a Command value of 9. Charlemagne can re-roll one failed Command roll once during the battle. Take the Command test again – if successful, the order is issued and Charlemagne can continue giving futher orders if you wish. Note – this is Command 9 cobined with the standard 'Portent' rule."
-      ]
-    }
-  },
+  "name": "The Carolingian Franks",
+  "version": "Warmaster Ancient Armies",
+  "group": "The Dark Ages",
+  "order": 3,
   "units": {
     "Spearmen": {
       "order": 0,
@@ -110,28 +97,28 @@
   "upgrades": {
     "Guard Cavalry": {
       "order": 0,
-      "specialRules": [
-        "Shock"
-      ],
       "type": "Cavalry",
       "attack": 4,
       "hits": 4,
       "armour": "5+",
       "size": 3,
       "points": "+20",
-      "armyMax": 1
+      "armyMax": 1,
+      "specialRules": [
+        "Shock"
+      ]
     },
     "Dismounted Cavalry": {
       "order": 1,
-      "specialRules": [
-        "Shieldwall"
-      ],
       "type": "Infantry",
       "attack": 3,
       "hits": 3,
       "armour": "5+",
       "size": 3,
-      "points": "-45"
+      "points": "-45",
+      "specialRules": [
+        "Shieldwall"
+      ]
     },
     "Charlemagne": {
       "order": 2,
@@ -143,8 +130,21 @@
       "armyMax": 1
     }
   },
-  "name": "The Carolingian Franks",
-  "version": "Warmaster Ancient Armies",
-  "group": "The Dark Ages",
-  "order": 3
+  "specialRules": {
+    "Shieldwall": {
+      "order": 1
+    },
+    "Skirmish": {
+      "order": 2
+    },
+    "Shock": {
+      "order": 3
+    },
+    "Charlemagne": {
+      "order": 4,
+      "text": [
+        "Charlemagne has a Command value of 9. Charlemagne can re-roll one failed Command roll once during the battle. Take the Command test again – if successful, the order is issued and Charlemagne can continue giving futher orders if you wish. Note – this is Command 9 cobined with the standard 'Portent' rule."
+      ]
+    }
+  }
 }

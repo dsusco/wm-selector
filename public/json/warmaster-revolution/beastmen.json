@@ -5,6 +5,7 @@
   "order": 5,
   "units": {
     "Beastherd": {
+      "order": 0,
       "type": "Infantry",
       "attack": 3,
       "hits": 3,
@@ -12,12 +13,12 @@
       "size": 3,
       "points": 45,
       "min": 2,
-      "order": 0,
       "specialRules": [
         "Beastherd/Herdkin"
       ]
     },
     "Herdkin": {
+      "order": 1,
       "type": "Infantry",
       "attack": "3/1",
       "range": "30cm",
@@ -25,31 +26,31 @@
       "size": 3,
       "points": 55,
       "min": 2,
-      "order": 1,
       "specialRules": [
         "Beastherd/Herdkin"
       ]
     },
     "Bestigors": {
+      "order": 2,
       "type": "Infantry",
       "attack": 4,
       "hits": 3,
       "armour": "5+",
       "size": 3,
       "points": 75,
-      "max": 2,
-      "order": 2
+      "max": 2
     },
     "Minotaurs": {
+      "order": 3,
       "type": "Infantry",
       "attack": 5,
       "hits": 4,
       "size": 3,
       "points": 80,
-      "max": 2,
-      "order": 3
+      "max": 2
     },
     "Centigors": {
+      "order": 4,
       "type": "Cavalry",
       "attack": "3/1",
       "range": "15cm",
@@ -57,39 +58,39 @@
       "armour": "6+",
       "size": 3,
       "points": 75,
-      "max": 2,
-      "order": 4
+      "max": 2
     },
     "Chaos Hounds": {
+      "order": 5,
       "type": "Cavalry",
       "attack": 3,
       "hits": 3,
       "size": 3,
       "points": 40,
-      "max": 6,
-      "order": 5
+      "max": 6
     },
     "Tuskgor Chariots": {
+      "order": 6,
       "type": "Chariot",
       "attack": 3,
       "hits": 3,
       "armour": "5+",
       "size": 3,
       "points": 95,
-      "max": 4,
-      "order": 6
+      "max": 4
     },
     "Dragon Ogres": {
+      "order": 7,
       "type": "Monster",
       "attack": 6,
       "hits": 4,
       "armour": "5+",
       "size": 3,
       "points": 230,
-      "max": 1,
-      "order": 7
+      "max": 1
     },
     "Chaos Spawn": {
+      "order": 8,
       "type": "Monster",
       "attack": "3/3",
       "range": "15cm",
@@ -97,70 +98,69 @@
       "armour": "3+",
       "size": 1,
       "points": 110,
-      "max": 2,
-      "order": 8
+      "max": 2
     },
     "Dragon Ogre Shaggoth": {
+      "order": 9,
       "type": "Monster",
       "attack": 8,
       "hits": 8,
       "armour": "5+",
       "size": 1,
       "points": 160,
-      "max": 1,
-      "order": 9
+      "max": 1
     },
     "Beastlord": {
+      "order": 10,
       "type": "General",
       "attack": "+2",
       "command": 9,
+      "size": 1,
       "points": 125,
       "armyMin": 1,
       "armyMax": 1,
       "upgrades": [
         "Tuskgor Chariot"
-      ],
-      "order": 10,
-      "size": 1
+      ]
     },
     "Doombull": {
+      "order": 11,
       "type": "Hero",
       "attack": "+2",
       "command": 6,
+      "size": 1,
       "points": 80,
-      "armyMax": 1,
-      "order": 11,
-      "size": 1
+      "armyMax": 1
     },
     "Wargor": {
+      "order": 12,
       "type": "Hero",
       "attack": "+1",
       "command": 8,
+      "size": 1,
       "points": 80,
       "max": 1,
       "upgrades": [
         "Tuskgor Chariot"
-      ],
-      "order": 12,
-      "size": 1
+      ]
     },
     "Bray Shaman": {
+      "order": 13,
       "type": "Wizard",
       "attack": "+0",
       "command": 8,
+      "size": 1,
       "points": 80,
-      "max": 1,
-      "order": 13,
-      "size": 1
+      "max": 1
     }
   },
   "upgrades": {
     "Tuskgor Chariot": {
+      "order": 0,
       "type": "Chariot Mount",
       "attack": "+1",
       "points": "+10",
-      "max": 1,
-      "order": 0
+      "max": 1
     }
   },
   "magic": true,
@@ -231,44 +231,44 @@
   },
   "spells": [
     {
+      "name": "Screaming Arrows",
       "roll": 4,
       "range": "30cm",
       "text": [
         "*The pulsating energies of Chaos radiate from the Shaman and envelop a cloud of arrows launched from the Beastmen’s archers. Falling around the enemy they are surrounded by ill-omened hallucinations and terrifying phantoms, arousing terror amongst the enemy.*",
         "",
         "This spell can be cast on a single unengaged unit of Herdkin, Centigor, or Chaos Spawn. The Shaman must be able to see his target to use this spell. When the spell is successfully cast the target unit gains Screaming Arrows for this shooting phase. When a unit is driven back as a result of hits scored by a unit with Screaming Arrows, then any dice rolled in respect of drivebacks for those hits will cause Confusion on the roll of 4, 5 or 6 (rather than 6 as normal). Note that if a unit has taken other hits as well it will be necessary to roll the Screaming Arrow dice separately."
-      ],
-      "name": "Screaming Arrows"
+      ]
     },
     {
+      "name": "Hunting for Gore!",
       "roll": 5,
       "range": "30cm",
       "text": [
         "*The Shaman’s magic power arouses in the herd an uncontrollable desire to tear asunder any enemy and feast on their bloody remains. Rows of wild warriors charge headlong into their foes.*",
         "",
         "The spell can be cast on unengaged friendly unit of infantry or cavalry within range regardless of whether the Shaman can see it or not. The spell affects only a single unit, never a brigade. The unit can be moved just as if it had received an order in the Command phase. Character stands that have joined the unit will not move with it - they remain where they are."
-      ],
-      "name": "Hunting for Gore!"
+      ]
     },
     {
+      "name": "Chaos Bolt",
       "roll": 5,
       "range": "30cm",
       "text": [
         "*The dark power of Chaos pulses through the Shaman. A foul incantation flows from his mouth which calls down a mighty lightning bolt from the heavens above that strikes the enemy.*",
         "",
         "This spell can be cast on an enemy unit. The Shaman must be able to see his target to use this spell. The spell cannot be directed at a unit engaged in combat. The Chaos Bolt is treated like three ordinary shooting attacks except that armour has no effect (all targets count as having no armour). A unit can be driven back by a Chaos Bolt as with ordinary shooting."
-      ],
-      "name": "Chaos Bolt"
+      ]
     },
     {
+      "name": "Power of Herd",
       "roll": 6,
       "range": "30cm",
       "text": [
         "*The Beastman Herd rise on the Shaman’s command. Emboldened by his fervour they charge at the enemy with unbridled fury.*",
         "",
         "This spell can be cast on all Beastherd, Herdkin and Centigors units engaged in close combat and within range regardless of whether the Shaman can see them or not. When the spell is successfully cast, each affected unit receives additional +1 Attack per stand (including character stands) for the duration of its first following combat engagement. Additional Attack bonus does not apply when these units advance into next enemies."
-      ],
-      "name": "Power of Herd"
+      ]
     }
   ]
 }

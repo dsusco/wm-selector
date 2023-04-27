@@ -5,114 +5,114 @@
   "order": 6,
   "units": {
     "Spearmen": {
+      "order": 0,
       "type": "Infantry",
       "attack": 3,
       "hits": 3,
       "armour": "6+",
       "size": 3,
-      "min": 2,
       "points": 45,
-      "order": 0
+      "min": 2
     },
     "Archers": {
+      "order": 1,
       "type": "Infantry",
       "attack": 2,
       "range": 30,
       "hits": 3,
       "size": 3,
-      "max": 2,
       "points": 40,
-      "order": 1
+      "max": 2
     },
     "Peasants": {
+      "order": 2,
       "type": "Infantry",
       "attack": 2,
       "hits": 2,
       "size": 3,
-      "max": 4,
       "points": 20,
-      "order": 2
+      "max": 4
     },
     "Knights": {
+      "order": 3,
       "type": "Cavalry",
       "attack": 3,
       "hits": 3,
       "armour": "5+",
       "size": 3,
-      "min": 2,
       "points": 110,
+      "min": 2,
       "specialRules": [
         "Shock"
-      ],
-      "order": 3
+      ]
     },
     "Retainers": {
+      "order": 4,
       "type": "Cavalry",
       "attack": 2,
       "range": 15,
       "hits": 3,
       "armour": "6+",
       "size": 3,
-      "max": 4,
       "points": 60,
+      "max": 4,
       "specialRules": [
         "Skirmish"
-      ],
-      "order": 4
+      ]
     },
     "Mounted Skirmishers": {
+      "order": 5,
       "type": "Cavalry",
       "attack": 1,
       "range": 15,
       "hits": 3,
       "size": 3,
-      "max": 2,
       "points": 40,
+      "max": 2,
       "specialRules": [
         "Skirmish"
-      ],
-      "order": 5
+      ]
     },
     "General": {
+      "order": 6,
       "type": "General",
       "attack": "+2",
       "command": 8,
       "size": 1,
+      "points": 100,
       "armyMin": 1,
       "armyMax": 1,
-      "points": 100,
       "upgrades": [
         "William"
-      ],
-      "order": 6
+      ]
     },
     "Leader": {
+      "order": 7,
       "type": "Leader",
       "attack": "+1",
       "command": 8,
       "size": 1,
-      "max": 1,
       "points": 80,
-      "order": 7
+      "max": 1
     },
     "Bishop": {
+      "order": 8,
       "type": "Subordinate",
       "attack": "+1",
       "command": 8,
       "size": 1,
-      "max": 1,
       "points": 40,
-      "order": 8
+      "max": 1
     }
   },
   "upgrades": {
     "William": {
+      "order": 0,
       "type": "General",
       "attack": "+2",
       "command": 8,
-      "armyMax": 1,
       "points": "+20",
-      "order": 0
+      "armyMax": 1
     }
   },
   "specialRules": {
@@ -123,10 +123,10 @@
       "order": 2
     },
     "William": {
+      "order": 3,
       "text": [
         "Upgrade General to Duke William. If the army is led by Duke William, his determination and reputation entitle the General to re-roll one of his failed Command rolls during the battle, adding a further 1 to his Command value for that re-roll only. Eg, where  a 7 is required and the result fails then 8 or less is required for the re-roll. Take the Command test again&mdash;if successful, the order is issued and the General can continue giving further orders if you wish."
-      ],
-      "order": 3
+      ]
     }
   }
 }

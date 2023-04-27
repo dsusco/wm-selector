@@ -1,18 +1,8 @@
 {
-  "specialRules": {
-    "Skirmish": {
-      "order": 1
-    },
-    "Shock": {
-      "order": 2
-    },
-    "Judah Maccabee": {
-      "order": 4,
-      "text": [
-        "This represents an inspirational religious leader such as Judah and his father and brothers. If any commander fails to give an order to a unit that is within 20cm of Judah Maccabee then the dice can be re-rolled – if the re-roll is successful, the order is given and further orders can be issued by the same commander exactly as if the order had been successful in the first place. The re-roll applies to orders given by the General himself as well as by other commanders. Any number of re-rolls are possible, even from the same commander, but not that (as always) a re-roll can never be re-rolled. There is no such thing as a re-re-roll in any circumstances!"
-      ]
-    }
-  },
+  "name": "The Judean Revolt",
+  "version": "Warmaster Ancient Armies",
+  "group": "The Rise of Rome",
+  "order": 1,
   "units": {
     "Infantry": {
       "order": 0,
@@ -77,23 +67,23 @@
       "order": 5,
       "type": "General",
       "attack": "+2",
+      "command": 9,
       "size": 1,
       "points": 125,
       "armyMin": 1,
       "armyMax": 1,
       "upgrades": [
         "Judah Maccabee"
-      ],
-      "command": 9
+      ]
     },
     "Subordinate": {
       "order": 6,
       "type": "Subordinate",
       "attack": "+1",
+      "command": 7,
       "size": 1,
       "points": 30,
-      "max": 4,
-      "command": 7
+      "max": 4
     }
   },
   "upgrades": {
@@ -107,8 +97,18 @@
       "armyMax": 1
     }
   },
-  "name": "The Judean Revolt",
-  "version": "Warmaster Ancient Armies",
-  "group": "The Rise of Rome",
-  "order": 1
+  "specialRules": {
+    "Skirmish": {
+      "order": 1
+    },
+    "Shock": {
+      "order": 2
+    },
+    "Judah Maccabee": {
+      "order": 3,
+      "text": [
+        "This represents an inspirational religious leader such as Judah and his father and brothers. If any commander fails to give an order to a unit that is within 20cm of Judah Maccabee then the dice can be re-rolled – if the re-roll is successful, the order is given and further orders can be issued by the same commander exactly as if the order had been successful in the first place. The re-roll applies to orders given by the General himself as well as by other commanders. Any number of re-rolls are possible, even from the same commander, but not that (as always) a re-roll can never be re-rolled. There is no such thing as a re-re-roll in any circumstances!"
+      ]
+    }
+  }
 }

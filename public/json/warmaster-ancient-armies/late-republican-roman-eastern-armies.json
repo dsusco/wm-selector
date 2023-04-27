@@ -1,30 +1,8 @@
 {
-  "specialRules": {
-    "Legion": {
-      "order": 1
-    },
-    "Unreliable": {
-      "order": 2
-    },
-    "Skirmish": {
-      "order": 3
-    },
-    "Camels": {
-      "order": 4
-    },
-    "Shock": {
-      "order": 5
-    },
-    "Slow": {
-      "order": 6
-    },
-    "Dictator": {
-      "order": 7,
-      "text": [
-        "The General can be upgrades to Dictator to represent such a mighty figure as Marius, Caesar, or Pompey. The Dictator can re-roll any of his failed Command tests once per turn. If the re-roll is failed, the Dictator's Command value drops by 1 – eg, from 9 to 8. The legions are nothing if not fickle and the popularity of the Dictator is based upon his success! The Dictator can continue to make one re-roll each turn as before, but each time he fails, his Command value drops a further 1."
-      ]
-    }
-  },
+  "name": "Late Republican Roman (Eastern Armies)",
+  "version": "Warmaster Ancient Armies",
+  "group": "The Rise of Rome",
+  "order": 6,
   "units": {
     "Veteran Legion": {
       "order": 0,
@@ -189,8 +167,8 @@
       "type": "Infantry",
       "attack": 3,
       "hits": 3,
-      "size": 3,
       "armour": "5+",
+      "size": 3,
       "points": "+30",
       "specialRules": [
         "Legion"
@@ -231,8 +209,30 @@
       "armyMax": 1
     }
   },
-  "version": "Warmaster Ancient Armies",
-  "group": "The Rise of Rome",
-  "order": 6,
-  "name": "Late Republican Roman (Eastern Armies)"
+  "specialRules": {
+    "Legion": {
+      "order": 1
+    },
+    "Unreliable": {
+      "order": 2
+    },
+    "Skirmish": {
+      "order": 3
+    },
+    "Camels": {
+      "order": 4
+    },
+    "Shock": {
+      "order": 5
+    },
+    "Slow": {
+      "order": 6
+    },
+    "Dictator": {
+      "order": 7,
+      "text": [
+        "The General can be upgrades to Dictator to represent such a mighty figure as Marius, Caesar, or Pompey. The Dictator can re-roll any of his failed Command tests once per turn. If the re-roll is failed, the Dictator's Command value drops by 1 – eg, from 9 to 8. The legions are nothing if not fickle and the popularity of the Dictator is based upon his success! The Dictator can continue to make one re-roll each turn as before, but each time he fails, his Command value drops a further 1."
+      ]
+    }
+  }
 }

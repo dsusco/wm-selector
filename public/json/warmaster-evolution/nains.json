@@ -1,1 +1,441 @@
-{"name":"Nains","version":"Warmaster Evolution","group":1,"order":4,"units":{"Guerriers":{"type":"Infantrie","attack":3,"hits":4,"armour":"4+","size":3,"points":110,"min":2,"order":0},"Arquebusiers":{"type":"Infantrie","attack":"3/1","range":"30cm","hits":4,"armour":"6+","size":3,"points":90,"order":1},"Rangers":{"type":"Infantrie","attack":"3/1","range":"30cm","hits":4,"armour":"5+","size":3,"points":110,"max":2,"order":2},"Marteliers":{"order":3,"type":"Infantrie","attack":3,"size":3,"hits":4,"armour":"4+","points":125,"max":1},"Mineurs":{"order":4,"type":"Infantrie","attack":3,"size":3,"hits":4,"armour":"6+","points":90,"max":1},"Tueurs de Trolls":{"type":"Infantrie","attack":5,"hits":4,"size":3,"points":80,"max":2,"order":5},"Canons":{"type":"Artillerie","attack":"1/2+bounce","range":"60cm","hits":2,"armour":"6+","size":2,"points":90,"max":1,"order":6},"Canon à Flammes":{"type":"Artillerie","attack":"1/2D6","range":"30cm","hits":2,"armour":"6+","size":1,"points":50,"max":1,"order":7},"Gyrocoptère":{"type":"Machine","attack":"1/3","range":"30cm","hits":3,"armour":"5+","size":1,"points":75,"order":8,"armyMax":1},"Général":{"type":"Général","attack":"+2","command":10,"size":1,"points":155,"armyMin":1,"armyMax":1,"order":9},"Héros":{"type":"Héros","attack":"+1","command":8,"size":1,"points":80,"max":1,"order":10},"Maître des Runes":{"type":"Héros","attack":"+1","command":8,"size":1,"points":90,"max":1,"upgrades":["Enclume du Destin","Parchemin d’Anti-Magie","Bâton d’Envoutement"],"order":11},"Zeppelin":{"order":12,"type":"Machine","attack":"0/6","range":"30cm","hits":2,"size":1,"points":100,"armyMax":1,"upgrades":["Barge"]}},"upgrades":{"Enclume du Destin":{"type":"Special","attack":"+1","points":"+50","armyMax":1,"order":0},"Barge":{"order":1,"type":"Special","points":"+30","armyMax":1}},"magic":true,"specialRules":{"Arquebusiers":{"text":["Lorsque vous tirez avec une arquebuse,","retirez 1 à l’Armure de la cible : une Armure de 3+, passe à","4+, une de 4+ à 5+, une de 5+ à 6+. Une Armure de 6+","n’arrête pas les tirs d’arquebuse."],"order":1},"Rangers":{"text":[" Bien qu’il s’agisse d’infanterie, les rangers nains","peuvent poursuivre tous les ennemis en retraite, même, par","exemple, la cavalerie"],"order":2},"Marteliers":{"order":3,"text":["Chaque socle de Marteliers bénéficie de +1","Attaque lors du premier round de chaque combat où il","affronte un ennemi situé sur son front."]},"Mineurs":{"order":4,"text":[" Les Mineurs n’ont pas à être déployés au début","de la bataille si le joueur le désire. À la place, l’unité peut","creuser une galerie sous le champ de bataille et s’y déployer","à partir du 2ème tour du joueur Nain. Pour amener une unité","de Mineurs, le joueur désigne le point où il veut la faire","apparaître et doit leur donner un ordre d’excavation avec","l’un de ses personnages. Le personnage ne tient pas compte","des portées d’ordre pour donner l’ordre d’excavation : on","considère que sa portée d’ordre s’étend à l’ensemble du","champ de bataille pour ce qui est de donner un tel ordre.","Considérez que l’ordre est donné au point où l’unité doit","apparaître, et appliquez tous les modificateurs de portée, de","proximité de l’ennemi, etc.","Si l’ordre d’excavation est donné avec succès, placez un socle","de l’unité sur le point indiqué et positionnez les autres en","formation autour de celui-ci. L’unité ne peut pas être placée","de façon à toucher l’ennemi. Une fois qu’elle est déployée, elle","peut recevoir des ordres du personnage qui a donné l’ordre","d’excavation, si celui-ci se trouve à portée d’ordre habituelle :","on considère qu’elle a utilisé son premier ordre pour se","déployer.","Si l’ordre d’excavation est un échec, l’unité n’est pas déployée","et ne peut pas s’infiltrer lors de ce tour. Elle pourra essayer de","nouveau lors d’un tour suivant, au même endroit ou en un","autre lieu."]},"Tueurs de Trolls":{"text":["Les Tueurs de Trolls sont Fanatiques. Ils","sont si enragés qu’ils préfèrent affronter les monstres les plus","dangereux : plus ils sont gros, plus ils aiment ! Et ils excellent","tant dans cet art qu’un socle de Tueurs reçoit un bonus de +1","Attaque lorsqu’il affronte un monstre"],"order":5},"Canons":{"order":6,"text":["Les canons peuvent tirer à 45° et leur portée est de","60cm. Leurs tirs annulent les sauvegardes et les cibles en","position fortifiée comptent comme étant en défense (5+ pour","toucher) et celles qui sont en défense comptent comme étant","à découvert (4+ pour toucher).","34","Les boulets de canon peuvent rebondir à travers les rangs","serrés en causant des ravages. On considère donc qu’un tir","frappe le point le plus proche du socle visé, le traverse et","rebondit de 5cm depuis l’arrière du socle dans la même","direction. Si plusieurs canons de la même unité tirent, tous","les boulets rebondissent de la même distance sur la même","trajectoire entre le canon le plus proche et le socle ennemi","le plus proche. L’unité visée subit deux attaques pour le","premier socle touché, +1 pour chaque socle supplémentaire","de la même unité traversé par le rebond du boulet.","Un tir qui rebondit dans une autre unité lui inflige une","attaque par socle traversé. Ceci peut permettre de toucher","des cibles qui ne peuvent normalement pas être visées,","comme des unités amies ou en combat. Faites la somme du","nombre d’attaques infligées et lancez les dés pour chaque","unité. Les unités engagées recevant des blessures à la suite","d’un rebond conservent ces blessures jusqu’à la phase de","combat et ne sont pas repoussées par le rebond du canon ni","ne testent la confusion.","En tir de contre-charge les canons tirent de la mitraille,","laquelle n’annule pas les sauvegardes et ne cause pas de","rebond."]},"Canon à Flammes":{"text":["Le Canon à Flammes tire à 45° et sa","portée est de 30cm.","Le tir du canon à flammes est un peu inhabituel. Il inflige","2D6 attaques au lieu d’un nombre constant : lancez 2D6 et","cumulez les résultats. Si vous obtenez un double, il ne tire","pas comme prévu! Un incident de tir, dont la nature dépend","du double obtenu sur les dés, vient de se produire.","Consultez le tableau des incidents de tir du canon à","flammes.","Un canon à flammes peut tirer sur un ennemi qui le charge","de la manière habituelle."],"order":7},"Gyrocoptère":{"text":["Le gyrocoptère est une machine volante","soumise à toutes les règles concernant le vol. La figurine","constitue toujours une unité à elle seule, doit recevoir des","ordres individuellement, ne peut pas faire partie d’une","brigade et ne peut pas être rejointe par un personnage.","Son canon à tir rapide inflige une pénalité d’Armure de 1 à","ses cibles (une valeur d’Armure de 6+ est annulée).","TABLE DES INCIDENTS DE TIR DU CANON A FLAMMES","","Résultat du D6 :","","1","Le canon à flammes explose et est détruit sans","infliger aucune attaque.","","2","Le canon à flammes projette une énorme langue de","feu infligeant 2D6 attaques en plus des 4 déjà","causées, avant d’exploser et d’être détruit.","","3","Le canon à flammes émet un bruit inquiétant avant","de cracher une flamme et beaucoup de fumée. Il","inflige 6 attaques ce tour-ci mais désormais, ses tirs","n’infligeront plus qu’1D6 attaques à la place des 2D6","habituels","","4","Le canon à flammes émet un gargouillis inquiétant,","puis sa chaudière s’éteint. Les servants travaillent","d’arrache-pied à la rallumer. Le canon à flammes ne","tire pas ce tour-ci mais ne subit pas d’autre pénalité.","","5","Le canon à flammes crache un grand jet de suie au","lieu de flammes, recouvrant la cible d’une épaisse","fumée noire et de braises. Il inflige 10 attaques ce","tour-ci et ne subit aucune autre pénalité.","","6","Le canon à flammes tressaute dans son châssis en","projetant une flamme d’une taille exceptionnelle. Il","inflige 12+1D6 attaques ce tour-ci, et ne subit pas","d’autre pénalité"],"order":8},"Maître des Runes":{"text":["Bien qu’il ne s’agisse pas de sorciers et","qu’ils ne peuvent ainsi pas jeter de sorts, les Maîtres des","Runes peuvent contrer les enchantements ennemis. Si un","sorcier situé dans un rayon de 50cm autour du Maître des","Runes lance un sort, ce dernier peut tenter de le dissiper. Il","n’est pas nécessaire que le Maître des Runes puisse voir le","sorcier en question, et que peu importe la cible du sort et sa","position: le Maître des Runes peut toujours tenter de dissiper","un sort du moment que son lanceur se trouve dans un rayon","de 50cm autour de lui. Pour déterminer s’il y parvient, jetez","1D6. Sur un résultat de 4+, le Maître des Runes a réussi et le","sort est dissipé. Si le résultat est 1, 2 ou 3, les efforts du Maître","des Runes ne servent à rien et le sort fonctionne comme","d’ordinaire. Un Maître des Runes peut tenter de dissiper","n’importe quel nombre de sorts par tour, mais chaque sort ne","peut faire l’objet que d’une seule tentative de dissipation,","même si l’armée inclut plusieurs Maîtres des Runes à portée","de dissipation du lanceur."],"order":9},"Enclume du Destin":{"text":["Une armée ne peut inclure qu’une","seule Enclume, incorporée au socle du Maître des Runes. Un","Maître des Runes accompagné de l’Enclume peut, une fois par","partie, ajouter +1 au résultat du dé à son jet de dissipation","d’un sort. Une unité rejointe par l’Enclume du Destin","provoque la terreur. Un Maître des Runes accompagné d’une","Enclume voit son mouvement limité à 40cm."],"order":10},"Zeppelin":{"order":11,"text":[" Le Zeppelin est une machine volante issue des","dernières technologies Naines. Il embarque un petit","contingent d'ingénieurs nains qui depuis une position en","altitude font pleuvoir un déluge de plomb et de bombes à","main sur les positions ennemies.","Machine de Guerre en Haute Altitude","Le Zeppelin est considéré comme un personnage volant","possédant un mouvement de 30cm. Contrairement aux","personnages il n'a pas de valeur de Commandement et ne","peux pas commander d'unités.","Si une unité ennemie ayant reçu un ordre le contacte il est","intercepté. Autrement s'il est contacté par une unité il est","simplement déplacé de la distance minimale pour ne pas","gêner.","Lorsqu'il est intercepté le Zeppelin effectue immédiatement","6 tirs de contre-charge touchant sur 4+ et ne modifiant par","la sauvegarde. Une fois ce tir résolu lancez 1d6 et ajoutez 1","pour chaque blessure infligée:","","Résultat du D6 :","","1-5","Le fragile zeppelin est engagé, détruit et compte","comme perte.","","6","L'attaquant est repoussé à 1cm de distance du","Zeppelin et ne peux plus faire de mouvements pour","cette phase, ce qui a pour effet d'annuler la charge.","Artillerie Aéroportée","","Lors de la phase de tir le Zeppelin peut faire 6 tirs à 30cm sur","5+ ignorant les couverts et infligeant -1 à la Sauvegarde.",""]},"Barge":{"order":12,"text":["Pour +30pts le Zeppelin peut inclure une barge de","débarquement.","Si c'est le cas, le joueur peut au début de la partie ne pas","déployer une unité de Tueurs qui est conservée en réserve","(elle est embarquée dans le Zeppelin). Si le Zeppelin est","détruit alors que les Tueurs sont à bord, ils sont eux-aussi","détruits et compte comme pertes.","Une fois par partie pendant la phase de magie le joueur Nain","peut déclarer que le Zeppelin largue les nains en basse","altitude. Lancez 1d6 :","","Résultat du D6 :","","1","Rase-motte: le Zeppelin descend trop vite, laboure","le sol, largue les tueurs, et va s'écraser plus loin. Il","est retiré de la partie et compte comme perte.","","2","Atterrissage brutal: lancer 1D6 par socles sur un 6 il","est détruit.","","3-6 Atterrissage viril: aucun effet"]},"Trône de Pouvoir":{"order":13,"text":["Réservé au Général, le Trône de","Pouvoir limite son mouvement à 40 cm. Une fois par partie, le","Général peut utiliser la Rune de Pouvoir pour augmenter de +1","les Attaques de tous les socles d’une unité située à moins de","20cm de lui pendant toute la phase de combat. Ce pouvoir ne","s’applique pas aux Attaques de tir."]}}}
+{
+  "name": "Nains",
+  "version": "Warmaster Evolution",
+  "group": 1,
+  "order": 4,
+  "units": {
+    "Guerriers": {
+      "order": 0,
+      "type": "Infantrie",
+      "attack": 3,
+      "hits": 4,
+      "armour": "4+",
+      "size": 3,
+      "points": 110,
+      "min": 2
+    },
+    "Arquebusiers": {
+      "order": 1,
+      "type": "Infantrie",
+      "attack": "3/1",
+      "range": "30cm",
+      "hits": 4,
+      "armour": "6+",
+      "size": 3,
+      "points": 90
+    },
+    "Rangers": {
+      "order": 2,
+      "type": "Infantrie",
+      "attack": "3/1",
+      "range": "30cm",
+      "hits": 4,
+      "armour": "5+",
+      "size": 3,
+      "points": 110,
+      "max": 2
+    },
+    "Marteliers": {
+      "order": 3,
+      "type": "Infantrie",
+      "attack": 3,
+      "hits": 4,
+      "armour": "4+",
+      "size": 3,
+      "points": 125,
+      "max": 1
+    },
+    "Mineurs": {
+      "order": 4,
+      "type": "Infantrie",
+      "attack": 3,
+      "hits": 4,
+      "armour": "6+",
+      "size": 3,
+      "points": 90,
+      "max": 1
+    },
+    "Tueurs de Trolls": {
+      "order": 5,
+      "type": "Infantrie",
+      "attack": 5,
+      "hits": 4,
+      "size": 3,
+      "points": 80,
+      "max": 2
+    },
+    "Canons": {
+      "order": 6,
+      "type": "Artillerie",
+      "attack": "1/2+bounce",
+      "range": "60cm",
+      "hits": 2,
+      "armour": "6+",
+      "size": 2,
+      "points": 90,
+      "max": 1
+    },
+    "Canon à Flammes": {
+      "order": 7,
+      "type": "Artillerie",
+      "attack": "1/2D6",
+      "range": "30cm",
+      "hits": 2,
+      "armour": "6+",
+      "size": 1,
+      "points": 50,
+      "max": 1
+    },
+    "Gyrocoptère": {
+      "order": 8,
+      "type": "Machine",
+      "attack": "1/3",
+      "range": "30cm",
+      "hits": 3,
+      "armour": "5+",
+      "size": 1,
+      "points": 75,
+      "armyMax": 1
+    },
+    "Général": {
+      "order": 9,
+      "type": "Général",
+      "attack": "+2",
+      "command": 10,
+      "size": 1,
+      "points": 155,
+      "armyMin": 1,
+      "armyMax": 1
+    },
+    "Héros": {
+      "order": 10,
+      "type": "Héros",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 80,
+      "max": 1
+    },
+    "Maître des Runes": {
+      "order": 11,
+      "type": "Héros",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 90,
+      "max": 1,
+      "upgrades": [
+        "Enclume du Destin",
+        "Parchemin d’Anti-Magie",
+        "Bâton d’Envoutement"
+      ]
+    },
+    "Zeppelin": {
+      "order": 12,
+      "type": "Machine",
+      "attack": "0/6",
+      "range": "30cm",
+      "hits": 2,
+      "size": 1,
+      "points": 100,
+      "armyMax": 1,
+      "upgrades": [
+        "Barge"
+      ]
+    }
+  },
+  "upgrades": {
+    "Enclume du Destin": {
+      "order": 0,
+      "type": "Special",
+      "attack": "+1",
+      "points": "+50",
+      "armyMax": 1
+    },
+    "Barge": {
+      "order": 1,
+      "type": "Special",
+      "points": "+30",
+      "armyMax": 1
+    }
+  },
+  "magic": true,
+  "specialRules": {
+    "Arquebusiers": {
+      "order": 1,
+      "text": [
+        "Lorsque vous tirez avec une arquebuse,",
+        "retirez 1 à l’Armure de la cible : une Armure de 3+, passe à",
+        "4+, une de 4+ à 5+, une de 5+ à 6+. Une Armure de 6+",
+        "n’arrête pas les tirs d’arquebuse."
+      ]
+    },
+    "Rangers": {
+      "order": 2,
+      "text": [
+        " Bien qu’il s’agisse d’infanterie, les rangers nains",
+        "peuvent poursuivre tous les ennemis en retraite, même, par",
+        "exemple, la cavalerie"
+      ]
+    },
+    "Marteliers": {
+      "order": 3,
+      "text": [
+        "Chaque socle de Marteliers bénéficie de +1",
+        "Attaque lors du premier round de chaque combat où il",
+        "affronte un ennemi situé sur son front."
+      ]
+    },
+    "Mineurs": {
+      "order": 4,
+      "text": [
+        " Les Mineurs n’ont pas à être déployés au début",
+        "de la bataille si le joueur le désire. À la place, l’unité peut",
+        "creuser une galerie sous le champ de bataille et s’y déployer",
+        "à partir du 2ème tour du joueur Nain. Pour amener une unité",
+        "de Mineurs, le joueur désigne le point où il veut la faire",
+        "apparaître et doit leur donner un ordre d’excavation avec",
+        "l’un de ses personnages. Le personnage ne tient pas compte",
+        "des portées d’ordre pour donner l’ordre d’excavation : on",
+        "considère que sa portée d’ordre s’étend à l’ensemble du",
+        "champ de bataille pour ce qui est de donner un tel ordre.",
+        "Considérez que l’ordre est donné au point où l’unité doit",
+        "apparaître, et appliquez tous les modificateurs de portée, de",
+        "proximité de l’ennemi, etc.",
+        "Si l’ordre d’excavation est donné avec succès, placez un socle",
+        "de l’unité sur le point indiqué et positionnez les autres en",
+        "formation autour de celui-ci. L’unité ne peut pas être placée",
+        "de façon à toucher l’ennemi. Une fois qu’elle est déployée, elle",
+        "peut recevoir des ordres du personnage qui a donné l’ordre",
+        "d’excavation, si celui-ci se trouve à portée d’ordre habituelle :",
+        "on considère qu’elle a utilisé son premier ordre pour se",
+        "déployer.",
+        "Si l’ordre d’excavation est un échec, l’unité n’est pas déployée",
+        "et ne peut pas s’infiltrer lors de ce tour. Elle pourra essayer de",
+        "nouveau lors d’un tour suivant, au même endroit ou en un",
+        "autre lieu."
+      ]
+    },
+    "Tueurs de Trolls": {
+      "order": 5,
+      "text": [
+        "Les Tueurs de Trolls sont Fanatiques. Ils",
+        "sont si enragés qu’ils préfèrent affronter les monstres les plus",
+        "dangereux : plus ils sont gros, plus ils aiment ! Et ils excellent",
+        "tant dans cet art qu’un socle de Tueurs reçoit un bonus de +1",
+        "Attaque lorsqu’il affronte un monstre"
+      ]
+    },
+    "Canons": {
+      "order": 6,
+      "text": [
+        "Les canons peuvent tirer à 45° et leur portée est de",
+        "60cm. Leurs tirs annulent les sauvegardes et les cibles en",
+        "position fortifiée comptent comme étant en défense (5+ pour",
+        "toucher) et celles qui sont en défense comptent comme étant",
+        "à découvert (4+ pour toucher).",
+        "34",
+        "Les boulets de canon peuvent rebondir à travers les rangs",
+        "serrés en causant des ravages. On considère donc qu’un tir",
+        "frappe le point le plus proche du socle visé, le traverse et",
+        "rebondit de 5cm depuis l’arrière du socle dans la même",
+        "direction. Si plusieurs canons de la même unité tirent, tous",
+        "les boulets rebondissent de la même distance sur la même",
+        "trajectoire entre le canon le plus proche et le socle ennemi",
+        "le plus proche. L’unité visée subit deux attaques pour le",
+        "premier socle touché, +1 pour chaque socle supplémentaire",
+        "de la même unité traversé par le rebond du boulet.",
+        "Un tir qui rebondit dans une autre unité lui inflige une",
+        "attaque par socle traversé. Ceci peut permettre de toucher",
+        "des cibles qui ne peuvent normalement pas être visées,",
+        "comme des unités amies ou en combat. Faites la somme du",
+        "nombre d’attaques infligées et lancez les dés pour chaque",
+        "unité. Les unités engagées recevant des blessures à la suite",
+        "d’un rebond conservent ces blessures jusqu’à la phase de",
+        "combat et ne sont pas repoussées par le rebond du canon ni",
+        "ne testent la confusion.",
+        "En tir de contre-charge les canons tirent de la mitraille,",
+        "laquelle n’annule pas les sauvegardes et ne cause pas de",
+        "rebond."
+      ]
+    },
+    "Canon à Flammes": {
+      "order": 7,
+      "text": [
+        "Le Canon à Flammes tire à 45° et sa",
+        "portée est de 30cm.",
+        "Le tir du canon à flammes est un peu inhabituel. Il inflige",
+        "2D6 attaques au lieu d’un nombre constant : lancez 2D6 et",
+        "cumulez les résultats. Si vous obtenez un double, il ne tire",
+        "pas comme prévu! Un incident de tir, dont la nature dépend",
+        "du double obtenu sur les dés, vient de se produire.",
+        "Consultez le tableau des incidents de tir du canon à",
+        "flammes.",
+        "Un canon à flammes peut tirer sur un ennemi qui le charge",
+        "de la manière habituelle."
+      ]
+    },
+    "Gyrocoptère": {
+      "order": 8,
+      "text": [
+        "Le gyrocoptère est une machine volante",
+        "soumise à toutes les règles concernant le vol. La figurine",
+        "constitue toujours une unité à elle seule, doit recevoir des",
+        "ordres individuellement, ne peut pas faire partie d’une",
+        "brigade et ne peut pas être rejointe par un personnage.",
+        "Son canon à tir rapide inflige une pénalité d’Armure de 1 à",
+        "ses cibles (une valeur d’Armure de 6+ est annulée).",
+        "TABLE DES INCIDENTS DE TIR DU CANON A FLAMMES",
+        "",
+        "Résultat du D6 :",
+        "",
+        "1",
+        "Le canon à flammes explose et est détruit sans",
+        "infliger aucune attaque.",
+        "",
+        "2",
+        "Le canon à flammes projette une énorme langue de",
+        "feu infligeant 2D6 attaques en plus des 4 déjà",
+        "causées, avant d’exploser et d’être détruit.",
+        "",
+        "3",
+        "Le canon à flammes émet un bruit inquiétant avant",
+        "de cracher une flamme et beaucoup de fumée. Il",
+        "inflige 6 attaques ce tour-ci mais désormais, ses tirs",
+        "n’infligeront plus qu’1D6 attaques à la place des 2D6",
+        "habituels",
+        "",
+        "4",
+        "Le canon à flammes émet un gargouillis inquiétant,",
+        "puis sa chaudière s’éteint. Les servants travaillent",
+        "d’arrache-pied à la rallumer. Le canon à flammes ne",
+        "tire pas ce tour-ci mais ne subit pas d’autre pénalité.",
+        "",
+        "5",
+        "Le canon à flammes crache un grand jet de suie au",
+        "lieu de flammes, recouvrant la cible d’une épaisse",
+        "fumée noire et de braises. Il inflige 10 attaques ce",
+        "tour-ci et ne subit aucune autre pénalité.",
+        "",
+        "6",
+        "Le canon à flammes tressaute dans son châssis en",
+        "projetant une flamme d’une taille exceptionnelle. Il",
+        "inflige 12+1D6 attaques ce tour-ci, et ne subit pas",
+        "d’autre pénalité"
+      ]
+    },
+    "Maître des Runes": {
+      "order": 9,
+      "text": [
+        "Bien qu’il ne s’agisse pas de sorciers et",
+        "qu’ils ne peuvent ainsi pas jeter de sorts, les Maîtres des",
+        "Runes peuvent contrer les enchantements ennemis. Si un",
+        "sorcier situé dans un rayon de 50cm autour du Maître des",
+        "Runes lance un sort, ce dernier peut tenter de le dissiper. Il",
+        "n’est pas nécessaire que le Maître des Runes puisse voir le",
+        "sorcier en question, et que peu importe la cible du sort et sa",
+        "position: le Maître des Runes peut toujours tenter de dissiper",
+        "un sort du moment que son lanceur se trouve dans un rayon",
+        "de 50cm autour de lui. Pour déterminer s’il y parvient, jetez",
+        "1D6. Sur un résultat de 4+, le Maître des Runes a réussi et le",
+        "sort est dissipé. Si le résultat est 1, 2 ou 3, les efforts du Maître",
+        "des Runes ne servent à rien et le sort fonctionne comme",
+        "d’ordinaire. Un Maître des Runes peut tenter de dissiper",
+        "n’importe quel nombre de sorts par tour, mais chaque sort ne",
+        "peut faire l’objet que d’une seule tentative de dissipation,",
+        "même si l’armée inclut plusieurs Maîtres des Runes à portée",
+        "de dissipation du lanceur."
+      ]
+    },
+    "Enclume du Destin": {
+      "order": 10,
+      "text": [
+        "Une armée ne peut inclure qu’une",
+        "seule Enclume, incorporée au socle du Maître des Runes. Un",
+        "Maître des Runes accompagné de l’Enclume peut, une fois par",
+        "partie, ajouter +1 au résultat du dé à son jet de dissipation",
+        "d’un sort. Une unité rejointe par l’Enclume du Destin",
+        "provoque la terreur. Un Maître des Runes accompagné d’une",
+        "Enclume voit son mouvement limité à 40cm."
+      ]
+    },
+    "Zeppelin": {
+      "order": 11,
+      "text": [
+        " Le Zeppelin est une machine volante issue des",
+        "dernières technologies Naines. Il embarque un petit",
+        "contingent d'ingénieurs nains qui depuis une position en",
+        "altitude font pleuvoir un déluge de plomb et de bombes à",
+        "main sur les positions ennemies.",
+        "Machine de Guerre en Haute Altitude",
+        "Le Zeppelin est considéré comme un personnage volant",
+        "possédant un mouvement de 30cm. Contrairement aux",
+        "personnages il n'a pas de valeur de Commandement et ne",
+        "peux pas commander d'unités.",
+        "Si une unité ennemie ayant reçu un ordre le contacte il est",
+        "intercepté. Autrement s'il est contacté par une unité il est",
+        "simplement déplacé de la distance minimale pour ne pas",
+        "gêner.",
+        "Lorsqu'il est intercepté le Zeppelin effectue immédiatement",
+        "6 tirs de contre-charge touchant sur 4+ et ne modifiant par",
+        "la sauvegarde. Une fois ce tir résolu lancez 1d6 et ajoutez 1",
+        "pour chaque blessure infligée:",
+        "",
+        "Résultat du D6 :",
+        "",
+        "1-5",
+        "Le fragile zeppelin est engagé, détruit et compte",
+        "comme perte.",
+        "",
+        "6",
+        "L'attaquant est repoussé à 1cm de distance du",
+        "Zeppelin et ne peux plus faire de mouvements pour",
+        "cette phase, ce qui a pour effet d'annuler la charge.",
+        "Artillerie Aéroportée",
+        "",
+        "Lors de la phase de tir le Zeppelin peut faire 6 tirs à 30cm sur",
+        "5+ ignorant les couverts et infligeant -1 à la Sauvegarde.",
+        ""
+      ]
+    },
+    "Barge": {
+      "order": 12,
+      "text": [
+        "Pour +30pts le Zeppelin peut inclure une barge de",
+        "débarquement.",
+        "Si c'est le cas, le joueur peut au début de la partie ne pas",
+        "déployer une unité de Tueurs qui est conservée en réserve",
+        "(elle est embarquée dans le Zeppelin). Si le Zeppelin est",
+        "détruit alors que les Tueurs sont à bord, ils sont eux-aussi",
+        "détruits et compte comme pertes.",
+        "Une fois par partie pendant la phase de magie le joueur Nain",
+        "peut déclarer que le Zeppelin largue les nains en basse",
+        "altitude. Lancez 1d6 :",
+        "",
+        "Résultat du D6 :",
+        "",
+        "1",
+        "Rase-motte: le Zeppelin descend trop vite, laboure",
+        "le sol, largue les tueurs, et va s'écraser plus loin. Il",
+        "est retiré de la partie et compte comme perte.",
+        "",
+        "2",
+        "Atterrissage brutal: lancer 1D6 par socles sur un 6 il",
+        "est détruit.",
+        "",
+        "3-6 Atterrissage viril: aucun effet"
+      ]
+    },
+    "Trône de Pouvoir": {
+      "order": 13,
+      "text": [
+        "Réservé au Général, le Trône de",
+        "Pouvoir limite son mouvement à 40 cm. Une fois par partie, le",
+        "Général peut utiliser la Rune de Pouvoir pour augmenter de +1",
+        "les Attaques de tous les socles d’une unité située à moins de",
+        "20cm de lui pendant toute la phase de combat. Ce pouvoir ne",
+        "s’applique pas aux Attaques de tir."
+      ]
+    }
+  }
+}

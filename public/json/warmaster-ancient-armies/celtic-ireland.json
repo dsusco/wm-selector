@@ -1,15 +1,8 @@
 {
-  "specialRules": {
-    "Warband": {
-      "order": 1
-    },
-    "Skirmish": {
-      "order": 2
-    },
-    "Portents": {
-      "order": 3
-    }
-  },
+  "name": "Celtic Ireland",
+  "version": "Warmaster Ancient Armies",
+  "group": "The Dark Ages",
+  "order": 5,
   "units": {
     "Fianna": {
       "order": 0,
@@ -129,8 +122,15 @@
       "armyMax": 1
     }
   },
-  "name": "Celtic Ireland",
-  "version": "Warmaster Ancient Armies",
-  "group": "The Dark Ages",
-  "order": 5
+  "specialRules": {
+    "Warband": {
+      "order": 1
+    },
+    "Skirmish": {
+      "order": 2
+    },
+    "Portents": {
+      "order": 3
+    }
+  }
 }

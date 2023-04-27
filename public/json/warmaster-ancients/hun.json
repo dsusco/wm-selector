@@ -5,6 +5,7 @@
   "order": 3,
   "units": {
     "Germans": {
+      "order": 0,
       "type": "Infantry",
       "attack": 3,
       "hits": 3,
@@ -13,24 +14,24 @@
       "specialRules": [
         "Warband",
         "Unreliable"
-      ],
-      "order": 0
+      ]
     },
     "Archers": {
+      "order": 1,
       "type": "Infantry",
       "attack": 2,
       "range": 30,
       "hits": 3,
       "size": 3,
-      "max": 2,
       "points": 30,
+      "max": 2,
       "specialRules": [
         "Warband",
         "Unreliable"
-      ],
-      "order": 1
+      ]
     },
     "Skirmishers": {
+      "order": 2,
       "type": "Infantry",
       "attack": 1,
       "range": 15,
@@ -39,38 +40,38 @@
       "points": 30,
       "specialRules": [
         "Skirmish"
-      ],
-      "order": 2
+      ]
     },
     "Huns": {
+      "order": 3,
       "type": "Cavalry",
       "attack": 2,
       "range": 15,
       "hits": 3,
       "armour": "6+",
       "size": 3,
-      "min": 4,
       "points": 60,
+      "min": 4,
       "specialRules": [
         "Skirmish"
-      ],
-      "order": 3
+      ]
     },
     "Nobles": {
+      "order": 4,
       "type": "Cavalry",
       "attack": 3,
       "range": 15,
       "hits": 3,
       "armour": "5+",
       "size": 3,
-      "max": 1,
       "points": 115,
+      "max": 1,
       "specialRules": [
         "Shock"
-      ],
-      "order": 4
+      ]
     },
     "Ally Cavalry": {
+      "order": 5,
       "type": "Cavalry",
       "attack": 3,
       "hits": 3,
@@ -79,49 +80,48 @@
       "points": 70,
       "specialRules": [
         "Unreliable"
-      ],
-      "order": 5
+      ]
     },
     "General": {
+      "order": 6,
       "type": "General",
       "attack": "+2",
       "command": 9,
       "size": 1,
+      "points": 125,
       "armyMin": 1,
       "armyMax": 1,
-      "points": 125,
       "upgrades": [
         "Attila"
-      ],
-      "order": 6
+      ]
     },
     "Leader": {
+      "order": 7,
       "type": "Leader",
       "attack": "+1",
       "command": 8,
       "size": 1,
-      "max": 1,
       "points": 80,
-      "order": 7
+      "max": 1
     },
     "Chieftain": {
+      "order": 8,
       "type": "Subordinate",
       "attack": "+1",
       "command": 8,
       "size": 1,
-      "max": 2,
       "points": 40,
-      "order": 8
+      "max": 2
     }
   },
   "upgrades": {
     "Attila": {
+      "order": 0,
       "type": "General",
       "attack": "+2",
       "command": 9,
-      "armyMax": 1,
       "points": "+15",
-      "order": 0
+      "armyMax": 1
     }
   },
   "specialRules": {
@@ -138,10 +138,10 @@
       "order": 4
     },
     "Attila": {
+      "order": 5,
       "text": [
         "Upgrade General to Attila. If the General is Attila then a single failed Command roll by any commander can be re-rolled once during the battle. This is like Portents but applies to all commanders and not just the General."
-      ],
-      "order": 5
+      ]
     }
   }
 }

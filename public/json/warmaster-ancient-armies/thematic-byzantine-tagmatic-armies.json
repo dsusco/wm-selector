@@ -1,62 +1,46 @@
 {
-  "specialRules": {
-    "Skirmish": {
-      "order": 1
-    },
-    "Unreliable": {
-      "order": 2
-    },
-    "Shock": {
-      "order": 3
-    },
-    "Slow": {
-      "order": 4
-    },
-    "Shieldwall": {
-      "order": 5
-    },
-    "Portents": {
-      "order": 6
-    }
-  },
+  "name": "Thematic Byzantine (Tagmatic Armies)",
+  "version": "Warmaster Ancient Armies",
+  "group": "The Dark Ages",
+  "order": 8,
   "units": {
     "Kontaratoi": {
       "order": 0,
-      "size": 3,
-      "points": 60,
       "type": "Infantry",
       "attack": 3,
       "hits": 3,
       "armour": "5+",
+      "size": 3,
+      "points": 60,
+      "min": 4,
       "upgrades": [
         "Extremely Heavy Infantry",
         "Varangians",
         "Thematic Decline"
-      ],
-      "min": 4
+      ]
     },
     "Psiloi": {
       "order": 1,
-      "size": 3,
-      "points": 30,
-      "max": 2,
       "type": "Infantry",
       "attack": "1/1",
       "range": "15cm",
       "hits": 3,
+      "size": 3,
+      "points": 30,
+      "max": 2,
       "specialRules": [
         "Skirmish"
       ]
     },
     "Allied Infantry": {
       "order": 2,
-      "size": 3,
-      "points": 35,
-      "max": 2,
       "type": "Infantry",
       "attack": 3,
       "hits": 3,
       "armour": "6+",
+      "size": 3,
+      "points": 35,
+      "max": 2,
       "specialRules": [
         "Unreliable"
       ],
@@ -66,26 +50,26 @@
     },
     "Allied Archers": {
       "order": 3,
-      "size": 3,
-      "points": 30,
-      "max": 2,
       "type": "Infantry",
       "attack": "2/1",
       "range": "30cm",
       "hits": 3,
+      "size": 3,
+      "points": 30,
+      "max": 2,
       "specialRules": [
         "Unreliable"
       ]
     },
     "Kavallaroi": {
       "order": 4,
-      "size": 3,
-      "points": 110,
-      "min": 3,
       "type": "Cavalry",
       "attack": 3,
       "hits": 3,
       "armour": "5+",
+      "size": 3,
+      "points": 110,
+      "min": 3,
       "specialRules": [
         "Shock"
       ],
@@ -97,28 +81,28 @@
     },
     "Light Kavallaroi": {
       "order": 5,
-      "size": 3,
-      "points": 60,
-      "max": 1,
       "type": "Cavalry",
       "attack": "2/1",
       "range": "15cm",
       "hits": 3,
       "armour": "6+",
+      "size": 3,
+      "points": 60,
+      "max": 1,
       "specialRules": [
         "Skirmish"
       ]
     },
     "Allied Light Cavalry": {
       "order": 6,
-      "size": 3,
-      "points": 50,
-      "max": 1,
       "type": "Cavalry",
       "attack": "2/1",
       "range": "15cm",
       "hits": 3,
       "armour": "6+",
+      "size": 3,
+      "points": 50,
+      "max": 1,
       "specialRules": [
         "Skirmish",
         "Unreliable"
@@ -126,13 +110,13 @@
     },
     "Allied Heavy Cavalry": {
       "order": 7,
-      "size": 3,
-      "points": 100,
-      "max": 1,
       "type": "Cavalry",
       "attack": 3,
       "hits": 3,
       "armour": "5+",
+      "size": 3,
+      "points": 100,
+      "max": 1,
       "specialRules": [
         "Unreliable",
         "Shock"
@@ -140,45 +124,42 @@
     },
     "Domestikos": {
       "order": 8,
+      "type": "General",
+      "attack": "+2",
+      "command": 9,
       "size": 1,
       "points": 125,
       "armyMin": 1,
       "armyMax": 1,
-      "command": 9,
-      "type": "General",
-      "attack": "+2",
       "upgrades": [
         "Portents"
       ]
     },
     "Leader": {
       "order": 9,
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
       "size": 1,
       "points": 80,
-      "max": 2,
-      "command": 8,
-      "type": "Leader",
-      "attack": "+1"
+      "max": 2
     }
   },
   "upgrades": {
     "Extremely Heavy Infantry": {
       "order": 0,
-      "specialRules": [
-        "Slow"
-      ],
       "type": "Infantry",
       "attack": 3,
       "hits": 3,
       "armour": "4+",
       "size": 3,
-      "points": "+15"
+      "points": "+15",
+      "specialRules": [
+        "Slow"
+      ]
     },
     "Elite Kavallaroi": {
       "order": 1,
-      "specialRules": [
-        "Shock"
-      ],
       "type": "Cavalry",
       "attack": 4,
       "hits": 3,
@@ -186,6 +167,9 @@
       "size": 3,
       "points": "+10",
       "max": "Up to Half",
+      "specialRules": [
+        "Shock"
+      ],
       "requiredUnits": [
         "Kavallaroi"
       ]
@@ -243,8 +227,24 @@
       "armyMax": 1
     }
   },
-  "name": "Thematic Byzantine (Tagmatic Armies)",
-  "version": "Warmaster Ancient Armies",
-  "group": "The Dark Ages",
-  "order": 8
+  "specialRules": {
+    "Skirmish": {
+      "order": 1
+    },
+    "Unreliable": {
+      "order": 2
+    },
+    "Shock": {
+      "order": 3
+    },
+    "Slow": {
+      "order": 4
+    },
+    "Shieldwall": {
+      "order": 5
+    },
+    "Portents": {
+      "order": 6
+    }
+  }
 }

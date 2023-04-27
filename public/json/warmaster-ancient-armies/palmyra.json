@@ -1,24 +1,8 @@
 {
-  "specialRules": {
-    "Shock": {
-      "order": 1
-    },
-    "Slow": {
-      "order": 2
-    },
-    "Skirmish": {
-      "order": 3
-    },
-    "Camels": {
-      "order": 4
-    },
-    "Odenathus": {
-      "order": 5,
-      "text": [
-        "The General can be upgrades to represent Odenathus. Odenathus has a standard Command value of 8, but counts as having a value of 9 for the first order he issues each turn. This bonus apples each turn but only to Odenathus' first order – subsequent orders are issued with a Command value of 8."
-      ]
-    }
-  },
+  "name": "Palmyra",
+  "version": "Warmaster Ancient Armies",
+  "group": "The Rise of Rome",
+  "order": 10,
   "units": {
     "Cataphracts": {
       "order": 0,
@@ -41,12 +25,12 @@
       "order": 1,
       "type": "Cavalry",
       "attack": "2/1",
+      "range": "15cm",
       "hits": 3,
       "armour": "6+",
       "size": 3,
       "points": 60,
       "max": 4,
-      "range": "15cm",
       "specialRules": [
         "Skirmish"
       ]
@@ -83,9 +67,9 @@
       "type": "Infantry",
       "attack": 3,
       "hits": 3,
+      "armour": "6+",
       "size": 3,
-      "points": 45,
-      "armour": "6+"
+      "points": 45
     },
     "Legionaries": {
       "order": 5,
@@ -105,8 +89,8 @@
       "hits": 3,
       "size": 3,
       "points": 40,
-      "max": 4,
-      "min": 2
+      "min": 2,
+      "max": 4
     },
     "Skirmishers": {
       "order": 7,
@@ -116,23 +100,23 @@
       "hits": 3,
       "size": 3,
       "points": 30,
+      "max": 4,
       "specialRules": [
         "Skirmish"
-      ],
-      "max": 4
+      ]
     },
     "General": {
       "order": 8,
       "type": "General",
       "attack": "+2",
+      "command": 8,
       "size": 1,
       "points": 100,
       "armyMin": 1,
       "armyMax": 1,
       "upgrades": [
         "Odenathus"
-      ],
-      "command": 8
+      ]
     },
     "Leader": {
       "order": 9,
@@ -165,8 +149,24 @@
       "armyMax": 1
     }
   },
-  "version": "Warmaster Ancient Armies",
-  "group": "The Rise of Rome",
-  "order": 10,
-  "name": "Palmyra"
+  "specialRules": {
+    "Shock": {
+      "order": 1
+    },
+    "Slow": {
+      "order": 2
+    },
+    "Skirmish": {
+      "order": 3
+    },
+    "Camels": {
+      "order": 4
+    },
+    "Odenathus": {
+      "order": 5,
+      "text": [
+        "The General can be upgrades to represent Odenathus. Odenathus has a standard Command value of 8, but counts as having a value of 9 for the first order he issues each turn. This bonus apples each turn but only to Odenathus' first order – subsequent orders are issued with a Command value of 8."
+      ]
+    }
+  }
 }

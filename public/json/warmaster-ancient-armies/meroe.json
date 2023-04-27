@@ -1,21 +1,8 @@
 {
-  "specialRules": {
-    "Warband": {
-      "order": 1
-    },
-    "Skirmish": {
-      "order": 2
-    },
-    "Camels": {
-      "order": 3
-    },
-    "Elephants": {
-      "order": 4
-    },
-    "Portents": {
-      "order": 5
-    }
-  },
+  "name": "Meroe",
+  "version": "Warmaster Ancient Armies",
+  "group": "The Rise of Rome",
+  "order": 8,
   "units": {
     "Warriors": {
       "order": 0,
@@ -100,6 +87,7 @@
       "order": 6,
       "type": "General",
       "attack": "+2",
+      "command": 8,
       "size": 1,
       "points": 100,
       "armyMin": 1,
@@ -107,17 +95,16 @@
       "upgrades": [
         "Elephant Mount",
         "Portents"
-      ],
-      "command": 8
+      ]
     },
     "Chieftains": {
       "order": 7,
       "type": "Subordinate",
       "attack": "+1",
+      "command": 7,
       "size": 1,
       "points": 30,
-      "max": 4,
-      "command": 7
+      "max": 4
     }
   },
   "upgrades": {
@@ -149,8 +136,21 @@
       "armyMax": 1
     }
   },
-  "version": "Warmaster Ancient Armies",
-  "group": "The Rise of Rome",
-  "order": 8,
-  "name": "Meroe"
+  "specialRules": {
+    "Warband": {
+      "order": 1
+    },
+    "Skirmish": {
+      "order": 2
+    },
+    "Camels": {
+      "order": 3
+    },
+    "Elephants": {
+      "order": 4
+    },
+    "Portents": {
+      "order": 5
+    }
+  }
 }

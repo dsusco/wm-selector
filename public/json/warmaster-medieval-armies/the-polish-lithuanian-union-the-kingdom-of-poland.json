@@ -5,131 +5,131 @@
   "order": 5,
   "units": {
     "Nobles": {
+      "order": 0,
       "type": "Cavalry",
       "attack": 3,
       "hits": 3,
       "armour": "4+",
       "size": 3,
-      "min": 1,
       "points": 135,
-      "order": 0,
+      "min": 1,
       "specialRules": [
         "Knights"
       ]
     },
     "Retainers": {
+      "order": 1,
       "type": "Cavalry",
       "attack": 3,
       "hits": 3,
       "armour": "5+",
       "size": 3,
-      "min": 1,
       "points": 110,
-      "order": 1,
+      "min": 1,
       "specialRules": [
         "Shock"
       ]
     },
     "Light Cavalry": {
+      "order": 2,
       "type": "Cavalry",
       "attack": 2,
-      "hits": 3,
       "range": 15,
+      "hits": 3,
       "armour": "6+",
       "size": 3,
-      "min": 1,
       "points": 60,
+      "min": 1,
       "specialRules": [
         "Skirmish"
-      ],
-      "order": 2
+      ]
     },
     "Militia Crossbows": {
+      "order": 3,
       "type": "Infantry",
       "attack": 2,
       "range": "30",
-      "armour": "6+",
       "hits": 3,
+      "armour": "6+",
       "size": 3,
-      "max": 2,
       "points": 55,
+      "max": 2,
       "specialRules": [
         "Crossbows",
         "Combined Arms"
-      ],
-      "order": 3
+      ]
     },
     "Militia Spearmen": {
+      "order": 4,
       "type": "Infantry",
       "attack": 3,
       "hits": 3,
       "armour": "6+",
       "size": 3,
-      "max": 2,
       "points": 50,
+      "max": 2,
       "specialRules": [
         "Pavisse",
         "Combined Arms"
-      ],
-      "order": 4
+      ]
     },
     "Peasants": {
+      "order": 5,
       "type": "Infantry",
       "attack": 2,
       "hits": 2,
       "size": 3,
-      "max": 4,
       "points": 20,
-      "order": 5
+      "max": 4
     },
     "Handgunners": {
+      "order": 6,
       "type": "Infantry",
       "attack": 2,
       "range": "20",
-      "armour": "6+",
       "hits": 3,
+      "armour": "6+",
       "size": 3,
-      "max": 1,
       "points": 60,
+      "max": 1,
       "specialRules": [
         "Pavisse"
-      ],
-      "order": 6
+      ]
     },
     "Cannon": {
+      "order": 7,
       "type": "Artillery",
       "attack": 1,
       "range": "2×40",
       "hits": 2,
       "size": 2,
-      "max": 1,
       "points": 50,
+      "max": 1,
       "specialRules": [
         "Slow"
-      ],
-      "order": 7
+      ]
     },
     "General": {
+      "order": 8,
       "type": "General",
       "attack": "+2",
       "command": 9,
       "size": 1,
+      "points": 125,
       "armyMin": 1,
       "armyMax": 1,
-      "points": 125,
-      "order": 8,
       "upgrades": [
         "Prayer"
       ]
     },
     "Leader": {
+      "order": 9,
       "type": "Leader",
       "attack": "+1",
       "command": 8,
       "size": 1,
-      "max": 2,
       "points": 80,
-      "order": 9,
+      "max": 2,
       "specialRules": [
         "Noble Attributes"
       ]
@@ -137,11 +137,11 @@
   },
   "upgrades": {
     "Prayer": {
+      "order": 0,
       "type": "Special",
       "points": "+10",
-      "armyMax": 1,
-      "order": 0
-    }    
+      "armyMax": 1
+    }
   },
   "specialRules": {
     "Knights": {
@@ -172,6 +172,7 @@
       "order": 9
     },
     "Noble Attributes": {
+      "order": 10,
       "text": [
         "Roll a dice for each Leader in the army at the start of the game.",
         "",
@@ -183,8 +184,7 @@
         "|4|**Headstrong commander.** Add +1 to the commander's attacks, up to +2 in total. If the commander rolls a blunder, all ordered units must advance as far as possible towards the nearest visible enemy and charge if able to do so.|",
         "|5|**Charismatic Leader.** This commander may re-roll one failed command per game.|",
         "|6|**Venerable Leader.** Increase the commander's command value by +1 to 9.|"
-      ],
-      "order": 10
+      ]
     },
     "Prayer": {
       "order": 11

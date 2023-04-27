@@ -1,18 +1,8 @@
 {
-  "specialRules": {
-    "Skirmish": {
-      "order": 1
-    },
-    "Camels": {
-      "order": 2
-    },
-    "Shock": {
-      "order": 3
-    },
-    "Portents": {
-      "order": 4
-    }
-  },
+  "name": "The Arabs – Conquest of Islam",
+  "version": "Warmaster Ancient Armies",
+  "group": "The Dark Ages",
+  "order": 0,
   "units": {
     "Warrior": {
       "order": 0,
@@ -101,9 +91,9 @@
       "order": 7,
       "type": "General",
       "attack": "+2",
+      "command": 9,
       "size": 1,
       "points": 125,
-      "command": 9,
       "armyMin": 1,
       "armyMax": 1,
       "upgrades": [
@@ -175,8 +165,18 @@
       "armyMax": 1
     }
   },
-  "name": "The Arabs – Conquest of Islam",
-  "version": "Warmaster Ancient Armies",
-  "group": "The Dark Ages",
-  "order": 0
+  "specialRules": {
+    "Skirmish": {
+      "order": 1
+    },
+    "Camels": {
+      "order": 2
+    },
+    "Shock": {
+      "order": 3
+    },
+    "Portents": {
+      "order": 4
+    }
+  }
 }

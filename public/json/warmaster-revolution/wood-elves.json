@@ -5,6 +5,7 @@
   "order": 4,
   "units": {
     "Glade Guard": {
+      "order": 0,
       "type": "Infantry",
       "attack": "3/1",
       "range": "30cm",
@@ -12,20 +13,20 @@
       "size": 3,
       "points": 65,
       "min": 2,
-      "max": 4,
-      "order": 0
+      "max": 4
     },
     "Eternal Guard": {
+      "order": 1,
       "type": "Infantry",
       "attack": 3,
       "hits": 3,
       "armour": "5+",
       "size": 3,
       "points": 60,
-      "max": 3,
-      "order": 1
+      "max": 3
     },
     "Wardancers": {
+      "order": 2,
       "type": "Infantry",
       "attack": 4,
       "hits": 3,
@@ -33,25 +34,25 @@
       "size": "+1",
       "points": 30,
       "max": 4,
-      "noCount": true,
       "augendUnits": [
         "Glade Guard",
         "Eternal Guard"
       ],
-      "noMagic": true,
-      "order": 2
+      "noCount": true,
+      "noMagic": true
     },
     "Waywatchers": {
+      "order": 3,
       "type": "Infantry",
       "attack": "1/2",
       "range": "30cm",
       "hits": 3,
       "size": 2,
       "points": 60,
-      "max": 1,
-      "order": 3
+      "max": 1
     },
     "Dryads": {
+      "order": 4,
       "type": "Infantry",
       "attack": 4,
       "hits": 3,
@@ -61,10 +62,10 @@
       "min": 1,
       "specialRules": [
         "Forest Spirits"
-      ],
-      "order": 4
+      ]
     },
     "Glade Riders": {
+      "order": 5,
       "type": "Cavalry",
       "attack": "3/1",
       "range": "30cm",
@@ -72,10 +73,10 @@
       "armour": "6+",
       "size": 3,
       "points": 90,
-      "max": 3,
-      "order": 5
+      "max": 3
     },
     "Wild Riders": {
+      "order": 6,
       "type": "Cavalry",
       "attack": 3,
       "hits": 3,
@@ -85,10 +86,10 @@
       "max": 2,
       "specialRules": [
         "Forest Spirits"
-      ],
-      "order": 6
+      ]
     },
     "Warhawk Riders": {
+      "order": 7,
       "type": "Monster",
       "attack": "2/1",
       "range": "15cm",
@@ -96,10 +97,10 @@
       "armour": "6+",
       "size": 3,
       "points": 85,
-      "max": 1,
-      "order": 7
+      "max": 1
     },
     "Treekin": {
+      "order": 8,
       "type": "Infantry",
       "attack": 4,
       "hits": 4,
@@ -109,10 +110,10 @@
       "max": 2,
       "specialRules": [
         "Forest Spirits"
-      ],
-      "order": 8
+      ]
     },
     "Treeman": {
+      "order": 9,
       "type": "Monster",
       "attack": 6,
       "hits": 4,
@@ -122,10 +123,10 @@
       "max": 1,
       "specialRules": [
         "Forest Spirits"
-      ],
-      "order": 9
+      ]
     },
     "General": {
+      "order": 10,
       "type": "General",
       "attack": "+2",
       "command": 10,
@@ -137,10 +138,10 @@
         "Giant Stag",
         "Warhawk",
         "Forest Dragon"
-      ],
-      "order": 10
+      ]
     },
     "Noble": {
+      "order": 11,
       "type": "Hero",
       "attack": "+1",
       "command": 8,
@@ -151,30 +152,30 @@
         "Giant Stag",
         "Warhawk",
         "Forest Dragon"
-      ],
-      "order": 11
+      ]
     },
     "Treeman Ancient": {
+      "order": 12,
       "type": "Hero",
       "attack": "+3",
       "command": 8,
       "size": 1,
       "points": 130,
       "armyMax": 1,
-      "noMagic": true,
-      "order": 12
+      "noMagic": true
     },
     "Branchwraith": {
+      "order": 13,
       "type": "Wizard",
       "attack": "+2",
       "command": 8,
       "size": 1,
       "points": 90,
       "max": 1,
-      "noMagic": true,
-      "order": 13
+      "noMagic": true
     },
     "Spell Weaver": {
+      "order": 14,
       "type": "Wizard",
       "attack": "+0",
       "command": 8,
@@ -186,38 +187,37 @@
         "Unicorn",
         "Warhawk",
         "Forest Dragon"
-      ],
-      "order": 14
+      ]
     }
   },
   "upgrades": {
     "Giant Stag": {
+      "order": 0,
       "type": "Special Mount",
       "attack": "+1",
       "points": "+10",
-      "order": 0,
       "max": 1
     },
     "Unicorn": {
+      "order": 1,
       "type": "Special Mount",
       "attack": "+1",
       "points": "+15",
-      "order": 1,
       "max": 1
     },
     "Warhawk": {
+      "order": 2,
       "type": "Monstrous Mount",
       "attack": "+1",
       "points": "+15",
-      "order": 2,
       "max": 1
     },
     "Forest Dragon": {
+      "order": 3,
       "type": "Monstrous Mount",
       "attack": "+3",
       "points": "+100",
-      "max": 1,
-      "order": 3
+      "max": 1
     }
   },
   "magic": true,
@@ -308,40 +308,40 @@
   },
   "spells": [
     {
+      "name": "Tree Singing",
       "roll": 4,
       "range": "30cm",
       "text": [
         "The Spell Weaver calls force a mass of tangling branches to surround ther troops, protecting them form harm.",
         "",
         "This spell may be cast upon a single unengaged friendly Infantry unit within range, regardless of whether the caster can see them or not. The spell lasts until the start of the caster‘s next turn, or until the target unit moves in any way. The target Infantry unit counts as Defended, even if it is in open terrain."
-      ],
-      "name": "Tree Singing"
+      ]
     },
     {
+      "name": "Twilight Host",
       "roll": 5,
       "range": "30cm",
       "text": [
         "A weird enchantment forms around the target unit and engulfs it. Unit causes terror until Wood Elf next magic phase."
-      ],
-      "name": "Twilight Host"
+      ]
     },
     {
+      "name": "Call of the Hunt",
       "roll": 5,
       "range": "30cm",
       "text": [
         "Unit may make a full pace move into contact with the nearest visible enemy unit in the same way as when charging. Enemy may not shoot at chargers."
-      ],
-      "name": "Call of the Hunt"
+      ]
     },
     {
+      "name": "Fury of the Forest",
       "roll": 6,
       "range": "60cm",
       "text": [
         "The spell makes three shooting attacks on all enemy units within 10cm of chosen wooded terrain piece. Units get no armour save if within wooded terrain.",
         "",
         "Unengaged units are not driven back by this spell (the assault comes form the ground beneath their feet). Engaged units carry over any hits scored into the first round of combat; any hits scored count as having been struck in the combat itself."
-      ],
-      "name": "Fury of the Forest"
+      ]
     }
   ]
 }

@@ -5,143 +5,143 @@
   "order": 0,
   "units": {
     "Levy Infantry": {
+      "order": 0,
       "type": "Infantry",
       "attack": 3,
       "hits": 3,
       "armour": "6+",
       "size": 3,
-      "min": 4,
       "points": 35,
+      "min": 4,
       "specialRules": [
         "Unreliable"
-      ],
-      "order": 0
+      ]
     },
     "Levy Archers": {
+      "order": 1,
       "type": "Infantry",
       "attack": 2,
       "range": 30,
       "hits": 3,
       "armour": "6+",
       "size": 3,
-      "max": 8,
       "points": 40,
+      "max": 8,
       "specialRules": [
         "Unreliable"
-      ],
-      "order": 1
+      ]
     },
     "Skirmishers": {
+      "order": 2,
       "type": "Infantry",
       "attack": 1,
       "range": 15,
       "hits": 3,
       "size": 3,
-      "max": 6,
       "points": 30,
+      "max": 6,
       "specialRules": [
         "Skirmish"
-      ],
-      "order": 2
+      ]
     },
     "Guard Cavalry": {
+      "order": 3,
       "type": "Cavalry",
       "attack": 4,
       "range": 15,
       "hits": 3,
       "armour": "5+",
       "size": 3,
-      "max": 1,
       "points": 125,
+      "max": 1,
       "specialRules": [
         "Shock"
-      ],
-      "order": 3
+      ]
     },
     "Cataphracts": {
+      "order": 4,
       "type": "Cavalry",
       "attack": 3,
       "hits": 3,
       "armour": "4+",
       "size": 3,
-      "max": 1,
       "points": 125,
+      "max": 1,
       "specialRules": [
         "Shock",
         "Slow"
-      ],
-      "order": 4
+      ]
     },
     "Clibanarii": {
+      "order": 5,
       "type": "Cavalry",
       "attack": 3,
       "range": 15,
       "hits": 3,
       "armour": "5+",
       "size": 3,
-      "min": 2,
       "points": 115,
+      "min": 2,
       "specialRules": [
         "Shock"
-      ],
-      "order": 5
+      ]
     },
     "Mounted Skirmishers": {
+      "order": 6,
       "type": "Cavalry",
       "attack": 1,
       "range": 15,
       "hits": 3,
       "size": 3,
-      "max": 6,
       "points": 40,
+      "max": 6,
       "specialRules": [
         "Skirmish"
-      ],
-      "order": 6
+      ]
     },
     "Elephant": {
+      "order": 7,
       "type": "Elephant",
       "attack": 4,
       "range": 15,
       "hits": 4,
       "armour": "5+",
       "size": 3,
-      "max": 1,
       "points": 200,
+      "max": 1,
       "specialRules": [
         "Elephants"
-      ],
-      "order": 7
+      ]
     },
     "General": {
+      "order": 8,
       "type": "General",
       "attack": "+2",
       "command": 9,
       "size": 1,
+      "points": 125,
       "armyMin": 1,
       "armyMax": 1,
-      "points": 125,
       "upgrades": [
         "Portents"
-      ],
-      "order": 8
+      ]
     },
     "Leader": {
+      "order": 9,
       "type": "Leader",
       "attack": "+1",
       "command": 8,
       "size": 1,
-      "max": 2,
       "points": 80,
-      "order": 9
+      "max": 2
     }
   },
   "upgrades": {
     "Portents": {
+      "order": 0,
       "type": "Special",
-      "armyMax": 1,
       "points": "+10",
-      "order": 0
+      "armyMax": 1
     }
   },
   "specialRules": {
@@ -161,10 +161,10 @@
       "order": 5
     },
     "Portents": {
+      "order": 6,
       "text": [
         "The General can take the portents before the battle. This allows the Genral to re-roll one failed Command roll once during the battle. Take the Command test again—if successful the order is issued and the General can continue giving further orders if you wish."
-      ],
-      "order": 6
+      ]
     }
   }
 }

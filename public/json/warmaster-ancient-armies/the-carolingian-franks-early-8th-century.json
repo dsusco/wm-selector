@@ -1,18 +1,8 @@
 {
-  "specialRules": {
-    "Shieldwall": {
-      "order": 1
-    },
-    "Skirmish": {
-      "order": 2
-    },
-    "Charlemagne": {
-      "order": 3,
-      "text": [
-        "Charlemagne has a Command value of 9. Charlemagne can re-roll one failed Command roll once during the battle. Take the Command test again – if successful, the order is issued and Charlemagne can continue giving futher orders if you wish. Note – this is Command 9 cobined with the standard 'Portent' rule."
-      ]
-    }
-  },
+  "name": "The Carolingian Franks (Early 8th Century)",
+  "version": "Warmaster Ancient Armies",
+  "group": "The Dark Ages",
+  "order": 4,
   "units": {
     "Spearmen": {
       "order": 0,
@@ -99,7 +89,7 @@
   },
   "upgrades": {
     "Charlemagne": {
-      "order": 2,
+      "order": 0,
       "type": "General",
       "attack": "+2",
       "command": 9,
@@ -108,8 +98,18 @@
       "armyMax": 1
     }
   },
-  "name": "The Carolingian Franks (Early 8th Century)",
-  "version": "Warmaster Ancient Armies",
-  "group": "The Dark Ages",
-  "order": 4
+  "specialRules": {
+    "Shieldwall": {
+      "order": 1
+    },
+    "Skirmish": {
+      "order": 2
+    },
+    "Charlemagne": {
+      "order": 3,
+      "text": [
+        "Charlemagne has a Command value of 9. Charlemagne can re-roll one failed Command roll once during the battle. Take the Command test again – if successful, the order is issued and Charlemagne can continue giving futher orders if you wish. Note – this is Command 9 cobined with the standard 'Portent' rule."
+      ]
+    }
+  }
 }

@@ -1,1 +1,384 @@
-{"name":"Bretonnie","version":"Warmaster Evolution","group":0,"order":1,"units":{"Archers":{"type":"Infantrie","attack":"3/1","range":"30cm","hits":3,"size":3,"points":55,"noCount":true,"order":0},"Hommes d'Armes":{"type":"Infantrie","attack":3,"hits":3,"armour":"6+","size":3,"points":45,"min":1,"noCount":true,"order":1},"Paysans":{"type":"Infantrie","attack":3,"hits":3,"size":3,"points":30,"max":4,"upgrades":["Reliquaire du Grall"],"noCount":true,"order":2},"Ecuyers":{"type":"Cavalerie","attack":3,"range":"30cm","hits":3,"armour":"6+","size":3,"points":90,"min":1,"max":4,"noCount":true,"order":3},"Chevaliers":{"type":"Cavalerie","attack":3,"hits":3,"armour":"4+","size":3,"points":110,"min":1,"order":4},"Chevaliers du Graal":{"type":"Cavalerie","attack":3,"hits":3,"armour":"4+","size":3,"points":120,"max":1,"order":5},"Chevaliers Pégase":{"type":"Monstre","attack":2,"hits":3,"armour":"5+","size":3,"points":80,"max":1,"order":6},"Trébuchet":{"type":"Artillerie","attack":"1/4","range":"80cm","hits":4,"size":1,"points":100,"max":1,"noCount":true,"order":7},"Général":{"type":"Général","attack":"+2","command":9,"size":1,"points":125,"armyMin":1,"armyMax":1,"upgrades":["Pégase","Hippogriffe"],"order":8},"Héros":{"type":"Héros","attack":"+1","command":8,"size":1,"points":80,"max":2,"upgrades":["Pégase"],"order":9},"Enchanteresse":{"type":"Sorcier","attack":"+0","command":7,"size":1,"points":45,"max":1,"upgrades":["Licorne","Pégase"],"order":10}},"upgrades":{"Licorne":{"type":"Monture Spéciale","attack":"+1","points":"+15","max":1,"order":0},"Pégase":{"type":"Monture Monstrueuse","attack":"+1","points":"+15","max":1,"order":1},"Hippogriffe":{"type":"Monture Monstrueuse","attack":"+2","points":"+80","max":1,"order":2},"Reliquaire du Grall":{"type":"Spécial","points":"+40","armyMax":1,"order":3}},"magic":true,"armyRules":["L’armée Bretonnienne est essentiellement composée de","chevaliers et ce sont sans doute eux, et non la roture","crasseuse, qui décideront de l’issue de la bataille. Pour","représenter ceci, une armée Bretonnienne ne suit pas les","règles habituelles pour déterminer le moment où elle doit","dérouter. Au lieu de compter votre nombre total d’unités au","début de la bataille, comptez uniquement le nombre","d’unités de Chevaliers, Chevaliers Pégase et de Chevaliers du","Graal. Une fois que l’armée a perdu la moitié ou plus de ses","unités de Chevaliers, Chevaliers Pégase ou Chevaliers du","Graal, elle déroute."],"specialRules":{"Paysans":{"text":["Non-fiables.","Cependant, cette pénalité est annulée si l’unité de Paysans","fait partie d’une brigade qui inclut au moins une unité","n’étant pas composée de Paysans. Les Paysans ne peuvent","pas utiliser l’initiative pour charger mais peuvent s’en servir","pour éviter de la façon habituelle. Lorsque des Paysans","chargent, ils ne reçoivent aucun bonus d’Attaque dû à la","charge."],"order":1},"Chevaliers":{"order":2,"text":["Une unité de Chevaliers utilisera toujours","l’initiative pour charger un ennemi si possible et ne pourra pas","recevoir d’ordre à la place. Elle ne peut en aucun cas utiliser","l’initiative pour éviter. Les Chevaliers ne sont pas affectés par","les ennemis qui causent la terreur et ne subissent pas le malus","habituel de -1 Attaque lorsqu’ils les affrontent."]},"Chevaliers du Graal":{"text":["Toutes les règles Speciales des","Chevaliers s’appliquent aux Chevaliers du Graal. De plus, une","unité de Chevaliers du Graal qui charge un ennemi à découvert","reçoit un bonus supplémentaire de +1 Attaque, comme un","char ou monstre."],"order":3},"Chevaliers Pégase":{"text":["Toutes les règles Speciales des","Chevaliers s’appliquent aux Chevaliers Pégase. De plus, les","Chevaliers Pégase possèdent le Vol."],"order":4},"Trébuchet":{"text":["Le Trébuchet doit être montée sur un socle de","40 mm de large sur 60 mm de profondeur. Notez qu’il s’agit de","la taille de trois socles de Warmaster collés ensembles. Une","fois le Trébuchet déployé il ne peut plus être déplacé, en","aucune circonstance.","Un Trébuchet qui est Repoussé de 10cm ou plus par des tirs","est détruit (les repoussements de moins de 10cm sont","ignorés).","10","Un Trébuchet n’est pas affecté par le sort Cri de Gork.","Le Trébuchet a une portée de tir de 80cm. Les unités","fortifiées comptent comme en défense et les unités en","défense comptent comme à découvert. Aucune armure","n’est permise contre les tirs de Trébuchet. Le Trébuchet","n’effectue jamais de tir de contre-charge.","Le Trébuchet peut tirer au-dessus d’unités plus basses que","lui, comme n’importe quelle autre artillerie.","Tir en Aveugle: s’il n’y a aucune cible valide visible, un","Trébuchet peut faire un tir en aveugle sur l’ennemi à portée","le plus proche. Lors de ce tir le Trébuchet touche toujours sa","cible sur 6+ peu importe qu’il soit à découvert, défendu ou","fortifié."],"order":5},"Licorne":{"text":["Seule une Enchanteresse peut chevaucher une","Licorne. Celle-ci ajoute +1 Attaque à sa cavalière. Une fois","par bataille, les pouvoirs magiques de la Licorne peuvent","permettre à l’Enchanteresse de bénéficier d’un bonus de +1","pour le lancement d’un sort. Le joueur doit annoncer qu’il","utilise les pouvoirs de la Licorne avant de jeter le dé pour","déterminer si le pouvoir est lancé avec succès."],"order":6},"Pégase":{"text":["Un Pégase peut être chevauché par le Général,","un Héros ou une Enchanteresse. Il ajoute +1 Attaque à son","cavalier et lui permet de voler."],"order":7},"Hippogriffe":{"text":["L’Hippogriffee peut être chevauché par le","Général ou un Héros. Un Hippogriffee donne le Vol et la","Terreur.",""],"order":8},"Reliquaire du Grall":{"text":["Cette relique sacrée peut être donnée","à une unique unité de Paysan. Cette unité ainsi que toutes les","unités de Paysans à son contact deviennent (tant qu’elles sont","au contact) des Pèlerins du Grall. Les Pèlerins du Grall sont","immunisés à la Terreur, n’ont pas le malus de -1 de CdT aux","ordres et obtiennent +1 Attaque lorsqu’ils chargent une unité","à découvert; ils doivent charger par Initiative l’unité ennemie","la plus proche, ne sont pas repoussés par les tirs et ne sont","jamais Confus.","Avant d’effectuer une action avec des pèlerins du Grall vérifiez","s’ils touchent toujours l’unité portant le Reliquaire; sinon ce ne","sont que des Paysans."],"order":9}},"spells":[{"roll":4,"text":["Les projectiles lancés par l’ennemi se mettent à scintiller au","milieu de leur vol et disparaissent comme par","enchantement sans causer le moindre mal à leur cible.","Ce sort peut être lancé sur l’Enchanteresse elle-même et","affecte toutes les unités amies à moins de 15 cm de celle-ci.","Les effets du sort durent jusqu’à la fin du tour ennemi","suivant.","Toutes les unités amies dans un rayon de 15cm de","l’Enchanteresse peuvent relancer leurs jets de sauvegarde","d’Armure ratés durant la phase de tir. Ceci s’applique à tous","les jets de sauvegarde d’Armure, qu’ils soient dus à des tirs,","au feu d’un dragon, à des sorts, etc.","Cette relance s’applique également aux sauvegardes","d’Armure effectuées contre les touches subies lors d’un tir","de contre-charge. Dans ce cas, les relances ne s’appliquent","que si l’Enchanteresse se trouve dans un rayon de 15cm de","l’unité au début de son mouvement de charge. Peu importe","si l’unité n’est plus à portée d’effet du sort une fois sa","charge terminée.","Notez qu’une seule relance par jet de sauvegarde est","autorisée quel que soit le nombre d’Enchanteresses ayant","lancé ce sort à portée. Un jet de dé ne peut être relancé","qu’une seule fois quelles que soient les circonstances peut","être accordée à n’importe lequel des socles de l’unité, et","peut être allouée à un socle différent à chaque round de","corps à corps."],"name":"Bouclier Éthéré","range":"affecte tous les amis à moins de 15 cm."},{"roll":4,"range":" Portée -, pas de ligne de vue","text":["Les coups de l’ennemi sont détournés par de puissants","enchantements et ne causent aucun dommage.","Une Enchanteresse peut jeter ce sort sur une unité qu’elle a","rejointe. Les effets du sort durent jusqu’à la fin du tour","ennemi suivant.","L’unité peut relancer ses jets de sauvegarde d’Armure ratés","durant la phase de combat. Ceci ne s’applique pas aux","touches subies lors d’un tir de contre-charge, car il s’agit de","touches de tir et celles-ci sont prises en charge par le sort","Bouclier Éthéré.","Notez qu’une seule relance par jet de sauvegarde est","autorisée quel que soit le nombre d’Enchanteresses ayant","lancé ce sort à portée. Un jet de dé ne peut être relancé","qu’une seule fois quelles que soient les circonstances."],"name":"Bouclier de Combat"},{"roll":5,"range":" Portée 30 cm, pas de ligne de vue.","text":["Un brouillard mystérieux se lève autour de l’ennemi et lui","dissimule le déroulement de la bataille.","Ce sort peut être lancé sur une unité ennemie à portée, que","l’Enchanteresse puisse la voir ou non. Les effets du sort durent","jusqu’à la fin du tour ennemi suivant.","L’unité ne peut pas utiliser l’initiative. Tout ordre donné à","l’unité, ou à la brigade dont elle fait partie, subit une pénalité","de -1 en Cdt.",""],"name":"Brouillard Mystique"},{"roll":5,"range":"Portée 30 cm, pas de ligne de vue","text":["Une vision de la Dame apparaît pour conduire les Bretonniens","au milieu des combats ou au contraire loin de tout danger.","Ce sort peut être lancé sur une unité amie non engagée à","portée, que l’Enchanteresse puisse la voir ou non. Le sort","n’affecte qu’une seule unité, jamais la brigade dont elle fait","partie.","L’unité peut se déplacer comme si elle venait de recevoir un","ordre durant la phase d’ordres. Les personnages qui ont","rejoint l’unité ne peuvent toutefois pas en faire autant : ils","restent là où ils sont."],"name":"Faveur de la Dame"}]}
+{
+  "name": "Bretonnie",
+  "version": "Warmaster Evolution",
+  "group": 0,
+  "order": 1,
+  "units": {
+    "Archers": {
+      "order": 0,
+      "type": "Infantrie",
+      "attack": "3/1",
+      "range": "30cm",
+      "hits": 3,
+      "size": 3,
+      "points": 55,
+      "noCount": true
+    },
+    "Hommes d'Armes": {
+      "order": 1,
+      "type": "Infantrie",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 45,
+      "min": 1,
+      "noCount": true
+    },
+    "Paysans": {
+      "order": 2,
+      "type": "Infantrie",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "points": 30,
+      "max": 4,
+      "noCount": true,
+      "upgrades": [
+        "Reliquaire du Grall"
+      ]
+    },
+    "Ecuyers": {
+      "order": 3,
+      "type": "Cavalerie",
+      "attack": 3,
+      "range": "30cm",
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 90,
+      "min": 1,
+      "max": 4,
+      "noCount": true
+    },
+    "Chevaliers": {
+      "order": 4,
+      "type": "Cavalerie",
+      "attack": 3,
+      "hits": 3,
+      "armour": "4+",
+      "size": 3,
+      "points": 110,
+      "min": 1
+    },
+    "Chevaliers du Graal": {
+      "order": 5,
+      "type": "Cavalerie",
+      "attack": 3,
+      "hits": 3,
+      "armour": "4+",
+      "size": 3,
+      "points": 120,
+      "max": 1
+    },
+    "Chevaliers Pégase": {
+      "order": 6,
+      "type": "Monstre",
+      "attack": 2,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 80,
+      "max": 1
+    },
+    "Trébuchet": {
+      "order": 7,
+      "type": "Artillerie",
+      "attack": "1/4",
+      "range": "80cm",
+      "hits": 4,
+      "size": 1,
+      "points": 100,
+      "max": 1,
+      "noCount": true
+    },
+    "Général": {
+      "order": 8,
+      "type": "Général",
+      "attack": "+2",
+      "command": 9,
+      "size": 1,
+      "points": 125,
+      "armyMin": 1,
+      "armyMax": 1,
+      "upgrades": [
+        "Pégase",
+        "Hippogriffe"
+      ]
+    },
+    "Héros": {
+      "order": 9,
+      "type": "Héros",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 80,
+      "max": 2,
+      "upgrades": [
+        "Pégase"
+      ]
+    },
+    "Enchanteresse": {
+      "order": 10,
+      "type": "Sorcier",
+      "attack": "+0",
+      "command": 7,
+      "size": 1,
+      "points": 45,
+      "max": 1,
+      "upgrades": [
+        "Licorne",
+        "Pégase"
+      ]
+    }
+  },
+  "upgrades": {
+    "Licorne": {
+      "order": 0,
+      "type": "Monture Spéciale",
+      "attack": "+1",
+      "points": "+15",
+      "max": 1
+    },
+    "Pégase": {
+      "order": 1,
+      "type": "Monture Monstrueuse",
+      "attack": "+1",
+      "points": "+15",
+      "max": 1
+    },
+    "Hippogriffe": {
+      "order": 2,
+      "type": "Monture Monstrueuse",
+      "attack": "+2",
+      "points": "+80",
+      "max": 1
+    },
+    "Reliquaire du Grall": {
+      "order": 3,
+      "type": "Spécial",
+      "points": "+40",
+      "armyMax": 1
+    }
+  },
+  "magic": true,
+  "armyRules": [
+    "L’armée Bretonnienne est essentiellement composée de",
+    "chevaliers et ce sont sans doute eux, et non la roture",
+    "crasseuse, qui décideront de l’issue de la bataille. Pour",
+    "représenter ceci, une armée Bretonnienne ne suit pas les",
+    "règles habituelles pour déterminer le moment où elle doit",
+    "dérouter. Au lieu de compter votre nombre total d’unités au",
+    "début de la bataille, comptez uniquement le nombre",
+    "d’unités de Chevaliers, Chevaliers Pégase et de Chevaliers du",
+    "Graal. Une fois que l’armée a perdu la moitié ou plus de ses",
+    "unités de Chevaliers, Chevaliers Pégase ou Chevaliers du",
+    "Graal, elle déroute."
+  ],
+  "specialRules": {
+    "Paysans": {
+      "order": 1,
+      "text": [
+        "Non-fiables.",
+        "Cependant, cette pénalité est annulée si l’unité de Paysans",
+        "fait partie d’une brigade qui inclut au moins une unité",
+        "n’étant pas composée de Paysans. Les Paysans ne peuvent",
+        "pas utiliser l’initiative pour charger mais peuvent s’en servir",
+        "pour éviter de la façon habituelle. Lorsque des Paysans",
+        "chargent, ils ne reçoivent aucun bonus d’Attaque dû à la",
+        "charge."
+      ]
+    },
+    "Chevaliers": {
+      "order": 2,
+      "text": [
+        "Une unité de Chevaliers utilisera toujours",
+        "l’initiative pour charger un ennemi si possible et ne pourra pas",
+        "recevoir d’ordre à la place. Elle ne peut en aucun cas utiliser",
+        "l’initiative pour éviter. Les Chevaliers ne sont pas affectés par",
+        "les ennemis qui causent la terreur et ne subissent pas le malus",
+        "habituel de -1 Attaque lorsqu’ils les affrontent."
+      ]
+    },
+    "Chevaliers du Graal": {
+      "order": 3,
+      "text": [
+        "Toutes les règles Speciales des",
+        "Chevaliers s’appliquent aux Chevaliers du Graal. De plus, une",
+        "unité de Chevaliers du Graal qui charge un ennemi à découvert",
+        "reçoit un bonus supplémentaire de +1 Attaque, comme un",
+        "char ou monstre."
+      ]
+    },
+    "Chevaliers Pégase": {
+      "order": 4,
+      "text": [
+        "Toutes les règles Speciales des",
+        "Chevaliers s’appliquent aux Chevaliers Pégase. De plus, les",
+        "Chevaliers Pégase possèdent le Vol."
+      ]
+    },
+    "Trébuchet": {
+      "order": 5,
+      "text": [
+        "Le Trébuchet doit être montée sur un socle de",
+        "40 mm de large sur 60 mm de profondeur. Notez qu’il s’agit de",
+        "la taille de trois socles de Warmaster collés ensembles. Une",
+        "fois le Trébuchet déployé il ne peut plus être déplacé, en",
+        "aucune circonstance.",
+        "Un Trébuchet qui est Repoussé de 10cm ou plus par des tirs",
+        "est détruit (les repoussements de moins de 10cm sont",
+        "ignorés).",
+        "10",
+        "Un Trébuchet n’est pas affecté par le sort Cri de Gork.",
+        "Le Trébuchet a une portée de tir de 80cm. Les unités",
+        "fortifiées comptent comme en défense et les unités en",
+        "défense comptent comme à découvert. Aucune armure",
+        "n’est permise contre les tirs de Trébuchet. Le Trébuchet",
+        "n’effectue jamais de tir de contre-charge.",
+        "Le Trébuchet peut tirer au-dessus d’unités plus basses que",
+        "lui, comme n’importe quelle autre artillerie.",
+        "Tir en Aveugle: s’il n’y a aucune cible valide visible, un",
+        "Trébuchet peut faire un tir en aveugle sur l’ennemi à portée",
+        "le plus proche. Lors de ce tir le Trébuchet touche toujours sa",
+        "cible sur 6+ peu importe qu’il soit à découvert, défendu ou",
+        "fortifié."
+      ]
+    },
+    "Licorne": {
+      "order": 6,
+      "text": [
+        "Seule une Enchanteresse peut chevaucher une",
+        "Licorne. Celle-ci ajoute +1 Attaque à sa cavalière. Une fois",
+        "par bataille, les pouvoirs magiques de la Licorne peuvent",
+        "permettre à l’Enchanteresse de bénéficier d’un bonus de +1",
+        "pour le lancement d’un sort. Le joueur doit annoncer qu’il",
+        "utilise les pouvoirs de la Licorne avant de jeter le dé pour",
+        "déterminer si le pouvoir est lancé avec succès."
+      ]
+    },
+    "Pégase": {
+      "order": 7,
+      "text": [
+        "Un Pégase peut être chevauché par le Général,",
+        "un Héros ou une Enchanteresse. Il ajoute +1 Attaque à son",
+        "cavalier et lui permet de voler."
+      ]
+    },
+    "Hippogriffe": {
+      "order": 8,
+      "text": [
+        "L’Hippogriffee peut être chevauché par le",
+        "Général ou un Héros. Un Hippogriffee donne le Vol et la",
+        "Terreur.",
+        ""
+      ]
+    },
+    "Reliquaire du Grall": {
+      "order": 9,
+      "text": [
+        "Cette relique sacrée peut être donnée",
+        "à une unique unité de Paysan. Cette unité ainsi que toutes les",
+        "unités de Paysans à son contact deviennent (tant qu’elles sont",
+        "au contact) des Pèlerins du Grall. Les Pèlerins du Grall sont",
+        "immunisés à la Terreur, n’ont pas le malus de -1 de CdT aux",
+        "ordres et obtiennent +1 Attaque lorsqu’ils chargent une unité",
+        "à découvert; ils doivent charger par Initiative l’unité ennemie",
+        "la plus proche, ne sont pas repoussés par les tirs et ne sont",
+        "jamais Confus.",
+        "Avant d’effectuer une action avec des pèlerins du Grall vérifiez",
+        "s’ils touchent toujours l’unité portant le Reliquaire; sinon ce ne",
+        "sont que des Paysans."
+      ]
+    }
+  },
+  "spells": [
+    {
+      "name": "Bouclier Éthéré",
+      "roll": 4,
+      "range": "affecte tous les amis à moins de 15 cm.",
+      "text": [
+        "Les projectiles lancés par l’ennemi se mettent à scintiller au",
+        "milieu de leur vol et disparaissent comme par",
+        "enchantement sans causer le moindre mal à leur cible.",
+        "Ce sort peut être lancé sur l’Enchanteresse elle-même et",
+        "affecte toutes les unités amies à moins de 15 cm de celle-ci.",
+        "Les effets du sort durent jusqu’à la fin du tour ennemi",
+        "suivant.",
+        "Toutes les unités amies dans un rayon de 15cm de",
+        "l’Enchanteresse peuvent relancer leurs jets de sauvegarde",
+        "d’Armure ratés durant la phase de tir. Ceci s’applique à tous",
+        "les jets de sauvegarde d’Armure, qu’ils soient dus à des tirs,",
+        "au feu d’un dragon, à des sorts, etc.",
+        "Cette relance s’applique également aux sauvegardes",
+        "d’Armure effectuées contre les touches subies lors d’un tir",
+        "de contre-charge. Dans ce cas, les relances ne s’appliquent",
+        "que si l’Enchanteresse se trouve dans un rayon de 15cm de",
+        "l’unité au début de son mouvement de charge. Peu importe",
+        "si l’unité n’est plus à portée d’effet du sort une fois sa",
+        "charge terminée.",
+        "Notez qu’une seule relance par jet de sauvegarde est",
+        "autorisée quel que soit le nombre d’Enchanteresses ayant",
+        "lancé ce sort à portée. Un jet de dé ne peut être relancé",
+        "qu’une seule fois quelles que soient les circonstances peut",
+        "être accordée à n’importe lequel des socles de l’unité, et",
+        "peut être allouée à un socle différent à chaque round de",
+        "corps à corps."
+      ]
+    },
+    {
+      "name": "Bouclier de Combat",
+      "roll": 4,
+      "range": " Portée -, pas de ligne de vue",
+      "text": [
+        "Les coups de l’ennemi sont détournés par de puissants",
+        "enchantements et ne causent aucun dommage.",
+        "Une Enchanteresse peut jeter ce sort sur une unité qu’elle a",
+        "rejointe. Les effets du sort durent jusqu’à la fin du tour",
+        "ennemi suivant.",
+        "L’unité peut relancer ses jets de sauvegarde d’Armure ratés",
+        "durant la phase de combat. Ceci ne s’applique pas aux",
+        "touches subies lors d’un tir de contre-charge, car il s’agit de",
+        "touches de tir et celles-ci sont prises en charge par le sort",
+        "Bouclier Éthéré.",
+        "Notez qu’une seule relance par jet de sauvegarde est",
+        "autorisée quel que soit le nombre d’Enchanteresses ayant",
+        "lancé ce sort à portée. Un jet de dé ne peut être relancé",
+        "qu’une seule fois quelles que soient les circonstances."
+      ]
+    },
+    {
+      "name": "Brouillard Mystique",
+      "roll": 5,
+      "range": " Portée 30 cm, pas de ligne de vue.",
+      "text": [
+        "Un brouillard mystérieux se lève autour de l’ennemi et lui",
+        "dissimule le déroulement de la bataille.",
+        "Ce sort peut être lancé sur une unité ennemie à portée, que",
+        "l’Enchanteresse puisse la voir ou non. Les effets du sort durent",
+        "jusqu’à la fin du tour ennemi suivant.",
+        "L’unité ne peut pas utiliser l’initiative. Tout ordre donné à",
+        "l’unité, ou à la brigade dont elle fait partie, subit une pénalité",
+        "de -1 en Cdt.",
+        ""
+      ]
+    },
+    {
+      "name": "Faveur de la Dame",
+      "roll": 5,
+      "range": "Portée 30 cm, pas de ligne de vue",
+      "text": [
+        "Une vision de la Dame apparaît pour conduire les Bretonniens",
+        "au milieu des combats ou au contraire loin de tout danger.",
+        "Ce sort peut être lancé sur une unité amie non engagée à",
+        "portée, que l’Enchanteresse puisse la voir ou non. Le sort",
+        "n’affecte qu’une seule unité, jamais la brigade dont elle fait",
+        "partie.",
+        "L’unité peut se déplacer comme si elle venait de recevoir un",
+        "ordre durant la phase d’ordres. Les personnages qui ont",
+        "rejoint l’unité ne peuvent toutefois pas en faire autant : ils",
+        "restent là où ils sont."
+      ]
+    }
+  ]
+}

@@ -5,6 +5,7 @@
   "order": 3,
   "units": {
     "Greek Hoplites": {
+      "order": 0,
       "type": "Infantry",
       "attack": 3,
       "hits": 3,
@@ -13,170 +14,169 @@
       "points": 50,
       "specialRules": [
         "Unreliable"
-      ],
-      "order": 0
+      ]
     },
     "Persian Infantry": {
+      "order": 1,
       "type": "Infantry",
       "attack": 3,
       "hits": 3,
       "armour": "6+",
       "size": 3,
-      "max": 4,
       "points": 45,
-      "order": 1
+      "max": 4
     },
     "Subject Infantry": {
+      "order": 2,
       "type": "Infantry",
       "attack": 3,
       "hits": 3,
       "size": 3,
-      "min": 2,
       "points": 25,
+      "min": 2,
       "specialRules": [
         "Unreliable"
-      ],
-      "order": 2
+      ]
     },
     "Archers": {
+      "order": 3,
       "type": "Infantry",
       "attack": 2,
       "range": 30,
       "hits": 3,
       "size": 3,
-      "max": 6,
       "points": 40,
-      "order": 3
+      "max": 6
     },
     "Skirmishers": {
+      "order": 4,
       "type": "Infantry",
       "attack": 1,
       "range": 15,
       "hits": 3,
       "size": 3,
-      "max": 6,
       "points": 30,
+      "max": 6,
       "specialRules": [
         "Skirmish"
-      ],
-      "order": 4
+      ]
     },
     "Heavy Cavalry": {
+      "order": 5,
       "type": "Cavalry",
       "attack": 3,
       "hits": 3,
       "armour": "5+",
       "size": 3,
-      "max": 4,
       "points": 80,
-      "order": 5
+      "max": 4
     },
     "Light Cavalry": {
+      "order": 6,
       "type": "Cavalry",
       "attack": 2,
       "range": 15,
       "hits": 3,
       "armour": "6+",
       "size": 3,
+      "points": 60,
       "min": 2,
       "max": 6,
-      "points": 60,
       "specialRules": [
         "Skirmish"
-      ],
-      "order": 6
+      ]
     },
     "Mounted Skirmishers": {
+      "order": 7,
       "type": "Cavalry",
       "attack": 1,
       "range": 15,
       "hits": 3,
       "size": 3,
-      "max": 6,
       "points": 40,
+      "max": 6,
       "specialRules": [
         "Skirmish"
-      ],
-      "order": 7
+      ]
     },
     "Scythians": {
+      "order": 8,
       "type": "Cavalry",
       "attack": 1,
       "range": 30,
       "hits": 3,
       "size": 3,
-      "max": 1,
       "points": 60,
+      "max": 1,
       "specialRules": [
         "Skirmish"
-      ],
-      "order": 8
+      ]
     },
     "Scythed Chariot": {
+      "order": 9,
       "type": "Chariot",
       "attack": 4,
       "hits": 3,
       "armour": "5+",
       "size": 1,
-      "max": 1,
       "points": 50,
+      "max": 1,
       "specialRules": [
         "Heavy Chariots"
       ],
-      "noCount": true,
-      "order": 9
+      "noCount": true
     },
     "Elephant": {
+      "order": 10,
       "type": "Elephant",
       "attack": 4,
       "range": 15,
       "hits": 4,
       "armour": "5+",
       "size": 3,
-      "max": 1,
       "points": 200,
+      "max": 1,
       "specialRules": [
         "Elephants"
-      ],
-      "order": 10
+      ]
     },
     "General": {
+      "order": 11,
       "type": "General",
       "attack": "+0",
       "command": 9,
       "size": 1,
+      "points": 115,
       "armyMin": 1,
       "armyMax": 1,
-      "points": 115,
       "upgrades": [
         "Chariot",
         "Portents"
-      ],
-      "order": 11
+      ]
     },
     "Leader": {
+      "order": 12,
       "type": "Leader",
       "attack": "+1",
       "command": 8,
       "size": 1,
-      "max": 2,
       "points": 80,
-      "order": 12
+      "max": 2
     }
   },
   "upgrades": {
     "Chariot": {
+      "order": 0,
       "type": "Mount",
       "attack": "+1",
-      "max": 1,
       "points": "+10",
-      "order": 0
+      "max": 1
     },
     "Portents": {
+      "order": 1,
       "type": "Special",
-      "armyMax": 1,
       "points": "+10",
-      "order": 1
+      "armyMax": 1
     }
   },
   "specialRules": {
@@ -193,16 +193,16 @@
       "order": 4
     },
     "Chariot": {
+      "order": 5,
       "text": [
         "Upgrade to mount General on chariot."
-      ],
-      "order": 5
+      ]
     },
     "Portents": {
+      "order": 6,
       "text": [
         "The General can take the portents before the battle. This allows the Genral to re-roll one failed Command roll once during the battle. Take the Command test again—if successful the order is issued and the General can continue giving further orders if you wish."
-      ],
-      "order": 6
+      ]
     }
   }
 }

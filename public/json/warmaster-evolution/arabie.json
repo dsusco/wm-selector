@@ -1,1 +1,504 @@
-{"name":"Arabie","version":"Warmaster Evolution","group":0,"order":0,"units":{"Lancier":{"type":"Infantrie","attack":3,"hits":3,"armour":"6+","size":3,"points":45,"min":2,"order":0},"Archers":{"type":"Infantrie","attack":"3/1","range":"30cm","hits":3,"size":3,"points":55,"min":2,"order":1},"Gardes":{"type":"Infantrie","attack":3,"hits":3,"armour":"5+","size":3,"points":70,"max":4,"order":2},"Derviches (*)":{"order":3,"type":"Infantrie","attack":5,"hits":3,"size":3,"points":70,"specialRules":["Règle optionnelle"]},"Chevaliers":{"type":"Cavalerie","attack":3,"hits":3,"armour":"4+","size":3,"points":110,"order":4},"Cavaliers du Désert":{"type":"Cavalerie","attack":"3/1","range":"15cm","hits":3,"armour":"6+","size":3,"points":80,"order":5,"min":1},"Méharistes":{"type":"Cavalerie","attack":"3/1","range":"30cm","hits":3,"armour":"5+","size":3,"points":100,"max":2,"order":6},"Tapis Volants":{"type":"Cavalerie","attack":"1/2","range":"15cm à 360°","hits":3,"armour":"6+","size":3,"points":85,"max":1,"order":7},"Rokh (*)":{"order":8,"type":"Monstre","attack":4,"hits":4,"armour":"5+","size":1,"points":90,"specialRules":["Règle optionnelle"]},"Eléphants":{"type":"Monstre","attack":5,"hits":4,"armour":"5+","size":3,"points":200,"max":1,"order":9},"Général":{"type":"Général","attack":"+2","command":9,"size":1,"points":125,"armyMin":1,"armyMax":1,"upgrades":["Tapis Volant","Eléphant","Djinn"],"order":10},"Héros":{"type":"Héros","attack":"+1","command":8,"size":1,"points":80,"max":2,"upgrades":["Tapis Volant","Eléphant","Djinn"],"order":11},"Sorcier":{"type":"Sorcier","attack":"+0","command":7,"size":1,"points":45,"max":1,"upgrades":["Tapis Volant","Eléphant","Djinn","Sablier du Temps (*)"],"order":12}},"upgrades":{"Tapis Volant":{"type":"Char monté","attack":"+1","points":"+10","max":1,"order":0},"Eléphant":{"type":"Monture Monstrueuse","attack":"+1","points":"+50","max":1,"order":1,"specialRules":["Eléphant (monture)"]},"Djinn":{"type":"Monture Monstrueuse","attack":"+2/+2","points":"+80","max":1,"order":2},"Sablier du Temps (*)":{"order":3,"type":"Monture","attack":"+2","size":1,"points":"+40","specialRules":["Règle optionnelle"]}},"magic":true,"specialRules":{"Gardes":{"text":["Les Gardes du Sultan sont si loyaux qu’ils","obéiront systématiquement au premier ordre reçu à chaque","tour, du moment que le résultat du test d’ordre est 10 ou","moins et que l’ordre vient du Général en personne. Aucune","pénalité ne s’applique à ce test. Les autres ordres sont","donnés en suivant la valeur de Commandement du Général","et les pénalités habituelles. Cette règle ne s’applique qu’aux","Gardes, pas aux brigades qui incluent des Gardes et d’autres","types d’unité. La règle de portée d’ordre des personnages","s’applique quand même, et un ordre ne peut pas être donné","à une unité hors de portée.",""],"order":1},"Cavaliers du Désert":{"text":[" Les Cavaliers du Désert n’ont qu’une","portée de 15cm, mais ils peuvent tirer à 360° (voir la règle","associée pour plus de détails)."],"order":2},"Méharistes":{"text":[": Les Méharistes ignorent les pénalités dues à","la distance lorsqu’ils reçoivent un ordre. Cette règle ne","s’applique qu’aux Méharistes, pas aux brigades incluant des","Méharistes et d’autres types de troupes (la règle de portée","d’ordre des personnages s’applique quand même, et un","ordre ne peut pas être donné à une unité hors de portée).","Ceci représente la farouche indépendance de ces cavaliers,","et le sens de l’orientation sans pareil de leurs montures, ce","qui leur autorise une grande autonomie, même en position","avancée. Cependant, les dromadaires sont des animaux si","têtus que les Méharistes subissent un malus Special de -1 sur","leurs tests d’ordre. Cette pénalité s’applique aussi à toute","brigade contenant une ou plusieurs unités de Méharistes."],"order":3},"Tapis Volants":{"text":["Les Tapis Volants peuvent Voler. Ils sont","considérés comme de la cavalerie “volante”, ce qui correspond","le mieux à leurs performances. Parce que ce sont de « piètres","volants », ils peuvent être poursuivis par n’importe quel type","d’unité.",""],"order":6},"Eléphants":{"text":[" Ils causent la terreur. Ils ne peuvent pas faire","partie d’une brigade incluant de la cavalerie, mais peuvent","rejoindre une brigade incluant d’autres troupes, y compris","d’autres éléphants. Si une unité d’Éléphants est censée","devenir confuse, pour n’importe quelle raison, elle panique à","la place. Elle n’est pas confuse, et aucune des règles de","confusion ne s’applique à elle. Les Éléphants qui paniquent","cessent automatiquement de le faire à la fin de leur phase","d’ordre (à l’instar des unités confuses, qui cessent de l’être au","même moment).","","","a) Les Éléphants qui paniquent ne peuvent pas recevoir d’ordre","ou agir sur initiative. À la place, jetez un dé au début de la phase","d’ordre, avant de déplacer quoi que ce soit par initiative, et","déplacez l’unité comme indiqué par le résultat :","","Résultat du D6 :",""," 1-2 )","L’unité avance du maximum possible vers l’unité","ennemie la plus proche. Si les Éléphants arrivent au","contact de l’ennemi, ils comptent comme ayant","chargé, même s’ils ne pouvaient pas le voir au","début de leur mouvement.","","","3-4 )","L’unité s’éloigne du maximum possible de l’unité","ennemie la plus proche. Déterminez la direction de","ce mouvement comme s’il s’agissait d’un","évitement. Si les Éléphants se retrouvent au contact","d’une autre unité ennemie, ils comptent comme","ayant chargé (voir ci-dessus). Si les Éléphants","entrent en contact avec une unité amie, ils","comptent comme la traversant.","","","5 )","L’unité avance du maximum possible vers l’unité","amie la plus proche. Si elle arrive au contact de","celle-ci, elle compte comme ayant chargé, même si","elle ne voyait pas sa cible au début de son","mouvement.","","","6 )","L’unité s’éloigne du maximum possible de l’unité","amie la plus proche. Déterminez la direction de ce","mouvement comme s’il s’agissait d’un évitement. Si","les Éléphants se retrouvent au contact d’une unité","amie ou ennemie, ils comptent comme ayant","chargé (voir ci-dessus).","","","b) Une unité d’Éléphants qui charge une unité amie ou","ennemie l’affronte lors de la phase de combat comme si elle","avait effectué une charge ordinaire. Quelle que soit leur","cible, les Éléphants comptent comme des ennemis, et","causent donc la terreur à l’unité qu’ils affrontent, quel que","soit son camp. Les Éléphants comptent comme ayant chargé","lors du premier round de combat. S’ils remportent un round","de combat, ils doivent poursuivre si possible, et","continueront de le faire à chaque round. Si leur adversaire","est détruit, ils n’avanceront pas mais s’arrêteront sans se","réorganiser.","","","c) Il peut arriver que des Éléphants arrivent au contact d’une","unité, et initient donc un combat, sans pouvoir toutefois","s’aligner parce qu’ils n’ont pas assez de mouvement. Dans","ce cas, les Éléphants paniqués combattent quand même, et","comptent quand même comme ayant chargé. C’est au","joueur de déterminer s’il les déplace de la distance","supplémentaire requise pour les aligner, ou s’il fait","combattre ses éléphants dans une formation irrégulière"],"order":5},"Eléphant (monture)":{"text":["L’Éléphant compte comme une","monture ordinaire, si ce n’est qu’un personnage monté sur un","Éléphant ne peut jamais rejoindre une unité de cavalerie amie.","Une unité rejointe par un personnage sur Éléphant cause la","terreur à l’ennemi."],"order":7},"Djinn":{"text":["Le Djinn accompagne son maître en permanence, et","peut les transformer tous deux en un tourbillon, ce qui permet","au socle de voler comme avec n’importe quelle monture","volante.","Si un Sorcier est doté d’un Djinn, il peut lancer le sort","Malédiction du Djinn avec un bonus de +1 au jet de","lancement. Notez que le Djinn est unique dans le sens où il","accorde +2 attaques de tir, qui sont conférées à un socle d’une","unité rejointe par le personnage, et ne peuvent être utilisées","que lorsque le personnage rejoint une unité. Toute unité","rejointe par un Sorcier accompagné d’un Djinn cause la terreur","à l’ennemi."],"order":8},"Tapis Volant":{"order":8,"text":["Le Tapis Volant est considéré","comme un véhicule volant."]},"Derviches (*)":{"order":9,"text":[" Les Derviches sont Fanatiques."]},"Rokh (*)":{"order":10,"text":["Le Rokh vole et cause la Terreur."]},"Sablier du Temps":{"order":11,"text":["Le Sablier du Temps est une Monture","réservée aux Sorciers qui voient dès lors leur mouvement","limité à 30cm par tour.","Le Sablier du Temps peut contrer les enchantements ennemis.","Si un sorcier situé dans un rayon de 50cm autour du Sablier du","Temps lance un sort, ce dernier peut tenter de le dissiper. Il","n’est pas nécessaire que le Sablier du Temps puisse voir le","sorcier en question, et que peu importe la cible du sort et sa","position : le Sablier du Temps peut toujours tenter de dissiper","un sort du moment que son lanceur se trouve dans un rayon","de 50cm autour de lui. Pour déterminer s’il y parvient, jetez","1D6. Sur un résultat de 5+, le Sablier du Temps a réussi et le","sort est dissipé. Si le résultat est 1, 2, 3 ou 4, la dissipation est","un échec et le sort fonctionne comme d’ordinaire. Un Sablier","du Temps ne peut tenter de dissiper qu’un sort par tour,","chaque sort ne peut faire l’objet que d’une seule tentative de","dissipation, même si l’armée inclut plusieurs Sabliers du","Temps à portée de dissipation du lanceur."]},"Règle optionnelle":{"order":12,"text":["Ces règles optionnelles ne peuvent être utilisées qu’avec","l’accord de votre adversaire."]}},"spells":[{"roll":4,"range":" Affecte toutes les unités ennemies à 30 cm.","text":["Le sorcier ordonne aux esprits du désert de recouvrir","l’ennemi d’une tempête de sable et de poussière.","Ce sort peut être lancé sur le sorcier lui-même et affecte","toutes les unités ennemies situées dans un rayon de 30cm","autour de son socle. Ses effets durent jusqu’à la fin du","prochain tour ennemi.","Le sort gêne les ordres ennemis. Toutes les unités ennemies","affectées subissent un malus de -1 sur leurs jets d’ordre.","Cette pénalité s’applique au moment où chaque ordre est","transmis : une unité peut par exemple recevoir un premier","ordre pendant qu’elle se trouve à moins de 30cm du sorcier,","et un deuxième alors qu’elle ne s’y trouve plus.",""],"name":"Tempête de Sable"},{"roll":4,"range":"60cm, pas de ligne de vue","text":["Le sorcier invoque l’illusion d’une puissante armée de","guerriers effrayants qui se jettent inexorablement sur","l’ennemi.","Pour pouvoir utiliser ce sort, le joueur aura besoin d’une","unité supplémentaire choisie dans la liste d’armée","Arabienne: il peut s’agir d’infanterie, de cavalerie ou de","monstres, peu importe. Cette unité représente l’illusion et","est immédiatement placée à moins de 60 cm du Sorcier,","mais à plus de 20 cm de tout ennemi. L’illusion ne peut pas","se déplacer ou combattre, puisqu’elle n’existe pas !","Cependant, elle affectera l’ennemi jusqu’à ce qu’il la charge,","arrive à son contact par le biais des mouvements entraînés","par un combat, effectue une avance sur elle ou se retrouve à","son contact par n’importe quel autre moyen. Tant que","l’ennemi est affecté, les personnages ennemis sont","normalement déplacés pour éviter le contact avec l’unité,","celle-ci inflige les pénalités de Commandement habituelles","en raison de sa proximité, et les tireurs adverses doivent","tirer sur elle si elle est la cible la plus proche. L’illusion ne","peut bien entendu pas être blessée par les tirs ! Elle est","immédiatement dissipée si le joueur arabien fait avancer","une unité ou un personnage à travers elle.","Tant que le mirage est sur la table de jeu, le Sorcier ne peut","lancer aucun autre sort. S’il désire lancer un nouveau sort, le","mirage disparaît sur-le-champ et le Sorcier peut essayer de","lancer un autre sort normalement."],"name":"Mirage"},{"roll":5,"range":"30 cm, pas de ligne de vue.","text":["Des rayons brûlants jaillissent des yeux du sorcier et fauchent","les rangs ennemis.","Tracez une droite imaginaire de 30 cm de long, à partir du","socle du Sorcier et dans n’importe quelle direction. La ligne","peut traverser n’importe quelle unité, mais pas les terrains qui","arrêteraient normalement un tir ordinaire, comme une colline,","plus de 2 cm de forêt, etc.","Toute unité traversée par la ligne subit 3 attaques de tir","résolues de la façon habituelle. Notez que ce sort peut affecter","plusieurs unités, et affectera automatiquement toutes celles","qui se trouvent sous la ligne, même les vôtres. Les unités non","engagées au corps à corps peuvent être repoussées par un","Rayon Solaire comme par des tirs ordinaires, y compris vos","propres troupes. Les unités engagées au corps à corps ne","peuvent pas être repoussées par la brûlure, mais les blessures","qu’elle inflige sont reportées au premier round de combat et","comptent comme ayant été infligées durant le corps à corps."],"name":"Rayon Solaire"},{"roll":6,"range":"30 cm, ligne de vue","text":["Le sorcier canalise l’immense pouvoir du Djinn dans son corps","et lance une malédiction terrible sur ses ennemis.","Le Sorcier peut lancer ce sort sur une unité ennemie à portée.","L’unité visée devra relancer toutes ses sauvegardes d’armure","réussies pour la durée de la phase de combat suivante.","Si le Sorcier est accompagné d’un Djinn, il bénéficie d’un","bonus de +1 pour lancer ce sort, et y parvient donc sur un","résultat de 5+."],"name":"Malédiction du Djinn"}],"armyRules":[""]}
+{
+  "name": "Arabie",
+  "version": "Warmaster Evolution",
+  "group": 0,
+  "order": 0,
+  "units": {
+    "Lancier": {
+      "order": 0,
+      "type": "Infantrie",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 45,
+      "min": 2
+    },
+    "Archers": {
+      "order": 1,
+      "type": "Infantrie",
+      "attack": "3/1",
+      "range": "30cm",
+      "hits": 3,
+      "size": 3,
+      "points": 55,
+      "min": 2
+    },
+    "Gardes": {
+      "order": 2,
+      "type": "Infantrie",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 70,
+      "max": 4
+    },
+    "Derviches (*)": {
+      "order": 3,
+      "type": "Infantrie",
+      "attack": 5,
+      "hits": 3,
+      "size": 3,
+      "points": 70,
+      "specialRules": [
+        "Règle optionnelle"
+      ]
+    },
+    "Chevaliers": {
+      "order": 4,
+      "type": "Cavalerie",
+      "attack": 3,
+      "hits": 3,
+      "armour": "4+",
+      "size": 3,
+      "points": 110
+    },
+    "Cavaliers du Désert": {
+      "order": 5,
+      "type": "Cavalerie",
+      "attack": "3/1",
+      "range": "15cm",
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 80,
+      "min": 1
+    },
+    "Méharistes": {
+      "order": 6,
+      "type": "Cavalerie",
+      "attack": "3/1",
+      "range": "30cm",
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 100,
+      "max": 2
+    },
+    "Tapis Volants": {
+      "order": 7,
+      "type": "Cavalerie",
+      "attack": "1/2",
+      "range": "15cm à 360°",
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 85,
+      "max": 1
+    },
+    "Rokh (*)": {
+      "order": 8,
+      "type": "Monstre",
+      "attack": 4,
+      "hits": 4,
+      "armour": "5+",
+      "size": 1,
+      "points": 90,
+      "specialRules": [
+        "Règle optionnelle"
+      ]
+    },
+    "Eléphants": {
+      "order": 9,
+      "type": "Monstre",
+      "attack": 5,
+      "hits": 4,
+      "armour": "5+",
+      "size": 3,
+      "points": 200,
+      "max": 1
+    },
+    "Général": {
+      "order": 10,
+      "type": "Général",
+      "attack": "+2",
+      "command": 9,
+      "size": 1,
+      "points": 125,
+      "armyMin": 1,
+      "armyMax": 1,
+      "upgrades": [
+        "Tapis Volant",
+        "Eléphant",
+        "Djinn"
+      ]
+    },
+    "Héros": {
+      "order": 11,
+      "type": "Héros",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 80,
+      "max": 2,
+      "upgrades": [
+        "Tapis Volant",
+        "Eléphant",
+        "Djinn"
+      ]
+    },
+    "Sorcier": {
+      "order": 12,
+      "type": "Sorcier",
+      "attack": "+0",
+      "command": 7,
+      "size": 1,
+      "points": 45,
+      "max": 1,
+      "upgrades": [
+        "Tapis Volant",
+        "Eléphant",
+        "Djinn",
+        "Sablier du Temps (*)"
+      ]
+    }
+  },
+  "upgrades": {
+    "Tapis Volant": {
+      "order": 0,
+      "type": "Char monté",
+      "attack": "+1",
+      "points": "+10",
+      "max": 1
+    },
+    "Eléphant": {
+      "order": 1,
+      "type": "Monture Monstrueuse",
+      "attack": "+1",
+      "points": "+50",
+      "max": 1,
+      "specialRules": [
+        "Eléphant (monture)"
+      ]
+    },
+    "Djinn": {
+      "order": 2,
+      "type": "Monture Monstrueuse",
+      "attack": "+2/+2",
+      "points": "+80",
+      "max": 1
+    },
+    "Sablier du Temps (*)": {
+      "order": 3,
+      "type": "Monture",
+      "attack": "+2",
+      "size": 1,
+      "points": "+40",
+      "specialRules": [
+        "Règle optionnelle"
+      ]
+    }
+  },
+  "magic": true,
+  "armyRules": [
+    ""
+  ],
+  "specialRules": {
+    "Gardes": {
+      "order": 1,
+      "text": [
+        "Les Gardes du Sultan sont si loyaux qu’ils",
+        "obéiront systématiquement au premier ordre reçu à chaque",
+        "tour, du moment que le résultat du test d’ordre est 10 ou",
+        "moins et que l’ordre vient du Général en personne. Aucune",
+        "pénalité ne s’applique à ce test. Les autres ordres sont",
+        "donnés en suivant la valeur de Commandement du Général",
+        "et les pénalités habituelles. Cette règle ne s’applique qu’aux",
+        "Gardes, pas aux brigades qui incluent des Gardes et d’autres",
+        "types d’unité. La règle de portée d’ordre des personnages",
+        "s’applique quand même, et un ordre ne peut pas être donné",
+        "à une unité hors de portée.",
+        ""
+      ]
+    },
+    "Cavaliers du Désert": {
+      "order": 2,
+      "text": [
+        " Les Cavaliers du Désert n’ont qu’une",
+        "portée de 15cm, mais ils peuvent tirer à 360° (voir la règle",
+        "associée pour plus de détails)."
+      ]
+    },
+    "Méharistes": {
+      "order": 3,
+      "text": [
+        ": Les Méharistes ignorent les pénalités dues à",
+        "la distance lorsqu’ils reçoivent un ordre. Cette règle ne",
+        "s’applique qu’aux Méharistes, pas aux brigades incluant des",
+        "Méharistes et d’autres types de troupes (la règle de portée",
+        "d’ordre des personnages s’applique quand même, et un",
+        "ordre ne peut pas être donné à une unité hors de portée).",
+        "Ceci représente la farouche indépendance de ces cavaliers,",
+        "et le sens de l’orientation sans pareil de leurs montures, ce",
+        "qui leur autorise une grande autonomie, même en position",
+        "avancée. Cependant, les dromadaires sont des animaux si",
+        "têtus que les Méharistes subissent un malus Special de -1 sur",
+        "leurs tests d’ordre. Cette pénalité s’applique aussi à toute",
+        "brigade contenant une ou plusieurs unités de Méharistes."
+      ]
+    },
+    "Eléphants": {
+      "order": 4,
+      "text": [
+        " Ils causent la terreur. Ils ne peuvent pas faire",
+        "partie d’une brigade incluant de la cavalerie, mais peuvent",
+        "rejoindre une brigade incluant d’autres troupes, y compris",
+        "d’autres éléphants. Si une unité d’Éléphants est censée",
+        "devenir confuse, pour n’importe quelle raison, elle panique à",
+        "la place. Elle n’est pas confuse, et aucune des règles de",
+        "confusion ne s’applique à elle. Les Éléphants qui paniquent",
+        "cessent automatiquement de le faire à la fin de leur phase",
+        "d’ordre (à l’instar des unités confuses, qui cessent de l’être au",
+        "même moment).",
+        "",
+        "",
+        "a) Les Éléphants qui paniquent ne peuvent pas recevoir d’ordre",
+        "ou agir sur initiative. À la place, jetez un dé au début de la phase",
+        "d’ordre, avant de déplacer quoi que ce soit par initiative, et",
+        "déplacez l’unité comme indiqué par le résultat :",
+        "",
+        "Résultat du D6 :",
+        "",
+        " 1-2 )",
+        "L’unité avance du maximum possible vers l’unité",
+        "ennemie la plus proche. Si les Éléphants arrivent au",
+        "contact de l’ennemi, ils comptent comme ayant",
+        "chargé, même s’ils ne pouvaient pas le voir au",
+        "début de leur mouvement.",
+        "",
+        "",
+        "3-4 )",
+        "L’unité s’éloigne du maximum possible de l’unité",
+        "ennemie la plus proche. Déterminez la direction de",
+        "ce mouvement comme s’il s’agissait d’un",
+        "évitement. Si les Éléphants se retrouvent au contact",
+        "d’une autre unité ennemie, ils comptent comme",
+        "ayant chargé (voir ci-dessus). Si les Éléphants",
+        "entrent en contact avec une unité amie, ils",
+        "comptent comme la traversant.",
+        "",
+        "",
+        "5 )",
+        "L’unité avance du maximum possible vers l’unité",
+        "amie la plus proche. Si elle arrive au contact de",
+        "celle-ci, elle compte comme ayant chargé, même si",
+        "elle ne voyait pas sa cible au début de son",
+        "mouvement.",
+        "",
+        "",
+        "6 )",
+        "L’unité s’éloigne du maximum possible de l’unité",
+        "amie la plus proche. Déterminez la direction de ce",
+        "mouvement comme s’il s’agissait d’un évitement. Si",
+        "les Éléphants se retrouvent au contact d’une unité",
+        "amie ou ennemie, ils comptent comme ayant",
+        "chargé (voir ci-dessus).",
+        "",
+        "",
+        "b) Une unité d’Éléphants qui charge une unité amie ou",
+        "ennemie l’affronte lors de la phase de combat comme si elle",
+        "avait effectué une charge ordinaire. Quelle que soit leur",
+        "cible, les Éléphants comptent comme des ennemis, et",
+        "causent donc la terreur à l’unité qu’ils affrontent, quel que",
+        "soit son camp. Les Éléphants comptent comme ayant chargé",
+        "lors du premier round de combat. S’ils remportent un round",
+        "de combat, ils doivent poursuivre si possible, et",
+        "continueront de le faire à chaque round. Si leur adversaire",
+        "est détruit, ils n’avanceront pas mais s’arrêteront sans se",
+        "réorganiser.",
+        "",
+        "",
+        "c) Il peut arriver que des Éléphants arrivent au contact d’une",
+        "unité, et initient donc un combat, sans pouvoir toutefois",
+        "s’aligner parce qu’ils n’ont pas assez de mouvement. Dans",
+        "ce cas, les Éléphants paniqués combattent quand même, et",
+        "comptent quand même comme ayant chargé. C’est au",
+        "joueur de déterminer s’il les déplace de la distance",
+        "supplémentaire requise pour les aligner, ou s’il fait",
+        "combattre ses éléphants dans une formation irrégulière"
+      ]
+    },
+    "Tapis Volants": {
+      "order": 5,
+      "text": [
+        "Les Tapis Volants peuvent Voler. Ils sont",
+        "considérés comme de la cavalerie “volante”, ce qui correspond",
+        "le mieux à leurs performances. Parce que ce sont de « piètres",
+        "volants », ils peuvent être poursuivis par n’importe quel type",
+        "d’unité.",
+        ""
+      ]
+    },
+    "Eléphant (monture)": {
+      "order": 6,
+      "text": [
+        "L’Éléphant compte comme une",
+        "monture ordinaire, si ce n’est qu’un personnage monté sur un",
+        "Éléphant ne peut jamais rejoindre une unité de cavalerie amie.",
+        "Une unité rejointe par un personnage sur Éléphant cause la",
+        "terreur à l’ennemi."
+      ]
+    },
+    "Djinn": {
+      "order": 7,
+      "text": [
+        "Le Djinn accompagne son maître en permanence, et",
+        "peut les transformer tous deux en un tourbillon, ce qui permet",
+        "au socle de voler comme avec n’importe quelle monture",
+        "volante.",
+        "Si un Sorcier est doté d’un Djinn, il peut lancer le sort",
+        "Malédiction du Djinn avec un bonus de +1 au jet de",
+        "lancement. Notez que le Djinn est unique dans le sens où il",
+        "accorde +2 attaques de tir, qui sont conférées à un socle d’une",
+        "unité rejointe par le personnage, et ne peuvent être utilisées",
+        "que lorsque le personnage rejoint une unité. Toute unité",
+        "rejointe par un Sorcier accompagné d’un Djinn cause la terreur",
+        "à l’ennemi."
+      ]
+    },
+    "Tapis Volant": {
+      "order": 8,
+      "text": [
+        "Le Tapis Volant est considéré",
+        "comme un véhicule volant."
+      ]
+    },
+    "Derviches (*)": {
+      "order": 9,
+      "text": [
+        " Les Derviches sont Fanatiques."
+      ]
+    },
+    "Rokh (*)": {
+      "order": 10,
+      "text": [
+        "Le Rokh vole et cause la Terreur."
+      ]
+    },
+    "Sablier du Temps": {
+      "order": 11,
+      "text": [
+        "Le Sablier du Temps est une Monture",
+        "réservée aux Sorciers qui voient dès lors leur mouvement",
+        "limité à 30cm par tour.",
+        "Le Sablier du Temps peut contrer les enchantements ennemis.",
+        "Si un sorcier situé dans un rayon de 50cm autour du Sablier du",
+        "Temps lance un sort, ce dernier peut tenter de le dissiper. Il",
+        "n’est pas nécessaire que le Sablier du Temps puisse voir le",
+        "sorcier en question, et que peu importe la cible du sort et sa",
+        "position : le Sablier du Temps peut toujours tenter de dissiper",
+        "un sort du moment que son lanceur se trouve dans un rayon",
+        "de 50cm autour de lui. Pour déterminer s’il y parvient, jetez",
+        "1D6. Sur un résultat de 5+, le Sablier du Temps a réussi et le",
+        "sort est dissipé. Si le résultat est 1, 2, 3 ou 4, la dissipation est",
+        "un échec et le sort fonctionne comme d’ordinaire. Un Sablier",
+        "du Temps ne peut tenter de dissiper qu’un sort par tour,",
+        "chaque sort ne peut faire l’objet que d’une seule tentative de",
+        "dissipation, même si l’armée inclut plusieurs Sabliers du",
+        "Temps à portée de dissipation du lanceur."
+      ]
+    },
+    "Règle optionnelle": {
+      "order": 12,
+      "text": [
+        "Ces règles optionnelles ne peuvent être utilisées qu’avec",
+        "l’accord de votre adversaire."
+      ]
+    }
+  },
+  "spells": [
+    {
+      "name": "Tempête de Sable",
+      "roll": 4,
+      "range": " Affecte toutes les unités ennemies à 30 cm.",
+      "text": [
+        "Le sorcier ordonne aux esprits du désert de recouvrir",
+        "l’ennemi d’une tempête de sable et de poussière.",
+        "Ce sort peut être lancé sur le sorcier lui-même et affecte",
+        "toutes les unités ennemies situées dans un rayon de 30cm",
+        "autour de son socle. Ses effets durent jusqu’à la fin du",
+        "prochain tour ennemi.",
+        "Le sort gêne les ordres ennemis. Toutes les unités ennemies",
+        "affectées subissent un malus de -1 sur leurs jets d’ordre.",
+        "Cette pénalité s’applique au moment où chaque ordre est",
+        "transmis : une unité peut par exemple recevoir un premier",
+        "ordre pendant qu’elle se trouve à moins de 30cm du sorcier,",
+        "et un deuxième alors qu’elle ne s’y trouve plus.",
+        ""
+      ]
+    },
+    {
+      "name": "Mirage",
+      "roll": 4,
+      "range": "60cm, pas de ligne de vue",
+      "text": [
+        "Le sorcier invoque l’illusion d’une puissante armée de",
+        "guerriers effrayants qui se jettent inexorablement sur",
+        "l’ennemi.",
+        "Pour pouvoir utiliser ce sort, le joueur aura besoin d’une",
+        "unité supplémentaire choisie dans la liste d’armée",
+        "Arabienne: il peut s’agir d’infanterie, de cavalerie ou de",
+        "monstres, peu importe. Cette unité représente l’illusion et",
+        "est immédiatement placée à moins de 60 cm du Sorcier,",
+        "mais à plus de 20 cm de tout ennemi. L’illusion ne peut pas",
+        "se déplacer ou combattre, puisqu’elle n’existe pas !",
+        "Cependant, elle affectera l’ennemi jusqu’à ce qu’il la charge,",
+        "arrive à son contact par le biais des mouvements entraînés",
+        "par un combat, effectue une avance sur elle ou se retrouve à",
+        "son contact par n’importe quel autre moyen. Tant que",
+        "l’ennemi est affecté, les personnages ennemis sont",
+        "normalement déplacés pour éviter le contact avec l’unité,",
+        "celle-ci inflige les pénalités de Commandement habituelles",
+        "en raison de sa proximité, et les tireurs adverses doivent",
+        "tirer sur elle si elle est la cible la plus proche. L’illusion ne",
+        "peut bien entendu pas être blessée par les tirs ! Elle est",
+        "immédiatement dissipée si le joueur arabien fait avancer",
+        "une unité ou un personnage à travers elle.",
+        "Tant que le mirage est sur la table de jeu, le Sorcier ne peut",
+        "lancer aucun autre sort. S’il désire lancer un nouveau sort, le",
+        "mirage disparaît sur-le-champ et le Sorcier peut essayer de",
+        "lancer un autre sort normalement."
+      ]
+    },
+    {
+      "name": "Rayon Solaire",
+      "roll": 5,
+      "range": "30 cm, pas de ligne de vue.",
+      "text": [
+        "Des rayons brûlants jaillissent des yeux du sorcier et fauchent",
+        "les rangs ennemis.",
+        "Tracez une droite imaginaire de 30 cm de long, à partir du",
+        "socle du Sorcier et dans n’importe quelle direction. La ligne",
+        "peut traverser n’importe quelle unité, mais pas les terrains qui",
+        "arrêteraient normalement un tir ordinaire, comme une colline,",
+        "plus de 2 cm de forêt, etc.",
+        "Toute unité traversée par la ligne subit 3 attaques de tir",
+        "résolues de la façon habituelle. Notez que ce sort peut affecter",
+        "plusieurs unités, et affectera automatiquement toutes celles",
+        "qui se trouvent sous la ligne, même les vôtres. Les unités non",
+        "engagées au corps à corps peuvent être repoussées par un",
+        "Rayon Solaire comme par des tirs ordinaires, y compris vos",
+        "propres troupes. Les unités engagées au corps à corps ne",
+        "peuvent pas être repoussées par la brûlure, mais les blessures",
+        "qu’elle inflige sont reportées au premier round de combat et",
+        "comptent comme ayant été infligées durant le corps à corps."
+      ]
+    },
+    {
+      "name": "Malédiction du Djinn",
+      "roll": 6,
+      "range": "30 cm, ligne de vue",
+      "text": [
+        "Le sorcier canalise l’immense pouvoir du Djinn dans son corps",
+        "et lance une malédiction terrible sur ses ennemis.",
+        "Le Sorcier peut lancer ce sort sur une unité ennemie à portée.",
+        "L’unité visée devra relancer toutes ses sauvegardes d’armure",
+        "réussies pour la durée de la phase de combat suivante.",
+        "Si le Sorcier est accompagné d’un Djinn, il bénéficie d’un",
+        "bonus de +1 pour lancer ce sort, et y parvient donc sur un",
+        "résultat de 5+."
+      ]
+    }
+  ]
+}

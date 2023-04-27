@@ -5,126 +5,126 @@
   "order": 6,
   "units": {
     "Warriors": {
+      "order": 0,
       "type": "Infantry",
       "attack": 3,
       "hits": 3,
       "size": 3,
-      "min": 8,
       "points": 35,
+      "min": 8,
       "specialRules": [
         "Warband"
-      ],
-      "order": 0
+      ]
     },
     "Archers": {
+      "order": 1,
       "type": "Infantry",
       "attack": 2,
       "range": 30,
       "hits": 3,
       "size": 3,
+      "points": 40,
       "min": 1,
       "max": 6,
-      "points": 40,
       "specialRules": [
         "Warband"
-      ],
-      "order": 1
+      ]
     },
     "Falxmen": {
+      "order": 2,
       "type": "Infantry",
       "attack": 4,
       "hits": 3,
       "size": 3,
-      "max": 2,
       "points": 45,
+      "max": 2,
       "specialRules": [
         "Warband"
-      ],
-      "order": 2
+      ]
     },
     "Skirmishers": {
+      "order": 3,
       "type": "Infantry",
       "attack": 1,
       "range": 15,
       "hits": 3,
       "size": 3,
-      "max": 6,
       "points": 30,
+      "max": 6,
       "specialRules": [
         "Warband",
         "Skirmish"
-      ],
-      "order": 3
+      ]
     },
     "Sarmations": {
+      "order": 4,
       "type": "Cavalry",
       "attack": 3,
       "range": 15,
       "hits": 3,
       "armour": "5+",
       "size": 3,
-      "max": 2,
       "points": 115,
+      "max": 2,
       "specialRules": [
         "Shock"
-      ],
-      "order": 4
+      ]
     },
     "Mount Skirmishers": {
+      "order": 5,
       "type": "Cavalry",
       "attack": 1,
       "range": 15,
       "hits": 3,
       "size": 3,
-      "max": 2,
       "points": 40,
+      "max": 2,
       "specialRules": [
         "Skirmish"
-      ],
-      "order": 5
+      ]
     },
     "Scorpion": {
+      "order": 6,
       "type": "Artillery",
       "attack": 1,
       "range": 40,
       "hits": 3,
       "size": 2,
-      "max": 1,
       "points": 50,
+      "max": 1,
       "specialRules": [
         "Light Artillery"
-      ],
-      "order": 6
+      ]
     },
     "General": {
+      "order": 7,
       "type": "General",
       "attack": "+2",
       "command": 8,
       "size": 1,
+      "points": 100,
       "armyMin": 1,
       "armyMax": 1,
-      "points": 100,
       "upgrades": [
         "Portents"
-      ],
-      "order": 7
+      ]
     },
     "Chieftain": {
+      "order": 8,
       "type": "Subordinate",
       "attack": "+1",
       "command": 7,
       "size": 1,
-      "max": 2,
       "points": 30,
-      "order": 9
+      "max": 2
     }
   },
   "upgrades": {
     "Portents": {
+      "order": 0,
       "type": "Special",
-      "armyMax": 1,
       "points": "+10",
-      "order": 0
+      "armyMax": 1
     }
   },
   "specialRules": {
@@ -141,10 +141,10 @@
       "order": 4
     },
     "Portents": {
+      "order": 5,
       "text": [
         "The General can take the portents before the battle. This allows the Genral to re-roll one failed Command roll once during the battle. Take the Command test again—if successful the order is issued and the General can continue giving further orders if you wish."
-      ],
-      "order": 5
+      ]
     }
   }
 }

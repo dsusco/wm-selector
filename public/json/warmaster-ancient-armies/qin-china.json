@@ -1,18 +1,8 @@
 {
-  "specialRules": {
-    "Skirmish": {
-      "order": 1
-    },
-    "Heavy Chariots": {
-      "order": 2
-    },
-    "Fanatics": {
-      "order": 3
-    },
-    "Portents": {
-      "order": 4
-    }
-  },
+  "name": "Qin China",
+  "version": "Warmaster Ancient Armies",
+  "group": "The Far East",
+  "order": 0,
   "units": {
     "Guard": {
       "order": 0,
@@ -46,8 +36,8 @@
       "armour": "6+",
       "size": 3,
       "points": 50,
-      "max": 4,
-      "min": 2
+      "min": 2,
+      "max": 4
     },
     "Impressed Troops": {
       "order": 3,
@@ -166,8 +156,18 @@
       "armyMax": 1
     }
   },
-  "name": "Qin China",
-  "version": "Warmaster Ancient Armies",
-  "group": "The Far East",
-  "order": 0
+  "specialRules": {
+    "Skirmish": {
+      "order": 1
+    },
+    "Heavy Chariots": {
+      "order": 2
+    },
+    "Fanatics": {
+      "order": 3
+    },
+    "Portents": {
+      "order": 4
+    }
+  }
 }

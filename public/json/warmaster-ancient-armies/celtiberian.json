@@ -1,27 +1,8 @@
 {
-  "specialRules": {
-    "Skirmish": {
-      "order": 1
-    },
-    "Warband (Restricted)": {
-      "order": 2
-    },
-    "Hamippoi": {
-      "order": 3
-    },
-    "Bodyguard": {
-      "order": 4,
-      "text": [
-        "Bodyguard units can also be upgraded to Warband at no extra cost if desired but this is not obligatory."
-      ]
-    },
-    "Viriato": {
-      "order": 5,
-      "text": [
-        "The army's general can be upgrade to Viriato – hero of the resistance against Rome! Viriato brings the benefit of the special 'ambush' rule'. The War of Fire was not a war of pitched battles and the course of events was heavily influenced by the rough mountainous terrain. In our tabletop game we want to fight real battles of course – so we shall represent this advantage in a way that can be applied universally. In the opposing player's turn, in his Command phase, Viriato can spring an 'ambush' after any successful Command roll made by the enemy General. The opposing player can't make any more Command rolls that turn after the ambush has been spring – if the opposing General would otherwise be entitled to re-rolls. The ambush rule can only be once during the game – so choose your moment carefully."
-      ]
-    }
-  },
+  "name": "Celtiberian",
+  "version": "Warmaster Ancient Armies",
+  "group": "The Rise of Rome",
+  "order": 0,
   "units": {
     "Warriors": {
       "order": 0,
@@ -153,8 +134,27 @@
       "armyMax": 1
     }
   },
-  "name": "Celtiberian",
-  "version": "Warmaster Ancient Armies",
-  "group": "The Rise of Rome",
-  "order": 0
+  "specialRules": {
+    "Skirmish": {
+      "order": 1
+    },
+    "Warband (Restricted)": {
+      "order": 2
+    },
+    "Hamippoi": {
+      "order": 3
+    },
+    "Bodyguard": {
+      "order": 4,
+      "text": [
+        "Bodyguard units can also be upgraded to Warband at no extra cost if desired but this is not obligatory."
+      ]
+    },
+    "Viriato": {
+      "order": 5,
+      "text": [
+        "The army's general can be upgrade to Viriato – hero of the resistance against Rome! Viriato brings the benefit of the special 'ambush' rule'. The War of Fire was not a war of pitched battles and the course of events was heavily influenced by the rough mountainous terrain. In our tabletop game we want to fight real battles of course – so we shall represent this advantage in a way that can be applied universally. In the opposing player's turn, in his Command phase, Viriato can spring an 'ambush' after any successful Command roll made by the enemy General. The opposing player can't make any more Command rolls that turn after the ambush has been spring – if the opposing General would otherwise be entitled to re-rolls. The ambush rule can only be once during the game – so choose your moment carefully."
+      ]
+    }
+  }
 }

@@ -5,169 +5,169 @@
   "order": 4,
   "units": {
     "Phalanx": {
+      "order": 0,
       "type": "Infantry",
       "attack": 3,
       "hits": 3,
       "armour": "5+",
       "size": 3,
-      "min": 4,
       "points": 70,
+      "min": 4,
       "specialRules": [
         "Phalanx"
-      ],
-      "order": 0
+      ]
     },
     "Light Infantry": {
+      "order": 1,
       "type": "Infantry",
       "attack": 2,
       "range": 15,
       "hits": 3,
       "size": 3,
-      "max": 4,
       "points": 40,
+      "max": 4,
       "specialRules": [
         "Skirmish"
-      ],
-      "order": 1
+      ]
     },
     "Archers": {
+      "order": 2,
       "type": "Infantry",
       "attack": 2,
       "range": 30,
       "hits": 3,
       "size": 3,
-      "max": 4,
       "points": 40,
-      "order": 2
+      "max": 4
     },
     "Skirmishers": {
+      "order": 3,
       "type": "Infantry",
       "attack": 1,
       "range": 15,
       "hits": 3,
       "size": 3,
-      "max": 4,
       "points": 30,
+      "max": 4,
       "specialRules": [
         "Skirmish"
-      ],
-      "order": 3
+      ]
     },
     "Cataphracts": {
+      "order": 4,
       "type": "Cavalry",
       "attack": 4,
       "hits": 3,
       "armour": "4+",
       "size": 3,
-      "max": 1,
       "points": 135,
+      "max": 1,
       "specialRules": [
         "Shock",
         "Slow"
-      ],
-      "order": 4
+      ]
     },
     "Heavy Cavalry": {
+      "order": 5,
       "type": "Cavalry",
       "attack": 3,
       "hits": 3,
       "armour": "5+",
       "size": 3,
-      "max": 4,
       "points": 110,
+      "max": 4,
       "specialRules": [
         "Shock",
         "Slow"
-      ],
-      "order": 5
+      ]
     },
     "Mounted Skirmishers": {
+      "order": 6,
       "type": "Cavalry",
       "attack": 1,
       "range": 15,
       "hits": 3,
       "size": 3,
-      "max": 4,
       "points": 40,
+      "max": 4,
       "specialRules": [
         "Skirmish"
-      ],
-      "order": 6
+      ]
     },
     "Camels": {
+      "order": 7,
       "type": "Cavalry",
       "attack": 1,
       "range": 15,
       "hits": 3,
       "armour": "6+",
       "size": 3,
-      "max": 1,
       "points": 60,
+      "max": 1,
       "specialRules": [
         "Skirmish",
         "Camels"
-      ],
-      "order": 7
+      ]
     },
     "Elephant": {
+      "order": 8,
       "type": "Elephant",
       "attack": 4,
       "range": 15,
       "hits": 4,
       "armour": "5+",
       "size": 3,
-      "max": 1,
       "points": 200,
+      "max": 1,
       "specialRules": [
         "Elephants"
-      ],
-      "order": 8
+      ]
     },
     "Scythed Chariot": {
+      "order": 9,
       "type": "Chariot",
       "attack": 4,
       "hits": 3,
       "armour": "5+",
       "size": 1,
-      "max": 1,
       "points": 50,
+      "max": 1,
       "specialRules": [
         "Scythed Chariots"
       ],
-      "noCount": true,
-      "order": 9
+      "noCount": true
     },
     "General": {
+      "order": 10,
       "type": "General",
       "attack": "+0",
       "command": 9,
       "size": 1,
+      "points": 125,
       "armyMin": 1,
       "armyMax": 1,
-      "points": 125,
       "upgrades": [
         "Pyrrhus"
-      ],
-      "order": 10
+      ]
     },
     "Leader": {
+      "order": 11,
       "type": "Leader",
       "attack": "+1",
       "command": 8,
       "size": 1,
-      "max": 2,
       "points": 80,
-      "order": 11
+      "max": 2
     }
   },
   "upgrades": {
     "Pyrrhus": {
+      "order": 0,
       "type": "General",
       "attack": "+2",
       "command": 9,
-      "armyMax": 1,
       "points": "+25",
-      "order": 0
+      "armyMax": 1
     }
   },
   "specialRules": {
@@ -193,10 +193,10 @@
       "order": 7
     },
     "Pyrrhus": {
+      "order": 8,
       "text": [
         "Extra to Upgrade the Army's General to Pyrrhus&mdash;he of the Pyrrhic Victory&mdash;famed for winning battles but losing men in droves. If Pyrrhus is your General then add 1 to the number of units that must be lost before the army will withdraw. For example&mdash;an army of 16 units will normally withdraw once eight units are destroyed&mdash;with Pyrrhus as your General the army won't withdraw until nine units are destroyed."
-      ],
-      "order": 8
+      ]
     }
   }
 }

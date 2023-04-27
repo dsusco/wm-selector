@@ -126,8 +126,8 @@
       "hits": 3,
       "armour": "6+",
       "size": 3,
-      "max": 6,
       "points": 60,
+      "max": 6,
       "specialRules": [
         "Skirmish"
       ],
@@ -191,8 +191,8 @@
       "range": "40cm",
       "hits": 3,
       "size": 2,
-      "armyMax": 1,
       "points": 50,
+      "armyMax": 1,
       "specialRules": [
         "Light Artillery"
       ]
