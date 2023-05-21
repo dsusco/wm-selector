@@ -166,7 +166,7 @@
     },
     "Branchwraith": {
       "order": 13,
-      "type": "Wizard",
+      "type": "Hero",
       "attack": "+2",
       "command": 8,
       "size": 1,
