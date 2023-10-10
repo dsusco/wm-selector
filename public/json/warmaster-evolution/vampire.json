@@ -1,5 +1,5 @@
 {
-  "name": "Comptes Vampires",
+  "name": "Comtes Vampires",
   "version": "Warmaster Evolution",
   "group": 2,
   "order": 3,
@@ -169,7 +169,7 @@
       "order": 0,
       "type": "Monture Monstrueuse",
       "attack": "+2",
-      "points": "+80",
+      "points": "+60",
       "max": 1
     },
     "Carosse Noir": {
