@@ -33,7 +33,7 @@
       "points": 85,
       "max": 1
     },
-    "Chasseurs de Trolls": {
+    "Chasseurs de Trolls (*)": {
       "order": 3,
       "type": "Infantrie",
       "attack": "3/1",
@@ -44,7 +44,7 @@
       "points": 90,
       "max": 1
     },
-    "Streltsi": {
+    "Streltsi (*)": {
       "order": 4,
       "type": "Infantrie",
       "attack": "3/1",
@@ -76,7 +76,7 @@
       "points": 80,
       "min": 2
     },
-    "Légion Griffon": {
+    "Légion Griffon (*)": {
       "order": 7,
       "type": "Cavalerie",
       "attack": 3,
@@ -86,7 +86,7 @@
       "points": 120,
       "max": 1
     },
-    "Fils d’Urza": {
+    "Fils d’Urza (*)": {
       "order": 8,
       "type": "Cavalerie",
       "attack": 3,
@@ -96,7 +96,7 @@
       "points": 120,
       "max": 1
     },
-    "Char de Guerre": {
+    "Chariot de Guerre": {
       "order": 9,
       "type": "Artillerie",
       "attack": "3/3",
