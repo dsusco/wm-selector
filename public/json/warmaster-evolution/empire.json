@@ -99,6 +99,7 @@
       "armour": "4+",
       "size": 3,
       "points": 125,
+      "max": 1,
       "specialRules": [
         "Règle optionnelle"
       ]
@@ -111,6 +112,7 @@
       "armour": "4+",
       "size": 3,
       "points": 120,
+      "max": 1,
       "specialRules": [
         "Règle optionnelle"
       ]
