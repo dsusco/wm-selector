@@ -23,7 +23,7 @@
       "armour": "6+",
       "size": 3,
       "points": 75,
-      "min": 1,
+      "min": 2,
       "specialRules": [
         "Arc Long"
       ]
@@ -46,6 +46,7 @@
       "armour": "4+",
       "size": 3,
       "points": 110,
+      "max": 2,
       "specialRules": [
         "Nobles"
       ]
@@ -109,7 +110,7 @@
       "range": "40cm",
       "hits": 2,
       "size": 2,
-      "points": 65,
+      "points": 55,
       "max": 1
     },
     "Général": {
@@ -162,7 +163,7 @@
       "order": 0,
       "type": "Monture Monstrueuse",
       "attack": "+1",
-      "points": "+30",
+      "points": "+15",
       "max": 1
     },
     "Dragon": {
