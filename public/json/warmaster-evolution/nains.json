@@ -73,7 +73,7 @@
       "armour": "6+",
       "size": 2,
       "points": 90,
-      "max": 1
+      "max": 2
     },
     "Canon à Flammes": {
       "order": 7,
@@ -84,7 +84,7 @@
       "armour": "6+",
       "size": 1,
       "points": 50,
-      "max": 1
+      "max": 2
     },
     "Gyrocoptère": {
       "order": 8,
@@ -95,7 +95,7 @@
       "armour": "5+",
       "size": 1,
       "points": 75,
-      "armyMax": 1
+      "max": 1
     },
     "Général": {
       "order": 9,
@@ -105,7 +105,10 @@
       "size": 1,
       "points": 155,
       "armyMin": 1,
-      "armyMax": 1
+      "armyMax": 1,
+       "upgrades": [
+         "Trône du Pouvoir"
+       ]
     },
     "Héros": {
       "order": 10,
@@ -147,7 +150,7 @@
   "upgrades": {
     "Enclume du Destin": {
       "order": 0,
-      "type": "Special",
+      "type": "Monture",
       "attack": "+1",
       "points": "+50",
       "armyMax": 1
@@ -156,6 +159,14 @@
       "order": 1,
       "type": "Special",
       "points": "+30",
+      "armyMax": 1
+    }
+    },
+    "Trône du Pouvoir": {
+      "order": 2,
+      "type": "Monture",
+      "attack": +2,
+      "points": "+15",
       "armyMax": 1
     }
   },
