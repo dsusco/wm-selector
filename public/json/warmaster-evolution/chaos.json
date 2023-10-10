@@ -41,10 +41,10 @@
       "hits": 3,
       "armour": "5+",
       "size": 3,
-      "points": 110,
+      "points": 90,
       "max": 3
     },
-    "Marauder Horsemen": {
+    "Cavaliers Maraudeurs": {
       "order": 4,
       "type": "Cavalerie",
       "attack": 3,
