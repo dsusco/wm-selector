@@ -160,12 +160,11 @@
       "type": "Special",
       "points": "+30",
       "armyMax": 1
-    }
     },
     "Trône du Pouvoir": {
       "order": 2,
       "type": "Monture",
-      "attack": +2,
+      "attack": "+2",
       "points": "+15",
       "armyMax": 1
     }
