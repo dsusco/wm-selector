@@ -43,8 +43,7 @@
             "armour": "6+",
             "size": 3,
             "points": 60,
-            "inx": 1,
-
+            "max": 1
         },
         "Lémures": {
             "order": 4,
@@ -90,7 +89,7 @@
         "Guerriers Faucon": {
             "order": 8,
             "type": "Cavalerie",
-            "attack": 2/1,
+            "attack": "2/1",
             "range": "15cm à 360°",
             "hits": 3,
             "armour": "6+",
@@ -117,9 +116,7 @@
             "points": 120,
             "armyMin": 1,
             "armyMax": 1,
-            "upgrades": [
-
-            ]
+            "upgrades": []
         },
         "Noble Sylvain": {
             "order": 11,
@@ -141,9 +138,7 @@
             "size": 1,
             "points": 90,
             "max": 1,
-            "upgrades": [
-
-            ]
+            "upgrades": []
         }
     },
     "upgrades": {
@@ -161,18 +156,11 @@
             "range": "20cm",
             "points": "+100",
             "max": 1,
-            "specialRules": [
-
-            ]
-        },
-
+            "specialRules": []
+        }
     },
     "magic": true,
-    "armyRules": [
-       
-        
-        
-    ],
+    "armyRules": [],
     "specialRules": {
         "Forestier": {
             "order": 1,
@@ -217,20 +205,19 @@
                 "Les Dryades et les Lémures sont Lents.",
                 "Les unités Lentes et les brigades comprenant des unités Lentes",
                 "subissent une pénalité de commandement cumulative de -1 dès",
-                "le second ordre et pour chaque suivant.",
+                "le second ordre et pour chaque suivant."
             ]
         },
         "Danseurs de Guerre": {
             "order": 4,
             "text": [
-                "Les Danseurs de Guerre ignorent la Terreur.",
-
+                "Les Danseurs de Guerre ignorent la Terreur."
             ]
         },
         "Cavaliers Sauvages": {
             "order": 5,
             "text": [
-                "Les Danseurs de Guerre ignorent la Terreur.",
+                "Les Danseurs de Guerre ignorent la Terreur."
             ]
         },
         "Guerriers Faucon": {
@@ -269,74 +256,74 @@
                 "cracher du feu si son cavalier a rejoint une unité qui n’est pas",
                 "engagée en combat."
             ]
-        },
+        }
     },
-        "spells": [
-            {
-                "name": "Ronces Vengeresses",
-                "roll": 4,
-                "range": "60cm, ligne de vue.",
-                "text": [
-                    "Une unité ennemie au contact d'un bois, forêt ou bosquet subit 3",
-                    "attaques résolues normalement. Si l'unité n'est pas engagée, elle",
-                    "recule comme suite à un tir par rapport au lanceur du sort. Si",
-                    "l'unité est engagée, les blessures comptent dans le résultat du",
-                    "combat.",
-                    ""
-                ]
-            },
-            {
-                "name": "Instinct du Chasseur",
-                "roll": 4,
-                "range": "30cm, pas de ligne de vue.",
-                "text": [
-                    "Le Tisseur de Sorts dote les archers Elfes Sylvains d’une rapidité",
-                    "surnaturelle qui leur permet de faire pleuvoir la mort sur l’ennemi.",
-                    "Le Mage peut lancer ce sort sur n’importe quelle unité amie",
-                    "d’infanterie ou de cavalerie disposant d’armes de tir, non engagée,",
-                    "à portée. Il n’est pas nécessaire qu’il puisse voir l’unité en question",
-                    "ou sa cible.",
-                    "Lorsque l’Instinct du Chasseur est lancé sur une unité, elle peut",
-                    "tirer deux fois lors de ce tour au lieu d’une seule. Si elle a déjà tiré",
-                    "ce tour-ci, elle peut immédiatement tirer une deuxième fois. Si ce",
-                    "n’est pas encore le cas, elle pourra tirer deux fois. Lorsqu’une",
-                    "unité tire deux fois grâce à « Instinct du Chasseur », son deuxième",
-                    "tir se fait toujours sans le bonus « Archers Émérites »."
-                ]
-            },
-            {
-                "name": "Appel de la Chasse",
-                "roll": 5,
-                "range": "30cm, pas de ligne de vue.",
-                "text": [
-                    "La voix du Tisseur de Sort résonne sur tout le champ de bataille et",
-                    "recouvre le tumulte des combats pour diriger les troupes.",
-                    "Ce sort peut être lancé sur une unité amie non engagée au corps",
-                    "à corps à moins de 30 cm, que le Sorcier puisse la voir ou non. Le",
-                    "sort n’affecte jamais qu’une seule unité, en aucun cas une brigade.",
-                    "En cas de succès, l’unité peut être déplacée comme si elle venait",
-                    "de recevoir un ordre lors de la phase d’ordres. Seule l’unité visée",
-                    "sera affectée, pas les personnages qui se trouvent avec elle",
-                    "(ceux-ci restent sur place)."
-                ]
-            },
-            {
-                "name": "Fureur Primordiale",
-                "roll": 6,
-                "range": "30cm",
-                "text": [
-                    "Le sol se soulève autour du Tisseur de Sorts et une pluie de",
-                    "pierres et de terre s’abat sur ses ennemis.",
-                    "Ce sort affecte toutes les unités ennemies à portée.",
-                    "Chaque unité ennemie dans un rayon de 30 cm autour du mage",
-                    "est affectée et subit 1D3 attaques de tir résolues de la manière",
-                    "habituelle. Jetez le dé séparément pour chaque unité ennemie. La",
-                    "Fureur Primordiale ne repousse pas ses victimes non engagées",
-                    "(le sol se soulève sous leurs pieds). Les unités engagées reportent",
-                    "les blessures infligées par ce sort dans le premier round de",
-                    "combat, et ces dernières comptent comme ayant été infligées lors",
-                    "du combat lui-même."
-                ]
-            }
-        ]
-    }
+    "spells": [
+        {
+            "name": "Ronces Vengeresses",
+            "roll": 4,
+            "range": "60cm, ligne de vue.",
+            "text": [
+                "Une unité ennemie au contact d'un bois, forêt ou bosquet subit 3",
+                "attaques résolues normalement. Si l'unité n'est pas engagée, elle",
+                "recule comme suite à un tir par rapport au lanceur du sort. Si",
+                "l'unité est engagée, les blessures comptent dans le résultat du",
+                "combat.",
+                ""
+            ]
+        },
+        {
+            "name": "Instinct du Chasseur",
+            "roll": 4,
+            "range": "30cm, pas de ligne de vue.",
+            "text": [
+                "Le Tisseur de Sorts dote les archers Elfes Sylvains d’une rapidité",
+                "surnaturelle qui leur permet de faire pleuvoir la mort sur l’ennemi.",
+                "Le Mage peut lancer ce sort sur n’importe quelle unité amie",
+                "d’infanterie ou de cavalerie disposant d’armes de tir, non engagée,",
+                "à portée. Il n’est pas nécessaire qu’il puisse voir l’unité en question",
+                "ou sa cible.",
+                "Lorsque l’Instinct du Chasseur est lancé sur une unité, elle peut",
+                "tirer deux fois lors de ce tour au lieu d’une seule. Si elle a déjà tiré",
+                "ce tour-ci, elle peut immédiatement tirer une deuxième fois. Si ce",
+                "n’est pas encore le cas, elle pourra tirer deux fois. Lorsqu’une",
+                "unité tire deux fois grâce à « Instinct du Chasseur », son deuxième",
+                "tir se fait toujours sans le bonus « Archers Émérites »."
+            ]
+        },
+        {
+            "name": "Appel de la Chasse",
+            "roll": 5,
+            "range": "30cm, pas de ligne de vue.",
+            "text": [
+                "La voix du Tisseur de Sort résonne sur tout le champ de bataille et",
+                "recouvre le tumulte des combats pour diriger les troupes.",
+                "Ce sort peut être lancé sur une unité amie non engagée au corps",
+                "à corps à moins de 30 cm, que le Sorcier puisse la voir ou non. Le",
+                "sort n’affecte jamais qu’une seule unité, en aucun cas une brigade.",
+                "En cas de succès, l’unité peut être déplacée comme si elle venait",
+                "de recevoir un ordre lors de la phase d’ordres. Seule l’unité visée",
+                "sera affectée, pas les personnages qui se trouvent avec elle",
+                "(ceux-ci restent sur place)."
+            ]
+        },
+        {
+            "name": "Fureur Primordiale",
+            "roll": 6,
+            "range": "30cm",
+            "text": [
+                "Le sol se soulève autour du Tisseur de Sorts et une pluie de",
+                "pierres et de terre s’abat sur ses ennemis.",
+                "Ce sort affecte toutes les unités ennemies à portée.",
+                "Chaque unité ennemie dans un rayon de 30 cm autour du mage",
+                "est affectée et subit 1D3 attaques de tir résolues de la manière",
+                "habituelle. Jetez le dé séparément pour chaque unité ennemie. La",
+                "Fureur Primordiale ne repousse pas ses victimes non engagées",
+                "(le sol se soulève sous leurs pieds). Les unités engagées reportent",
+                "les blessures infligées par ce sort dans le premier round de",
+                "combat, et ces dernières comptent comme ayant été infligées lors",
+                "du combat lui-même."
+            ]
+        }
+    ]
+}
