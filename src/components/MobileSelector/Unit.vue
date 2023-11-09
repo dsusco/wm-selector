@@ -1,6 +1,6 @@
 <template>
   <div :id="tagID" class="unit">
-    <div class="id">{{unitID}} ({{points}})</div>
+    <div class="id" :data-min-max="minMax"  tabindex="0">{{unitID}} ({{points}})</div>
 
     <button class="remove-button" @click="remove" :disabled="number < 1">
       <span class="fa fa-minus">
@@ -39,6 +39,9 @@ export default {
     Upgrade
   },
   computed: {
+    minMax () {
+      return store.getters.units[this.unitID].minMax;
+    },
     number () {
       return store.getters.units[this.unitID].number;
     },
@@ -88,6 +91,26 @@ export default {
 
     &:nth-child(even) {
       background: $_color_lighter;
+    }
+
+    .id {
+      cursor: help;
+      position: relative;
+
+      &:focus::after {
+        @include _(1.2rem);
+        @include position(absolute, 1.2rem null null null);
+
+        background: $_color_white;
+        border: .1rem solid #333;
+        color: #333;
+        font-weight: normal;
+        content: 'Min/Max ' attr(data-min-max);
+        margin-left: 1rem;
+        padding: .1rem .7rem;
+        white-space: nowrap;
+        z-index: 1;
+      }
     }
 
     .remove-button {

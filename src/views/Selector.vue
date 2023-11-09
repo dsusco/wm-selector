@@ -28,7 +28,7 @@
       <table id="usedUnits">
         <thead>
           <tr>
-            <th id="unitCount" title="Units/Half">{{unitCount}}/{{Math.ceil(unitCount / 2)}}</th>
+            <th id="unitCount" title="Units/Half" tabindex="0">{{unitCount}}/{{Math.ceil(unitCount / 2)}}</th>
             <th></th>
             <th id="pointsCost">{{pointsCost}}</th>
           </tr>
@@ -82,7 +82,21 @@ export default {
     }
 
     #unitCount {
-      cursor: help;
+      position: relative;
+
+      &:focus::after {
+        @include _(1.2rem);
+        @include position(absolute, 75% null null 75%);
+
+        background: $_color_white;
+        border: .1rem solid #333;
+        color: #333;
+        font-weight: normal;
+        content: attr(title);
+        padding: .1rem .7rem;
+        white-space: nowrap;
+        z-index: 1;
+      }
     }
 
     #unitCount,
@@ -121,7 +135,7 @@ export default {
       background: $_body_background;
       color: $_body_color;
 
-      [tabindex] {
+      tbody [tabindex] {
         &:focus,
         &:hover {
           background: $_color_primary;
