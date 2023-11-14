@@ -1,0 +1,196 @@
+{
+  "specialRules": {
+    "Skirmish": {
+      "order": 1
+    },
+    "Warband": {
+      "order": 2
+    },
+    "Legion": {
+      "order": 3
+    },
+    "Portents": {
+      "order": 4
+    },
+    "Deiotarus": {
+      "order": 5,
+      "text": [
+        "(Divine Bull) The General can be upgraded to Deiotarus the general who united the Galatians, instead of taking the usual portents option.  If the General is upgraded then all Chieftains within 20cm of the General can give orders using the Generals Command value of 8 (as Great Leader: Vercingetorix)"
+      ]
+    }
+  },
+  "units": {
+    "Galatian Warriors": {
+      "order": 0,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "points": 35,
+      "specialRules": [
+        "Warband"
+      ],
+      "min": 8,
+      "upgrades": [
+        "Imitation Legion",
+        "Veteran Warriors",
+        "Bodyguard",
+        "Gaesati"
+      ]
+    },
+    "Galatian Skirmishers": {
+      "order": 1,
+      "type": "Infantry",
+      "attack": 1,
+      "hits": 3,
+      "range": 15,
+      "size": 3,
+      "points": 30,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "max": 4
+    },
+    "Noble Cavalry": {
+      "order": 2,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 80,
+      "min": 1,
+      "max": 3
+    },
+    "Allied Skirmishing Cavalry": {
+      "order": 3,
+      "type": "Cavalry",
+      "attack": 1,
+      "hits": 3,
+      "range": 15,
+      "size": 3,
+      "points": 40,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "max": 2
+    },
+    "General": {
+      "order": 4,
+      "type": "General",
+      "attack": "+2",
+      "command": 8,
+      "size": 1,
+      "points": 100,
+      "upgrades": [
+        "Deiotarus",
+        "Portents"
+      ]
+    },
+    "Tetrarch": {
+      "order": 5,
+      "type": "Subordinate",
+      "attack": "+1",
+      "max": 2,
+      "command": 8,
+      "size": 1,
+      "points": 40
+    },
+    "Chieftain": {
+      "order": 6,
+      "type": "Subordinate",
+      "attack": "+1",
+      "max": 2,
+      "command": 7,
+      "size": 1,
+      "points": 30
+    }
+  },
+  "upgrades": {
+    "Imitation Legion": {
+      "order": 0,
+      "type": "Infantry",
+      "points": "+35",
+      "size": 3,
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "specialRules": [
+        "Legion"
+      ],
+      "max": 4
+    },
+    "Veteran Warriors": {
+      "order": 1,
+      "type": "Infantry",
+      "points": "+10",
+      "size": 3,
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "max": 2,
+      "specialRules": [
+        "Warband"
+      ]
+    },
+    "Bodyguard": {
+      "order": 2,
+      "type": "Infantry",
+      "points": "+20",
+      "size": 3,
+      "attack": 4,
+      "hits": 3,
+      "armour": "6+",
+      "max": 2,
+      "specialRules": [
+        "Warband"
+      ]
+    },
+    "Gaesati": {
+      "order": 3,
+      "type": "Infantry",
+      "points": "+15",
+      "size": 3,
+      "attack": 4,
+      "hits": 3,
+      "max": 2,
+      "specialRules": [
+        "Warband"
+      ]
+    },
+    "Deiotarus": {
+      "order": 4,
+      "specialRules": [
+        "Deiotarus"
+      ],
+      "type": "General",
+      "size": 1,
+      "command": 8,
+      "attack": "+2"
+    },
+    "Portents": {
+      "order": 5,
+      "points": "+10",
+      "specialRules": [
+        "Portents"
+      ]
+    }
+  },
+  "armyRules": [
+    "Galatian Warriors. These would be the bulk of the army drawn from the ordinary classes. They would be armed with javelins and shields but have no armour.",
+    "",
+    "Bodyguard. Galatian Warriors can be upgraded to Bodyguard with the stats and cost shown. A band of regular warriors armed with long swords, shields , with some wearing chain armour or helmets.",
+    "",
+    "Veteran Warriors. Galatian Warriors can be upgraded to Veteran Warriors with the stats and cost shown. Wearing looted armour, and some Greek weapons and equipment",
+    "",
+    "Gaesati. Galatian Warriors can be upgraded to Gaesati with the stats and cost shown. These warriors fought naked with a fanatic fervour disregarded their wounds. They were armed with shield and sword.",
+    "",
+    "Noble Cavalry. Wealthier warriors armed with long swords, with spears or javelins, and with a shield. Some would have helmets and body armour.",
+    "",
+    "Imitation Legion. Galatian Warriors can be upgraded to Imitation Legion with the stats and cost shown. Standard legionary type troops, who were trained and mainly equipped in the roman style, armed with pilum and large shield."
+  ],
+  "name": "Deiotarus' Galatians",
+  "version": "Rick's Warmaster",
+  "group": "The Rise of Rome",
+  "order": 5
+}
