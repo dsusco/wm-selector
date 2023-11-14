@@ -19,7 +19,7 @@ const
     version: 'a version'
   };
 
-var state;
+let state;
 
 jest.mock('axios');
 
@@ -93,10 +93,15 @@ describe('store.js getters', () => {
   });
 
   it('size returns the max of the remainder of pointsCost / 1000 and 1', () => {
+    expect(getters.size(state, { pointsCost: 0 })).toEqual(1);
+    expect(getters.size(state, { pointsCost: 1 })).toEqual(1);
     expect(getters.size(state, { pointsCost: 500 })).toEqual(1);
     expect(getters.size(state, { pointsCost: 1000 })).toEqual(1);
-    expect(getters.size(state, { pointsCost: 1500 })).toEqual(1);
+    expect(getters.size(state, { pointsCost: 1001 })).toEqual(2);
+    expect(getters.size(state, { pointsCost: 1500 })).toEqual(2);
     expect(getters.size(state, { pointsCost: 2000 })).toEqual(2);
+    expect(getters.size(state, { pointsCost: 2001 })).toEqual(3);
+    expect(getters.size(state, { pointsCost: 3000 })).toEqual(3);
   });
 
   it('specialRules returns state.specialRules', () => {

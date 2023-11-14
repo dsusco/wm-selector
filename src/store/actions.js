@@ -225,7 +225,7 @@ function checkValidations (context, id, item) {
 
   // min
   if (item.min === 'All or None' &&
-      item.number > 0 &&
+      //item.number > 0 &&
       item.number < requiredCount) {
     context.commit('PUSH_ERROR', 'Minimum of ' + requiredCount + ' ' + id + ' per ' + requiredCount + ' ' + requiredSentence + '.');
   } else if (item.min === 'Half or All' &&
@@ -244,7 +244,7 @@ function checkValidations (context, id, item) {
   } else if (/^As /.test(item.min) &&
              item.number < requiredCount) {
     context.commit('PUSH_ERROR', 'Minimum of ' + requiredCount + ' ' + id + ' per ' + requiredCount + ' ' + requiredSentence + '.');
-  } else if (context.getters.pointsCost >= 1000 &&
+  } else if (/*context.getters.pointsCost >= 1000 &&*/
              item.number + homologousCount < item.min * context.getters.size) {
     context.commit('PUSH_ERROR', 'Minimum of ' + (item.min * context.getters.size) + ' ' + id + ' per ' + context.getters.size + ',000 points.');
   }

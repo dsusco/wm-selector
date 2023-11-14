@@ -13,11 +13,11 @@ export default {
     .reduce((pointsCost, unit) => pointsCost + +unit.pointsCost, 0),
   printItems: (state) => state.printItems,
   printableItems: (state) => state.printableItems,
-  size: (state, getters) => Math.max(1, Math.floor(getters.pointsCost / 1000)),
+  size: (state, getters) => Math.ceil(getters.pointsCost / 1000),
   specialRules: (state) => state.specialRules,
   spells: (state) => state.spells,
   unitCount (state) {
-    var
+    let
       skirmishCount = 0,
       unarmouredSkirmishCount = 0,
       unitCount = Object.values(state.units)
@@ -27,7 +27,7 @@ export default {
               unitCount += unit.number;
             }
             
-            if (unit.specialRules && unit.specialRules.includes('Skirmish')) {
+            if (unit.specialRules?.includes('Skirmish')) {
               skirmishCount += unit.number;
               
               if (!unit.armour) {
@@ -47,13 +47,13 @@ export default {
   usedUnits: (state) => Object.keys(state.units)
     .reduce((usedUnits, unitID) => {
       if (state.units[unitID].number > 0) {
-        usedUnits[unitID] = Object.assign({}, state.units[unitID]);
+        usedUnits[unitID] = { ...state.units[unitID]};
 
         if (usedUnits[unitID].upgrades) {
           usedUnits[unitID].upgrades = Object.keys(usedUnits[unitID].upgrades)
             .filter((upgradeID) => usedUnits[unitID].upgrades[upgradeID].number > 0)
             .reduce((usedUpgrades, upgradeID) => {
-              usedUpgrades[upgradeID] = Object.assign({}, state.upgrades[upgradeID], usedUnits[unitID].upgrades[upgradeID]);
+              usedUpgrades[upgradeID] = { ...state.upgrades[upgradeID], ...usedUnits[unitID].upgrades[upgradeID]};
 
               return usedUpgrades;
             }, {});
@@ -65,7 +65,7 @@ export default {
   usedUpgrades: (state) => Object.keys(state.upgrades)
     .reduce((usedUpgrades, upgradeID) => {
       if (state.upgrades[upgradeID].number > 0) {
-        usedUpgrades[upgradeID] = Object.assign({}, state.upgrades[upgradeID]);
+        usedUpgrades[upgradeID] = { ...state.upgrades[upgradeID]};
       }
 
       return usedUpgrades;
