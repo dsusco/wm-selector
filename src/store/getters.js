@@ -13,7 +13,7 @@ export default {
     .reduce((pointsCost, unit) => pointsCost + +unit.pointsCost, 0),
   printItems: (state) => state.printItems,
   printableItems: (state) => state.printableItems,
-  size: (state, getters) => Math.max(1, Math.floor(getters.pointsCost / 1000)),
+  size: (state, getters) =>  Math.ceil(getters.pointsCost / 1000),
   specialRules: (state) => state.specialRules,
   spells: (state) => state.spells,
   unitCount (state) {
@@ -26,10 +26,10 @@ export default {
             if (!unit.noCount) {
               unitCount += unit.number;
             }
-            
+
             if (unit.specialRules && unit.specialRules.includes('Skirmish')) {
               skirmishCount += unit.number;
-              
+
               if (!unit.armour) {
                 unarmouredSkirmishCount += unit.number;
               }
