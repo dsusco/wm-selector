@@ -234,7 +234,11 @@
     "Wardancers": {
       "order": 2,
       "text": [
-        "Wardancer stands never fight as a independent unit. Instead, you may add one stand of Wardancers to a Glade Guard or Eternal Guard unit. This brings the size of the unit to 4 stands. Wardancers always have the same Armour value as the rest of their unit, either 5+ or 0. They fight as part of their unit and can be removed as a unit casualty if a player wishes. Wardancer casualty never count as casualty for purposes of issuing orders, which means there is no -1 Command penalty as there normally would be for units that have lost a stand. Wardancer stands never count as part of the unit's formation when determining whether they move at full of half pace, so no movement penalty is incurred if they are arranged out of the unit's regular formation."
+        "Wardancer stands are not deployed as independent units. Instead, any Glade Guard or Eternal Guard unit may add one stand of Wardancers. This brings the size of the unit to 4 stands: 3 regular stands plus the Wardancers stand.",
+        "",
+        "Wardancers always have the same Armour value as the rest of their unit. They fight as part of their unit and can be removed as a unit casualty if the player wishes."
+        "",
+        "Wardancers casualties never count for Command penalties. Wardancers stands never cause the parent unit to be in Irregular Formation no matter how they are placed."
       ]
     },
     "Waywatchers": {
@@ -242,7 +246,7 @@
       "text": [
         "Famous for their bow skills even by a Wood Elf standards, Waywatchers shoot the enemy with terrifying accuracy. They add +1 to their dice roll when making shooting attacks and these attacks are resolved at -1 Armor value for the enemy.",
         "",
-        "Waywatchers can also ambush. Individual units can be infiltrated onto the battlefield once the game has begun. To infiltrate a unit, the Wood Elf player nominates the point where he wants the Waywatchers to appear and issues an 'infiltration' order from any character. The character does not have to be within his normal command range to issue an infiltration order - the character's command range is considered to extend over the entire tabletop when issuing an infiltration order. Treat the order as issued to the nominated point, and apply any modifiers for distance and proximity of enemy, but ignore penalties of dense terrain. The nominated point must lie either on the table within dense terrain or on any base edge other than the enemy player's own table edge. If successful, place one stand on the nominated spot and arrange the rest of the unit around it. The infiltrated unit cannot be placed so that it touches an enemy unit. Once deployed, orders can be given to the unit by the same character that gave the infiltration order if he is within his normal command range, the infiltrating unit is considered to have used its first order to deploy. If the infiltration order is failed the unit is not deployed and cannot infiltrate that turn, it can attempt to infiltrate in a subsequent turn at the same or a different place."
+        "Waywatchers can also ambush. Individual units can be infiltrated onto the battlefield once the game has begun. To infiltrate a unit, the Wood Elf player nominates the point where he wants the Waywatchers to appear and issues an 'infiltration' order from any character. The character does not have to be within his normal command range to issue an infiltration order – the character's command range is considered to extend over the entire tabletop when issuing an infiltration order. Treat the order as issued to the nominated point, and apply any modifiers for distance and proximity of enemy, but ignore penalties of dense terrain. The nominated point must lie either on the table within dense terrain or on any base edge other than the enemy player's own table edge. If successful, place one stand on the nominated spot and arrange the rest of the unit around it. The infiltrated unit cannot be placed so that it touches an enemy unit. Once deployed, orders can be given to the unit by the same character that gave the infiltration order if he is within his normal command range, the infiltrating unit is considered to have used its first order to deploy. If the infiltration order is failed the unit is not deployed and cannot infiltrate that turn, it can attempt to infiltrate in a subsequent turn at the same or a different place."
       ]
     },
     "Forest Spirits": {
@@ -260,7 +264,7 @@
     "Warhawk Riders": {
       "order": 6,
       "text": [
-        "Warhawk riders can fly. They have a shooting range of only 15cm. However, they can shoot from any edge without turning stands to face their target. Just measure the range from any stand edge, front, side or rear. Note that this enables them to shoot at enemies charging them from any direction."
+        "Warhawk riders can fly. They have a shooting range of 15cm and 360° vision – stands in this unit can draw line of sight from all edges for the purpose of evading and shooting, including shooting at charging enemies. Note that this unit still needs Line of Sight from its front edge to charge an enemy."
       ]
     },
     "Treeman": {
@@ -314,7 +318,7 @@
       "text": [
         "The Spell Weaver calls force a mass of tangling branches to surround ther troops, protecting them form harm.",
         "",
-        "This spell may be cast upon a single unengaged friendly Infantry unit within range, regardless of whether the caster can see them or not. The spell lasts until the start of the caster‘s next turn, or until the target unit moves in any way. The target Infantry unit counts as Defended, even if it is in open terrain."
+        "This spell may be cast upon a single unengaged friendly Infantry unit within range, regardless of whether the caster can see them or not. The spell lasts until the start of the caster’s next turn, or until the target unit moves in any way. The target Infantry unit counts as Defended, even if it is in open terrain."
       ]
     },
     {

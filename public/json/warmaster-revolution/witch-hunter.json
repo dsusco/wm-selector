@@ -156,13 +156,19 @@
     "Warhounds": {
       "order": 4,
       "text": [
-        "Warhound stands never fight as indipendent unit. Instead, you may add one stand of Warhounds to your units of Zaelots, Handgunners, Pistoliers or Flagellants. This brings the size of the unit to 4 stands. Warhounds always have Armour value 0. Warhounds can move up to 30cm. They fight as part of their unit and can be removed as a unit causality if player wishes. Warhounds causality never count as causality for purpose of issuing orders, which means there is no -1 Command penalty as there normally would be for units that have lost a stand. Warhound stands never count as part of the unit's formation when determining whether they move at full or half pace pace, so no movement penalty is incurred if they are arranged out of the unit's regular formation. If they join cavalry unit (i.e. Pistoliers), they are still considered as an infantry stand, but in this particular case they can pursue enemy cavalry together with the main unit."
+        "Warhound stands are not deployed as independent units. Instead, any infantry unit may add one stand of Warhounds. This brings the size of the unit to 4 stands: 3 regular stands plus the Warhound stand.",
+        "",
+        "Warhounds always have the same Armour value as the rest of their unit. They fight as part of their unit and can be removed as a unit casualty if the player wishes.",
+        "",
+        "Warhound casualties never count for Command penalties. Warhound stands never cause the parent unit to be in Irregular Formation no matter how they are placed.",
+        "",
+        "An Infantry unit containing a Warhound stand gains the ability to pursue Cavalry and Chariots."
       ]
     },
     "Pistoliers": {
       "order": 5,
       "text": [
-        "Pistoliers have a shooting range of only 15cm, however they can shoot all round - i.e. behind or to the side as well as to their front. Just measure the range from any stand edge either front, side or rear. Pistoliers can shoot at enemy charging them from any direction."
+        "Pistoliers have a shooting range of 15cm and 360° vision – stands in this unit can draw line of sight from all edges for the purpose of evading and shooting, including shooting at charging enemies. Note that this unit still needs Line of Sight from its front edge to charge an enemy."
       ]
     },
     "Cannon": {

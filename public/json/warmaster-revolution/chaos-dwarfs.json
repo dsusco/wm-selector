@@ -92,6 +92,9 @@
       "max": 1,
       "specialRules": [
         "Stone Thrower"
+      ],
+      "homologousUnits": [
+        "Death Rocket"
       ]
     },
     "Death Rocket": {
@@ -106,6 +109,9 @@
       "max": 1,
       "specialRules": [
         "Stone Thrower"
+      ],
+      "homologousUnits": [
+        "Earthshaker Cannon"
       ]
     },
     "Bolt Thrower": {
@@ -170,7 +176,7 @@
       "order": 1,
       "type": "Monstrous Mount",
       "attack": "+1",
-      "points": "+20",
+      "points": "+35",
       "max": 1
     },
     "Sorcerer Lord": {
@@ -204,13 +210,15 @@
     "Blunderbusses": {
       "order": 1,
       "text": [
-        " Units with Blunderbusses have a shooting range of 15cm. The unit has 2 shooting attacks. Units hit by Blunderbusses get a -1 penalty for their armour rolls. One unit of Blunderbusses per full 1000 points can replace a unit of Warriors while still counting for the Warrior min/max value. Note that this unit still counts for max value of Blunderbusses."
+        "Units with Blunderbusses have a shooting range of 15cm. The unit has 2 shooting attacks. Units hit by Blunderbusses get a -1 penalty for their armour rolls. One unit of Blunderbusses per full 1000 points can replace a unit of Warriors while still counting for the Warrior min/max value. Note that this unit still counts for max value of Blunderbusses."
       ]
     },
     "Hobgoblins": {
       "order": 2,
       "text": [
-        "Hobgoblins and Hobgoblin Wolf Riders carry an assortment of smaller ranged arms, so may only shoot up to 15cm. However, they can shoot from any edge without turning stands to face their target. Just measure the range from any stand edge, front, side or rear. Also this enables them to shoot at enemies charging them from any direction. Hobgoblins and Orcs have a strong hatred so units of Hobgoblins or Hobgoblin Wolf Riders may not brigade with units of Black Orcs or Orc Slaves unless Chaos Dwarfs or Blunderbuss unit is part of the brigade."
+        "Hobgoblins and Hobgoblin Wolf Riders carry an assortment of smaller ranged arms, so may only shoot up to 15cm and 360° vision – stands in this unit can draw line of sight from all edges for the purpose of evading and shooting, including shooting at charging enemies. Note that this unit still needs Line of Sight from its front edge to charge an enemy.",
+        "",
+        "Hobgoblins and Orcs have a strong hatred so units of Hobgoblins or Hobgoblin Wolf Riders may not brigade with units of Black Orcs or Orc Slaves unless a Chaos Dwarf or Blunderbuss unit is part of the brigade."
       ]
     },
     "Orc Slaves": {
@@ -222,24 +230,26 @@
     "Earthshaker Cannon": {
       "order": 4,
       "text": [
-        "The Earthshaker acts as a Stone Thrower as described in main Rulebook. The exception is that the drive back from the Eartshaker shot causes confusion on rolls of 4+ rather than the usual 6+. In addition the Earthshaker shot causes confusion in units in base contact with the victim unit on rolls of 6 on a D6 (roll for each unit)."
+        "The Earthshaker acts as a Stone Thrower as described in main Rulebook. The exception is that the drive back from the Eartshaker shot causes confusion on rolls of 4+ rather than the usual 6+. In addition the Earthshaker shot causes confusion in units in base contact with the victim unit on rolls of 6 on a D6 (roll for each unit).",
+        "",
+        "The total number of Earthshakers and Death Rockets in the army is limited in the way that only 1 piece of this kind is allowed per 1000 points."
       ]
     },
     "Death Rocket": {
       "order": 5,
       "text": [
-        "The Death Rocket acts similar to a Stone Thrower as described in main Rulebook, except it shoots D6 times per phase and hits inflicted on the target can be still saved by the armour with -1 modifier (as for handguns). If the roll for the number of shots comes up a 1, the Death Rocket has misfired and you must roll a D6 against the Death Rocket Misfire chart.",
+        "The Death Rocket acts similar to a Stone Thrower as described in the Rulebook, except it shoots D6 times per phase and hits inflicted on the target can be still saved by the armour with a -1 modifier. If the roll for the number of shots comes up a 1, the Death Rocket has misfired and you must roll a D6 against the Death Rocket Misfire chart.",
         "",
-        " **Death Rocket Misfire Chart**",
+        "**Death Rocket Misfire Chart**",
         "",
         "_**D6**_|_**Result**_",
         "-|-",
-        " **1:**|**KABOOM!** The Death Rocket explodes in spectacular fashion and is removed from play.",
-        "**2:**|**Overload.** The combination of too heavy rocket and too much gun powder to shoot it out causes spectacular effects both at the target and in the machine itself. The Death Rocket explodes and is removed from play and the target is suffering 2 +1D6 attacks.",
-        "**3:**|**Malfunction.** The rocket only does one attack. Due to the malfunction only lighter version of rockets might be used till the end of the game and the shots cause D3 attacks instead of D6.",
-        "**4:**|**Dud.** The rocket only does one attack.",
-        "**5:**|**Whoosh!** The rocket overshoots and does D6 attacks on the first unit past the original target, regardless of range. If no target is behind the victim the rocket leaves the battlefield without causing any damage.",
-        "**6:**|**Big badaboom!** The rocket does 2D6 attacks instead of the normal 1D6."
+        " **1:**|**KABOOM!** The Death Rocket explodes in spectacular manner.",
+        "**2-3:**|**Dud.** The rocket does only one attack.",
+        "**4-5:**|**Whoosh!** The rocket overshoots and does D6 attacks on the first unit in the line of fire past the original target, regardless of range. If the result is 1, don’t roll for the misfire again. If the target is engaged in combat, the hits are carried over into the Combat phase. If no target is behind the victim the rocket leaves the battlefield without causing any damage.",
+        "**6:**|**Big badaboom!** The rocket does 2D6 attacks instead of the normal 1D6.",
+        "",
+        "The total number of Earthshakers and Death Rockets in the army is limited in the way that only 1 piece of this kind is allowed per 1000 points."
       ]
     },
     "Bolt Thrower": {

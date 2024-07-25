@@ -183,13 +183,13 @@
     "Wolf Riders": {
       "order": 3,
       "text": [
-        "Wolf Riders’ bows have only a short range compared to other shooting weapons, so their fire is restricted to 15cm. However, because their weapons are so handy they can shoot behind or to the side without turning stands to face their target. Just measure the range from any stand edge. They can therefore shoot at enemy charging them from any direction."
+        "The Wolf Riders have only a shooting range of 15cm and 360° vision – stands in this unit can draw line of sight from all edges for the purpose of evading and shooting, including shooting at charging enemies. Note that this unit still needs Line of Sight from its front edge to charge an enemy."
       ]
     },
     "Pump Wagon": {
       "order": 4,
       "text": [
-        "The Pump Wagon doesn’t move in Command phase by initiative or by successful orders. Instead of this it can always move once up to 10xD6cm. This move is automatic, requiring no Command roll, and happens at any time during the Command phase. This movement can be made in any direction and will give the Pump Wagon a movement of between 10cm and 60cm each turn. A Pump Wagon does not have to move if the player wishes.",
+        "The Pump Wagon doesn’t move in Command phase by initiative or by successful orders. Instead of this it can always move once up to 10×D6cm. This move is automatic, requiring no Command roll, and happens at any time during the Command phase. This movement can be made in any direction and will give the Pump Wagon a movement of between 10cm and 60cm each turn. A Pump Wagon does not have to move if the player wishes.",
         "",
         "In the turn it charges or for pursuits and advances, a Pump Wagon receives D6 attacks. This is in addition too any additional attacks it receives for charging enemy in the open and for being a chariot. When charged or retreating as a result of combat, its attacks are halved to D3. The Pump Wagon is crewed by Snotlings who feed on magic mushrooms making them mad and crazy, with no care for their own lives. A Pump Wagon moves forward (and backwards, as well as to the side) at a relentless rate and cannot be driven back by shooting. Nor can it be confused in any way.",
         "",
@@ -249,7 +249,7 @@
         "",
         "This can be cast on any enemy unit within 60cm, whether the Shaman can see it or not. It cannot be cast on a unit engaged in combat or cast successfully on a unit more than once per turn.",
         "",
-        "The enemy unit is driven back by the blast of the bellow 5xD6cm towards its own table edge. This is treated in the same way as a driveback from shooting except the direction is established by determining the shortest route to the table edge. A unit cannot be routed by a drive back from Gerroff!!! spell. If the unit leaves the table edge it must roll as described in the main rules."
+        "The enemy unit is driven back by the blast of the bellow 5×D6cm towards its own table edge. This is treated in the same way as a driveback from shooting except the direction is established by determining the shortest route to the table edge. A unit cannot be routed by a drive back from Gerroff!!! spell. If the unit leaves the table edge it must roll as described in the main rules."
       ]
     },
     {

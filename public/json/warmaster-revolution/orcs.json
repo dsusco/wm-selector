@@ -212,7 +212,7 @@
     "Wolf Riders": {
       "order": 4,
       "text": [
-        "The Wolf Rider's range is restricted to 15cm. Wolf Riders can shoot behind or to the side as well as to the front. Just measure the range from any stand edge, front, side or rear. They can therefore shoot at enemy charging them from any direction."
+        "The Wolf Rider's range is restricted to 15cm. Wolf Riders have 360° vision – stands in this unit can draw line of sight from all edges for the purpose of evading and shooting, including shooting at charging enemies. Note that this unit still needs Line of Sight from its front edge to charge an enemy."
       ]
     },
     "Giant": {
@@ -254,7 +254,7 @@
       "text": [
         "*With a mighty heave a huge green fist erupts from the Shaman's gaping mouth and strikes all within its path.*",
         "",
-        "Draw an imaginary line 30cm long from the Shaman's stand in any direction you wish. The line will pass through any intervening units but not beyond terrain that would normally stop a missile shot, eg over the crest of a hill, more than 2cm of woodland, and so forth.",
+        "Draw an imaginary line 30cm long from the Shaman's stand in any direction you wish. The line will pass through any intervening units but not beyond terrain that would normally stop a missile shot, e.g. over the crest of a hill, more than 2cm of woodland, and so forth.",
         "",
         "Each unit under the line takes three shooting attacks worked out in the usual way. Note that this spell can easily affect several units and will affect all units that fall beneath the line (including your own). Unengaged units can be driven back by a Gotcha as with ordinary shooting (even including friends). Engaged units cannot be driven back by the Gotcha but carry over any hits scored into the first round of combat; any hits scored count as having been struck in the combat itself."
       ]

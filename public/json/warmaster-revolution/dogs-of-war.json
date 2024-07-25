@@ -237,7 +237,7 @@
     "Light Cavalry": {
       "order": 4,
       "text": [
-        "Dogs of War armies make great use of expert light cavalry from all around the world. Empire Pistoliers, Arabian Desert Riders, Hobgoblin Wolf Riders and Kislev Horse Archers are particularly adept at outmanoeuvring an enemy and harrying his flanks. Light cavalry are equipped with light bows or pistols and have a range of 15cm. However, as their weapons are so handy, they can shoot behind or to the side without turning stands to face their target. Just measure the range from any edge, front side or rear. They can therefore shoot at enemy charging them from any direction."
+        "Dogs of War armies make great use of expert light cavalry from all around the world. Empire Pistoliers, Arabian Desert Riders, Hobgoblin Wolf Riders and Kislev Horse Archers are particularly adept at outmanoeuvring an enemy and harrying his flanks. Light cavalry are equipped with light bows or pistols and have a range of 15cm and 360° vision – stands in this unit can draw line of sight from all edges for the purpose of evading and shooting, including shooting at charging enemies. Note that this unit still needs Line of Sight from its front edge to charge an enemy."
       ]
     },
     "Galloper Guns": {

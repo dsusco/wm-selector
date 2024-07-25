@@ -196,13 +196,17 @@
     "Skirmishers": {
       "order": 3,
       "text": [
-        "Skirmisher stands never fight as independent units. Instead, you may add one stand of Skirmishers to any of your infantry units apart from Flagellants. This brings the size of the unit to 4 stands -i.e. 3 ordinary stands plus the skirmishers. Skirmishers always have the same Armour value as the rest of their unit, either 6+ or 0. They fight as part of their unit and can be removed as a unit casualty if the player wishes. Skirmisher casualties never count as casualties for purposes of issuing orders, which means there is no -1 Command penalty as there normally would be for units that have lost a stand. Skirmisher stands never count as part of the unit's formation when determining whether they move at full or half pace, so no movement penalty is incurred if they are arranged out of the unit's regular formation. As a result skirmishers are both more adaptable and more expendable than other troops."
+        "Skirmisher stands are not deployed as independent units. Instead, any infantry unit apart from Flagellants may add one stand of Skirmishers. This brings the size of the unit to 4 stands: 3 regular stands plus the Skirmisher stand.",
+        "",
+        "Skirmishers always have the same Armour value as the rest of their unit. They fight as part of their unit and can be removed as a unit casualty if the player wishes.",
+        "",
+        "Skirmisher casualties never count for Command penalties. Skirmisher stands never cause the parent unit to be in Irregular Formation no matter how they are placed."
       ]
     },
     "Pistoliers": {
       "order": 4,
       "text": [
-        "Pistoliers have a shooting range of only 15cm however they can shoot all round - i.e. behind or to the side as well as to their front. Just measure the range from any stand edge either front, side or rear. Pistoliers can shoot at enemy charging them from any direction."
+        "Pistoliers have a shooting range of only 15cm however they have 360° vision – stands in this unit can draw line of sight from all edges for the purpose of evading and shooting, including shooting at charging enemies. Note that this unit still needs Line of Sight from its front edge to charge an enemy."
       ]
     },
     "Helblaster": {
@@ -229,9 +233,9 @@
     "Steam Tank": {
       "order": 6,
       "text": [
-        "The Steam Tank forms a unit on its own, it moves up to 20cm, and must be given its own orders. The Steam Tank cannot be given a brigade order with other units, not even with other Steams Tanks. A character cannot join with a Steam Tank. A Steam Tank can shoot from any edge of a stand: side or rear as well as the front like other units. Steam Tanks weapons have a range of 30cm. A Steam Tank therefore shoots to its front, side or rear against the closest enemy target.",
+        "The Steam Tank forms a unit on its own, it moves up to 20cm, and must be given its own orders. The Steam Tank cannot be given a brigade order with other units, not even with other Steams Tanks. A character cannot join with a Steam Tank. A Steam Tank has 360° vision – it can draw line of sight from all edges of its stand for the purpose of evading and shooting, including shooting at charging enemies. Note that this unit still needs Line of Sight from it’s front edge to charge an enemy. Steam Tank shooting attacks have a range of 30cm. A Steam Tank therefore shoots to its front, side or rear against the closest enemy target.",
         "",
-        "Targets suffering hits from a Steam Tank count their Armour value as one worse than normal - so 3+ counts as 4+, 4+ as 5+, whilst 6+ is ignored. A Steam Tank can shoot at charging enemy.",
+        "Count enemy armour values as one worse than normal when shot by a Steam Tank. So, for example, an armour value of 3+ counts as 4+, 5+ counts as 6+, and 6+ can‘t save against a Steam Tank. A Steam Tank can shoot at charging enemy.",
         "",
         "Because of its exceptionally heavy armour plating, a Steam Tank always counts as defended - so a 5 or 6 is normally required to inflict a hit from shooting or in combat. The Steam Tank fights combat like any other unit. Steam Tanks cannot be driven back or routed by shooting.",
         "",

@@ -11,8 +11,8 @@
       "hits": 3,
       "armour": "5+",
       "size": 3,
-      "points": 100,
-      "max": 4
+      "points": 110,
+      "max": 3
     },
     "Horse Archers": {
       "order": 1,
@@ -138,7 +138,10 @@
       "type": "Special Mount",
       "attack": "+1",
       "points": "+10",
-      "max": 1
+      "max": 1,
+      "specialRules": [
+        "Bear Mount"
+      ]
     },
     "Yozhin": {
       "order": 1,
@@ -166,13 +169,13 @@
     "Winged Lancers": {
       "order": 1,
       "text": [
-        "If a unit of Winged Lancers is charging against an enemy in the open it receives an additional +1 Attack modifier in the same way as chariots and monsters."
+        "Winged Lancers receive +1 Attack in the first round of every combat when fighting to the front and are immune to Terror."
       ]
     },
     "Horse Archers, Cossacks": {
       "order": 2,
       "text": [
-        "Kislevite Horsemen have only a short range (15cm). They can shoot behind or to the side without turning stands to face their target. Just measure the range from any stand edge, front, side or rear."
+        "Kislevite Horsemen have a shooting range of 15cm and 360° vision – stands in this unit can draw line of sight from all edges for the purpose of evading and shooting, including shooting at charging enemies. Note that this unit still needs Line of Sight from its front edge to charge an enemy."
       ]
     },
     "Red Guard": {
@@ -196,32 +199,20 @@
       "text": [
         "The War Wagon unit consists of two separate stands: the wagon stand with the wagon on it and the team stand with horses on it. The unit must always be in one of two formations: a wagon column with the horse team in front of the wagon, and a wagon laager with the horse team placed beside the wagon edge to edge.",
         "",
-        "When a War Wagon moves it must always finish its move in a wagon column. In other respects the wagon unit moves like any other unit of two stands. The wagon cannot charge an enemy. Its movement rate is 20cm at full pace and 10cm at half pace the same as infantry. A unit in wagon column at the start of the move moves at full pace, a unit in wagon laager at the start of the move moves at half pace. A wagon treats terrain in the same way as artillery.",
+        "The wagon cannot charge and moves 20cm at full pace and 10cm at half pace.  The unit moving up to 5cm after a successful order can end its move in laager formation.  A unit moving more than 5cm must end its move in a column formation. Terrain restrictions are the same as Artillery.",
         "",
-        "A War Wagon in wagon column formation can be given an order to form a laager. A War Wagon can also form a laager using initiative - i.e. if visible enemy are within 20cm at the start of the move. This is an exception to the normal rules for initiative, which allow units to charge or evade as described in the rulebook. Note that a wagon cannot move and form laager by means of a single order - a separate order is required to form a wagon laager. When a wagon forms laager, either stand can be pivoted to face any direction, the other stand is then placed in formation alongside it.",
+        "Either stand can be removed as a casualty. The War Wagon can move only when the team stand remains. The War Wagon has 4+ Armour and a total of 4 shooting and 4 close combat Attacks as long as the wagon stand remains. If the wagon stand is removed the team stand has no Armour and no Attacks.",
         "",
-        "Either stand can be removed as a casualty if sufficient hits are inflicted to remove a stand from the unit. The War Wagon has an Armour rating of 4+ so long as the wagon stand is present. If the wagon stand is removed as a casualty the remaining team stand has no Armour (no save).",
+        "The War Wagon can shoot all around and can draw a line of sight from any exposed edge. The wagon has a range of 30cm. The target’s armour value counts one worse than usual. The wagon is permitted to shoot over the heads of friendly troops on lower ground in the same way as other artillery. The wagons shots do not ‘bounce’.",
         "",
-        "The War Wagon can shoot all around and can draw a line of sight from any exposed edge. Though consisting of two stands, the War Wagon cannot make more than four shooting attacks in total. The wagon has a range of 30cm. The target’s armour value counts one worse than usual, for example 4+ counts as 5+, and 6+ becomes 0. The wagon is permitted to shoot over the heads of friendly troops on lower ground in the same way as other artillery (see page 73). Note that the wagon’s Attacks are a combination of crewmen and light guns - shots do not ‘bounce’ as described under the rules for Cannons in the Warmaster rulebook.",
+        "A laagered wagon counts as a defended unit. A wagon column counts as in the open. A laagered wagon has no sides or rear. A laagered wagon cannot be driven back or routed by shooting. But roll for (defended) drive backs  to see if it becomes confused. For Gerroff, roll the dice as normal and if the wagon would normally have left the table then roll 1×D6 and it is confused on a 6.",
         "",
-        "A laagered wagon counts as a defended unit. A wagon column counts as in the open.",
+        "Although it is an artillery unit, a wagon column cannot pursue but it is not destroyed if forced to retreat. It continues to count as defended in subsequent rounds. The enemy can continue to fight by ‘pursuing’, but there are no pursuit bonuses. A laagered wagon cannot make way.",
         "",
-        "A laagered wagon unit counts all its edges as front edges - it has no sides or rear and no combat penalties are applied on account of fighting to the side or rear.",
-        "",
-        "Though consisting of two stands, the War Wagon can never make more than 4 attacks in combat in total.",
-        "",
-        "A laagered wagon cannot be driven back or routed by shooting. However - it is still deemed necessary to roll drive backs (remember it is defended) to determine if War Wagon becomes confused on a roll of a 6. The same applies to Gerroff!!! spell. Roll the dice as normal. If the wagon would normally have left the table then roll 1 D6. If a 6 is rolled it is confused.",
-        "",
-        "If a wagon column is engaged in combat then it cannot pursue if it wins the combat round, and it is destroyed if forced to retreat. Note this is the standard rule for artillery.",
-        "",
-        "If a laagered War Wagon is engaged in combat then it will neither pursue nor retreat regardless of the combat result. The War Wagon is not destroyed in the same way as artillery if it loses a combat round. It always holds its ground regardless of the result and continues to count as defended in subsequent rounds. An enemy unit that wins a round of combat against the wagon can continue to fight by ‘pursuing’ in the normal way, but no pursuit bonuses are gained for doing so.",
-        "",
-        "Any Kislev infantry unit positioned so that the side edge of at least one stand touches any edge of the wagon stand (not the team stand) of a laagered War Wagon unit counts the whole unit as defended for purposes of shooting and combat (i.e. the infantry unit must line up so that the wagon stand and any infantry stand from the unit would be in a mutually supporting position were they both infantry). This assumes some intermingling of infantry in the wagon laager which is otherwise impossible to represent, but can be readily imagined. This advantage applies only in the first round of combat when charged, in exactly the same way as defended units on high ground or amongst woods or other dense terrain. Note that these associated infantry do not retain defended status in subsequent rounds as does the War Wagon itself, even where they remain in touch with the wagon stand.",
-        "",
-        "Note that as described above, either the wagon or the team stand can be removed as a casualty - it is up to the player to decide which to remove. If the horses are removed the War Wagon cannot move. If the wagon is removed the horses can move but obviously cannot attack - this gives the player the opportunity to retreat the ‘horses’ out of harms way thus avoiding losing the unit. The unit is not destroyed until both stands have been removed as normal."
+        "Any Kislev infantry unit with a side edge of one one stand touching wholly the short edge of a laagered wagon stand counts as defended for shooting and combat. This advantage applies only in the first round of combat."
       ]
     },
-    "Bear": {
+    "Bear Mount": {
       "order": 6,
       "text": [
         "Generals, Heroes and Shamans can ride a Bear mount. The Bear adds +1 Attack to that of its rider."

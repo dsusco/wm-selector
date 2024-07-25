@@ -163,7 +163,7 @@
     "Desert Riders": {
       "order": 2,
       "text": [
-        "Desert Riders have a shooting range of only 15cm, however they can shoot all round - ie behind or to the side as well as to their front. Just measure the range from any stand edge either front, side or rear. Desert Riders can shoot at enemy charging them from any direction."
+        "Desert Riders have a shooting range of only 15cm and 360° vision – stands in this unit can draw line of sight from all edges for the purpose of evading and shooting, including shooting at charging enemies. Note that this unit still needs Line of Sight from its front edge to charge an enemy."
       ]
     },
     "Camel Riders": {
@@ -175,7 +175,7 @@
     "Magic Carpets": {
       "order": 4,
       "text": [
-        "Magic carpets can fly – they have been rated as aerial 'cavalry' as this is the closest categorisation to their type. Because they are awkward flyers, they can be pursued by any type of enemy troops. Riders have a shooting range of only 15cm. However, they can shoot from any edge without turning stands to face their target. Just measure the range from any stand edge, front, side or rear. Note that this enables them to shoot at enemies charging them from any direction."
+        "Magic carpets can fly – they have been rated as aerial 'cavalry' as this is the closest categorisation to their type. Because they are awkward flyers, they can be pursued by any type of enemy troops. Riders have a shooting range of 15cm and 360° vision – stands in this unit can draw line of sight from all edges for the purpose of evading and shooting, including shooting at charging enemies. Note that this unit still needs Line of Sight from its front edge to charge an enemy."
       ]
     },
     "Elephants": {
