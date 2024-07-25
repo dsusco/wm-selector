@@ -1,0 +1,271 @@
+{
+  "name": "Evil Army",
+  "version": "Warmaster The Battle of Five Armies",
+  "group": 1,
+  "order": 0,
+  "units": {
+    "Goblins": {
+      "order": 0,
+      "type": "Infantry",
+      "attack": "2/1",
+      "range": "15cm",
+      "hits": 3,
+      "size": 3,
+      "points": 30
+    },
+    "Goblin Guard": {
+      "order": 1,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 45,
+      "max": 1
+    },
+    "Hill Trolls": {
+      "order": 2,
+      "type": "Infantry",
+      "attack": 5,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 100,
+      "max": 1
+    },
+    "Wolf Riders": {
+      "order": 3,
+      "type": "Cavalry",
+      "attack": "2/1",
+      "range": "15cm",
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 60,
+      "specialRules": [
+        "Goblins"
+      ]
+    },
+    "Wargs": {
+      "order": 4,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "points": 60,
+      "max": 4
+    },
+    "Spiders": {
+      "order": 5,
+      "type": "Monster",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 70,
+      "max": 1
+    },
+    "Gigantic Bats": {
+      "order": 6,
+      "type": "Monster",
+      "attack": 2,
+      "hits": 3,
+      "size": 3,
+      "points": 60,
+      "max": 1
+    },
+    "Storm Giant": {
+      "order": 7,
+      "type": "Monster",
+      "attack": 8,
+      "hits": 8,
+      "armour": "5+",
+      "size": 1,
+      "points": 150,
+      "max": 1
+    },
+    "Dragon": {
+      "order": 8,
+      "type": "Monster",
+      "attack": "6/3",
+      "hits": 6,
+      "armour": "4+",
+      "size": 1,
+      "points": 350,
+      "max": 1,
+      "specialRules": [
+        "Smaug"
+      ]
+    },
+    "Bolg": {
+      "order": 9,
+      "type": "Hero",
+      "attack": "+2",
+      "command": 9,
+      "size": 1,
+      "points": 80,
+      "armyMin": 1,
+      "armyMax": 1,
+      "upgrades": [
+        "General"
+      ]
+    },
+    "Goblin Chieftain": {
+      "order": 10,
+      "type": "Hero",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 80,
+      "max": 3,
+      "upgrades": [
+        "General"
+      ]
+    },
+    "Goblin Shaman": {
+      "order": 11,
+      "type": "Wizard",
+      "attack": "+0",
+      "command": 7,
+      "size": 1,
+      "points": 45,
+      "max": 1,
+      "specialRules": [
+        "Shaman"
+      ],
+      "upgrades": [
+        "General"
+      ]
+    }
+  },
+  "upgrades": {
+    "General": {
+      "order": 0,
+      "type": "General",
+      "attack": "+1",
+      "command": "+1",
+      "points": "+0",
+      "armyMin": 1,
+      "armyMax": 1
+    }
+  },
+  "magic": true,
+  "specialRules": {
+    "Goblins": {
+      "order": 1,
+      "text": [
+        "Goblin infantry and cavalry units fight with a variety of weapons including some bows and thrown weapons such as spears and axes. To represent this, Goblins and Wolf Rider units are allowed to shoot as if they had bows but their range is reduced to 15cm."
+      ]
+    },
+    "Hill Trolls": {
+      "order": 2,
+      "text": [
+        "Hill Trolls and witless creatures that find it hard to remember orders, let alone obey them. To represent this, any Command penalty applied for distance between the character and Hill Troll unit is always doubled."
+      ]
+    },
+    "Wolf Riders": {
+      "order": 3,
+      "text": [
+        "Wolf Riders are able to see all the way round — not just to their front. This enables Wolf Riders to shoot in any direction, or to charge or evade from the closest enemy within 20cm regardless of their relative position."
+      ]
+    },
+    "Spiders": {
+      "order": 4,
+      "text": [
+        "Spiders of Mirkwood can move and see through woods and forest as if the terrain were not there. Spider stands that are wholly or partially within woods can shoot at troops charging their unit. This represents the sticky webs they have spun from tree to tree.  Web ‘shots’ are resolved as one shooting attack for each of the unit’s stands that is within the wood. Spiders do not need to be able to see their attackers to use this ability – so enemies will encounter webs even if they charge from behind. Note that Spiders cannot shoot otherwise."
+      ]
+    },
+    "Gigantic Bats": {
+      "order": 5,
+      "text": [
+        "Gigantic Bats can fly."
+      ]
+    },
+    "Storm Giant": {
+      "order": 6,
+      "text": [
+        "Storm Giants are rather big and stupid. All Storm Giants have to be given separate orders – they cannot be brigaded with other units, not even with other Storm Giants. If you attempt to give and order to a Storm Giant and fail then you must take a Giant Goes Wild test to see what he does. Ignore potential blunders – these are taken into account by the test.",
+        "",
+        "Storm Giants cause terror in its enemies.",
+        "",
+        "Storm Giants are allowed to charge fortified enemies. They are not tall enough to move over high linear obstacles or city walls – and so cannot pursue retreating fortified enemies.",
+        "",
+        "Storm Giants have a great many hits (8) and we must consider the possibility of hurting the Giant and reducing its effectiveness. Therefore, if a Storm Giant has suffered 4-7 hits by the end of the Shooting phase or Combat phase it is deemed to have been badly hurt. Once badly hurt, the Giant’s outstanding hits are discounted and his Hits and Attacks are halved for the rest of the battle (to 4 Hits and 4 Attacks).",
+        "",
+        "__Giant Goes Wild Chart__",
+        "",
+        "|||",
+        "-|-",
+        "_D6_|_On no! What's he doing now!_",
+        "1|The Storm Giant will neither move nor fight this turn but simply stands rooted to the spot looking bewildered.",
+        "2|Move the Storm Giant directly towards the nearest table edge. If he moves into another unit he will attack it regardless of which side it is on. If victorious in combat the Storm Giant will hold his ground.",
+        "3|The Storm Giant picks up a rock, tree, abandoned cart, small building or whatever comes to hand and throws it at the closest unit he can see – friend or foe. The object travels 5×D6cm and, if it travels far enough to hit its target, strikes with 3 Attacks worked out in the usual way.",
+        "4|The Storm Giant moves straight forward at full pace in the direction he is facing. If he reaches an enemy unit he will charge and fight as normal. If he reaches a friendly unit he will walk straight through it. A friendly unit that has been walked through is immediately confused – but ceases to be confused at the end of the Command phase along with other confused units.",
+        "5|The Storm Giant moves as fast as he can towards the nearest enemy unit. If he reaches the enemy unit he will attack as normal. If friends are in the way he will walk through them causing confusion as described above.",
+        "6|The Storm Giant gives a mighty bellow and rushes straight at the nearest enemy unit he can see. Move the Storm Giant at double his normal full pace. If friends are in the way he will walk through them causing confusion as described above. If he reaches an enemy unit, he fights by furiously jumping up and down on the foe, crazily doubling his Attack value in the first round of combat."
+      ]
+    },
+    "Smaug": {
+      "order": 7,
+      "text": [
+        "Smaug is the greatest of all living Dragons and an intelligent and cunning wyrm.",
+        "",
+        "Smaug can fly, breath fire, and causes terror.",
+        "",
+        "Dragons are large monsters and Smaug has a great many hits (6) to reflect this. We must consider the possibility of hurting a Dragon and reducing its effectiveness in subsequent turns. Therefore, if Smaug has suffered 3-5 hits by the end of the Shooting phase or Combat phase he is deemed to have been badly hurt. Once badly hurt, all Smaug’s outstanding hits are discounted and his Hits and Attacks are halved for the rest of the battle (to 3/3 Hits and 3 Attacks).",
+        "",
+        "Smaug has a special shooting attach – he can breath fire. The fire breath has a range of 20cm. Fire can be directed at one enemy unit in the normal manner and has three attacks worked out in the same way as bowfire and other shooting."
+      ]
+    },
+    "Goblin Shaman": {
+      "order": 8,
+      "text": [
+        "Goblin Shamans are powerful creatures – so the Evil army can normally include no more than one Shaman. However, the army can include more Shamans if these are substituted for Chieftain choices. For example, a 2,000 point army could have two Shamans and five Chieftains, rather than one Shaman and six Chieftains. However, the army may never include more Shamans than the one per 1,000 point limit indicated."
+      ]
+    },
+    "General": {
+      "order": 9,
+      "text": [
+        "One character must be nominated as the army’s General. This character has an extra bonus Attack and a Command value of +1 on normal."
+      ]
+    }
+  },
+  "spells": [
+    {
+      "name": "Foul Frenzy",
+      "roll": 4,
+      "range": "30cm",
+      "text": [
+        "*The Goblin hordes are driven into a foul frenzy of bloodlust by the intoxicating powers of dark magic.*",
+        "",
+        "This spell can be cast on a friendly Goblin infantry or Wolf Rider unit within 30cm regardless of whether the Shaman has line of sight or not. The spell can only be cast at a unit that is engaged in combat.",
+        "",
+        "Every stand in the unit, including a character that is fighting with the unit, adds +1 to its Attacks value during the first round of the following Combat phase."
+      ]
+    },
+    {
+      "name": "Dark Swarm",
+      "roll": 5,
+      "range": "30cm",
+      "text": [
+        "*A swarm of dreaded bloodsucking bats and nameless dark horrors swirls about the foe and feats upon the wounded.*",
+        "",
+        "This spell can be cast on any enemy unit within range regardless of whether the Shaman has line of sight or not. The spell can be cast at a target engaged in combat or a target that is not engaged in combat – it makes no difference.",
+        "",
+        "The *Dark Swarm* is worked out exactly like three ordinary shooting attacks. If the target is not engaged in combat, hits inflicted by a *Dark Swarm* are counted towards drive backs just like ordinary shooting. If the target is engaged in combat, hits inflicted by a *Dark Swarm* are carried over into the Combat phase and count towards the combat result in the first round."
+      ]
+    },
+    {
+      "name": "Faster You Dogs",
+      "roll": 5,
+      "range": "60cm",
+      "text": [
+        "*The Shaman’s frantic gibbering forces the cowardly Goblin ranks forwards against their will.*",
+        "",
+        "This spell can be cast on a friendly Goblin infantry or Wolf Rider unit within range regardless of whether the Shaman has line of sight or not. The spell can only be cast at a unit that is not engaged in combat.",
+        "",
+        "If the spell is cast upon a unit, it can move immediately just as if it had received an order in the Command phase. Note that the spell affects only a single unit – it is not a brigade order – and any characters with the unit will not move with it."
+      ]
+    }
+  ]
+}

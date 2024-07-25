@@ -1,0 +1,278 @@
+{
+  "name": "Good Army",
+  "version": "Warmaster The Battle of Five Armies",
+  "group": 0,
+  "order": 0,
+  "units": {
+    "Elves": {
+      "order": 0,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 50
+    },
+    "Elf Archers": {
+      "order": 1,
+      "type": "Infantry",
+      "attack": "2/1",
+      "range": "30cm",
+      "hits": 3,
+      "armour": "0",
+      "size": 3,
+      "points": 45,
+      "min": 2,
+      "max": 4
+    },
+    "Elf Cavalry": {
+      "order": 2,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 80,
+      "max": 2
+    },
+    "Dwarfs": {
+      "order": 3,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 4,
+      "armour": "4+",
+      "size": 3,
+      "points": 110,
+      "min": 1
+    },
+    "Dwarf Archers": {
+      "order": 4,
+      "type": "Infantry",
+      "attack": "2/1",
+      "range": "30cm",
+      "hits": 4,
+      "armour": "5+",
+      "size": 3,
+      "points": 80,
+      "max": 1
+    },
+    "Men": {
+      "order": 5,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 45,
+      "min": 1
+    },
+    "Men Archers": {
+      "order": 6,
+      "type": "Infantry",
+      "attack": "2/1",
+      "range": "30cm",
+      "hits": 3,
+      "armour": "0",
+      "size": 3,
+      "points": 30,
+      "max": 2
+    },
+    "Eagles": {
+      "order": 7,
+      "type": "Monster",
+      "attack": 2,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 70,
+      "max": 1
+    },
+    "Giant Bear": {
+      "order": 8,
+      "type": "Monster",
+      "attack": 6,
+      "hits": 4,
+      "armour": "4+",
+      "size": 1,
+      "points": 125,
+      "max": 1
+    },
+    "Wizard": {
+      "order": 9,
+      "type": "Wizard",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 120,
+      "armyMax": 1,
+      "upgrades": [
+        "General"
+      ]
+    },
+    "Hero": {
+      "order": 10,
+      "type": "Hero",
+      "attack": "+2",
+      "command": 8,
+      "size": 1,
+      "points": 80,
+      "max": 2,
+      "upgrades": [
+        "General"
+      ]
+    }
+  },
+  "upgrades": {
+    "General": {
+      "order": 0,
+      "type": "General",
+      "attack": "+1",
+      "command": "+1",
+      "points": "+0",
+      "armyMin": 1,
+      "armyMax": 1
+    }
+  },
+  "magic": true,
+  "specialRules": {
+    "Elf Archers": {
+      "order": 1,
+      "text": [
+        "Elves have incredibly quick reactions making them exceptionally potent warriors. To represent this, Elves add +1 to their dice when rolling Attacks for shooting and in the first round of each combat engagement, including combats resulting from an advance."
+      ]
+    },
+    "Eagles": {
+      "order": 2,
+      "text": [
+        "Eagles can fly."
+      ]
+    },
+    "Giant Bear": {
+      "order": 3,
+      "text": [
+        "Giant Bears cause terror."
+      ]
+    },
+    "General": {
+      "order": 4,
+      "text": [
+        "One character must be nominated as the army’s General. This character has an extra bonus Attack and a Command value of +1 on normal."
+      ]
+    }
+  },
+  "spells": [
+    {
+      "name": "Fireball",
+      "roll": 5,
+      "range": "30cm",
+      "text": [
+        "*True wizard only*",
+        "",
+        "*The Wizard hurls a ball of fire straight at his foes.*",
+        "",
+        "The Wizard must have a clear line of sight to cast this spell. The spell cannot be directed at a unit that is engaged in combat.",
+        "",
+        "The *Fireball* is worked out exactly like three ordinary shooting attacks except that all targets count as having no armour – armour has no effect against a *Fireball*. Hits inflicted by a *Fireball* will cause drive backs just like ordinary shooting."
+      ]
+    },
+    {
+      "name": "Command",
+      "roll": 5,
+      "range": "30cm",
+      "text": [
+        "*True wizard only*",
+        "",
+        "*The Wizard’s steady voice directs troops above the tumult of war.*",
+        "",
+        "This spell can be cast on any friendly unit within range regardless of whether the Wizard has line of sight or not. It cannot be cast on a unit that is engaged in combat.",
+        "",
+        "Once this spell is cast upon the unit, it can move immediately just as if it had received an order in the Command phase. Note that the spell affects only a single unit (it is not a brigade order) and any characters with the unit will not move with it."
+      ]
+    },
+    {
+      "name": "Blast",
+      "roll": 5,
+      "range": "Combat only",
+      "text": [
+        "*True wizard only*",
+        "",
+        "*A blast of sorcerous energy strikes the Wizard’s foes.*",
+        "",
+        "The spell can only be cast if the Wizard has joined a friendly unit that is engaged in combat. The spell can be cast upon any one enemy unit that the friendly unit is touching.",
+        "",
+        "The *Blast* is worked out exactly like three ordinary shooting attacks except that all targets count as having no armour – armour has no effect against a *Blast*. Hits inflicted by a *Blast* are carried over into the Combat phase and counted towards the combat results of the first round."
+      ]
+    },
+    {
+      "name": "Confound",
+      "roll": 6,
+      "range": "60cm",
+      "text": [
+        "*True wizard only*",
+        "",
+        "*By whispering magical words of doubt and dissension amongst the target, the Wizard succeeds in enticing the foe into squabbling amongst themselves.*",
+        "",
+        "This spell can be cast upon any enemy unit within range regardless of whether the Wizard can see it or not.",
+        "",
+        "The enemy unit becomes confused as described in the Confusion rules."
+      ]
+    },
+
+    {
+      "name": "Back Vile Creatures",
+      "roll": 4,
+      "range": "30cm",
+      "text": [
+        "*Elven mage only*",
+        "",
+        "*The foe quails before the might of the Elven host – scattering and listing their will to fight.*",
+        "",
+        "The Wizard must have a clear line of sight to his target to cast this spell. The spell cannot be directed at a unit engaged in combat.",
+        "",
+        "The target unit is not harmed as a result, but is driven back by 3d6cm at the end of the Shooting phase as if it had taken three shooting hits from the Elven Mage. If the unit also suffers hits from shooting then the Drive Back roll is combined adding three dice for the effect of the spell."
+      ]
+    },
+    {
+      "name": "Terrifying Radiance",
+      "roll": 5,
+      "range": "30cm",
+      "text": [
+        "*Elven mage only*",
+        "",
+        "*The enemy are confounded by the terrifying radiance of the Elven warriors, their weapons slacken in their grasp and they whimper pathetically.*",
+        "",
+        "This spell can be cast on a friendly unit within range regardless of whether the Wizard has a line of sight or not. The spell can only be cast on a unit that is engaged in combat.",
+        "",
+        "If the spell is cast upon a unit, it causes terror for the rest of the following Combat phase."
+      ]
+    },
+    {
+      "name": "Shoot!",
+      "roll": 5,
+      "range": "30cm",
+      "text": [
+        "*Elven mage only*",
+        "",
+        "*Elven archers redouble their efforts as rigor and determination steel their worn limbs.*",
+        "",
+        "This spell can be cast upon a unit of Elven archers within range regardless of whether the Wizard has a line of sight or not. The Wizard must have a clear line of sight to his target to cast this spell. The spell cannot be directed at a unit engaged in combat.",
+        "",
+        "The unit can shoot immediately regardless of whether it has already shot that turn. In effect, the unit can shoot twice this turn."
+      ]
+    },
+    {
+      "name": "Conceal",
+      "roll": 6,
+      "range": "30cm",
+      "text": [
+        "*Elven mage only*",
+        "",
+        "*Mystical energies enshroud friends, concealing them amongst the shadows.*",
+        "",
+        "This spell can be cast upon a unit of Elves within range regardless of whether the Wizard has a line of sight or not. This spell cannot be cast on a unit that is engaged in combat.",
+        "",
+        "The unit immediately increases its armour roll by 1 (ie, if 6+ it becomes 5+). If the target has no Armour value it now has a value of 6+. This lasts for the duration of the enemy’s following turn and ends at the start of the Good player’s following turn."
+      ]
+    }
+  ]
+}

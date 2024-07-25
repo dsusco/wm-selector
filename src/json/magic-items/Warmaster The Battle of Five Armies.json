@@ -1,0 +1,122 @@
+{
+  "upgrades": {
+    "Heirloom of Kings": {
+      "order": "A",
+      "type": "Device of Power",
+      "points": "+30",
+      "armyMax": 1,
+      "text": [
+        "The character can reroll a failed command once in a battle. If the re-roll is successful, the command is issued and the character can continue to issue commands in the usual way. If the re-roll fails, the command is not issued. If the re-roll fails and scores equal to or more than the first roll, the character suffers a -1 Command penalty for the rest of the battle as his warriors lose faith in him."
+      ]
+    },
+    "Staff of Sorcery": {
+      "order": "B",
+      "type": "Device of Power",
+      "points": "+30",
+      "armyMax": 1,
+      "text": [
+        "Only a wizard can carry a Staff of Sorcery. A character that has a Staff of Sorcery can attempt to dispel one spell cast by the enemy each turn. Once the spell has been cast, but before working out its effects, the Wizard can attempt to dispel it. Roll a d6 - a score of 6 indicates the spell has been dispelled, otherwise the spell is not dispelled and takes effect as normal.  However - if the player wishes, he can count the failed dispel attempt as successful but the Staff of Sorcery is then exhausted and cannot be used for the rest of the battle. A dispelled spell simply doesn't work - just as if the caster had failed the initial casting roll."
+      ]
+    },
+    "Sorcerous Weapon": {
+      "order": "C",
+      "type": "Magic Weapon",
+      "points": "+20",
+      "armyMax": 1,
+      "text": [
+        "The character adds +1 to his Attack bonus. This bonus applies for the entire battle. For example, if the character has a +2 attacks bonus he has a +2 attacks bonus if he carries a Sorcerous Weapon."
+      ]
+    },
+    "Sorcerous Armour": {
+      "order": "D",
+      "type": "Device of Power",
+      "points": "+10",
+      "armyMax": 1,
+      "text": [
+        "When the character fights in combat, the unit he is with can re-roll one failed Armour roll in each round of combat. This applies throughout the battle - the unit can re-roll one failed Armour roll each round. If the unit the character has joined as no Armour value then the unit takes a single roll each round with a value of 6+."
+      ]
+    },
+    "Staff of Power": {
+      "order": "E",
+      "type": "Device of Power",
+      "points": "+10",
+      "armyMax": 1,
+      "text": [
+        "Only a wizard can carry a staff of power. A character that has a staff of power can add +1 to his dice roll to cast a spell. The bonus can only be used once in the game - but the player can decide to use the staff after the dice has been rolled to cast a spell. For example, the player requires a roll of 4+ to cast a spell, he rolls a 3 but uses the staff to boost the score to 4 and cast the spell."
+      ]
+    },
+    "Ring of Invisibility": {
+      "order": "F",
+      "type": "Device of Power",
+      "points": "+10",
+      "armyMax": 1,
+      "text": [
+        "Many rings were made by the Elves in times past and a few still survive to this day - some are mere trinkets and others dangerous weapons for good or evil. A character with a Ring of Invisibility can use it to disappear and reappear elsewhere, thereby escaping from danger. The ring can be used at any time, even in the opponent’s turn, but only once in any battle. The character can immediately move from wherever he is to anywhere else on the battlefield. Even out of or into combat if he wishes. The character can even move through enemy units - invisibility allows him to sneak his way past foes without being spotted."
+      ]
+    },
+    "Enchanted Weapon": {
+      "order": "G",
+      "type": "Magic Weapon",
+      "points": "+10",
+      "armyMax": 1,
+      "text": [
+        "The first time the character fights in combat he adds an extra +1 to his attack bonus. This extra bonus only works in the first Combat phase - so it applies for each round of the combat engagement and during any further engagements wrestling from an advance. For example, a character with 2 attack value will have 3 attack value throughout the first Combat phase of fighting, and 2 attack value in subsequent turns."
+      ]
+    },
+    "Mystical Weapon": {
+      "order": "H",
+      "type": "Magic Weapon",
+      "points": "+5",
+      "armyMax": 1,
+      "text": [
+        "The first time the character fights in combat add an extra +1 to his attack bonus. This extra bonus only works in the first Combat round- so it applies only once in the entire game. For example, a character with 2 attack value will have 3 attack value in the first combat of the first Combat phase of fighting, and 2 attack value in subsequent turns."
+      ]
+    },
+    "Enchanted Armour": {
+      "order": "I",
+      "type": "Device of Power",
+      "points": "+5",
+      "armyMax": 1,
+      "text": [
+        "When the character fights in combat, the unit he is with can re-roll one failed armour roll in the first round that a hit is scored. This applies only once in the entire game and automatically applies the first time such a unit takes a hit. If the unit the character has joined has no Armour value then the unit takes a single roll with a value of 6+."
+      ]
+    }
+  },
+  "upgradeConstraints": [
+    {
+      "unitType": [
+        "General",
+        "Hero",
+        "Wizard"
+      ],
+      "upgrades": [
+        "Heirloom of Kings",
+        "Sorcerous Weapon",
+        "Sorcerous Armour",
+        "Ring of Invisibility",
+        "Enchanted Weapon",
+        "Mystical Weapon",
+        "Enchanted Armour"
+      ],
+      "magic": true
+    },
+    {
+      "unitType": [
+        "General"
+      ],
+      "upgrades": [
+      ],
+      "magic": true
+    },
+    {
+      "unitType": [
+        "Wizard"
+      ],
+      "upgrades": [
+        "Staff of Sorcery",
+        "Staff of Power"
+      ],
+      "magic": true
+    }
+  ]
+}

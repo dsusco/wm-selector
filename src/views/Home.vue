@@ -42,6 +42,9 @@
       <a target="_blank" title="Warmaster Evolution Règles" href="/pdfs/WME_Regles_v4-0-0.pdf"><span>Warmaster Evolution Règles</span></a>
       <a target="_blank" title="Warmaster Evolution Armées" href="/pdfs/WME_Armees_v2.42_beta.pdf"><span>Warmaster Evolution Armées</span></a>
     </ArmyListAccordion>
+
+    <ArmyListAccordion :title="'Warmaster The Battle of Five Armies'">
+    </ArmyListAccordion>
   </main>
 </template>
 
