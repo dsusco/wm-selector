@@ -176,7 +176,7 @@
     "Skinks": {
       "order": 1,
       "text": [
-        "Skinks have a shooting range of 15cm. However, they can shoot from any edge without turning stands to face their target. Just measure the range from any stand edge, front, side or rear. Note that this enables them to shoot at enemies charging them from any direction."
+        "Skinks have a shooting range of 15cm and 360° vision – stands in this unit can draw line of sight from all edges for the purpose of evading and shooting, including shooting at charging enemies. Note that this unit still needs Line of Sight from its front edge to charge an enemy."
       ]
     },
     "Reptilian": {
@@ -188,17 +188,21 @@
     "Salamanders": {
       "order": 3,
       "text": [
-        "Salamander stands never count as independent units under any circumstances. Instead you may add one stand of Salamanders to any Skink infantry units. This brings the size of the unit to 4 stands - ie 3 other stands plus the Salamander stand. The Salamander stand fights as part of the unit and can be removed as a casualty should the player who owns them wish to do so. A Salamander stands does not count as a loss upon the unit for purposes of Command penalties - ie if the Salamanders are removed leaving 3 Skink stands there is no -1 Command penalty on the unit. The Salamander stand doesn‘t count as part of the unit‘s formation when determining whether the unit is in a regular or irregular formation - ie the stand can be placed to the side, at an angle, or at a different orientation without affecting an otherwise regular formation.",
+        "Salamander stands are not deployed as independent units. Instead, any Skink infantry unit may add one stand of Salamanders. This brings the size of the unit to 4 stands: 3 regular stands plus the Salamander.",
         "",
-        "If a Salamander stand is attached to a Skink unit the entire unit, including the Salamander, is considered to employ ‘Salamander Venom‘ shooting attacks. Enemy Armour saving throws suffer a - 1 penalty when hit by Salamander Venom (eg 5+ save requires a roll of 6).",
+        "Salamanders always have the same Armour value as the rest of their unit. They fight as part of their unit and can be removed as a unit casualty if the player wishes.",
         "",
-        "Salamander stands have 2 shooting attacks, a range of 15cm, and can shoot from any edge in the same way as Skinks. If their unit is charged then Salamanders can shoot in the same way as any other shooting stand."
+        "Salamander casualties never count for Command penalties. Salamander stands never cause the parent unit to be in Irregular Formation no matter how they are placed.",
+        "",
+        "If a Salamander stand is attached to a Skink unit the entire unit, including the Salamander, is considered to employ ‘Salamander Venom‘ shooting attacks. Enemy Armour saving throws suffer a -1 penalty when hit by Salamander Venom (e.g. 5+ save requires a roll of 6).",
+        "",
+        "Salamander stands have 2 shooting attacks, a range of 15cm, and 360° vision in the same way as Skinks. If their unit is charged then Salamanders can shoot in the same way as any other shooting stand."
       ]
     },
     "Terradons": {
       "order": 4,
       "text": [
-        "Terradons can fly. Terradon riders have a shooting range 15cm. However, they can shoot from any edge without turning stands to face their target. Just measure the range from any stand edge, front, side or rear. Note that this enables them to shoot at enemies charging them from any direction."
+        "Terradons can fly. Terradon riders have a shooting range 15cm and 360° vision – stands in this unit can draw line of sight from all edges for the purpose of evading and shooting, including shooting at charging enemies. Note that this unit still needs Line of Sight from its front edge to charge an enemy."
       ]
     },
     "Stegadon": {
@@ -210,7 +214,7 @@
         "",
         "The Stegadon can only be brigaded with Skink units. It cannot be brigaded with Skink units that have attached Salamanders. It cannot be brigaded with any other units including with other Stegadons.",
         "",
-        "The Stegadon's crew has a shooting range of 15cm. However, they can shoot from any edge without turning stands to face their target. Just measure the range from any stand edge, front, side or rear. Note that this enables them to shoot at enemies charging them from any direction.",
+        "The Stegadon’s crew has a shooting range of 15cm and 360° vision - the unit can draw line of sight from all edges for the purpose of evading and shooting, including shooting at charging enemies. Note that this unit still needs Line of Sight from its front edge to charge an enemy.",
         "",
         "Because the Stegadon has so many hits we must consider the possibility of hurting the beast and reducing its effectiveness. Therefore, if a Stegadon has accumulated 6-9 hits by the end of the Shooting or Combat phase and is no longer engaged in combat it is deemed to have been badly hurt. Once a Stegadon is badly hurt all accumulated hits are discounted and its Hits and Attack values are halved for the remainder of the battle to 5/2 Attacks and 5 Hits."
       ]
@@ -218,7 +222,7 @@
     "Slann Mage Palanquin": {
       "order": 6,
       "text": [
-        "The Slann Mage rides a palanquin carried by his bodyguard of fierce Saurus warriors - his combat bonus is due to his bodyguard. The Slann Mage is the army's general but uniquely amongst commanders he cannot give orders, but has foreseen the flow of the battle and given his Skink retainers instructions. To represent this any Skink character within 20cm of the Slann can announce his use of the General’s Divine Guidance - deducting -1 from his dice score (eg 8 counts as 7, 10 as 9 and so on). When Divine Guidance is used the Skink cannot ‘Blunder’ - any roll of double 6 simply counts as a fail. If a Divine Guidance roll is failed then the Slann’s Divine Guidance cannot be used by any other characters that have not ordered yet in that turn, their confusion over the mixup is represented by adding +1 to their first order rolls.",
+        "The Slann Mage rides a palanquin carried by his bodyguard of fierce Saurus warriors - his combat bonus is due to his bodyguard. The Slann Mage is the army's general but uniquely amongst commanders he cannot give orders, but has foreseen the flow of the battle and given his Skink retainers instructions. To represent this any Skink character within 20cm of the Slann can announce his use of the General’s Divine Guidance - deducting -1 from his dice score (e.g. 8 counts as 7, 10 as 9 and so on). When Divine Guidance is used the Skink cannot ‘Blunder’ - any roll of double 6 simply counts as a fail. If a Divine Guidance roll is failed then the Slann’s Divine Guidance cannot be used by any other characters that have not ordered yet in that turn, their confusion over the mixup is represented by adding +1 to their first order rolls.",
         "",
         "In addition the Slann is a great sorcerer. He can cast spells as a Wizard and can be given a magic item restricted to either a general or wizard should you so wish. Slaan Mages are especially powerful wizards and to represent this can re-roll a failed spell on any dice result except a 1. If a spell is failed because a 1 is rolled then no re-roll is permitted. The Slann Mage can also cast his spell using a Skink Shaman as the focus if desired - work out the spell as if it were cast from the Shaman, measuring and establishing a line of sight from the Shaman model. This does not affect the Shaman's own ability to cast spells that turn."
       ]

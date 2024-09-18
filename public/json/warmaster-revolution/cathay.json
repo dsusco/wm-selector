@@ -202,7 +202,7 @@
     "Hu Cavalry": {
       "order": 3,
       "text": [
-        "Their shooting range is restricted to 15cm, but Hu Cavalry can shoot behind or to the side as well as to the front. They can therefore shoot at enemy charging them from any direction."
+        "They have a shooting range of 15cm and 360° vision – stands in this unit can draw line of sight from all edges for the purpose of evading and shooting, including shooting at charging enemies. Note that this unit still needs Line of Sight from its front edge to charge an enemy."
       ]
     },
     "Rocket Launcher": {
@@ -216,7 +216,7 @@
         "-|-",
         "1|__KABOOM!__ The Rocket Launcher explodes in spectacular manner.",
         "2-3|__Dud.__ The rocket does only one attack.",
-        "4-5|__Whoosh!__ The rocket overshoots and does D6 attacks on the first unit in the line of fire past the original target, regardless of range. If the result is 1, don‘t roll for the misfire again. If the target is engaged in combat, the hits are carried over into Combat phase. If no target is behind the victim the rocket leaves the battlefield without causing any damage.",
+        "4-5|__Whoosh!__ The rocket overshoots and does D6 attacks on the first unit in the line of fire past the original target, regardless of range. If the result is 1, don’t roll for the misfire again. If the target is engaged in combat, the hits are carried over into Combat phase. If no target is behind the victim the rocket leaves the battlefield without causing any damage.",
         "6|__Big badaboom!__ The rocket does 2D6 attacks instead of the normal 1D6."
       ]
     },
@@ -257,7 +257,7 @@
       "roll": 4,
       "range": "30cm",
       "text": [
-        "*Channelling powerful lores, the sorcerer gifts remarkable accuracy and reloading dexterity to the empire‘s defenders. Their opponents are thereby subjected to ferocious shooting.*",
+        "*Channelling powerful lores, the sorcerer gifts remarkable accuracy and reloading dexterity to the empire’s defenders. Their opponents are thereby subjected to ferocious shooting.*",
         "",
         "This spell can be cast upon a friendly unit of unengaged missile- armed infantry or chariots within range. The Sorcerer does not need to be able to see the friendly unit nor their intended target. When the spell is cast on a unit, it can shoot twice that turn instead of once. If it has already shot that turn it can therefore shoot again immediately. If it has yet to shoot it can shoot twice. When a unit shoots twice due to Glory of Cathay the second shot is always at a minus 1 penalty and will therefore hit on a 5+."
       ]
@@ -277,7 +277,7 @@
       "roll": 5,
       "range": "30cm",
       "text": [
-        "*Opening a portal to the past, the sorcerer imbues Cathay‘s troops with the spirit and stoicism of their ancestors. Filled with an overwhelming resolve to protect the emperor, they surge forward to slay his foes.*",
+        "*Opening a portal to the past, the sorcerer imbues Cathay’s troops with the spirit and stoicism of their ancestors. Filled with an overwhelming resolve to protect the emperor, they surge forward to slay his foes.*",
         "",
         "This spell can be cast on a friendly unit engaged in combat. The spell can be cast regardless of whether the Sorcerer can see the target or not. The spell lasts for the duration of the following combat phase. Every stand in the unit adds +1 to its attacks value. The unit also becomes immune to terror."
       ]

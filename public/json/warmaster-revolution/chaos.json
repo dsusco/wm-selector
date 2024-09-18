@@ -61,8 +61,8 @@
       "hits": 4,
       "armour": "4+",
       "size": 3,
-      "points": 200,
-      "max": 4
+      "points": 180,
+      "max": 2
     },
     "Chaos Hounds": {
       "order": 6,
@@ -204,7 +204,7 @@
         "",
         "Spawn units cause terror in combat - enemies suffer the -1 Combat modifier for fighting terrifying creatures. Spawn units cannot be driven back by shooting and never rolls for drive backs. Spawn units must pursue or advance if victorious in combat where it is permitted to do so.",
         "",
-        "Spawn units have a shooting range of 15cm and can shoot to the side or behind as well as to the front. Just measure the range from any stand edge, front, side or rear. They can therefore shoot at any enemy charging them from any direction."
+        "Spawn units have a shooting range of 15cm and 360° vision – the unit can draw line of sight from all edges of its stand for the purpose of evading and shooting, including shooting at charging enemies. Note that this unit still needs Line of Sight from its front edge to charge an enemy."
       ]
     },
     "Chaos Dragon": {
