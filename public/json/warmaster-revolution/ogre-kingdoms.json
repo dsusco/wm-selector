@@ -192,7 +192,7 @@
     "Gorgers": {
       "order": 6,
       "text": [
-        "When trying to issue an order to a unit of Gorgers or to a brigade that contains a unit of Gorgers, there is always a -1 Command penalty due their beastly and unruly nature."
+        "When trying to issue an order to a unit of Gorgers or to a brigade that contains a unit of Gorgers, there is always a -1 Command penalty due their beastly and unruly nature.",
         "",
         "Gorgers always ignore distance modifiers when receiving orders, and do not suffer command penalties for dense terrain. They can pursue any type of retreating enemy.",
         "",

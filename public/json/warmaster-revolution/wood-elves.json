@@ -236,7 +236,7 @@
       "text": [
         "Wardancer stands are not deployed as independent units. Instead, any Glade Guard or Eternal Guard unit may add one stand of Wardancers. This brings the size of the unit to 4 stands: 3 regular stands plus the Wardancers stand.",
         "",
-        "Wardancers always have the same Armour value as the rest of their unit. They fight as part of their unit and can be removed as a unit casualty if the player wishes."
+        "Wardancers always have the same Armour value as the rest of their unit. They fight as part of their unit and can be removed as a unit casualty if the player wishes.",
         "",
         "Wardancers casualties never count for Command penalties. Wardancers stands never cause the parent unit to be in Irregular Formation no matter how they are placed."
       ]
