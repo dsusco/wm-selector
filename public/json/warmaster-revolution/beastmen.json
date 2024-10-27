@@ -4,7 +4,7 @@
   "group": 2,
   "order": 5,
   "units": {
-    "Gors": {
+    "Gor": {
       "order": 0,
       "type": "Infantry",
       "attack": 4,
@@ -14,10 +14,10 @@
       "points": 60,
       "min": 2,
       "specialRules": [
-        "Gors/Ungors"
+        "Gor/Ungor"
       ]
     },
-    "Ungors": {
+    "Ungor": {
       "order": 1,
       "type": "Infantry",
       "attack": "3/1",
@@ -27,7 +27,7 @@
       "points": 45,
       "min": 2,
       "specialRules": [
-        "Gors/Ungors"
+        "Gor/Ungor"
       ]
     },
     "Bestigors": {
@@ -168,10 +168,10 @@
     "__The things in the woods.__ Beastmen infantry do not suffer the usual -1 Command penalty when within woodland."
   ],
   "specialRules": {
-    "Gors/Ungors": {
+    "Gor/Ungor": {
       "order": 1,
       "text": [
-        "Up to half of the total number of Gors/Ungors units (rounded down) may be deployed as ambushers rather than be deployed at the start of the game. The ambushers must be deployed in groups up to 4 units. The number of Ungor units in these groups may not exceed the number of Gor units.",
+        "Up to half of the total number of Gor/Ungor units (rounded down) may be deployed as ambushers rather than be deployed at the start of the game. The ambushers must be deployed in groups up to 4 units. The number of Ungor units in these groups may not exceed the number of Gor units.",
         "",
         "During the order movement sequence the Beastmen player nominates a point within dense terrain or on any base edge other than the enemy player’s own table edge for every group of ambushing units he wants to deploy this turn. If the nominated point is in dense terrain it must be chosen that every stand of every unit within the group must be at least partially within the terrain.",
         "",

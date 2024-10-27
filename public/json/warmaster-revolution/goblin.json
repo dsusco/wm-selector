@@ -171,7 +171,7 @@
     "Goblins": {
       "order": 1,
       "text": [
-        "Goblins fight in a close mob or huddle in which the smallest and weediest are pushed to the outside. A unit of Goblins includes some armed with bows, some armed with clubs, a few with spears and most with whatever comes to hand. To represent this, the Goblin unit is allowed to shoot as if it had bows but its range is reduced to 15cm. Up to two units per full 1000 points can be replaced by Squig Herd while still counting for the Goblin min/max value. Note that these units still count for min/max value of Squig Herds."
+        "A Goblin unit is allowed to shoot as if it had bows but its range is reduced to 15cm. Up to two units per full 1000 points can be replaced by Squig Herd while still counting for the Goblin min/max value. Note that these units still count for min/max value of Squig Herds."
       ]
     },
     "Trolls": {
@@ -202,28 +202,14 @@
     "Doom Diver": {
       "order": 6,
       "text": [
-        "The Doom Diver Catapult is a torsion-powered device much like a Spear Chukka, but instead of firing spears it is designed to fire Goblins. These Goblins are equipped with crude, folding wings which enable them to stay aloft for a short time before plunging back down to earth. When they do land it is usually with a loud splat that causes confusion more than anything else in the enemy ranks.",
-        "",
         "The Doom Diver has a range of 60cm and a unit hit by a Doom Diver is allowed to make its normal armour save. Doom Divers shoot at such a high trajectory that they cannot shoot at charging enemies."
       ]
     },
     "Bolt Thrower": {
       "order": 7
     },
-    "Goblin Shaman": {
-      "order": 8,
-      "text": [
-        "Goblin Shaman can cast spells chosen from the Goblin spells list."
-      ]
-    },
-    "Wolf Chariot": {
-      "order": 9,
-      "text": [
-        "A General, Hero or Wizard can ride a Wolf Chariot. The character riding a chariot adds +1 to his Attacks."
-      ]
-    },
     "Wyvern": {
-      "order": 10,
+      "order": 8,
       "text": [
         "Characters may ride Wyverns. A Wyvern can fly increasing its rider’s movement from 60cm to 100cm, and it adds +2 Attacks to those of its rider. A unit that includes a Wyvern rider causes terror in its enemies."
       ]
