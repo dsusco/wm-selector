@@ -1,0 +1,149 @@
+{
+  "specialRules": {
+    "Skirmish": {
+      "order": 1
+    },
+    "Shock": {
+      "order": 2
+    },
+    "Slow": {
+      "order": 3
+    },
+    "Portents": {
+      "order": 4
+    }
+  },
+  "units": {
+    "Legion": {
+      "order": 0,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 60,
+      "min": 4
+    },
+    "Auxiliaries": {
+      "order": 1,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 45,
+      "max": 8
+    },
+    "Archers": {
+      "order": 2,
+      "type": "Infantry",
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "points": 40,
+      "max": 4
+    },
+    "Skirmishers": {
+      "order": 3,
+      "type": "Infantry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": 30,
+      "max": 4,
+      "specialRules": [
+        "Skirmish"
+      ]
+    },
+    "Cataphracts": {
+      "order": 4,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "4+",
+      "size": 3,
+      "points": 125,
+      "max": 1,
+      "specialRules": [
+        "Shock",
+        "Slow"
+      ]
+    },
+    "Heavy Cavalry": {
+      "order": 5,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 110,
+      "max": 2,
+      "specialRules": [
+        "Shock"
+      ]
+    },
+    "Mounted Skirmishers": {
+      "order": 6,
+      "type": "Cavalry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": 40,
+      "max": 2,
+      "specialRules": [
+        "Skirmish"
+      ]
+    },
+    "General": {
+      "order": 7,
+      "type": "General",
+      "attack": "+2",
+      "command": 9,
+      "size": 1,
+      "upgrades": [
+        "Portents"
+      ],
+      "points": 125
+    },
+    "Legate": {
+      "order": 8,
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "max": 2,
+      "points": 80
+    }
+  },
+  "upgrades": {
+    "Portents": {
+      "order": 0,
+      "points": "+10",
+      "specialRules": [
+        "Portents"
+      ]
+    }
+  },
+  "name": "Mid Imperial Roman",
+  "version": "Rick's Warmaster",
+  "group": "The Rise of Rome",
+  "order": 2,
+  "armyRules": [
+    "Legion. Sculptural evidence seems to suggest that legionaries continued to wear body armour of the segmented type in the third century, although now supplemented by mail and other kinds of armour too. Fittings from segmented armour become increasingly rare as archaeological finds and it appears to have fallen from use by the mid-third century. It is a similar story with the heavy javelin (pilum), which may well have been supplanted by a mix of javelins and spears from this time onwards. The loss of the ‘legion’ special ability compared to earlier legionaries reflects the gradual decline in the importance and effectiveness of the legions compared to other troops.",
+    "",
+    "Auxiliaries. It is harder to distinguish auxiliaries from legionaries when depicted on monuments, but some troops are depicted without armour or with lighter armour, and these might well represent auxiliary units rather than legionaries. However, better equipped auxiliaries could well have exited and can be chosen as ‘Legion’ should you so wish.",
+    "",
+    "Archers. Amongst the auxiliary cohorts were units of archers—these usually wear some form of protection such as a mail or scale coat and helmet..",
+    "",
+    "Skirmishers. These are lightly equipped units recruited from native troops and allies. Generally speaking—javelin armed but could also include slingers and archers.",
+    "",
+    "Cataphracts. These very heavily armoured cavalry units made their first appearance in the later second century and became a part of the Roman forces thereafter; however, they are few in number.",
+    "",
+    "Heavy Cavalry. Standard Roman cavalry equipped with mail coats, shields and spears.",
+    "",
+    "Mounted Skirmishers. These include lightly equipped auxiliary or allied cavalry such as horse archers, or barbarian or native cavalry armed with a mix of javelins and spears."
+  ]
+}

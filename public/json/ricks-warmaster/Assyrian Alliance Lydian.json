@@ -1,0 +1,252 @@
+{
+  "specialRules": {
+    "Skirmish": {
+      "order": 1
+    },
+    "Heavy Chariots": {
+      "order": 2
+    },
+    "Portents": {
+      "order": 3
+    },
+    "Combined Units": {
+      "order": 4,
+      "text": [
+        "Combined units can be fielded instead of separate Spear and Bow armed units—but separate and combined units cannot both be chosen—this represents the same troops fighting in mixed formations."
+      ]
+    }
+  },
+  "units": {
+    "Heavy Cavalry": {
+      "order": 0,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "armour": "5+",
+      "points": 80,
+      "min": 2,
+      "max": 4
+    },
+    "Mounted Skirmishers": {
+      "order": 1,
+      "type": "Cavalry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "points": 40,
+      "min": 2,
+      "max": 4
+    },
+    "Light Infantry": {
+      "order": 2,
+      "type": "Infantry",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "points": 40,
+      "min": 1,
+      "max": 4
+    },
+    "Skirmishers": {
+      "order": 3,
+      "type": "Infantry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "points": 30,
+      "max": 4
+    },
+    "Qurubuti Spear": {
+      "order": 4,
+      "type": "Infantry",
+      "attack": 4,
+      "armour": "5+",
+      "hits": 3,
+      "size": 3,
+      "points": 70,
+      "armyMin": 1,
+      "armyMax": "-",
+      "specialRules": [
+        "Combined Units"
+      ]
+    },
+    "Qurubuti Bow": {
+      "order": 5,
+      "type": "Infantry",
+      "attack": 3,
+      "range": 30,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 60,
+      "armyMin": 1,
+      "armyMax": "-",
+      "specialRules": [
+        "Combined Units"
+      ]
+    },
+    "Qurubuti Combined": {
+      "order": 6,
+      "type": "Infantry",
+      "attack": 3,
+      "range": 30,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 70,
+      "armyMin": 2,
+      "specialRules": [
+        "Combined Units"
+      ]
+    },
+    "Qurubuti Cavalry": {
+      "order": 7,
+      "type": "Cavalry",
+      "attack": 3,
+      "range": 15,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 70,
+      "armyMin": 1,
+      "specialRules": [
+        "Combined Units"
+      ]
+    },
+    "Assyrian Spearmen": {
+      "order": 8,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 60,
+      "max": 3,
+      "specialRules": [
+        "Combined Units"
+      ]
+    },
+    "Assyrian Bowmen": {
+      "order": 9,
+      "type": "Infantry",
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 50,
+      "max": 3,
+      "specialRules": [
+        "Combined Units"
+      ]
+    },
+    "Combined Assyrians": {
+      "order": 10,
+      "type": "Infantry",
+      "attack": 3,
+      "range": 30,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "max": 6,
+      "points": 60,
+      "specialRules": [
+        "Combined Units"
+      ]
+    },
+    "Assyrian Cavalry": {
+      "order": 11,
+      "type": "Cavalry",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 60,
+      "max": 1,
+      "specialRules": [
+        "Skirmish"
+      ]
+    },
+    "Assyrian Chariots": {
+      "order": 12,
+      "type": "Chariot",
+      "attack": 4,
+      "range": 15,
+      "hits": 4,
+      "specialRules": [
+        "Heavy Chariots"
+      ],
+      "armour": "5+",
+      "size": 1,
+      "points": 135,
+      "max": 1
+    },
+    "General": {
+      "order": 13,
+      "type": "General",
+      "attack": "+2",
+      "upgrades": [
+        "Portents"
+      ],
+      "command": 8,
+      "size": 1,
+      "points": 100
+    },
+    "Leader": {
+      "order": 14,
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 80,
+      "max": 2
+    }
+  },
+  "upgrades": {
+    "Portents": {
+      "order": 2,
+      "specialRules": [
+        "Portents"
+      ],
+      "max": 1,
+      "points": "+10"
+    }
+  },
+  "armyRules": [
+    "Heavy Cavalry. The Persians regarded the Lydian cavalry as the best of their troops and were reluctant to engage with them—we have therefore graded them as heavy cavalry with a further option to upgrade then to elite cavalry at +10pts per unit. If units are upgraded in this way no chariots can be included—it being assumed that the elite of Lydian society fight mounted rather than as chariot warriors.",
+    "",
+    "Mounted Skirmishers. These could be Phrygian or Paphlagonian cavalrymen—lands to the north of Lydia that came to be part of the Lydian empire. They are typical skirmishing cavalry with javelins.",
+    "",
+    "Light Infantry. These represent the lightly equipped troops of the mountainous regions of Anatolia, such as  Phyrgians, Paphlagonians, and Cilicians as well as mercenary Thracians from the west. They are armed with javelins and spears and carry large shields.",
+    "",
+    "Skirmishers. These are very lightly equipped javelin armed troops from Lydia, Phrygia or Mysia—all part of western Anatolia. Skirmishers like this could probably come from almost anywhere in the Lydian empire—but these areas are known for providing such troops. Up to half these units can be uprated to Lydian or Phrygian bowmen at the cost per unit shown.",
+    "",
+    "Assyrian Spears/Bows. These are Assyrian troops of the standing army or Kisir Sarruti—well armoured, wearing helmets and equipped with spears or bows. These troops can be combined into mixed units with the Spearmen in front protecting the archers in the rear rank—these  units have a combined stat that reflect the overall fighting prowess of the unit.",
+    "",
+    "Qurubuti Spears/Bows. These are the elite fighting formations in the Assyrian army—the King’s Guard—and like the ordinary troops they can be fielded as combined formations with a mixed stat.",
+    "",
+    "Assyrian Cavalry. The cavalry are part of the standing army and equipped with armour. Helmets and a mix of spears and bows. They have been given a stat as light cavalry to reflect their mix of armament.",
+    "",
+    "Qurubuti Cavalry. These are the elite cavalry units in the army—part of the King’s Guard—equipped in the same way as ordinary cavalry with some riders armed with bows and others armed with spears , but they have been given improved fighting potential to reflect their superior status.",
+    "",
+    "Assyrian Chariots. Four horse chariots and crew of four men armed with a mixture of weapons including bows and spears."
+  ],
+  "name": "Assyrian Alliance Lydian",
+  "version": "Rick's Warmaster",
+  "group": "Greece and the Near East",
+  "order": 17
+}

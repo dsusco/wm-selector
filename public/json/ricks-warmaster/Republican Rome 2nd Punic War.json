@@ -1,0 +1,355 @@
+{
+  "specialRules": {
+    "Triarii": {
+      "order": 1,
+      "text": [
+        "A triarii unit counts as two units when calculating the number of units required to force the army to withdraw and it also counts as two units when destroyed. Note that this is a slight variant on the rule as given in WA."
+      ]
+    },
+    "Maniple": {
+      "order": 2,
+      "text": [
+        "This rule applies where a stand with the maniple special rule is fighting combat to its front and is supported to the rear by a stand of exactly the same type or by Triarii. For example, a Roman Legion stand would benefit if supported by another Roman Legion stand, but not by a stand of Ale Legion even though these also have the maniple rule. This is because the Romans did not mix their Legions together— Romans and Socii always fought as separate bodies. However, the Triarii act as a general reserve so the maniple rule applies to Roman Legion, Alae Legion and Triarii when supported by Triarii. Units that have stands supported by maniple friends as described above benefit as follows. Once the enemy has fought combat and the supported unit has taken its Armour saves, it can re-roll one failed save for each friendly maniple stand supporting from the rear as described. This re-roll will save on a score of 5 or 6 regardless of the unit’s actual Armour value. Note that this is slightly different to the original rule in WA in that the save is now a 5+ rather than 6+. This change was felt to better represent the reformed manipular formations of the 2nd Punic War and to reflect the points paid more accurately than the original 6+ rule."
+      ]
+    },
+    "Unreliable": {
+      "order": 3
+    },
+    "Skirmish": {
+      "order": 4
+    },
+    "Scipio Africanus": {
+      "order": 5,
+      "text": [
+        "The Scipio Africanus rule allows the army’s leaders and subordinates to re-roll failed command rolls—representing the organisational genius and remarkable qualities of leadership displayed by Scipio during the 2nd Punic War.",
+        "",
+        "Any failed commands from leaders or subordinates, including allied commanders, can be re-rolled up to a maximum of 1 re-roll for each commander each turn. However, once a re-roll is failed then no further re-rolls can be attempted that turn by any other commanders. Note that when a re-roll is failed this only prevents further re-rolls that turn—not in subsequent turns—and that this is a change of the original Scipio (Administrative Genius) rule given in WA and WAA."
+      ]
+    },
+    "Allied Commander": {
+      "order": 6,
+      "text": [
+        "Allied commanders must be taken if Spanish or Numidian allies are chosen as indicated. Note that only a single allied commander is allowed per contingent regardless of the size of the force. Allied contingents can only be given orders by their own allied commander. The allied commander can only give orders to his own contingent. This means that it is impossible to brigade allies with Romans, or two different allies together, as separate orders will be needed for each contingent. Although this is very restrictive it does oblige the contingent forces to fight as distinct and separate bodies—as they appear to have done in reality. If allies are used the Scipio African upgrade becomes pivotal to success—as it allows re-rolls for these commanders."
+      ]
+    }
+  },
+  "units": {
+    "Triarii": {
+      "order": 0,
+      "type": "Infantry",
+      "attack": 4,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 75,
+      "specialRules": [
+        "Maniple",
+        "Triarii"
+      ],
+      "max": 2
+    },
+    "Roman Legions": {
+      "order": 1,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 65,
+      "specialRules": [
+        "Maniple"
+      ],
+      "upgrades": [
+        "Alae Legions"
+      ],
+      "min": 4
+    },
+    "Italian Legions": {
+      "order": 2,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 35,
+      "specialRules": [
+        "Unreliable"
+      ],
+      "max": 6
+    },
+    "Leves": {
+      "order": 3,
+      "type": "Infantry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": 20,
+      "specialRules": [
+        "Unreliable",
+        "Skirmish"
+      ],
+      "upgrades": [
+        "Velites"
+      ],
+      "min": 2,
+      "max": 4
+    },
+    "Slingers and Archers": {
+      "order": 4,
+      "type": "Infantry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": 30,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "max": 1
+    },
+    "Heavy Cavalry": {
+      "order": 5,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 80,
+      "max": 1
+    },
+    "Light Cavalry": {
+      "order": 6,
+      "type": "Cavalry",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 60,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "max": 1
+    },
+    "Mounted Skirmishers": {
+      "order": 7,
+      "type": "Cavalry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": 40,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "max": 1
+    },
+    "Consul": {
+      "order": 8,
+      "type": "General",
+      "attack": "+2",
+      "command": 9,
+      "size": 1,
+      "points": 125,
+      "upgrades": [
+        "Scipio"
+      ]
+    },
+    "Tribune": {
+      "order": 9,
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "max": 2,
+      "size": 1,
+      "points": 80
+    },
+    "Scutarii": {
+      "order": 10,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 45,
+      "min": 4,
+      "max": 8
+    },
+    "Caetrati": {
+      "order": 11,
+      "type": "Infantry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": 30,
+      "max": 2,
+      "specialRules": [
+        "Skirmish"
+      ]
+    },
+    "Spanish Light Cavalry": {
+      "order": 12,
+      "type": "Cavalry",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 60,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "max": 2
+    },
+    "Spanish Chieftain": {
+      "order": 13,
+      "type": "Subordinate",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 40,
+      "max": "1max",
+      "specialRules": [
+        "Allied Commander"
+      ]
+    },
+    "Numidian Infantry": {
+      "order": 14,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "points": 35,
+      "max": 4,
+      "upgrades": [
+        "Trained Numidian Infantry"
+      ]
+    },
+    "Numidian Skirmishers": {
+      "order": 15,
+      "type": "Infantry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": 30,
+      "specialRules": [
+        "Skirmish"
+      ]
+    },
+    "Mounted Numidian Skirmishers": {
+      "order": 16,
+      "type": "Cavalry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": 40,
+      "specialRules": [
+        "Skirmish"
+      ]
+    },
+    "Numidian Chieftain": {
+      "order": 17,
+      "type": "Subordinate",
+      "attack": "+1",
+      "size": 1,
+      "command": 7,
+      "points": 30,
+      "specialRules": [
+        "Allied Commander"
+      ]
+    }
+  },
+  "upgrades": {
+    "Alae Legions": {
+      "order": 0,
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": "-15",
+      "max": "Up to half",
+      "specialRules": [
+        "Maniple"
+      ],
+      "type": "Infantry"
+    },
+    "Velites": {
+      "order": 1,
+      "points": "+10",
+      "max": "All or none",
+      "type": "Infantry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "specialRules": [
+        "Skirmish"
+      ]
+    },
+    "Scipio": {
+      "order": 2,
+      "type": "General",
+      "attack": "+2",
+      "command": 9,
+      "size": 1,
+      "points": "+25",
+      "max": 1,
+      "specialRules": [
+        "Scipio Africanus"
+      ]
+    },
+    "Trained Numidian Infantry": {
+      "order": 3,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": "+10",
+      "max": "Up to half"
+    }
+  },
+  "name": "Republican Rome 2nd Punic War",
+  "version": "Rick's Warmaster",
+  "group": "The Rise of Rome",
+  "order": 3,
+  "armyRules": [
+    "Triarii. The Triarii were the oldest and most experienced of the Roman legions comprising wealthier citizens. Their role was to act as a solid reserve—a dependable core of troops who could hold the line should the Hastati and Principes be thrown back. As such they would not necessarily expect to fight  - ideally the battle would be won by the charge of the Principes. The phrase ‘Matters have come down to the triarii’ became a proverb meaning a last chance to avoid failure. As better-off Romans their equipment is likely to have been substantial and quite ornate. They carry spears.",
+    "",
+    "Roman Legions. The principle fighting troops of the Roman legions were divided into three types of which the most numerous were the Hastati and Principes—the third being the Triarii. The organisation of the legions probably changed during the war against Hannibal—the ultimate legion included ten maniples of Hastati (1,200 men) plus ten maniples of Principes (1,200 men) but only 600 triarii organised into ten smaller sized maniples. In theory the Hastati were younger, fitter men who fought in the first line—their job was to make the initial attack and soften up the enemy.  The Principes were more mature and often better equipped citizens and formed the second line—their job was to exploit any weakness in the enemy line created by the Hastati or to relieve the Hastati if they were flagging. In practice it seems likely that the distinction between the two types tended to blur as the Romans raised and equipped new armies in response to the Carthaginian threat. We therefore treat both as the same and refer to them as ‘Roman Legions’. Although ‘hasta’ means spear, presumably referring to the historic armament of the Hastati, both Hastati and Principes were armed with heavy javelins (pila). Armour might vary from only a helmet to a heavy coat of mail and greaves for the legs - but we have assumed our legions are fairly well equipped and trained. More poorly equipped or less well trained troops can easily be represented by the Italian Allies and by the Alae Legions option described separately.",
+    "",
+    "Italian Legions. These represent troops from Italian states allied to Rome—including Latins as well as non-Latins fighting for the Roman cause. These were all known as ‘socii Latini’ which means Latin allies. The troops they provided were initially equipped as spearmen but as the war progressed it is likely they adopted the Roman style of fighting with pilum and sword; effectively becoming legions in the process. We have represented these troops as more poorly equipped and less organised than the Roman Legion (hence their poorer armour value and status as unreliable) but this is not necessarily a fair description of all Rome’s allied troops by any means. Some allied legions were indistinguishable from Romans in terms of ability and equipment—these can be represented as Roman Legion or Alae Legions as you wish, indicating troops either as good as, or almost as good as, the standard Roman units.",
+    "",
+    "Leves. The traditional skirmishing troops of the Roman Republic were few in number and possibly quite poorly trained and equipped - they were called Leves or Rorarii and were principally armed with javelins.  By the later phases of  the Second Punic War the legions incorporated their own units of trained skirmishers called Velites (see below). The skirmishing infantry units in your army can be either Leves or Velites (though not both as one replaced the other).",
+    "",
+    "Slingers and Archers. Slingers were available in smaller numbers than the Leves/Velites and were usually mercenaries.  Syracusian slingers fought in both Italy and Africa, whilst Balearic slingers fought in Africa. A single unit of archers—representing Cretan archers in Syracusian employ—is also a possibility during the fighting in Italy.",
+    "",
+    "Velites were armed with javelins carried a light shield, wore a helmet and were considerably better trained and more effective than earlier skirmishers. If Velites are chosen then Leves cannot be chosen—Velites replaced Leves as part of the Roman legion.",
+    "",
+    "Alae Legions. The standard Roman battle formation was to deploy the Roman legions in the middle of the line with allied legions on the wings. ‘Ala’ is simply latin for ‘wing’. Although these troops could be very good fighters they were never rated as highly by the Romans as were their own legions—but that’s Romans for you! The main list already provides for unreliable allies in the form of Italian legions. This option allows you to replace up to half of your Roman Legions  with poorer quality Alae Legions with the stats shown—these represent a half-way house; less competent than the fully trained Roman Legions but better than the worst of the allied legions. In practise the legions could vary tremendously depending on when they were recruited and their battle experience—this entry is intended to allow this diversity to be better represented.",
+    "",
+    "Heavy Cavalry. Roman cavalrymen were few in number and notoriously poor horsemen. Barely better cavalry were provide by Italian allies. These represent the more substantially armed and armoured of such cavalry and their limited number represents the extreme rarity of such troops in Italy. They would typical wield a spear and have some sort of armour for their chest, a helmet and a shield.  The representation with a 5+ armour value is admittedly generous—but depriving the army of heavy cavalry altogether seemed punitive.",
+    "",
+    "Light Cavalry. These represent Italian allies who are more lightly equipped than the Roman heavy cavalry—they could be armed with spears or javelins and carry a largish shield. Some would wear armour of a kind.",
+    "",
+    "Mounted Skirmishers. These represent lightly armed skirmishing cavalry from Italian allies of which Tarentine cavalry are the most well known type. These horsemen carry numerous javelins to hurl at the foe and a shield by way of protection.",
+    "",
+    "Spanish Scutarii. The majority of Spanish are grouped together and called Scutarii—the name given to them by the Romans and meaning ‘shieldmen’. These troops fought in massed formations using throwing spears or heavy javelins and resorting to swords at close-quarters.",
+    "",
+    "Spanish Caetrati. These could be nimble youngsters armed with javelins or possibly slingers. Their name also refers to that of their small round shield—as given to them by the Romans who evidently thought such things of great significance.",
+    "",
+    "Spanish Light Cavalry. Spanish cavalry carried shields and javelins and spears—they could fight at close quarters or skirmish and are rated as light cavalry.",
+    "",
+    "Numidian Infantry. The Numidians appear to have fought as mobs of troops armed with javelins—although they would attempt to form up they were easily dispersed and lacked much in the way of training or discipline. The Romans provided training for some Numidian troops. This entry represent the unsullied barbarian as we find him, armed with javelins, carrying a small shield and often wearing a cloak. Up to half the Numidian infantry can be uprated to ‘trained’ as noted below.",
+    "",
+    "Trained Numidian Infantry. The Numidians found themselves courted by both Romans and Carthaginians during the Punic Wars and it was in an attempt to win them over that the Romans dispatched ‘military advisers’ to help train up the notoriously poor infantry. This option represents the result of such efforts. Up to half of the Numidian infantry can be upgraded in this way for the points cost shown.",
+    "",
+    "Numidian Skirmishers. These are tribesmen armed with javelins and fighting in dispersed formation— a minority of Numidians carried bows or slings, but whether they fought in discrete units or simply joined their javelin-armed friends is anyone’s guess.",
+    "",
+    "Numidian Mounted Skirmishers. The primary and most effective fighting arm of the Numidians was their cavalry—only the nobility fought in this way. They were daring and aggressive riders who were considered to be the best troops of their kind at the time. They are armed with javelins and carry a small round shield and often wore a cloak over a simple tunic."
+  ]
+}

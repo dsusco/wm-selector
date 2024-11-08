@@ -1,0 +1,127 @@
+{
+  "specialRules": {
+    "Warband": {
+      "order": 1
+    },
+    "Skirmish": {
+      "order": 2
+    },
+    "Portents": {
+      "order": 3
+    }
+  },
+  "units": {
+    "Comitatus": {
+      "order": 0,
+      "specialRules": [
+        "Warband"
+      ],
+      "upgrades": [
+        "King's Comitatus"
+      ],
+      "type": "Infantry",
+      "attack": 4,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 70,
+      "max": 4
+    },
+    "Warriors": {
+      "order": 1,
+      "type": "Infantry",
+      "specialRules": [
+        "Warband"
+      ],
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 45,
+      "min": 8
+    },
+    "Skirmishers": {
+      "order": 2,
+      "type": "Infantry",
+      "specialRules": [
+        "Skirmish"
+      ],
+      "attack": 1,
+      "hits": 3,
+      "size": 3,
+      "points": 30,
+      "max": 3
+    },
+    "Cavalry": {
+      "order": 3,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 80,
+      "max": 2
+    },
+    "General": {
+      "order": 4,
+      "type": "General",
+      "attack": "+2",
+      "command": 8,
+      "size": 1,
+      "points": 100,
+      "upgrades": [
+        "Portents"
+      ]
+    },
+    "Subordinate": {
+      "order": 5,
+      "type": "Subordinate",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 40,
+      "min": 1,
+      "max": 4
+    }
+  },
+  "upgrades": {
+    "Portents": {
+      "order": 0,
+      "points": "+10",
+      "max": 1,
+      "specialRules": [
+        "Portents"
+      ]
+    },
+    "King's Comitatus": {
+      "order": 1,
+      "type": "Infantry",
+      "points": "+10",
+      "max": "1max",
+      "specialRules": [
+        "Warband"
+      ],
+      "attack": 4,
+      "hits": 4,
+      "armour": "5+",
+      "size": 3
+    }
+  },
+  "armyRules": [
+    "Comitatus. Professional warriors, personal followers of the King or Noblity. Their main jobs were fighting, drinking and wenching!",
+    "",
+    "Warriors. Part-time fighting men mainly free-peasant farmers fighting for loot.",
+    "",
+    "Skirmishers. Boys too young to fight in the battle-line sent out to harass the foe with javelins, or warriors of lower status armed with bows.",
+    "",
+    "Cavalry. The wealthiest of the warriors—not yet up to the standards they later attained and which made Franckish Kinghts feared from Hastings to Jerusalem.",
+    "",
+    "Portents. The player can take the portents before the battle. This allows the General to re-roll one failed Command roll once during the battle. Take the Command test again—if successful the order is issued and the General can continue giving orders if you wish.",
+    "",
+    "King’s Comitatus. Regardless of your army’s size a single unit of Comitatus can be upgraded to King’s Comitatus with the stats shown."
+  ],
+  "name": "The Franks",
+  "version": "Rick's Warmaster",
+  "group": "The Dark Ages",
+  "order": 9
+}
