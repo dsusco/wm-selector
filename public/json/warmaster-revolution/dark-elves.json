@@ -207,7 +207,7 @@
     "General": {
       "order": 7,
       "text": [
-        "Dark Elf commanders are masters of manipulation and cruelty - this makes them uncompromising in their dealings with subordinates! If a Dark Elf Hero or Sorceress rolls a double 6 when issuing orders then the General must either lose 1 level of Command value (ie drop from 10 to 9) or execute the failed underling - in which case the character is removed as a casualty but does not count towards the enemy's victory points. In addition, if the General rolls a 'blunder' (ie a double 6) then the General automatically loses 1 level. Regardless of these penalties a General can only drop 2 levels (to a minimum of 8) after which all subordinates who blunder are executed and any 'blunders' rolled by the General merely end the phase as normal."
+        "Dark Elf commanders are masters of manipulation and cruelty - this makes them uncompromising in their dealings with subordinates! If a Dark Elf Hero or Sorceress rolls a double 6 when issuing orders then the General must either lose 1 level of Command value (i.e. drop from 10 to 9) or execute the failed underling - in which case the character is removed as a casualty but does not count towards the enemy's victory points. In addition, if the General rolls a 'blunder' (i.e. a double 6) then the General automatically loses 1 level. Regardless of these penalties a General can only drop 2 levels (to a minimum of 8) after which all subordinates who blunder are executed and any 'blunders' rolled by the General merely end the phase as normal."
       ]
     },
     "Manticore": {
@@ -219,7 +219,7 @@
     "Cauldron of Blood": {
       "order": 9,
       "text": [
-        "A Sorceress can have a Cauldron of Blood. A Sorceress with a Cauldron of Blood suffers a movement reduction to 30cm. The army can only ever include one Cauldron of Blood and it can only be included if there is at least 1 unit of Witch Elves in the army. The Cauldron of Blood adds +2 Attacks to the Sorceress and can be used to add +1 to the Sorceress‘ dice roll to cast a spell once per battle. The player must announce that the Cauldron of Blood‘s spell bonus is being used before rolling the dice to determine if the spell is cast."
+        "A Sorceress can have a Cauldron of Blood. A Sorceress with a Cauldron of Blood suffers a movement reduction to 30cm. The army can only ever include one Cauldron of Blood and it can only be included if there is at least 1 unit of Witch Elves in the army. The Cauldron of Blood adds +2 Attacks to the Sorceress and can be used to add +1 to the Sorceress‘ dice roll to cast a spell once per battle. The player must announce that the Cauldron of Blood’s spell bonus is being used before rolling the dice to determine if the spell is cast."
       ]
     },
     "Elven Bolt Thrower": {
@@ -234,7 +234,7 @@
       "text": [
         "*A bolt of pure malicious darkness arcs from the Sorcerer's fingertip and stabs towards the foes of the Dark Elves.*",
         "",
-        "Draw an imaginary line 30cm long from the Wizard's stand in any direction you wish. The line will pass through any intervening units but not beyond terrain that would normally stop a missile shot, eg over the crest of a hill, more than 2cm of woodland, and so forth.",
+        "Draw an imaginary line 30cm long from the Wizard's stand in any direction you wish. The line will pass through any intervening units but not beyond terrain that would normally stop a missile shot, e.g. over the crest of a hill, more than 2cm of woodland, and so forth.",
         "",
         "Each unit under the line takes three shooting attacks worked out in the usual way. Note that this spell can easily effect several units and will affect all units that fall beneath the line (including your own). Unengaged units can be driven back by a Doombolt as with ordinary shooting (even including friends). Engaged units cannot be driven back by the Doombolt but carry over any hits scored into the first round of combat; any hits scored count as having been struck in the combat itself."
       ]

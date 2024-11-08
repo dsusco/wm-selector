@@ -159,7 +159,7 @@
     "Ogres": {
       "order": 1,
       "text": [
-        "Ogres are notoriously fond of fresh human meat, although they will eat practically anything that was once alive (or still is). They can’t abide the taste of greenskin and won’t touch a Goblin or an Orc unless they are seriously peckish. To represent this, an Ogre unit must charge a unit of humans (literally humans... Men, not Dwarfs, Elves, etc) if it is within 20cm at the start of the Command phase and the Ogres can reach it. This happens automatically and their commander can do nothing about it!"
+        "If an Ogre unit can use its initiative to charge an enemy unit of humans at the start of the Command phase then it must do so. This happens automatically and their commander can do nothing about it. ‘Humans‘ encompasses all ‘men‘ including Chaos Warriors and Marauders, but not Dwarfs, Elves etc."
       ]
     },
     "Giant": {
@@ -168,7 +168,7 @@
     "Giant Eagles": {
       "order": 3,
       "text": [
-        "Giant Eagles can fly up to 100cm."
+        "Giant Eagles can fly."
       ]
     },
     "Giant Eagle": {

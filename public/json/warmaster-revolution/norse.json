@@ -95,11 +95,7 @@
       "armour": "5+",
       "size": 3,
       "points": 80,
-      "max": 1,
-      "noCount": true,
-      "requiredUnits": [
-        "Shaman"
-      ]
+      "max": 1
     },
     "Jarl": {
       "order": 9,
@@ -161,15 +157,13 @@
     "Berserkers": {
       "order": 1,
       "text": [
-        "The Norsemen are famously fond of their ale, so much so that they’ve been known to wage war to obtain a decent stock for the winter. However, some Norsemen whenever they have more than the slightest drop of Mead go into a berserk frenzy, where they feel no pain and fear nothing. A bit annoying in the Mead Hall, but very useful on the battlefield.",
-        "",
         "Such is the eagerness to get into combat that a unit of Berserkers will always use its initiative to charge an enemy if possible and can’t be given orders instead. They’ll never use their initiative to evade. They can’t be driven back by shooting and do not roll for drive backs. If victorious in combat, they must pursue or advance where possible. Berserkers are unaffected by enemies that cause terror in combat, so they do not suffer the usual -1 Attack modifier."
       ]
     },
     "Ulfwerener": {
       "order": 2,
       "text": [
-        "Unlike usual infantry troops, the Ulfwerener are based facing the short edge in the same way as cavalry. In addition they receive an additional +1 Attack modifier when they charge an enemy in the open in the same way as monsters and chariots and have an ability to pursue cavalry and chariots troop types. The Ulfwerener stands can never support or being supported at all. Because of their rather bestial nature, only characters with the Were Kin Character upgrade may join units of Ulfwerener."
+        "Unlike usual infantry troops, the Ulfwerener are based facing the short edge in the same way as cavalry. In addition they receive an additional +1 Attack modifier when they charge an enemy in the open in the same way as monsters and chariots and have an ability to pursue cavalry and chariots troop types. The Ulfwerener stands can never support or be supported. Because of their rather bestial nature, only characters with the Were Kin Character upgrade may join units of Ulfwerener. Ulfwerener units can not take any magic items."
       ]
     },
     "Giant": {
@@ -178,13 +172,11 @@
     "War Mammoth": {
       "order": 4,
       "text": [
-        "The Norse War Mammoth is a huge creature used by the Norsemen on the battlefield, especially against fortified opponents where its ability to swipe troops off the ramparts with its trunk is most useful.",
-        "",
         "The Mammoth is a truly huge monster, so is based on a 6x4cm base, with the shorter edge being its front. It causes terror and may attack troops on ramparts with its trunk in the same manner as a Giant. Alternatively, it may elect to batter a wall section or gateway with its tusks in the same manner as a battering ram.",
         "",
         "One last option available in a siege is that if a Norse War Mammoth is in base contact with a wall section, then one Norse infantry unit may assault that wall section via the Mammoth. Climbing up ladders and ropes at the rear of the Mammoth and using boarding ramps and the like to assault the fortress walls. This is not quite as effective as assaulting from a siege tower, so the enemy being assaulted only counts as defended rather than in the open, but is much better than counting it as fortified. If a unit assaults in this manner, then the War Mammoth may not attack with its trunk or batter the walls; as such action would result in attacking your own troops or bringing a wall section down from under them, not a good idea, even for the Norse troops.",
         "",
-        "When reduced to four or less hits at the end of Combat or Shooting phase but not destroyed and no longer engaged in combat, thereafter halve the War Mammoth’s Attacks and Hits characteristics (to 4 Attacks and 5 Hits)."
+        "If a Mammoth has accumulated 6-9 hits by the end of the Shooting phase or Combat phase and is no longer engaged in combat it is deemed to have been badly hurt. Once a Mammoth is badly hurt then all accumulated hits are discounted and its maximum Hits value and Attacks are halved for the rest of the battle (to 5 Hits and 4 Attacks)."
       ]
     },
     "Valkyries": {

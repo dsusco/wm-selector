@@ -41,6 +41,7 @@
       "size": 3,
       "points": 80,
       "min": 2,
+      "max": 4,
       "specialRules": [
         "Bushido"
       ]
@@ -201,9 +202,9 @@
     "Ninja": {
       "order": 4,
       "text": [
-        "Ninja are armed with throwing stars and darts, and are therefore allowed to shoot as if they had bows, but their range is reduced to 15cm. However, they may shoot from any edge without turning stands to face their target.",
+        "Ninja have a shooting range of 15cm and 360° vision – stands in this unit can draw line of sight from all edges for the purpose of evading and shooting, including shooting at charging enemies. Note that this unit still needs Line of Sight from its front edge to charge an enemy.",
         "",
-        "Ninja do not have to be deployed before the game if the player does not wish to do so. Instead, individual units can be infiltrated onto the battlefield once the game has begun. To infiltrate a unit, the Nippon player nominates the point where he wants the Ninja to appear and issues an ‘infiltration‘ order from any character. The character does not have to be within his normal command range to issue an infiltration order - the character‘s command range is considered to extend over the entire tabletop when issuing an infiltration order. Treat the order as issued to the nominated point and apply any modifiers for distance and proximity of enemy but ignore penalties for dense terrain. The nominated point must lie either on the table within dense terrain or on any base edge other than the enemy player‘s own table edge. If successful, place one stand on the nominated spot and arrange the rest of the unit into formation around it. The infiltrated unit cannot be placed so that it touches an enemy unit. Once deployed, orders can be given to the unit by the same character that gave the infiltration order if he is within his normal command range, the infiltrating unit is considered to have used its first order to deploy. If the infiltration order is failed the unit is not deployed and cannot infiltrate that turn, it can attempt to infiltrate in a subsequent turn at the same or a different place.",
+        "Ninja do not have to be deployed before the game if the player does not wish to do so. Instead, individual units can be infiltrated onto the battlefield once the game has begun. To infiltrate a unit, the Nippon player nominates the point where he wants the Ninja to appear and issues an ‘infiltration‘ order from any character. The character does not have to be within his normal command range to issue an infiltration order – the character’s command range is considered to extend over the entire tabletop when issuing an infiltration order. Treat the order as issued to the nominated point and apply any modifiers for distance and proximity of enemy but ignore penalties for dense terrain. The nominated point must lie either on the table within dense terrain or on any base edge other than the enemy player’s own table edge. If successful, place one stand on the nominated spot and arrange the rest of the unit into formation around it. The infiltrated unit cannot be placed so that it touches an enemy unit. Once deployed, orders can be given to the unit by the same character that gave the infiltration order if he is within his normal command range, the infiltrating unit is considered to have used its first order to deploy. If the infiltration order is failed the unit is not deployed and cannot infiltrate that turn, it can attempt to infiltrate in a subsequent turn at the same or a different place.",
         "",
         "Ninjas ignore penalties for Dense Terrain. Ninja count as Gutter Runners in purpose of Scout Rules."
       ]
@@ -244,7 +245,7 @@
       "text": [
         "If an enemy Wizard who is within 50cm of the Shugenja casts a spell the Shugenja can attempt to anti-magic‘ it. Note that it does not matter what the spell is or where it is cast, the Shugenja can ‘anti-magic‘ it so long as the caster is with 50cm.",
         "",
-        "To determine if this works, roll a D6 - on the score of 4, 5 or 6 the Shugenja has succeeded and the spell doesn‘t work, it is dispelled by the Shugenja’s defiant efforts. If he fails, then the Shugenja’s efforts come to nothing and the spell works as normal. A Shugenja can attempt to anti-magic any number of spells in a turn, but only one attempt can be made to anti-magic any individual spell - even if the army includes more than one Shugenja and several are in range of the enemy Wizard.",
+        "To determine if this works, roll a D6 – on the score of 4, 5 or 6 the Shugenja has succeeded and the spell doesn’t work, it is dispelled by the Shugenja’s defiant efforts. If he fails, then the Shugenja’s efforts come to nothing and the spell works as normal. A Shugenja can attempt to anti-magic any number of spells in a turn, but only one attempt can be made to anti-magic any individual spell – even if the army includes more than one Shugenja and several are in range of the enemy Wizard.",
         "",
         "The Shugenja adds +1 to any rolls on the Daemonic Instability table if he is within 20cm of the affected Daemon unit. This benefit only applies when rolling on the Daemonic Instability table for friendly units.",
         "",
@@ -264,7 +265,7 @@
         "",
         "If a Shugenja stand includes the Shrine, once per battle he can add +1 to his dice roll when he attempts to dispel enemy magic spells using the Shrine anti-magic ability (see Shugenja).",
         "",
-        "In addition, the Shugenja can invoke the gods using the Shrine during the Shooting phase of his own turn. The shrine’s invocation fills the Nippon army with even greater resolve! Roll a D6. On the score of a 4, 5 or 6 all Nippon units within 20cm of the Shugenja are unaffected by Terror until the start of the Nippon player‘s next turn. On a roll of less than 4 there is no effect."
+        "In addition, the Shugenja can invoke the gods using the Shrine during the Shooting phase of his own turn. The shrine’s invocation fills the Nippon army with even greater resolve! Roll a D6. On the score of a 4, 5 or 6 all Nippon units within 20cm of the Shugenja are unaffected by Terror until the start of the Nippon player’s next turn. On a roll of less than 4 there is no effect."
       ]
     }
   }
