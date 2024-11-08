@@ -29,7 +29,7 @@
     "marked-gfm-heading-id": "^4.1.0",
     "qrcode.vue": "^1.7.0",
     "querystring-es3": "^0.2.1",
-    "vue": "^2.7.14",
+    "vue": "^3.0.0",
     "vue-router": "^3.6.5",
     "vuedraggable": "^2.24.3",
     "vuex": "^3.6.2"
