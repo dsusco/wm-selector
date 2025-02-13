@@ -1,163 +1,163 @@
 {
-  "name": "The Teutonic Order",
+  "name": "The Teutonic Order, 1410",
   "version": "Warmaster Medieval Armies",
-  "group": 1,
-  "order": 6,
+  "group": "Polish–Lithuanian–Teutonic War",
+  "order": 2,
   "units": {
     "Brother Knights": {
-      "order": 0,
       "type": "Cavalry",
       "attack": 4,
       "hits": 4,
       "armour": "4+",
       "size": 3,
-      "points": 155,
       "min": 1,
+      "points": 155,
+      "order": 0,
       "specialRules": [
         "Knights"
       ]
     },
     "Crusader Knights": {
-      "order": 1,
       "type": "Cavalry",
       "attack": 3,
       "hits": 3,
       "armour": "4+",
       "size": 3,
-      "points": 135,
       "max": 3,
+      "points": 135,
+      "order": 1,
       "specialRules": [
         "Knights"
       ]
     },
     "Light Horse": {
-      "order": 2,
       "type": "Cavalry",
       "attack": 3,
-      "range": 15,
       "hits": 3,
+      "range": 15,
       "armour": "6+",
       "size": 3,
-      "points": 70,
       "min": 2,
+      "points": 70,
       "specialRules": [
         "Skirmish"
-      ]
+      ],
+      "order": 2
     },
     "Native Horse": {
-      "order": 3,
       "type": "Cavalry",
       "attack": 2,
-      "range": 15,
       "hits": 3,
+      "range": 15,
       "armour": "6+",
       "size": 3,
-      "points": 60,
       "max": 4,
+      "points": 60,
       "specialRules": [
         "Skirmish"
-      ]
+      ],
+      "order": 3
     },
     "Subject Infantry": {
-      "order": 4,
       "type": "Infantry",
       "attack": 2,
       "hits": 2,
       "size": 3,
+      "max": 4,
       "points": 20,
-      "max": 4
+      "order": 4
     },
     "Ordensdiener Spearmen": {
-      "order": 5,
       "type": "Infantry",
       "attack": 3,
       "hits": 3,
       "armour": "6+",
       "size": 3,
-      "points": 45,
       "max": 8,
+      "points": 45,
       "specialRules": [
         "Combined Arms"
       ],
       "upgrades": [
         "Pavisse"
-      ]
+      ],
+      "order": 5
     },
     "Ordensdiener Crossbowmen": {
-      "order": 6,
       "type": "Infantry",
       "attack": 2,
-      "range": 30,
       "hits": 3,
+      "range": 30,
       "armour": "6+",
       "size": 3,
-      "points": 55,
       "max": 8,
+      "points": 55,
       "specialRules": [
-        "Combined Arms",
-        "Crossbows"
+        "Skirmish",
+        "Combined Arms"
       ],
       "upgrades": [
         "Pavisse"
-      ]
+      ],
+      "order": 6
     },
     "Grand Master": {
-      "order": 7,
       "type": "General",
       "attack": "+2",
       "command": 9,
       "size": 1,
-      "points": 125,
       "armyMin": 1,
       "armyMax": 1,
+      "points": 125,
+      "order": 7,
       "upgrades": [
         "Ulrich Von Jugingen"
       ]
     },
     "Magister": {
-      "order": 8,
       "type": "Leader",
       "attack": "+1",
       "command": 8,
       "size": 1,
+      "max": 2,
       "points": 80,
-      "max": 2
+      "order": 8
     }
   },
   "upgrades": {
-    "Pavisse": {
-      "order": 0,
-      "type": "Special",
-      "points": "+5"
-    },
     "Ulrich Von Jugingen": {
-      "order": 1,
-      "type": "Special",
+      "type": "General",
       "points": "+10",
-      "armyMax": 1
+      "armyMax": 1,
+      "order": 0
+    },
+    "Pavisse": {
+      "type": "Special",
+      "points": "+5",
+      "order": 1
     }
   },
   "specialRules": {
-    "Knights": {
+    "Skirmish": {
       "order": 1
     },
-    "Skirmish": {
+    "Knights": {
       "order": 2
     },
-    "Combined Arms": {
+    "Pavisse": {
       "order": 3
     },
-    "Crossbows": {
+    "Crossbow": {
       "order": 4
     },
-    "Pavisse": {
+    "Combined Arms": {
       "order": 5
     },
     "Ulrich Von Jugingen": {
-      "order": 6,
       "text": [
         "If you decide to upgrade your general to Grandmaster Ulrich Von Jungingen, then all commanders in the army have a Command value of 10 in the first turn of the game. This bonus only applies in the first turn thereafter all commanders have standard values."
-      ]
+      ],
+      "order": 6
     }
   }
 }

@@ -1,92 +1,89 @@
 {
-  "name": "The Almoravid Moors",
+  "name": "Almoravid Moors, 1086",
   "version": "Warmaster Medieval Armies",
-  "group": 0,
+  "group": "Reconquista",
   "order": 0,
   "units": {
     "Hasham Guard Cavalry": {
-      "order": 0,
       "type": "Cavalry",
       "attack": 3,
       "hits": 3,
       "armour": "5+",
       "size": 3,
-      "points": 80,
       "max": 1,
+      "points": 80,
+      "order": 0,
       "upgrades": [
-        "Shock"
+        "Mounted Black Guards"
       ]
     },
     "Camel Riders": {
-      "order": 1,
       "type": "Cavalry",
       "attack": 1,
       "range": 15,
       "hits": 3,
       "armour": "6+",
       "size": 3,
-      "points": 60,
       "max": 1,
+      "points": 60,
       "specialRules": [
         "Skirmish",
         "Camels"
-      ]
+      ],
+      "order": 1
     },
     "Jinetes": {
-      "order": 2,
       "type": "Cavalry",
       "attack": 2,
       "range": 15,
       "hits": 3,
       "armour": "6+",
       "size": 3,
-      "points": 60,
       "max": 4,
+      "points": 60,
       "specialRules": [
         "Skirmish"
-      ]
+      ],
+      "order": 2
     },
     "Black Guard": {
-      "order": 3,
       "type": "Infantry",
       "attack": 4,
       "hits": 3,
       "armour": "6+",
       "size": 3,
-      "points": 55,
       "min": 1,
-      "max": 2
+      "max": 2,
+      "points": 55,
+      "order": 3
     },
     "Almoravid Spearmen": {
-      "order": 4,
       "type": "Infantry",
       "attack": 3,
       "hits": 3,
       "armour": "6+",
       "size": 3,
-      "points": 45,
       "min": 4,
+      "points": 45,
       "specialRules": [
         "Combined Arms"
-      ]
+      ],
+      "order": 4
     },
     "Almoravid Archers": {
-      "order": 5,
       "type": "Infantry",
       "attack": 2,
       "range": 30,
       "hits": 3,
       "size": 3,
+      "max": "Spearmen",
       "points": 40,
       "specialRules": [
         "Combined Arms"
       ],
-      "augendUnits": [
-        "Almoravid Spearmen"
-      ]
+      "order": 5
     },
     "Skirmishers": {
-      "order": 6,
       "type": "Infantry",
       "attack": 1,
       "range": 15,
@@ -95,79 +92,80 @@
       "points": 30,
       "specialRules": [
         "Skirmish"
-      ]
+      ],
+      "order": 6
     },
     "Caliph": {
-      "order": 7,
       "type": "General",
       "attack": "+2",
       "command": 8,
       "size": 1,
-      "points": 100,
       "armyMin": 1,
       "armyMax": 1,
+      "points": 100,
       "upgrades": [
         "Yusuf ibn Tashfin"
-      ]
+      ],
+      "order": 7
     },
     "Sayyid": {
-      "order": 8,
       "type": "Leader",
       "attack": "+1",
       "command": 8,
       "size": 1,
+      "max": 1,
       "points": 80,
-      "max": 1
+      "order": 8
     },
     "Iman": {
-      "order": 9,
       "type": "Subordinate",
       "attack": "+1",
       "command": 7,
       "size": 1,
-      "points": 30
+      "points": 30,
+      "order": 9
     }
   },
   "upgrades": {
-    "Shock": {
-      "order": 0,
+    "Mounted Black Guards": {
       "type": "Special",
-      "points": "+30"
+      "points": "+30",
+      "order": 0
     },
     "Yusuf ibn Tashfin": {
-      "order": 1,
       "type": "Special",
-      "command": "+1",
       "points": "+25",
-      "armyMax": 1
+      "armyMax": 1,
+      "order": 1
     }
   },
   "specialRules": {
     "Skirmish": {
       "order": 1
     },
-    "Camels": {
+    "Shock": {
       "order": 2
     },
-    "Combined Arms": {
+    "Camels": {
       "order": 3
     },
-    "Shock": {
+    "Combined Arms": {
+      "text": [
+        "Almoravid Spearmen and Archers can form a combined arms formation with spears to the front and Archers behind ."
+      ],
       "order": 4
     },
-    "Almoravid Spearmen": {
-      "order": 5,
+    "Yusuf ibn Tashfin": {
       "text": [
-        "Almoravid Spearmen and Archers can form a combined arms formation with spears to the front and Archers behind."
-      ]
+        "The General can take the portents before the battle. This allows the Genral to re-roll one failed Command roll once during the battle. Take the Command test again—if successful the order is issued and the General can continue giving further orders if you wish."
+      ],
+      "order": 5
     },
-    "Almoravid Archers": {
-      "order": 6,
+    "Mounted Black Guards": {
       "text": [
-        "Almoravid Spearmen and Archers can form a combined arms formation with spears to the front and Archers behind.",
-        "",
-        "The Almoravid Archers are limited to the number of Spearmen in the army—the army cannot have more units of Archers than it has Spearmen—this is to represent the mixture of troops used by the Berbers."
-      ]
+        "Any Hasham Guard can be uppgraded to Mounted Black Gards, they gain Shock"
+      ],
+      "order": 6
     }
   }
 }

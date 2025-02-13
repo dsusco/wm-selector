@@ -1,160 +1,163 @@
 {
-  "name": "The Bohemian League",
+  "name": "The Bohemian League, 1434",
   "version": "Warmaster Medieval Armies",
-  "group": 1,
-  "order": 8,
+  "group": "Ottoman–Hungarian wars",
+  "order": 0,
   "units": {
     "Knights": {
-      "order": 0,
-      "type": "Cavalry",
+      "type": "Nobles",
       "attack": 3,
       "hits": 3,
       "armour": "4+",
       "size": 3,
+      "min": 2,
       "points": 135,
-      "min": 2
+      "order": 0
     },
-    "Light Cavalry": {
-      "order": 1,
+    "Light cavalry": {
       "type": "Cavalry",
       "attack": 2,
-      "range": 15,
       "hits": 3,
+      "range": 15,
       "armour": "6+",
       "size": 3,
       "points": 60,
       "specialRules": [
         "Skirmish"
-      ]
+      ],
+      "order": 1
     },
     "Militia": {
-      "order": 2,
       "type": "Infantry",
       "attack": 3,
+      "armour": "6+",
       "hits": 3,
       "size": 3,
+      "min": 4,
       "points": 35,
-      "min": 4
+      "order": 2
     },
     "Peasants": {
-      "order": 3,
       "type": "Infantry",
       "attack": 2,
       "hits": 2,
       "size": 3,
+      "max": 2,
       "points": 20,
-      "max": 2
+      "order": 3
     },
     "Handgunners": {
-      "order": 4,
       "type": "Infantry",
       "attack": 2,
       "range": "20",
-      "hits": 3,
       "armour": "6+",
+      "hits": 3,
       "size": 3,
-      "points": 60,
       "max": 1,
+      "points": 60,
       "specialRules": [
         "Pavisse"
-      ]
+      ],
+      "order": 4
     },
     "Cannon": {
-      "order": 5,
       "type": "Artillery",
       "attack": 1,
-      "range": "2×40",
+      "range": "2x40",
       "hits": 2,
       "size": 2,
-      "points": 50,
       "max": 2,
+      "points": 50,
       "specialRules": [
         "Slow"
-      ]
+      ],
+      "order": 5
     },
     "War Wagons": {
-      "order": 6,
       "type": "Wagon",
       "attack": 1,
-      "range": "15+",
       "hits": 3,
+      "range": "15+",
       "armour": "4+",
       "size": 3,
+      "min": 3,
       "points": 60,
-      "max": 2
+      "order": 6
     },
     "Utraquist Infantry": {
-      "order": 7,
       "type": "Infantry",
       "attack": 3,
-      "range": 20,
-      "hits": 3,
       "armour": "6+",
+      "hits": 3,
       "size": 3,
+      "max": 2,
       "points": 60,
-      "max": 2
+      "order": 7
     },
     "General": {
-      "order": 8,
       "type": "General",
       "attack": "+2",
       "command": 8,
       "size": 1,
-      "points": 100,
       "armyMin": 1,
       "armyMax": 1,
+      "points": 100,
+      "order": 8,
       "upgrades": [
         "Prayer"
       ]
     },
     "Leader": {
-      "order": 9,
       "type": "Leader",
       "attack": "+1",
       "command": 8,
       "size": 1,
+      "max": 3,
       "points": 80,
-      "max": 3
+      "order": 9
     }
   },
   "upgrades": {
     "Prayer": {
-      "order": 0,
       "type": "Special",
       "points": "+10",
-      "armyMax": 1
+      "armyMax": 1,
+      "order": 0,
+      "specialRules": [
+        "Portents"
+      ]
     }
   },
   "specialRules": {
-    "Knights": {
+    "Skirmish": {
       "order": 1
     },
-    "Skirmish": {
+    "Shock": {
       "order": 2
     },
-    "Handgunners": {
+    "Knights": {
       "order": 3
     },
-    "Pavisse": {
+    "Portents": {
       "order": 4
     },
-    "Cannon": {
+    "Slow": {
       "order": 5
     },
-    "Slow": {
-      "order": 6
-    },
-    "War Wagons": {
+    "Pavisse": {
       "order": 7
     },
-    "Utraquist Infantry": {
-      "order": 8,
-      "text": [
-        "The shooting range is 20cm as handguns but they otherwise count as armed with crossbows with the  -1 armour save modifier when stationary."
-      ]
+    "Cannon": {
+      "order": 8
     },
-    "Prayer": {
+    "Handgunners": {
       "order": 9
+    },
+    "Utraquist Infantry": {
+      "text": [
+        "Range 20cm & -1 armour save modifier when stationary"
+      ],
+      "order": 10
     }
   }
 }

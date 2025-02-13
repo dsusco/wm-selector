@@ -1,131 +1,128 @@
 {
-  "name": "The Lombard League",
+  "name": "The Lombard League, 1176",
   "version": "Warmaster Medieval Armies",
-  "group": 0,
-  "order": 6,
+  "group": "Guelphs and Ghibellines",
+  "order": 0,
   "units": {
     "Knights": {
-      "order": 0,
       "type": "Cavalry",
       "attack": 3,
       "hits": 3,
       "armour": "5+",
       "size": 3,
-      "points": 110,
       "min": 0,
-      "max": 2
+      "max": 2,
+      "points": 110,
+      "order": 0
     },
     "Communal Cavalry": {
-      "order": 1,
       "type": "Cavalry",
       "attack": 2,
       "range": 15,
       "hits": 3,
       "armour": "6+",
       "size": 3,
-      "points": 60,
       "min": 0,
       "max": 1,
+      "points": 60,
       "specialRules": [
         "Skirmish"
-      ]
+      ],
+      "order": 1
     },
     "Communal Spearmen": {
-      "order": 2,
       "type": "Infantry",
       "attack": 3,
       "hits": 3,
       "armour": "6+",
       "size": 3,
+      "min": 2,
       "points": 45,
-      "min": 2
+      "order": 2
     },
     "City Guard": {
-      "order": 3,
       "type": "Infantry",
       "attack": 3,
       "hits": 3,
-      "armour": "5+",
       "size": 3,
-      "points": 60,
+      "armour": "5+",
       "max": 1,
+      "points": 60,
       "upgrades": [
         "Company of Death"
-      ]
+      ],
+      "order": 3
     },
     "Crossbowmen": {
-      "order": 4,
       "type": "Infantry",
       "attack": 2,
       "range": 30,
       "hits": 3,
       "size": 3,
-      "points": 50,
       "max": 4,
+      "points": 50,
       "specialRules": [
-        "Crossbows",
-        "Pavisse"
+        "Crossbow",
+        "Pavisse",
+        "Skirmishers"
       ],
       "upgrades": [
         "Skirmishers"
-      ]
+      ],
+      "order": 4
     },
     "General": {
-      "order": 5,
       "type": "General",
       "attack": "+2",
       "command": 8,
       "size": 1,
-      "points": 100,
       "armyMin": 1,
       "armyMax": 1,
+      "points": 100,
       "upgrades": [
-        "Carrocio with Sacred Standard"
-      ]
+        "Carrocio with sacred standard"
+      ],
+      "order": 5
     },
     "Leader": {
-      "order": 6,
       "type": "Leader",
       "attack": "+1",
       "command": 8,
       "size": 1,
+      "max": 2,
       "points": 80,
-      "max": 2
+      "order": 6
     }
   },
   "upgrades": {
     "Skirmishers": {
-      "order": 0,
       "type": "Infantry",
       "attack": 1,
       "range": 30,
       "hits": 3,
       "size": 3,
       "points": -15,
+      "order": 0,
       "specialRules": [
         "Skirmish",
-        "Crossbows"
+        "Crossbow"
       ]
     },
     "Company of Death": {
-      "order": 1,
       "type": "Infantry",
       "attack": 4,
       "hits": 3,
-      "armour": "5+",
       "size": 3,
-      "points": "+10",
-      "armyMax": 1
-    },
-    "Carrocio with Sacred Standard": {
-      "order": 2,
-      "type": "Special",
-      "command": "+1",
-      "points": "+25",
       "armyMax": 1,
-      "requiredUpgrades": [
-        "Company of Death"
-      ]
+      "armour": "5+",
+      "points": 10,
+      "order": 1
+    },
+    "Carrocio with sacred standard": {
+      "attack": "+2",
+      "command": 9,
+      "order": 2,
+      "points": 25
     }
   },
   "specialRules": {
@@ -135,23 +132,26 @@
     "Skirmish": {
       "order": 2
     },
-    "Crossbows": {
+    "Crossbow": {
       "order": 3
     },
     "Pavisse": {
       "order": 4
     },
-    "Carrocio with Sacred Standard": {
-      "order": 5,
+    "Carrocio with sacred standard": {
       "text": [
-        "If the Company of Death is included in the army then you must also include the Carroccio. If the Carroccio is selected, the General has a Leadership value of 9."
-      ]
+        "You can upgrade your General by including a sacred war altar/banner carried upon a wagon - the Carroccio. If the Company of Death is included in the army then you must also include the Carroccio. It is not strictly necessary to model  the Carroccio itself. It may prove quite a chore to model an entire wagon-mounted altar onto the base of your General. However, for  those ambitious enough to wish  to  include it, a separate model can usefully serve as a token to indicate the enhanced status of the General. If  the Carroccio is selected , the General has a Leadership value of 9."
+      ],
+      "order": 5
     },
     "Company of Death": {
-      "order": 6,
       "text": [
-        "If this option is taken, the army must include a Carroccio with Sacred Standard."
-      ]
+        "Regardless of the army's size, a single unit of City Guard can be upgraded to represent the 'Company of Death' with the stats and points increase indicated. If this option is taken, the army must include a Carroccio with Sacred Standard."
+      ],
+      "order": 6
+    },
+    "Skirmishers": {
+      "order": 7
     }
   }
 }

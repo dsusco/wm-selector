@@ -1,145 +1,144 @@
 {
-  "name": "The Army Of Barbarossa",
+  "name": "The Army Of Barbarossa, 1159-60",
   "version": "Warmaster Medieval Armies",
-  "group": 0,
-  "order": 7,
+  "group": "Guelphs and Ghibellines",
+  "order": 1,
   "units": {
     "German & Allied Knights": {
-      "order": 0,
       "type": "Cavalry",
       "attack": 3,
       "hits": 3,
       "armour": "5+",
       "size": 3,
-      "points": 110,
       "min": 3,
+      "points": 110,
       "specialRules": [
         "Knights"
-      ]
+      ],
+      "order": 0
     },
     "Sergeants": {
-      "order": 1,
       "type": "Cavalry",
       "attack": 3,
       "hits": 3,
       "armour": "6+",
       "size": 3,
-      "points": 100,
       "min": 1,
       "max": 4,
+      "points": 100,
       "specialRules": [
         "Shock"
-      ]
+      ],
+      "order": 1
     },
     "Mercenary Cavalry": {
-      "order": 2,
       "type": "Cavalry",
       "attack": 2,
       "range": 15,
       "hits": 3,
       "armour": "6+",
       "size": 3,
-      "points": 60,
       "min": 0,
       "max": 2,
+      "points": 60,
       "specialRules": [
         "Skirmish"
-      ]
+      ],
+      "order": 2
     },
     "Militia Crossbowmen": {
-      "order": 3,
       "type": "Infantry",
       "attack": 2,
       "range": 30,
       "hits": 3,
       "size": 3,
-      "points": 45,
       "max": 2,
+      "points": 45,
       "specialRules": [
-        "Crossbows",
+        "Crossbow",
         "Skirmishers"
       ],
       "upgrades": [
         "Skirmishing Crossbowmen"
-      ]
+      ],
+      "order": 3
     },
     "Militia Spearmen": {
-      "order": 4,
       "type": "Infantry",
       "attack": 3,
       "hits": 3,
-      "armour": "6+",
       "size": 3,
+      "armour": "6+",
+      "max": 2,
       "points": 45,
-      "max": 2
+      "order": 4
     },
     "Mercenary Crossbowmen": {
-      "order": 5,
       "type": "Infantry",
       "attack": 2,
       "range": 30,
       "hits": 3,
       "armour": "6+",
       "size": 3,
-      "points": 60,
       "max": 1,
+      "points": 60,
       "specialRules": [
-        "Crossbows",
+        "Crossbow",
         "Pavisse"
-      ]
+      ],
+      "order": 5
     },
     "General": {
-      "order": 6,
       "type": "General",
       "attack": "+2",
       "command": 8,
       "size": 1,
-      "points": 100,
       "armyMin": 1,
       "armyMax": 1,
+      "points": 100,
       "upgrades": [
         "Barbarossa"
-      ]
+      ],
+      "order": 6
     },
     "Leader": {
-      "order": 7,
       "type": "Leader",
       "attack": "+1",
       "command": 8,
       "size": 1,
+      "max": 2,
       "points": 80,
-      "max": 2
+      "order": 7
     },
     "Cleric": {
-      "order": 8,
       "type": "Subordinate",
       "attack": "+1",
       "command": 8,
       "size": 1,
+      "max": 1,
       "points": 50,
-      "max": 1
+      "order": 8
     }
   },
   "upgrades": {
     "Skirmishing Crossbowmen": {
-      "order": 0,
       "type": "Infantry",
       "attack": 1,
       "range": 30,
       "hits": 3,
       "size": 3,
       "points": -10,
+      "order": 0,
       "specialRules": [
         "Skirmish",
-        "Crossbows"
+        "Crossbow"
       ]
     },
     "Barbarossa": {
-      "order": 1,
-      "type": "Special",
-      "command": "+1",
-      "points": "+25",
-      "armyMax": 1
+      "attack": "+2",
+      "command": 9,
+      "order": 2,
+      "points": 25
     }
   },
   "specialRules": {
@@ -152,17 +151,20 @@
     "Skirmish": {
       "order": 3
     },
-    "Crossbows": {
+    "Crossbow": {
       "order": 4
     },
     "Pavisse": {
       "order": 5
     },
     "Cleric": {
-      "order": 6,
       "text": [
         "If a Cleric joins a unit, then that unit may re-roll all failed armour saving rolls during its first round of every combat engagement so long as the Cleric is with the unit. The Cleric can move from one unit to another if required - though the benefit of this inspiring words can only be enjoyed by one unit at a time. Bear in mind the benefit applies in the first round of the engagement - and not each turn!"
-      ]
+      ],
+      "order": 6
+    },
+    "Skirmishers": {
+      "order": 7
     }
   }
 }

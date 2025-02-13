@@ -1,20 +1,20 @@
 {
-  "name": "The Army of Salah Ah-Din (Saladin)",
+  "name": "The army of Salah Ah-Din, 1187",
   "version": "Warmaster Medieval Armies",
-  "group": 0,
-  "order": 3,
+  "group": "Crusades",
+  "order": 1,
   "units": {
     "Faris": {
-      "order": 0,
       "type": "Cavalry",
       "attack": 3,
       "range": 15,
       "hits": 3,
       "armour": "5+",
       "size": 3,
-      "points": 115,
       "min": 2,
       "max": 4,
+      "points": 115,
+      "order": 0,
       "specialRules": [
         "Shock"
       ],
@@ -23,158 +23,164 @@
       ]
     },
     "Turkish Horse Archers": {
-      "order": 1,
       "type": "Cavalry",
       "attack": 1,
-      "range": 30,
       "hits": 3,
+      "range": 30,
       "size": 3,
-      "points": 60,
       "min": 1,
+      "points": 60,
+      "order": 1,
       "specialRules": [
         "Skirmish"
       ]
     },
     "Kurdish Horsemen": {
-      "order": 2,
       "type": "Cavalry",
       "attack": 2,
       "hits": 3,
       "armour": "6+",
       "size": 3,
-      "points": 55,
       "min": 0,
       "max": 2,
+      "points": 55,
       "specialRules": [
         "Skirmish"
-      ]
+      ],
+      "order": 2
     },
     "Spearmen": {
-      "order": 3,
       "type": "Infantry",
       "attack": 3,
       "hits": 3,
       "armour": "6+",
       "size": 3,
-      "points": 45,
       "upgrades": [
         "Gazi"
-      ]
+      ],
+      "points": 45,
+      "order": 3
     },
     "Archers": {
-      "order": 4,
       "type": "Infantry",
       "attack": 2,
       "range": 30,
       "hits": 3,
       "size": 3,
-      "points": 40,
       "max": 2,
+      "points": 40,
+      "upgrades": [
+        "Skirmishers"
+      ],
       "specialRules": [
         "Skirmishers"
       ],
-      "upgrades": [
-        "Skirmishers"
-      ]
+      "order": 4
     },
     "General": {
-      "order": 5,
       "type": "General",
       "attack": "+2",
       "command": 9,
       "size": 1,
-      "points": 125,
       "armyMin": 1,
       "armyMax": 1,
+      "points": 125,
       "upgrades": [
         "Salah ah-Din"
-      ]
+      ],
+      "order": 5
     },
     "Leader": {
-      "order": 6,
       "type": "Leader",
       "attack": "+1",
       "command": 8,
       "size": 1,
+      "max": 1,
       "points": 80,
-      "max": 2
+      "order": 6
     },
     "Tribal Chieftain": {
-      "order": 7,
       "type": "Subordinate",
       "attack": "+1",
       "command": 7,
       "size": 1,
+      "max": 2,
       "points": 30,
-      "max": 2
+      "order": 7
     }
   },
   "upgrades": {
-    "Mamluks": {
-      "order": 0,
-      "type": "Cavalry",
-      "attack": 4,
-      "range": 15,
-      "hits": 3,
-      "armour": "5+",
-      "size": 3,
-      "points": "+10",
-      "armyMax": 1,
-      "specialRules": [
-        "Shock",
-        "Fanatics"
-      ]
-    },
-    "Gazi": {
-      "order": 1,
-      "type": "Infantry",
-      "attack": 4,
-      "hits": 3,
-      "armour": "6+",
-      "size": 3,
-      "points": "+10",
-      "max": "Up to Half",
-      "specialRules": [
-        "Fanatics"
-      ],
-      "requiredUnits": [
-        "Spearmen"
-      ]
-    },
     "Skirmishers": {
-      "order": 2,
       "type": "Infantry",
       "attack": 1,
       "range": 15,
       "hits": 3,
       "size": 3,
       "points": -10,
+      "order": 0,
       "specialRules": [
         "Skirmish"
       ]
     },
+    "Mamluks": {
+      "type": "Cavalry",
+      "attack": 4,
+      "range": 15,
+      "armour": "5+",
+      "hits": 3,
+      "size": 3,
+      "points": 10,
+      "armyMax": 1,
+      "specialRules": [
+        "Shock",
+        "Fanatics"
+      ],
+      "order": 1
+    },
+    "Gazi": {
+      "type": "Infantry",
+      "attack": 4,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 10,
+      "max": "Up to Half",
+      "specialRules": [
+        "Slow"
+      ],
+      "order": 2
+    },
     "Salah ah-Din": {
-      "order": 3,
-      "type": "Special",
+      "type": "General",
       "points": "+25",
-      "armyMax": 1
+      "armyMax": 1,
+      "order": 0
     }
   },
   "specialRules": {
-    "Shock": {
+    "Skirmish": {
       "order": 1
     },
-    "Skirmish": {
+    "Shock": {
       "order": 2
     },
     "Fanatics": {
       "order": 3
     },
     "Salah ah-Din": {
-      "order": 4,
       "text": [
-        "If you upgrade your General to Salah ah-Din then you can re-roll any of his failed Command rolls up until such time as you fail a re-roll—once a re-roll is failed, no further re-rolls are allowed."
-      ]
+        "you can re-roll any of his failed Command rolls up until such time as you fail a re-roll - once a re-roll is failed, no further re-rolls are allowed."
+      ],
+      "order": 4
+    },
+    "Spearmen": {
+      "text": [
+        "Up to half the units of archers can be upgraded to Gazi with stats and points adjustment as shown."
+      ],
+      "order": 5
+    },
+    "Skirmishers": {
+      "order": 6
     }
   }
 }

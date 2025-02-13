@@ -1,8 +1,8 @@
 {
-  "name": "The French Army of the Hundread Years War (Final Years)",
+  "name": "French Army, 1429",
   "version": "Warmaster Medieval Armies",
-  "group": 1,
-  "order": 3,
+  "group": "Hundred Years War",
+  "order": 2,
   "units": {
     "Retainers": {
       "order": 0,
@@ -20,8 +20,8 @@
     "Breton Horse": {
       "order": 1,
       "type": "Cavalry",
-      "attack": 2,
       "range": 15,
+      "attack": 2,
       "hits": 3,
       "armour": "6+",
       "size": 3,
@@ -39,30 +39,23 @@
       "armour": "4+",
       "size": 3,
       "points": 135,
-      "max": 4,
-      "upgrades": [
-        "Oriflamme"
-      ]
+      "min": 2
     },
     "Foot Knights": {
       "order": 3,
       "type": "Infantry",
       "attack": 3,
       "hits": 3,
-      "armour": "4+",
       "size": 3,
+      "armour": "4+",
       "points": 85,
-      "min": 2,
-      "max": 4,
-      "upgrades": [
-        "Oriflamme"
-      ]
+      "max": 2
     },
     "Crossbowmen": {
       "order": 4,
       "type": "Infantry",
-      "attack": 2,
       "range": 30,
+      "attack": 2,
       "hits": 3,
       "size": 3,
       "points": 45,
@@ -71,7 +64,6 @@
         "Crossbows"
       ],
       "upgrades": [
-        "Pavisse",
         "Skirmishers"
       ]
     },
@@ -79,8 +71,8 @@
       "order": 5,
       "type": "Infantry",
       "attack": 2,
-      "range": 15,
       "hits": 3,
+      "range": 15,
       "size": 3,
       "points": 35,
       "max": 8,
@@ -92,8 +84,8 @@
       "order": 6,
       "type": "Infantry",
       "attack": 2,
-      "range": 30,
       "hits": 3,
+      "range": 30,
       "armour": "6+",
       "size": 3,
       "points": 50,
@@ -119,81 +111,30 @@
       "order": 8,
       "type": "Artillery",
       "attack": 1,
-      "range": "2×40cm",
+      "range": "2x40cm",
       "hits": 2,
       "size": 2,
       "points": 50,
-      "max": 3,
+      "max": 1,
       "specialRules": [
         "Slow"
       ]
     },
-    "Foot Retainers": {
-      "order": 9,
-      "type": "Infantry",
-      "attack": 3,
-      "hits": 3,
-      "armour": "5+",
-      "size": 3,
-      "points": 60,
-      "max": 2
-    },
-    "Handgunners": {
-      "order": 10,
-      "type": "Infantry",
-      "attack": 2,
-      "range": 20,
-      "hits": 3,
-      "size": 3,
-      "points": 45,
-      "max": 2,
-      "upgrades": [
-        "Pavisse",
-        "Skirmishers"
-      ]
-    },
-    "Scots": {
-      "order": 11,
-      "type": "Infantry",
-      "attack": 3,
-      "hits": 4,
-      "armour": "6+",
-      "size": 3,
-      "points": 55,
-      "max": 2
-    },
-    "Genoese": {
-      "order": 12,
-      "type": "Infantry",
-      "attack": 2,
-      "range": 30,
-      "hits": 3,
-      "armour": "6+",
-      "size": 3,
-      "points": 55,
-      "max": 4,
-      "specialRules": [
-        "Crossbows"
-      ],
-      "upgrades": [
-        "Pavisse"
-      ]
-    },
     "General": {
-      "order": 13,
+      "order": 7,
       "type": "General",
       "attack": "+2",
-      "command": 8,
       "size": 1,
       "points": 100,
+      "command": 8,
       "armyMin": 1,
       "armyMax": 1,
       "upgrades": [
-        "Jean D'Arc"
+        "Oriflamme"
       ]
     },
     "Noble": {
-      "order": 14,
+      "order": 8,
       "type": "Leader",
       "attack": "+1",
       "command": 8,
@@ -202,11 +143,6 @@
     }
   },
   "upgrades": {
-    "Pavisse": {
-      "order": 0,
-      "type": "Special",
-      "points": "+5"
-    },
     "Skirmishers": {
       "order": 1,
       "type": "Infantry",
@@ -215,74 +151,63 @@
       "hits": 3,
       "size": 3,
       "points": "-10",
-      "max": 2,
       "specialRules": [
         "Skirmish"
-      ]
+      ],
+      "max": 2
     },
     "Oriflamme": {
       "order": 2,
       "type": "Special",
-      "points": "+25",
-      "armyMax": 1,
-      "prohibitedUpgrades": [
-        "Jean D'Arc"
-      ]
+      "points": "+25"
     },
-    "Jean D'Arc": {
+    "Pavisse": {
       "order": 3,
       "type": "Special",
-      "points": "+25",
-      "armyMax": 1,
-      "prohibitedUpgrades": [
-        "Oriflamme"
-      ]
+      "points": "+5"
     }
   },
   "specialRules": {
-    "Shock": {
+    "Knights": {
       "order": 1
     },
     "Skirmish": {
       "order": 2
     },
-    "Knights": {
+    "Warband": {
       "order": 3
     },
-    "Crossbows": {
+    "Skirmishers": {
       "order": 4
     },
-    "Warband": {
+    "Shock": {
       "order": 5
     },
-    "Cannon": {
+    "Crossbow": {
       "order": 6
     },
+    "Longbow": {
+      "order": 7,
+      "text": [
+        "Any longbow can be equipped with stakes at a cost of +5 pts per unit. Note that stakes ar note allowed in a Chevauchee army."
+      ]
+    },
+    "Cannon": {
+      "order": 8,
+      "text": [
+        "Cannon must be regarded as immobile and treated as Heavy Cannon for purposes of drive backs from shooting"
+      ]
+    },
     "Slow": {
-      "order": 7
-    },
-    "Pavisse": {
-      "order": 8
-    },
-    "Handgunners": {
       "order": 9
     },
-    "Skirmishers": {
-      "order": 10,
-      "text": [
-        "Skirmishers cannot carry pavisse. Note that the range is 20cm for handguns and 30cm for crossbows. Crossbowmen and Handgunners retain their special rules as Skirmishers."
-      ]
+    "Pavisse": {
+      "order": 10
     },
     "Oriflamme": {
       "order": 11,
       "text": [
-        "If you take the Oriflamme banner, select one unit of French Knights. This unit can re-roll all missed attacks on its first charge during the game and increase the distance at with it can une initiative from 20cm to 30cm."
-      ]
-    },
-    "Jean D'Arc": {
-      "order": 12,
-      "text": [
-        "If the General is Jeanne D'Arc she can re-roll a single failed Command roll each turn until she rolls a Blunder—no further re-rolls are allowed once a Blunder has been rolled."
+        "If you take Oriflamme banner, select one unit of French Knights. This unit can re-roll all missed attacks on its first charge during the game and increase the distance at with it can une initiative from 20cm to 30cm"
       ]
     }
   }
