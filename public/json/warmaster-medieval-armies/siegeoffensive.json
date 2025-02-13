@@ -1,0 +1,134 @@
+{
+  "name": "Siege (offensive)",
+  "version": "Warmaster Medieval Armies",
+  "group": "Siege",
+  "order": 0,
+  "units": {
+    "Siege Tower": {
+      "type": "Siege engine",
+      "hits": 2,
+      "armour": "4+",
+      "range": "D3",
+      "size": 1,
+      "points": 25,
+      "order": 1
+    },
+    "Battering Ram": {
+      "type": "Siege engine",
+      "hits": 3,
+      "armour": "4+",
+      "size": 1,
+      "points": 25,
+      "order": 2
+    },
+    "Earthworks": {
+      "type": "Siege Works",
+      "armour": "Stands count as defended",
+      "points": 15,
+      "order": 3
+    },
+    "Artillery Positions": {
+      "type": "Siege Works",
+      "range": "+10",
+      "armour": "Stands count as defended",
+      "points": 20,
+      "order": 4
+    },
+    "Mine": {
+      "type": "Siege Works",
+      "attack": "D6",
+      "points": 50,
+      "order": 5
+    },
+    "Ladder": {
+      "type": "Ladder",
+      "points": 5,
+      "order": 6
+    },
+    "Heavy Siege Artillery": {
+      "type": "Artillery",
+      "attack": 1,
+      "range": "3x60",
+      "hits": 3,
+      "size": 1,
+      "max": 1,
+      "points": 75,
+      "order": 7
+    },
+    "Light Siege Artillery": {
+      "type": "Artillery",
+      "attack": 1,
+      "range": 40,
+      "hits": 1,
+      "size": 1,
+      "points": 25,
+      "order": 8
+    },
+    "Heavy Cannon (Bombards)": {
+      "type": "Artillery",
+      "attack": 1,
+      "range": "3x60",
+      "hits": 3,
+      "size": 1,
+      "max": 1,
+      "points": 75,
+      "order": 9
+    }
+  },
+  "specialRules": {
+    "Siege Tower": {
+      "order": 1,
+      "text": [
+        "Many sieges were won when these movable siege towers, or belfries, reached the castle walls and attackers poured out on to the battlements. See below for rules for the Siege Tower."
+      ]
+    },
+    "Battering Ram": {
+      "order": 2,
+      "text": [
+        "These were mounted onto a whecled frame and pushed or pulled to the gates by their crews. They would usually have a protective roof to protect its operators from missile fire and falling stones. See below for rules for the Battering Ram."
+      ]
+    },
+    "Earthworks": {
+      "order": 3,
+      "text": [
+        "Points : 15 per 40mm ,Besiegers constructed earthen ramparts to stop defenders from getting out and relief forces from getting in. These can take the form of trenches or ramparts and would usually include a wooden palisade, mantlets, or similar shelter from sight and shot. Troops can be placed either within or behind them and count Defended status to all tracks"
+      ]
+    },
+    "Artillery Positions": {
+      "order": 4,
+      "text": [
+        "These are elevated areas, surrounded by emplacements and sheltered by palisades or mantlets, where the master gunners would position their artillery pieces to pound the defenders into submission. The maximum range for artillery mounted on a raised platform is increased by 10cm. Artllery placed behind such a position counts as Defended."
+      ]
+    },
+    "Mine": {
+      "order": 5,
+      "text": [
+        "Where ground permits, the besiegers would dig mines beneath the foundations of enemy walls. At the vital moment these would be collapsed and the walls above would come tumbling down — hopefully! Mining is difficult and time consuming and can be thwarted by enemy countermines but were a very effective way of overcoming an enemy's defences. For this reason fortifications were always built on solid rock wherever possible to prevent this. At the start of a game, once wall damage values have been calculated, note down which walls have been undermined. À wall can only be undermined once. The besieger can reveal his mine at the start of any of his turns. The besieging player rolls six dice and scores 1 point of damage against the wall for each 4, 5 or 6 rolled."
+      ]
+    },
+    "Ladder": {
+      "order": 6,
+      "text": [
+        "An infantry unit can be given siege ladders at a cost of 5 pts per stand (so 15 pts for the unit). See below for details of combat from ladders."
+      ]
+    },
+    "Heavy Siege Artillery": {
+      "order": 7,
+      "text": [
+        "This represents all kinds of large pre-gunpowder siege artillery — be they torsion or counterweight designs. Smaller field artillery (of the kind described in Warmaster Ancients) cannot damage walls or gateways — only these larger types can do s0. Such weapons include the larger types of mangonels, springalds, and the counterweight trebuchet. Heavy siege artillery has the same rules as heavy artillery in Warmaster Ancients including the same stat line, except that an engine is immobile other than that it can be turned to face as per Heavy Cannons - note that this requires an order (see p8 76)."
+      ]
+    },
+    "Light Siege Artillery": {
+      "order": 8,
+      "text": [
+        "This represents all kinds of antipersonal artillery which could include onagers, springalds, arbalasts, ballistas and other designs. In later armies it might include wall guns which we shall roll into the same category for convenience. These are smaller machines and not capable of atracking walls, but are able to shoot at troops on walls, for example. Light artillery is exactly as described in Warmaster Ancients, except that these represent static weapons which are immobile other than that they can be turned to face as per Heavy Cannon — note that this requires an order (see pg 76)"
+      ]
+    },
+    "Heavy Cannon (Bombards)": {
+      "order": 9,
+      "text": [
+        "If an army has gunpowder artillery in its main list then it can include siege bombards during a siege. Siege bombards are Heavy Cannons as described in the Special Rules section. During a siege, armies whose list includes Heavy Cannons can therefore have more in the form of additional Bombards, whilst armies that normally only have Cannons or Organ Guns can also include bombards during a siege. Incidentally, players are quite welcome to include Bombards as part of besieging forces if historical precedent permis and regardiess of whether gunpowder artillery is included in the army lists — in such cases common sense must prevail!"
+      ]
+    }
+  }
+}

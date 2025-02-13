@@ -1,0 +1,312 @@
+{
+  "specialRules": {
+    "Elephants": {
+      "order": 1
+    },
+    "Warband": {
+      "order": 2
+    },
+    "Skirmish": {
+      "order": 3
+    },
+    "Stakes": {
+      "order": 4,
+      "text": [
+        "1. Stakes are based acing the long edge, 40mm wide. The depth does not matter but is suggested to be 10mm.",
+        "2. Deploying stakes requires an order and takes the entire move to complete",
+        "3. Deployed stakes remain on the battlefield. They become part of the 'terrain' in the same way as fences or low hedges. Stakes offer protection to any infantry stands positioned directly behind. Stakes present no obstacle to movement.",
+        "4. An infantry stand protected by stakes counts as defended in hand to hand combat against charging enemy cavalry stands fighting across the stakes. This means that the enemy will need 5s to hit rather than 4s and will lose the bonuses for charging."
+      ]
+    },
+    "Handgunners": {
+      "order": 5,
+      "text": [
+        "1. Handgunners have a range of 20cm",
+        "2. When rolling for drive backs as a result fo casualties inflicted by an organ gun roll +1 additional die, for example if three casualties are inflicted roll four dice. Note: it is +1 dice regardless of the number of units shooting."
+      ]
+    },
+    "Slow": {
+      "order": 6
+    },
+    "Terror": {
+      "order": 7
+    },
+    "Viriato": {
+      "order": 8,
+      "text": [
+        "In the opposing players turn, in his Command phase, you can spring an ‘ambush’ after any successful Command roll made by the enemy General. The opposing player can’t make any more Command rolls that turn."
+      ]
+    },
+    "Fire-lance": {
+      "order": 9,
+      "text": [
+        "One use only per game and only in response to being charged. The unit gains the Terror special rule for the duration of the first round of combat."
+      ]
+    },
+    "Organ Gun": {
+      "order": 10,
+      "text": [
+        "1. Organ Gun has move 20cm",
+        "2. Organ Guns are considered to have the 'Slow' special rule",
+        "3. A unit taking a hit from an organ gun is disallowed any Armour roll it normally has",
+        "4. An organ gun rolls a d6 to determine the number of shots each time it fires, roll a number of attacks equal to the rolled result",
+        "5. Organ Gun has a maximum range of 15cm",
+        "6. When rolling for drive backs as a result fo casualties inflicted by an organ gun roll +1 additional die, for example if three casualties are inflicted roll four dice. Note: it is +1 dice regardless of the number of units shooting.",
+        "7. An organ gun can stand and shoot in an arc 45 degrees to its front, this is a more liberal rule than other artillery",
+        "8. An organ gun cannot shoot on a turn it has moved except where that move was to pivot on the spot. Pivoting still requires an order."
+      ]
+    },
+    "Cannon": {
+      "order": 11,
+      "text": [
+        "1. Except where otherwise noted (see army lists) cannons have a movement of 20cm",
+        "2. Cannons are considered to have the 'Slow' special rule",
+        "3. A unit taking a hit from a Cannon is disallowed any Armour roll it normally has",
+        "4. A single cannon has 2 shots and therefore rolls 2 dice against its target",
+        "5. A cannon has a maximum range of 40cm",
+        "6. When rolling for drive backs as a result fo casualties inflicted by a Cannon roll +1 additional die, for example if two casualties are inflicted roll three dice. Note: it is +1 dice regardless of the number of units shooting.",
+        "7. A Cannon cannot shoot an enemy charging it, they are very slow to operate and are not suitable for shooting charging enemies",
+        "8. A Cannon stand can shoot in an arc 45 degrees to its front. This is more liberal than for other artillery.",
+        "9. A Cannon cannot shoot on a turn it has moved except where that move was to pivot on the spot. Pivoting still requires an order."
+      ]
+    }
+  },
+  "units": {
+    "Elephants": {
+      "order": 0,
+      "specialRules": [
+        "Elephants"
+      ],
+      "type": "Elephant",
+      "attack": 4,
+      "range": 15,
+      "hits": 4,
+      "armour": "5+",
+      "size": 3,
+      "max": 1,
+      "points": 200
+    },
+    "Cavalry": {
+      "order": 1,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "max": 1,
+      "points": 70,
+      "upgrades": [
+        "Heavy Cavalry"
+      ]
+    },
+    "Bodyguard": {
+      "order": 2,
+      "specialRules": [
+        "Warband"
+      ],
+      "type": "Infantry",
+      "attack": 4,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "max": 1,
+      "points": 55
+    },
+    "Warriors": {
+      "order": 3,
+      "specialRules": [
+        "Warband"
+      ],
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "min": 6,
+      "points": 35,
+      "upgrades": [
+        "Stakes",
+        "Firelance"
+      ]
+    },
+    "Archers": {
+      "order": 4,
+      "specialRules": [
+        "Warband"
+      ],
+      "type": "Infantry",
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "max": 4,
+      "points": 40,
+      "upgrades": [
+        "Stakes",
+        "Handgunners"
+      ]
+    },
+    "Skirmishers": {
+      "order": 5,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "type": "Infantry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "min": 2,
+      "max": 4,
+      "points": 30
+    },
+    "Organ Gun": {
+      "order": 6,
+      "type": "Artillery",
+      "attack": 1,
+      "size": 1,
+      "specialRules": [
+        "Slow",
+        "Organ Gun"
+      ],
+      "range": "d6x15",
+      "max": 1,
+      "points": 50,
+      "hits": 3
+    },
+    "Cannon": {
+      "order": 7,
+      "type": "Artillery",
+      "attack": 1,
+      "size": 1,
+      "specialRules": [
+        "Slow",
+        "Cannon"
+      ],
+      "range": "2x40",
+      "max": 1,
+      "points": 50,
+      "hits": 3
+    },
+    "Trung Trac": {
+      "order": 8,
+      "upgrades": [
+        "Elephant",
+        "Viriato"
+      ],
+      "type": "General",
+      "attack": "+2",
+      "command": 8,
+      "size": 1,
+      "points": 100,
+      "armyMax": 1,
+	  "armyMin": 1
+    },
+    "Trung Nhi": {
+      "order": 9,
+      "upgrades": [
+        "Elephant"
+      ],
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 80,
+      "max": 1
+    },
+    "Chiefs": {
+      "order": 10,
+      "upgrades": [
+        "Elephant"
+      ],
+      "type": "Subordinate",
+      "attack": "+1",
+      "command": 7,
+      "size": 1,
+      "points": 30,
+      "max": 4
+    }
+  },
+  "upgrades": {
+    "Elephant": {
+      "order": 0,
+      "type": "Mount",
+      "attack": "+1",
+      "max": 2,
+      "points": "+10"
+    },
+    "Viriato": {
+      "order": 1,
+      "max": 1,
+      "specialRules": [
+        "Viriato"
+      ],
+      "points": "+25"
+    },
+    "Stakes": {
+      "order": 2,
+      "max": 8,
+      "points": "+5",
+      "specialRules": [
+        "Stakes"
+      ]
+    },
+    "Heavy Cavalry": {
+      "order": 3,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": "+10",
+      "max": 1
+    },
+    "Firelance": {
+      "order": 4,
+      "specialRules": [
+        "Terror",
+        "Fire-lance"
+      ],
+      "points": "+5",
+      "max": "25%"
+    },
+    "Handgunners": {
+      "order": 5,
+      "type": "Infantry",
+      "attack": 2,
+      "range": "1x20",
+      "hits": 3,
+      "size": 3,
+      "points": "+5",
+      "max": 3
+    }
+  },
+  "order": 2,
+  "group": "The Far East",
+  "version": "Warmaster Ancients Ricks lists",
+  "name": "Late Period Annamese",
+  "armyRules": [
+    "Elephants.  Elephants were used in large numbers by many East Asian countries. These were the Asian (Indian) elephants, these were larger than the North African and Sumatran elephant. The elephants carried one warrior and a mahout, both were trained to fight. (The elephants are described as taking on foot soldiers and hurling them into the air and attacking with their tusks.)",
+    "",
+    "Cavalry.  These were the mounted landowning classes and their retainers who were largely un-armoured possibly with shields and bamboo lances/spears.",
+    "",
+    "Bodyguard.  The Bodyguard were possibly female warriors armed with wicker shields and bamboo spears.",
+    "",
+    "Warband.  The ordinary peoples who make up the bulk of the army – a levy of farmers and villagers – armed with bows or bamboo spears and wicker shields. By the start of the 16th century some troops were being armed with halberds.",
+    "",
+    "Archers.  These represent the un-armoured foot troops armed with bamboo bow or crossbow infantry who fought from a distance.",
+    "",
+    "Handgunners.  Some missile  infantry were armed with handguns. (The Annamese presumably first acquired handgun technology from China at some point before 1390).",
+    "",
+    "Skirmisher.  Skirmishers were young or impoverished warriors armed with bows or bamboo javelins and usually carrying a small shield.",
+    "",
+    "Fire-lance.  A spear with a gunpowder based pyrotechnic device attached, a flamethrower! Fire-lances were in Song Chinese use by the late 11th cent. - early 12th cent. resulting in a crossover to the Annamese.",
+    "",
+    "Stakes.  Hidden bamboo stakes and ditches, at times planted in river-beds and banks. Earthworks were protected by rows of stake also hidden as anti-cavalry traps.",
+    "",
+    "Organ guns.  The organ gun represents wheeled multiple barrelled rocket launchers.",
+    "",
+    "Heavy Cannons.  These were heavy bombard and field pieces that were becoming more common during this period and were copied from the Chinese.",
+    "",
+    "Viriato.  This is an optional upgrade as the armies General can be upgraded to Viriato – hero of the resistance against its enemies bringing the benefit of the ‘ambush’ rule.  This is to allow for the guerrilla fighting which was a part of Annamese warfare."
+  ]
+}

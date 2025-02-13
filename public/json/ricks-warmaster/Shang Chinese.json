@@ -1,0 +1,149 @@
+{
+  "specialRules": {
+    "Skirmish": {
+      "order": 1
+    },
+    "Portents": {
+      "order": 2
+    },
+    "3-Man Chariots": {
+      "order": 3,
+      "text": [
+        "The 3-man chariots are heavier and do not skirmish—but they are not ‘heavy chariots’ as defined by the rules—they are chariots based to the narrow edge with the stats as shown."
+      ]
+    }
+  },
+  "units": {
+    "Noble She": {
+      "order": 0,
+      "type": "Infantry",
+      "upgrades": [
+        "Ma (2-man)",
+        "Ma (3-man)"
+      ],
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 50,
+      "max": 2
+    },
+    "She": {
+      "order": 1,
+      "type": "Infantry",
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "points": 40,
+      "min": 4
+    },
+    "Shu": {
+      "order": 2,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "points": 35,
+      "min": 2,
+      "max": 6
+    },
+    "Skirmishers": {
+      "order": 3,
+      "type": "Infantry",
+      "specialRules": [
+        "Skirmish"
+      ],
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": 30,
+      "min": 2,
+      "max": 4
+    },
+    "General": {
+      "order": 4,
+      "type": "General",
+      "upgrades": [
+        "Commander in Chariot",
+        "Portents"
+      ],
+      "attack": "+2",
+      "command": 8,
+      "size": 1,
+      "points": 100,
+      "armyMax": 1,
+	  "armyMin": 1
+    },
+    "Leader": {
+      "order": 5,
+      "type": "Leader",
+      "upgrades": [
+        "Commander in Chariot"
+      ],
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "max": 2,
+      "points": 80
+    }
+  },
+  "upgrades": {
+    "Commander in Chariot": {
+      "order": 0,
+      "type": "Chariot Mount",
+      "attack": "+1",
+      "points": "+10"
+    },
+    "Ma (2-man)": {
+      "order": 1,
+      "type": "Chariot",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": "+30",
+      "specialRules": [
+        "Skirmish"
+      ]
+    },
+    "Ma (3-man)": {
+      "order": 2,
+      "type": "Chariot",
+      "attack": 3,
+      "range": 15,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": "+30",
+      "specialRules": [
+        "3-Man Chariots"
+      ]
+    },
+    "Portents": {
+      "order": 3,
+      "points": "+10",
+      "specialRules": [
+        "Portents"
+      ]
+    }
+  },
+  "order": 6,
+  "group": "The Far East",
+  "version": "Warmaster Ancients Ricks lists",
+  "name": "Shang Chinese",
+  "armyRules": [
+    "Noble She. ‘She’ are bow armed warriors and such troops make up a large portion of the Shang army. These units represent the noble elite of the army. They have been given an armour save to represent their solidity as well as any potential advantage in armour.",
+    "",
+    "She. The mass of bow-armed warriors.",
+    "",
+    "Shu. Infantry armed with an array of spears or pole-arms.",
+    "",
+    "Skirmishers. Bow armed troops fighting as skirmishers.",
+    "",
+    "Ma. ‘Ma’ are chariots and this option allows units of Noble She to be upgraded to either 2-man or 3-man chariots—note that you must choose either 2-man OR 3-man chariots—you cannot include both in the same army. The 2-man chariots were the earliest development allowing their riders to skirmish from a distance much like the chariots of ancient Egypt. The 3-man chariots are heavier and do not skirmish—but not they are not ‘heavy chariots’ as defined by the rules—they are chariots based to the barrow edge with the stats as shown."
+  ]
+}

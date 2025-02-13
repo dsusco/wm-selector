@@ -1,0 +1,252 @@
+{
+  "specialRules": {
+    "Skirmish": {
+      "order": 1
+    },
+    "Warband": {
+      "order": 2
+    },
+    "Portents": {
+      "order": 3
+    },
+    "Allied Commander": {
+      "order": 4,
+      "text": [
+        "This leader cannot command non-Greek troops (i.e.: this commander can only command Paeonians and Thessalians)"
+      ]
+    },
+    "Allied Troops": {
+      "order": 5,
+      "text": [
+        "Any Greek options (Paeonians, Thessalians) cannot be brigaded with Galatians and can only be issued orders by their own Greek leader."
+      ]
+    }
+  },
+  "units": {
+    "Galatian Warriors": {
+      "order": 0,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "points": 35,
+      "min": 8,
+      "specialRules": [
+        "Warband"
+      ],
+      "upgrades": [
+        "Veteran Warriors",
+        "Bodyguard",
+        "Gaesati"
+      ]
+    },
+    "Galatian Skirmishers": {
+      "order": 2,
+      "type": "Infantry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": 30,
+      "max": 4,
+      "specialRules": [
+        "Skirmish"
+      ]
+    },
+    "Noble Cavalry": {
+      "order": 4,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 80,
+      "max": 1,
+      "specialRules": [
+        "Warband"
+      ]
+    },
+    "General": {
+      "order": 9,
+      "type": "General",
+      "attack": "+2",
+      "command": 8,
+      "size": 1,
+      "upgrades": [
+        "Portents"
+      ],
+      "points": 100,
+      "armyMax": 1,
+	  "armyMin": 1
+    },
+    "Tetrarch": {
+      "order": 10,
+      "type": "Subordinate",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "max": 2,
+      "points": 40
+    },
+    "Chieftain": {
+      "order": 11,
+      "type": "Subordinate",
+      "attack": "+1",
+      "command": 7,
+      "size": 1,
+      "max": 2,
+      "points": 30
+    },
+    "Paeonians": {
+      "order": 6,
+      "type": "Infantry",
+      "specialRules": [
+        "Skirmish",
+        "Allied Troops"
+      ],
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": 40,
+      "max": 1
+    },
+    "Paeonian Skirmishers": {
+      "order": 7,
+      "type": "Infantry",
+      "specialRules": [
+        "Skirmish",
+        "Allied Troops"
+      ],
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": 30,
+      "max": 1
+    },
+    "Thessalians": {
+      "order": 8,
+      "type": "Infantry",
+      "specialRules": [
+        "Allied Troops"
+      ],
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 45,
+      "max": 2
+    },
+    "Paeonian Cavalry": {
+      "order": 9,
+      "type": "Cavalry",
+      "specialRules": [
+        "Skirmish",
+        "Allied Troops"
+      ],
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": 40,
+      "max": 1
+    },
+    "Thessalian Cavalry": {
+      "order": 10,
+      "type": "Cavalry",
+      "specialRules": [
+        "Skirmish",
+        "Allied Troops"
+      ],
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 60,
+      "max": 1
+    },
+    "Greek Leader": {
+      "order": 11,
+      "max": "1max",
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "specialRules": [
+        "Allied Commander"
+      ],
+      "points": 80
+    }
+  },
+  "upgrades": {
+    "Portents": {
+      "order": 0,
+      "points": "+10",
+      "max": 1,
+      "specialRules": [
+        "Portents"
+      ]
+    },
+    "Veteran Warriors": {
+      "order": 1,
+      "type": "Infantry",
+      "specialRules": [
+        "Warband"
+      ],
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "max": 2,
+      "points": "+10"
+    },
+    "Bodyguard": {
+      "order": 2,
+      "type": "Infantry",
+      "specialRules": [
+        "Warband"
+      ],
+      "attack": 4,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "max": 2,
+      "points": "+20"
+    },
+    "Gaesati": {
+      "order": 3,
+      "type": "Infantry",
+      "specialRules": [
+        "Warband"
+      ],
+      "attack": 4,
+      "hits": 3,
+      "size": 3,
+      "max": 2,
+      "points": "+15"
+    }
+  },
+  "name": "Galatian Invasion of Greece",
+  "version": "Warmaster Ancients Ricks lists",
+  "group": "The Rise of Rome",
+  "order": 1,
+  "armyRules": [
+    "Galatian Warriors. These would be the bulk of the army drawn from the ordinary classes. They would be armed with javelins and shields but have no armour.",
+    "",
+    "Bodyguard. Galatian Warriors can be upgraded to Bodyguard with the stats and cost shown. A band of regular warriors armed with long swords, shields , with some wearing chain armour or helmets.",
+    "",
+    "Veteran Warriors. Galatian Warriors can be upgraded to Veteran Warriors with the stats and cost shown. Wearing looted armour, and some Greek weapons and equipment",
+    "",
+    "Gaesati. Galatian Warriors can be upgraded to Gaesati with the stats and cost shown. These warriors fought naked with a fanatic fervour disregarded their wounds. They were armed with shield and sword.",
+    "",
+    "Skirmishers: Young warriors who fought with javelin, slings or bow. They fought from a distance and avoided close combat.",
+    "",
+    "Paeonian Skirmishers. These were lightly armed troops who fought from a distance.",
+    "",
+    "Paeonian Infantry. Lightly armed troops, similar to peltasts, who fought as skirmishers but would be prepared to engage the enemy when circumstances permit.",
+    "",
+    "Noble Cavalry. Wealthier warriors armed with long swords, with spears or javelins, and with a shield. Some would have helmets and body armour."
+  ]
+}

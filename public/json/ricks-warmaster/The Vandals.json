@@ -1,0 +1,199 @@
+{
+  "specialRules": {
+    "Shock": {
+      "order": 1
+    },
+    "Skirmish": {
+      "order": 2
+    },
+    "Encampment": {
+      "order": 3,
+      "text": [
+        " During their battle against the Byzantines at Tricamarum the Vandals had a Gothic style encampment—with their womenfolk—so we have allowed for it to be included. Only one encampment is permitted regardless of army size. The encampment costs 50points and counts as a ‘troop’ unit. The encampment must be positioned before either army is deployed, and must be placed wholly within the player’s normal deployment zone or against the table edge if this is possible. Other units can be placed inside the encampment during deployment if you wish."
+      ]
+    },
+    "Gaiseric": {
+      "order": 4,
+      "text": [
+        "Gaiseric was the founder of the Vandal Kingdom in Africa and the most successful of all the Vandal Kings—he led his warriors in numerous raids: plundering the Mediterranean and reducing the Romans to a state of enfeebled terror. If the army is led by Gaiseric then a further +1 is added to the result of all combat engagements where either the General or any Leader are included in the engagement. Note that this bonus adds to the total result for the engagement in the same was as, for example, a single supporting stand. (Warlord rule + 1A)"
+      ]
+    },
+    "Womenfolk": {
+      "order": 5,
+      "text": [
+        "If an encampment is included, it can be upgraded to include a single unit of womenfolk. This costs nothing and does not count as a separate unit, instead it counts as part of the encampment. Womenfolk must be placed inside the encampment at the start of the battle and cannot move beyond it—any stands that are oblige to move outside the encampment for any reason are automatically removed as casualties."
+      ]
+    }
+  },
+  "units": {
+    "Heavy Cavalry": {
+      "order": 0,
+      "type": "Cavalry",
+      "upgrades": [
+        "Bodyguard",
+        "Dismount Cavalry",
+        "Degenerate Cavalry"
+      ],
+      "specialRules": [
+        "Shock"
+      ],
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 110,
+      "min": 4
+    },
+    "Moorish Cavalry": {
+      "order": 1,
+      "type": "Cavalry",
+      "specialRules": [
+        "Skirmish"
+      ],
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 60,
+      "max": 2
+    },
+    "Moorish Skirmishers": {
+      "order": 2,
+      "type": "Infantry",
+      "specialRules": [
+        "Skirmish"
+      ],
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": 30,
+      "max": 4
+    },
+    "Moorish Archers": {
+      "order": 3,
+      "type": "Infantry",
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "points": 40,
+      "max": 2
+    },
+    "Encampment": {
+      "order": 4,
+      "type": "Special",
+      "specialRules": [
+        "Encampment"
+      ],
+      "upgrades": [
+        "Womenfolk"
+      ],
+      "points": 50,
+      "max": "1max"
+    },
+    "General": {
+      "order": 5,
+      "type": "General",
+      "attack": "+2",
+      "command": 9,
+      "size": 1,
+      "points": 125,
+      "upgrades": [
+        "Gaiseric"
+      ],
+      "armyMax": 1,
+	  "armyMin": 1
+    },
+    "Leader": {
+      "order": 6,
+      "type": "Leader",
+      "attack": "+1",
+      "max": 2,
+      "command": 8,
+      "size": 1,
+      "points": 80
+    }
+  },
+  "upgrades": {
+    "Bodyguard": {
+      "order": 0,
+      "type": "Cavalry",
+      "attack": 4,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": "+10",
+      "max": "1max",
+      "specialRules": [
+        "Shock"
+      ]
+    },
+    "Womenfolk": {
+      "order": 1,
+      "type": "Infantry",
+      "attack": 2,
+      "hits": 4,
+      "size": 3,
+      "points": "free",
+      "specialRules": [
+        "Womenfolk"
+      ],
+      "max": 1
+    },
+    "Dismount Cavalry": {
+      "order": 2,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "max": "Half or more",
+      "points": "-50"
+    },
+    "Degenerate Cavalry": {
+      "order": 3,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "max": "All or none",
+      "points": "-30"
+    },
+    "Gaiseric": {
+      "order": 4,
+      "type": "General",
+      "size": 1,
+      "specialRules": [
+        "Gaiseric"
+      ],
+      "attack": "+3",
+      "command": 9,
+      "max": 1,
+      "points": "+25"
+    }
+  },
+  "armyRules": [
+    "Heavy Cavalry. The Vandals ruled their African domains as an aristocratic warrior elite—they fought as armoured cavalry carrying spear and javelins or spears. During the final decades of Vandal rule their cavalry were not considered the equals of those of the Byzantines—at least by the Byzantines themselves— and for this reason we have included the option to lose the shock rule and fight as ‘degenerate’ cavalry.",
+    "",
+    "Moorish Cavalry. These are unarmoured Moors carrying a small shield and generally armed with javelins. The Vandals and Moors were enemies for the most part—but mercenary Moors accompanied Gaiseric and it seems likely such troops would have been included by his successors when available.",
+    "",
+    "Moorish Skirmishers. These are Moorish infantry armed with either javelins, slings or bows.",
+    "",
+    "Moorish Archers. Moors armed with bows would probably fight as skirmishers—but we have included the option for archers to fight as formed units in order to give the army some variety.",
+    "",
+    "Bodyguard.  Regardless of the size of the army a single unit of Heavy Cavalry can be upgraded to ‘Bodyguard' or ‘Fideles’ - the household troops of the King.  Note that although ‘bodyguard’ they have been given ‘elite’ status with +1A. Note that Bodyguard cannot be dismounted.",
+    "",
+    "Encampment. During their battle against the Byzantines at Tricamarum the Vandals had a Gothic style encampment—with their womenfolk—so we have allowed for it to be included. Only one encampment is permitted regardless of army size. The encampment costs 50points and counts as a ‘troop’ unit. The encampment must be positioned before either army is deployed, and must be placed wholly within the player’s normal deployment zone or against the table edge if this is possible. Other units can be placed inside the encampment during deployment if you wish.",
+    "",
+    "Dismounted Cavalry. Vandal Heavy cavalry can be dismounted to fight on foot. The Vandals were dangerous sea raiders and their military power was mostly vested at sea. As such many of their raids were fought as infantry—for example when Gaiseric sacked Rome (forever giving Vandals a bad name!). For this reason we have allowed for fielding the army as a raiding force including infantry. Note that if you take this option at least half the Heavy cavalry must be dismounted—the army represents a sea-borne raiding force with limited transport for horses.",
+    "",
+    "Degenerate Cavalry. The final battles between the Vandals and Byzantines seem to have exposed the weakness of the Vandal cavalry—the Byzantines put this down to soft living and idleness—and unfortunately they got to write the history books. We have allowed for the option of fielding all Vandal Heavy cavalry as non-shock types to represent this.  If cavalry are downgraded in this way Bodyguard Cavalry cannot be taken."
+  ],
+  "name": "The Vandals",
+  "version": "Warmaster Ancients Ricks lists",
+  "group": "The Dark Ages",
+  "order": 10
+}

@@ -1,0 +1,137 @@
+{
+  "specialRules": {
+    "Warband": {
+      "order": 1
+    },
+    "Skirmish": {
+      "order": 2
+    },
+    "Portents": {
+      "order": 3
+    }
+  },
+  "units": {
+    "Warriors": {
+      "order": 0,
+      "type": "Infantry",
+      "attack": 3,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "specialRules": [
+        "Warband"
+      ],
+      "min": 8,
+      "points": 40
+    },
+    "Nobles": {
+      "order": 1,
+      "type": "Infantry",
+      "attack": 4,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "specialRules": [
+        "Warband"
+      ],
+      "max": 4,
+      "points": 55
+    },
+    "Skirmishers": {
+      "order": 2,
+      "type": "Infantry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "specialRules": [
+        "Warband",
+        "Skirmish"
+      ],
+      "max": 4,
+      "points": 30
+    },
+    "Peltasts": {
+      "order": 3,
+      "type": "Infantry",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "specialRules": [
+        "Warband",
+        "Skirmish"
+      ],
+      "max": 6,
+      "points": 40
+    },
+    "Cavalry": {
+      "order": 4,
+      "type": "Cavalry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "max": 2,
+      "points": 40
+    },
+    "General": {
+      "order": 5,
+      "type": "General",
+      "upgrades": [
+        "Portents"
+      ],
+      "command": 8,
+      "attack": "+2",
+      "size": 1,
+      "points": 100,
+      "armyMax": 1,
+	  "armyMin": 1
+    },
+    "Superior Tribal Chief": {
+      "order": 6,
+      "type": "Subordinate",
+      "max": 2,
+      "command": 8,
+      "attack": "+1",
+      "size": 1,
+      "points": 40
+    },
+    "Tribal Chieftain": {
+      "order": 7,
+      "type": "Subordinate",
+      "max": 2,
+      "command": 7,
+      "attack": "+1",
+      "size": 1,
+      "points": 30
+    }
+  },
+  "upgrades": {
+    "Portents": {
+      "order": 1,
+      "points": "+10",
+      "specialRules": [
+        "Portents"
+      ]
+    }
+  },
+  "armyRules": [
+    "Warriors.  Thracians were fierce fighters who fought in comparatively dense formations and are therefore considered warband. They carry spears, shields, javelins and might be armed with knives or swords if they are lucky.",
+    "",
+    "Nobles. These are the best equipped of the Thracians and we have treated then as the most aggressive and dangerous. Some Thracians carried weapons with long, curving blades which may have been similar to the Dacian flax of later times. These are known as rhomphaia and came in single-handed and double handed versions.",
+    "",
+    "Skirmishers. The usual slingers and javelin armed troops.",
+    "",
+    "Cavalry. These are javelin armed skirmishing cavalry.",
+    "",
+    "Peltasts. The Thracians whom lived in more mountainous terrain developed hit-and-run tactics and would often ambush their enemies, exploiting their greater mobility and familiarity with the landscape."
+  ],
+  "name": "Thracian Hill Tribes",
+  "version": "Warmaster Ancients Ricks lists",
+  "group": "Greece and the Near East",
+  "order": 21
+}

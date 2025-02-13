@@ -7,4 +7,5 @@ export default {
   'Warmaster Medieval Armies': 'Warmaster Medieval Armies',
   'Warmaster Evolution': 'Warmaster Evolution',
   'The Battle of Five Armies': 'The Battle of Five Armies',
+  'Warmaster Ancients Ricks lists': 'Warmaster Ancients Ricks lists'
 };

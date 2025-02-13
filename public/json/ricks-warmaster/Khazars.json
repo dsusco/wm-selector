@@ -1,0 +1,244 @@
+{
+  "specialRules": {
+    "Shock": {
+      "order": 1
+    },
+    "Skirmish": {
+      "order": 2
+    },
+    "Unreliable": {
+      "order": 3
+    },
+    "Khagan": {
+      "order": 4,
+      "text": [
+        "The Khagan replaces the Beg at a cost saving of –10pts. The Khagan is a non-combatant carried in a wagon and therefore has an Attack bonus of +0. Disregard the ‘unreliable’ penalty for units within 20cm of the Khagan. The Khagan’s maximum move is reduced to 40cm to take account of his wagon."
+      ]
+    }
+  },
+  "units": {
+    "Nobles": {
+      "order": 0,
+      "type": "Cavalry",
+      "specialRules": [
+        "Shock"
+      ],
+      "attack": 3,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "armour": "5+",
+      "points": 115,
+      "min": 2,
+      "max": 6
+    },
+    "Mounted Skirmishers": {
+      "order": 1,
+      "type": "Cavalry",
+      "specialRules": [
+        "Skirmish"
+      ],
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": 40,
+      "min": 4,
+      "upgrades": [
+        "Royal Army"
+      ]
+    },
+    "Burtas": {
+      "order": 2,
+      "type": "Cavalry",
+      "specialRules": [
+        "Skirmish"
+      ],
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "armour": "6+",
+      "points": 60,
+      "max": 4
+    },
+    "Allied Heavy Cavalry": {
+      "order": 3,
+      "type": "Cavalry",
+      "specialRules": [
+        "Shock",
+        "Unreliable"
+      ],
+      "attack": 3,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "armour": "5+",
+      "points": 105,
+      "max": 3
+    },
+    "Allied Light Cavalry": {
+      "order": 4,
+      "type": "Cavalry",
+      "specialRules": [
+        "Skirmish",
+        "Unreliable"
+      ],
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "armour": "6+",
+      "points": 50,
+      "max": 4
+    },
+    "Allied Skirmishers": {
+      "order": 5,
+      "type": "Cavalry",
+      "specialRules": [
+        "Skirmish",
+        "Unreliable"
+      ],
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": 30,
+      "max": 4
+    },
+    "Levy": {
+      "order": 6,
+      "type": "Infantry",
+      "attack": 2,
+      "hits": 3,
+      "size": 3,
+      "armour": "6+",
+      "points": 35,
+      "max": 4
+    },
+    "Archers": {
+      "order": 7,
+      "type": "Infantry",
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "points": 40,
+      "max": 2
+    },
+    "Slav Warriors": {
+      "order": 8,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "armour": "6+",
+      "points": 45,
+      "max": 8,
+      "upgrades": [
+        "Guards"
+      ]
+    },
+    "Slav Skirmishers": {
+      "order": 9,
+      "type": "Infantry",
+      "specialRules": [
+        "Skirmish"
+      ],
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": 30,
+      "max": 2
+    },
+    "Beg": {
+      "order": 10,
+      "type": "General",
+      "attack": "+2",
+      "command": 9,
+      "size": 1,
+      "points": 125,
+      "upgrades": [
+        "Khagan"
+      ]
+    },
+    "Leader": {
+      "order": 11,
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 80,
+      "max": 2
+    }
+  },
+  "upgrades": {
+    "Khagan": {
+      "order": 0,
+      "type": "General",
+      "attack": "+0",
+      "points": "-10",
+      "specialRules": [
+        "Khagan"
+      ],
+      "command": 9,
+      "size": 1,
+      "max": 1,
+      "armyMax": 1,
+	  "armyMin": 1
+    },
+    "Guards": {
+      "order": 1,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": "+25",
+      "max": 1
+    },
+    "Royal Army": {
+      "order": 2,
+      "type": "Cavalry",
+      "attack": 1,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "points": "+20",
+      "specialRules": [
+        "Skirmish"
+      ],
+      "max": 4
+    }
+  },
+  "armyRules": [
+    "Nobles. Khazar heavy cavalry, typical of the steppe, armed with a long lance (akin to ‘kontos’) sword, bow and small round shield. The rider would wear armour  and horses would be lightly armoured if at all.",
+    "",
+    "Mounted Skirmishers. These are bow armed but are considered less proficient that some horse archers such as Parthians, hence the standard 15cm missile range. They can be rated as ‘Royal Army’ as noted below—improving their bow range to 30cm.",
+    "",
+    "Burtas. These are riders armed with javelins, swords, bows and small shields—typical of the more lightly armoured steppe cavalry. This category also represents all comparable troops types in the Khazar army including Kasogians.",
+    "",
+    "Allied Heavy Cavalry. These represent subject or associated tribes of dubious discipline—hence the ‘unreliable’ status. They represent Ras, Magyar and Bulgarian horsemen armed in the same way as Khazar Nobles.",
+    "",
+    "Allied Light Cavalry. These represent Ras or Oghuz light cavalry armed with swords, javelins, bows and light shields. We have rated these as ‘unreliable’ to reflect their status as allies or subjects—although their efficiency on the battlefield was good enough. The same warriors could alternatively be included as Burtas shoud you wish to consider them as reliable—their appearance would not significantly different.",
+    "",
+    "Allied Skirmishers. Similar to Khazar mounted Skirmishers in all respects but rated as unreliable.",
+    "",
+    "Levy. Spearmen of low quality and little training or experience— hence represented with a reduced Attack stat. These can be upgraded to Guards as noted below.",
+    "",
+    "Archers. These are the standard bowmen armed with bows and swords.",
+    "",
+    "Slav Warriors.  Slavs usually fight in dense formations with shields and spears, but also carry axes as sidearms and some might be armed with double handed axes.",
+    "",
+    "Slav Skirmishers. Lightly armed Slavs carrying javelins.",
+    "",
+    "Guards. A small contingent of elite spearmen was sometimes deployed in battle. Up to 1 unit per 1000 points can be upgraded in this way with the stats shown and an additional cost of +25 points per unit.",
+    "",
+    "Royal Army. These are more disciplined and better horse archers than the standard Khazar mounted skirmishers. Up to 4 Mounted Skirmisher units per 1000pts can be up-graded in this way at a cost of +20pts per unit."
+  ],
+  "name": "Khazars",
+  "version": "Warmaster Ancients Ricks lists",
+  "group": "The Dark Ages",
+  "order": 5
+}

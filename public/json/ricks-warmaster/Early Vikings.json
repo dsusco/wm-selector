@@ -1,0 +1,166 @@
+{
+  "specialRules": {
+    "Shieldwall": {
+      "order": 1
+    },
+    "Fanatics": {
+      "order": 2
+    },
+    "Skirmishers": {
+      "order": 3
+    }
+  },
+  "units": {
+    "Hirdmen": {
+      "order": 0,
+      "type": "Infantry",
+      "attack": 4,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 75,
+      "max": 1,
+      "specialRules": [
+        "Shieldwall"
+      ]
+    },
+    "Vikings": {
+      "order": 1,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 50,
+      "min": 6,
+      "specialRules": [
+        "Shieldwall"
+      ],
+      "upgrades": [
+        "Seasoned Vikings"
+      ]
+    },
+    "Berserkers": {
+      "order": 2,
+      "type": "Infantry",
+      "attack": 4,
+      "hits": 3,
+      "size": 3,
+      "points": 50,
+      "max": 1,
+      "specialRules": [
+        "Fanatics"
+      ]
+    },
+    "Archers": {
+      "order": 3,
+      "type": "Infantry",
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "points": 40,
+      "max": 1
+    },
+    "Skirmishers": {
+      "order": 4,
+      "type": "Infantry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": 30,
+      "max": 3,
+      "specialRules": [
+        "Skirmishers"
+      ]
+    },
+    "Horsemen": {
+      "order": 5,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 70,
+      "max": 1
+    },
+    "General": {
+      "order": 6,
+      "type": "General",
+      "attack": "+2",
+      "command": 8,
+      "size": 1,
+      "points": 100,
+      "upgrades": [
+        "King Guthrum"
+      ]
+    },
+    "Jarl": {
+      "order": 7,
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 80,
+      "max": 1
+    },
+    "Subordinates": {
+      "order": 8,
+      "type": "Subordinate",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 40,
+      "max": 1
+    }
+  },
+  "upgrades": {
+    "Seasoned Vikings": {
+      "order": 0,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": "+15",
+      "max": 2,
+      "specialRules": [
+        "Shieldwall"
+      ]
+    },
+    "King Guthrum": {
+      "order": 1,
+      "type": "General",
+      "attack": "+2",
+      "command": 9,
+      "size": 1,
+      "points": "+25",
+      "max": 1,
+      "armyMax": 1,
+	  "armyMin": 1
+    }
+  },
+  "armyRules": [
+    "Hirdmen. The Hirdmen where the best, experienced and fulltime warriors in the Danish army. Personal retainers of the King or Warlord. Carrying the best armour, equipped with long axes (Dan-ax), swords, shields, chainmail and good helmets. Most had richly decorated equipment and many arm rings which where given to them for deeds of exceptional bravery or loyalty. All in all feared warriors with great renown.",
+    "",
+    "Vikings. The Vikings where the main part of the Danish army which raided many parts of Europe and indeed further then that. These paid warriors banded in their villages and swore oaths to their jarls to follow them into the longships for seasonal campaigns away from home. They had shields and spears, most had helmets, axes and some leather armour, some had swords and a few even had chainmail.",
+    "",
+    "Seasoned Vikings. Up to 2 units of Vikings per 1000 points of army size can be upgraded to seasoned Vikings with the stats shown. The seasoned Vikings represent veterans in the Danish army, usually retainers of Jarl. These warriors had become experienced and rich and had obtained better equipment in the process. They carried shields, spears and swords or long axes (the two handed Dan-ax) and chainmail or equivalent. These warriors made sure the shieldwall kept together and would often be at the thick of the fighting.",
+    "",
+    "Berserkers. These were the shock troops of the army. It is unlikely they fought in units, but these terrifying madmen where a sheer terror to face on the field of battle. They are known to work themselves up into a frenzy with mushrooms and alcohol, and made sure they where the first to the fight. The mushrooms also had a steroid effect which gave the users a boost in muscle growth, endurance and pain threshold. Making the users even bigger, taller and more aggressive then the average Dane, who where already fierce warriors taller then the most Europeans. The drug had its cost though, for the users became quite mad and unstable in the process, known to jump overboard at sea or bite chunks out of shields during preparation of combat.",
+    "Some stories tell about the draping of wolf or bearskin (hence berserker =bearskin wearer), or that they where more animal then men. (Behaving like bears) And some tales tell of ‘bare shirted’ warriors, (warriors with no armour). But whatever they looked like, or wore during battle, they scared the enemy senseless. For game purposes these frenzied warriors can be fielded in a unit.",
+    "",
+    "Skirmishers. These were mostly lightly armoured men with woodsmen axes, some javelins, throwing axes or a light bow. These were often the poor who hoped to gain some money or loot from which they could get better equipment so that they could join the shieldwall with the real warriors, who would also receive the bigger share of the loot.",
+    "",
+    "Horsemen. A larger Danish army would often field some horsemen for mobility. These horsemen where armed with thrusting spears, axes and shields. These warriors weren’t especially trained or gifted with cavalry tactics. Fighting from horseback in an age of where many infantry were spears-armed and able to form shieldwalls wasn’t all that useful. The Danes used horsemen to run down the enemy as the battle was over. Most warriors in the army would frown upon the horsemen for this reason. The place for good warriors was naturally at the front in the shieldwall where they could gain renown and loot.",
+    "",
+    "Archers. The Vikings did employ some archers on a small scale. Mostly during ship to ship combat, and not usually during raids, as the raid would rely on surprise, speed and shock when archers weren’t very useful.",
+    "",
+    "King Guthrum. The army’s General can be uprated to King Guthrum as shoiwn. Guthrum was a warlord which conquered many parts of Wessex during the late 9th century Britain. After a long war and many sieges he was finally defeated by Alfred the Great during the battle of Edington. This ended the thread to Alfred and after the baptism of Guthrum led to the establishment of the Danelaw in England."
+  ],
+  "name": "Early Danes/Vikings",
+  "version": "Warmaster Ancients Ricks lists",
+  "group": "The Dark Ages",
+  "order": 4
+}
