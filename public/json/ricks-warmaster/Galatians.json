@@ -1,0 +1,260 @@
+{
+  "specialRules": {
+    "Skirmish": {
+      "order": 1
+    },
+    "Warband": {
+      "order": 2
+    },
+    "Scythed Chariots": {
+      "order": 3
+    },
+    "Portents": {
+      "order": 4
+    }
+  },
+  "units": {
+    "Galatian Warriors": {
+      "order": 0,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "points": 35,
+      "min": 8,
+      "specialRules": [
+        "Warband"
+      ],
+      "upgrades": [
+        "Veteran Warriors",
+        "Bodyguard",
+        "Gaesati"
+      ]
+    },
+    "Cappadocian Infantry": {
+      "order": 1,
+      "type": "Infantry",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": 40,
+      "max": 2,
+      "specialRules": [
+        "Skirmish"
+      ]
+    },
+    "Galatian Skirmishers": {
+      "order": 2,
+      "type": "Infantry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": 30,
+      "max": 4,
+      "specialRules": [
+        "Skirmish"
+      ]
+    },
+    "Cappadocian Skirmishers": {
+      "order": 3,
+      "type": "Infantry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": 30,
+      "max": 4,
+      "specialRules": [
+        "Skirmish"
+      ]
+    },
+    "Noble Cavalry": {
+      "order": 4,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 80,
+      "max": 1,
+      "specialRules": [
+        "Warband"
+      ]
+    },
+    "Cappadocian Cavalry": {
+      "order": 5,
+      "type": "Cavalry",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 60,
+      "max": 1,
+      "specialRules": [
+        "Skirmish"
+      ]
+    },
+    "Cappadocian Mounted Skirmishers": {
+      "order": 6,
+      "type": "Cavalry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": 40,
+      "max": 2,
+      "specialRules": [
+        "Skirmish"
+      ]
+    },
+    "Chariots": {
+      "order": 7,
+      "type": "Chariot",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 80,
+      "max": 3,
+      "specialRules": [
+        "Skirmish"
+      ]
+    },
+    "Scythed Chariots": {
+      "order": 8,
+      "type": "Chariot",
+      "attack": 4,
+      "hits": 3,
+      "armour": "5+",
+      "size": 1,
+      "points": 50,
+      "max": 1,
+      "specialRules": [
+        "Scythed Chariots"
+      ]
+    },
+    "General": {
+      "order": 9,
+      "type": "General",
+      "attack": "+2",
+      "command": 8,
+      "size": 1,
+      "upgrades": [
+        "Portents",
+        "Chariot Mount"
+      ],
+      "points": 100,
+      "armyMax": 1,
+	  "armyMin": 1
+    },
+    "Tetrarch": {
+      "order": 10,
+      "type": "Subordinate",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "max": 2,
+      "upgrades": [
+        "Chariot Mount"
+      ],
+      "points": 40
+    },
+    "Chieftain": {
+      "order": 11,
+      "type": "Subordinate",
+      "attack": "+1",
+      "command": 7,
+      "size": 1,
+      "max": 2,
+      "upgrades": [
+        "Chariot Mount"
+      ],
+      "points": 30
+    }
+  },
+  "upgrades": {
+    "Portents": {
+      "order": 0,
+      "points": "+10",
+      "specialRules": [
+        "Portents"
+      ],
+      "max": 1
+    },
+    "Veteran Warriors": {
+      "order": 1,
+      "type": "Infantry",
+      "specialRules": [
+        "Warband"
+      ],
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "max": 2,
+      "points": "+10"
+    },
+    "Bodyguard": {
+      "order": 2,
+      "type": "Infantry",
+      "specialRules": [
+        "Warband"
+      ],
+      "attack": 4,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "max": 2,
+      "points": "+20"
+    },
+    "Gaesati": {
+      "order": 3,
+      "type": "Infantry",
+      "specialRules": [
+        "Warband"
+      ],
+      "attack": 4,
+      "hits": 3,
+      "size": 3,
+      "max": 2,
+      "points": "+15"
+    },
+    "Chariot Mount": {
+      "order": 4,
+      "type": "Chariot Mount",
+      "attack": "+1",
+      "size": 1,
+      "points": "+10",
+      "max": 2
+    }
+  },
+  "name": "Galatians",
+  "version": "Warmaster Ancients Ricks lists",
+  "group": "The Rise of Rome",
+  "order": 2,
+  "armyRules": [
+    "Galatian Warriors. These would be the bulk of the army drawn from the ordinary classes. They would be armed with javelins and shields but have no armour.",
+    "",
+    "Bodyguard. Galatian Warriors can be upgraded to Bodyguard with the stats and cost shown. A band of regular warriors armed with long swords, shields , with some wearing chain armour or helmets.",
+    "",
+    "Veteran Warriors. Galatian Warriors can be upgraded to Veteran Warriors with the stats and cost shown. Wearing looted armour, and some Greek weapons and equipment",
+    "",
+    "Gaesati. Galatian Warriors can be upgraded to Gaesati with the stats and cost shown. These warriors fought naked with a fanatic fervour disregarded their wounds. They were armed with shield and sword.",
+    "",
+    "Skirmishers: Young warriors who fought with javelin, slings or bow. They fought from a distance and avoided close combat.",
+    "",
+    "Cappadocian & Paeonian Skirmishers. These were lightly armed troops who fought from a distance.",
+    "",
+    "Cappadocian & Paeonian Infantry. Lightly armed troops, similar to peltasts, who fought as skirmishers but would be prepared to engage the enemy when circumstances permit.",
+    "",
+    "Noble Cavalry. Wealthier warriors armed with long swords, with spears or javelins, and with a shield. Some would have helmets and body armour.",
+    "",
+    "Chariots. Light two-horsed chariots with a driver and warrior. Armed with javelin and shield they fought like skirmishing cavalry.",
+    "",
+    "Scythed chariots.  A chariot festooned with scythes and blades whose sole purpose was to drive into the enemy to disrupt their formation."
+  ]
+}
