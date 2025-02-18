@@ -221,7 +221,7 @@
     "Doombull": {
       "order": 7,
       "text": [
-        "Causes Terror. Beastherd, Herdkin and Bestigors joined by a Doombull will become subject to Bloodlust in the same way as Minotaur units, until the end of the following command phase."
+        "A unit joined by a Doombull cause terror. Also, Gors, Ungors and Bestigors joined by a Doombull will become subject to Bloodlust in the same way as Minotaur units, until the end of the following Beastmen Command phase."
       ]
     },
     "Tuskgor Chariot": {
@@ -267,9 +267,9 @@
       "roll": 6,
       "range": "30cm",
       "text": [
-        "*The Beastman Herd rise on the Shaman’s command. Emboldened by his fervour they charge at the enemy with unbridled fury.*",
+        "*A unit joined by a Doombull cause terror. Also, Gors, Ungors and Bestigors joined by a Doombull will become subject to Bloodlust in the same way as Minotaur units, until the end of the following Beastmen Command phase.*",
         "",
-        "This spell can be cast on all Beastherd, Herdkin and Centigors units engaged in close combat and within range regardless of whether the Shaman can see them or not. When the spell is successfully cast, each affected unit receives additional +1 Attack per stand (including character stands) for the duration of its first following combat engagement. Additional Attack bonus does not apply when these units advance into next enemies."
+        "A unit joined by a Doombull cause terror. Also, Gors, Ungors and Bestigors joined by a Doombull will become subject to Bloodlust in the same way as Minotaur units, until the end of the following Beastmen Command phase."
       ]
     }
   ]

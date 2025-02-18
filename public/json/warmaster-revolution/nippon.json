@@ -100,7 +100,6 @@
       "type": "Cavalry",
       "attack": 2,
       "hits": 3,
-      "armour": "5+",
       "size": 3,
       "points": 40,
       "max": 3,

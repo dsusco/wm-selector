@@ -182,7 +182,7 @@
     "Trolls": {
       "order": 2,
       "text": [
-        "Trolls are witless creatures that find it hard to remember orders let alone obey them. To represent this, any Command penalty applied for distance between the character and the Troll unit is always doubled. So at 20cm no penalty applies, at 40cm -2, at 60cm -4, and so on."
+        "When trying to issue an order to a unit of Trolls or to a brigade that contains a unit of Trolls, any Command penalty applied for distance between the character and the Troll unit is always doubled. So at 20cm no penalty applies, at 40cm -2, at 60cm -4, and so on. Trolls can regenerate wounds - in each round of combat after whole stands have been removed Trolls automatically regenerate one outstanding hit. If no hits are left over after removing whole stands then regeneration has no effect. Regenerated hits still count towards the combat result for the round."
       ]
     },
     "Harpies": {

@@ -4,6 +4,11 @@
 
     <p>Choose an army from the lists below, select your units and print what you want!</p>
 
+    <ArmyListAccordion :title="'Warmaster Revolution'">
+      <a target="_blank" title="Warmaster Revolution Rules" href="/pdfs/WMR 2.0.1.pdf"><span>Warmaster Revolution Compendium</span></a>
+      <a target="_blank" title="Warmaster Revolution Armies" href="/pdfs/WMR_Armies2.24.pdf"><span>Warmaster Revolution Armies</span></a>
+    </ArmyListAccordion>
+
     <span class="downloads">
       <a target="_blank" title="Warmaster Rulebook – Part 1" href="/pdfs/Warmaster-RuleBook.pdf"><span>Warmaster Rulebook – Part 1</span></a>
       <a target="_blank" title="Warmaster Rulebook – Part 2" href="/pdfs/WarmasterRulebookPart2.pdf"><span>Warmaster Rulebook – Part 2</span></a>
@@ -18,11 +23,6 @@
 
     <ArmyListAccordion :title="'Warmaster Trial Armies Compendium 2009'">
       <a target="_blank" title="Warmaster Trial Armies Compendium 2009" href="/pdfs/Warmaster_Trial_Armies_2009.pdf"><span>Warmaster Trial Armies Compendium 2009</span></a>
-    </ArmyListAccordion>
-
-    <ArmyListAccordion :title="'Warmaster Revolution'">
-      <a target="_blank" title="Warmaster Revolution Rules" href="/pdfs/WMR 2.0.pdf"><span>Warmaster Revolution Rules</span></a>
-      <a target="_blank" title="Warmaster Revolution Armies" href="/pdfs/WMR_Armies2.23.pdf"><span>Warmaster Revolution Armies</span></a>
     </ArmyListAccordion>
 
     <ArmyListAccordion :title="'Warmaster Ancients'">
