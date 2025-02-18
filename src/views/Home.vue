@@ -4,17 +4,17 @@
 
     <p>Choose an army from the lists below, select your units and print what you want!</p>
 
-    <ArmyListAccordion :title="'Warmaster Revolution'">
-      <a target="_blank" title="Warmaster Revolution Rules" href="/pdfs/WMR 2.0.1.pdf"><span>Warmaster Revolution Compendium</span></a>
-      <a target="_blank" title="Warmaster Revolution Armies" href="/pdfs/WMR_Armies2.24.pdf"><span>Warmaster Revolution Armies</span></a>
-    </ArmyListAccordion>
-
     <span class="downloads">
       <a target="_blank" title="Warmaster Rulebook – Part 1" href="/pdfs/Warmaster-RuleBook.pdf"><span>Warmaster Rulebook – Part 1</span></a>
       <a target="_blank" title="Warmaster Rulebook – Part 2" href="/pdfs/WarmasterRulebookPart2.pdf"><span>Warmaster Rulebook – Part 2</span></a>
       <a target="_blank" title="Warmaster Errata" href="/pdfs/Warmaster_LRB_Errata.pdf"><span>Warmaster Errata</span></a>
       <a target="_blank" title="Rules Update (included in the PDFs but not the printed rulebook)" href="/pdfs/Warmaster_Rules_Update.pdf"><span>Rules Update (included in the PDFs but not the printed rulebook)</span></a>
     </span>
+
+    <ArmyListAccordion :title="'Warmaster Revolution'">
+      <a target="_blank" title="Warmaster Revolution Rules" href="/pdfs/WMR 2.0.1.pdf"><span>Warmaster Revolution Compendium</span></a>
+      <a target="_blank" title="Warmaster Revolution Armies" href="/pdfs/WMR_Armies2.24.pdf"><span>Warmaster Revolution Armies</span></a>
+    </ArmyListAccordion>
 
     <ArmyListAccordion :title="'Warmaster Armies'">
       <a target="_blank" title="Warmaster Armies" href="/pdfs/Warmaster_Armies.pdf"><span>Warmaster Armies</span></a>
