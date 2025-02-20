@@ -12,7 +12,7 @@ export default new Vuex.Store({
   getters,
   mutations,
   state: {
-    activeArmyListAccordion: 'Warmaster Armies',
+    activeArmyListAccordion: 'Warmaster Revolution',
     armyList: '',
     armyRules: undefined,
     errors: [],
