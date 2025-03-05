@@ -1,0 +1,218 @@
+{
+  "specialRules": {
+    "Warband": {
+      "order": 1
+    },
+    "Unreliable": {
+      "order": 2
+    },
+    "Skirmish": {
+      "order": 3
+    },
+    "Elephants": {
+      "order": 4
+    }
+  },
+  "units": {
+    "Celtic Cavalry": {
+      "order": 0,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "max": 3,
+      "specialRules": [
+        "Warband",
+        "Unreliable"
+      ],
+      "upgrades": [
+        "Heavy Cavalry"
+      ],
+      "points": 70
+    },
+    "Numidians": {
+      "order": 1,
+      "type": "Cavalry",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "min": 2,
+      "max": 8,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "upgrades": [
+        "Light Cavalry"
+      ],
+      "points": 50
+    },
+    "Mercenaries": {
+      "order": 2,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "min": 4,
+      "points": 45,
+      "upgrades": [
+        "Citizen Militia"
+      ]
+    },
+    "Veterans": {
+      "order": 3,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 4,
+      "armour": "5+",
+      "size": 3,
+      "max": 4,
+      "points": 70
+    },
+    "Celts": {
+      "order": 4,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "max": 8,
+      "points": 25,
+      "specialRules": [
+        "Warband",
+        "Unreliable"
+      ]
+    },
+    "Skirmishers": {
+      "order": 5,
+      "type": "Infantry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "max": 4,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "points": 30
+    },
+    "Elephants": {
+      "order": 6,
+      "type": "Elephant",
+      "attack": 4,
+      "range": 15,
+      "hits": 3,
+      "armour": "5+",
+      "size": 1,
+      "points": 40,
+      "max": 3,
+      "specialRules": [
+        "Elephants"
+      ]
+    },
+    "General": {
+      "order": 7,
+      "type": "General",
+      "attack": "+2",
+      "command": 9,
+      "size": 1,
+      "points": 125,
+      "upgrades": [
+        "Hannibal"
+      ]
+    },
+    "Leader": {
+      "order": 8,
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 80,
+      "max": 1
+    },
+    "Subordinate": {
+      "order": 9,
+      "type": "Subordinate",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 40,
+      "max": 2
+    }
+  },
+  "upgrades": {
+    "Hannibal": {
+      "order": 0,
+      "type": "General",
+      "attack": "+2",
+      "command": "10/9",
+      "size": 1,
+      "points": "+25"
+    },
+    "Heavy Cavalry": {
+      "order": 1,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": "+10",
+      "max": 1
+    },
+    "Light Cavalry": {
+      "order": 2,
+      "type": "Cavalry",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": "+10",
+      "max": 4,
+      "specialRules": [
+        "Skirmish"
+      ]
+    },
+    "Citizen Militia": {
+      "order": 3,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": "-10",
+      "max": 8,
+      "specialRules": [
+        "Unreliable"
+      ]
+    }
+  },
+  "name": "2nd Punic War Carthaginians",
+  "version": "Rick's Warmaster",
+  "group": "Greece and the Near East",
+  "order": 23,
+  "armyRules": [
+    "Celtic Cavalry. Better equipped cavalry—armed with long swords, spears or javelins, carrying shields and some wearing mail and/or helmets. Could be recruited from Celtiberians but more commonly from the Celtic tribes of northern Italy.",
+    "",
+    "Heavy Cavalry. Up to 1 unit per thousand points of Celtic cavalry cab be upgraded to Heavy Cavalry at the cost shown. The elite of the native Carthaginian cavalry. Armed and fight as late Hellenistic cavalry with body armour, spear, and shield. Though their reputation and equipment might suggest ‘shock’ cavalry this would be an accurate reflection of how they fought. Could also be veteran Celtic or Iberian cavalry.",
+    "",
+    "Numidians. Lightly equipped troops mounted on ponies—their usual weapons were javelins and a light shield. Their reputation as skilled riders able to turn and counter-strike has earned them the extra attack over normal skirmisher types.",
+    "",
+    "Light Cavalry. Up to 4 units per thousand of Numidians can be upgraded to Light Cavalry with the stats and points cost shown. These represent Spanish, Celtic or Italian cavalry armed with javelins and shield.",
+    "",
+    "Mercenaries. May be represented by Celtic, Spanish, Italians or native Carthaginians—we treat them as solid professional and experienced fighters. They form a good proportion of all the armies of the war—and are therefore given the 4 minimum units. They are carry shields and swords and wear a mix of armour—some captured—and most are armed with javelins or light spears.",
+    "",
+    "Citizen Militia. Mercenaries can be regarded as Citizen Militia for a reduction in points as shown. These represent infantry from the Carthaginian settlements of Africa and Spain. They are poor troops compared to the mercenaries—probably armed with shields and spears.",
+    "",
+    "Veterans. These are experienced infantry units equipped with captured armour—and hence relatively well equipped as well as battle hardened. These are the best units—many warriors fighting through the whole war— with a reputation for doggedness and determination. At Zama their intervention could have doomed the Roman army—were it not for the return  of the victorious Numidians of Massinissa.",
+    "",
+    "Celts. Gallic, Celitiberian or Ligurian allies. They can make up a sizeable portion of the army—but lack discipline and are consequently sometimes unpredictable. They fight with their native equipment comprising a large sword, shield and—in some cases—light spears. Ligurians—though not Celts—are similar enough in fighting style and equipage to be included amongst their ranks.",
+    "",
+    "Skirmishers. These could be any lightly equipped skirmishing infantry from any nation within the Carthaginian sphere—most would be javelin armed whether Libyans, Numidians, Spanish, Celtiberians, Celts or Italians. Balearic troops were famously armed with slings.",
+    "",
+    "Elephants. Famously employed by Hannibal when crossing the Alps—yet nonetheless unable to move over steep hills! Carthaginian elephants were smaller than the Indian elephants used by Successor armies—they probably didn’t carry war towers. Note that we have given the values for an elephant as a single unit mounted onto a base 40 x 40mm. Players who wish to revert to the original rules can substitute for a single unit of three at 150 points should they wish.",
+    "",
+    "Hannibal. Hannibal has the same rule as described in Warmaster—he begins the game with a Command value of 10—this is reduced to 9 if he fails an order on the roll of an 11 or 12."
+  ]
+}

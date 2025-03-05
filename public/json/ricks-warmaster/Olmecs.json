@@ -1,0 +1,151 @@
+{
+  "specialRules": {
+    "Warband": {
+      "order": 1
+    },
+    "Skirmish": {
+      "order": 2
+    },
+    "Blessing of the Sun God": {
+      "order": 3,
+      "text": [
+        "This is an optional upgrade for the army Commander, cost 25 points, for this a General would be able re-roll any number of failed command rolls (like with portents) but at the cost of 1 friendly element (not unit), the element is taken from the closes unit each time he tries, the element would be sacrificed to the Sun God and be removed from the table, the general would then be able to continue to rolling his command again is successful. This can only be used on a unit once per turn, but can be used on another units during that turn. The unit the sacrifice comes from must all be totally sacrificed before another unit can be used for sacrificial purposes."
+      ]
+    }
+  },
+  "units": {
+    "Nobles": {
+      "order": 0,
+      "type": "Infantry",
+      "specialRules": [
+        "Warband"
+      ],
+      "attack": 4,
+      "hits": 3,
+      "size": 3,
+      "max": 6,
+      "points": 45,
+      "upgrades": [
+        "Quilted Nobles"
+      ]
+    },
+    "Tribal Warriors": {
+      "order": 1,
+      "type": "Infantry",
+      "specialRules": [
+        "Warband"
+      ],
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "min": 8,
+      "points": 35
+    },
+    "Tribesmen": {
+      "order": 2,
+      "type": "Infantry",
+      "specialRules": [
+        "Warband"
+      ],
+      "attack": 2,
+      "hits": 3,
+      "size": 3,
+      "min": 8,
+      "points": 25
+    },
+    "Skirmishers": {
+      "order": 3,
+      "type": "Infantry",
+      "specialRules": [
+        "Warband",
+        "Skirmish"
+      ],
+      "attack": 1,
+      "hits": 3,
+      "range": 15,
+      "size": 3,
+      "min": 2,
+      "points": 30
+    },
+    "General": {
+      "order": 4,
+      "type": "General",
+      "upgrades": [
+        "Blessing of the Sun God"
+      ],
+      "attack": "+2",
+      "command": 8,
+      "size": 1,
+      "points": 100
+    },
+    "War Leader": {
+      "order": 5,
+      "type": "Subordinate",
+      "upgrades": [
+        "Warlord"
+      ],
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 40,
+      "max": 2
+    },
+    "Subordinate": {
+      "order": 6,
+      "type": "Subordinate",
+      "upgrades": [
+        "Warlord"
+      ],
+      "attack": "+1",
+      "command": 7,
+      "size": 1,
+      "points": 30,
+      "max": 2
+    }
+  },
+  "upgrades": {
+    "Quilted Nobles": {
+      "order": 0,
+      "type": "Infantry",
+      "attack": 4,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": "+15",
+      "specialRules": [
+        "Warband"
+      ]
+    },
+    "Warlord": {
+      "order": 1,
+      "type": "Subordinate",
+      "attack": "+2",
+      "command": "7/8",
+      "points": "+10",
+      "size": 1
+    },
+    "Blessing of the Sun God": {
+      "order": 2,
+      "specialRules": [
+        "Blessing of the Sun God"
+      ]
+    }
+  },
+  "armyRules": [
+    "Nobles. Represent a ‘warrior elite’ armed with heavy clubs, obsidian tipped spears and throwing spears.  They are aggressive and are likely to charge fiercely without thought of tactics in an attempt to sweep the enemy from the field.",
+    "",
+    "Quilted Nobles. Its possible that some could have been armoured with quilted clothing, not the brass armour mentioned in the Book of Mormon. To allow for this any or all Nobles could be so armoured.",
+    "",
+    "Tribal Warriors. Represent those men of the tribe or city that train and arm themselves as warriors.  Spears and clubs are the main weapons.  Like their nobles, they are likely to fight aggressively without regard for tactics.",
+    "",
+    "Tribesmen. Represent the bulk of an Olmec army and are constituted of the hunters and men of the tribe pressed into battle against their will.  They are armed with simple hunting spears of wooden clubs.",
+    "",
+    "Skirmishers. Represent skilled tribal hunters armed with slings, possibly blowpipes, and the atlatl and throwing spear.  They fight in loose formations and are skilled jungle hunters.",
+    "",
+    "Warlord. Any Subordinate can be upgraded to Warlord with the stats shown at a cost of  10 points per Warlord."
+  ],
+  "name": "Olmecs",
+  "version": "Rick's Warmaster",
+  "group": "South America",
+  "order": 1
+}

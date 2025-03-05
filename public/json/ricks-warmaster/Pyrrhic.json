@@ -1,0 +1,191 @@
+{
+  "specialRules": {
+    "Phalanx": {
+      "order": 1
+    },
+    "Warband": {
+      "order": 2
+    },
+    "Skirmish": {
+      "order": 3
+    },
+    "Elephants": {
+      "order": 4
+    },
+    "Pyrrhus": {
+      "order": 5,
+      "text": [
+        "Note that Pyrrhus is a compulsory part of the army—it is a Pyrrhic army after all! Because Pyrrhus is your General the army adds +1 to the number of units the army must lose before it will withdraw (add +1 to the army’s ‘break point’)."
+      ]
+    },
+    "Shock": {
+      "order": 6
+    }
+  },
+  "units": {
+    "Epirot Phalanx": {
+      "order": 0,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 60,
+      "max": 8,
+      "min": 2,
+      "specialRules": [
+        "Phalanx"
+      ]
+    },
+    "Guard Phalanx": {
+      "order": 1,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 70,
+      "max": 2,
+      "specialRules": [
+        "Phalanx"
+      ]
+    },
+    "Hoplites": {
+      "order": 2,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 60,
+      "max": 4
+    },
+    "Galatians": {
+      "order": 3,
+      "type": "Infantry",
+      "specialRules": [
+        "Warband"
+      ],
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "points": 35,
+      "max": 2
+    },
+    "Skirmishers": {
+      "order": 4,
+      "type": "Infantry",
+      "specialRules": [
+        "Skirmish"
+      ],
+      "attack": 1,
+      "hits": 3,
+      "range": 15,
+      "size": 3,
+      "points": 30,
+      "min": 2,
+      "max": 4
+    },
+    "Oscan Cavalry": {
+      "order": 5,
+      "type": "Cavalry",
+      "upgrades": [
+        "Epirot Cavalry"
+      ],
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 80,
+      "min": 1,
+      "max": 2
+    },
+    "Mounted Skirmishers": {
+      "order": 6,
+      "type": "Cavalry",
+      "specialRules": [
+        "Skirmish"
+      ],
+      "attack": 1,
+      "hits": 3,
+      "range": 15,
+      "size": 3,
+      "points": 40,
+      "max": 2
+    },
+    "Elephants": {
+      "order": 7,
+      "type": "Elephant",
+      "specialRules": [
+        "Elephants"
+      ],
+      "attack": 4,
+      "hits": 3,
+      "range": 15,
+      "armour": "5+",
+      "size": 3,
+      "points": 200,
+      "max": 1
+    },
+    "Pyrrhus": {
+      "order": 8,
+      "type": "General",
+      "specialRules": [
+        "Pyrrhus"
+      ],
+      "attack": "+2",
+      "command": 9,
+      "size": 1,
+      "points": 150
+    },
+    "Leader": {
+      "order": 9,
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 80,
+      "max": 2
+    }
+  },
+  "upgrades": {
+    "Epirot Cavalry": {
+      "order": 0,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": "+30",
+      "max": "1max",
+      "specialRules": [
+        "Shock"
+      ]
+    }
+  },
+  "armyRules": [
+    "Epirot Phalanx. Comparable in quality to a Macedonian phalanx and the core of the Epirot army.",
+    "",
+    "Guard Phalanx. The elite proportion of the army mostly comprising veteran Chaeonians.",
+    "",
+    "Hoplites. Regular Hoplites but of mediocre quality—usually Italiote or Greek allies.",
+    "",
+    "Peltasts. Regular Successor type including Greek or Thracian peltasts, or even Cretan or Pisidian peltasts as well as garrison units fighting in a comparable fashion.",
+    "",
+    "Galatians. Celtic people originally from the Danube area—the Galatians were fierce warriors. A large body of Galatian mercenaries went over to Pyrrhus during his war against Macedon—it was these Galatians who were to subsequently cause much upset in Aegae by looting the royal cemetery!",
+    "",
+    "Oscans. A valuable light infantry type not unlike Greek peltasts.",
+    "",
+    "Skirmishers. Lightly armed troops fighting as skirmishers—including javelinmen, bowmen and slingers. Mostly  archers or slingers or Italian javelinmen.",
+    "",
+    "Mounted Skirmishers. The usual mounted javelinmen—mainly Greeks and Tarentine Cavalrymen.",
+    "",
+    "Elephants. These are Asian Elephants— much feared by the Romans when encountered for the first time. Pyrrhus’ elephants were also the first to carry a howda carrying pikemen.",
+    "",
+    "Epirot Cavalry. Elite shock cavalry armed with lances. Regardless of army size a single unit of Oscan cavalry can be upgraded to Epirot Cavalry with stats and points increase as shown."
+  ],
+  "name": "Pyrrhic",
+  "version": "Rick's Warmaster",
+  "group": "Greece and the Near East",
+  "order": 7
+}

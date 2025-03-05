@@ -1,0 +1,258 @@
+{
+  "specialRules": {
+    "Legion": {
+      "order": 1
+    },
+    "Skirmish": {
+      "order": 2
+    },
+    "Light Artillery": {
+      "order": 3
+    },
+    "Heavy Artillery": {
+      "order": 4
+    },
+    "Slow": {
+      "order": 5
+    },
+    "Shock": {
+      "order": 6
+    },
+    "Portents": {
+      "order": 7
+    }
+  },
+  "units": {
+    "Veteran Legion": {
+      "order": 0,
+      "type": "Infantry",
+      "specialRules": [
+        "Legion"
+      ],
+      "attack": 4,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 90,
+      "max": 2
+    },
+    "Legion": {
+      "order": 1,
+      "type": "Infantry",
+      "specialRules": [
+        "Legion"
+      ],
+      "upgrades": [
+        "Heavy Legion"
+      ],
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 80,
+      "min": 4
+    },
+    "Auxiliaries": {
+      "order": 2,
+      "type": "Infantry",
+      "upgrades": [
+        "Heavy Auxilliary"
+      ],
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 45,
+      "max": 8
+    },
+    "Archers": {
+      "order": 3,
+      "type": "Infantry",
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "points": 40,
+      "max": 4
+    },
+    "Skirmishers": {
+      "order": 4,
+      "type": "Infantry",
+      "specialRules": [
+        "Skirmish"
+      ],
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": 30,
+      "max": 4
+    },
+    "Heavy Cavalry": {
+      "order": 5,
+      "type": "Cavalry",
+      "upgrades": [
+        "Sarmatian Cavalry"
+      ],
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 80,
+      "max": 2
+    },
+    "Light Cavalry": {
+      "order": 6,
+      "type": "Cavalry",
+      "specialRules": [
+        "Skirmish"
+      ],
+      "upgrades": [
+        "Horse Archers"
+      ],
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 60,
+      "max": 2
+    },
+    "Scorpion": {
+      "order": 7,
+      "type": "Machine",
+      "specialRules": [
+        "Light Artillery"
+      ],
+      "attack": 1,
+      "range": 40,
+      "hits": 3,
+      "size": 2,
+      "points": 50,
+      "max": 1
+    },
+    "Onager": {
+      "order": 8,
+      "type": "Machine",
+      "specialRules": [
+        "Heavy Artillery"
+      ],
+      "attack": 1,
+      "range": "3x60",
+      "hits": 3,
+      "size": 1,
+      "points": 75,
+      "max": 1
+    },
+    "General": {
+      "order": 9,
+      "type": "General",
+      "upgrades": [
+        "Portents"
+      ],
+      "attack": "+2",
+      "command": 9,
+      "size": 1
+    },
+    "Legate": {
+      "order": 10,
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "max": 2
+    }
+  },
+  "upgrades": {
+    "Portents": {
+      "order": 0,
+      "specialRules": [
+        "Portents"
+      ],
+      "points": "+10"
+    },
+    "Heavy Legion": {
+      "order": 1,
+      "specialRules": [
+        "Legion",
+        "Slow"
+      ],
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "4+",
+      "size": 3,
+      "points": "+15",
+      "max": "Half"
+    },
+    "Heavy Auxilliary": {
+      "order": 2,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": "+15"
+    },
+    "Horse Archers": {
+      "order": 3,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "type": "Cavalry",
+      "attack": 1,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "points": "Free",
+      "max": 1
+    },
+    "Sarmatian Cavalry": {
+      "order": 4,
+      "specialRules": [
+        "Shock"
+      ],
+      "type": "Cavalry",
+      "attack": 3,
+      "range": 15,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": "+35",
+      "max": "1max"
+    }
+  },
+  "name": "Imperial Romans (Revised)",
+  "version": "Rick's Warmaster",
+  "group": "The Rise of Rome",
+  "order": 1,
+  "armyRules": [
+    "Veteran Legion. The very best of the legionary cohorts representing veteran or battle hardened troops, Praetorians or other guard units at their peak.",
+    "",
+    "Legion. The standard legionary cohort—well trained and equipped troops making up the rank-and-file of every Roman Legion. Well armoured in segmented iron armour and helmets, large ‘scutum’ shields, and armed with swords and heavy javelins called pila.",
+    "",
+    "Auxiliaries. During the reign of Augustus and to some extent Tiberius the auxiliaries were locally recruited troops who continued to fight in a native style—though usually equipped with Roman arms and, increasingly, armour. Subsequent generations of auxiliaries came from Romanized backgrounds simply because the regions they came from and where they lived had been incorporated into the Empire. During the first century fighting as an auxiliary was a way of earning Roman citizenship—later on the Citizenship was extended to all Italians and then throughout the Empire—but by then the auxiliary  cohorts had grown into a more regular body of troops. A typical Roman fighting force would comprise half legionary troops (heavies) and half auxiliary troops (which would normally encompass auxiliary cohorts as described here plus archers and cavalry). This category represents the typical auxiliary of the mid-first century onwards—armed with spear and sword, carrying an oval shield and wearing a Roman style but mass-produced helmet similar in appearance to that of the legionary.",
+    "",
+    "Archers. Amongst the auxiliary cohorts were units of archers—they were raised in both the east and west but the most well-known image is that of the Syrian archers on Trajan’s Column—these wear a mail coat and long robes.",
+    "",
+    "Skirmishers. These are lightly equipped auxiliary units recruited from native troops—in the west they would be Celts or Germans such as the Batavians armed with javelins—in the Mediterranean region they might be Balearic slingers, or javelin armed skirmishers such as Cilicians or Moors.",
+    "",
+    "Heavy Cavalry. Standard Roman auxiliary cavalry units equipped much as the infantry auxiliaries with spears and javelins.",
+    "",
+    "Light Cavalry. These include lightly equipped auxiliary or allied cavalry such as horse archers, or barbarian or native cavalry armed with a mix of javelins and spears.",
+    "",
+    "Scorpion. A light bolt-throwing machine that formed part of the standard equipment in every legion. Mostly used for assaulting fortifications.",
+    "",
+    "Onager. Legions also included a number of heavier stone throwing engines called onager or ‘wild ass’ because of the ferocious recoil.",
+    "",
+    "Portents. The player can take the portents before the battle. This allows the General to re-roll one failed Command roll once during the battle. Take the Command test again—if successful the order is issued and the General can continue giving orders if you wish.",
+    "",
+    "Heavy Legions. There is good evidience that the heavier equipment seen on Trajans Column was not developed specifically for fighting the war in Dacia, as was once commonly believed, but was part of a general tendency towards more protective armour. This included manica—sleeve protectors—as well as further reinforcement for helmets. There is also some sculptural evidence for armour incorporating scale protection and mail shoulder armour. To represent this up to half of the Legion units can be fielded as Heavy Legions with stats and points increase shown.",
+    "",
+    "Heavy Auxiliary. Auxiliary equipment also got progressively heavier throughout the first century. Although typically depicted in mail armour auxiliaries may have worn segmented armour too—finds of segmented armour fastenings have been discovered at what are thought to be auxiliary bases. Later helmets often show the kind of further reinforcement associated with legionaries. This option allows any Auxiliaries to be upgraded to Heavy Auxiliaries with the stats and point cost modifier shown.",
+    "",
+    "Horse Archers. Horse archers were part of the Roman army from early times—but are generally represented as light cavalry as that better fits the army’s modus operandi. These represent eastern horse archers of the Sarmatian, Parthian or Armenian type fighting as allies of the Romans. This option allows up to 1 unit of Light cavalry per 1000 pts to be upgraded to Horse Archers with the stats shown.",
+    "",
+    "Sarmatian Cavalry. After the defeat of the Dacian 8,000 Sarmatian cavalry were incorporated into the Roman army—over 5000 of them ended up being posted on Hadrian’s Wall in Northumberland. Many of these may have been horse archers—but it seems likely they would have included heavily armoured cavalry as well. In Roman service they would probably have adapted to  Roman equipment and practice—but this option allows them to retain their original equipment and fighting style. Regardless of the army size, a single unit of Heavy Cavalry can be upgraded to Sarmatians with the stats and points modifier shown."
+  ]
+}
