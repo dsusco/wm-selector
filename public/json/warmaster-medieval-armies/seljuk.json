@@ -1,0 +1,217 @@
+{
+  "name": "The Seljuk Turks (RL), 1137-1194",
+  "version": "Warmaster Medieval Armies",
+  "group": "Crusades",
+  "order": 2,
+  "units": {
+    "Light Cavalry": {
+      "type": "Cavalry",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "min": 4,
+      "points": 60,
+      "order": 0,
+      "specialRules": [
+        "Warband",
+        "Skirmish"
+      ],
+      "upgrades": [
+        "Mongol Lt Cavalry"
+      ]
+    },
+    "Askari": {
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "range": 15,
+      "size": 3,
+      "min": 1,
+      "max": 4,
+      "points": 85,
+      "order": 1,
+      "upgrades": [
+        "Shock Askari"
+      ]
+    },
+    "Frankish Knights": {
+      "type": "Cavalry",
+      "attack": 2,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "min": 0,
+      "max": 4,
+      "points": 100,
+      "specialRules": [
+        "Unreliable",
+        "Frankish Knights/Mongols"
+      ],
+      "order": 2
+    },
+    "Mongol Elite": {
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "range": 30,
+      "armour": "5+",
+      "size": 3,
+      "min": 0,
+      "max": 4,
+      "points": 125,
+      "specialRules": [
+        "Unreliable",
+        "Frankish Knights/Mongols"
+      ],
+      "order": 3
+    },
+    "Agulani": {
+      "type": "Cavalry",
+      "attack": 2,
+      "hits": 3,
+      "armour": "4+",
+      "size": 3,
+      "max": 1,
+      "specialRules": [
+        "Slow"
+      ],
+      "points": 80,
+      "order": 4
+    },
+    "Feudal Levy": {
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "max": 4,
+      "points": 60,
+      "specialRules": [
+        "Unreliable"
+      ],
+      "order": 5
+    },
+    "Spearmen": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "armour": "6+",
+      "max": 4,
+      "points": 35,
+      "specialRules": [
+        "Unreliable"
+      ],
+      "upgrades": [
+        "Reliable Spearmen"
+      ],
+      "order": 6
+    },
+    "Bowmen": {
+      "type": "Infantry",
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "max": 2,
+      "points": 40,
+      "order": 7
+    },
+    "General": {
+      "type": "General",
+      "attack": "+2",
+      "command": 9,
+      "size": 1,
+      "armyMin": 1,
+      "armyMax": 1,
+      "points": 125,
+      "order": 8
+    },
+    "Leader": {
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "max": 1,
+      "points": 80,
+      "order": 9
+    },
+    "Emir/Frankish/Mongol Commanders": {
+      "type": "Subordinate",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "max": 2,
+      "points": 40,
+      "order": 10
+    }
+  },
+  "upgrades": {
+    "Mongol Lt Cavalry": {
+      "type": "Cavalry",
+      "attack": 2,
+      "armour": "6+",
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "max": 4,
+      "points": 10,
+      "order": 0,
+      "specialRules": [
+        "Skirmish",
+        "Unreliable"
+      ]
+    },
+    "Shock Askari": {
+      "type": "Cavalry",
+      "attack": 4,
+      "range": 15,
+      "armour": "5+",
+      "hits": 3,
+      "size": 3,
+      "points": 10,
+      "armyMax": 1,
+      "order": 1
+    },
+    "Reliable Spearmen": {
+      "type": "Infantry",
+      "attack": 4,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 10,
+      "max": "Up to Half",
+      "order": 2
+    }
+  },
+  "specialRules": {
+    "Skirmish": {
+      "order": 1
+    },
+    "Shock": {
+      "order": 2
+    },
+    "Warband": {
+      "order": 3
+    },
+    "Slow": {
+      "order": 4
+    },
+    "Unreliable": {
+      "order": 5
+    },
+    "Frankish Knights/Mongols": {
+      "text": [
+        "the army can include either Frankish Knights OR Mongol Elite cavalry—it cannot include both. If either is included all units of this type must be brigaded together at the start of the game and a separate subordinate must be provided to command them—they can only be given commands by this commander."
+      ],
+      "order": 6
+    },
+    "Mongol Lt Cavalry": {
+      "text": [
+        "Up to 4 units of Light Cavalry per 1000 points can be upgraded to Mongol Light cavalry with additional bow range and unreliable non-warband status as shown."
+      ],
+      "order": 7
+    }
+  }
+}

@@ -1,0 +1,228 @@
+{
+  "specialRules": {
+    "Skirmish": {
+      "order": 1
+    },
+    "Shock": {
+      "order": 2
+    },
+    "Unreliable": {
+      "order": 3
+    },
+    "Warband": {
+      "order": 4
+    },
+    "Atheios": {
+      "order": 5,
+      "text": [
+        "King Atheios—whose name appears in various spellings—was said to be 90 years old when he confronted Philip II of Macedon and was defeated and killed in battle. Prior to this, however, he had enjoyed considerable success, extending his influence westwards and subjugating many of the settled peoples of the Black Sea region. So, we shall adopt his name for our Scythian General upgrade—though to be fair a more successful exponent of it might reasonably be said to have been King Idantirs whose constant refusal to close to fight, instead peppering his foes from a distant, thwarted the invasion of King Darius of Persia.",
+        "",
+        "If the Atheios upgrade is chosen then once per turn the shooting target of a cavalry unit within 20cm of the General can be driven ‘forward’ rather than ‘back’. This represents the unit using a feigned retreat to lure the enemy unit forwards. Before the drive back is thrown the Scythian player must announce that the Atheios ability is being used. Move the target unit exactly as you would for a drive back—but directly towards the nearest shooter rather than away from it—i.e. exactly 180 degrees opposite to normal. The unit that is driven forward won’t move closer to the closest enemy shooter than 1cm and if it would otherwise move closer the driven unit is automatically confused if it is not so already.  Once the unit has moved then any missile armed  Scythian units that did not shoot in the shooting phase can shoot at the unit if it is the closest target and within range as normal. The unit can then be driven back by further casualties. Note that any additional hits inflicted are not cumulative with hits already suffered."
+      ]
+    }
+  },
+  "units": {
+    "Scythians": {
+      "order": 0,
+      "attack": 1,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "points": 60,
+      "min": 5
+    },
+    "Nobles": {
+      "order": 1,
+      "attack": 3,
+      "range": 15,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "specialRules": [
+        "Shock"
+      ],
+      "upgrades": [
+        "Heavy Cavalry"
+      ],
+      "points": 115,
+      "min": 1,
+      "max": 3
+    },
+    "Light Cavalry": {
+      "order": 2,
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "points": 60,
+      "min": "-",
+      "max": 2
+    },
+    "Subject Infantry": {
+      "order": 3,
+      "attack": 2,
+      "hits": 3,
+      "size": 3,
+      "specialRules": [
+        "Unreliable"
+      ],
+      "upgrades": [
+        "Black Sea Infantry"
+      ],
+      "points": 15,
+      "max": 4
+    },
+    "Subject Archers": {
+      "order": 4,
+      "attack": 1,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "specialRules": [
+        "Unreliable"
+      ],
+      "upgrades": [
+        "Scythian Archers"
+      ],
+      "points": 15,
+      "max": 4
+    },
+    "Skirmishers": {
+      "order": 5,
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "upgrades": [
+        "Thracian Infantry"
+      ],
+      "points": 30,
+      "max": 4
+    },
+    "General": {
+      "order": 6,
+      "type": "General",
+      "attack": "+2",
+      "command": 8,
+      "size": 1,
+      "points": 100,
+      "upgrades": [
+        "Atheios"
+      ],
+      "armyMax": 1,
+	  "armyMin": 1
+    },
+    "Leader": {
+      "order": 7,
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 80,
+      "max": 1
+    },
+    "Chieftain": {
+      "order": 8,
+      "type": "Subordinate",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 40,
+      "max": 2
+    }
+  },
+  "upgrades": {
+    "Scythian Archers": {
+      "order": 0,
+      "type": "Infantry",
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "points": "+25",
+      "max": 2
+    },
+    "Black Sea Infantry": {
+      "order": 1,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": "+30",
+      "max": 2
+    },
+    "Thracian Infantry": {
+      "order": 2,
+      "type": "Infantry",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": "+10",
+      "max": 2,
+      "specialRules": [
+        "Skirmish",
+        "Warband"
+      ]
+    },
+    "Heavy Cavalry": {
+      "order": 3,
+      "type": "Cavalry",
+      "attack": 3,
+      "range": 15,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": "-30",
+      "max": "All or none"
+    },
+    "Atheios": {
+      "order": 4,
+      "specialRules": [
+        "Atheios"
+      ],
+      "attack": "+2",
+      "command": 8,
+      "size": 1,
+      "points": "+25",
+      "max": 1,
+      "type": "General"
+    }
+  },
+  "armyRules": [
+    " Scythians.  The bulk of the Scythian force comprises mounted archers.",
+    "",
+    "Nobles. These represent the small core of nobility wearing various degrees of armour and armed with lances, long spears and assorted side-arms as well as bows and possibly javelins.",
+    "",
+    "Light Cavalry. Judging from archaeological finds it appears that at least some warriors carried shafted weapons such as javelins and spears and wore some body armour—suggesting a more directly combative role than that of mounted archers.  These light cavalry have been included to represent such warriors—though whether they would have fought as bodies or dispersed amongst the more lightly equipped horse archers is pure speculation.",
+    "",
+    "Subject Infantry. The Scythians conquered large parts of what is today Moldova, the Ukraine, Romania and even parts of Bulgaria—all of which were settled if not exactly civilised areas. The Scythians were known in ancient Greece as suppliers of slaves—presumably from amongst these subject peoples. These subject infantry have been included to represent the contribution of such peoples in the west—and corresponding peoples in the eastern areas adjoining the Pontic Steppe. They would be armed in their native fashion—probably with javelins and light spears for the most part.",
+    "",
+    "Subject Archers. As above but bow armed.",
+    "",
+    "Skirmishers. These could be subject tribes or Scythians fighting on foot—they are likely to be armed with bows but javelins is possible.",
+    "",
+    "Scythian Archers. Subject Archers can be upgraded to Scythian archers at the cost indicated—these represent either native Scythians or dependable subjects or allies. Such warriors are depicted by Greeks by Scythians themselves.",
+    "",
+    "Black Sea Infantry. Subject Infantry can be upgraded to Black Sea infantry at the cost indicated. These represent troops from the Greek colonies of the Crimea—probably armed with spears, wearing some body armour and carrying shields.",
+    "",
+    "Thracian Infantry. Skirmishers can be upgraded to Thracians at the cost indicated. They represent principally Thracian type peltasts but also any comparable barbarian tribes from the areas at the south-western periphery of the Scythian domains.",
+    "",
+    "Heavy Cavalry. Nobles can be fielded as non-shock based bow-armed heavy cavalry at the points reduction indicated. All Noble units must be fielded in this fashion or else none. This is to allow to differences of interpretation and is arguably a more credible way of representing Scythian Nobles prior to Hellenistic times."
+  ],
+  "name": "Scythians",
+  "version": "Warmaster Ancients Ricks lists",
+  "group": "Greece and the Near East",
+  "order": 20
+}

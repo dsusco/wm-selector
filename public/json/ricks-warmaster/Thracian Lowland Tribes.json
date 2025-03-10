@@ -1,0 +1,167 @@
+{
+  "specialRules": {
+    "Warband": {
+      "order": 1
+    },
+    "Skirmish": {
+      "order": 2
+    },
+    "Portents": {
+      "order": 3
+    }
+  },
+  "units": {
+    "Warriors": {
+      "order": 0,
+      "type": "Infantry",
+      "attack": 3,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "specialRules": [
+        "Warband"
+      ],
+      "min": 8,
+      "points": 40
+    },
+    "Nobles": {
+      "order": 1,
+      "type": "Infantry",
+      "attack": 4,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "specialRules": [
+        "Warband"
+      ],
+      "max": 4,
+      "points": 55
+    },
+    "Skirmishers": {
+      "order": 2,
+      "type": "Infantry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "specialRules": [
+        "Warband",
+        "Skirmish"
+      ],
+      "max": 4,
+      "points": 30
+    },
+    "Cavalry": {
+      "order": 3,
+      "type": "Cavalry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "max": 2,
+      "points": 40
+    },
+    "Light Cavalry": {
+      "order": 4,
+      "type": "Cavalry",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "armour": "6+",
+      "specialRules": [
+        "Skirmish"
+      ],
+      "upgrades": [
+        "Horse Archers"
+      ],
+      "points": 60,
+      "max": 4
+    },
+    "Noble Cavalry": {
+      "order": 5,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "armour": "5+",
+      "points": 80,
+      "max": 1
+    },
+    "General": {
+      "order": 6,
+      "type": "General",
+      "upgrades": [
+        "Portents"
+      ],
+      "command": 8,
+      "attack": "+2",
+      "size": 1,
+      "points": 100,
+      "armyMax": 1,
+	  "armyMin": 1
+    },
+    "Superior Tribal Chief": {
+      "order": 7,
+      "type": "Subordinate",
+      "max": 2,
+      "command": 8,
+      "attack": "+1",
+      "size": 1,
+      "points": 40
+    },
+    "Tribal Chieftain": {
+      "order": 8,
+      "type": "Subordinate",
+      "max": 2,
+      "command": 7,
+      "attack": "+1",
+      "size": 1,
+      "points": 30
+    }
+  },
+  "upgrades": {
+    "Portents": {
+      "order": 1,
+      "points": "+10",
+      "specialRules": [
+        "Portents"
+      ]
+    },
+    "Horse Archers": {
+      "order": 1,
+      "type": "Cavalry",
+      "attack": 1,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "max": "1max",
+      "points": "free"
+    }
+  },
+  "armyRules": [
+    "Warriors.  Thracians were fierce fighters who fought in comparatively dense formations and are therefore considered warband. They carry spears, shields, javelins and might be armed with knives or swords if they are lucky.",
+    "",
+    "Nobles. These are the best equipped of the Thracians and we have treated then as the most aggressive and dangerous. Some Thracians carried weapons with long, curving blades which may have been similar to the Dacian flax of later times. These are known as rhomphaia and came in single-handed and double handed versions.",
+    "",
+    "Skirmishers. The usual slingers and javelin armed troops.",
+    "",
+    "Cavalry. These are javelin armed skirmishing cavalry.",
+    "",
+    "Light Cavalry. Some Thracians lives in areas more conducive to raising horses and were able to deploy some numbers of horsemen.",
+    "",
+    "Noble Cavalry. These are the best equipped of the mounted arm, wearing some armour and carrying a spear or javelins.",
+    "",
+    "Horse Archers.  Up to a maximum of 1 unit of Light Cavalry can be regraded as a Horse Archer at no extra cost. Note that this is a maximum of 1 unit regardless of army size."
+  ],
+  "name": "Thracian Lowland Tribes",
+  "version": "Warmaster Ancients Ricks lists",
+  "group": "Greece and the Near East",
+  "order": 22
+}
