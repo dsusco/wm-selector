@@ -1,0 +1,245 @@
+{
+  "name": "The Ottoman Turks",
+  "version": "Warmaster Medieval Armies",
+  "group": 1,
+  "order": 9,
+  "units": {
+    "Sipahis": {
+      "order": 0,
+      "type": "Cavalry",
+      "attack": 3,
+      "range": 15,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 115,
+      "max": 2,
+      "specialRules": [
+        "Shock"
+      ],
+      "upgrades": [
+        "Kapikulu"
+      ]
+    },
+    "Akincis": {
+      "order": 1,
+      "type": "Cavalry",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 60,
+      "min": 2,
+      "specialRules": [
+        "Skirmish"
+      ]
+    },
+    "Janissaries": {
+      "order": 2,
+      "type": "Infantry",
+      "attack": 3,
+      "range": 30,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 60,
+      "max": 4,
+      "upgrades": [
+        "Camels",
+        "Stakes",
+        "Janissaries Handgunners"
+      ]
+    },
+    "Azabs": {
+      "order": 3,
+      "type": "Infantry",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": 35,
+      "min": 4,
+      "upgrades": [
+        "Camels",
+        "Azabs Skirmishers"
+      ]
+    },
+    "Vassal Infantry": {
+      "order": 4,
+      "type": "Infantry",
+      "attack": 2,
+      "hits": 3,
+      "size": 3,
+      "points": 25,
+      "min": 2,
+      "upgrades": [
+        "Stakes",
+        "Vassal Skirmishers",
+        "Voynuks"
+      ]
+    },
+    "Cannon": {
+      "order": 5,
+      "type": "Artillery",
+      "attack": 1,
+      "range": "2x40",
+      "hits": 2,
+      "size": 2,
+      "points": 50,
+      "min": 1,
+      "max": 2,
+      "specialRules": [
+        "Slow"
+      ]
+    },
+    "Heavy Cannon": {
+      "order": 6,
+      "type": "Artillery",
+      "attack": 1,
+      "range": "3x60",
+      "hits": 2,
+      "size": 1,
+      "points": 75,
+      "max": 1
+    },
+    "Sultan": {
+      "order": 7,
+      "type": "General",
+      "attack": "+2",
+      "command": 9,
+      "size": 1,
+      "points": 125,
+      "armyMin": 1,
+      "armyMax": 1,
+      "upgrades": [
+        "Mehters"
+      ]
+    },
+    "Bey": {
+      "order": 8,
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 80,
+      "max": 2
+    }
+  },
+  "upgrades": {
+    "Kapikulu": {
+      "order": 0,
+      "type": "Cavalry",
+      "attack": 3,
+      "range": 15,
+      "hits": 4,
+      "armour": "3+",
+      "size": 3,
+      "points": "+10",
+      "max": 1,
+      "specialRules": [
+        "Shock"
+      ]
+    },
+    "Janissaries Handgunners": {
+      "order": 1,
+      "type": "Infantry",
+      "attack": 3,
+      "range": 20,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": "+5",
+      "max": 1,
+      "specialRules": [
+        "Handgunners"
+      ]
+    },
+    "Azabs Skirmishers": {
+      "order": 2,
+      "type": "Infantry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": -5,
+      "max": "Up to Half",
+      "specialRules": [
+        "Skirmish"
+      ]
+    },
+    "Vassal Skirmishers": {
+      "order": 3,
+      "type": "Infantry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": "+5",
+      "specialRules": [
+        "Skirmish"
+      ]
+    },
+    "Voynuks": {
+      "order": 4,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": "+20",
+      "max": 1
+    },
+    "Mehters": {
+      "order": 5,
+      "type": "General",
+      "attack": "+2",
+      "command": 8,
+      "size": 1,
+      "points": "+25",
+      "armyMax": 1
+    },
+    "Camels": {
+      "order": 6,
+      "type": "Special",
+      "points": "+5"
+    },
+    "Stakes": {
+      "order": 7,
+      "type": "Special",
+      "points": "+5"
+    }
+  },
+  "specialRules": {
+    "Shock": {
+      "order": 1
+    },
+    "Skirmish": {
+      "order": 2
+    },
+    "Cannon": {
+      "order": 3
+    },
+    "Slow": {
+      "order": 4
+    },
+    "Heavy Cannon": {
+      "order": 5
+    },
+    "Handgunners": {
+      "order": 6
+    },
+    "Mehters": {
+      "order": 7,
+      "text": [
+        "All Janissary units within 20cm of the Sultan become immune to terrifying enemy and also ignore any drive backs otherwise caused by shooting, including confusion resulting from drive backs."
+      ]
+    },
+    "Camels": {
+      "order": 8
+    },
+    "Stakes": {
+      "order": 9
+    }
+  }
+}
