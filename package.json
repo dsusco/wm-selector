@@ -13,6 +13,7 @@
   },
   "scripts": {
     "build": "vue-cli-service build",
+    "format": "node scripts/format-json.js",
     "prebuild": "node scripts/build-src-json.js",
     "postbuild": "minify-json dist/json/",
     "lint": "vue-cli-service lint",

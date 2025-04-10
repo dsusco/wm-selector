@@ -106,9 +106,9 @@
       "points": 155,
       "armyMin": 1,
       "armyMax": 1,
-       "upgrades": [
-         "Trône du Pouvoir"
-       ]
+      "upgrades": [
+        "Trône du Pouvoir"
+      ]
     },
     "Héros": {
       "order": 10,
