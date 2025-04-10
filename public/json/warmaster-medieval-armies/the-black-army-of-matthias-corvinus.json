@@ -1,0 +1,226 @@
+{
+  "name": "The Black Army Of Matthias Corvinus",
+  "version": "Warmaster Medieval Armies",
+  "group": 2,
+  "order": 0,
+  "units": {
+    "Szekeler Cavalry": {
+      "order": 0,
+      "type": "Cavalry",
+      "attack": 1,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "points": 60,
+      "max": 2,
+      "specialRules": [
+        "Skirmish"
+      ]
+    },
+    "Hungarian/Crusader Knights": {
+      "order": 1,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "4+",
+      "size": 3,
+      "points": 135,
+      "min": 1,
+      "specialRules": [
+        "Knights"
+      ],
+      "upgrades": [
+        "Royal Banderium"
+      ]
+    },
+    "Crossbowmen": {
+      "order": 2,
+      "type": "Infantry",
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 55,
+      "max": 2,
+      "specialRules": [
+        "Crossbows"
+      ],
+      "upgrades": [
+        "Pavisse"
+      ]
+    },
+    "Armati": {
+      "order": 3,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 60,
+      "min": 1,
+      "upgrades": [
+        "Pavisse"
+      ]
+    },
+    "Clipeati": {
+      "order": 4,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 45,
+      "min": 1,
+      "upgrades": [
+        "Pavisse"
+      ]
+    },
+    "Handgunners": {
+      "order": 5,
+      "type": "Infantry",
+      "attack": 2,
+      "range": 20,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 55,
+      "max": 1,
+      "upgrades": [
+        "Pavisse"
+      ]
+    },
+    "Cannon": {
+      "order": 6,
+      "type": "Artillery",
+      "attack": 1,
+      "range": "2x40",
+      "hits": 2,
+      "size": 2,
+      "points": 50,
+      "max": 2,
+      "specialRules": [
+        "Slow"
+      ]
+    },
+    "War Wagons": {
+      "order": 7,
+      "type": "Wagon",
+      "attack": 1,
+      "range": "15+",
+      "hits": 3,
+      "armour": "4+",
+      "size": 3,
+      "points": 60,
+      "max": 2
+    },
+    "Hussite Mercenaries": {
+      "order": 8,
+      "type": "Infantry",
+      "attack": 3,
+      "range": 20,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 60,
+      "max": 2
+    },
+    "General": {
+      "order": 9,
+      "type": "General",
+      "attack": "+2",
+      "command": 8,
+      "size": 1,
+      "points": 100,
+      "armyMin": 1,
+      "armyMax": 1,
+      "upgrades": [
+        "Prayer"
+      ]
+    },
+    "Leader": {
+      "order": 10,
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 80,
+      "max": 3
+    },
+    "Captains": {
+      "order": 11,
+      "type": "Subordinate",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 40
+    }
+  },
+  "upgrades": {
+    "Royal Banderium": {
+      "order": 0,
+      "type": "Cavalry",
+      "attack": 4,
+      "hits": 3,
+      "armour": "4+",
+      "size": 3,
+      "points": "+10",
+      "max": 1,
+      "specialRules": [
+        "Knights"
+      ]
+    },
+    "Pavisse": {
+      "order": 1,
+      "type": "Special",
+      "points": "+5"
+    },
+    "Prayer": {
+      "order": 2,
+      "type": "Special",
+      "points": "+10",
+      "armyMax": 1
+    }
+  },
+  "specialRules": {
+    "Skirmish": {
+      "order": 1
+    },
+    "Knights": {
+      "order": 2
+    },
+    "Crossbows": {
+      "order": 3
+    },
+    "Handgunners": {
+      "order": 4
+    },
+    "Cannon": {
+      "order": 5
+    },
+    "War Wagons": {
+      "order": 6
+    },
+    "Hussite Mercenaries": {
+      "order": 7,
+      "text": [
+        "They count as armed with crossbows with the -1 armour save modifier when stationary."
+      ]
+    },
+    "Royal Banderium": {
+      "order": 8,
+      "text": [
+        "The first order given to the Banderium each turns counts the commander's Command value as 10."
+      ]
+    },
+    "Pavisse": {
+      "order": 9
+    },
+    "Prayer": {
+      "order": 10
+    },
+    "Slow": {
+      "order": 11
+    }
+  }
+}
