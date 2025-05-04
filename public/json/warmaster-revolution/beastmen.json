@@ -171,15 +171,15 @@
     "Gor/Ungor": {
       "order": 1,
       "text": [
-        "Up to half of the total number of Gor/Ungor units (rounded down) may be deployed as ambushers rather than be deployed at the start of the game. The ambushers must be deployed in groups up to 4 units. The number of Ungor units in these groups may not exceed the number of Gor units.",
+        "Up to half the Gor units (rounded down) and half the Ungor units (rounded down) may be designated as Ambushers. At the start of the game, you must inform your opponent how many units will Ambush. Ambushers may form Brigades or act as single units.",
         "",
-        "During the order movement sequence the Beastmen player nominates a point within dense terrain or on any base edge other than the enemy player’s own table edge for every group of ambushing units he wants to deploy this turn. If the nominated point is in dense terrain it must be chosen that every stand of every unit within the group must be at least partially within the terrain.",
+        "Ambushers are deployed during any Command phase, not at the start of the game. To deploy, nominate a character, the ambushing units and a piece of dense terrain or a point on any board edge except the enemy’s. Issue an Ambush order to the point, which can be outside the character’s Command range. Apply distance and enemy proximity penalties, but ignore dense terrain penalties.",
         "",
-        "Each group of ambushing units is ordered with a brigade order. Treat the order as issued to the nominated point, and apply any modifiers for distance and enemy proximity, but ignore the penalties for dense terrain and command range. The character’s command range is considered to extend over the entire tabletop when issuing an ambush order. If successful, place one stand, of one unit on the nominated spot and arrange the rest of the unit around it. Then place the remaining units of the ambushing group next to each other. Every unit must touch at least one stand of another unit form that ambushing group. The infiltrated unit cannot be placed so that it touches an enemy unit. Once deployed, orders can be given to the unit by the same character that gave the infiltration order if he is within his normal command range, the infiltrating unit is considered to have used its first order to deploy.",
+        "If successful, place one stand from the unit at the point, then deploy the rest in formation around it. Brigade units form up within a full pace move of the first stand. If the nominated point is in dense terrain it must be chosen that every stand of every unit within the group must be at least partially within the terrain. No Ambusher may deploy within 1 cm of an enemy stand.",
         "",
-        "If the ambush order is failed the ambushing group is not deployed and cannot ambush that turn, it can attempt to ambush in a subsequent turn at the same or a different place and at the same and different composition of units (distance, enemy within 20cm etc.) apply.",
+        "After deployment, Ambushers may receive further orders if in Command range, but the Ambush counts as their first order. If the order fails, Ambushers cannot deploy that turn but can try again later.",
         "",
-        "Ungor have a shooting range of 15cm."
+        "Once deployed, Ambushers operate like normal units."
       ]
     },
     "Minotaurs": {
