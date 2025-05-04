@@ -313,7 +313,7 @@
   "spells": [
     {
       "name": "Tree Singing",
-      "roll": 4,
+      "roll": 5,
       "range": "30cm",
       "text": [
         "The Spell Weaver calls force a mass of tangling branches to surround ther troops, protecting them form harm.",
