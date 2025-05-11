@@ -96,7 +96,10 @@
       "size": 1,
       "points": 100,
       "max": 1,
-      "noCount": true
+      "noCount": true,
+      "specialRules": [
+        "Big Guys"
+      ]
     },
     "General": {
       "order": 8,
@@ -201,8 +204,6 @@
       "text": [
         "The Bretonnian Trebuchet is one of the mightiest and most excellent stone throwers that are built in the Old World. At first it was designed to help the noble knights with the sometimes coming up and messy sieges that had to be done but later was adjusted to be used in field battles too.",
         "",
-        "As the Trebuchet is such a gigantic machine it is put on a 6x4cm base the short edge being the front.",
-        "",
         "To represent that Trebuchet is such a bulky warmachine which takes time t assemble and disassemble, Trebuchet can move but cannot shoot in the turn it moved.",
         "",
         "If a Trebuchet is driven back more than 10cm by shooting it is destroyed (drive backs of less than 10cm are simply ignored). If it is forced to retreat from combat it is also destroyed like any other artillery. A Trebuchet is not affected by Gerroff spell.",
@@ -216,26 +217,29 @@
         "__Shooting Blind:__ If there is no target in sight a Trebuchet may instead shoot at the nearest enemy unit in range it cannot see. When Shooting Blind it always hits on 6+ no matter if the target is in the open, defended or even fortified."
       ]
     },
+    "Big Guys": {
+      "order": 6
+    },
     "Unicorn": {
-      "order": 6,
+      "order": 7,
       "text": [
         "Only an Enchantress can ride a Unicorn. The Unicorn adds +1 to the Enchantress’s Attacks. Once per battle the Unicorn’s magical power adds +1 to the dice roll when casting a spell. The player must announce that he is using the Unicorn’s magic before rolling to see if the spell works."
       ]
     },
     "Pegasus": {
-      "order": 7,
+      "order": 8,
       "text": [
         "The Pegasus can be ridden by a General, Hero or Enchantress and adds +1 Attack to the rider as well as allowing the character to fly."
       ]
     },
     "Hippogriff": {
-      "order": 8,
+      "order": 9,
       "text": [
         "Only a General can ride a Hippogriff. The Hippogriff can fly. A unit joined by the General on Hippogriff causes terror."
       ]
     },
     "Grail Reliquae": {
-      "order": 9,
+      "order": 10,
       "text": [
         "This sacred item can be given to one unit of Peasants only in a whole army. This unit and all Peasants units touching it become Grail Pilgrims (for as long as they keep contact). Grail Pilgrims are immune to terror, don’t get the -1 Command and get +1 Attack (they still keep the restriction that they get no +1 Attacks for charging in the open), they have to attack by initiative and cannot be driven back or confused. Before taking any specific action with a Peasant unit check if they are still touching the unit carrying the Grail Reliquae. If they do so they count as Grail Pilgrims - if not they are simple Peasants."
       ]

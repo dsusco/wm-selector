@@ -55,5 +55,10 @@
       "Stone Throwers shoot with such a high trajectory that they cannot shoot at charging enemies.",
       "Because of the high trajectory Stone Throwers can shoot blind at targets they cannot see. The targets are assumed to be reported by scouts or messengers from other units. If there is no target in sight a Stone Thrower may instead shoot at the nearest enemy unit in range it cannot see. When shooting blind it always hits on 6+ no matter if the target is in the open, defended or even fortified."
     ]
+  },
+  "Big Guys": {
+    "text": [
+    "As this unit is so gargantuan, it uses a 4x6cm base, with the short edge being in front."
+    ]
   }
 }

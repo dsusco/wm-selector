@@ -179,7 +179,9 @@
         "",
         "After deployment, Ambushers may receive further orders if in Command range, but the Ambush counts as their first order. If the order fails, Ambushers cannot deploy that turn but can try again later.",
         "",
-        "Once deployed, Ambushers operate like normal units."
+        "Once deployed, Ambushers operate like normal units.",
+        "",
+        "Ungors can shoot with a range of 15cm."
       ]
     },
     "Minotaurs": {
