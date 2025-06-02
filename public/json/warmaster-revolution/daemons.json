@@ -165,7 +165,7 @@
     "__0-1__|One stand is destroyed – the daemons fade away and are absorbed back into the Realm of Chaos from which they came. Remove one stand from play. If a character is with the unit.and the last stand is removed the character is destroyed too.",
     "__2-3__|The unit becomes confused - if not already confused the stand becomes confused as it is torn between this world and the next.",
     "__4-5__|No effect – unless the unit is confused in which case it ceases to be confused as it is favoured with the invigorating power of Chaos.",
-    "__6__|The unit regains one stand. The regained stand is placed in formation with the rest of the unit. If it is impossible to position the stand in formation with its unit, then the stand cannot be added."
+    "__6__|The unit regains one stand. The regained stand is placed directly behind, in front or beside another stand from the same unit, and facing the same direction. If it is impossible to position the stand in this manner, it cannot be added."
   ],
   "specialRules": {
     "Daemon Swarm": {
@@ -217,7 +217,7 @@
         "",
         "This spell can be cast on any friendly Daemon unit of three stands that has lost one or two stands as casualties. It does not matter whether the Wizard can see the unit or not.",
         "",
-        "The unit regains one stand. The regained stand is placed in formation with the rest of the unit. If the unit is already in combat the additional stand can be placed so that it touches the enemy and will count as charging if the unit charged. If it is impossible to position the stand in formation with its unit then the spell cannot be cast and will not work."
+        "The unit regains one stand. The regained stand is placed directly behind, in front or beside another stand from the same unit, and facing the same direction. If the unit is already in combat the additional stand can be placed so that it touches the enemy and will count as charging if the unit charged. If it is impossible to position the stand in this manner, the spell cannot be cast and will not work."
       ]
     },
     {

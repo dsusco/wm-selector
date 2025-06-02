@@ -32,7 +32,8 @@
       "hits": 3,
       "armour": "4+",
       "size": 3,
-      "points": 110
+      "points": 110,
+      "max": 3
     },
     "Reavers": {
       "order": 3,
