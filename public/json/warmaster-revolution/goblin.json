@@ -189,11 +189,11 @@
     "Pump Wagon": {
       "order": 4,
       "text": [
-        "The Pump Wagon doesn’t move in Command phase by initiative or by successful orders. Instead of this it can always move once up to 10×D6cm. This move is automatic, requiring no Command roll, and happens at any time during the Command phase. This movement can be made in any direction and will give the Pump Wagon a movement of between 10cm and 60cm each turn. A Pump Wagon does not have to move if the player wishes.",
+        "The Pump Wagon doesn’t move in Command phase by initiative or by successful orders. Instead of this it can always move once up to 1D6 x 10cm. This move is automatic, requiring no Command roll, and happens at any time during the Command phase but may not interrupt a character giving orders or units moving (including other Pump Wagons). This gives the Pump Wagon a movement of between 10cm and 60cm each turn.",
         "",
-        "In the turn it charges or for pursuits and advances, a Pump Wagon receives D6 attacks. This is in addition too any additional attacks it receives for charging enemy in the open and for being a chariot. When charged or retreating as a result of combat, its attacks are halved to D3. The Pump Wagon is crewed by Snotlings who feed on magic mushrooms making them mad and crazy, with no care for their own lives. A Pump Wagon moves forward (and backwards, as well as to the side) at a relentless rate and cannot be driven back by shooting. Nor can it be confused in any way.",
+        "In the combat round it charges, pursuits or advances, a Pump Wagon receives D6 attacks. This is in addition too any additional attacks it receives for charging enemy in the open and for being a chariot. When charged or retreating as a result of combat, its attacks are halved to D3. Roll for attacks every round of combat.",
         "",
-        "The Pump Wagon forms a unit of its own and cannot be brigaded with other units; not even another Pump Wagon, and a character model cannot join it. The enemy does not gain Victory points for a destroyed Pump Wagon and a Pump Wagon does not count towards the Goblin army’s break value."
+        "A Pump Wagon cannot be driven back by shooting and do not roll for drive backs. Pump Wagons ignore confusion. A Pump Wagon cannot be brigaded with other units; not even another Pump Wagon, and characters cannot join it. The enemy does not gain Victory points for a destroyed Pump Wagon and a Pump Wagon does not count towards the Goblin army‘s break value in any way."
       ]
     },
     "Giant": {
