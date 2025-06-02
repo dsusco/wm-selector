@@ -70,7 +70,10 @@
       "armour": "6+",
       "size": 3,
       "points": 45,
-      "min": 2
+      "min": 2,
+      "upgrades": [
+        "Bowmen"
+      ]
     },
     "Bears": {
       "order": 6,
@@ -162,6 +165,17 @@
         "Wand of Power",
         "Rod of Repetition"
       ]
+    },
+    
+    "Bowmen": {
+      "order": 3,
+      "type": "Special",
+      "attack": "3/1",
+      "range": "30cm",
+      "hits": 3,
+      "size": 3,
+      "points": "+10",
+      "max": 1
     }
   },
   "magic": true,

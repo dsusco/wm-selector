@@ -119,7 +119,8 @@
         "Staff of Spellbinding",
         "Scroll of Dispelling",
         "Wand of Power",
-        "Rod of Repetition"
+        "Rod of Repetition",
+        "Rat Ogre Bodyguard"
       ]
     },
     "Hero": {
@@ -129,7 +130,10 @@
       "command": 8,
       "size": 1,
       "points": 70,
-      "max": 2
+      "max": 2,
+      "upgrades": [
+        "Rat Ogre Bodyguard"
+      ]
     },
     "Warlock": {
       "order": 12,
@@ -138,6 +142,15 @@
       "command": 6,
       "size": 1,
       "points": 30,
+      "max": 1
+    }
+  },
+  "upgrades": {
+    "Rat Ogre Bodyguard": {
+      "order": 0,
+      "type": "Special Mount",
+      "attack": "+1",
+      "points": "+10",
       "max": 1
     }
   },
@@ -195,7 +208,7 @@
     "Grey Seer": {
       "order": 7,
       "text": [
-        "The Grey Seer is the army's General and can use Skaven magic in the same manner as a Warlock."
+        "Grey Seer. These are powerful sorcerers as well as the army‘s General. They can cast spells in the same way as a Warlock and can be given a magic item restricted to either a General or a Wizard."
       ]
     },
     "Screaming Bell": {

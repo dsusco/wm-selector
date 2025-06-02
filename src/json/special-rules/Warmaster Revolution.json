@@ -43,17 +43,22 @@
       "_D6_|_On no! What's he doing now!_",
       "1|The Giant will neither move nor fight this turn but simply stands rooted to the spot looking dopey.",
       "2|Move the Giant directly towards the nearest table edge. If he moves into another unit he will attack it regardless of which side it is on. If victorious in combat the Giant will hold his ground.",
-      "3|The Giant picks up a rock, tree, abandoned cart, outhouse or whatever comes to hand and throws it at the closest unit - friend or foe - that he can see. The object travels 5xD6cm and, if it travels far enough to hit its target, strikes with 3 Attacks worked out in the usual way.",
-      "4|The Giant moves straight forward at full pace in the direction he is facing in. If he reaches an enemy unit he will attack as normal. If he reaches a friendly unit he will walk straight through and out the other side if there is room and he has sufficient move. If he reaches a friendly unit and does not have sufficient move or enough room to walk all the way through then he halts on contact. A friendly unit that is walked through or contacted in this way instantly becomes confused for the remainder of the Command phase. Such a unit ceases to be confused at the end of the Command phase along with other confused units.",
-      "5|The Giant moves towards the nearest enemy unit that he can see as fast as he can. If he reaches the foe he will attack as normal. If friends are in the way he will walk through them causing confusion as described above.",
-      "6|The Giant gives a mighty bellow and rushes straight at the nearest enemy unit that he can see. Move the Giant at double his normal full pace move. If he reaches an enemy unit, he fights by jumping up and down on the foe, furiously doubling his Attacks value in the first round of combat."
-    ]
+      "3|The Giant throws an object at the closest visible unit (friend or foe) within 5×D6 cm, inflicting 3 Attacks. If the target is in combat, the attacks contribute to the combat result; otherwise, resolve them in the Shooting phase.",
+      "4|The Giant moves straight forward at full pace in the direction he is facing in. If he reaches an enemy unit he will charge. If he reaches a friendly unit he will walk straight through and out the other side if there is room and he has sufficient move. If he reaches a friendly unit and does not have sufficient move or enough room to walk all the way through then he halts on contact. A friendly unit that is walked through or contacted in this way instantly becomes confused.",
+      "5|The Giant moves towards the nearest enemy unit that he can see as fast as he can. If he reaches the foe he will charge. If friends are in the way he will walk through them causing confusion.",
+      "6|The Giant gives a mighty bellow and rushes straight at the nearest enemy unit that he can see. Move the Giant at double his normal full pace move. If he reaches an enemy unit, he charges it fights by jumping up and down on the foe, furiously doubling his Attack value in the first round of combat."
+  ]
   },
   "Stone Thrower": {
     "text": [
       "Because Stone Throwers lob rocks of such immense size no armour can protect against them. Even the most heavily armoured knight would be instantly pulped if a boulder the size of a horse were to land on him. To represent this, targets always ignore their armour when shot at by a Stone Thrower. No Armour roll is made.",
       "Stone Throwers shoot with such a high trajectory that they cannot shoot at charging enemies.",
       "Because of the high trajectory Stone Throwers can shoot blind at targets they cannot see. The targets are assumed to be reported by scouts or messengers from other units. If there is no target in sight a Stone Thrower may instead shoot at the nearest enemy unit in range it cannot see. When shooting blind it always hits on 6+ no matter if the target is in the open, defended or even fortified."
+    ]
+  },
+  "Big Guys": {
+    "text": [
+    "As this unit is so gargantuan, it uses a 4x6cm base, with the short edge being in front."
     ]
   }
 }

@@ -50,7 +50,7 @@
       "hits": 4,
       "armour": "6+",
       "size": 3,
-      "points": 115,
+      "points": 110,
       "max": 1,
       "noMagic": true
     },
@@ -85,7 +85,10 @@
       "armour": "5+",
       "size": 1,
       "points": 180,
-      "max": 1
+      "max": 1,
+      "specialRules": [
+        "Big Guys"
+      ]
     },
     "Valkyries": {
       "order": 8,
@@ -172,27 +175,30 @@
     "War Mammoth": {
       "order": 4,
       "text": [
-        "The Mammoth is a truly huge monster, so is based on a 6x4cm base, with the shorter edge being its front. It causes terror and may attack troops on ramparts with its trunk in the same manner as a Giant. Alternatively, it may elect to batter a wall section or gateway with its tusks in the same manner as a battering ram.",
+        "The Mammoth causes terror and may attack troops on ramparts with its trunk in the same manner as a Giant. Alternatively, it may elect to batter a wall section or gateway with its tusks in the same manner as a battering ram.",
         "",
         "One last option available in a siege is that if a Norse War Mammoth is in base contact with a wall section, then one Norse infantry unit may assault that wall section via the Mammoth. Climbing up ladders and ropes at the rear of the Mammoth and using boarding ramps and the like to assault the fortress walls. This is not quite as effective as assaulting from a siege tower, so the enemy being assaulted only counts as defended rather than in the open, but is much better than counting it as fortified. If a unit assaults in this manner, then the War Mammoth may not attack with its trunk or batter the walls; as such action would result in attacking your own troops or bringing a wall section down from under them, not a good idea, even for the Norse troops.",
         "",
         "If a Mammoth has accumulated 6-9 hits by the end of the Shooting phase or Combat phase and is no longer engaged in combat it is deemed to have been badly hurt. Once a Mammoth is badly hurt then all accumulated hits are discounted and its maximum Hits value and Attacks are halved for the rest of the battle (to 5 Hits and 4 Attacks)."
       ]
     },
+    "Big Guys": {
+      "order": 5
+    },
     "Valkyries": {
-      "order": 5,
+      "order": 6,
       "text": [
         "Valkyries can fly. Valkyries will always use their initiative to charge an enemy if possible and cannot be given orders instead. They will never use their initiative to evade. Valkyries are unaffected by enemy that cause terror in combat and they don’t suffer the usual -1 Attack modifier."
       ]
     },
     "Were Kin": {
-      "order": 6,
+      "order": 7,
       "text": [
         "The Were Kin special mount option may be taken by any character in Norse army. It is not actually a mount as such, more an upgrade. A unit that is joined by the character with the Were Kin upgrade causes terror in its enemies. No terrain restriction apply for Were Kin - just treat the character as having +1 extra Attack and causing terror."
       ]
     },
     "Horn of Resounding": {
-      "order": 7,
+      "order": 8,
       "text": [
         "A single shaman in the army may be given this chariot upgrade. It gives the shaman +1 Attack if the Horn is used the Shaman inspires the units around him to fight harder. He may add +1 to all of his Command checks for a single turn only."
       ]
