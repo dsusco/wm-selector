@@ -54,24 +54,24 @@
       "points": 30,
       "max": 4
     },
-    "Rhinox Riders": {
-      "order": 5,
-      "type": "Cavalry",
-      "attack": 5,
-      "hits": 4,
-      "armour": "5+",
-      "size": 3,
-      "points": 200,
-      "max": 1
-    },
     "Gorgers": {
-      "order": 6,
+      "order": 5,
       "type": "Infantry",
       "attack": 5,
       "hits": 3,
       "armour": "5+",
       "size": 3,
       "points": 110,
+      "max": 1
+    },
+    "Rhinox Riders": {
+      "order": 6,
+      "type": "Cavalry",
+      "attack": 5,
+      "hits": 4,
+      "armour": "5+",
+      "size": 3,
+      "points": 200,
       "max": 1
     },
     "Sabretusks": {
@@ -183,14 +183,8 @@
         "Unit is allowed to shoot as if it had bows but its range is reduced to 15cm. A Gnoblar stand cannot be supported by other kinds of infantry - only by other Gnoblar stands. Note, however, that Gnoblars can support other kinds of infantry as normal. Gnoblars cannot be given magic items. Characters cannot join Gnoblar units."
       ]
     },
-    "Rhinox Riders": {
-      "order": 5,
-      "text": [
-        "Units of Rhinox Riders are unaffected by terror. Rhinox Riders receive +1 Attack when charging against an enemy in open in the same way as chariots and monsters."
-      ]
-    },
     "Gorgers": {
-      "order": 6,
+      "order": 5,
       "text": [
         "When trying to issue an order to a unit of Gorgers or to a brigade that contains a unit of Gorgers, there is always a -1 Command penalty due their beastly and unruly nature.",
         "",
@@ -201,6 +195,12 @@
         "The nominated point must lie either on the table within dense terrain or on any base edge other than the enemy player‘s own table edge. If successful, place one stand on the nominated spot and arrange the rest of the unit into formation around it.",
         "",
         "The infiltrated unit cannot be placed so that it touches an enemy unit. Once deployed, orders can be given to the unit by the including same character that gave the infiltration order. The infiltrating unit is considered to have used its first order to deploy. If the infiltration order is failed the unit is not deployed and cannot infiltrate that turn, it can attempt to infiltrate in a subsequent turn at the same or a different place."
+      ]
+    },
+    "Rhinox Riders": {
+      "order": 6,
+      "text": [
+        "Units of Rhinox Riders are unaffected by terror. Rhinox Riders receive +1 Attack when charging against an enemy in open in the same way as chariots and monsters."
       ]
     },
     "Giant": {
