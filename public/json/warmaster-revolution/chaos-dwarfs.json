@@ -313,9 +313,11 @@
       "roll": 5,
       "range": "30cm",
       "text": [
-        "*The wizard hurls flaming stones from his fingertips toward the enemy, battering everything in its path.*",
+        "*The Sorcerer hurls flaming stones from his fingertips toward the enemy, battering everything in its path.*",
         "",
-        "Draw an imaginary line 30cm long extending from the Wizard’s stand in any direction you wish. Each unit under the line takes three shooting attacks worked out in the usual way. Note that this spell can easily affect several units and will affect all units that fall beneath its path, including your own. Unengaged units can be driven back by the Meteor Storm as with ordinary shooting. Engaged units cannot be driven back, but carry over any hits that are scorred into the first round of combat. Hits caused by the Meteor Storm count as having been struck in the combat itself."
+        "Draw an imaginary line 30cm long extending from the Sorcerer’s stand in any direction you wish. The line will pass through any intervening units but not beyond terrain that would normally stop a missile shot, e.g. over the crest of a hill, more than 2cm of woodland, and so forth.",
+        "",
+        "Each unit under the line takes three shooting attacks worked out in the usual way. Note that this spell can easily affect several units and will affect all units that fall beneath its path, including your own. Unengaged units can be driven back by the Meteor Storm as with ordinary shooting. Engaged units cannot be driven back, but carry over any hits that are scored into the first round of combat. Hits caused by the Meteor Storm count as having been struck in the combat itself."
       ]
     }
   ]

@@ -171,7 +171,7 @@
     "Shrine": {
       "order": 1,
       "type": "Special",
-      "points": "+50",
+      "points": "+30",
       "armyMax": 1
     }
   },

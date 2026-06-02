@@ -185,7 +185,7 @@
       "order": 1,
       "type": "Chariot Mount",
       "attack": "+1",
-      "points": "+10",
+      "points": "+5",
       "max": 1
     }
   },
@@ -221,14 +221,20 @@
     "Stone Thrower": {
       "order": 6
     },
-    "Wyvern": {
+    "Orc General": {
       "order": 7,
+      "text": [
+        "Once per game, at any point in the Command Phase, the Orc General motivates his troops forwards. For the remainder of that Command phase, the Orc General ignores the Command Penalty for having an enemy within 20cm of a unit."
+      ]
+    },
+    "Wyvern": {
+      "order": 8,
       "text": [
         "Generals, Wizards and Heroes can ride Wyverns. A Wyvern can fly, increasing its riders' move from 60 to 100cm, and it adds +2 Attacks to those of its rider. A unit that includes a Wyvern rider causes terror in its enemies."
       ]
     },
     "Chariot": {
-      "order": 8,
+      "order": 9,
       "text": [
         "A General, Wizard or Hero can ride a Chariot. A character in a chariot adds +1 to his Attacks."
       ]

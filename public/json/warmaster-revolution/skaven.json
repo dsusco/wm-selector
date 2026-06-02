@@ -199,7 +199,7 @@
     "Warp Lightning Cannon": {
       "order": 5,
       "text": [
-        "The Warp Lightning Cannon has a range of 40cm and follows all the normal rules for artillery, but they can move up to 20cm. Half pace move is 10cm. When making a shooting attack, any roll of double 1s to hit will cause the Warp Lightning Cannon unit to become confused. This includes stand and shoot attacks."
+        "The Warp Lightning Cannon follows the rules for Elven Bolt Throwers as per page 75 of the rulebook, but they can move up to 20cm. A half pace move is 10cm. When making a shooting attack, any roll of double 1s to hit will cause the Warp Lightning Cannon unit to become confused. This includes stand and shoot attacks."
       ]
     },
     "Doom Wheel": {

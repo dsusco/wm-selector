@@ -164,7 +164,7 @@
     "War Altar": {
       "order": 1,
       "type": "Chariot Mount",
-      "attack": "+1",
+      "attack": "+2",
       "points": "+15",
       "armyMax": 1
     },
@@ -263,7 +263,7 @@
     "War Altar": {
       "order": 8,
       "text": [
-        "There is only one War Altar of Sigmar. Consequently an army, no matter how large, can only ever include one. A War Altar can only be included as a mount for a Wizard, in which case he is assumed to be the Grand Theogonist. The presence of the War Altar adds +1 Attack and enables the Grand Theogonist to add +1 to the dice when casting a spell once during the battle. The player must announce that he is using the power of the War Altar before rolling the dice for the spell."
+        "A Wizard may be mounted on a War Altar. A Wizard with a War Altar suffers a movement reduction to 30cm. The army can only ever include one War Altar, and it can only be included if there is at least 1 unit of Flagellants in the army. The War Altar adds +2 attacks to the Wizard and can be used to add +1 to the Wizard‘s dice roll to cast a spell once per battle. The player must announce that the War Altar‘s spell bonus is being used before rolling the dice to determine if the spell is cast."
       ]
     },
     "Cannon": {

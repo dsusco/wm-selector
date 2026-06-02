@@ -17,8 +17,18 @@
         "Handgunners"
       ]
     },
-    "Handgunners": {
+    "Miners": {
       "order": 1,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 4,
+      "armour": "6+",
+      "size": 3,
+      "points": 60,
+      "max": 2
+    },
+    "Handgunners": {
+      "order": 2,
       "type": "Infantry",
       "attack": "3/1",
       "range": "30cm",
@@ -28,7 +38,7 @@
       "points": 90
     },
     "Rangers": {
-      "order": 2,
+      "order": 3,
       "type": "Infantry",
       "attack": "3/1",
       "range": "30cm",
@@ -39,7 +49,7 @@
       "max": 2
     },
     "Troll Slayers": {
-      "order": 3,
+      "order": 4,
       "type": "Infantry",
       "attack": 5,
       "hits": 4,
@@ -48,7 +58,7 @@
       "max": 2
     },
     "Cannon": {
-      "order": 4,
+      "order": 5,
       "type": "Artillery",
       "attack": "1/2+bounce",
       "range": "60cm",
@@ -59,7 +69,7 @@
       "max": 1
     },
     "Flame Cannon": {
-      "order": 5,
+      "order": 6,
       "type": "Artillery",
       "attack": "1/2D6",
       "range": "30cm",
@@ -70,18 +80,18 @@
       "max": 1
     },
     "Gyrocopter": {
-      "order": 6,
+      "order": 7,
       "type": "Machine",
       "attack": "1/3",
       "range": "30cm",
-      "hits": 3,
+      "hits": 4,
       "armour": "5+",
       "size": 1,
       "points": 75,
       "max": 1
     },
     "General": {
-      "order": 7,
+      "order": 8,
       "type": "General",
       "attack": "+2",
       "command": 10,
@@ -91,19 +101,19 @@
       "armyMax": 1
     },
     "Hero": {
-      "order": 8,
+      "order": 9,
       "type": "Hero",
       "attack": "+1",
       "command": 8,
       "size": 1,
       "points": 80,
       "max": 1,
-      "upgrades":[
+      "upgrades": [
         "Oathstone"
       ]
     },
     "Runesmith": {
-      "order": 9,
+      "order": 10,
       "type": "Hero",
       "attack": "+1",
       "command": 8,
@@ -122,7 +132,7 @@
       "order": 0,
       "type": "Special",
       "attack": "+1",
-      "points": "+50",
+      "points": "+30",
       "armyMax": 1
     },
     "Handgunners": {
@@ -154,9 +164,7 @@
     "Rangers": {
       "order": 2,
       "text": [
-        "One unit of Rangers per full 1000 points does not have to be deployed before the game if the player does not wish to do so. Instead the unit can be infiltrated onto the battlefield once the game has begun. To infiltrate a unit, the Dwarf player nominates the point where he wants the Rangers to appear and issues an ‘infiltration‘ order from any character. The character does not have to be within his normal command range to issue an infiltration order – the character’s command range is considered to extend over the entire tabletop when issuing an infiltration order. Treat the order as issued to the nominated point, and apply any modifiers for distance and proximity of enemy, but ignore penalties for dense terrain. The nominated point must lie either on the table within dense terrain or on any base edge other than the enemy player’s own table edge. If successful, place one stand on the nominated spot and arrange the rest of the unit into formation around it. The infiltrated unit cannot be placed so that it touches an enemy unit. Once deployed, orders can be given to the unit by the same character that gave the infiltration order if he is within his normal command range, the infiltrating unit is considered to have used its first order to deploy. If the infiltration order is failed the unit is not deployed and cannot infiltrate that turn, it can attempt to infiltrate in a subsequent turn at the same or a different place.",
-        "",
-        "Although they are infantry the exceptional mobility of Dwarf Rangers means that they can pursue any type of retreating enemy."
+        "One unit of Rangers per full 1000 points does not have to be deployed before the game if the player does not wish to do so. Instead the unit can be infiltrated onto the battlefield once the game has begun. To infiltrate a unit, the Dwarf player nominates the point where he wants the Rangers to appear and issues an ‘infiltration‘ order from any character. The character does not have to be within his normal command range to issue an infiltration order - the character‘s command range is considered to extend over the entire tabletop when issuing an infiltration order. Treat the order as issued to the nominated point, and apply any modifiers for distance and proximity of enemy, but ignore penalties for dense terrain. The nominated point must lie either on the table within dense terrain or on any base edge other than the enemy player‘s own table edge. If successful, place one stand on the nominated spot and arrange the rest of the unit into formation around it. The infiltrated unit cannot be placed so that it touches an enemy unit. Once deployed, orders can be given to the unit by the same character that gave the infiltration order if he is within his normal command range, the infiltrating unit is considered to have used its first order to deploy. If the infiltration order is failed the unit is not deployed and cannot infiltrate that turn, it can attempt to infiltrate in a subsequent turn at the same or a different place. Rangers don‘t suffer the -1 Command penalty for Dense Terrain. Although they are infantry, Rangers can pursue any type of retreating enemy."
       ]
     },
     "Troll Slayers": {

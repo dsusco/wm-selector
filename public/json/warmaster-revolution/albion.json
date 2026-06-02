@@ -44,7 +44,7 @@
       "points": 40,
       "max": 6
     },
-    "Cavalry": {
+    "Riders": {
       "order": 4,
       "type": "Cavalry",
       "attack": 3,
@@ -150,7 +150,7 @@
       "order": 1,
       "type": "Chariot Mount",
       "attack": "+1",
-      "points": "+10",
+      "points": "+5",
       "max": 1
     }
   },
@@ -192,7 +192,9 @@
       "text": [
         "*The Druid brings down a localised shower of fine, freezing rain upon his foes.*",
         "",
-        "Until the start of the Druid player’s next turn all enemy units within 30cms of the casting Druid suffer -1 to their command."
+        "The spell is cast upon the Druid himself and affects all enemy units within 30cm of the stand. The spell lasts until the end of the opposing player’s following turn. The spell affects the opposing army’s ability to issue commands.",
+        "",
+        "All enemy units within 30cm of the Druid suffer a −1 Command penalty. This penalty is applied when each order is issued: a unit might therefore be within 30cm of the Druid for one order but not for a second, for example."
       ]
     },
     {

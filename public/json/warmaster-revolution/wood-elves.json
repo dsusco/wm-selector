@@ -32,7 +32,7 @@
       "hits": 3,
       "armour": "-/5+",
       "size": "+1",
-      "points": 30,
+      "points": 25,
       "max": 4,
       "augendUnits": [
         "Glade Guard",
@@ -244,9 +244,9 @@
     "Waywatchers": {
       "order": 3,
       "text": [
-        "Famous for their bow skills even by a Wood Elf standards, Waywatchers shoot the enemy with terrifying accuracy. They add +1 to their dice roll when making shooting attacks and these attacks are resolved at -1 Armor value for the enemy.",
+        "Famous for their bow skills even by Wood Elf standards, Waywatchers shoot the enemy with terrifying accuracy. They add +1 to their dice rolls when making shooting attacks and these attacks are resolved at -1 Armour value of the enemy.",
         "",
-        "Waywatchers can also ambush. Individual units can be infiltrated onto the battlefield once the game has begun. To infiltrate a unit, the Wood Elf player nominates the point where he wants the Waywatchers to appear and issues an 'infiltration' order from any character. The character does not have to be within his normal command range to issue an infiltration order – the character's command range is considered to extend over the entire tabletop when issuing an infiltration order. Treat the order as issued to the nominated point, and apply any modifiers for distance and proximity of enemy, but ignore penalties of dense terrain. The nominated point must lie either on the table within dense terrain or on any base edge other than the enemy player's own table edge. If successful, place one stand on the nominated spot and arrange the rest of the unit around it. The infiltrated unit cannot be placed so that it touches an enemy unit. Once deployed, orders can be given to the unit by the same character that gave the infiltration order if he is within his normal command range, the infiltrating unit is considered to have used its first order to deploy. If the infiltration order is failed the unit is not deployed and cannot infiltrate that turn, it can attempt to infiltrate in a subsequent turn at the same or a different place."
+        "Individual units can be infiltrated onto the battlefield once the game has begun. To infiltrate a unit, the Wood Elf player nominates the point where he wants the Waywatchers to appear and issues an ‘infiltration‘ order from any character. The character does not have to be within his normal command range to issue an infiltration order - the character‘s command range is considered to extend over the entire tabletop when issuing an infiltration order. Treat the order as issued to the nominated point, and apply any modifiers for distance and proximity of enemy, but ignore penalties of dense terrain. The nominated point must lie either on the table within dense terrain or on any base edge other than the enemy player‘s own table edge. If successful, place one stand on the nominated spot and arrange the rest of the unit around it. The infiltrated unit cannot be placed so that it touches an enemy unit. Once deployed, orders can be given to the unit by the same character that gave the infiltration order if he is within his normal command range, the infiltrating unit is considered to have used its first order to deploy. If the infiltration order is failed the unit is not deployed and cannot infiltrate that turn, it can attempt to infiltrate in a subsequent turn at the same or a different place. Waywatchers don‘t suffer the -1 Command penalty for Dense Terrain."
       ]
     },
     "Forest Spirits": {
@@ -316,9 +316,9 @@
       "roll": 4,
       "range": "30cm",
       "text": [
-        "The Spell Weaver calls force a mass of tangling branches to surround ther troops, protecting them form harm.",
+        "*The Spellweaver calls forth a mass of tangling branches to surround their troops, protecting them from harm.*",
         "",
-        "This spell may be cast upon a single unengaged friendly Infantry unit within range, regardless of whether the caster can see them or not. The spell lasts until the start of the caster’s next turn, or until the target unit moves in any way. The target Infantry unit counts as Defended, even if it is in open terrain."
+        "This spell may be cast upon a single unengaged friendly Infantry unit within range, regardless of whether the caster can see them or not. The spell lasts until the start of the caster‘s next turn, or until the target unit moves in any way. The target Infantry unit counts as Defended, even if it is in open terrain."
       ]
     },
     {
@@ -326,7 +326,9 @@
       "roll": 5,
       "range": "30cm",
       "text": [
-        "A weird enchantment forms around the target unit and engulfs it. Unit causes terror until Wood Elf next magic phase."
+        "The Spellweaver shrouds a friendly unit in nightmarish shadows, filling the enemy with fear.",
+        "",
+        "This spell can only be cast on any friendly unit within range regardless of whether the Spellweaver can see it or not. The unit counts as causing terror for the duration of the Combat phase."
       ]
     },
     {
@@ -334,7 +336,11 @@
       "roll": 5,
       "range": "30cm",
       "text": [
-        "Unit may make a full pace move into contact with the nearest visible enemy unit in the same way as when charging. Enemy may not shoot at chargers."
+        "*The Spellweaver‘s voice sings out across the battlefield directing troops above the tumult of combat with the magical Call of the Hunt.*",
+        "",
+        "The spell can be cast on any unengaged friendly unit within range regardless of whether the Spellweaver can see it or not. The spell affects only a single unit, never a brigade and there is no supporting charge possible. The target unit must make a charge move into base contact with the nearest visible enemy unit in the same way as when charging, so all normal charge rules apply.",
+        "",
+        "A unit moved by means of the spell cannot be affected by stand and shoot attacks until the end of the shooting phase. Character stands that have joined the affected unit will not move with it: they remain where they are."
       ]
     },
     {
@@ -342,7 +348,9 @@
       "roll": 6,
       "range": "60cm",
       "text": [
-        "The spell makes three shooting attacks on all enemy units within 10cm of chosen wooded terrain piece. Units get no armour save if within wooded terrain.",
+        "*The Spellweaver awakens the fury of the forest to purge the enemy from their soil.*",
+        "",
+        "The spell can be cast upon any terrain piece in range that is designated as woods. All enemy units within 10cm of chosen wooded terrain piece take 3 shooting attacks worked out in the normal way. Affected units get no armour save if at least one of their stands is completely within the chosen terrain.",
         "",
         "Unengaged units are not driven back by this spell (the assault comes form the ground beneath their feet). Engaged units carry over any hits scored into the first round of combat; any hits scored count as having been struck in the combat itself."
       ]

@@ -37,7 +37,7 @@
       "hits": 3,
       "armour": "5+",
       "size": 3,
-      "points": 75,
+      "points": 80,
       "max": 2
     },
     "Minotaurs": {
@@ -159,7 +159,7 @@
       "order": 0,
       "type": "Chariot Mount",
       "attack": "+1",
-      "points": "+10",
+      "points": "+5",
       "max": 1
     }
   },

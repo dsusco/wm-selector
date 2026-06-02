@@ -224,7 +224,9 @@
       "text": [
         "*The Butcher grinds his way through a lump of earth encrusted bedrock taken from the peak of a mountain, imbuing himself and his fellows with supernatural resilience. This often costs the Butcher more than a couple of teeth.*",
         "",
-        "Target friendly unit can’t be driven back or confused until your next turn."
+        "This spell can only be cast on an unengaged friendly unit within range regardless of whether the Shaman can see it or not.",
+        "",
+        "The target friendly unit can’t be driven back by enemy shooting attacks until your next turn. In addition the unit cannot become confused for any reason until the end of your next command phase."
       ]
     },
     {
@@ -234,7 +236,9 @@
       "text": [
         "*Shovelling dry bones into his mouth, the Butcher painfully crunches his way through femurs, ribs and skulls. As he points at his foes and spits his bloody curse, the enemy find their own bones breaking within their bodies.*",
         "",
-        "Counts as three shooting attacks with no armour save. The spell causes drive back as for normal shooting. The Wizard must be able to see the target and can’t cast the spell into a combat."
+        "This spell can be cast on an enemy unit. The Wizard must be able to see his target to use this spell. The spell cannot be directed at a unit engaged in combat.",
+        "",
+        "Bone Cruncher is treated like three ordinary shooting attacks except that armour has no effect (all targets count as having no armour). A unit can be driven back by Bone Cruncher as with ordinary shooting."
       ]
     },
     {
@@ -243,7 +247,9 @@
       "text": [
         "*The Butcher greedily devours the heart of a Bull Rhinox, no doubt enjoying the feast of healthy blood and muscle whilst he imbues himself and his charges with the strength of a charging Rhinox.",
         "",
-        "The spell adds +1 Attack for each stand in a unit the Butcher has joined, including his own stand. The spell lasts for the duration of the following Combat phase."
+        "This spell can be cast if the Butcher has joined a unit in combat. The spell affects the unit he has joined. The effect lasts for the duration of the following Combat phase.",
+        "",
+        "Every stand in the unit, including characters that have joined the unit, adds +1 to its Attacks value. As the Butcher must join the unit to cast the spell this includes the Butcher himself, but it is possible for other characters to join the unit as well, in which case the +1 is applied to whichever character fights."
       ]
     },
     {
@@ -251,9 +257,11 @@
       "roll": 5,
       "range": "30cm",
       "text": [
-        "*The Ogre Butcher forces down the toxic guts of a Stone Troll, great quantities of acid and bile ravaging his much abused gut as he transfers the supernatural abilities of the troll onto himself and his companions.*",
+        "*The Ogre Butcher forces down the toxic guts of a Stone Troll, great quantities of acid and bile ravaging his much-abused gut as he transfers the supernatural abilities of the troll onto himself and his companions.*",
         "",
-        "This spell can be cast on friendly unit in combat. Each stand in affected unit gain +1 Hit during the following Combat phase."
+        "This spell can be cast on one friendly unit within range that is engaged in combat.",
+        "",
+        "The affected unit increases its Hits value by +1 until the end of the following Combat phase. At the end of the following Combat phase, the unit‘s Hits value returns to normal so any outstanding Hits will be applied, potentially causing the loss of stands."
       ]
     }
   ]

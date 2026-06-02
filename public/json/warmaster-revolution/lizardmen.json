@@ -21,7 +21,7 @@
       "hits": 3,
       "armour": "5+",
       "size": 3,
-      "points": 75,
+      "points": 80,
       "min": 2,
       "specialRules": [
         "Reptilian"
@@ -47,7 +47,7 @@
       "range": "15cm",
       "hits": 3,
       "size": "+1",
-      "points": 25,
+      "points": 20,
       "max": 2,
       "augendUnits": [
         "Skinks"

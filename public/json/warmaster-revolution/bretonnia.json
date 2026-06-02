@@ -229,7 +229,7 @@
     "Hippogriff": {
       "order": 8,
       "text": [
-        "Only a General can ride a Hippogriff. The Hippogriff can fly. A unit joined by the General on Hippogriff causes terror."
+        "A single General or Hero can ride a Hippogriff. A Hippogriff can fly, increasing its rider‘s move from 60 to 100cm, and it adds +2 Attacks to those of its rider. A unit that includes a Hippogriff rider causes terror in its enemies."
       ]
     },
     "Grail Reliquae": {
