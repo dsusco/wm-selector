@@ -1,0 +1,250 @@
+{
+  "specialRules": {
+    "Shock": {
+      "order": 1
+    },
+    "Slow": {
+      "order": 2
+    },
+    "Skirmish": {
+      "order": 3
+    },
+    "Unreliable": {
+      "order": 4
+    },
+    "Phalanx": {
+      "order": 5
+    },
+    "Tigranes the Great": {
+      "order": 6,
+      "text": [
+        "Tigranes begins the battle with a command value of 9, and is lowered to 8 as soon as an unmodified order roll is 10 or more. Also, any ally subordinate within 20cm of Tigranes has their command value modified to 8."
+      ]
+    }
+  },
+  "units": {
+    "Armenian Cataphracts": {
+      "order": 0,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "armour": "4+",
+      "specialRules": [
+        "Shock",
+        "Slow"
+      ],
+      "points": 125,
+      "min": 1,
+      "max": 3
+    },
+    "Mounted Skirmishers": {
+      "order": 1,
+      "type": "Cavalry",
+      "attack": 1,
+      "hits": 3,
+      "size": 3,
+      "range": 15,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "points": 40,
+      "min": 2
+    },
+    "Horse Archers": {
+      "order": 2,
+      "type": "Cavalry",
+      "attack": 1,
+      "hits": 3,
+      "size": 3,
+      "range": 30,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "points": 60,
+      "max": 2
+    },
+    "Allied Cataphracts": {
+      "order": 3,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "armour": "4+",
+      "specialRules": [
+        "Shock",
+        "Slow",
+        "Unreliable"
+      ],
+      "points": 115,
+      "max": 2
+    },
+    "Archers": {
+      "order": 4,
+      "type": "Infantry",
+      "attack": 2,
+      "hits": 3,
+      "size": 3,
+      "range": 30,
+      "points": 40,
+      "min": 2
+    },
+    "Javelinmen": {
+      "order": 5,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "points": 35,
+      "min": 2
+    },
+    "Skirmishers": {
+      "order": 6,
+      "type": "Infantry",
+      "specialRules": [
+        "Skirmish"
+      ],
+      "attack": 1,
+      "hits": 3,
+      "size": 3,
+      "range": 15,
+      "points": 30,
+      "max": 6
+    },
+    "Imitation Legion": {
+      "order": 7,
+      "upgrades": [
+        "Trained Legion"
+      ],
+      "specialRules": [
+        "Unreliable"
+      ],
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "armour": "5+",
+      "points": 50,
+      "max": 4
+    },
+    "Phalanx": {
+      "order": 8,
+      "specialRules": [
+        "Phalanx",
+        "Unreliable"
+      ],
+      "upgrades": [
+        "Loyal Phalanx"
+      ],
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "armour": "5+",
+      "points": 60,
+      "max": 4
+    },
+    "Armed Servants": {
+      "order": 9,
+      "type": "Infantry",
+      "attack": 2,
+      "hits": 3,
+      "size": 3,
+      "points": 25,
+      "max": 2
+    },
+    "General": {
+      "order": 10,
+      "type": "General",
+      "upgrades": [
+        "Tigranes"
+      ],
+      "points": 100,
+      "attack": "+2",
+      "command": 8,
+      "size": 1,
+      "armyMax": 1,
+	  "armyMin": 1
+    },
+    "Crown Prince": {
+      "order": 11,
+      "type": "Leader",
+      "max": 1,
+      "points": 80,
+      "attack": "+1",
+      "command": 8,
+      "size": 1
+    },
+    "Allied Commander": {
+      "order": 12,
+      "type": "Subordinate",
+      "max": 2,
+      "points": 30,
+      "attack": "+1",
+      "command": 7,
+      "size": 1
+    }
+  },
+  "upgrades": {
+    "Trained Legion": {
+      "order": 0,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": "+10",
+      "max": "All or none"
+    },
+    "Loyal Phalanx": {
+      "order": 1,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "specialRules": [
+        "Phalanx"
+      ],
+      "points": "+10",
+      "max": "All or none"
+    },
+    "Tigranes": {
+      "order": 2,
+      "type": "General",
+      "attack": "+2",
+      "command": "9/8",
+      "specialRules": [
+        "Tigranes the Great"
+      ],
+      "max": 1,
+      "size": 1,
+      "points": "+30"
+    }
+  },
+  "armyRules": [
+    "Armenian Cataphracts.  These are heavily armoured cavalrymen riding horses with varying degrees of armour.  They are armed with the long lance-like kontos wielded in two hands. They are relatively slow and ponderous.",
+    "",
+    "Mounted Skirmishers. This category represents light cavalrymen armed with either javelins or bows. These could be Armenians or could come from any one of Armenia’s allies or vassels.",
+    "",
+    "Archers.  Bow armed Armenians or archers from occupied areas with a strong tradition of archery including Syrian and Arab bowmen.",
+    "",
+    "Javelinmen. Although armed with javelins or short spears and shields we’ve treated these as essentially close fighting infantry. These represent the native Armenian infantry fighting as formed units.",
+    "",
+    "Skirmishers. Armenian infantry fighting in loose formation at a distance either with bows, slings or javelins.",
+    "",
+    "Imitation Legion. These are armoured troops fighting in broadly Roman fashion and trained by Tigranes’ ally Pontus; however, lacking the appropriate level of expertise we treat these as regular heavy infantry without the ‘Legion’ rule. We also consider them unreliable unless upgraded to ‘Trained’ , in which case they represent later battle-tried formations.",
+    "",
+    "Phalanx.  These represent formerly Seleucid troops and are classified as unreliable but can be upgraded to ‘Loyal’ phalanx if you wish.",
+    "",
+    "Armed Servants. These represent conscripted civilians and other lowly individuals brought along mostly to fetch and carry during siege operations but included here to swell the ranks. They would probably be armed with shields and spears or javelins and are treated as a poor quality ‘Javelinmen’.",
+    "",
+    "Horse Archers. These specialist horse archers represent Parthians or Medians allied to Tigranes.",
+    "",
+    "Allied Cataphracts.  These are heavy cavalry from amongst the vassel states to the south of Armenia including Media Atropatene, Gordyene, and Adiabene—all formerly northern territories of the Parthian Empire. They are generally armed and armoured much as contemporary Parthian Cataphracts"
+  ],
+  "name": "Artaxiad Armenian",
+  "version": "Warmaster Ancients Ricks lists",
+  "group": "Greece and the Near East",
+  "order": 5
+}

@@ -1,0 +1,259 @@
+{
+  "specialRules": {
+    "Shock": {
+      "order": 1
+    },
+    "Skirmish": {
+      "order": 2
+    },
+    "Unreliable": {
+      "order": 3
+    },
+    "Shieldwall": {
+      "order": 4
+    },
+    "Guiscard": {
+      "order": 5,
+      "text": [
+        "If the General is upgraded to Robert Guiscard then he may use his cunning to outwit his opponent.  At the start of the battle, after both sides have deployed but before any moves are made Guiscard may roll 2D6 and rearrange that number of units and commanders in any way he sees fit within his normal deployment area."
+      ]
+    },
+    "Iron Arm": {
+      "order": 6,
+      "text": [
+        "Norman adventurers were hungry for power and wealth and being only a couple of generations removed from their Viking forebears saw personal heroics as an important route to gaining advancement among their peers.  Probably the most famous example being William d’Hauteville who killed the Emir of Syracuse with a single blow, earning himself much prestige and the sobriquet 'Iron Arm'.  One Baron per thousand points can have his attacks increased to 3 dice to reflect this bloodthirsty attitude and the willingness to lead from the front."
+      ]
+    }
+  },
+  "units": {
+    "Infantry": {
+      "order": 0,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "points": 35,
+      "min": 2,
+      "upgrades": [
+        "Militia",
+		"Heavy Militia"
+      ]
+    },
+    "Archers": {
+      "order": 1,
+      "type": "Infantry",
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "points": 40,
+      "min": 1,
+      "max": 4
+    },
+    "Varangians": {
+      "order": 2,
+      "type": "Infantry",
+      "attack": 4,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 75,
+      "max": 2,
+      "specialRules": [
+        "Shieldwall"
+      ]
+    },
+    "Skirmisher Infantry": {
+      "order": 3,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "type": "Infantry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": 30,
+      "min": 1,
+      "max": 4
+    },
+    "Norman Cavalry": {
+      "order": 4,
+      "specialRules": [
+        "Shock"
+      ],
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 110,
+      "min": 2
+    },
+    "Southern Cavalry": {
+      "order": 5,
+      "upgrades": [
+        "Southern Cavalry"
+      ],
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 70,
+      "max": 2
+    },
+    "Light Cavalry": {
+      "order": 6,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "type": "Cavalry",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 60,
+      "min": 1,
+      "max": 4
+    },
+    "Skirmisher Cavalry": {
+      "order": 7,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "type": "Cavalry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": 40,
+      "min": 1,
+      "max": 2
+    },
+    "General": {
+      "order": 8,
+      "upgrades": [
+        "Robert Guiscard"
+      ],
+      "type": "General",
+      "attack": "+2",
+      "command": 9,
+      "size": 2,
+      "points": 125,
+      "armyMax": 1,
+	  "armyMin": 1
+    },
+    "Lord": {
+      "order": 9,
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 2,
+      "points": 80,
+      "max": 1
+    },
+    "Baron": {
+      "order": 10,
+      "upgrades": [
+        "Iron Arm"
+      ],
+      "type": "Subordinate",
+      "attack": "+1",
+      "command": 8,
+      "size": 2,
+      "points": 40,
+      "max": 2
+    }
+  },
+  "upgrades": {
+    "Militia": {
+      "order": 0,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": "+0",
+      "specialRules": [
+        "Unreliable"
+      ],
+      "max": "up to half"
+    },
+    "Heavy Militia": {
+      "order": 1,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "specialRules": [
+        "Unreliable"
+      ],
+      "points": "+15",
+      "max": "up to half of militia"
+    },
+    "Southern Cavalry": {
+      "order": 2,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": "+30",
+      "specialRules": [
+        "Shock"
+      ]
+    },
+    "Robert Guiscard": {
+      "order": 3,
+      "type": "General",
+      "attack": "+2",
+      "size": 1,
+      "command": 9,
+      "max": 1,
+      "specialRules": [
+        "Guiscard"
+      ],
+      "points": "+10"
+    },
+    "Iron Arm": {
+      "order": 4,
+      "type": "Subordinate",
+      "attack": "+3",
+      "size": 1,
+      "command": 8,
+      "max": 1,
+      "specialRules": [
+        "Iron Arm"
+      ],
+      "points": "+20"
+    }
+  },
+  "armyRules": [
+    "Norman Cavalry. These were often called knights in contemporary sources; equipped with lance and sword and protected with mail armour and large kite shields they formed the cutting edge of the Norman armies.",
+    "",
+    "Southern Cavalry. Norman Squires and other locally recruited shock cavalry including Byzantines, Muslims and Lombards.  Although shock based they have been given a reduced armour save to reflect the relative light armour favoured by the locals when compared with the Norman invaders.",
+    "",
+    "Light Cavalry. These are Norman and Muslims, the Muslims found the d’Hautevilles benevolent rulers so were extremely loyal, who providing skirmishing cavalry armed with javelins and shields. These were prepared to engage in melee if it was to their advantage.",
+    "",
+    "Skirmishing Cavalry. These are lightly equipped units recruited from the Muslims armed with javelins and shields who fought as skirmishers only.",
+    "",
+    "Varangians. Accounts of the first invasion of Sicily include references to units of northern “varangians” fighting for the Normans, presumably as freebooters or mercenaries.  That they were so described implies that they were perceived as being different from the Normans and have been classified as heavy infantry in the Viking mould similar to the “varangians” in the Rus and Byzantine lists from whom they were probably drawn.",
+    "",
+    "Infantry. Mercenary and local infantry armed with spears and shields from the towns of Southern Italy, especially those captured from the Byzantine provided good infantry in the form of local militias.",
+    "",
+    "Archers. Southern Italy and especially the Muslims of Sicily had a long standing archery tradition and once they had begun to make inroads into the island the Normans quickly adopted the archer as a key part of their army.",
+    "",
+    "Militia. Up to half the infantry may be upgraded to town militia from the former Byzantine towns and cities conquered by the Normans.  Militia enjoy a saving throw of 6+ but were generally reluctant to serve their new masters and have been classed as unreliable.",
+    "",
+    "Heavy Militia. Up to half the infantry upgraded to militia may have their armour increased to a 5+ save, this represents the tradition of heavier armoured Byzantine militia infantry in the towns and cities of the old Byzantine holdings, they remain unreliable.",
+    "",
+    "Skirmishing Infantry. These are lightly equipped units recruited from the local Muslims and were armed with javelins and shields they fought, like their cavalry counterpart, as skirmishers only."
+  ],
+  "name": "Early Sicillian Normans",
+  "version": "Warmaster Ancients Ricks lists",
+  "group": "The Dark Ages",
+  "order": 0
+}

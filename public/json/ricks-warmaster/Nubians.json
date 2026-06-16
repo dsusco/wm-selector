@@ -1,0 +1,159 @@
+{
+  "specialRules": {
+    "Skirmish": {
+      "order": 1,
+      "text": [
+        "In the Warmaster Ancients game, most skirmishers represent troops whose role is exclusively skirmishing. Whilst other troops may skirmish to a degree, they do so on the tactical level subsumed within close combat. The exceptions are some light cavalry and chariot units which are adjudged to have a duel role and which usually carry a mixture of weapons, eg, Huns.",
+        "Because skirmishers are such a fundamental part of the armies, the skirmish rules are described throughout the book in the appropriate sections. These are summarised below together with references to the full descriptions.",
+        "Skirmishers carry suitable weapons—sometimes bows but more likely s lings or javelins—and fight in loose, informal formations taking advantage of local terrain to avoid contact with more powerful but less mobile enemies. In general, skirmishing units represent fewer men than close fighting units. It is assumed they will usually disperse or flee if attacked.",
+        "",
+        "1. Skirmishers always move at up to full pace for their type regardless of format ion or circumstances (see p22).",
+        "2. Skirmishing units can see all round—they can draw a line of sight from any stand's edge. Their shooting zone extends all round to their front, side and rear. Because they can see enemies to their side or rear they can charge, evade or otherwise react to such units (see p10 Visibility) and (p37 Shooting).",
+        "3. Unless confused, skirmishers are allowed to evade from an enemy charge in the opposing Command phase (see p24).",
+        "4. Unless confused, skirmishers arc allowed to evade instead of being driven back by shooting in the opposing Shooting phase (see p25).",
+        "5. Skirmishers can evade through other units. If these other units are not skirmishers, or if they are a second or subsequent unit evaded through regardless of whether they are skirmishers or not, then both units must test for confusion once the move is complete. Units become confused on the roll of a 6 (see p24).",
+        "6. Skirmishing infantry can support from the side only: they cannot support from behind (see p50).",
+        "7. Skirmishing infantry can move through some types of terrain that is otherwise impassable—notablyrivers/deep water, forests, and cliffs. This is described in the section on Terrain & Movement (see p31).",
+        "Note: For the avoidance of doubt, skirmishing infantry are able to evade from charging cavalry, or other non-skirmishing units, even if these units have a greater move distance than they do. In this case, skirmishers are assumed to have already seen, reacted to, and taken steps to avoid their attackers well before they reach their position."
+      ]
+    },
+    "Warband": {
+      "order": 2,
+      "text": [
+        "Warbands represent close fighting but often poorly organised infantry or cavalry, generally tribal troops, barbarians, levy, or militia, that lack training or experience. These troops become confident in large numbers or when flushed with victory, but timid if few in number or once they have been beaten.",
+        "1. If three or four units of warband are given a brigade order, the player can add 1 to the commander's Command value up to a maximum of 10. The entire brigade has to comprise warband units, and there must be at least three units in the brigade.",
+        "2. If a warband unit is driven back by shooting bur has not yet lost a stand then it rolls one less dice for the drive back than usual. If a warband is driven back by shooting and has lost one or more stands for whatever reason then it rolls one more dice than usual.",
+        "3. If a warband unit pursues in combat then it receives a further +1 Attack bonus per stand in the following pursuit round. If a warband retreats from combat then it receives a -1 Attack penalty per stand in the following pursuit round."
+      ]
+    },
+    "Portents": {
+      "order": 3,
+      "text": [
+        "The General can take the portents before the battle. This allows the General to re-roll one failed Command roll once during the battle. Take the Command test again—if successful the order is issued and the General can continue giving further orders if you wish."
+      ]
+    }
+  },
+  "units": {
+    "Warriors": {
+      "order": 0,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "specialRules": [
+        "Warband"
+      ],
+      "min": 2,
+      "max": 6,
+      "upgrades": [
+        "Bodyguard"
+      ],
+      "points": 35
+    },
+    "Archers": {
+      "order": 1,
+      "type": "Infantry",
+      "attack": 2,
+      "hits": 3,
+      "range": 30,
+      "size": 3,
+      "points": 40,
+      "max": 4
+    },
+    "Skirmishers": {
+      "order": 2,
+      "type": "Infantry",
+      "attack": 1,
+      "hits": 3,
+      "range": 15,
+      "size": 3,
+      "points": 30,
+      "min": 12,
+      "specialRules": [
+        "Skirmish",
+        "Warband"
+      ]
+    },
+    "General": {
+      "order": 3,
+      "type": "General",
+      "armyMax": 1,
+	  "armyMin": 1,
+      "upgrades": [
+        "Chariot Mount",
+        "Portents"
+      ],
+      "attack": "+2",
+      "points": 100,
+      "command": 8
+    },
+    "Chieftain": {
+      "order": 4,
+      "type": "Subordinate",
+      "upgrades": [
+        "Chariot Mount",
+        "Hero"
+      ],
+      "attack": "+1",
+      "command": 7,
+      "points": 30,
+      "min": 1,
+      "max": 3
+    }
+  },
+  "upgrades": {
+    "Chariot Mount": {
+      "order": 1,
+      "points": "+10",
+      "attack": "+1",
+      "type": "Chariot Mount"
+    },
+    "Bodyguard": {
+      "order": 2,
+      "type": "Infantry",
+      "attack": 4,
+      "hits": 3,
+      "size": 3,
+      "points": "+10",
+      "max": "1max",
+      "specialRules": [
+        "Warband"
+      ]
+    },
+    "Hero": {
+      "order": 3,
+      "type": "Subordinate",
+      "armyMax": 1,
+      "attack": "+3",
+      "command": 7,
+      "size": 1,
+      "points": "+10"
+    },
+    "Portents": {
+      "order": 4,
+      "points": "+10",
+      "specialRules": [
+        "Portents"
+      ]
+    }
+  },
+  "order": 3,
+  "name": "Nubians",
+  "version": "Warmaster Ancients Ricks lists",
+  "group": "Chariot Era",
+  "armyRules": [
+    "Warriors. These are Nubians armed with short spears and/or javelins and carrying shields—Nubians armed in this fashion served in the Egyptian armies and would have formed the hard-fighting core of Nubian forces.",
+    "",
+    "Archers. The inclusion of archer units is speculative but allows for the possibility of Nubians having learned the usefulness of units of well-coordinated archers from  the Egyptian neighbours who made great use of the tactic.",
+    "",
+    "Skirmishers. The majority of Nubians fought as bow-armed skirmish type infantry.",
+    "",
+    "Bodyguard. These are the best and most experienced veterans in the army. Regardless of the army size a single unit of Warriors can be upgraded to Bodyguard with the stats shown at a cost of +10 points (45 points total).",
+    "",
+    "Chariot Mount. After the general adoption of the chariot circa 1500BC any Nubian Commanders can be so mounted at a cost of +10 per Commander. A Commander riding a chariot gains an addition +1A as noted (i.e. General +3, Chieftain +2, and Hero +4 in total).",
+    "",
+    "Hero. Regardless of the size of the army a single Chieftain can be upgraded to a Hero with stats as shown—ie with +3 Attacks rather than the usual +1. This cost +10 points (40 total). A Hero can also ride a Chariot Mount for a further +1-points as noted above. This reflects the importance that many bronze-age cultures placed on the role of heroes to lead and inspire their followers.",
+    "",
+    "Portents. The player can take the portents before the battle. This allows the General to re-roll one failed Command roll once during the battle. Take the Command test again—if successful the order is issued and the General can continue giving orders if you wish."
+  ]
+}

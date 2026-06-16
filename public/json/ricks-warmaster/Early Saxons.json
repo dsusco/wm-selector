@@ -1,0 +1,171 @@
+{
+  "specialRules": {
+    "Shieldwall": {
+      "order": 1
+    },
+    "Skirmish": {
+      "order": 2
+    },
+    "Warband (Restricted)": {
+      "order": 3
+    },
+    "Portents": {
+      "order": 4
+    }
+  },
+  "units": {
+    "Thegns": {
+      "order": 0,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "specialRules": [
+        "Shieldwall"
+      ],
+      "points": 50,
+      "min": 4,
+      "upgrades": [
+        "King's Thegns",
+        "Armoured Thegns",
+        "Replace Shieldwall with Warband"
+      ]
+    },
+    "Coerls": {
+      "order": 1,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "specialRules": [
+        "Shieldwall"
+      ],
+      "points": 40,
+      "min": 8,
+      "upgrades": [
+        "Replace Shieldwall with Warband"
+      ]
+    },
+    "Archers": {
+      "order": 2,
+      "type": "Infantry",
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "points": 40,
+      "max": 1,
+      "upgrades": [
+        "Gain Warband"
+      ]
+    },
+    "Skirmishers": {
+      "order": 3,
+      "type": "Infantry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "points": 30,
+      "max": 2
+    },
+    "General": {
+      "order": 4,
+      "type": "General",
+      "attack": "+2",
+      "command": 9,
+      "size": 1,
+      "upgrades": [
+        "Portents"
+      ],
+      "points": 125,
+      "armyMax": 1,
+	  "armyMin": 1
+    },
+    "Eaorl": {
+      "order": 5,
+      "type": "Subordinate",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 40,
+      "max": 4
+    }
+  },
+  "upgrades": {
+    "King's Thegns": {
+      "order": 0,
+      "specialRules": [
+        "Shieldwall"
+      ],
+      "type": "Infantry",
+      "attack": 4,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": "+25",
+      "max": "1max"
+    },
+    "Armoured Thegns": {
+      "order": 1,
+      "specialRules": [
+        "Shieldwall"
+      ],
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": "+15",
+      "max": "Up to half"
+    },
+    "Portents": {
+      "order": 3,
+      "specialRules": [
+        "Portents"
+      ],
+      "max": 1
+    },
+    "Replace Shieldwall with Warband": {
+      "order": 3,
+      "specialRules": [
+        "Warband (Restricted)"
+      ],
+      "points": "-5",
+      "max": "All non-skirmish or none"
+    },
+    "Gain Warband": {
+      "order": 4,
+      "specialRules": [
+        "Warband (Restricted)"
+      ],
+      "points": "+0",
+      "max": "All or none"
+    }
+  },
+  "armyRules": [
+    "The following options are available for the Early Saxons. Shieldwall troops and archers can be reclassified as Warband to represent the earlier phase of Saxon invasion prior to the establishment of Saxons kingdoms; typified by piratical raids and a mass land grab by Saxon settlers. If the Warband option is taken the Armoured Thegns option is not available due to the paucity of armour amongst the early Saxons.  See the descriptions for details.",
+    "",
+    "Thegns. These are the fighting men of the Saxon army—the retainers of the King known as gesith at first and later thegns—the term thegns came to denote retainers with a military obligation to the King. Although there is no direct evidence for armour in early Saxon England there is evidence for armour in the Saxon homelands in Europe and it would seem likely that at least some of the thegns wore mail armour and helmets. They would carry spears and swords—the Saxons used a distinctive single edged sword called a ‘seax’ - possibly associated with the word ‘Saxon’ itself.",
+    "",
+    "Ceorls. These are the commoners of Saxon society—the lowest class of freemen, essentially peasant farmers, probably making up the bulk of the population. Their obligation to fight would be to their Eorl or other local ruler as part of the levy or fyrd. They would have little equipment other than a shield, spear and perhaps a sword.",
+    "",
+    "Archers. We have made allowance to include bowmen—if only to give the army some tactical flexibility —but these were not numerous or particularly effective and could equally well be restricted to skirmishing,",
+    "",
+    "Skirmishers. These represent youngsters armed with bows or possibly javelins whose role is to skirmish rather than fight at close quarters.",
+    "",
+    "King’s Thegns. Essentially the King’s personal retinue—the best armed and armoured warriors in the land. Regardless of army size only a single unit of Thegns can be upgraded to King’s Thegns.",
+    "",
+    "Armoured Thegns. Up to half the Thegns can be upgraded to armoured Thegns—armour was quite probably quite rare and this upgrade allows for the inclusion of more heavily armoured warriors after the initial invasion period. Thegn’s can’t be uparmoured in this way if the Warband option is chosen.",
+    "",
+    "Warband. This option allows all King’s Thegns, Thegns, Ceorls and Archers to be rated as Warband—either all or none must be rated in this way. Units normally rated as Shieldwall lose their Shieldwall status and get Warband instead for a –5 point saving.  Essentially—this makes the army more ‘barbaric’ and aggressive—and is intended to represent the earliest phase of Saxon invasion and settlement. If this option is chosen Thegn’s cannot be uparmoured—except that one unit can be upgraded to King’s Thegn’s as described above."
+  ],
+  "name": "Early Saxons",
+  "version": "Warmaster Ancients Ricks lists",
+  "group": "The Dark Ages",
+  "order": 3
+}

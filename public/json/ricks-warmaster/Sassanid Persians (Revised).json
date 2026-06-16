@@ -1,0 +1,421 @@
+{
+  "specialRules": {
+    "Shock": {
+      "order": 1
+    },
+    "Skirmish": {
+      "order": 2
+    },
+    "Unreliable": {
+      "order": 3
+    },
+    "Levy": {
+      "order": 4,
+      "text": [
+        "Two Levy become compulsory if any infantry or dismounted cavalry are fielded"
+      ]
+    },
+    "Elephants": {
+      "order": 5
+    },
+    "Slow": {
+      "order": 6
+    },
+    "Allied Commander": {
+      "order": 7,
+      "text": [
+        "Must be fielded if any allies are chosen and can only command Allies of that nationality, Skirmishing Cav. or Skirmishing Inf."
+      ]
+    },
+    "Camels": {
+      "order": 8
+    },
+    "Pavisse": {
+      "order": 9
+    },
+    "Arnashirvan": {
+      "order": 10,
+      "text": [
+        "If this option is selected you may not also select Portents",
+        "",
+        "As a great administrator, stand back and allow your planning to bear fruit on the battlefield. A failed command roll by any leader can be re-rolled until such time as a re-roll is failed, the bonus is ended and no more re-rolls are allowed. Take the command test again – if successful, the order is issued and the leader can continue giving further orders if you wish. A leader can only make a maximum of one re-roll per turn.",
+        "",
+        "However, Anushirvan, like all later Sassanid Generals, prefers not to fight and instead manage the affairs of the army from a fixed position - the elevation of a throne! Hence the reduced fighting ability and movement restricted to 20cm.- even when looking for a unit to join when his ground is overrun."
+      ]
+    },
+    "Royal Archers": {
+      "order": 12,
+      "text": [
+        "You cannot have more than 2 Royal Archers (with or without pavisse) for 1000 pts"
+      ]
+    },
+    "Heavy Infantry": {
+      "order": 13,
+      "text": [
+        "Heavy infantry its also count as a Upgraded Levy for the max number of Upgraded Levy for 1000 pts"
+      ]
+    },
+    "Portents": {
+      "order": 11
+    }
+  },
+  "units": {
+    "Levy Infantry": {
+      "order": 0,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 35,
+      "specialRules": [
+        "Unreliable",
+        "Levy"
+      ],
+      "upgrades": [
+        "Upgraded Levy",
+		"Heavy Infantry"
+      ]
+    },
+    "Archers": {
+      "order": 1,
+      "type": "Infantry",
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "points": 40,
+      "max": 8,
+      "specialRules": [
+        "Unreliable"
+      ],
+      "upgrades": [
+        "Royal Archers",
+		"Royal Archers with Pavisse"
+      ]
+    },
+    "Skirmishers": {
+      "order": 2,
+      "type": "Infantry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": 30,
+      "max": 4,
+      "specialRules": [
+        "Skirmish",
+        "Unreliable"
+      ]
+    },
+    "Guard": {
+      "order": 3,
+      "type": "Cavalry",
+      "attack": 4,
+      "range": 15,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 125,
+      "max": 1,
+      "specialRules": [
+        "Shock"
+      ]
+    },
+    "Cataphracts": {
+      "order": 4,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "4+",
+      "size": 3,
+      "points": 125,
+      "max": 2,
+      "specialRules": [
+        "Shock",
+        "Slow"
+      ]
+    },
+    "Clibinarii": {
+      "order": 5,
+      "type": "Cavalry",
+      "attack": 3,
+      "range": 15,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 115,
+      "min": 2,
+      "specialRules": [
+        "Shock"
+      ],
+      "upgrades": [
+        "Dismounted Clibinarii",
+        "Clibinarii Camels"
+      ]
+    },
+    "Allied Cavalry": {
+      "order": 6,
+      "type": "Cavalry",
+      "attack": 3,
+      "range": "-",
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 110,
+      "max": 2,
+      "specialRules": [
+        "Shock"
+      ],
+      "upgrades": [
+        "Allied Cavalry with Bows"
+      ]
+    },
+    "Skirmisher Cavalry": {
+      "order": 7,
+      "type": "Cavalry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": 40,
+      "max": 6,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "upgrades": [
+        "Horse Archers",
+        "Light Cavalry"
+      ]
+    },
+    "Elephant": {
+      "order": 8,
+      "type": "Elephant",
+      "attack": 4,
+      "range": 15,
+      "hits": 4,
+      "armour": "5+",
+      "size": 3,
+      "points": 200,
+      "max": 1,
+      "specialRules": [
+        "Elephants"
+      ]
+    },
+    "General": {
+      "order": 9,
+      "type": "General",
+      "attack": "+2",
+      "command": 9,
+      "size": 1,
+      "points": 125,
+      "upgrades": [
+        "Portents",
+        "Arnashirvan"
+      ],
+      "armyMax": 1,
+	  "armyMin": 1
+    },
+    "Leader": {
+      "order": 10,
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 80,
+      "max": 2
+    },
+    "Allied Commander": {
+      "order": 11,
+      "type": "Subordinate",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 40,
+      "max": 1,
+      "specialRules": [
+        "Allied Commander"
+      ]
+    }
+  },
+  "upgrades": {
+    "Dismounted Clibinarii": {
+      "order": 0,
+      "type": "Infantry",
+      "attack": 3,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "armour": "5+",
+      "points": "-50",
+      "max": 2
+    },
+    "Clibinarii Camels": {
+      "order": 1,
+      "type": "Cavalry",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "armour": "4+",
+      "points": "-35",
+      "specialRules": [
+        "Slow",
+        "Camels"
+      ],
+      "max": 1
+    },
+    "Allied Cavalry with Bows": {
+      "order": 2,
+      "type": "Cavalry",
+      "attack": 3,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "armour": "5+",
+      "points": "+5",
+      "specialRules": [
+        "Shock"
+      ],
+      "max": 2
+    },
+    "Royal Archers": {
+      "order": 3,
+      "type": "Infantry",
+      "attack": 3,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "points": "+15",
+      "specialRules": [
+        "Royal Archers"
+      ],
+      "max": 2
+    },
+    "Royal Archers with Pavisse": {
+      "order": 11,
+      "type": "Infantry",
+      "attack": 3,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "points": "+20",
+      "specialRules": [
+        "Royal Archers"
+      ],
+      "max": 2
+    },
+    "Upgraded Levy": {
+      "order": 4,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "armour": "6+",
+      "points": "+10",
+      "max": "up to half"
+    },
+    "Heavy Infantry": {
+      "order": 5,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "armour": "5+",
+      "points": "+25",
+      "max": 2
+    },
+    "Horse Archers": {
+      "order": 6,
+      "type": "Cavalry",
+      "attack": 1,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "points": "+20",
+      "specialRules": [
+        "Skirmish"
+      ],
+      "max": 4
+    },
+    "Light Cavalry": {
+      "order": 7,
+      "type": "Cavalry",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "armour": "6+",
+      "points": "+20",
+      "specialRules": [
+        "Skirmish"
+      ],
+      "max": 4
+    },
+    "Pavisse": {
+      "order": 8,
+      "points": "+5",
+      "armour": "Pav",
+      "specialRules": [
+        "Pavisse"
+      ],
+      "max": 4
+    },
+    "Portents": {
+      "order": 9,
+      "points": "+10",
+      "max": 1
+    },
+    "Arnashirvan": {
+      "order": 10,
+      "type": "General",
+      "attack": "+0",
+      "command": 9,
+      "size": 1,
+      "points": "+15",
+      "specialRules": [
+        "Arnashirvan"
+      ],
+      "max": 1
+    }
+  },
+  "armyRules": [
+    "Clibanarii and Heavy Cavalry. These represent the core of the Sassanid armies and are armed mainly with lances and bows. Some ride unarmoured horses, some adding horse coverings or frontal protection as mainly as a defence against missile fire . The lances were wielded two handed instead of being couched and some added bucklers as a further defence. The Clibanarii often acted as an armoured missile base and arrow exchanges were not uncommon. Half can be given extra horse armour or bucklers to protect them from missile attacks, this upgrade does not count in melee though. They have not become Cataphracts with bows!",
+    "",
+    "Clibanarii mounted as Cataphract Camels took part in the Yemeni Campaign. The army can have one unit of standard Clibanarii remounted on camels with stats as shown- only one unit can be upgraded regardless of army size. Note that Cataphract Camels are not shock as are regular sensible Clibanarii",
+    "",
+    "Allied Cavalry.  Armenian, Iberian (Georgian) shock cavalry armed with lances and shields. Other Allies such as Chionites Kidarite or Hepthalite nobles may be given bows . Allies were often unreliable and can be downgraded to represent this. Allies can only be fielded with an Ally General .",
+    "",
+    "Guard Cavalry. The very best of the Army, The Immortals lavishly equipped and mounted on the best horses. Famed as 10000 strong like their Achaemenid ancestors. Armed as other Clibanarii/Heavy Cavalry and usually kept in reserve to guard the King",
+    "",
+    "Cataphracts. The most heavily armoured of the shock cavalry mounted on fully armoured horses and encased from head to toe in armour as the Parthian Nobility had been before them. They may actually be Parthian and fighting for the new regime without change.",
+    "",
+    "Skirmishing Cav. **The army is allowed a maximum of 6 skirmishing Cavalry per thousand points, and no more than four of any type below. So you can only use six if you are prepared to upgrade at least two.",
+    "",
+    "Mounted Skirmishers. Armenian and Arab mounted skirmishers along with mounted retainers of the nobility armed often with javelins and shield or shorter range bows.",
+    "",
+    "Parthian Horse archers were incorporated into the Sassanid armies and later horse archers came from Armenia or the Kushan. These troops represent those lightly armed specialist troops with re-curve bows and little else.",
+    "",
+    "Light Cavalry Alani, Chionite, Kushani, Kidarites or Hepthalite Huns were available. Some had settled in the eastern half of the Empire so were notionally vassals, the others were allies. The vassals were fiercely independent and, although needed, were not asked to help invade Egypt in case they wanted to abandon the east to the hill tribes of modern day Afghanistan for better lands to the west! They were armed as Huns with a variety of weapons and would be prepared to fight at close quarters as well as skirmish.",
+    "",
+    "Elephants Parts of India were incorporated within the Sassanid Empire and Indian Elephants with Indian Mahouts along with supports were used right until the end . The Elephants were equipped with towers and carried crew with a variety of missile weaponry",
+    "",
+    "Infantry",
+    "",
+    "Belisarius' remarks on Sassanid troops:",
+    "",
+    "“Right for you to despise them. For their whole infantry is nothing more than a crowd of pitiable peasants who come into battle for no other purpose than to dig through walls ... and in general to serve the soldiers. For this reason they have no weapons at all with which they might trouble their opponents, and they only hold before themselves those enormous shields and huge elephants.”",
+    "",
+    "The infantry were often just  the mass levy of the peasantry, much of the time armed with improvised weaponry or at best  equipped with spears and shield . Traditionally thought of as very unenthusiastic (and famously chained together to stop them running away in one battle) they nevertheless bore the brunt of the fighting in three and four day battles towards the end of the empire and were successful in siege work including successfully storming defences or breaking the Roman siege of the capital, Ctesiphon . Infantry came from across the empire and included Persians, Armenians, Indians and Arabs.  Dailamite (Daylami) troops from the Caspian region formed a 4000 strong part of the Guard and were highly regarded as equal to Varangians by Procopius. Heavy infantry were found to raise the siege of the capital in the early fourth century and some, if not all of the 4000 Daylami had armour.  Whilst often unenthusiastic they therefore have the option to be upgraded.",
+    "",
+    "Archers. These are Persian, Isaurian, Indian or Armenian Infantry armed with bows and wearing little if any armour. They were used in dense formations with the option for the Persians to use large shields as pavisse.",
+    "",
+    "Royal Archers. An elite body of reliable archers usually accompanying the King",
+    "",
+    "Skirmishers. Isaurian, Armenian, Kurdish, or subject infantry, armed with slings or javelins operating as skirmishers."
+  ],
+  "name": "Sassanid Persian (Revised)",
+  "version": "Warmaster Ancients Ricks lists",
+  "group": "The Dark Ages",
+  "order": 2
+}

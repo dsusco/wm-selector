@@ -1,0 +1,221 @@
+{
+  "name": "The Kingdom of Hungary, 1241 (RL)",
+  "version": "Warmaster Medieval Armies",
+  "group": "Mongol invasion",
+  "order": 1,
+  "units": {
+    "Nobles": {
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "4+",
+      "size": 3,
+      "min": 1,
+      "max": 3,
+      "points": 125,
+      "specialRules": [
+        "Knight",
+        "Shock",
+        "Slow"
+      ],
+      "order": 0
+    },
+    "Gentry": {
+      "type": "Cavalry",
+      "attack": 3,
+      "range": 15,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "min": 1,
+      "max": 2,
+      "points": 85,
+      "order": 1
+    },
+    "Horse Archers": {
+      "type": "Cavalry",
+      "attack": 1,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "max": 4,
+      "points": 60,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "upgrades": [
+        "Szeklers"
+      ],
+      "order": 2
+    },
+    "General": {
+      "type": "General",
+      "attack": "+2",
+      "command": 8,
+      "size": 1,
+      "armyMin": 1,
+      "armyMax": 1,
+      "points": 100,
+      "order": 3
+    },
+    "Leader": {
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "max": 1,
+      "points": 80,
+      "order": 4
+    },
+    "Captain": {
+      "type": "Leader",
+      "attack": "+1",
+      "command": 7,
+      "size": 1,
+      "max": 2,
+      "points": 60,
+      "order": 5
+    },
+    "Spearmen": {
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "armour": "6+",
+      "min": 2,
+      "max": 6,
+      "points": 45,
+      "order": 6,
+      "specialRules": [
+        "Options Infantry"
+      ]
+    },
+    "Archers": {
+      "type": "Infantry",
+      "attack": 2,
+      "hits": 3,
+      "size": 3,
+      "range": 30,
+      "min": 1,
+      "max": 3,
+      "points": 40,
+      "order": 7,
+      "specialRules": [
+        "Options Infantry"
+      ]
+    },
+    "Serbs/Vlachs": {
+      "type": "Infantry",
+      "attack": 2,
+      "hits": 3,
+      "range": 15,
+      "size": 3,
+      "max": 2,
+      "points": 40,
+      "order": 8,
+      "specialRules": [
+        "Options Infantry",
+        "Skirmih"
+      ]
+    },
+    "Skirmishers": {
+      "type": "Infantry",
+      "attack": 1,
+      "hits": 3,
+      "size": 3,
+      "range": 15,
+      "min": 1,
+      "max": 3,
+      "points": 30,
+      "order": 9,
+      "specialRules": [
+        "Options Infantry",
+        "Skirmih"
+      ]
+    },
+    "Croat Cavalry": {
+      "type": "Cavalry",
+      "attack": 4,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 120,
+      "specialRules": [
+        "Options Croats",
+        "Shock"
+      ],
+      "armyMin": "1",
+      "armyMax": "1",
+      "order": 10
+    },
+    "Croat Archers": {
+      "type": "Infantry",
+      "attack": 1,
+      "hits": 3,
+      "size": 3,
+      "range": 15,
+      "min": 1,
+      "max": 2,
+      "points": 30,
+      "order": 11,
+      "specialRules": [
+        "Options Croats",
+        "Skirmih"
+      ]
+    },
+    "Croat Axemen": {
+      "type": "Infantry",
+      "attack": 4,
+      "hits": 3,
+      "size": 3,
+      "max": 3,
+      "points": 45,
+      "order": 12,
+      "specialRules": [
+        "Options Croats"
+      ]
+    }
+  },
+  "upgrades": {
+    "Szeklers": {
+      "type": "Cavalry",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "max": 4,
+      "points": 0,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "order": 1
+    }
+  },
+  "specialRules": {
+    "Shock": {
+      "order": 1
+    },
+    "Skirmish": {
+      "order": 2
+    },
+    "Skirmishers": {
+      "order": 4
+    },
+    "Slow": {
+      "order": 3
+    },
+    "Options Infantry": {
+      "text": [
+        "The following options to include infantry are available to the Hungarian army. The minimums indicated apply if ANY of these infantry options are included in the army, i.e. if 1 unit of archers is included then the army must also include at least 2 units of spearmen and 1 of skirmishers per 1000 points."
+      ],
+      "order": 5
+    },
+    "Options Croats": {
+      "text": [
+        "The following options to include Croats are available to the Hungarian army. Following the absorption of Croatia into Hungary in 1102 the Croats provided good quality troops to the Crown.  If Croats are used, they must be deployed together as one or more adjacent touching brigades at the start of the game (i.e.in a single battle).  Minimums only apply if any Croats are used."
+      ],
+      "order": 6
+    }
+  }
+}

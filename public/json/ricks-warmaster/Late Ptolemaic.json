@@ -1,0 +1,250 @@
+{
+  "specialRules": {
+    "Skirmish": {
+      "order": 1,
+      "text": [
+        "In the Warmaster Ancients game, most skirmishers represent troops whose role is exclusively skirmishing. Whilst other troops may skirmish to a degree, they do so on the tactical level subsumed within close combat. The exceptions are some light cavalry and chariot units which are adjudged to have a duel role and which usually carry a mixture of weapons, eg, Huns.",
+        "Because skirmishers are such a fundamental part of the armies, the skirmish rules are described throughout the book in the appropriate sections. These are summarised below together with references to the full descriptions.",
+        "Skirmishers carry suitable weapons—sometimes bows but more likely s lings or javelins—and fight in loose, informal formations taking advantage of local terrain to avoid contact with more powerful but less mobile enemies. In general, skirmishing units represent fewer men than close fighting units. It is assumed they will usually disperse or flee if attacked.",
+        "",
+        "1. Skirmishers always move at up to full pace for their type regardless of format ion or circumstances (see p22).",
+        "2. Skirmishing units can see all round—they can draw a line of sight from any stand's edge. Their shooting zone extends all round to their front, side and rear. Because they can see enemies to their side or rear they can charge, evade or otherwise react to such units (see p10 Visibility) and (p37 Shooting).",
+        "3. Unless confused, skirmishers are allowed to evade from an enemy charge in the opposing Command phase (see p24).",
+        "4. Unless confused, skirmishers arc allowed to evade instead of being driven back by shooting in the opposing Shooting phase (see p25).",
+        "5. Skirmishers can evade through other units. If these other units are not skirmishers, or if they are a second or subsequent unit evaded through regardless of whether they are skirmishers or not, then both units must test for confusion once the move is complete. Units become confused on the roll of a 6 (see p24).",
+        "6. Skirmishing infantry can support from the side only: they cannot support from behind (see p50).",
+        "7. Skirmishing infantry can move through some types of terrain that is otherwise impassable—notablyrivers/deep water, forests, and cliffs. This is described in the section on Terrain & Movement (see p31).",
+        "Note: For the avoidance of doubt, skirmishing infantry are able to evade from charging cavalry, or other non-skirmishing units, even if these units have a greater move distance than they do. In this case, skirmishers are assumed to have already seen, reacted to, and taken steps to avoid their attackers well before they reach their position."
+      ]
+    },
+    "Portents": {
+      "order": 2,
+      "text": [
+        "The General can take the portents before the battle. This allows the General to re-roll one failed Command roll once during the battle. Take the Command test again—if successful the order is issued and the General can continue giving further orders if you wish."
+      ]
+    },
+    "Phalanx": {
+      "order": 3,
+      "text": [
+        "A phalanx is a deep formation made up of warriors armed with long pikes or spears. We use the term exclusively for those armed with pikes—the main fighting infantry type of Macedonian and later Hellenistic armies. Pikes could be extremely long so that a closely packed phalanx presents an almost unstoppable hedge of spear points to its front. Conversely, a phalanx is easily disordered if attcked to its flanks or moving over dense terrain.",
+        "1. To preserve the aesthetic appearance of the phalanx and reflect the characteristics of yhe troop type, phalangites are mounted facing the short (20mm) edge of the base. See Appendix 2 for alternative basing suggestions for larger scale models.",
+        "2. The phalanx is a cumbersome and relatively inflexible formation. To represent this, a phalanx unit moves at normal infantry pace of 20cm in the Command phase if it is both in a line formation and if the unit moves either directly forward or charges. In all other situations or formations, including during evades, the phalanx moves at half pace in the Command phase (10cm).",
+        "3. None-measured and fixed moves that take place outside the Command phase—such as advances, drive backs, pursuits, and fall backs are worked our exactly like other troops.",
+        "4. Phalanx stands can not be supported from behind —their basing already represents the depth of the phalanx formation. Phalanx stands can be supported by other phalanx stands to their side, or by other infantry stands positioned to their side and congruent to their front. See Support p49.",
+        "5. A Phalanx stand striking to its side or rear has an Attack value of '0'. Units are still entitled to a 'Last Ditch' dice where they would not otherwise strike at all.",
+        "6. Phalanx units treat all dense terrain as impenetrable—woods, villages/build up areas, (broken/marshy ground, steep hills/slopes, woods/tall scrub,villages/build-up areas).",
+        "7. Phalanx units cannot be placed on ramparts or given ladders with which to attack troops on ramparts.",
+        "8. A phalanx stand counts as a 'defended' enemy to cavalry, elephants, and chariots charging to its front so long as the stand is not also engaged to its side or rear."
+      ]
+    },
+    "Shock": {
+      "order": 4,
+      "text": [
+        "The 'shock' rule applies to hard hitting and often heavily armoured cavalry units. They are likely to be armed with long spears or lances, and charge at a good pace to deliver a decisive blow or punch through the enemy lines. These units are indicated in the army lists.",
+        "1. Shock cavalry units can be based facing the short (20mm) edge of the stand. Their narrow frontage and increased depth can be thought of as representing successive co-ordinated waves of attack against a narrow point.",
+        "2. Alternatively to the above, shock cavalry can be based facing the long (40mm) edge of the stand in which case, each stand adds + 1 Combat Attack when charging or pursuing.",
+        "3. If shock cavalry units are armed with bows, their shooting zone is always straight ahead of their frontage. See Shooting Zone p37.",
+        "Note: Two base sizes are given because it is recognised that players using larger scale models will find it impractical to base stands to the short edge. In addition, some players may have pre-existing armies based to a 40mm frontage. The long edge basing is not an exact equivalent, but it is comparable overall and is presented as a reasonable compromise. See the Appendices for more on alternative basing for different units."
+      ]
+    },
+    "Camels": {
+      "order": 5,
+      "text": [
+        "Some cavalry units were mounted on camels rather than horses. This was usually a matter of convenience or necessity rather than preference. Camels have a useful characteristic that the ancients recognized and often exploited: namely. horses don't like 'em! It's the smell.",
+        "1. If an army does not include camel units then its horses find the scent of camels unsettling. Consequently, if a unit of horsed cavalry or chariots is within 20cm of enemy camels when an order is given, any failure, regardless of the dice roll, is considered to be a Blunder (see p68). Even if the order is given by the General, a failure counts as a blunder in this situation. This penalty applies to armies even if their list allows camels but where they have not been included in the army.",
+        "In a doubles game where armies are fighting as allies, if one army has camels and the other does not, camels will also unsettle allied cavalry or chariot units within 20cm as described above."
+      ]
+    }
+  },
+  "units": {
+    "Peltasts": {
+      "order": 0,
+      "type": "Infantry",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "points": 40,
+      "max": 4
+    },
+    "Cretans": {
+      "order": 1,
+      "type": "Infantry",
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "points": 40,
+      "max": 2
+    },
+    "Skirmishers": {
+      "order": 2,
+      "type": "Infantry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "points": 30,
+      "max": 4
+    },
+    "Heavy Cavalry": {
+      "order": 3,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "specialRules": [
+        "Shock"
+      ],
+      "points": 110,
+      "min": 1,
+      "max": 2
+    },
+    "Ethnic Cavalry": {
+      "order": 4,
+      "type": "Cavalry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "points": 40,
+      "max": 2
+    },
+    "Camelry": {
+      "order": 5,
+      "type": "Cavalry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "specialRules": [
+        "Skirmish",
+        "Camels"
+      ],
+      "points": 60,
+      "max": 1
+    },
+    "Macedonian Phalanx": {
+      "order": 6,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "specialRules": [
+        "Phalanx"
+      ],
+      "points": 60,
+      "min": 4
+    },
+    "Agema Phalanx": {
+      "order": 7,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "specialRules": [
+        "Phalanx"
+      ],
+      "points": 70,
+      "max": 1
+    },
+    "Egyptian Phalanx": {
+      "order": 8,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "specialRules": [
+        "Phalanx"
+      ],
+      "points": 50,
+      "max": 8
+    },
+    "Thureophores": {
+      "order": 9,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 45,
+      "max": 2
+    },
+    "Legionaries": {
+      "order": 10,
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 60,
+      "max": 8
+    },
+    "General": {
+      "order": 11,
+      "attack": "+2",
+      "command": 9,
+      "size": 1,
+      "points": 125,
+      "upgrades": [
+        "Portents"
+      ],
+      "armyMax": 1,
+	  "armyMin": 1
+    },
+    "Leader": {
+      "order": 12,
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 80,
+      "max": 2
+    }
+  },
+  "upgrades": {
+    "Portents": {
+      "order": 0,
+      "specialRules": [
+        "Portents"
+      ],
+      "points": "+10"
+    }
+  },
+  "order": 14,
+  "name": "Late Ptolemaic",
+  "version": "Warmaster Ancients Ricks lists",
+  "group": "Greece and the Near East",
+  "armyRules": [
+    "Macedonian Phalanx. The regular Macedonian phalanx. Well drilled soldiers.",
+    "",
+    "Agema Phalanx. The elite proportion of the army comprising veteran phalangites.",
+    "",
+    "Peltasts. Regular Successor type including Greek or Thracian peltasts, or even Cretan or Pisidian peltasts as well as garrison units fighting in a comparable fashion.",
+    "",
+    "Skirmishers. Lightly armed troops fighting as skirmishers—including javelinmen, bowmen and slingers. Mostly Egyptian or Syrian archers or slingers.",
+    "",
+    "Elephants. The Ptolomies had aceess to Indian elephants at certain periods but their use gradually declined. An attempt was made to import African elephants from Kush—but this was probably not a success.",
+    "",
+    "Heavy Cavalry. The Cleruch cavalry equipped and trained in the fashion of Macedonian Companions.",
+    "",
+    "Ethnic Cavalry. Locally trained cavalry armed with javelins.",
+    "",
+    "Legionaries. These represent either imitation legionaries or those remaining from Marcus Antonius’ army.",
+    "",
+    "Thureophores. Equipped with javelins and shields, and frequently armoured, these are an intermediary type of troop that evolved from the peltast.",
+    "",
+    "Egyptian Phalanx. Although equipped as their Macedonian counterparts, the Egyptians lacked their level of training, reducing their ability to withstand prolonged fighting."
+  ]
+}

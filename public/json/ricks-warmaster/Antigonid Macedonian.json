@@ -1,0 +1,247 @@
+{
+  "specialRules": {
+    "Phalanx": {
+      "order": 1
+    },
+    "Skirmish": {
+      "order": 2
+    },
+    "King of Macedon": {
+      "order": 3,
+      "text": [
+        "The army’s General can be upgraded to King of Macedon—if this option is taken the army is led by an expert tactician in command of the best drilled army in the world. If the General issues an order to a phalanx then the –1 Command penalty for enemy within 20cm is ignored so long as no penalty also applies for an exposed flank or rear. If the –1 penalty for exposed flank or rear applies then no benefit can be drawn from the King of Macedon. This benefit only applies to phalanxes and not to other units or brigades containing a mix of phalanx and non-phalanx units."
+      ]
+    }
+  },
+  "units": {
+    "Phalanx": {
+      "order": 0,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 60,
+      "min": 4,
+      "specialRules": [
+        "Phalanx"
+      ]
+    },
+    "Veteran Phalanx": {
+      "order": 1,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "specialRules": [
+        "Phalanx"
+      ],
+      "points": 70,
+      "upgrades": [
+        "Agema Phalanx"
+      ],
+      "max": 4
+    },
+    "Light Infantry": {
+      "order": 2,
+      "type": "Infantry",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "points": 40,
+      "upgrades": [
+        "Thracians",
+        "Thureophoroi"
+      ],
+      "min": 2,
+      "max": 6
+    },
+    "Archers": {
+      "order": 3,
+      "type": "Infantry",
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "points": 40,
+      "max": 1
+    },
+    "Skirmishers": {
+      "order": 4,
+      "type": "Infantry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "points": 30,
+      "max": 4
+    },
+    "Heavy Cavalry": {
+      "order": 5,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 80,
+      "max": 2
+    },
+    "Mounted Skirmishers": {
+      "order": 6,
+      "type": "Cavalry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "points": 40,
+      "upgrades": [
+        "Tarantines",
+        "Horse Archers"
+      ],
+      "min": 1,
+      "max": 3
+    },
+    "General": {
+      "order": 7,
+      "type": "General",
+      "upgrades": [
+        "King of Macedon"
+      ],
+      "points": 125,
+      "armyMax": 1,
+	  "armyMin": 1
+    },
+    "Leader": {
+      "order": 8,
+      "type": "Leader",
+      "points": 80,
+      "max": 2
+    },
+    "Subordinate": {
+      "order": 10,
+      "type": "Subordinate",
+      "points": 40,
+      "max": 1
+    },
+    "Allied Subordinate": {
+      "order": 10,
+      "type": "Subordinate",
+      "points": 30,
+      "max": 1
+    }
+  },
+  "upgrades": {
+    "Agema Phalanx": {
+      "order": 0,
+      "specialRules": [
+        "Phalanx"
+      ],
+      "type": "Infantry",
+      "attack": 4,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": "+10",
+      "max": "2max"
+    },
+    "Thracians": {
+      "order": 1,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "type": "Infantry",
+      "attack": 3,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": "+10",
+      "max": 2
+    },
+    "Thureophoroi": {
+      "order": 2,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": "+5",
+      "max": "Half"
+    },
+    "Tarantines": {
+      "order": 3,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "type": "Cavalry",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": "+20",
+      "max": 1
+    },
+    "Horse Archers": {
+      "order": 4,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "type": "Cavalry",
+      "attack": 1,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "points": "+20",
+      "max": 1
+    },
+    "King of Macedon": {
+      "order": 5,
+      "type": "General",
+      "attack": "+2",
+      "command": 9,
+      "size": 1,
+      "max": 1,
+      "points": "+10"
+    }
+  },
+  "armyRules": [
+    "Phalanx. The core of Macedonian armies  were formed from phalangites, notably the Leukaspides (white shields) and Chalkaspides (brazen shields). Phalangites of the later Hellenistic period are often, and rather confusingly, referred to as peltasts after their small round shield—although earlier the term is used only for lightly armed troops.  I’ve therefore stuck with phalangites as the term for these pike armed infantry, as this is consistent with other lists.",
+    "",
+    "Veteran Phalanx. Macedonian armies were well trained and enjoyed a reputation for martial efficiency—at least from their enemies the Romans. These units represent elite fighting formations. They comprise a greater or lesser proportion of the army because the loss of troops in battle could not easily be made good. Up to 2 units can be upgraded to Agema.",
+    "",
+    "Light Infantry. These are the equivalents of the old fashioned peltasts . Can include Greeks or Illyrian javelinmen as well as Thracians. Some can be upgraded to Thracians as noted.",
+    "",
+    "Skirmishers. As found in many contemporary armies—armed with javelins, bows or slings. Could be Macedonoan archers or mercenaries such as Agrianian javelinmen or Rhodian sligners.",
+    "",
+    "Archers. These could be Macedonians, Cretans or other Greeks. These represent archers fighting as formed bodies of troops—although many archers could also fight as skirmishers.",
+    "",
+    "Heavy Cavalry. Macedonian, Thessalian and/or Thracian Cavalry. It appears that the cavalry were now fighting with lighter spears than previously, perhaps reflecting the nature of warfare amongst the hilly country surrounding Macedonia.",
+    "",
+    "Mounted Skirmishers. Macedonian, Thessalian. Thracian and other Greeks armed with javelins and a shield.",
+    "",
+    "Agema Phalanx. These are the elite of the veteran units—possibly up to 3000 of the 5000 veterans available to the army. Regardless of the army size you can upgrade up to a maximum of 2 Veteran units to Agema with the stats and additional points cost shown.",
+    "",
+    "Thracians. These represent the more aggressive and warlike of the light troops—not just Thracians as such. The Thracians were sometimes armed with the heavy rhomphaia—a curved sword perhaps comparable with the later Dacian falx. Up to 2 units of Light Infantry per 1000 points can be upgraded to Thracians for the points adjustment shown.",
+    "",
+    "Thureophoroi. These represent light infantry equipped for fighting at close quarters with spear and ‘theuros’ - a large shield whose name means ‘door’. This was a kind of troop that was becoming increasingly common throughout the Mediterranean region—some troops of this kind wore mail armour. Up to half the Light Infantry can be upgraded to Thureophoroi with the stats and points adjustment shown.",
+    "",
+    "Tarentines. These represent light cavalry of a superior kind—often armed with spears as well as javelins—the name refers to the city of Tarentum which was famous for its horsemen—although the term acquired general usage for light cavalry of this kind. Up to 1 unit of mounted skirmishers per 1000 points can be upgraded to Tarentines at the points cost shown.",
+    "",
+    "Horse Archers. This unit represent Getic horse archers from northern Thrace. Up to 1 unit of mounted skirmishers per 1000 points can be uprated to horse archers at the additional points cost shown."
+  ],
+  "name": "Antigonid Macedonian",
+  "version": "Warmaster Ancients Ricks lists",
+  "group": "Greece and the Near East",
+  "order": 4
+}
