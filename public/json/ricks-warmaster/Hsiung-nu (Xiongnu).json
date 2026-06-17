@@ -1,0 +1,232 @@
+{
+  "specialRules": {
+    "Shock": {
+      "order": 1
+    },
+    "Slow": {
+      "order": 2
+    },
+    "Skirmishers": {
+      "order": 3
+    },
+    "Unreliable": {
+      "order": 4
+    },
+    "Great Leader": {
+      "order": 5,
+      "text": [
+        "All Leaders and Subordinates within 20cm of the General can give orders using the General's own Command value, even the Chinese General."
+      ]
+    }
+  },
+  "units": {
+    "Cataphracts": {
+      "order": 0,
+      "type": "Cavalry",
+      "upgrades": [
+        "Make unit unreliable"
+      ],
+      "specialRules": [
+        "Shock",
+        "Slow"
+      ],
+      "attack": 3,
+      "hits": 3,
+      "armour": "4+",
+      "size": 3,
+      "points": 125,
+      "max": 1
+    },
+    "Cavalry": {
+      "order": 1,
+      "type": "Cavalry",
+      "upgrades": [
+        "Make unit unreliable"
+      ],
+      "specialRules": [
+        "Shock"
+      ],
+      "attack": 3,
+      "range": 15,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 115,
+      "min": 1,
+      "max": 3
+    },
+    "Lancer Cavalry": {
+      "order": 2,
+      "type": "Cavalry",
+      "upgrades": [
+        "Make unit unreliable"
+      ],
+      "specialRules": [
+        "Shock"
+      ],
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 110,
+      "max": 3
+    },
+    "Horse Archers": {
+      "order": 3,
+      "type": "Cavalry",
+      "upgrades": [
+        "Make unit unreliable"
+      ],
+      "specialRules": [
+        "Skirmishers"
+      ],
+      "attack": 1,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "points": 60,
+      "min": 4
+    },
+    "Modu Chanyu": {
+      "order": 4,
+      "type": "General",
+      "upgrades": [
+        "Great Leader"
+      ],
+      "attack": "+2",
+      "command": 9,
+      "size": 1,
+      "points": 125
+    },
+    "Leader": {
+      "order": 5,
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 80,
+      "max": 2
+    },
+    "Chief": {
+      "order": 6,
+      "type": "Subordinate",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 40,
+      "max": 1
+    },
+    "Allied Chinese General": {
+      "order": 7,
+      "type": "Subordinate",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 40,
+      "max": 1
+    },
+    "Archers": {
+      "order": 8,
+      "type": "Infantry",
+      "specialRules": [
+        "Unreliable"
+      ],
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "points": 30,
+      "max": 2
+    },
+    "Skirmish Infantry": {
+      "order": 9,
+      "type": "Infantry",
+      "specialRules": [
+        "Skirmishers",
+        "Unreliable"
+      ],
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": 20,
+      "max": 2
+    },
+    "Chinese Cavalry": {
+      "order": 10,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 80,
+      "max": 1
+    },
+    "Chinese Halberdiers": {
+      "order": 11,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "points": 35,
+      "max": 2
+    },
+    "Chinese Crossbows": {
+      "order": 12,
+      "type": "Infantry",
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "points": 40,
+      "max": 2
+    }
+  },
+  "upgrades": {
+    "Great Leader": {
+      "order": 0,
+      "specialRules": [
+        "Great Leader"
+      ],
+      "max": 1,
+      "points": "+25"
+    },
+    "Make unit unreliable": {
+      "order": 1,
+      "specialRules": [
+        "Unreliable"
+      ],
+      "max": 4,
+      "points": "-10"
+    }
+  },
+  "order": 1,
+  "group": "The Far East",
+  "version": "Rick's Warmaster",
+  "name": "Hsiung-Nu (Xiongnu)",
+  "armyRules": [
+    "Composition. For every three shock cavalry unit fielded one Archer unit may be fielded.  For every four Horse Archer unit fielded one Skirmishing Infantry unit may be fielded. To cover the later period revolts an option has been allowed to downgrade the reliability of Hsiung-nu troops.",
+    "",
+    "Chinese Coomander. The Chinese Commander can only command Chinese troops. The reverse also applies where Chinese troops can only be commanded by the Chinese Commander.",
+    "",
+    "Cataphracts. These represent those tribal warriors who fight from a heavily armoured mount in the Ordos style.  Slow but devastating on the charge they were found particularly among the southern tribes.",
+    "",
+    "Cavalry. These represent the heavy troops of most tribes.  Armed with bow and sword they are capable of showering an enemy with deadly arrows of fighting up close.",
+    "",
+    "Lancer Cavalry. These are nomadic horsemen who fight with the lance.  Many carry bows, but they eschew their use in favour of a fierce charge into melee.",
+    "",
+    "Skirmishing Cavalry. Troops which form the core of most Hsiung-nu armies.  They fight in dense skirmishing swarms, and use their deadly bows to great effect, often at the gallop.",
+    "",
+    "Foot Archers. Represent cavalry riders who have dismounted to fight on foot, typically because their horses have been killed in previous fighting.  They do not like to fight on foot and cannot be relied upon to perform well.",
+    "",
+    "Skirmishers. Missile troops who are dismounted horse archers who have lost their horses or chosen to fight on foot due to difficult terrain.  Like the dismounted cavalry, they are not to be relied upon.",
+    "",
+    "Allied Chinese Commander. He represents a Chinese General who has deserted from the Chinese armies.",
+    "",
+    "Chinese Cavalry. These were most likely armed with spears and thick leather armour although it is conjectured that they may also have made use of the composite bow in imitation of their Hsiung-nu foes.",
+    "",
+    "Chinese Halbadiers.  They were armed with the cross-bladed heavy spear, the 'ge'. They were well armoured in leather, paper, or possibly metal lamellar.  They were often unwilling conscripts and lacked staying power in open battle.",
+    "",
+    "Chinese Crossbows. They were armed with the ‘nu’ pistol-grip crossbow, a cheap reliable weapon for a conscript army.  Like the Halberdiers they supported, the crossbowmen were similarly armoured,  but could be brittle conscripts."
+  ]
+}

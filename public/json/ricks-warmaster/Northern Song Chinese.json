@@ -1,0 +1,223 @@
+{
+  "specialRules": {
+    "Shock": {
+      "order": 1
+    },
+    "Skirmish": {
+      "order": 2
+    },
+    "Fire-Lance": {
+      "order": 3,
+      "text": [
+        "One use only per game and only in response to being charged. The unit gains the Terror special rule for the duration of the first round of combat."
+      ]
+    },
+    "Heavy Artillery": {
+      "order": 4
+    },
+    "Unreliable": {
+      "order": 5
+    },
+    "Terror": {
+      "order": 6
+    },
+    "Great Leader": {
+      "order": 7,
+      "text": [
+        "All Leaders and Subordinates within 20cm of the General can give orders using the Generals own Command value."
+      ]
+    }
+  },
+  "units": {
+    "Imperial Infantry": {
+      "order": 0,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "upgrades": [
+        "Firelance",
+        "Downgrade Imperial Infantry"
+      ],
+      "points": 45,
+      "min": 6
+    },
+    "Veteran Infantry": {
+      "order": 1,
+      "type": "Infantry",
+      "attack": 4,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 60,
+      "max": 2
+    },
+    "Imperial Archers": {
+      "order": 2,
+      "type": "Infantry",
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "points": 40,
+      "min": 4,
+      "max": 6
+    },
+    "Skirmishers": {
+      "order": 3,
+      "type": "Infantry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "points": 30,
+      "min": 1,
+      "max": 4
+    },
+    "Cavalry": {
+      "order": 4,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "specialRules": [
+        "Shock"
+      ],
+      "points": 110,
+      "max": 2
+    },
+    "Light Cavalry": {
+      "order": 5,
+      "type": "Cavalry",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 60,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "max": 1
+    },
+    "Hsi Cavalry": {
+      "order": 6,
+      "type": "Cavalry",
+      "attack": 1,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "points": 60,
+      "max": 1
+    },
+    "Stone Thrower": {
+      "order": 7,
+      "type": "Artillery",
+      "attack": 1,
+      "range": "3x60",
+      "hits": 3,
+      "size": 1,
+      "specialRules": [
+        "Heavy Artillery"
+      ],
+      "points": 75,
+      "max": 1
+    },
+    "General": {
+      "order": 8,
+      "type": "General",
+      "attack": "+2",
+      "size": 1,
+      "upgrades": [
+        "Chao K'uang Yin"
+      ],
+      "command": 9,
+      "points": 125
+    },
+    "Leader": {
+      "order": 9,
+      "type": "Leader",
+      "attack": "+1",
+      "size": 1,
+      "command": 8,
+      "points": 80,
+      "max": 1
+    },
+    "Subordinate": {
+      "order": 10,
+      "type": "Subordinate",
+      "attack": "+1",
+      "size": 1,
+      "command": 8,
+      "points": 40,
+      "max": 2
+    }
+  },
+  "upgrades": {
+    "Firelance": {
+      "order": 0,
+      "specialRules": [
+        "Fire-Lance",
+        "Terror"
+      ],
+      "points": "+5",
+      "max": "Half"
+    },
+    "Downgrade Imperial Infantry": {
+      "order": 1,
+      "points": "-10",
+      "max": 4,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "specialRules": [
+        "Unreliable"
+      ]
+    },
+    "Chao K'uang Yin": {
+      "order": 2,
+      "points": "+25",
+      "max": 1,
+      "attack": "+2",
+      "type": "General",
+      "specialRules": [
+        "Great Leader"
+      ]
+    }
+  },
+  "order": 4,
+  "group": "The Far East",
+  "version": "Rick's Warmaster",
+  "name": "Northern Song Chinese",
+  "armyRules": [
+    "Cavalry.  With the loss of the north good cavalry were scarce, mainly because the old horse-breeding areas of the north remained in the hands of the barbarians, but they well equipped and well armoured, fighting with variety of bladed and pointed weapons.  The riders were armoured, but shieldless, and the horses could be armoured.",
+    "",
+    "Light Cavalry. Skirmishing lightly armed, enamoured, cavalry armed with javelins and no shields.",
+    "",
+    "Hsi  Cavalry. These were skirmishing tribal horse archers, a Mongolian people related to the Khitans.",
+    "",
+    "Veteran Infantry.  These are the veteran troops of Zhao (Chao) K'uang-yin founder of the Sung Dynasty.  Armed with a variety of bladed and pointed weapons of disparate length and often lacked shields.",
+    "",
+    "Imperial Infantry.  Spearmen and halberdiers who were equipped with a variety of bladed and pointed weapons of disparate length and often lacked shields. While the rank and file were professionals with time they were drawn from the poorer elements of society so in later years, due to the booming economy, those enlisting tended to be petty criminals, bandits and vagabonds. Very often their pay and food were in arrears and whole armies sent to put down revolts joined the revolt.",
+    "",
+    "Imperial Archers.  These represent the un-armoured foot troops armed with crossbow infantry who fought from a distance. Again like the Imperial Infantry in later years those enlisting tended to be petty criminals, bandits and vagabonds. Some were specially trained crossbow marksmen, at the battle of Shan-chou in 1004 the Khitan General, Hsiao T'alin, was killed by such a marksman.",
+    "",
+    "Handgunners.  The development of the fire-lance to fire clay and iron missiles meant that by this period some missile infantry were armed with handguns.",
+    "",
+    "Skirmisher.  Skirmishers were young or impoverished warriors armed with bows or javelins and usually carrying a small shield.",
+    "",
+    "Fire-lance.  A spear with a gunpowder based pyrotechnic device attached, a flamethrower! Fire-lances were in Song Chinese use by the late 11th cent. - early 12th cent and were ultimately to become handguns.",
+    "",
+    "Stone thrower.  Heavy stone throwing engines. These not only threw stones but gunpowder filled iron balls."
+  ]
+}

@@ -1,0 +1,237 @@
+{
+  "specialRules": {
+    "Shieldwall": {
+      "order": 1
+    },
+    "Skirmish": {
+      "order": 2
+    },
+    "Shock": {
+      "order": 3
+    },
+    "Slow": {
+      "order": 4
+    },
+    "Light Artillery": {
+      "order": 5
+    },
+    "Portents": {
+      "order": 6
+    },
+    "Warband": {
+      "order": 7
+    }
+  },
+  "units": {
+    "Veterans": {
+      "order": 0,
+      "type": "Infantry",
+      "attack": 4,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 75,
+      "max": 1,
+      "specialRules": [
+        "Shieldwall"
+      ]
+    },
+    "Legiones & Auxilia Palatina": {
+      "order": 1,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 65,
+      "min": 6,
+      "specialRules": [
+        "Shieldwall"
+      ]
+    },
+    "Pseudocomitatenses": {
+      "order": 2,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 45,
+      "max": 6
+    },
+    "Foederati": {
+      "order": 3,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 45,
+      "specialRules": [
+        "Warband"
+      ],
+      "max": 4
+    },
+    "Sagitarii": {
+      "order": 4,
+      "type": "Infantry",
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 50,
+      "max": 1
+    },
+    "Skirmishers": {
+      "order": 5,
+      "type": "Infantry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": 30,
+      "max": 4,
+      "specialRules": [
+        "Skirmish"
+      ]
+    },
+    "Scholae": {
+      "order": 6,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 110,
+      "max": 1,
+      "specialRules": [
+        "Shock"
+      ]
+    },
+    "Cataphractii & Clibanarii": {
+      "order": 7,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "4+",
+      "size": 3,
+      "points": 125,
+      "max": "1max",
+      "specialRules": [
+        "Shock",
+        "Slow"
+      ]
+    },
+    "Equites": {
+      "order": 8,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 80,
+      "min": 1,
+      "max": 4
+    },
+    "Equites Dalmatia": {
+      "order": 9,
+      "type": "Cavalry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": 40,
+      "max": 2,
+      "specialRules": [
+        "Skirmish"
+      ]
+    },
+    "Equites Sagitarii": {
+      "order": 10,
+      "type": "Cavalry",
+      "attack": 1,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "points": 60,
+      "max": 1,
+      "specialRules": [
+        "Skirmish"
+      ]
+    },
+    "Balistarii": {
+      "order": 11,
+      "type": "Artillery",
+      "specialRules": [
+        "Light Artillery"
+      ],
+      "attack": 1,
+      "range": 40,
+      "hits": 3,
+      "size": 2,
+      "points": 50,
+      "max": "1max"
+    },
+    "General": {
+      "order": 12,
+      "type": "General",
+      "attack": "+2",
+      "command": 9,
+      "size": 1,
+      "points": 125,
+      "upgrades": [
+        "Portents"
+      ]
+    },
+    "Leader": {
+      "order": 13,
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 1,
+      "points": 80,
+      "max": 2
+    }
+  },
+  "upgrades": {
+    "Portents": {
+      "order": 0,
+      "specialRules": [
+        "Portents"
+      ],
+      "points": "+10"
+    }
+  },
+  "armyRules": [
+    "In an eastern army the number of Catafractarii and Clibanarii units may not exceed half the total number of cavalry fielded. The number of Balistarii units is limited to a maximum of 1 per 1000pts as noted, but cannot exceed 2 in total regardless of army size.",
+    "",
+    "Veterans. Veterans are the best and most experienced of the Roman infantry units – essentially elite troops armed and equipped as described below.",
+    "",
+    "Legiones & Auxilia Palatina These are the standard Roman infantrymen with long sword, spear, shield and – usually – with mail armour as well. They could also have darts or javelins to throw at relatively short ranges.",
+    "",
+    "Pseudocomitatenses. Limitianei troops transferred into the field armies—such troops are recorded in the Notitia.",
+    "",
+    "Foederati. Towards the end of the  C4th the western armies suffered two heavy defeats in civil wars and in the second Franks (etc) were recruited in significant numbers. It is likely this was the start of the use of relatively unassimilated barbarians. The eastern armies do not seem to have done this.",
+    "",
+    "Sagittarii . Bow armed units  - according to Vegetius such units were armoured and they probably carried shield as patterns for archer units are included in the Notitia Dignitatum—as such they have been categorised as ‘heavy’ with a pip of armour.",
+    "",
+    "Skirmishers. Infantry units fighting as skirmishers – with long sword, shield and javelins or, alternatively, with bows.",
+    "",
+    "Scholae. These are the very best of the heavy cavalry units and have been made available in limited numbers to reflect this. Otherwise they are equipped as for other Equites.",
+    "",
+    "Equites. These are the standard cavalry units – they go by different names such as Scutarii and Promoti, but are all equipped in the same way with long sword, shield, armour, and spears.",
+    "",
+    "Cataphracts & Clibanarii. These are the heaviest cavalry, well armoured and riding armoured horses, and armed with long lances (kontos).",
+    "",
+    "Equites Dalmatia. These are skirmishing cavalry armed with javelins and the category includes all such types regardless of origin",
+    "",
+    "Equites Sagittarii. These are dedicated horse archer units.",
+    "",
+    "Balistarii. Light artillery pieces—dart throwing machines and their crews."
+  ],
+  "name": "Late Romans (Revised, Western)",
+  "version": "Rick's Warmaster",
+  "group": "The Dark Ages",
+  "order": 8
+}

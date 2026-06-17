@@ -1,0 +1,300 @@
+{
+  "specialRules": {
+    "Shock": {
+      "order": 1
+    },
+    "Skirmish": {
+      "order": 2
+    },
+    "Fire-Lance": {
+      "order": 3,
+      "text": [
+        "One use only per game and only in response to being charged. The unit gains the Terror special rule for the duration of the first round of combat."
+      ]
+    },
+    "Unreliable": {
+      "order": 4
+    },
+    "Terror": {
+      "order": 5
+    },
+    "Organ Gun": {
+      "order": 6,
+      "text": [
+        "1. Organ Gun has move 20cm",
+        "2. Organ Guns are considered to have the 'Slow' special rule",
+        "3. A unit taking a hit from an organ gun is disallowed any Armour roll it normally has",
+        "4. An organ gun rolls a d6 to determine the number of shots each time it fires, roll a number of attacks equal to the rolled result",
+        "5. Organ Gun has a maximum range of 15cm",
+        "6. When rolling for drive backs as a result fo casualties inflicted by an organ gun roll +1 additional die, for example if three casualties are inflicted roll four dice. Note: it is +1 dice regardless of the number of units shooting.",
+        "7. An organ gun can stand and shoot in an arc 45 degrees to its front, this is a more liberal rule than other artillery",
+        "8. An organ gun cannot shoot on a turn it has moved except where that move was to pivot on the spot. Pivoting still requires an order."
+      ]
+    },
+    "Cannon": {
+      "order": 7,
+      "text": [
+        "1. Except where otherwise noted (see army lists) cannons have a movement of 20cm",
+        "2. Cannons are considered to have the 'Slow' special rule",
+        "3. A unit taking a hit from a Cannon is disallowed any Armour roll it normally has",
+        "4. A single cannon has 2 shots and therefore rolls 2 dice against its target",
+        "5. A cannon has a maximum range of 40cm",
+        "6. When rolling for drive backs as a result fo casualties inflicted by a Cannon roll +1 additional die, for example if two casualties are inflicted roll three dice. Note: it is +1 dice regardless of the number of units shooting.",
+        "7. A Cannon cannot shoot an enemy charging it, they are very slow to operate and are not suitable for shooting charging enemies",
+        "8. A Cannon stand can shoot in an arc 45 degrees to its front. This is more liberal than for other artillery.",
+        "9. A Cannon cannot shoot on a turn it has moved except where that move was to pivot on the spot. Pivoting still requires an order."
+      ]
+    },
+    "Inspirational Commander": {
+      "order": 8,
+      "text": [
+        "All non-skirmishing units that have a Min value of 1 or more on their list roll one extra Attack dice in the first round of very combat engagement when they charge."
+      ]
+    },
+    "Slow": {
+      "order": 9
+    },
+    "Handgunners": {
+      "order": 10,
+      "text": [
+        "1. Handgunners have a range of 20cm",
+        "2. When rolling for drive backs as a result fo casualties inflicted by an organ gun roll +1 additional die, for example if three casualties are inflicted roll four dice. Note: it is +1 dice regardless of the number of units shooting."
+      ]
+    }
+  },
+  "units": {
+    "Imperial Infantry": {
+      "order": 0,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "upgrades": [
+        "Firelance",
+        "Downgrade Imperial Infantry"
+      ],
+      "points": 45,
+      "min": 6
+    },
+    "Imperial Archers": {
+      "order": 1,
+      "type": "Infantry",
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "points": 40,
+      "min": 4,
+      "max": 6,
+      "upgrades": [
+        "Upgrade Archers to Handguns"
+      ]
+    },
+    "Skirmishers": {
+      "order": 2,
+      "type": "Infantry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "points": 30,
+      "min": 1,
+      "max": 4
+    },
+    "Sheng-ch'uan": {
+      "order": 3,
+      "type": "Infantry",
+      "attack": 4,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "max": 1,
+      "points": 70
+    },
+    "Sheng-ch'uan Crossbows": {
+      "order": 4,
+      "type": "Infantry",
+      "attack": 3,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "max": 1,
+      "points": 50
+    },
+    "Cavalry": {
+      "order": 5,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "specialRules": [
+        "Shock"
+      ],
+      "points": 110,
+      "max": 1
+    },
+    "Light Cavalry": {
+      "order": 6,
+      "type": "Cavalry",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 60,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "max": 1
+    },
+    "T'ung-shih Chun": {
+      "order": 7,
+      "type": "Cavalry",
+      "attack": 3,
+      "range": 30,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 125,
+      "specialRules": [
+        "Shock"
+      ],
+      "max": 1
+    },
+    "Organ Gun": {
+      "order": 8,
+      "type": "Artillery",
+      "attack": 1,
+      "hits": 3,
+      "size": 1,
+      "points": 50,
+      "max": 1,
+      "range": "d6x15",
+      "specialRules": [
+        "Organ Gun",
+        "Slow"
+      ]
+    },
+    "Cannon": {
+      "order": 9,
+      "type": "Artillery",
+      "attack": 1,
+      "hits": 3,
+      "size": 1,
+      "points": 50,
+      "max": 1,
+      "range": "2x40",
+      "specialRules": [
+        "Cannon",
+        "Slow"
+      ]
+    },
+    "General": {
+      "order": 10,
+      "type": "General",
+      "attack": "+2",
+      "size": 1,
+      "upgrades": [
+        "Yeuh Fei"
+      ],
+      "command": 9,
+      "points": 125
+    },
+    "Leader": {
+      "order": 11,
+      "type": "Leader",
+      "attack": "+1",
+      "size": 1,
+      "command": 8,
+      "points": 80,
+      "max": 1
+    },
+    "Subordinate": {
+      "order": 12,
+      "type": "Subordinate",
+      "attack": "+1",
+      "size": 1,
+      "command": 8,
+      "points": 40,
+      "max": 2
+    }
+  },
+  "upgrades": {
+    "Firelance": {
+      "order": 0,
+      "specialRules": [
+        "Fire-Lance",
+        "Terror"
+      ],
+      "points": "+5",
+      "max": "Half"
+    },
+    "Downgrade Imperial Infantry": {
+      "order": 1,
+      "points": "-10",
+      "max": 6,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "specialRules": [
+        "Unreliable"
+      ],
+      "min": 2
+    },
+    "Upgrade Archers to Handguns": {
+      "order": 3,
+      "type": "Infantry",
+      "attack": 2,
+      "range": "1x20",
+      "hits": 3,
+      "size": 3,
+      "points": "+5",
+      "max": 3,
+      "specialRules": [
+        "Handgunners"
+      ]
+    },
+    "Yeuh Fei": {
+      "order": 3,
+      "type": "General",
+      "attack": "+2",
+      "command": 9,
+      "points": "+25",
+      "size": 1,
+      "max": 1
+    }
+  },
+  "order": 5,
+  "group": "The Far East",
+  "version": "Rick's Warmaster",
+  "name": "Southern Song Chinese",
+  "armyRules": [
+    "Cavalry.  With the loss of the north good cavalry were scarce, mainly because the old horse-breeding areas of the north remained in the hands of the barbarians, but they well equipped and well armoured, fighting with variety of bladed and pointed weapons.  The riders were armoured, but shieldless, and the horses could be armoured.",
+    "",
+    "T'ung-shih chun. These are Mongols fighting for the Sung. According to the Yuan Shih they \"were",
+    "always placed in the front line and were willing to give their all\".  They were armed with bow and lance and wear leather armour reinforced with small iron plates or lamellar armour. There horses would often be armoured with barding.",
+    "",
+    "Sheng-ch'uan.  These were especially picked and trained assault troops who led the attacks especially at night. Armed as either Infantry or Crossbows",
+    "",
+    "Light Cavalry. Skirmishing lightly armed, enamoured, cavalry armed with javelins and no shields.",
+    "",
+    "Hsi  Cavalry. These were skirmishing tribal horse archers, a Mongolian people related to the Khitans.",
+    "",
+    "Imperial Infantry.  Spearmen and halberdiers who were equipped with a variety of bladed and pointed weapons of disparate length and often lacked shields. While the rank and file were professionals with time they were drawn from the poorer elements of society so in later years, due to the booming economy, those enlisting tended to be petty criminals, bandits and vagabonds. Very often their pay and food were in arrears and whole armies sent to put down revolts joined the revolt.",
+    "",
+    "Imperial Archers.  These represent the un-armoured foot troops armed with crossbow infantry who fought from a distance. Again like the Imperial Infantry in later years those enlisting tended to be petty criminals, bandits and vagabonds. Some were specially trained crossbow marksmen, at the battle of Shan-chou in 1004 the Khitan General, Hsiao T'alin, was killed by such a marksman.",
+    "",
+    "Handgunners.  The development of the fire-lance to fire clay and iron missiles meant that by this period some missile infantry were armed with handguns.",
+    "",
+    "Skirmisher.  Skirmishers were young or impoverished warriors armed with bows or javelins and usually carrying a small shield.",
+    "",
+    "Fire-lance.  A spear with a gunpowder based pyrotechnic device attached, a flamethrower! Fire-lances were in Song Chinese use by the late 11th cent. - early 12th cent and were ultimately to become handguns."
+  ]
+}

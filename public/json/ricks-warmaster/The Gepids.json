@@ -1,0 +1,153 @@
+{
+  "specialRules": {
+    "Shock": {
+      "order": 1
+    },
+    "Skirmish": {
+      "order": 2
+    },
+    "Warband (Restricted)": {
+      "order": 3
+    },
+    "Portents": {
+      "order": 4
+    }
+  },
+  "units": {
+    "Heavy Cavalry": {
+      "order": 0,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "upgrades": [
+        "Dismount Heavy Cavalry"
+      ],
+      "specialRules": [
+        "Shock"
+      ],
+      "points": 110,
+      "armour": "5+",
+      "min": 2,
+      "max": 6
+    },
+    "Huns": {
+      "order": 1,
+      "type": "Cavalry",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "points": 60,
+      "armour": "6+",
+      "max": 1
+    },
+    "Warriors": {
+      "order": 2,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "specialRules": [
+        "Warband (Restricted)"
+      ],
+      "armour": "6+",
+      "points": 45,
+      "min": 2
+    },
+    "Archers": {
+      "order": 3,
+      "type": "Infantry",
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "specialRules": [
+        "Warband (Restricted)"
+      ],
+      "points": 40,
+      "max": 4
+    },
+    "Skirmishers": {
+      "order": 4,
+      "type": "Infantry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "specialRules": [
+        "Skirmish",
+        "Warband (Restricted)"
+      ],
+      "points": 30,
+      "max": 4
+    },
+    "General": {
+      "order": 5,
+      "type": "General",
+      "attack": "+2",
+      "size": 1,
+      "command": 9,
+      "points": 125,
+      "upgrades": [
+        "Portents"
+      ]
+    },
+    "Superior War Chief": {
+      "order": 6,
+      "type": "Subordinate",
+      "attack": "+1",
+      "size": 1,
+      "command": 8,
+      "points": 80,
+      "max": 2
+    },
+    "War Chief": {
+      "order": 7,
+      "type": "Subordinate",
+      "attack": "+1",
+      "size": 1,
+      "command": 7,
+      "points": 40,
+      "max": 2
+    }
+  },
+  "upgrades": {
+    "Dismount Heavy Cavalry": {
+      "order": 0,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": "-50",
+      "max": 2
+    },
+    "Portents": {
+      "order": 1,
+      "points": "+10",
+      "max": 1,
+      "specialRules": [
+        "Portents"
+      ]
+    }
+  },
+  "armyRules": [
+    "Noble and Heavy Cavalry. These are similar in appearance to their Ostrogothic counterparts. They wear armour and carry a shield. Their main weapon was the kontarion—the shorter version of the kontos—although a kontos is a possible armament too. Note that an option is included to field Gepid Heavy Cavalry dismounted at a cost reduction of –50 points per unit (i.e a cost of 60 points). The Transylvanian heavy cavalry, although similarly armed, lack the élan of their noble equivalents and have lost shock status to represent this.",
+    "",
+    "Huns.  The Gepids were vassals of the Huns—these represent either Huns or similar nomads such as Kutrigars assimilated into or allied with the Gepid armies. The Germanic Heruls also fought as lightly armed cavalry, principally with javelins, and many Heruls sought refuge with the Gepids after their defeat by the Langobards.",
+    "",
+    "Warriors and Elite Warriors. Warriors with and armour rating of 6+ represent the heaviest gothic warriors carrying a big, heavy shield and fighting in close formation. They are armed with spears and swords. They were more than a match for many contemporaries including the Franks—who they fought to a standstill at the battle of Chalons whilst part of the Hunnic army. The category could also include contingents of other Germanic tribes if the army represents the first phase of the establishment of the Gepid kingdom—for example Heruls, Rugians and Scirians. Later armies might instead include Slavs. Transylvanian Warriors have no armour save and are assumed to be more lightly equipped.",
+    "",
+    "Archers. Gepid infantry armed with bows and wearing little if any armour. In common with other Gothic peoples it was usual for the lowest weapon-bearing classes of society to fight as bowmen.",
+    "",
+    "Skirmishers. Gepids or subject infantry armed with bows or javelins operating as skirmishers."
+  ],
+  "name": "The Gepids",
+  "version": "Rick's Warmaster",
+  "group": "The Dark Ages",
+  "order": 4
+}

@@ -1,0 +1,212 @@
+{
+  "specialRules": {
+    "Shock": {
+      "order": 1
+    },
+    "Skirmish": {
+      "order": 2
+    },
+    "Unreliable": {
+      "order": 3
+    },
+    "Papal Blessing": {
+      "order": 4,
+      "text": [
+        "The Kings of Sicily were famous for their good works and founded many religious houses.  Consequently they may call on the Pope for his special blessing this allows the general to re-roll one failed command once per battle.  This is the same as the Portents upgrade but with a title more appropriate for the age"
+      ]
+    },
+    "Norman Charge": {
+      "order": 5,
+      "text": [
+        "Norman cavalry was famously aggressive and their charge was regarded by contemporaries as being especially dangerous, to reflect this, any unit of Norman Cavalry in the later list may be given this upgrade.  The first time in a battle that a unit of Norman Cavalry charges it gains an extra D6 attacks.  Roll a D6 to determine the number of extra attacks and distribute them as evenly as possible to the individual stands with no individual stand receiving more than 2 extra attacks, even if the unit has lost figures.  Note that this can only be given to Norman Cavalry and the unit must initiate the combat to gain this bonus."
+      ]
+    },
+    "Crossbows": {
+      "order": 6,
+      "text": [
+        "Troops hit by crossbows during their shooting phase take any armour saving throws with a -1 penalty if the crossbowmen did not move during their command phase. Note this does not apply to shooting that takes place when crossbowmen shoot at chargers - which happens in the enemy command phase. This represent the lower rate of fire of crossbows."
+      ]
+    }
+  },
+  "units": {
+    "Infantry": {
+      "order": 0,
+      "type": "Infantry",
+      "attack": 3,
+      "hits": 3,
+      "size": 3,
+      "points": 35,
+      "min": 2
+    },
+    "Archers": {
+      "order": 1,
+      "type": "Infantry",
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "points": 40,
+      "min": 1,
+      "max": 4
+    },
+    "Skirmisher Infantry": {
+      "order": 3,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "type": "Infantry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": 30,
+      "min": 1,
+      "max": 4
+    },
+    "Norman Cavalry": {
+      "order": 4,
+      "specialRules": [
+        "Shock"
+      ],
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "5+",
+      "size": 3,
+      "points": 110,
+      "min": 2
+    },
+    "Southern Cavalry": {
+      "order": 5,
+      "type": "Cavalry",
+      "attack": 3,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 70,
+      "max": 2
+    },
+    "Light Cavalry": {
+      "order": 6,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "type": "Cavalry",
+      "attack": 2,
+      "range": 15,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": 60,
+      "min": 1,
+      "max": 4
+    },
+    "Skirmisher Cavalry": {
+      "order": 7,
+      "specialRules": [
+        "Skirmish"
+      ],
+      "type": "Cavalry",
+      "attack": 1,
+      "range": 15,
+      "hits": 3,
+      "size": 3,
+      "points": 40,
+      "min": 1,
+      "max": 2
+    },
+    "General": {
+      "order": 8,
+      "type": "General",
+      "attack": "+2",
+      "command": 9,
+      "size": 2,
+      "points": 125,
+      "armyMax": 0
+    },
+    "Lord": {
+      "order": 9,
+      "type": "Leader",
+      "attack": "+1",
+      "command": 8,
+      "size": 2,
+      "points": 80,
+      "max": 1
+    },
+    "Baron": {
+      "order": 10,
+      "type": "Subordinate",
+      "attack": "+1",
+      "command": 8,
+      "size": 2,
+      "points": 40,
+      "max": 2
+    }
+  },
+  "upgrades": {
+    "Guard Archers": {
+      "order": 0,
+      "type": "Infantry",
+      "attack": 3,
+      "range": 30,
+      "hits": 3,
+      "armour": "6+",
+      "size": 3,
+      "points": "+10",
+      "max": 1
+    },
+    "Crossbows": {
+      "order": 1,
+      "type": "Infantry",
+      "attack": 2,
+      "range": 30,
+      "hits": 3,
+      "size": 3,
+      "points": "+10",
+      "max": 1,
+      "specialRules": [
+        "Crossbows"
+      ]
+    },
+    "Norman Charge": {
+      "order": 2,
+      "points": "+15",
+      "max": "Any",
+      "specialRules": [
+        "Norman Charge"
+      ],
+      "attack": "+d6"
+    },
+    "Papal Blessing": {
+      "order": 3,
+      "points": "+10",
+      "max": 1,
+      "specialRules": [
+        "Papal Blessing"
+      ]
+    }
+  },
+  "armyRules": [
+    "Norman Cavalry. These were often called knights in contemporary sources; equipped with lance and sword and protected with mail armour and large kite shields they formed the cutting edge of the Norman armies.",
+    "",
+    "Southern Cavalry. Norman Squires and other locally recruited shock cavalry including Byzantines, Muslims and Lombards.  Although shock based they have been given a reduced armour save to reflect the relative light armour favoured by the locals when compared with the Norman invaders.",
+    "",
+    "Light Cavalry. These are Norman and Muslims, the Muslims found the d’Hautevilles benevolent rulers so were extremely loyal, who providing skirmishing cavalry armed with javelins and shields. These were prepared to engage in melee if it was to their advantage.",
+    "",
+    "Skirmishing Cavalry. These are lightly equipped units recruited from the Muslims armed with javelins and shields who fought as skirmishers only.",
+    "",
+    "Infantry. Mercenary and local infantry armed with spears and shields from the towns of Southern Italy, especially those captured from the Byzantine provided good infantry in the form of local militias.",
+    "",
+    "Archers. Southern Italy and especially the Muslims of Sicily had a long standing archery tradition and once they had begun to make inroads into the island the Normans quickly adopted the archer as a key part of their army.",
+    "",
+    "Guard Archers. After the conquest of Sicily the Norman Kings adopted the local tradition of recruiting local archers as elite bodyguard units, one unit of archers per thousand points may be upgraded, however this option is not available if the Iron Arm upgrade is taken.",
+    "",
+    "Crossbows. By the middle of the 12th century the crossbow developed sufficiently to warrant being regarded as a separate weapon from a normal bow and Pope Innocent II at the Second Lateran Council of 1139 banned it’s use against Christians.  Later armies (from 1130) may upgrade up to two units of archers to crossbows.",
+    "",
+    "Skirmishing Infantry. These are lightly equipped units recruited from the local Muslims and were armed with javelins and shields they fought, like their cavalry counterpart, as skirmishers only."
+  ],
+  "name": "Late Sicillian Normans",
+  "version": "Rick's Warmaster",
+  "group": "The Dark Ages",
+  "order": 3
+}
