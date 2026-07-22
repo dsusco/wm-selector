@@ -23,7 +23,7 @@
     "pretest:unit": "node scripts/build-src-json.js"
   },
   "dependencies": {
-    "axios": "^1.7.7",
+    "axios": "^1.18.0",
     "core-js": "^3.39.0",
     "lodash": "^4.17.21",
     "marked": "^14.1.3",
