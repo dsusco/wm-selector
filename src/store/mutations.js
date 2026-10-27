@@ -105,10 +105,20 @@ export default {
             (upgradeConstraint.unitHits === undefined || upgradeConstraint.unitHits.includes(unit.hits || '-')) &&
             !unit.noUpgrades &&
             !(unit.noMagic && upgradeConstraint.magic)) {
+
+          var upgrades = upgradeConstraint.upgrades;
+
+          if (state.json.version === 'Warmaster Revolution' &&
+              (state.json.name === 'High Elves' || state.json.name === 'Dark Elves') &&
+              upgradeConstraint.unitType.includes('General')) {
+
+            upgrades = upgrades.filter(upgrade => upgrade !== 'Sceptre of Sovereignty')
+          }
+
           try {
-            Vue.set(unit, 'upgrades', unit.upgrades.concat(upgradeConstraint.upgrades));
+            Vue.set(unit, 'upgrades', unit.upgrades.concat(upgrades));
           } catch {
-            Vue.set(unit, 'upgrades', upgradeConstraint.upgrades);
+            Vue.set(unit, 'upgrades', upgrades);
           }
         }
       });

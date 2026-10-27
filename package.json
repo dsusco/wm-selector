@@ -54,7 +54,7 @@
     "flush-promises": "^1.0.2",
     "jsonlint": "^1.6.3",
     "minify-json": "^1.0.0",
-    "node-sass": "^8.0.0",
+    "sass": "^1.106.1",
     "sass-loader": "^16.0.3",
     "vue-template-compiler": "^2.7.16"
   },

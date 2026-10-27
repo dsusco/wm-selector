@@ -147,7 +147,7 @@
     "Sceptre of Sovereignty": {
       "order": "ScS",
       "type": "Device of Power",
-      "points": "+30",
+      "points": "+20",
       "armyMax": 1,
       "text": [
         "If the General carries the Sceptre of Sovereignty, he may ignore one blundered ‘double 6’ roll for an order made by either himself or any of the army’s other characters. If the blunder is made by a subordinate character you can roll to see what the blunder is before deciding whether to use the Sceptre of Sovereignty or not. If ignored, the Command test is passed and the character may continue issuing orders as normal. The steely will of the Sceptre of Sovereignty reaches out and stays the incompetent wretch before the deed is done."
@@ -197,8 +197,7 @@
       "unitArmour": [
         "-",
         "6+",
-        "5+",
-        "4+"
+        "5+"
       ],
       "unitType": [
         "Infantry",
